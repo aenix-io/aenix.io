@@ -1,5 +1,6 @@
 ---
 title: "CloudStack migration — moving a service-provider cloud to Kubernetes"
+seo_title: "CloudStack migration to Cozystack for providers"
 description: "Apache CloudStack to Cozystack migration: zones and offerings, the virtual router redesign, accounts to tenants, billing, and when CloudStack should stay."
 date: 2026-09-03
 lastmod: 2026-09-03
@@ -12,12 +13,12 @@ secondary_keywords: ["apache cloudstack migration", "cloudstack to kubernetes", 
 related_pages:
   - /products/public-cloud-platform/
   - /products/whmcs-integration/
-  - /products/cozystack
-  - /services/platform-readiness-assessment
-  - /alternatives/vmware-alternative
+  - /products/cozystack/
+  - /services/platform-readiness-assessment/
+  - /alternatives/openstack-alternative/
   - /migration/openstack/
 direct_answer: |
-  **A CloudStack migration moves a multi-tenant service-provider cloud off Apache CloudStack onto a Kubernetes-native control plane. Aenix runs these onto Cozystack, an Apache 2.0 CNCF project running VMs and containers on one Kubernetes API. For KVM-based CloudStack the disks move mechanically: QCOW2 volumes on NFS or Ceph primary storage import into KubeVirt without guest changes. The work is in everything around the disks — accounts, domains and projects are re-modelled onto the Tenant CRD, service and disk offerings become catalogue definitions, and the CloudStack virtual router is replaced by Cilium, which means DHCP, source NAT, port forwarding, VPN and load balancing are redesigned rather than converted. Billing integrations that call the CloudStack API must be re-pointed. Mid-size providers run four to twelve months. CloudStack is actively maintained, so the case for moving is consolidation, not abandonment.**
+  **A CloudStack migration moves a multi-tenant service-provider cloud off Apache CloudStack onto a Kubernetes-native control plane. Ænix runs these onto Cozystack, an Apache 2.0 CNCF Sandbox project running VMs and containers on one Kubernetes API. For KVM-based CloudStack the disks move mechanically: QCOW2 volumes on NFS or Ceph primary storage import into KubeVirt without guest changes. The work is in everything around the disks — accounts, domains and projects are re-modelled onto the Tenant CRD, service and disk offerings become catalogue definitions, and the CloudStack virtual router is replaced by Cilium, which means DHCP, source NAT, port forwarding, VPN and load balancing are redesigned rather than converted. Billing integrations that call the CloudStack API must be re-pointed. The platform itself is live in weeks once hardware is ready; moving the customers of a mid-size provider takes four to twelve months. CloudStack is actively maintained, so the case for moving is consolidation, not abandonment.**
 quick_facts:
   - label: "What it is"
     value: "A cohort-based migration of a multi-tenant CloudStack cloud onto a Kubernetes-native platform (Cozystack), covering compute, tenancy, networking and billing."
@@ -39,13 +40,13 @@ faq:
   - q: "What moves cleanly from CloudStack, and what does not?"
     a: "On KVM the disks move mechanically — QCOW2 volumes from NFS or Ceph primary storage import into KubeVirt without guest changes. Templates and ISOs in secondary storage carry over as image sources. What does not move: the virtual router, whose DHCP, source NAT, port forwarding, VPN and load balancing functions are redesigned across Cilium and platform services; the CloudStack API surface, which any customer automation depends on; and network offerings, which are a CloudStack-specific abstraction."
   - q: "What happens to our WHMCS or HostBill billing integration?"
-    a: "It is re-pointed. Provisioning modules that call the CloudStack API to create instances, resize volumes and read usage records need to target the new platform instead. Aenix ships a WHMCS integration for exactly this path, and usage metering moves from CloudStack usage records to the platform metrics stack. Because this gates revenue, it is scheduled early in the programme rather than left to the end."
+    a: "It is re-pointed. Provisioning modules that call the CloudStack API to create instances, resize volumes and read usage records need to target the new platform instead. Ænix ships a proprietary WHMCS integration module for exactly this path, and usage metering moves from CloudStack usage records to the platform metrics stack. Because this gates revenue, it is scheduled early in the programme rather than left to the end."
   - q: "We run CloudStack on VMware, not KVM. Does that change anything?"
     a: "Yes, and usually for the better: it becomes a VMware migration with a CloudStack-shaped tenancy layer on top. The guest disks are moved with the same VMware tooling used in any vSphere exit, while the CloudStack accounts, offerings and billing integration are re-modelled separately. See the VMware migration hub for the disk-level mechanics."
   - q: "How long does a CloudStack migration take?"
     a: "Four to twelve months for a mid-size provider. The variables are tenant count, how much of the virtual router feature set is actually in use per customer, and whether customers hold CloudStack API credentials of their own — the last one adds a published deprecation timeline to the plan and is the main reason a migration runs past twelve months."
-  - q: "Which Aenix platform is the destination?"
-    a: "The Aenix Public Cloud Platform in almost every case, because CloudStack operators sell infrastructure to external customers and need the tenant model, service catalogue and billing integration to survive the move. The Aenix Private Cloud Platform is the fit only where CloudStack was deployed as an internal private cloud rather than a commercial one."
+  - q: "Which Ænix platform is the destination?"
+    a: "The Ænix Public Cloud Platform in almost every case, because CloudStack operators sell infrastructure to external customers and need the tenant model, service catalogue and billing integration to survive the move. The Ænix Private Cloud Platform is the fit only where CloudStack was deployed as an internal private cloud rather than a commercial one."
 service:
   type: "CloudStack Migration"
   areaServed: ["EU", "DACH", "Central Asia"]
@@ -114,13 +115,13 @@ The case appears when the product has to broaden. A provider selling only VMs in
 4. **Cohort migration.** Customers move in groups, smallest and most tolerant first. Each cohort is validated in parallel run before its CloudStack side is released.
 5. **Decommission and catalogue expansion.** Freed CloudStack hosts are rebuilt into the target cluster, and the service catalogue widens beyond VMs — which is the reason the migration was worth doing.
 
-**Typical duration:** four to twelve months for a mid-size provider.
+**Typical duration:** the platform is live in weeks once hardware is ready; moving the customers of a mid-size provider takes four to twelve months.
 
 ---
 
 ## How Ænix engages
 
-- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — offering and virtual-router inventory, tenant and address design, billing integration scope, cohort plan, risk register.
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** (14 or 28 days, fixed price) — offering and virtual-router inventory, tenant and address design, billing integration scope, cohort plan, risk register.
 - **Pilot cohort** — first customer group migrated with Ænix engineers inside your team, producing the runbooks for the rest.
 - **Rolling migration** — cohort by cohort, parallel-run validated, hardware recycled forward.
 - **Operations** — your team with **[Cozystack enterprise support](/products/cozystack-enterprise-support/)** behind it, or operated by Ænix.
@@ -131,4 +132,4 @@ The case appears when the product has to broaden. A provider selling only VMs in
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF project, Apache 2.0).*
+*Ænix created Cozystack (a CNCF Sandbox project, Apache 2.0) and co-maintains it with maintainers from other companies.*

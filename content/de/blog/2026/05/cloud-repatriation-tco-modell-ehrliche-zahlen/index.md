@@ -1,5 +1,6 @@
 ---
 title: "Ehrliche TCO-Modelle für Cloud Repatriation — welche Zahlen Sie wirklich vergleichen sollten"
+seo_title: "Cloud Repatriation: ehrliche TCO-Modelle"
 description: "Warum die meisten TCO-Modelle zur Cloud Repatriation falsch sind: übersehene Zielkosten, Sensitivitätsanalyse und Entscheidungen auf Ebene der Workloads."
 slug: "cloud-repatriation-tco-modell-ehrliche-zahlen"
 date: "2026-05-05"

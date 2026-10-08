@@ -417,6 +417,22 @@ menus:
       url: /compliance/
       parent: resources
       weight: 7
+    - name: ISO 27001 certificate
+      url: /compliance/iso-27001/
+      parent: resources
+      weight: 8
+    - name: Webinars
+      url: /webinars/
+      parent: resources
+      weight: 9
+    - name: Certification
+      url: /certification/
+      parent: resources
+      weight: 10
+    - name: By role
+      url: /for/
+      parent: resources
+      weight: 11
 
     # ── Company ──
     - name: Company
@@ -447,6 +463,14 @@ menus:
       url: /partners/vmware-exit/
       parent: company
       weight: 6
+    - name: Workshops
+      url: /workshops/
+      parent: company
+      weight: 7
+    - name: Cozystack Tour 2026
+      url: /tour-2026/
+      parent: company
+      weight: 8
 
     # ── Contact (CTA) ──
     - name: Contact
@@ -746,7 +770,7 @@ menus:
       url: /de/ressourcen/
       identifier: resources-de
       weight: 60
-    - name: Lead-Magnets
+    - name: Checklisten & Leitfäden
       url: /de/ressourcen/
       parent: resources-de
       weight: 1
@@ -766,6 +790,14 @@ menus:
       url: /de/compliance/
       parent: resources-de
       weight: 5
+    - name: ISO-27001-Zertifikat
+      url: /de/compliance/iso-27001/
+      parent: resources-de
+      weight: 6
+    - name: Nach Rolle
+      url: /de/fuer/
+      parent: resources-de
+      weight: 7
     - name: Unternehmen
       url: /de/ueber-uns/
       identifier: company-de

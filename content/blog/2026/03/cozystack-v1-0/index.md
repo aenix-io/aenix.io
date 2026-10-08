@@ -1,6 +1,7 @@
 ---
-title: "Cozystack v1.0"
-description: "The last platform release was 0.41. So it came as a surprise when the next release, 0.42, turned out to be the answer to the ultimate…"
+title: "Cozystack v1.0 and v1.1: Package-Based Architecture, Cozystack Operator, Velero Strategy Controller, MongoDB and OpenBAO"
+seo_title: "Cozystack v1.0 and v1.1: package-based architecture"
+description: "Cozystack v1.0 and v1.1 replace bash scripts with an operator and FluxCD-based packages, add Velero backups, MongoDB and OpenBAO. Breaking changes inside."
 date: "2026-03-16"
 author: "Timur Tukaev"
 type: "announcement"
@@ -9,17 +10,17 @@ language: "en"
 hreflang_de: "/de/blog/2026/03/cozystack-v1-0/"
 cover_image: "/img/blog/medium/cozystack-v1-0/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v1-0-b3f70879b250"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack v1.0 & v1.1: Introducing Package-Based Architecture, Cozystack Operator, Velero Strategy Controller, MongoDB and OpenBAO Support
 
 The last platform release was 0.41. So it came as a surprise when the next release, 0.42, turned out to be the answer to the ultimate question of life, the universe, and everything. The number of serious changes that had piled up was just too great — so much so that 0.42 had to be renamed to 1.0.
 
 With the release of v1.0.0, Cozystack is undergoing a fundamental architectural transition. We’ve built a package system based on FluxCD and OCI artifacts — think of it like apt for Debian/Ubuntu, but made for Kubernetes (see “Package-based Deployment” below). This let us introduce a unique new approach: **Build Your Own Platform** (BYOP).
 
-![image](/img/blog/medium/cozystack-v1-0/cover.jpg)
+![Cozystack v1.0 release](/img/blog/medium/cozystack-v1-0/cover.jpg)
 
 > **What is Cozystack**
 
@@ -36,7 +37,7 @@ Both resources are cluster-scoped (i.e., not bound to any specific namespace) an
 
 This new approach provides a more reliable way to install, customize, and manage platform components, while keeping the system logic simple and consistent.
 
-![image](/img/blog/medium/cozystack-v1-0/02.png)
+![Cozystack package-based architecture](/img/blog/medium/cozystack-v1-0/02.png)
 
 Now you’ve got [two options](https://cozystack.io/docs/v1.0/install/cozystack/):
 
@@ -45,7 +46,7 @@ Now you’ve got [two options](https://cozystack.io/docs/v1.0/install/cozystack/
 
 Installation always starts with the **cozystack-operator**. Once it’s up and running, the user can install the core **cozystack-platform** package. After that, you can choose between several platform variants:
 
-![image](/img/blog/medium/cozystack-v1-0/03.png)
+![Installation flow: cozystack-operator, then the cozystack-platform package and variants](/img/blog/medium/cozystack-v1-0/03.png)
 
 The *isp-full*, *isp-full-generic*, and *isp-hosted* options provide fully-featured Cozystack setups tailored to specific use cases. In the *default* option, only PackageSources are installed — not the actual Packages. The user can then explore available packages via cozypkg, select the needed ones, and install them with all their dependencies. Unlike Debian/Ubuntu, Cozystack packages come in different available flavors. For example, the `cozystack.networking` package — which most others depend on — comes bundled with either kubeovn-cilium, cilium, cilium-kilo, or noop. Noop does nothing but helps satisfy dependencies — handy for existing Kubernetes clusters.
 
@@ -57,27 +58,27 @@ Ultimately, this brings us one step closer to what Cozystack has always aimed to
 
 In addition to this core shift, this version debuts a comprehensive backup system, including a highly extensible API and a backup implementation for virtual machines [based on Velero](https://cozystack.io/docs/v1.0/operations/services/velero-backup-configuration/), as well as **Flux sharding** for improved tenant resource distribution. Users will also find expanded monitoring capabilities alongside various performance and workflow improvements for virtual machines, tenant management, and build processes. On top of that, you can now deploy a fully featured MongoDB database with autoscaling, backups, and fault tolerance out of the box.
 
-### Breaking Changes
+## Breaking Changes
 
-#### FerretDB removal
+### FerretDB removal
 
 We’ve completely removed this component from the platform. There’s no automatic migration, so make sure to **back up your data before upgrading if you’re still using FerretDB!**
 
-#### MySQL is now MariaDB
+### MySQL is now MariaDB
 
 The “MySQL” package has been renamed to “MariaDB” — we’ve actually been using mariadb-operator all along.
 
-#### VirtualMachine (simple) replaced
+### VirtualMachine (simple) replaced
 
 This resource has been replaced by two separate ones — VMDisk and VMInstance — giving you more Kubernetes-native and fine-grained control over virtual machines.
 
-#### API Rename: CozystackResourceDefinition → ApplicationDefinition
+### API Rename: CozystackResourceDefinition → ApplicationDefinition
 
 To improve clarity and ensure consistency across the ecosystem, the `CozystackResourceDefinition` CRD has been renamed to `ApplicationDefinition`.
 
 To streamline the upgrade process for current users, we have included automated migration scripts that will convert your existing resources to the new format.
 
-#### Package-based deployment
+### Package-based deployment
 
 This release marks a significant transition in how the platform manages deployments. We have moved away from traditional HelmRelease bundles in favor of Package resources, which are now orchestrated directly by **cozystack-operator**.
 
@@ -90,15 +91,15 @@ The following changes have been implemented:
 
 For existing installations, we have provided a migration script located at `hack/migrate-to-version-1.0.sh`. With it, you can convert your old ConfigMaps into the new Package format.
 
-### Major Features and Improvements
+## Major Features and Improvements
 
-#### Cozystack operator
+### Cozystack operator
 
 This release features **cozystack-operator**, a dedicated component designed to provide robust, declarative package management for the entire platform. To establish this new architecture, we have introduced the `Package` and `PackageSource` CRDs. The operator’s core reconciliation logic and dedicated controllers have been fully implemented to handle the complete lifecycle management of these resources.
 
 We have also included the necessary Kubernetes deployment manifests for running cozystack-operator in the cluster and integrated PackageSource definitions. Complementing this server-side logic, we have also released **cozypkg**, a new command-line utility specifically designed to simplify the manual management of Package and PackageSource resources.
 
-#### Backup system
+### Backup system
 
 Cozystack v1.0 introduces a comprehensive backup ecosystem featuring native Velero integration for robust application data management.
 
@@ -108,51 +109,51 @@ A **Velero strategy controller** has been integrated to provide enterprise-grade
 
 The backup controller currently undergoes production testing, with complete deployment infrastructure, container image builds, and Kubernetes manifests included in the release. For ease of use, we have also introduced a user-facing dashboard interface for managing backups and backup Jobs that provides full visibility into backup statuses and job history.
 
-![image](/img/blog/medium/cozystack-v1-0/04.png)
+![Velero strategy controller for backups](/img/blog/medium/cozystack-v1-0/04.png)
 
-#### AI/ML and complex workloads
+### AI/ML and complex workloads
 
 We’ve added ReadWriteMany (RWX) volume support to tenant Kubernetes clusters. This lets users create shared storage with snapshots and cloning — exactly what’s needed for AI/ML workloads where GPUs and shared datasets are standard. GPU passthrough is [fully supported](https://cozystack.io/blog/2025/04/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines/), too.
 
-#### Multi-distribution and flexible install options
+### Multi-distribution and flexible install options
 
 While Talos Linux remains our recommended distribution, Cozystack now officially supports various Kubernetes distributions such as **K3s**, **Kubeadm**, and **RKE**. We also made the setup simpler with a full set of [Ansible playbooks](https://cozystack.io/docs/v1.0/install/ansible/). Tools like **boot-to-talos**, **cozyhr**, and **talm** got major updates. Boot-to-talos and talm now support bonding, VLANs, auto-discovery and configuration. Boot-to-talos works seamlessly with the latest Ubuntu releases and updated kernels and can automatically convert an existing system with pre-configured networking to Talos.
 
 All our tools — cozypkg, boot-to-talos, talm — can be installed with a single command from [the Brew repo](https://github.com/cozystack/homebrew-tap).
 
-#### Networking
+### Networking
 
 The BYOP mode now supports **Kilo**: Connect your K8s nodes into a secure WireGuard mesh, even if they’re scattered across different regions. Also, local-ccm, a tool for assigning ExternalIP and managing node lifecycle without relying on any particular cloud vendor, has been added. On top of that, cluster-autoscaler now works with Azure and Hetzner. Combined, these improvements make it easy to connect nodes and clusters across different data centers into one seamless network and provision new nodes dynamically — ideal for hybrid-cloud setups.
 
-#### Virtual machines
+### Virtual machines
 
 All virtual machines are now exposed via a headless service. This ensures that every VM is assigned a persistent in-cluster DNS name, allowing them to be seamlessly accessed from other pods within the cluster, even if the VM does not have a public IP address assigned.
 
-#### Windows and custom OS support
+### Windows and custom OS support
 
 Cozystack continues to fully support the installation of Windows and other operating systems, including via ISO images.
 
-#### Harbor integration
+### Harbor integration
 
 A new package has been added to deploy the Harbor container image registry.
 
-#### OpenBAO, a managed secret storage
+### OpenBAO, a managed secret storage
 
 Cozystack now includes OpenBAO, an open-source fork of HashiCorp Vault for storing and managing secrets securely. Two modes are available — a basic single-replica setup or a high-availability one powered by the Raft consensus, with switching done automatically depending on your `replicas` field.
 
 Each OpenBAO instance comes with TLS enabled (cert-manager’s self-signed certificates are used), with all service endpoints and pod IP addresses covered by DNS SANs. Note that after installation, you are supposed to manually initialize and unseal OpenBAO.
 
-#### SeaweedFS: tiered storage pools
+### SeaweedFS: tiered storage pools
 
 Operators can now set up disk-type-specific pools (SSD, HDD, NVMe) using the `volume.pools` or `volume.zones[name].pools` fields. For each pool, an additional set of volume servers is created, along with the corresponding `BucketClass` and `BucketAccessClass`.
 
 In MultiZone setups, each zone × pool combination gets its own set of volume servers (e.g., `us-east-ssd`, `us-west-hdd`), and nodes are matched via the `topology.kubernetes.io/zone` label. Existing deployments with no pools defined produce output identical to previous versions — no migration needed.
 
-#### WORM support
+### WORM support
 
 The seaweedFS and COSI driver now allow you to provision buckets with versioning enabled and lock support.
 
-#### New user model with S3 login
+### New user model with S3 login
 
 Instead of a single implicit `BucketAccess` resource, operators now define a `users` map. For each entry, a dedicated `BucketAccess` is created, with its own secret containing credentials and an optional `readonly` flag. The S3 Manager interface has been updated and now includes a login screen that allows users to log in with their `access_key` and `secret_key`.
 
@@ -163,23 +164,23 @@ Two new bucket parameters are available:
 
 The COSI driver has been upgraded to v0.3.0, adding support for the new `diskType` parameter.
 
-⚠️ **Breaking change:** *The implicit default BucketAccess resource is no longer created. After upgrading, any existing buckets that relied on implicit auto-generated BucketAccess must explicitly define users in the *`*users*`* map.*
+**Breaking change:** *The implicit default BucketAccess resource is no longer created. After upgrading, any existing buckets that relied on implicit auto-generated BucketAccess must explicitly define users in the *`*users*`* map.*
 
-#### RabbitMQ Version Selection
+### RabbitMQ Version Selection
 
 You can now specify which RabbitMQ version to run — v4.2 (default), v4.1, v4.0, or v3.13. The Helm chart picks the right runtime image automatically based on this parameter during deployment. This way, operators can control the RabbitMQ release channel used by each instance. An automatic migration backfills the version field on all existing RabbitMQ resources to v4.2.
 
-#### Documentation
+### Documentation
 
 The website documentation has been updated: a [comprehensive guide](https://cozystack.io/docs/v1.0/virtualization/cloneable-vms/) for virtual machine cloning and management is now available, and we’ve made the NFS driver setup [much easier to follow](https://cozystack.io/docs/v1.0/storage/nfs/#enable-nfs-driver). We also polished Talos Linux installation guides for [Hetzner](https://cozystack.io/docs/v1.0/install/providers/hetzner/) and [Servers.com](https://cozystack.io/docs/v1.0/install/providers/servers-com/), added a [section](https://cozystack.io/docs/v1.0/install/providers/hetzner/#32-create-a-load-balancer-with-robotlb) on Hetzner RobotLB public IP configuration.
 
 Beyond the major architectural shifts, versions 1.0.0 & 1.1.0 bring a wide range of incremental updates to monitoring, tenant management, and core system components, as well as streamlined development and build processes and various stability fixes.
 
-### Migration Guide
+## Migration Guide
 
-A [detailed guide](https://cozystack.io/docs/v1.0/operations/upgrades/) for migrating from v0.41 to v1.0 is available. ⚠️ Please note the ****[mandatory steps](https://cozystack.io/docs/v1.0/operations/upgrades/#step-1-protect-critical-resources). Huge thanks to everyone who contributed to the bottom line.
+A [detailed guide](https://cozystack.io/docs/v1.0/operations/upgrades/) for migrating from v0.41 to v1.0 is available.  Please note the ****[mandatory steps](https://cozystack.io/docs/v1.0/operations/upgrades/#step-1-protect-critical-resources). Huge thanks to everyone who contributed to the bottom line.
 
-### Join our community
+## Join our community
 
 - [Telegram group](http://t.me/cozystack)
 - [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) group (Get invite at [https://slack.kubernetes.io](https://slack.kubernetes.io/))

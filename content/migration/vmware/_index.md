@@ -1,13 +1,20 @@
 ---
 title: "VMware migration — exit VCF without breaking the application"
+seo_title: "VMware migration to Cozystack — exit VCF safely"
+primary_keyword: "VMware migration"
+secondary_keywords:
+  - "VMware to KubeVirt migration"
+  - "VMware to Cozystack migration"
+  - "Forklift VMware migration"
+  - "VCF exit"
 description: "VMware migration end to end: Forklift cold and warm transfer, VDDK and virt-v2v realities, cohort cutover with parallel-run validation, VCF decommission."
-related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/", "/products/cozystack", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
+related_pages: ["/alternatives/vmware-alternative/", "/compare/cozystack-vs-vmware/", "/alternatives/vmware-alternatives/", "/solutions/cloud-repatriation/", "/services/platform-readiness-assessment/", "/products/", "/products/cozystack/", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
 language: "en"
 hreflang_de: /de/migration/vmware/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **A VMware migration in the post-Broadcom era is a planned project to move workloads off VMware Cloud Foundation (VCF), vSphere, and vCloud Director onto infrastructure the organization controls. It suits enterprises, hosting providers, and regulated operators facing Broadcom subscription increases, sovereignty rules (DORA, NIS2), or repatriation goals. Aenix runs these migrations end to end — inventory and workload classification, destination architecture, cohort-based cutover with parallel-run validation, and VMware decommission. Konveyor Forklift, the Kubernetes migration toolkit for virtualization, ships in the Aenix platform and performs the transfer itself: cold or warm migration from vSphere, network and storage mapping as Kubernetes objects, and virt-v2v guest conversion that injects VirtIO drivers and strips VMware Tools. The destination Aenix typically recommends is Cozystack, an Apache 2.0 CNCF project running VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking and LINSTOR storage. Done well, a structured migration produces a platform the customer owns and, in the engagements Aenix has modelled, a 30-60% cost reduction on the workloads that move, driven by removing per-core VMware licensing. That range is Aenix engagement modelling, not a published benchmark, and it is recomputed on real estate data during assessment.**
+  **A VMware migration in the post-Broadcom era is a planned project to move workloads off VMware Cloud Foundation (VCF), vSphere, and vCloud Director onto infrastructure the organization controls. It suits enterprises, hosting providers, and regulated operators facing Broadcom subscription increases, sovereignty rules (DORA, NIS2), or repatriation goals. Ænix runs these migrations end to end — inventory and workload classification, destination architecture, cohort-based cutover with parallel-run validation, and VMware decommission. Konveyor Forklift, the Kubernetes migration toolkit for virtualization, ships in the Ænix platforms and performs the transfer itself: cold or warm migration from vSphere, network and storage mapping as Kubernetes objects, and virt-v2v guest conversion that injects VirtIO drivers and strips VMware Tools. The destination Ænix typically recommends is Cozystack, an Apache 2.0 CNCF Sandbox project running VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking and LINSTOR storage. Done well, a structured migration produces a platform the customer owns and, in the engagements Ænix has modelled, a 30-60% cost reduction on the workloads that move, driven by removing per-core VMware licensing. That range is Ænix engagement modelling, not a published benchmark, and it is recomputed on real estate data during assessment.**
 quick_facts:
   - label: "What it is"
     value: "An end-to-end project to move workloads off VMware VCF / vSphere / vCloud Director onto customer-controlled infrastructure, typically Cozystack."
@@ -18,11 +25,11 @@ quick_facts:
   - label: "Who it is for"
     value: "Enterprises exiting VCF, hosting providers exiting VMware Cloud Director, and operators driven by Broadcom pricing, DORA / NIS2 sovereignty rules, or cloud repatriation."
   - label: "Engagement timeline"
-    value: "Assessment in 14-28 days; a 100-VM estate typically completes in 8-12 months, a 1000-VM estate in 18-24 months."
+    value: "Platform Readiness Assessment in 14 or 28 days (fixed price); a 100-VM estate typically completes in 8-12 months, a 1,000-VM estate in 18-24 months, depending on dependencies."
   - label: "Migration method"
     value: "Cohort-based cutover with VMware running in parallel until validation; Konveyor Forklift performs cold or warm transfer, with virt-v2v handling VirtIO injection and VMware Tools removal."
   - label: "Migration tooling"
-    value: "Forklift ships in the Aenix platform. Warm migration uses VMware changed block tracking to shorten the outage to the final delta; it is not live migration, so a reboot still occurs."
+    value: "Forklift ships in the Ænix platforms. Warm migration uses VMware changed block tracking to shorten the outage to the final delta; it is not live migration, so a reboot still occurs."
   - label: "Prerequisite you supply"
     value: "A VDDK image built from your own Broadcom download. It cannot be redistributed, it is mandatory for vSAN-backed VMs, and transfer is materially slower without it."
   - label: "Destination platform"
@@ -39,13 +46,13 @@ faq:
   - q: "What is the difference between warm and cold migration?"
     a: "Cold migration powers the VM off, converts it, then transfers the disks — conversion first means an unconvertible VM fails immediately rather than after hours of copying. Warm migration keeps the VM running and copies disks incrementally using VMware changed block tracking, so only the final delta moves during the cutover window. Warm is not live migration: RAM state is not carried across and the VM still reboots. It requires changed block tracking enabled on each source VM and each disk beforehand."
   - q: "Do we need a VDDK image, and can you provide one?"
-    a: "You need one and we cannot provide it. The VMware Virtual Disk Development Kit is proprietary and cannot be redistributed by Aenix or by the Forklift project, so you download it under your own Broadcom entitlement and build a container image in your own registry. It is mandatory for VMs backed by vSAN, and without it disk transfer falls back to a materially slower path. Supplying it is a pre-flight item, not a mid-migration surprise."
+    a: "You need one and we cannot provide it. The VMware Virtual Disk Development Kit is proprietary and cannot be redistributed by Ænix or by the Forklift project, so you download it under your own Broadcom entitlement and build a container image in your own registry. It is mandatory for VMs backed by vSAN, and without it disk transfer falls back to a materially slower path. Supplying it is a pre-flight item, not a mid-migration surprise."
   - q: "What platform do you migrate to?"
-    a: "Cozystack by default — an Apache 2.0 CNCF project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking, LINSTOR storage, and Tenant CRD multi-tenancy. Other destinations are used where technically appropriate."
+    a: "Cozystack by default — an Apache 2.0 CNCF Sandbox project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking, LINSTOR storage, and Tenant CRD multi-tenancy. Other destinations are used where technically appropriate."
   - q: "How much can a VMware migration save?"
-    a: "In the engagements Aenix has modelled, a structured migration produces a 30-60% cost reduction on the workloads that move, driven by removing per-core VMware licensing. That is our own engagement data rather than a published industry benchmark, and VCF pricing is quote-driven and non-public, so the number is recomputed on your estate with the VMware cost calculator before anything is committed."
-  - q: "How does Aenix engage on a VMware migration?"
-    a: "It starts with a 14-28 day assessment (estate inventory, destination architecture, workload classification, cutover sequencing), followed by a 6-18 month implementation phase with Aenix engineers integrated into your team, and optional managed Cozystack operations afterward."
+    a: "In the engagements Ænix has modelled, a structured migration produces a 30-60% cost reduction on the workloads that move, driven by removing per-core VMware licensing. That is our own engagement data rather than a published industry benchmark, and VCF pricing is quote-driven and non-public, so the number is recomputed on your estate with the VMware cost calculator before anything is committed."
+  - q: "How does Ænix engage on a VMware migration?"
+    a: "It starts with a fixed-price Platform Readiness Assessment of 14 or 28 days (estate inventory, destination architecture, workload classification, cutover sequencing), followed by an implementation phase with Ænix engineers integrated into your team — a 100-VM estate typically completes in 8-12 months, a 1,000-VM estate in 18-24 months — and optional managed Cozystack operations afterward. Implementation is quoted after the assessment."
 ---
 
 <!-- BLOCK 1: HERO -->
@@ -53,7 +60,7 @@ faq:
 
 **Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and, on the engagements we have modelled, a 30-60% cost reduction on the workloads that move. Done badly, it produces operational debt and a stalled migration that becomes the next year's emergency. The difference is structured assessment, honest TCO modelling, and engineers who have shipped this in production.**
 
-Ænix runs end-to-end VMware migrations for organizations exiting VCF. Same engineers who built and operate [Cozystack](/products/cozystack/) — the destination platform we typically recommend — work alongside your team for assessment, sequencing, and implementation.
+Ænix runs end-to-end VMware migrations for organizations exiting VCF. The engineers who created and co-maintain [Cozystack](/products/cozystack/) — the destination platform we typically recommend — work alongside your team for assessment, sequencing, and implementation.
 
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for anyone selling cloud — hosters exiting VMware Cloud Director (the most common 2026 pattern), MSPs, telcos, national operators; **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises exiting VCF for their own consumption. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
@@ -124,7 +131,7 @@ VMware decommission as cohorts complete. Hardware repurposed where applicable. F
 
 ## Forklift: the VM transfer engine in the platform
 
-Ænix ships [Konveyor Forklift](https://github.com/kubev2v/forklift) — the Kubernetes migration toolkit for virtualization — as part of the platform, so moving a cohort off vSphere does not need a separate tool, a separate licence or a separate project. Forklift is the same open-source engine that Red Hat distributes as the Migration Toolkit for Virtualization; it drives `virt-v2v` and KubeVirt CDI underneath and is configured through Kubernetes objects rather than a GUI-only workflow.
+Ænix ships [Konveyor Forklift](https://github.com/kubev2v/forklift) — the Kubernetes migration toolkit for virtualization — as part of its platforms, so moving a cohort off vSphere does not need a separate tool, a separate licence or a separate project. Forklift is the same open-source engine that Red Hat distributes as the Migration Toolkit for Virtualization; it drives `virt-v2v` and KubeVirt CDI underneath and is configured through Kubernetes objects rather than a GUI-only workflow.
 
 **How it is configured.** Four object types cover a migration:
 
@@ -160,7 +167,7 @@ VMware decommission as cohorts complete. Hardware repurposed where applicable. F
 
 Forklift covers the disk and guest layer. It does not decide your tenant model, your address plan or your cutover order — that is what the assessment and the cohort sequence are for.
 
-**Upstream status, stated plainly:** Forklift ships in the Ænix platform today. The work to expose it as tenant self-service VM import in upstream open-source Cozystack is in review and is not yet in a released Cozystack version. If you are running Cozystack yourself rather than the Ænix platform, you deploy Forklift alongside it for now.
+**Upstream status, stated plainly:** Forklift ships in the Ænix platforms today. The work to expose it as tenant self-service VM import in upstream open-source Cozystack is in review and is not yet in a released Cozystack version. If you are running Cozystack yourself rather than the Ænix platform, you deploy Forklift alongside it for now.
 
 <!-- /BLOCK 3b -->
 
@@ -214,11 +221,11 @@ Before committing, model the delta. Enter your estate size and current VMware pr
 
 The engagement structure mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with VMware-migration emphasis:
 
-- **Assessment (14-28 days)** — VMware estate inventory, destination architecture, workload classification, cutover sequencing, Phase 2 roadmap.
-- **Phase 2 implementation (6-18 months)** — Ænix engineers integrated with your team for migration cohorts. Parallel-run validation. Knowledge transfer throughout.
+- **Assessment (14 or 28 days, fixed price)** — VMware estate inventory, destination architecture, workload classification, cutover sequencing, Phase 2 roadmap.
+- **Phase 2 implementation** — Ænix engineers integrated with your team for migration cohorts. Parallel-run validation. Knowledge transfer throughout. A 100-VM estate typically completes in 8-12 months, a 1,000-VM estate in 18-24 months.
 - **Phase 3 (optional)** — managed Cozystack operations after migration completes.
 
-For VMware-specific destination guidance, see **[VMware alternative](/alternatives/vmware-alternative/)** (singular, vendor-focused) or **[VMware alternatives listicle](/alternatives/vmware-alternatives/)** (plural, market scan).
+For destination guidance, see **[VMware alternative](/alternatives/vmware-alternative/)** (our recommendation), **[Cozystack vs VMware](/compare/cozystack-vs-vmware/)** (head-to-head comparison) or **[Best VMware alternatives 2026](/alternatives/vmware-alternatives/)** (market comparison). Running the decision for infrastructure? See the **[guide for heads of infrastructure](/for/head-of-infrastructure/)**.
 
 <!-- /BLOCK 5 -->
 
@@ -228,10 +235,10 @@ For VMware-specific destination guidance, see **[VMware alternative](/alternativ
 
 ## Why Ænix specifically for VMware migration
 
-- **Cozystack-native experience.** We built the destination platform many migrations end up on. Implementation effort estimates calibrated against work we've shipped.
+- **Cozystack-native experience.** We created and co-maintain the destination platform many migrations end up on. Implementation effort estimates calibrated against work we've shipped.
 - **No hyperscaler bias.** Recommendations reflect technical fit, not partner economics. We say "stay in cloud" when right.
-- **EU + Central Asia teams.** Time-zone friendly; aligned with DACH/EU regulatory frameworks.
-- **Open-source destination.** Cozystack is Apache 2.0; the platform you migrate to is one you own.
+- **EU and Central Asia teams.** Engineering teams in the EU and Central Asia; EU contracts through AENIX s.r.o. (Czech Republic).
+- **Open-source destination.** Cozystack is Apache 2.0; you run the platform you migrate to without a platform licence fee.
 
 <!-- /BLOCK 6 -->
 
@@ -258,9 +265,11 @@ For VMware-specific destination guidance, see **[VMware alternative](/alternativ
 
 <!-- BLOCK 8: PROOF -->
 
-## VMware migrations we've supported
+## Companies running platforms built with Ænix
 
 {{< clients >}}
+
+Hosting providers running Ænix Public Cloud Platform in production.
 
 {{< quote-carousel >}}
 
@@ -270,18 +279,9 @@ For VMware-specific destination guidance, see **[VMware alternative](/alternativ
 
 <!-- BLOCK 9: PRICING -->
 
-<div class="pricing-cards-2">
+## Pricing
 
-### Assessment
-**On request**
-
-### Implementation
-Time-and-materials or fixed-scope.
-**On request**
-
-</div>
-
-If Phase 2 follows assessment, assessment fee credited subject to scope.
+The Platform Readiness Assessment is fixed-price (14 or 28 days). Implementation is quoted after the assessment, time-and-materials or fixed-scope. If implementation follows the assessment, the assessment fee is credited subject to scope. Support tiers for the resulting Cozystack platform are on the [pricing page](/pricing/).
 
 <!-- /BLOCK 9 -->
 
@@ -299,8 +299,9 @@ If Phase 2 follows assessment, assessment fee credited subject to scope.
 </div>
 
 - **[VMware migration tools & strategy](/blog/2026/05/vmware-migration-tools-and-strategy/)**
-- **[VMware alternative](/alternatives/vmware-alternative/)** — destination focus
-- **[VMware alternatives listicle](/alternatives/vmware-alternatives/)** — market scan
+- **[VMware alternative](/alternatives/vmware-alternative/)** — our recommendation
+- **[Cozystack vs VMware](/compare/cozystack-vs-vmware/)** — head-to-head comparison
+- **[Best VMware alternatives 2026](/alternatives/vmware-alternatives/)** — market comparison
 - **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
 - **[Cozystack](/products/cozystack/)**
 
@@ -308,9 +309,4 @@ If Phase 2 follows assessment, assessment fee credited subject to scope.
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
-
-<!-- SEO: title "VMware Migration — Exit VCF Without Breaking the Application | Ænix"
-Description: "VMware migration end-to-end: assessment, destination architecture, cohort-based cutover, decommission. EU engineers, no hyperscaler bias."
-Word count: ~1000.
--->
+*Ænix created Cozystack (a CNCF Sandbox project) and co-maintains it with maintainers from other companies. On top of it, Ænix offers three platforms — Public Cloud, Private Cloud and AI.*

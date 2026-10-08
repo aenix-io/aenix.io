@@ -64,68 +64,66 @@ agenda:
     body: "Where to start at home: the first non-critical workload, the stages of the move, and the support you get after the workshop."
   - time: "03:30"
     title: "Questions and conversation"
-    tag: "45 min"
+    tag: "30 min"
     kind: "social"
     body: "Open conversation over food and drinks. The speaker stays in the room — bring your own cases."
 cities:
   - city: "San Francisco Bay Area"
     country: "United States"
-    status: "confirmed"
-    date: "Mon 16 or Tue 17 Nov 2026, 10:00–14:00 PST"
-    date_iso: "2026-11-16T10:00:00-08:00"
-    end_iso: "2026-11-17T14:00:00-08:00"
+    status: "pending"
+    date: "Mon 16 or Tue 17 Nov 2026, 10:00–14:00 PST — date to be fixed"
     country_code: "US"
-    venue: "Venue to be confirmed — pick your date in the form"
+    venue: "Venue to be announced — pick your preferred date in the form"
     form: "https://webforms.pipedrive.com/f/64JohDTilmD2EUB1szgMaUn1aaetjNpyRNLfPNBC07Gi4nXCt5stsRUBmAImKTfjij"
     href: "#register"
   - city: "Seattle"
     country: "United States"
-    status: "confirmed"
+    status: "pending"
     date: "Thu, 19 Nov 2026, 10:00–14:00 PST"
     date_iso: "2026-11-19T10:00:00-08:00"
     end_iso: "2026-11-19T14:00:00-08:00"
     country_code: "US"
-    venue: "Venue to be confirmed — registered attendees hear first"
+    venue: "Date set, venue to be announced — registered attendees hear first"
     form: "https://webforms.pipedrive.com/f/63vF1jlVlfiBOitGeZZQ8zV6cUVwA6SJPabdeGfybllA91tK5eFJqLDodhayFyRLk7"
     href: "#register"
   - city: "Austin"
     country: "United States"
-    status: "confirmed"
+    status: "pending"
     date: "Mon, 23 Nov 2026, 10:00–14:00 CST"
     date_iso: "2026-11-23T10:00:00-06:00"
     end_iso: "2026-11-23T14:00:00-06:00"
     country_code: "US"
-    venue: "Venue to be confirmed — registered attendees hear first"
+    venue: "Date set, venue to be announced — registered attendees hear first"
     form: "https://webforms.pipedrive.com/f/63vZ8Sqhq3kTfmj9QcmTSmSl5Y6aUuzgdOgfnkSAXp6HWpTZqALU6x8bof92Ocz8Vt"
     href: "#register"
   - city: "Washington, DC"
     country: "United States"
-    status: "confirmed"
+    status: "pending"
     date: "Fri, 4 Dec 2026, 10:00–14:00 EST"
     date_iso: "2026-12-04T10:00:00-05:00"
     end_iso: "2026-12-04T14:00:00-05:00"
     country_code: "US"
-    venue: "Venue to be confirmed — a short hop from GTC Washington, DC"
+    venue: "Date set, venue to be announced — near NVIDIA GTC Washington, DC"
     form: "https://webforms.pipedrive.com/f/63w1tcVosco1x1H2Qr5mRsNe4aB1ODAUWGK5z2RdeT4B1qvNd6c74mtd8MTl5XNjfZ"
     href: "#register"
   - city: "Boston"
     country: "United States"
-    status: "confirmed"
+    status: "pending"
     date: "Wed, 9 Dec 2026, 10:00–14:00 EST"
     date_iso: "2026-12-09T10:00:00-05:00"
     end_iso: "2026-12-09T14:00:00-05:00"
     country_code: "US"
-    venue: "Venue to be confirmed — registered attendees hear first"
+    venue: "Date set, venue to be announced — registered attendees hear first"
     form: "https://webforms.pipedrive.com/f/64Hz5kQJeiewdkX3V9nNhO0UV7K9aXobhHk2oH2ouenjWaMZlMDxQeSt7gYiIPOeYj"
     href: "#register"
   - city: "New York"
     country: "United States"
-    status: "confirmed"
+    status: "pending"
     date: "Thu, 10 Dec 2026, 10:00–14:00 EST"
     date_iso: "2026-12-10T10:00:00-05:00"
     end_iso: "2026-12-10T14:00:00-05:00"
     country_code: "US"
-    venue: "Venue to be confirmed — registered attendees hear first"
+    venue: "Date set, venue to be announced — registered attendees hear first"
     form: "https://webforms.pipedrive.com/f/64HTdDC6aWdgBXfuCLKcSCSMJfpWNlotYXcZN6OBugFfxBrxk9D5esgw7M4RxcqTar"
     href: "#register"
 final_cta:
@@ -134,7 +132,7 @@ final_cta:
   button: "Register for your city"
   href: "#register"
 direct_answer: |
-  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. In late 2026 it runs across six U.S. cities — the San Francisco Bay Area, Seattle, Austin, Washington, DC, Boston, and New York. In one day, you migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform hosted by the CNCF — with your own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. Then a short live demo shows the same platform running AI and GPUs, so a VMware replacement doubles as an AI/GPU platform on infrastructure you own. The workshop is led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. You can attend in person or online, and afterwards every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate. Attendance is free with registration; seats are limited.**
+  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. In late 2026 it runs across six U.S. cities — the San Francisco Bay Area, Seattle, Austin, Washington, DC, Boston, and New York. In one day, you migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform hosted by the CNCF — with your own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. Then a short live demo shows the same platform running AI and GPUs, so a VMware replacement doubles as an AI/GPU platform on infrastructure you own. The workshop is led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. You can attend in person or online, and afterwards every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam. Attendance is free with registration; seats are limited.**
 
 quick_facts:
   - label: "Format"
@@ -148,7 +146,7 @@ quick_facts:
   - label: "Who it's for"
     value: "VMware administrators, sysadmins, infrastructure leads, technology executives, DevOps and platform engineers"
   - label: "After the workshop"
-    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate"
+    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs with a practice badge, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam"
   - label: "Host"
     value: "Timur Tukaev — Cozystack maintainer, Ænix co-founder"
 
@@ -170,7 +168,7 @@ faq:
   - q: "What exactly will I do with my own hands?"
     a: "Move a virtual machine off a running VMware server, deploy a database, publish a service to the network, see how monitoring and backups work — and, at the end, bring the whole setup back up from a single file."
   - q: "What happens after the workshop?"
-    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. Completing the labs earns you the Ænix Certification for Cozystack — Fundamentals certificate — also free."
+    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. You can then take the free Ænix Certification for Cozystack — Fundamentals exam (60 questions, 90 minutes, in English); the certificate comes from passing the exam. Completing the labs earns a separate practice badge. The certification study materials are currently in Russian."
   - q: "We run Oracle, SAP, or specially licensed Windows. Will it migrate?"
     a: "Maybe not — and we will say so directly. Vendor licensing restrictions are one of the topics of the honest-limitations conversation. Bring your hardest case and get a straight answer."
   - q: "Can I bring my manager or a colleague?"
@@ -314,7 +312,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Your test environment stays with you for another 30 days</strong> — for experiments and certification prep.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Take-home lab exercises</strong> — with support from the Cozystack maintainers.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>A chat where Cozystack maintainers answer your questions.</strong></span></li>
-<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate</strong> — free.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The option to take the Ænix Certification for Cozystack — Fundamentals exam</strong> — free, 60 questions in English; the labs earn a separate practice badge.</span></li>
 </ul>
 <div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Register for your city</a></div>
 </div>
@@ -325,7 +323,7 @@ faq:
 <div class="ws-cert">
 <span class="ws-cert__tag">sample</span>
 <span class="ws-cert__seal">{{< ws-icon name="cert" >}}</span>
-<span class="ws-cert__kicker">Certificate of completion</span>
+<span class="ws-cert__kicker">Awarded for passing the exam</span>
 <span class="ws-cert__title">Ænix Certification for Cozystack — Fundamentals</span>
 <span class="ws-cert__line"></span>
 <span class="ws-cert__by">Cozystack · Ænix</span>

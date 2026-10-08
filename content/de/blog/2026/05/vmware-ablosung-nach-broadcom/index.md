@@ -1,6 +1,7 @@
 ---
 title: "VMware-Ablösung nach Broadcom — Leitfaden für DACH-Service-Provider, Banken und souveräne Clouds"
-description: "Dies ist die ausführliche Begleitung zu unserer fokussierte Seite zur VMware-Alternative-Page. Sie führt durch den Wandel unter Broadcom, was eine glaubwürdige..."
+seo_title: "VMware-Ablösung nach Broadcom: Leitfaden"
+description: "VMware-Ablösung nach Broadcom: warum Teams jetzt wechseln, wie sich VMware auf Cozystack abbildet und wie eine Migration in sechs Phasen abläuft."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/vmware-ablosung-nach-broadcom.jpg"
 author: "Aenix Team"
@@ -36,16 +37,16 @@ quiz:
         - { text: "Discovery, paralleler Aufbau, Image-Migration, Cutover, Abschaltung", correct: true }
         - { text: "Ein Big-Bang-Cutover an einem einzigen Wochenende", correct: false }
       explanation: "Sechs Stufen: Discovery, paralleler Aufbau von Cozystack neben der bestehenden VMware-Umgebung, VM-Image-Migration, Cutover von Netz und Storage, Validierung samt DR-Cutover, dann die Abschaltung von VMware. Kein Big Bang: die Workloads ziehen in Kohorten um, jede wird parallel verifiziert."
-    - q: "Wie lange dauert die Migration kleinerer Bestände unter 200 VMs mit einfachem Networking?"
+    - q: "Wie lange dauert die Migration eines Bestands unter 100 VMs vom Assessment bis zur Abschaltung von VMware?"
       options:
         - { text: "1–2 Wochen", correct: false }
-        - { text: "6–12 Wochen", correct: true }
-        - { text: "2–3 Jahre", correct: false }
-      explanation: "Kleinere Bestände: 6 bis 12 Wochen von Discovery bis Abschaltung. Größere und komplexere Bestände mit vCloud Director, viel NSX oder regulierten Workloads brauchen 3 bis 9 Monate in Kohorten. Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
+        - { text: "7–10 Monate", correct: true }
+        - { text: "5 Jahre oder mehr", correct: false }
+      explanation: "Unter 100 VMs: 7–10 Monate vom Assessment bis zur Abschaltung; 100–500 VMs: 10–16 Monate; 500–2.000 VMs: 16–25 Monate in Kohorten. Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
 hreflang_en: /blog/2026/05/vmware-replacement-after-broadcom/
 ---
 
-**Dies ist die ausführliche Begleitung zu unserer [fokussierte Seite zur VMware-Alternative-Page](/de/alternativen/vmware-alternative). Sie führt durch den Wandel unter Broadcom, was eine glaubwürdige VMware-Ablösung in der Produktion tatsächlich bedeutet, und wie eine echte Migration End-to-End abläuft.**
+**Dieser Beitrag vertieft unsere Seite zur [VMware-Alternative](/de/alternativen/vmware-alternative/). Er führt durch den Wandel unter Broadcom, was eine glaubwürdige VMware-Ablösung in der Produktion tatsächlich bedeutet, und wie eine echte Migration End-to-End abläuft.**
 
 Nach Broadcom ist die VMware-Rechnung unkalkulierbar geworden. Subscription-only-Lizenzierung, verpflichtende VCF-Bündelung, Preiserhöhungen von 2-5× bei Verlängerung und das Ende der ewigen Lizenzen haben die Kalkulation für jedes Infrastruktur-Team grundlegend verändert.
 
@@ -101,25 +102,30 @@ Lizenzen enden zu ihren eigenen Bedingungen. Hardware in den Cozystack-Cluster u
 
 ## Souveränität-by-Architecture
 
-Cozystack ist Open Source unter Apache 2.0. Ihre Binaries, Ihre Hardware, Ihre Datenebene. Ænix liefert Air-Gap-Installations-Workflows und ein Beratungssupport-Modell, das keinen direkten Kunden-Umgebungszugriff erfordert.
+Cozystack ist Open Source unter Apache 2.0. Ihre Binaries, Ihre Hardware, Ihre Datenebene. Ænix liefert Air-Gap-Installations-Workflows und ein Supportmodell, bei dem Sie den Zugriff bestimmen: Beratung und GitOps-PR-Review ohne Clusterzugriff, Fernzugriff nur mit Ihrer Freigabe.
 
 Architektonische Implikationen:
 - **Tenant CRD** — jeder Mandant ist ein Kubernetes-Objekt
 - **Air-Gap-Install** unterstützt
-- **Kein Phone-Home** standardmäßig deaktiviert
-- **DORA/NIS2-konforme Steuerelemente** — operative Resilienz, Lieferantenrisikodokumentation
-- **Ænix-Support-Modell** — Beratung + Runbooks + GitOps-PR-Review (kein kubectl-Zugriff erforderlich)
+- **Kein Phone-Home** — Telemetrie ist standardmäßig deaktiviert
+- **Auf DORA/NIS2 ausgerichtete Kontrollen** — operative Resilienz, Dokumentation des Lieferantenrisikos
+- **Ænix-Supportmodell** — Zugriff nach Ihrer Wahl: Beratung, Runbooks und GitOps-PR-Review ohne Clusterzugriff; Fernzugriff auf Ihre Cluster mit Ihrer Freigabe und externes Monitoring in den höheren [Support-Stufen](/de/preise/)
 
 ## Migrations-Zeitplan
 
-- **Kleinere Bestände** (unter 200 VMs, einfaches Networking): 6-12 Wochen von Discovery bis Decommission
-- **Größere oder komplexere Bestände** (vCD, NSX-lastig, regulierte Workloads): 3-9 Monate, in Kohorten
+Vom Assessment bis zur Abschaltung von VMware:
+
+- **Unter 100 VMs:** 7–10 Monate
+- **100–500 VMs:** 10–16 Monate
+- **500–2.000 VMs:** 16–25 Monate, in Kohorten
+
+Treiber sind Regressionstests und Parallelbetriebsfenster, nicht die reine Kopiergeschwindigkeit.
 
 ## Wie geht es weiter?
 
-Für eine spezifische Bewertung Ihres VMware-Ausstiegs siehe **[fokussierte Seite zur VMware-Alternative](/de/alternativen/vmware-alternative)** oder **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+Für eine spezifische Bewertung Ihres VMware-Ausstiegs siehe **[fokussierte Seite zur VMware-Alternative](/de/alternativen/vmware-alternative/)** oder **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 ---
 
-*Ænix ist das Team hinter Cozystack — CNCF-Projekt, Kubernetes Certified Distribution.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts — CNCF Certified Kubernetes Distribution.*
 

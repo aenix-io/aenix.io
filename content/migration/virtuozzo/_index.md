@@ -1,5 +1,6 @@
 ---
 title: "Virtuozzo migration — three products, three different exits"
+seo_title: "Virtuozzo migration: three products, three exits"
 description: "Migrating off Virtuozzo: Application Management (ex-Jelastic) is a re-platform, Infrastructure is real OpenStack, and the container line has no successor."
 date: 2026-09-03
 lastmod: 2026-09-03
@@ -13,11 +14,12 @@ related_pages:
   - /tco-calculator/vs-virtuozzo/
   - /products/public-cloud-platform/
   - /products/private-cloud-platform/
-  - /products/cozystack
-  - /services/platform-readiness-assessment
+  - /products/cozystack/
+  - /services/platform-readiness-assessment/
+  - /alternatives/openstack-alternative/
   - /migration/openstack/
 direct_answer: |
-  **Migrating off Virtuozzo means naming the right product first, because the three exit in completely different ways. Virtuozzo Server, formerly Hybrid Server, is the OpenVZ-derived host running system containers and KVM guests; it passed end of maintenance in July 2024, and Virtuozzo Server 9 is a different product that does not implement system containers at all, so the container line has no successor. Virtuozzo Infrastructure, formerly Hybrid Infrastructure, is the IaaS and is a real OpenStack deployment underneath, which makes it the one path where standard tooling applies. Virtuozzo Application Management, formerly Application Platform and before that Jelastic, is a PaaS whose environment export is a topology JSON that imports only into another Virtuozzo installation; there is no lift-and-shift, and the honest path is a re-platform onto Kubernetes. Aenix runs all three onto Cozystack, an Apache 2.0 CNCF project.**
+  **Migrating off Virtuozzo means naming the right product first, because the three exit in completely different ways. Virtuozzo Server, formerly Hybrid Server, is the OpenVZ-derived host running system containers and KVM guests; it passed end of maintenance in July 2024, and Virtuozzo Server 9 is a different product that does not implement system containers at all, so the container line has no successor. Virtuozzo Infrastructure, formerly Hybrid Infrastructure, is the IaaS and is a real OpenStack deployment underneath, which makes it the one path where standard tooling applies. Virtuozzo Application Management, formerly Application Platform and before that Jelastic, is a PaaS whose environment export is a topology JSON that imports only into another Virtuozzo installation; there is no lift-and-shift, and the honest path is a re-platform onto Kubernetes. Ænix runs all three onto Cozystack, an Apache 2.0 CNCF Sandbox project.**
 quick_facts:
   - label: "Renamed in 2026"
     value: "Hybrid Infrastructure is now Virtuozzo Infrastructure, Application Platform is now Virtuozzo Application Management, Hybrid Server is now Virtuozzo Server. Search under both names."
@@ -48,7 +50,7 @@ faq:
   - q: "What happens to our OpenVZ system containers?"
     a: "They are system containers running full init systems, not OCI images, and no converter exists. Two paths are legitimate. Wrapping each as a KubeVirt virtual machine preserves the multi-process guest exactly and is bounded, predictable work, paid for in density. Rebuilding the workload as a container image is denser and cheaper to run afterwards but is per-workload effort and needs someone who knows what the workload does. Virtuozzo's own documentation concedes the mismatch, noting that applications may have problems moving to application containers because of statelessness and single-process expectations, and that this is especially relevant for orchestrators like Kubernetes. Either way the data path is the same: mount the ploop image and copy the filesystem out, because prl_disk_tool has no format conversion."
   - q: "Does Forklift support Virtuozzo?"
-    a: "No. Forklift's source providers are VMware vSphere, oVirt/RHV, OpenStack, OVA files created by vSphere, and remote KubeVirt clusters, with Hyper-V and AWS EC2 in technology preview. There is no Virtuozzo provider, and the OVA route is closed twice over — Forklift accepts only vSphere-created OVAs, and Virtuozzo has no OVA export. On Virtuozzo Infrastructure the OpenStack provider is the lever because the API is genuinely OpenStack. For Virtuozzo Server and Application Management, Aenix engineering builds the export and conversion path as part of the engagement."
+    a: "No. Forklift's source providers are VMware vSphere, oVirt/RHV, OpenStack, OVA files created by vSphere, and remote KubeVirt clusters, with Hyper-V and AWS EC2 in technology preview. There is no Virtuozzo provider, and the OVA route is closed twice over — Forklift accepts only vSphere-created OVAs, and Virtuozzo has no OVA export. On Virtuozzo Infrastructure the OpenStack provider is the lever because the API is genuinely OpenStack. For Virtuozzo Server and Application Management, Ænix engineering builds the export and conversion path as part of the engagement."
 service:
   type: "Virtuozzo Migration"
   areaServed: ["EU", "DACH", "Central Asia"]
@@ -188,7 +190,7 @@ The mapping to Kubernetes:
 </div>
 </div>
 
-1. **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — inventory split by product; container-by-container triage into wrap or rebuild; Forklift's OpenStack provider tested against your actual Virtuozzo Infrastructure version with the qcow2 fallback proven alongside it; tenant and address design; and for Application Management a repricing model next to the technical plan.
+1. **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** (14 or 28 days, fixed price) — inventory split by product; container-by-container triage into wrap or rebuild; Forklift's OpenStack provider tested against your actual Virtuozzo Infrastructure version with the qcow2 fallback proven alongside it; tenant and address design; and for Application Management a repricing model next to the technical plan.
 2. **Pilot cohort** — the easiest real workload first. On Application Management estates that is the Docker and Kubernetes environments, where images already exist.
 3. **Rolling migration** — cohort by cohort with parallel-run validation, Virtuozzo hosts rebuilt into the target cluster as they free up.
 4. **Operations** — your team with **[Cozystack enterprise support](/products/cozystack-enterprise-support/)** behind it, or operated by Ænix.
@@ -201,4 +203,4 @@ Model the cost side before committing: the **[Virtuozzo vs Cozystack five-year T
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF project, Apache 2.0).*
+*Ænix created Cozystack (a CNCF Sandbox project, Apache 2.0) and co-maintains it with maintainers from other companies.*

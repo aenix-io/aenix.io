@@ -1,5 +1,6 @@
 ---
 title: "Enterprise Platform Engineering — Organisationsdesign, Personalbedarf und Fehlermuster ab 1.000 Engineers"
+seo_title: "Platform Engineering ab 1.000 Engineers"
 description: "Organisationsdesign, Personalrechnung, Governance und wiederkehrende Fehlermuster beim Aufbau von Platform Engineering in Organisationen ab 1.000 Engineers."
 slug: "enterprise-platform-engineering-organisationsdesign"
 date: "2026-05-11"
@@ -313,8 +314,8 @@ Reihenfolge bringen. Gestaffelt ausrollen. Adoptionskennzahlen.
 
 Die Ænix-Engineers reduzieren ihre direkte Beteiligung schrittweise.
 Die Platform-Engineering-Funktion des Kunden übernimmt die
-Verantwortung. Der Ænix-Retainer läuft für Beratung und Tier-3-SLA-Eskalation
-weiter.
+Verantwortung. Der Ænix-Retainer läuft für Beratung und Eskalationen unter SLA
+(Plus- oder Enterprise-Support-Stufe) weiter.
 
 ## Wann dieses Projekt passt
 

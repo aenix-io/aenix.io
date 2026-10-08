@@ -1,5 +1,6 @@
 ---
 title: "Vendor-neutral cloud strategy — what an honest cloud advisory engagement looks like in 2026"
+seo_title: "Vendor-neutral cloud strategy: how the engagement works"
 description: "What a vendor-neutral cloud strategy engagement actually delivers, and how it differs from Big-4 cloud advisory and hyperscaler-aligned consultancies."
 date: "2026-05-06"
 cover_image: "/img/blog/covers/cloud-strategy-engagement-vendor-neutral.jpg"
@@ -98,8 +99,8 @@ and growth trajectory; mismatches cost more than they save.
 
 ### 5. How does the regulatory landscape evolve?
 
-DORA in force since Jan 2025. NIS2 transposition Oct 2024. EUCS
-finalising. Sectoral overlays expanding. Sovereign-cloud frameworks
+DORA applies since Jan 2025. NIS2 transposition deadline Oct 2024. EUCS
+adoption still pending. Sectoral overlays expanding. Sovereign-cloud frameworks
 sharpening. The strategy can't be locked to today's regulatory
 state; it has to incorporate likely 24-36 month evolution.
 
@@ -180,7 +181,7 @@ priority hiring queue.
 
 ### Workstream 5 — Regulatory trajectory
 
-24-36 month outlook on applicable regulations. EUCS finalisation,
+24-36 month outlook on applicable regulations. EUCS adoption,
 NIS2 enforcement, sectoral overlay sharpening, sovereignty
 framework expansion. How the workload-portfolio strategy adapts as
 the regulatory landscape evolves.

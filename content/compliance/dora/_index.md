@@ -1,6 +1,6 @@
 ---
 title: "DORA evidence from the Ænix platform layer"
-description: "Platform-side DORA evidence: resilience, backup and restore, incident records, and the ICT third-party risk chapter where self-hosted open source changes the answer."
+description: "Platform-side DORA evidence: resilience, backup and restore, incident records, and the ICT third-party risk chapter, where self-hosted open source helps."
 page_type: "solution-landing"
 language: "en"
 quick_facts_style: "rows"
@@ -15,7 +15,7 @@ related_pages:
   - /industries/financial-services/
   - /products/private-cloud-platform/
 direct_answer: |
-  **This page is the platform-side half of a DORA conversation: what the Ænix platforms actually provide against Regulation (EU) 2022/2554, and what no infrastructure can hold for you. For the chapter that decides most platform discussions — dependence on a single ICT provider — the answer is unusually strong. The engine is open-source software under Apache 2.0, it runs on your own hardware, and leaving it means moving standard Kubernetes objects and virtual machines rather than unwinding a proprietary format, so the Article 28(8) exit strategy is something you can rehearse rather than a clause promising cooperation. On resilience the platform brings replicated storage, live migration, continuously reconciled declared state, multi-datacenter topologies and encrypted backups. DORA itself binds financial entities, not platforms; Aenix makes no claim to be DORA compliant or DORA certified. For the assessment programme, see the DORA compliance engagement.**
+  **This page is the platform-side half of a DORA conversation: what the Ænix platforms actually provide against Regulation (EU) 2022/2554, and what no infrastructure can hold for you. For the chapter that decides most platform discussions — dependence on a single ICT provider — the answer is unusually strong. The engine is open-source software under Apache 2.0, it runs on your own hardware, and leaving it means moving standard Kubernetes objects and virtual machines rather than unwinding a proprietary format, so the Article 28(8) exit strategy is something you can rehearse rather than a clause promising cooperation. On resilience the platform brings replicated storage, live migration, continuously reconciled declared state, multi-datacenter topologies and encrypted backups. DORA itself binds financial entities, not platforms; Ænix makes no claim to be DORA compliant or DORA certified. For the assessment programme, see the DORA compliance engagement.**
 quick_facts:
   - label: "What this page is"
     value: "Platform-side control evidence. The regulator-facing engagement lives on the DORA compliance solution page."
@@ -30,16 +30,16 @@ quick_facts:
   - label: "Backups"
     value: "Velero with encryption by default — but the default bucket lives inside the cluster it protects, which is hard to reconcile with the segregation Article 12(3) expects."
   - label: "Certification"
-    value: "None exists. DORA defines obligations for financial entities; there is no DORA certificate for a platform, and Aenix does not claim one."
+    value: "None exists. DORA defines obligations for financial entities; there is no DORA certificate for a platform, and Ænix does not claim one."
 faq:
-  - q: "Is the Aenix platform DORA compliant?"
-    a: "The question does not apply to a platform. Financial entities are subject to DORA; platforms are part of the ICT estate those entities manage. What the Aenix platforms contribute is replication, live migration, backup and restore, observability, audit logging and an architecture with no vendor dependency to unwind. There is no DORA certification mark to hold, for us or for anyone."
+  - q: "Is the Ænix platform DORA compliant?"
+    a: "The question does not apply to a platform. Financial entities are subject to DORA; platforms are part of the ICT estate those entities manage. What the Ænix platforms contribute is replication, live migration, backup and restore, observability, audit logging and an architecture with no vendor dependency to unwind. There is no DORA certification mark to hold, for us or for anyone."
   - q: "Does running on our own hardware remove ICT third-party risk?"
-    a: "Self-hosting removes the platform vendor from the critical path — often the largest single component of that risk. Hardware suppliers, datacenter operators and any integrator you contract remain third parties and belong in the register of information. If you buy support, hosting or operations from Aenix, Aenix is one of them."
+    a: "Self-hosting removes the platform vendor from the critical path — often the largest single component of that risk. Hardware suppliers, datacenter operators and any integrator you contract remain third parties and belong in the register of information. If you buy support, hosting or operations from Ænix, Ænix is one of them."
   - q: "Does the platform go into our register of information?"
     a: "The register under Article 28(3) records contractual arrangements for the use of ICT services. Downloading and self-hosting Apache 2.0 software creates no contractual arrangement, so there is no counterparty to name and nothing about the open-source project itself to register. The moment you buy support, hosting or integration around it, that supplier is an ICT third-party service provider under Article 3(19) and belongs in the register, with the function it supports and whether that function is critical or important. Confirm the treatment with your own competent authority — supervisory practice on open-source components is not uniform."
   - q: "What about the right to audit?"
-    a: "Article 30(3)(e) is a contractual right of access, inspection and audit for you and for your competent authority, exercised against a provider. With no provider in the path there is no contract to carry it, and inspecting the platform means reading public source and running checks against your own cluster. Where you contract an operator, those access and audit rights — and the Article 30(3)(f) exit and transition provisions — belong in that contract rather than in a claim about the software."
+    a: "Article 30(3)(e)(i) is a contractual right of access, inspection and audit for you and for your competent authority, exercised against a provider. With no provider in the path there is no contract to carry it, and inspecting the platform means reading public source and running checks against your own cluster. Where you contract an operator, those access and audit rights — and the Article 30(3)(f) exit and transition provisions — belong in that contract rather than in a claim about the software."
   - q: "How is this different from the DORA compliance solution page?"
     a: "Different questions. The solution page describes a fixed-price readiness engagement: a control-level map of what your organisation can demonstrate today, concentration-risk analysis to the second supplier hop, exit-feasibility, and a remediation plan. This page describes what the infrastructure itself provides and how that was observed. Read the solution page for the programme, this one for the artefacts it draws on."
   - q: "Can we test failure scenarios safely?"
@@ -59,7 +59,7 @@ faq:
 
 This is the **platform-side** half. It describes what the infrastructure provides against DORA and how that was observed. The organisational half — the gap analysis, the control-level map of what your entity can demonstrate today, concentration risk mapped to the second supplier hop, exit-feasibility with time-to-exit estimates, a remediation plan — is a fixed-price engagement described on the **[DORA compliance](/solutions/dora-compliance/)** page. Start there if what you need is the programme; stay here if what you need is the evidence underneath it.
 
-**On provenance.** The observations below were made against **Cozystack v1.6** on a reference cluster. Cozystack is the open-source, Apache 2.0, CNCF-hosted engine that Ænix creates and maintains, and the Ænix Public Cloud Platform, Private Cloud Platform and AI Platform are distributions of it. There is no separate closed build. That matters twice over here: it is why the evidence transfers, and it is the substance of the Chapter V argument below.
+**On provenance.** The observations below were made against **Cozystack v1.6** on a reference cluster. Cozystack is the open-source, Apache 2.0, CNCF-hosted engine that Ænix created and co-maintains with maintainers from other companies, and the Ænix Public Cloud Platform, Private Cloud Platform and AI Platform are built on it. The proprietary Ænix modules (WHMCS integration, billing and portal components) sit on top and do not change the infrastructure controls described here. That matters twice over here: it is why the evidence transfers, and it is the substance of the Chapter V argument below.
 
 **And what the platform cannot do is hold the obligation.** DORA — Regulation (EU) 2022/2554 — has applied since 17 January 2025 and binds the categories of financial entity listed in Article 2: banks, insurers, investment firms, payment and e-money institutions, crypto-asset service providers and others. ICT third-party service providers are not in scope directly; a small number are designated critical by the European Supervisory Authorities under Article 31 and placed under an EU Oversight Framework with a Lead Overseer, which is a different regime from the competent-authority supervision financial entities face.
 
@@ -138,6 +138,12 @@ Two properties of the platform help the general programme. A tenant gives you an
 TLPT is a different exercise, and the distinction matters: Article 26 tests run against live production systems supporting critical or important functions, so a tenant copy does not substitute for one. Where the platform is operated for you, or supports a critical or important function, the ICT third-party service providers involved are drawn into the scope of that test and have to be arranged with in advance.
 
 The [CIS Benchmark](/compliance/cis-benchmark/) page shows one such test executed against a live cluster, together with the reasoning that turns a raw report into something an assessor can use.
+
+---
+
+## Where this has been applied
+
+Two anonymised write-ups show the platform inside regulated finance: a [private cloud with developer self-service in a bank](/case-studies/private-cloud-in-a-bank/) and a [unified cloud portal for a financial group](/case-studies/unified-cloud-portal-financial-group/). Neither is a DORA certification of anything; both show the architecture this page describes running in production.
 
 ---
 

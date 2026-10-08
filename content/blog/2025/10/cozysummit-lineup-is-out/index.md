@@ -1,6 +1,6 @@
 ---
-title: "👻 CozySummit lineup is out!"
-description: "Yaaay! We’ve published the schedule for CozySummit 2025 Virtual — an online conference for Cozystack developers and users, hosted together…"
+title: "The CozySummit 2025 Virtual Lineup Is Out"
+description: "The schedule for CozySummit 2025 Virtual is published: an online conference for Cozystack developers and users, hosted together with the CNCF."
 date: "2025-10-14"
 author: "Timur Tukaev"
 type: "news"
@@ -10,13 +10,11 @@ cover_image: "/img/blog/medium/cozysummit-lineup-is-out/cover.png"
 source_url: "https://medium.com/@tym83/cozysummit-lineup-is-out-dd34315ff33f"
 ---
 
----
 
-### 👻 CozySummit lineup is out!
 
 Yaaay! We’ve published the schedule for CozySummit 2025 Virtual — an online conference for Cozystack developers and users, hosted together with the CNCF. The talk lineup looks great. Just look at that!
 
-![image](/img/blog/medium/cozysummit-lineup-is-out/cover.png)
+![CozySummit 2025 Virtual talk lineup](/img/blog/medium/cozysummit-lineup-is-out/cover.png)
 
 Wednesday, December 3, 2025
 

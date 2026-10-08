@@ -1,6 +1,7 @@
 ---
 title: "Public-sector sovereign cloud — from procurement framework to running platform"
-description: "How procurement leads and IT directors turn sovereignty mandates into a running cloud platform."
+seo_title: "Public-sector sovereign cloud: procurement to platform"
+description: "How public-sector procurement leads and IT directors turn sovereignty mandates (EUCS, SecNumCloud, BSI C5, NIS2) into a running, auditable cloud platform."
 date: "2026-05-25"
 cover_image: "/img/blog/covers/public-sector-sovereign-cloud-procurement.jpg"
 author: "Aenix Team"
@@ -25,24 +26,24 @@ quiz:
         - { text: "They do not support GDPR Articles 44-50", correct: false }
         - { text: "Provider retains access to encryption keys", correct: true }
       explanation: "The article calls this out specifically as the most common point where hyperscaler 'sovereign' offerings fall short — the provider retains operational access to keys, which fails the substantive condition for customer-controlled encryption keys."
-    - q: "How far should the supplier chain be documented under Article 28-equivalent provisions across the major frameworks?"
+    - q: "How far should the supplier chain be documented under the supply-chain provisions of the major frameworks?"
       options:
         - { text: "Only the first hop is required", correct: false }
         - { text: "At least to the second hop", correct: true }
         - { text: "No documentation needed under GDPR", correct: false }
-      explanation: "The post explains that Article 28-equivalent provisions expect documentation of the supplier chain at least to the second hop, and that most hyperscaler-based sovereign-cloud arrangements stop at the first hop (the hyperscaler itself)."
+      explanation: "The post explains that supply-chain provisions (DORA Art. 28, NIS2 Art. 21(2)(d) and national schemes) expect documentation of the supplier chain at least to the second hop, and that most hyperscaler-based sovereign-cloud arrangements stop at the first hop (the hyperscaler itself)."
     - q: "Which entity does the post identify as Aenix's EU contracting entity?"
       options:
         - { text: "AENIX INC (Delaware)", correct: false }
         - { text: "AENIX s.r.o. (Czechia)", correct: true }
         - { text: "AENIX GmbH (Germany)", correct: false }
       explanation: "The article states that AENIX s.r.o. in Czechia is the EU contracting entity, while AENIX INC in Delaware is the US contracting entity."
-    - q: "What is the typical end-to-end timeline from project start to certified production for a public-sector sovereign cloud engagement?"
+    - q: "How does certification affect the timeline of a public-sector sovereign cloud engagement?"
       options:
-        - { text: "12-36 months end-to-end", correct: true }
-        - { text: "3-6 months fast-track", correct: false }
-        - { text: "6-12 months phased rollout", correct: false }
-      explanation: "The post specifies a 12-36 month total timeline from project start to certified production — substantially longer than private-sector engagements because of certification overhead, but compounding into annual recertification afterwards."
+        - { text: "Certification runs 6-12 months alongside the build, so certified production comes after the platform is live", correct: true }
+        - { text: "Certification is granted automatically once the platform is live", correct: false }
+        - { text: "Public-sector workloads need no certification at all", correct: false }
+      explanation: "The post describes a certification cycle of 6-12 months running in parallel with the platform build, followed by annual recertification. Certified production therefore comes later than the platform itself, but the certification then carries forward."
 ---
 
 
@@ -59,11 +60,11 @@ simultaneously.
 ### EU level
 
 - **EUCS (EU Cybersecurity Certification Scheme for Cloud Services)** —
-  emerging EU-wide framework, finalised in 2025. Three assurance levels
+  proposed EU-wide scheme (adoption still pending). Three assurance levels
   (Basic, Substantial, High). High level requires substantive
   sovereignty controls.
-- **NIS2** — applies to public administration as an essential entity
-  category (Annex I). Article 21 + Article 23 obligations.
+- **NIS2** — public administration is an Annex I sector; central-government
+  entities are essential entities (Article 3). Article 21 + Article 23 obligations.
 - **GDPR** — personal-data baseline, cross-border-transfer rules under
   Articles 44-50.
 
@@ -83,9 +84,7 @@ Other member states have variations.
 ### Central Asia and APAC
 
 - **Kazakhstan** — procurement-mandated sovereignty for public-sector
-  workloads via goszakup.gov.kz / mitwork.kz / zakup.sk.kz. Active
-  sovereign cloud market, including regional telco sovereign cloud
-  product launches.
+  workloads via goszakup.gov.kz / mitwork.kz / zakup.sk.kz.
 - **Singapore: IM8** — Government IT security standards.
 - **India: MeitY** — Ministry of Electronics IT, including STQC
   Empanelled CSP framework.
@@ -94,7 +93,7 @@ Other member states have variations.
 
 ### Sectoral overlays
 
-- Defence-adjacent workloads (most jurisdictions): national
+- Classified workloads (most jurisdictions): national
   classification overlay
 - Healthcare: national health-data sovereignty rules
 - Critical-infrastructure: sectoral cybersecurity overlays
@@ -128,14 +127,15 @@ checks).
 
 ### 4. Supplier-chain transparency
 
-Article 28-equivalent provisions across the frameworks expect
+Supply-chain provisions across the frameworks (DORA Art. 28, NIS2
+Art. 21(2)(d), national schemes) expect
 documentation of the supplier chain at least to the second hop. Most
 hyperscaler-based sovereign-cloud arrangements stop at the first hop
 (the hyperscaler itself).
 
 ### 5. Air-gap deployment option
 
-For the most sensitive workloads — classified, defence-adjacent,
+For the most sensitive workloads — classified,
 healthcare-with-strict-residency. Updates flow through controlled
 channels (customer-side artefact registry, manual approval). Most
 sovereign-cloud frameworks at High level require air-gap support as
@@ -170,10 +170,10 @@ simultaneously:
 - **Open-source platform** — Cozystack under Apache 2.0, CNCF Project,
   vendor-neutral substrate. Customer can audit, modify, or replace
   the platform vendor.
-- **Customer-controlled keys** — External Secrets Operator backed by
-  customer HSM; Ænix never holds keys.
-- **Air-gap support** — documented for classified-data and
-  defence-adjacent use cases.
+- **Customer-held keys** — volume encryption is opt-in per storage
+  class and key management is designed with you; Ænix never holds keys.
+- **Air-gap support** — documented air-gapped install workflow for
+  classified-data use cases.
 - **Self-hosted observability** — VictoriaMetrics + VictoriaLogs in
   jurisdiction; no SaaS-observability residency leak.
 - **Customer-controlled identity** — Keycloak / Active Directory /
@@ -199,8 +199,8 @@ that private-sector engagements are not. A few practical realities:
 Public-sector RFPs typically specify which frameworks must be
 satisfied (SecNumCloud High, BSI C5, EUCS Substantial, etc.). The
 response must demonstrate substantive compliance, not just intent.
-Ænix engagement model includes tender-response support, with named
-references from prior public-sector engagements where allowed.
+Ænix engagement model includes tender-response support; references
+can be shared under NDA where the customer allows it.
 
 ### Multi-year framework agreements
 
@@ -214,7 +214,8 @@ agreement requirements.
 
 Several public-sector mandates explicitly require non-hyperscaler
 sovereign provision. Ænix's open-core model — customer hardware,
-customer keys, customer operational control, optional Ænix support
+customer-held keys where encryption is enabled, customer operational
+control, optional Ænix support
 — fits these mandates structurally rather than via contractual
 workarounds.
 
@@ -223,8 +224,8 @@ workarounds.
 ### Phase 0 — Framework scoping
 
 Confirm applicable frameworks. Identify the highest-bar one (usually
-SecNumCloud High for French, BSI C5 for German, EUCS High for EU-wide,
-Kazakhstan procurement-portal sovereignty for KZ). Design the
+SecNumCloud High for French, BSI C5 for German, EUCS High where
+EU-wide requirements apply, national procurement rules elsewhere). Design the
 architecture against the highest bar; map down to the others.
 
 ### Phase 1 — Architecture and procurement-response work
@@ -237,7 +238,10 @@ Typical duration: 2-4 months.
 Private Cloud Platform models)
 
 Multi-DC deployment, air-gap option enabled if applicable, sovereign
-identity integration, audit-isolated environments. 6-18 months.
+identity integration, audit-isolated environments. A national
+multi-region programme runs a 3-6 month pilot, then 9-18 months to full
+multi-region operation; a single-agency private cloud is a 3-12 month
+build after a 14-28 day assessment.
 
 ### Phase 3 — Certification cycle
 
@@ -248,27 +252,20 @@ Typical certification cycle: 6-12 months parallel to Phase 2.
 
 ### Phase 4 — Production operations
 
-Customer team operates the platform under Ænix advisory + Tier-3
-SLA. Annual recertification cycle (most frameworks).
+Customer team operates the platform with Ænix advisory and a Plus or
+Enterprise support tier (see [/pricing/](/pricing/)). Annual
+recertification cycle (most frameworks).
 
-Total timeline: 12-36 months from project start to certified
-production. Substantially longer than private-sector engagements due
-to certification overhead, but the certification value compounds —
+Certified production comes later than in private-sector engagements
+because of the certification cycle, but the certification value compounds —
 once certified, the platform retains certification with annual
 recertification rather than per-engagement.
 
 ## Ænix's existing public-sector posture
 
-We currently operate within established EU and Central Asia
-public-sector procurement frameworks. Specific named engagements
-remain confidential under procurement-confidentiality rules; named
-case studies in public sector typically follow a 3-5 year
-publication lag.
-
-What we will say publicly: Ænix has multi-year engagements with
-Kazakhstan procurement-portal-listed sovereign cloud products and EU
-member-state regional digitalisation programmes. Concrete references available
-under NDA in the discovery call.
+Ænix contracts through AENIX s.r.o. (EU) and AENIX INC (US) and works
+within public-sector procurement frameworks. Specific engagements are
+confidential; references are available under NDA in the discovery call.
 
 ## When this engagement model fits
 
@@ -277,7 +274,7 @@ Strong fit:
 - National sovereign cloud initiatives (public, public-private
   partnership, sovereign cloud operator)
 - EU member-state regional / sectoral cloud programmes
-- Defence-adjacent or classified-data hosting with air-gap requirement
+- Classified-data hosting with an air-gap requirement
 - Healthcare sovereign cloud at national or regional level
 - Education / research consortia with multi-decade planning horizon
 
@@ -304,6 +301,6 @@ Poor fit:
 - **[Sovereign Cloud Builder services](/services/sovereign-cloud-builder/)** —
   the engagement type
 - **[Build sovereign cloud — playbook for EU and Central Asia](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)** —
-  EU + KZ sovereign cloud playbook
+  EU and Central Asia sovereign cloud playbook
 - **[Data residency requirements in 2026](/blog/2026/05/data-residency-requirements-2026/)** —
   per-layer residency walkthrough

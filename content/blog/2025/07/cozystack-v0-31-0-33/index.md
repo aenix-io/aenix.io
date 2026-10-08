@@ -1,6 +1,7 @@
 ---
-title: "Cozystack v0.31–0.33"
-description: "It’s been a while since we last covered Cozystack’s updates — time to fix that! We’re thrilled to showcase a wealth of new features and…"
+title: "Cozystack v0.31–0.33: Air Gap, Backup System, AI Workloads in Kubernetes and More"
+seo_title: "Cozystack v0.31–0.33: air gap, backups and AI"
+description: "Cozystack v0.31 to v0.33 bring air-gapped installs, a new backup system, AI workloads in Kubernetes, ARM support, NFS and cozypkg as a Helm replacement."
 date: "2025-07-09"
 author: "Timur Tukaev"
 type: "announcement"
@@ -8,19 +9,19 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI and ML", "GPU", "Multi-tenan
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-31-0-33/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-31-0-33-ae241c739b23"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack v0.31–0.33 Releases: Air Gap, Backup System, AI workloads in K8s, replace for Helm and other features
 
 It’s been a while since we last covered Cozystack’s updates — time to fix that! We’re thrilled to showcase a wealth of new features and key improvements in this roundup. For brevity, we’ve curated only the most significant changes here (you’ll find all fixes and enhancements in the release notes, linked throughout the article).
 
-![image](/img/blog/medium/cozystack-v0-31-0-33/cover.jpg)
+![Cozystack releases v0.31 to v0.33](/img/blog/medium/cozystack-v0-31-0-33/cover.jpg)
 
 > **What is Cozystack.** Cozystack is a free PaaS and framework for building clouds that unifies VMs, containers, and GPU workloads under Kubernetes. Companies can turn hardware into a cloud: offer users or customers managed K8s, VMs, managed data bases, applications and GPU services. With KubeVirt integration, multi-tenancy, and bare-metal simplicity, it lets enterprises deploy AI, databases, or edge apps without vendor lock-in. Cozystack is a CNCF Sandbox project.
 
-### V0.33.0: Improved Allocation Management, New Backup System, NFS Support
+## V0.33.0: Improved Allocation Management, New Backup System, NFS Support
 
 Cozystack 0.33.0 introduces unified resource management with global CPU/memory allocation ratios now applied across VMs, apps, and quotas. The update delivers Velero-powered PVC backups, NFS storage support, and CPU pinning for multi-socket systems, while simplifying resource definitions with automatic migration from legacy configs.
 
@@ -69,13 +70,13 @@ All changes: [v0.33.0](https://github.com/cozystack/cozystack/releases/tag/v0.33
 
 Many thanks to all contributors.
 
-### v0.32.0: cozypkg, PostgreSQL backups, un-hardcoded cozy.local
+## v0.32.0: cozypkg, PostgreSQL backups, un-hardcoded cozy.local
 
 Cozystack’s latest release revolutionizes platform management by replacing Helm with cozypkg as the default package manager, while introducing granular CPU allocation in vCPUs and tenant-level registry mirror support. The update brings a lot of fixes and modernizes core components including Flux and Cilium, alongside new OCI installation docs.
 
-### Major Features and Improvements
+## Major Features and Improvements
 
-**cozypkg.** cozy wrapper around Helm and Flux CD for local development. [Article](https://blog.aenix.io/cozypkg-how-we-simplified-local-development-with-helm-and-flux-003c8ed839ca) about new tool.
+**cozypkg.** cozy wrapper around Helm and Flux CD for local development. [Article](/blog/2025/06/cozypkg-how-we-simplified-local-development-with-helm-and-flux/) about new tool.
 
 ```
 Usage:
@@ -106,12 +107,12 @@ Other Features and Improvements
 - Introduce cluster-domain option and un-hardcode `cozy.local`. Previously, management clusters used our non-default domain while Kubernetes DNS defaulted to `cluster.local` — forcing constant workarounds for apps expecting the standard domain. This change eliminates those compatibility headaches.
 - Add RBAC rules to allow port forwarding in KubeVirt for SSH via *virtctl*.
 - Add events and audit logging. Event and audit log collection is now implemented.
-- Introduce new functionality for [backup](https://cozystack.io/docs/reference/applications/postgres/#backup-parameters) and [restore](https://cozystack.io/docs/reference/applications/postgres/#how-to-restore-backup) in PostgreSQL.
+- Introduce new functionality for [backup](https://cozystack.io/docs/) and [restore](https://cozystack.io/docs/) in PostgreSQL.
 - Refactor resources in managed applications.
 - Make VMAgent’s `extraArgs` tunable.
 - Introduce *cozyreport* tool and gather reports in CI. All diagnostic information is now preserved as build artifacts.
 
-### Components Updates
+## Components Updates
 
 - Introduce cozykpg, update to v1.1.0.
 - Update flux-operator to 0.23.0, Flux to 2.6.x.
@@ -122,7 +123,7 @@ Other Features and Improvements
 - Update cozy-proxy to v0.2.0.
 - Update Kafka Operator to 0.45.1-rc1.
 
-### New Documentation Pages
+## New Documentation Pages
 
 - [Oracle Cloud Infrastructure installation guide](https://cozystack.io/docs/operations/talos/installation/oracle-cloud/).
 - [Cluster configuration with talosctl](https://cozystack.io/docs/operations/talos/configuration/talosctl/).
@@ -137,11 +138,11 @@ Many thanks to all contributors and especially to new contributors:
 - [@kevin880202](https://github.com/kevin880202) made their first contribution in [#948](https://github.com/cozystack/cozystack/pull/948)
 - [@mattia-eleuteri](https://github.com/mattia-eleuteri) made their first contribution in [#1027](https://github.com/cozystack/cozystack/pull/1027)
 
-### v0.31: AI Workloads in Kubernetes, ARM Support, Air Gap and Smarter Autoscaling
+## v0.31: AI Workloads in Kubernetes, ARM Support, Air Gap and Smarter Autoscaling
 
 v031 supercharges AI/ML workloads with native NVIDIA GPU support in Kubernetes, letting users deploy GPU-accelerated applications like Stable Diffusion. The update also delivers ARM64 beta support, smarter auto-scaling via VerticalPodAutoscaler, and enhanced VM management with exportable KubeVirt machines — all backed by a more robust release cycle.
 
-### Major Features and Improvements
+## Major Features and Improvements
 
 **Installing Talos in Air-Gapped Environments.** We cooked a new [guide](https://cozystack.io/docs/operations/talos/configuration/air-gapped/) for configuring and bootstrapping Talos Linux clusters in air-gapped environments).
 
@@ -163,16 +164,16 @@ Other Features and Improvements
 - Tenant HelmRelease Reconcile Controller. This controller propagates configuration changes to tenant workloads and ensures that any HelmRelease defined in a tenant stays in sync with platform updates. It improves the reliability of deploying managed applications in Cozystack.
 - Configurable KubeVirt CPU Overcommit. The CPU allocation ratio in KubeVirt (how virtual CPUs are overcommitted relative to physical) is now configurable via the `cpu-allocation-ratio` value in the Cozystack configmap. This means Cozystack administrators can now tune CPU overcommitment for VMs to balance performance vs. density.
 - KubeVirt VM Export. Cozystack now allows exporting KubeVirt virtual machines. This feature, enabled via KubeVirt’s VirtualMachineExport capability, lets users snapshot or back up VM images.
-- Support for various storage classes in Virtual Machines. The virtual-machine application (since version 0.9.2) lets you pick any `StorageClass` for a VM’s system disk instead of relying on a hard-coded PVC. Refer to values `systemDisk.storage` and `systemDisk.storageClass` in the [application’s configs](https://cozystack.io/docs/reference/applications/virtual-machine/#common-parameters).
+- Support for various storage classes in Virtual Machines. The virtual-machine application (since version 0.9.2) lets you pick any `StorageClass` for a VM’s system disk instead of relying on a hard-coded PVC. Refer to values `systemDisk.storage` and `systemDisk.storageClass` in the [application’s configs](https://cozystack.io/docs/).
 
-### New documentation pages
+## New documentation pages
 
 - [Installing Talos in Air-Gapped Environment](https://cozystack.io/docs/operations/talos/configuration/air-gapped/): new guide for configuring and bootstrapping Talos Linux clusters in air-gapped environments).
 - [Cozystack Bundles](https://cozystack.io/docs/guides/bundles/): new page in the learning section explaining how Cozystack bundles work and how to choose a bundle.
-- [Managed Application Reference](https://cozystack.io/docs/reference/applications/): A set of new pages in the docs, mirroring application docs from the Cozystack dashboard.
+- [Managed Application Reference](https://cozystack.io/docs/): A set of new pages in the docs, mirroring application docs from the Cozystack dashboard.
 - LINSTOR Networking: Guides on [configuring dedicated network for LINSTOR](https://cozystack.io/docs/operations/storage/dedicated-network/) and [configuring network for distributed storage in multi-datacenter setup](https://cozystack.io/docs/operations/stretched/linstor-dedicated-network/).
 
-### New Release Lifecycle
+## New Release Lifecycle
 
 The Cozystack community has introduced a new release policy for the platform. New release lifecycle is changing to provide a more stable and predictable lifecycle to customers running Cozystack in mission-critical environments.
 

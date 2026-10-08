@@ -1,5 +1,6 @@
 ---
 title: "OpenStack-Migration — ein kohortenbasiertes Playbook für den Umstieg auf Cozystack 2026"
+seo_title: "OpenStack-Migration zu Cozystack in Kohorten"
 description: "Kohortenbasiertes Playbook für die Migration von produktivem OpenStack zu Cozystack: Komponenten-Mapping, Image-Konvertierung, Netzwerk, Übergabe und Zeitplan."
 slug: "openstack-migration-cozystack-kohorten-playbook"
 date: "2026-05-20"
@@ -20,12 +21,12 @@ quiz:
         - { text: "Cilium auf Talos (Netzwerkschicht)", correct: false }
         - { text: "LINSTOR (Block-Storage-Schicht)", correct: false }
       explanation: "Laut Komponenten-Mapping: Nova (Compute) → KubeVirt auf Talos. Neutron entspricht Cilium (eBPF), Cinder entspricht LINSTOR, dem per DRBD replizierten Block Storage, den Cozystack mitliefert."
-    - q: "Welcher der drei Migrationstreiber hängt strukturell damit zusammen, dass Red Hat OSP in Richtung OpenShift Virtualization überführt wird?"
+    - q: "Welcher der drei Migrationstreiber hängt damit zusammen, dass Red Hat OSP-Kunden zu OpenShift-basierten Angeboten lenkt?"
       options:
         - { text: "Fachkräftemangel (schrumpfender Pool an OpenStack-Know-how)", correct: false }
-        - { text: "Lebenszyklus der Hersteller-Distributionen (OSP 17/18 als letzte Major-Linien)", correct: true }
+        - { text: "Lebenszyklus der Hersteller-Distributionen (Anbieter ändern ihren Kurs)", correct: true }
         - { text: "Grenze des Servicekatalogs (begrenzte Day-2-Plattformfunktionen)", correct: false }
-      explanation: "Red Hat OSP 17/18 sind die letzten Major-Release-Linien, während Red Hat auf OpenShift Virtualization umschwenkt. Mirantis hat diesen Schritt schon vor Jahren vollzogen; Canonical Charmed OpenStack wird im Enterprise-Vertrieb nur noch schmaler vermarktet. Der Lebenszyklus der Hersteller-Distributionen ist der strukturelle Druck, der die Entscheidung erzwingt."
+      explanation: "Red Hat lenkt OSP-Kunden zu OpenShift-basierten Angeboten, und der Markt für OpenStack-Distributionen konsolidiert sich. Prüfen Sie die Supportdaten Ihres eigenen Anbieters; der Lebenszyklus der Hersteller-Distributionen ist der strukturelle Druck, der die Entscheidung erzwingt."
     - q: "Wie lange dauert die gesamte Modernisierung realistisch bei einer Tier-1-Telco mit 1.000–5.000 Nodes und zertifizierten VNFs?"
       options:
         - { text: "6–12 Monate durchgängig (schnelles Greenfield-Programm)", correct: false }
@@ -80,14 +81,12 @@ Drei Treiber bestimmen die Diskussion 2026:
 
 ### 1. Lebenszyklus der Hersteller-Distributionen
 
-Red Hat überführt OSP (OpenStack Platform) in Richtung OpenShift
-Virtualization; OSP 17/18 sind die letzten Major-Release-Linien. Mirantis
-Cloud Platform hat seinen kommerziellen Fokus schon vor Jahren verlagert.
-Canonical Charmed OpenStack ist weiterhin aktiv, wird im Enterprise-Vertrieb
-aber deutlich schmaler vermarktet. Der Herstellersupport für
-OpenStack-Distributionen konsolidiert sich; Deployments aus der Mitte der
-2020er-Jahre stehen in den nächsten 24–36 Monaten vor einem strukturellen
-Umbruch.
+Red Hat lenkt Kunden von OSP (OpenStack Platform) zu OpenShift-basierten
+Angeboten. Andere Distributionen (Mirantis, Canonical) sind weiter am
+Markt, doch die Anbieterlandschaft für OpenStack-Distributionen
+konsolidiert sich. Prüfen Sie die Supportdaten in Ihrem eigenen
+Vertrag: Bei vielen Deployments aus der Mitte der 2020er-Jahre fallen sie
+in die nächsten Jahre.
 
 ### 2. Fachkräftemangel
 
@@ -137,7 +136,7 @@ länger für fachliche Tiefe.
 
 ## Migrationsphasen in Kohorten
 
-### Phase 0 — Assessment (3–6 Wochen)
+### Phase 0 — Assessment (14 oder 28 Tage)
 
 Bestandsaufnahme des OpenStack-Deployments:
 
@@ -213,8 +212,8 @@ Es migrieren jeweils Kohorten von 50–200 Instanzen. Pro Kohorte:
 ### Phase 4 — Betriebsübergabe (2–4 Monate, parallel zu Phase 3)
 
 Die Ænix-Engineers reduzieren ihre direkte Beteiligung. Das Betriebsteam des
-Kunden übernimmt Tier-1-/Tier-2-Incidents. Der Ænix-Retainer läuft für die
-Eskalation im Rahmen des Tier-3-SLA weiter. Übergabe der Dokumentation.
+Kunden übernimmt Incidents im First- und Second-Level. Der Ænix-Support
+(Plus- oder Enterprise-Stufe für 24×7) läuft für die Eskalation weiter. Übergabe der Dokumentation.
 Sitzungen zum Wissenstransfer.
 
 ### Phase 5 — Stilllegung von OpenStack (2–6 Monate)
@@ -265,7 +264,7 @@ OpenStack-Distributionen, nicht auf Cozystack. Drei Ansätze:
   Migration lässt sich womöglich mit der CNF-Modernisierung des Herstellers
   verzahnen.
 
-In unseren Projekten mit Tier-1-Telcos kommen alle drei Muster vor — je
+In der Praxis kommen alle drei Muster vor, oft beim selben Betreiber — je
 nachdem, um welchen VNF-Hersteller und welche Generation es geht.
 
 ### 4. Wandel der Betriebskultur
@@ -285,7 +284,7 @@ der Kunde selbst in den kulturellen Wandel investieren.
 Mittelgroßes Unternehmen (200–500 Nodes, einfache Mandantenstruktur,
 überwiegend Standard-Networking):
 
-- Phase 0: 3–6 Wochen
+- Phase 0: 14 oder 28 Tage
 - Phase 1: 2–3 Monate
 - Phase 2: 1–2 Monate
 - Phase 3: 6–12 Monate
@@ -337,14 +336,16 @@ Schlechte Passung:
 ## Aufbau des Engagements
 
 - **Discovery Call** (30 Min., kostenlos)
-- **Migrations-Assessment** (3–6 Wochen, Festpreis) — Workload-Kategorien,
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**
+  (Festpreis, 14 Tage fokussiert oder 28 Tage vollständig) — Workload-Kategorien,
   Optionen für die Phasenplanung, Risikomarkierungen
 - **Pilot-Deployment** (2–3 Monate) — Cozystack wird aufgebaut, 50–100
   Workloads werden migriert, Abrechnungs- und Betriebsabläufe validiert
 - **Migration in Kohorten** (6–24 Monate) — Workload-Migration in Kohorten
 - **Stilllegung von OpenStack** (parallel zur Kohortenmigration) —
   schrittweise, sobald Kohorten abgeschlossen sind
-- **Managed Retainer** (optional, laufend) — Tier-3-SLA von Ænix
+- **Support-Subskription** (laufend) — Plus- oder Enterprise-Stufe für
+  Eskalation rund um die Uhr (siehe [Preise](/de/preise/))
 
 ## Weiterführende Inhalte
 

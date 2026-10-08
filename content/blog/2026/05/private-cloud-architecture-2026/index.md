@@ -1,5 +1,6 @@
 ---
 title: "Private cloud architecture in 2026 — design, components, and implementation patterns"
+seo_title: "Private cloud architecture in 2026: design patterns"
 description: "What private cloud means in 2026: the architectural layers, three patterns that work, capacity sizing, and the mistakes that recur in design reviews."
 date: "2026-05-22"
 cover_image: "/img/blog/covers/private-cloud-architecture-2026.jpg"
@@ -100,7 +101,7 @@ A modern private cloud has six functional layers:
 - **Managed databases** — PostgreSQL (CloudNativePG), MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, OpenSearch.
 - **Object storage as a service** — S3-compatible.
 - **AI/ML platform** — KubeVirt for VM-based GPU, Kubernetes-native for container-based GPU, vLLM/Triton for inference.
-- **Self-service portal** — Backstage, Cozystack Cozystack Dashboard, custom.
+- **Self-service portal** — Backstage, Cozystack Dashboard, custom.
 
 ### Layer 6: operations
 

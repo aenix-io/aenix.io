@@ -1,5 +1,6 @@
 ---
 title: "Industrie-4.0-Plattform — Cloud- und Edge-Architektur für die Fertigung 2026"
+seo_title: "Industrie 4.0: Cloud- und Edge-Architektur"
 description: "Industrie-4.0-Architektur 2026: Muster von der Edge bis zum Core, Souveränität für Industrie-IP und die NIS2-Pflichten, unter die Hersteller jetzt fallen."
 slug: "industrie-4-0-plattform-cloud-edge-fertigung"
 date: "2026-05-17"

@@ -1,6 +1,7 @@
 ---
 title: "Platform Engineering vs DevOps vs SRE — Terminologie-Leitfaden 2026"
-description: "Begleitung zur Platform-Engineering-Services-Page. Wo überlappen sich die drei Begriffe, wo nicht, was tut jede Funktion tatsächlich."
+seo_title: "Platform Engineering, DevOps und SRE erklärt"
+description: "Platform Engineering, DevOps und SRE abgegrenzt: drei Definitionen, wo sich die Funktionen überschneiden, wo nicht und was ein Plattformteam tatsächlich baut."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/platform-engineering-vs-devops-vs-sre.jpg"
 author: "Aenix Team"
@@ -44,7 +45,7 @@ quiz:
 hreflang_en: /blog/2026/05/platform-engineering-vs-devops-vs-sre/
 ---
 
-Begleitung zur **[Platform-Engineering-Services-Page](/de/dienstleistungen/platform-engineering)**. Wo überlappen sich die drei Begriffe, wo nicht, was tut jede Funktion tatsächlich.
+Dieser Beitrag vertieft das Thema unserer Seite **[Platform Engineering](/de/dienstleistungen/platform-engineering/)**. Wo überlappen sich die drei Begriffe, wo nicht, was tut jede Funktion tatsächlich.
 
 ## Drei Definitionen
 
@@ -91,5 +92,5 @@ Alle drei kümmern sich um:
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

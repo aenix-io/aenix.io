@@ -1,6 +1,7 @@
 ---
 title: "A Simple Way to Install Talos Linux on Any Machine, with Any Provider"
-description: "Talos Linux is a specialized operating system designed for running Kubernetes. In my opinion, it does that task better than others. First…"
+seo_title: "Install Talos Linux on any machine and provider"
+description: "Boot Talos Linux with kexec from any running Linux, pass networking via the kernel command line and install it to disk with talosctl or Talm."
 date: "2025-04-28"
 author: "Andrei Kvapil"
 type: "tutorial"
@@ -15,7 +16,7 @@ Talos Linux is a specialized operating system designed for running Kubernetes. I
 
 On the other hand, Talos Linux focuses on security, minimizing the user’s ability to influence the system. A distinctive feature of this OS is the near-complete absence of executables, including the absence of a shell and the inability to log in via SSH. All configuration of Talos Linux is done through a Kubernetes-like API.
 
-![image](/img/blog/medium/a-simple-way-to-install-talos-linux-on-any-machine-with-any-provider/cover.png)
+![Installing Talos Linux on any machine](/img/blog/medium/a-simple-way-to-install-talos-linux-on-any-machine-with-any-provider/cover.png)
 
 Typically, Talos Linux is provided as a set of pre-built images for various environments.
 
@@ -66,7 +67,7 @@ DEV=$(udevadm info -q property "/sys/class/net/$ETH" | awk -F= '$1~/ID_NET_NAME_
 
 You can pass these parameters via the `kernel cmdline`. Use `ip=` parameter to configure the network using the [Kernel level IP configuration](https://cateee.net/lkddb/web-lkddb/IP_PNP.html) mechanism for this. This method lets the kernel automatically set up interfaces and assign IP addresses during boot, based on information passed through the `kernel cmdline`. It’s a built-in kernel feature enabled by the `CONFIG_IP_PNP` option. In Talos Linux, this feature is enabled by default. All you need to do is provide a properly formatted network settings in the `kernel cmdline`.
 
-- You can find proper syntax for this option in the [Talos Linux documentation](https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/network-config/#kernel-command-line).
+- You can find proper syntax for this option in the [Talos Linux documentation](https://www.talos.dev/).
 - Also [official Linux kernel documentation](https://www.kernel.org/doc/Documentation/filesystems/nfs/nfsroot.txt) provides more detailed examples.
 
 Set the `CMDLINE` variable with the `ip` option that contains the current system’s settings, and then print it out:
@@ -95,7 +96,7 @@ As a result, you’ll get a running instance of Talos Linux with networking conf
 
 ## Applying machine-config and installing Talos Linux on disk
 
-To install Talos Linux persistently on the disk and replace the current OS, you need to apply a machine-config specifying the disk to install. To configure the machine, you can use either the official [*talosctl*](https://www.talos.dev/latest/learn-more/talosctl/) utility or the [*Talm*](https://github.com/cozystack/talm), utility maintained by the Cozystack project (Talm works with vanilla Talos Linux as well).
+To install Talos Linux persistently on the disk and replace the current OS, you need to apply a machine-config specifying the disk to install. To configure the machine, you can use either the official [*talosctl*](https://www.talos.dev/) utility or the [*Talm*](https://github.com/cozystack/talm), utility maintained by the Cozystack project (Talm works with vanilla Talos Linux as well).
 
 First, let’s consider configuration using *talosctl*. Before applying the config, ensure it includes network settings for your node; otherwise, after reboot, the node won’t configure networking. During installation, the bootloader is written to disk and does not contain the `ip` option for kernel autoconfiguration.
 

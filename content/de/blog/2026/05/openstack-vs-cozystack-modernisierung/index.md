@@ -1,5 +1,6 @@
 ---
 title: "OpenStack vs Cozystack — Modernisierungsoptionen für OpenStack-Betreiber 2026"
+seo_title: "OpenStack vs. Cozystack: Modernisierungswege"
 description: "Wo OpenStack weiterhin überzeugt, woher der betriebliche Druck kommt und welche Modernisierungspfade Teams mit OpenStack-Erfahrung offenstehen."
 slug: "openstack-vs-cozystack-modernisierung"
 date: "2026-05-21"

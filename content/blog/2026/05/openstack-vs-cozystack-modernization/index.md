@@ -1,5 +1,6 @@
 ---
 title: "OpenStack vs Cozystack — modernization options for OpenStack operators in 2026"
+seo_title: "OpenStack modernization options: when to move to Cozystack"
 description: "Where OpenStack still wins, where the operational pressure comes from, and the modernization paths available to OpenStack-trained teams."
 date: "2026-05-21"
 cover_image: "/img/blog/covers/openstack-vs-cozystack-modernization.jpg"

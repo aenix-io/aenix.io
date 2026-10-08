@@ -1,7 +1,7 @@
 ---
 title: "Paleocomputing, Teil 2: Kubernetes in Oberon, Wirths Funk statt Netzwerk, ein Cluster im Browser und was vergessene Technik über die Infrastruktur von morgen verrät"
 description: "Kube: eine Kubernetes Control Plane in Oberon auf Niklaus Wirths eigenen Maschinen, die per Funk kommunizieren. Sechs Browser-Labs, Designlehren, Anleitung."
-seo_title: "Kubernetes in Oberon über Wirths Funk: Paleocomputing, Teil 2"
+seo_title: "Kubernetes in Oberon über Wirths Funk"
 slug: "paleocomputing-teil-2-kubernetes-oberon-wirth-funk"
 date: "2026-10-08"
 cover_image: "/img/blog/covers/de/paleocomputing-teil-2-kubernetes-oberon-wirth-funk.jpg"

@@ -1,6 +1,7 @@
 ---
-title: "Cozystack v0.35:"
-description: "The new version of Cozystack takes a major step forward in its modular (or: decomposed) architecture, enabling users to swiftly integrate…"
+title: "Cozystack v0.35: External Application Sources, Dedicated S3 Clusters and Hetzner RobotLB Support"
+seo_title: "Cozystack v0.35: external apps and dedicated S3"
+description: "Cozystack v0.35 adds external application sources for its modular architecture, dedicated S3 clusters with monitoring and Hetzner RobotLB support."
 date: "2025-08-21"
 author: "Timur Tukaev"
 type: "announcement"
@@ -8,23 +9,23 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI and ML", "GPU", "Multi-tenan
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-35/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-35-b65472b2cdf8"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack v0.35: External Application Sources, Dedicated S3 Clusters and Monitoring, Hetzner RobotLB Support
 
 The new version of Cozystack takes a major step forward in its modular (or: decomposed) architecture, enabling users to swiftly integrate custom applications and services. This significantly extends the platform’s out-of-the-box functionality to meet specific business needs. And there’s more!
 
-![image](/img/blog/medium/cozystack-v0-35/cover.png)
+![Cozystack v0.35 release](/img/blog/medium/cozystack-v0-35/cover.png)
 
 > What is Cozystack?
 
 > Cozystack is a free PaaS and framework for building clouds that unifies VMs, containers, and GPU workloads under Kubernetes. Companies can turn hardware into a cloud: offer users or customers managed K8s, VMs, managed data bases, applications and GPU services. With KubeVirt integration, multi-tenancy, and bare-metal simplicity, it lets enterprises deploy AI, databases, or edge apps without vendor lock-in. Cozystack is a CNCF Sandbox project.
 
-### Major Features and Improvements
+## Major Features and Improvements
 
-#### External Application Sources in Cozystack
+### External Application Sources in Cozystack
 
 Cozystack now supports [adding external application packages](https://cozystack.io/docs/applications/external/) to the platform’s application catalog. Platform administrators can include custom or third-party applications alongside built-in ones, using the Cozystack API.
 
@@ -32,7 +33,7 @@ Adding an application requires making an application package, similar to the one
 
 Add your own managed application using the [documentation](https://cozystack.io/docs/applications/external/) and an example at [github.com/cozystack/external-apps-example](https://github.com/cozystack/external-apps-example).
 
-#### Cozystack API Improvements
+### Cozystack API Improvements
 
 This release brings significant improvements to the OpenAPI specs for all managed applications in Cozystack, including databases, tenant Kubernetes, virtual machines, monitoring, and others. These changes include more precise type definitions for fields that were previously defined only as generic objects, and many fields now have value constraints. Now many possible misconfigurations are detected immediately upon API request, and not later, with a failed deployment.
 
@@ -40,13 +41,13 @@ The Cozystack API now also displays default values for the application resources
 
 All these changes pave the road for the new Cozystack UI, which is currently under development.
 
-#### Hetzner RobotLB Support
+### Hetzner RobotLB Support
 
 MetalLB, the default load balancer included in Cozystack, is built for bare metal and self-hosted VMs, but is not supported on most cloud providers. For example, Hetzner provides its own RobotLB service, which Cozystack now supports as an optional component.
 
 Read the updated guide on [deploying Cozystack on Hetzner.com](https://cozystack.io/docs/install/providers/hetzner/) to learn more and deploy your own Cozystack cluster on Hetzner.
 
-#### S3 Service: Dedicated Clusters and Monitoring
+### S3 Service: Dedicated Clusters and Monitoring
 
 You can now deploy dedicated Cozystack clusters to run the S3 service, powered by SeaweedFS. Thanks to the support for [integration with remote filer endpoints](https://cozystack.io/docs/operations/stretched/seaweedfs-multidc/), you can connect your primary Cozystack cluster to use S3 storage in a dedicated cluster.
 
@@ -54,17 +55,17 @@ For security, platform administrators can now configure the SeaweedFS applicatio
 
 SeaweedFS has also been integrated into the monitoring stack and now has its own Grafana dashboard. Together, these enhancements help Cozystack users build a more reliable, scalable, and observable S3 service.
 
-#### ClickHouse Keeper
+### ClickHouse Keeper
 
 The ClickHouse application now includes a ClickHouse Keeper service to improve cluster reliability and availability. This component is deployed by default with every ClickHouse cluster.
 
 Learn more in the [ClickHouse configuration reference](https://cozystack.io/docs/applications/clickhouse/#clickhouse-keeper-parameters).
 
-### New components versions
+## New components versions
 
 - Update flux-operator to 0.28.0.
 
-### New Documentation
+## New Documentation
 
 - [Reimplement Cozystack Roadmap as a GitHub project](https://github.com/orgs/cozystack/projects/1).
 - [SeaweedFS Multi-DC Configuration](https://cozystack.io/docs/operations/stretched/seaweedfs-multidc/).
@@ -80,7 +81,7 @@ Learn more in the [ClickHouse configuration reference](https://cozystack.io/docs
 
 All changes: [v0.35.0](https://github.com/cozystack/cozystack/releases/tag/v0.35.0), [v0.35.1](https://github.com/cozystack/cozystack/releases/tag/v0.35.1)
 
-### Join the community
+## Join the community
 
 - Telegram [group](http://t.me/cozystack)
 - Slack [group](https://kubernetes.slack.com/archives/C06L3CPRVN1) (Get invite at [https://slack.kubernetes.io](https://slack.kubernetes.io))

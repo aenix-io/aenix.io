@@ -59,7 +59,7 @@ agenda:
     body: "Where to start at home: the first non-critical workload, the stages of the move, and the support you get after the workshop."
   - time: "03:15"
     title: "Questions and conversation"
-    tag: "45 min"
+    tag: "30 min"
     kind: "social"
     body: "Open conversation over pizza and drinks. The speaker stays in the room — bring your own cases."
 cities:
@@ -91,7 +91,7 @@ final_cta:
   button: "See the Europe tour"
   href: "/workshops/cozystack-tour-2026-europe/"
 direct_answer: |
-  **This was a free hands-on workshop for people who run VMware and are deciding what to do next. It took place in August 2026 in Tashkent, Bishkek, Almaty, and Astana. In one day, participants migrated a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform developed within the CNCF — with their own hands. Most of the time was practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. The workshop was led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. Afterwards, every participant kept a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate. Attendance was free; seats were limited.**
+  **This was a free hands-on workshop for people who run VMware and are deciding what to do next. It took place in August 2026 in Tashkent, Bishkek, Almaty, and Astana. In one day, participants migrated a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform developed within the CNCF — with their own hands. Most of the time was practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. The workshop was led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. Afterwards, every participant kept a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam. Attendance was free; seats were limited.**
 
 quick_facts:
   - label: "Format"
@@ -105,7 +105,7 @@ quick_facts:
   - label: "Who it's for"
     value: "VMware administrators, sysadmins, infrastructure leads, technology executives, DevOps engineers"
   - label: "After the workshop"
-    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate"
+    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs with a practice badge, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam"
   - label: "Host"
     value: "Timur Tukaev — Cozystack maintainer, Ænix co-founder"
 
@@ -122,14 +122,12 @@ faq:
     a: "No. It is training: you spend most of the time working with your hands, and the program includes an honest conversation about what the platform cannot do and who should not migrate. No contracts, no pressure."
   - q: "What exactly will I do with my own hands?"
     a: "Move a virtual machine off a running VMware server, deploy a database, publish a service to the network, see how monitoring and backups work — and, at the end, bring the whole setup back up from a single file."
-  - q: "What happens after the workshop?"
-    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. Completing the labs earns you the Ænix Certification for Cozystack — Fundamentals certificate — also free."
+  - q: "What happened after the workshop?"
+    a: "Each participant kept the test environment for another 30 days, received take-home lab exercises, and joined a chat where Cozystack maintainers answer questions. You can then take the free Ænix Certification for Cozystack — Fundamentals exam (60 questions, 90 minutes, in English); the certificate comes from passing the exam. Completing the labs earns a separate practice badge. The certification study materials are currently in Russian."
   - q: "We run Oracle, SAP, or specially licensed Windows. Will it migrate?"
     a: "Maybe not — and we will say so directly. Vendor licensing restrictions are one of the topics of the honest-limitations conversation. Bring your hardest case and get a straight answer."
   - q: "Can I bring my manager or a colleague?"
     a: "Please do. The workshop works best in pairs — an engineer plus a manager: one leaves with hands-on experience, the other with a plan."
-  - q: "Can you send an official invitation letter for my employer?"
-    a: "Yes. On request after registration, we will send an invitation letter addressed to your company — justifying a day out of the office becomes easy."
 ---
 
 <section class="ws-section ws-story" aria-labelledby="ws-vmware-h">
@@ -178,7 +176,7 @@ faq:
 <section class="ws-section ws-outcomes" aria-labelledby="ws-outcomes-h">
 <div class="ws-outcomes__bg" aria-hidden="true"></div>
 <div class="ws-wrap">
-<h2 class="ws-h2 ws-h2--light" id="ws-outcomes-h">What you leave with</h2>
+<h2 class="ws-h2 ws-h2--light" id="ws-outcomes-h">What participants left with</h2>
 <div class="ws-outcomes__grid">
 <article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">01</span>
@@ -212,7 +210,7 @@ faq:
 
 <section class="ws-section ws-personas" aria-labelledby="ws-personas-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="ws-personas-h">Who should come</h2>
+<h2 class="ws-h2" id="ws-personas-h">Who it was for</h2>
 <div class="ws-personas__grid">
 <article class="ws-persona">
 <span class="ws-persona__icon">{{< ws-icon name="admin" >}}</span>
@@ -246,7 +244,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Your test environment stays with you for another 30 days</strong> — for experiments and certification prep.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Take-home lab exercises</strong> — with support from the Cozystack maintainers.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>A chat where Cozystack maintainers answer your questions.</strong></span></li>
-<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate</strong> — free.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The option to take the Ænix Certification for Cozystack — Fundamentals exam</strong> — free, 60 questions in English; the labs earn a separate practice badge.</span></li>
 </ul>
 <div class="ws-cta-row"><a class="cta-primary cta-accent" href="#next">See the upcoming workshops</a></div>
 </div>
@@ -257,7 +255,7 @@ faq:
 <div class="ws-cert">
 <span class="ws-cert__tag">sample</span>
 <span class="ws-cert__seal">{{< ws-icon name="cert" >}}</span>
-<span class="ws-cert__kicker">Certificate of completion</span>
+<span class="ws-cert__kicker">Awarded for passing the exam</span>
 <span class="ws-cert__title">Ænix Certification for Cozystack — Fundamentals</span>
 <span class="ws-cert__line"></span>
 <span class="ws-cert__by">Cozystack · Ænix</span>

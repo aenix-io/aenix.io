@@ -1,6 +1,6 @@
 ---
-title: "Your download is ready — DORA Compliance Cloud Architecture Checklist"
-description: "Download your copy of the DORA Compliance Cloud Architecture Checklist from Aenix."
+title: "Download ready: DORA Compliance Checklist"
+description: "Your copy of the DORA Compliance Cloud Architecture Checklist (35-point PDF) from Ænix is ready to download."
 robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
@@ -24,4 +24,4 @@ hreflang_de: /de/ressourcen/dora-compliance-checkliste/thank-you/
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0.*
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0 — and co-maintains it with maintainers from other companies.*

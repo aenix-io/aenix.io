@@ -1,18 +1,20 @@
 ---
 title: "Launch a customer-facing cloud product — playbook for hosting providers, telcos, and regional operators"
+seo_title: "Launch a cloud product: playbook for hosting providers"
 description: "The six layers of a customer-facing cloud product, the architectural decisions specific to public cloud, and where launches stumble commercially."
 date: "2026-05-17"
 cover_image: "/img/blog/covers/launch-customer-facing-cloud-product.jpg"
 author: "Aenix Team"
-type: "announcement"
+type: "article"
 topics: ["VMware", "Kubernetes", "Sovereignty", "AI and ML", "Multi-tenancy", "Hosting"]
 language: "en"
 hreflang_de: "/de/blog/2026/05/cloud-produkt-starten-playbook-hosting-anbieter/"
 companion_landing: "/services/public-cloud-builder/"
+companion_label: "See the public cloud builder service →"
 ---
 
 
-Regional and specialty cloud is having a moment in 2026. Hyperscaler economics, sovereignty pressure, and post-Broadcom market dynamics have all opened space for non-hyperscaler cloud products that didn't make sense to launch 5 years ago. Regional telco sovereign cloud product launches (Central Asia, MENA, EU member states) and various EU-member-state-specific sovereign cloud products are visible examples. Many more are in stealth or early stages.
+Regional and specialty cloud is having a moment in 2026. Hyperscaler economics, sovereignty pressure, and post-Broadcom market dynamics have all opened space for non-hyperscaler cloud products that didn't make sense to launch 5 years ago. Sovereign cloud products from regional providers in the EU, Central Asia and MENA are visible examples. Many more are in stealth or early stages.
 
 ## Why now
 
@@ -69,7 +71,7 @@ Launch in cohorts:
 3. **General availability** — open to general market.
 4. **Specialty expansion** — add specific services (more GPU classes, AI services, etc.) based on observed demand.
 
-Total elapsed: 12-24 months from project start to general availability.
+Timing: at provider scale the platform goes live in weeks once hardware is ready, using the productized installer; the beta and limited-GA cohorts then run at your commercial pace. Multi-region national or operator programmes take longer: a 3-6 month pilot, then 9-18 months to full multi-region operation.
 
 ## Where launches stumble
 
@@ -90,10 +92,10 @@ Generic cloud product with no differentiation from hyperscaler. Customers defaul
 
 ## Ænix engagement
 
-Ænix has built customer-facing cloud products end-to-end on Cozystack, including for regional telecom operators. The engagement structure:
+Ænix has built customer-facing cloud products end-to-end on Cozystack for hosting providers and regional cloud operators. The engagement structure:
 
-- **Discovery + product-readiness assessment** (4-8 weeks)
-- **Phase 2 build** (6-18 months) — platform + portal + billing + operations workflows + first cohort onboarding
-- **Phase 3 (optional)** — managed-services during ramp
+- **Free 30-minute discovery call**, then a fixed-price [Platform Readiness Assessment](/services/platform-readiness-assessment/) (14 days focused or 28 days full)
+- **Platform build** — platform live in weeks once hardware is ready; portal, billing, operations workflows and first-cohort onboarding follow. Multi-region programmes: 3-6 month pilot, then 9-18 months to full multi-region
+- **Ongoing (optional)** — support subscription from the [published tiers](/pricing/), plus managed services during ramp
 
-For details see **[public cloud builder services page](/services/public-cloud-builder)**.
+For details see the **[public cloud builder service](/services/public-cloud-builder/)** and **[Ænix Public Cloud Platform](/products/public-cloud-platform/)**.

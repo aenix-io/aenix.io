@@ -1,6 +1,6 @@
 ---
-title: "Your download is ready — VMware Migration Assessment Checklist"
-description: "Download your copy of the VMware Migration Assessment Checklist from Aenix."
+title: "Download ready: VMware Migration Checklist"
+description: "Your copy of the VMware Migration Assessment Checklist (25-point PDF) from Ænix is ready to download."
 robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
@@ -24,4 +24,4 @@ hreflang_de: /de/ressourcen/vmware-migrations-checkliste/thank-you/
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0.*
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0 — and co-maintains it with maintainers from other companies.*

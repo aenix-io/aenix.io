@@ -1,6 +1,6 @@
 ---
 title: "Bare-metal Kubernetes for a messaging-API SaaS"
-description: "A messaging-API SaaS ran a Proxmox to Kubernetes migration on Cozystack — 25,000 instances consolidated from 13 hosts to one GitOps cluster, run by one engineer."
+description: "A messaging-API SaaS moved from Proxmox to Kubernetes on Cozystack: 25,000 instances consolidated from 13 hosts to one GitOps cluster, run by one engineer."
 hero_subtitle: "25,000 workloads off 13 Proxmox hosts onto one GitOps cluster"
 date: 2026-06-20
 lastmod: 2026-06-20
@@ -47,6 +47,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">25,000+</div><div class="cs-stat__label">isolated per-customer instances; hundreds onboarded per day</div></div>
   <div class="cs-stat"><div class="cs-stat__num">13 → 1</div><div class="cs-stat__label">legacy Proxmox hosts consolidated to one declarative Cozystack cluster</div></div>
   <div class="cs-stat"><div class="cs-stat__num">~1 week</div><div class="cs-stat__label">bare metal to first production workloads; a VM is now one line in Git</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
 </div>
 
 ## About the project
@@ -106,8 +111,17 @@ Before the project it ran on a fleet of about 13 Proxmox hypervisor hosts — ro
   <div class="card"><div class="card-body"><h3 class="card-title">Open source contributed upstream</h3><p class="card-description">MongoDB and the RabbitMQ v4 chart landed in CNCF Cozystack — sovereignty backed by code, not by contract.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
 *This case study is published in anonymized form; a customer reference under NDA is available on request. The provider is described by profile, not by name. For a reference call on an active opportunity, [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

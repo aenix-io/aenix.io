@@ -1,40 +1,44 @@
 ---
 title: "Sovereign AI Architecture Decision Guide — decision tree + reference architectures (free PDF)"
+seo_title: "Sovereign AI Architecture Decision Guide (free PDF)"
+primary_keyword: "sovereign AI architecture guide"
+secondary_keywords:
+  - "sovereign AI decision guide"
+  - "sovereign AI reference architecture"
+  - "GPU sizing for private AI"
 description: "A free 10-page decision guide for organizations evaluating sovereign AI infrastructure: seven decisions, four reference architectures, GPU sizing tables."
 type: "page"
-related_pages: ["/solutions/sovereign-ai", "/services/ai-platform-build", "/products/ai-platform/"]
+related_pages: ["/solutions/sovereign-ai/", "/services/ai-platform-build/", "/products/ai-platform/"]
 hreflang_de: /de/ressourcen/sovereign-ai-architektur-leitfaden/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The Sovereign AI Architecture Decision Guide is a free 10-page PDF for organizations evaluating sovereign AI infrastructure - AI workloads run on infrastructure they control rather than on a hyperscaler API. It is aimed at AI infrastructure leads, CTOs, and platform engineering teams. A visual flowchart walks through seven decisions: trigger profile, regulatory scope (DORA, NIS2, sovereign-cloud mandates), open-weight model selection, GPU hardware sizing, multi-tenancy model, sovereignty controls, and operational model, then maps the answers to one of four architecture patterns. Aenix uses this framework when scoping sovereign AI engagements, and the output maps directly to Ænix AI Platform, which is built on Cozystack, a CNCF project, and offers multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints.**
+  **The Sovereign AI Architecture Decision Guide is a free 10-page PDF for organizations evaluating sovereign AI infrastructure - AI workloads run on infrastructure they control rather than on a hyperscaler API. It is aimed at AI infrastructure leads, CTOs, and platform engineering teams. A visual flowchart walks through seven decisions: trigger profile, regulatory scope (DORA, NIS2, sovereign-cloud mandates), open-weight model selection, GPU hardware sizing, multi-tenancy model, sovereignty controls, and operational model, then maps the answers to one of four architecture patterns. Ænix uses this framework when scoping sovereign AI engagements, and the output maps directly to Ænix AI Platform, which is built on Cozystack, a CNCF Sandbox project, and offers multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints.**
 quick_facts:
   - label: "What it is"
-    value: "A free 10-page decision guide with a master decision tree for designing sovereign AI infrastructure, the same framework Aenix uses to scope sovereign AI engagements"
+    value: "A free 10-page decision guide with a master decision tree for designing sovereign AI infrastructure, the same framework Ænix uses to scope sovereign AI engagements"
   - label: "Who it is for"
     value: "AI infrastructure leads, CTOs, architects, and platform engineering teams evaluating sovereign AI versus hyperscaler AI"
   - label: "What it covers"
     value: "Seven decisions plus four architecture patterns: single-tenant inference, multi-tenant inference fleet, inference + fine-tuning + RAG, and air-gapped sovereign deployment"
   - label: "Maps to"
     value: "Ænix AI Platform - multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints"
-  - label: "License"
-    value: "Apache 2.0 (no per-CPU / per-core licensing)"
-  - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
+  - label: "Format"
+    value: "Free 10-page PDF delivered by email; typically 1-3 hours to work through with your team"
 faq:
   - q: "What is sovereign AI infrastructure?"
     a: "Sovereign AI infrastructure runs AI workloads (inference, fine-tuning, RAG) on infrastructure an organization controls - on-premises or in a chosen jurisdiction - rather than on a hyperscaler AI API. It keeps data, models, and encryption keys under the operator's control to meet regulatory, residency, and auditability requirements."
   - q: "Who should download the Sovereign AI Decision Guide?"
     a: "AI infrastructure leads and CTOs at AI-heavy organizations, architects comparing sovereign AI against hyperscaler AI, platform engineering leads scoping AI infrastructure, and AI startup CTOs planning dedicated infrastructure. The guide gives them a structured framework for the key architecture decisions before committing to a build."
   - q: "Which AI models and GPUs does the guide cover?"
-    a: "It covers open-weight model selection across families such as Llama, Mistral, Qwen, DeepSeek, Phi, and Gemma, and weighs open-weight versus proprietary. Hardware sizing covers GPUs including A100, H100, H200, L40S, and Blackwell, with practical sizing tables for common workload profiles."
-  - q: "How does the guide relate to the Ænix Platform?"
+    a: "It covers open-weight model selection across families such as Llama, Mistral, Qwen, DeepSeek, Phi, and Gemma, and weighs open-weight versus proprietary. Hardware sizing covers NVIDIA data-centre GPU generations (A100, H100, H200, L40S, Blackwell) as sizing inputs, with practical sizing tables for common workload profiles. These are planning figures, not a list of tested hardware."
+  - q: "How does the guide relate to Ænix AI Platform?"
     a: "The guide outputs an architecture pattern that maps directly to the deployment scope of Ænix AI Platform - turnkey AI infrastructure with multi-tenant GPU scheduling and blueprints for inference, fine-tuning, and RAG, built on Cozystack with sovereignty controls."
   - q: "How does Cozystack enable multi-tenant sovereign AI?"
-    a: "Cozystack runs VMs and containers on one Kubernetes API via KubeVirt, uses Cilium (eBPF) for networking and LINSTOR/DRBD for storage, and isolates teams through a Tenant CRD. This supports namespace-per-team, cluster-per-tenant, and multi-tenant GPU scheduling under Apache 2.0 with no per-core licensing."
+    a: "Cozystack runs VMs and containers on one Kubernetes API via KubeVirt, uses Cilium (eBPF) for networking and LINSTOR/DRBD for storage, and isolates teams through a Tenant CRD. This supports namespace-per-team, cluster-per-tenant, and multi-tenant GPU scheduling under Apache 2.0 with no per-core licensing. GPUs are shared through the NVIDIA GPU Operator: whole-GPU passthrough to VMs and fractional sharing for pods via HAMi; MIG and time-slicing are on the roadmap."
   - q: "How much does the decision guide cost?"
-    a: "The decision guide is a free PDF download. The productized infrastructure it maps to, Ænix Platform, starts at Basic $1,250/mo for up to 10 nodes, with Standard $3,000, Plus $5,500, and Enterprise on custom pricing."
+    a: "The decision guide is a free PDF download. Ænix AI Platform, the infrastructure it maps to, is quoted per RFP after an assessment, because GPU estate, models and operating model vary widely."
 ---
 
 **A 10-page decision guide for organizations evaluating sovereign AI infrastructure. A master decision tree leads through 7 key decisions: trigger profile, regulatory scope, model selection, hardware sizing, multi-tenancy model, sovereignty controls, operational model. Used by Ænix during sovereign AI engagement scoping.**
@@ -56,9 +60,9 @@ Visual flowchart that walks you through:
 1. **Trigger profile** — regulated data, inference economics, auditability, air-gap
 2. **Regulatory scope** — DORA, NIS2, sectoral, sovereign-cloud mandate
 3. **Model selection** — Llama, Mistral, Qwen, DeepSeek, Phi, Gemma; open-weight vs proprietary
-4. **Hardware sizing** — A100, H100, H200, L40S, Blackwell; CPU/memory/network
+4. **Hardware sizing** — NVIDIA data-centre GPU generations as sizing inputs; CPU/memory/network
 5. **Multi-tenancy model** — Tenant CRD, namespace-per-team, cluster-per-tenant
-6. **Sovereignty controls** — encryption keys, supplier transparency, audit-readiness
+6. **Sovereignty controls** — encryption and key handling, supplier transparency, audit-readiness
 7. **Operational model** — customer-operated, vendor-operated, hybrid
 
 ### Q&A pages
@@ -109,6 +113,4 @@ The guide gives you the architectural framework to make decisions. For specific 
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
-
-<!-- Word count: ~450. -->
+*Ænix created Cozystack (a CNCF Sandbox project) and co-maintains it with maintainers from other companies. On top of it, Ænix offers three platforms — Public Cloud, Private Cloud and AI.*

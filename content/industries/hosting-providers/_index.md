@@ -1,12 +1,13 @@
 ---
 title: "Cloud platform for hosting providers — modernize beyond VPS, launch cloud products"
+seo_title: "Public cloud platform for hosting providers"
 description: "Move beyond VPS to a cloud product: multi-tenant isolation, WHMCS billing in two modes, managed databases, S3 and GPU, with no per-CPU licensing on the margin."
-related_pages: ["/services/public-cloud-builder", "/services/white-label-cloud", "/products/public-cloud-platform/", "/partners/", "/products/cozystack"]
+related_pages: ["/services/public-cloud-builder/", "/services/white-label-cloud/", "/products/public-cloud-platform/", "/partners/", "/products/cozystack/", "/migration/virtuozzo/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **A cloud platform for hosting providers lets a traditional shared, VPS, or dedicated-server business launch hyperscaler-class cloud products while keeping its direct customer relationships, pricing flexibility, and margin. Aenix delivers this with Cozystack, an open-source Kubernetes-native platform that runs VMs (via KubeVirt) and containers on one API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenant isolation. It is productized as the Ænix Public Cloud Platform, with WHMCS-integrated billing, tenant lock and suspension, a service catalog beyond VMs (managed databases, S3, GPU), and migration tooling from VMware, OpenStack, and Virtuozzo. Apache 2.0 licensing means no per-CPU fees, so hosting margin is preserved.**
+  **A cloud platform for hosting providers lets a traditional shared, VPS, or dedicated-server business launch hyperscaler-class cloud products while keeping its direct customer relationships, pricing flexibility, and margin. Ænix delivers this with Cozystack, an open-source Kubernetes-native CNCF Sandbox project Ænix created and co-maintains, that runs VMs (via KubeVirt) and containers on one API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenant isolation. It is productized as Ænix Public Cloud Platform (live in weeks via the productized installer once hardware is ready), with WHMCS-integrated billing, tenant lock and suspension, a service catalog beyond VMs (managed databases, S3, GPU), and migration tooling from VMware, OpenStack, and Virtuozzo. Apache 2.0 licensing means no per-CPU fees, so hosting margin is preserved.**
 quick_facts:
   - label: "What it is"
     value: "An open-source, Kubernetes-native cloud platform that lets hosting providers launch multi-tenant cloud products beyond VPS, built on Cozystack and productized as the Ænix Public Cloud Platform."
@@ -21,7 +22,7 @@ quick_facts:
   - label: "Underlying technology"
     value: "KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage."
   - label: "Commercial entry"
-    value: "Ænix Platform support tiers from $1,250/month; Partner Program offers up to 40% margin on resold engagements."
+    value: "Support tiers from $1,250 per 10 nodes per month (Basic, billed annually), white-label configuration support from Standard ($3,000); Partner Program offers up to 40% margin on platform subscriptions and support."
 faq:
   - q: "Why would a hosting provider move from VPS to a Kubernetes-native cloud platform?"
     a: "Customers increasingly expect cloud capabilities competitive with hyperscalers — managed databases, object storage, GPU, and self-service. A Kubernetes-native platform adds these as a single service catalog while the provider keeps its direct customer relationship and pricing flexibility."
@@ -40,14 +41,16 @@ hreflang_de: /de/branchen/hosting-anbieter/
 
 **Hosting providers in 2026 face customer demand for cloud capabilities competitive with hyperscalers but with the customer-relationship advantages and pricing flexibility that hosting providers already have. The architectural answer is a Kubernetes-native platform with multi-tenant customer isolation, billing integration, and a service catalog beyond VMs — Cozystack's design center.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — modern alternative to OpenStack for hosting providers. WHMCS-integrated billing, tenant lock/suspension, fast feature delivery, productized installer, migration tooling from VMware/OpenStack/Virtuozzo. Entry from $1,250/month support tier. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — modern alternative to OpenStack for hosting providers. WHMCS-integrated billing, tenant lock/suspension, fast feature delivery, productized installer, migration tooling from VMware/OpenStack/Virtuozzo ([Virtuozzo migration](/migration/virtuozzo/)). Selling cloud from VMware Cloud Director today? See [the VMware Cloud Director alternative for service providers](/alternatives/vmware-cloud-director-alternative/). Support tiers from $1,250 per 10 nodes per month; white-label configuration support from Standard ($3,000). Hosting providers running it in production: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/hosting-provider-platform-modernization/">Hosting platform modernization →</a>
 </div>
 
-**See the customer portal for yourself.** The Cozystack Dashboard console is the actual Ænix Platform customer frontend, running entirely in your browser with demo data — no signup, no cluster, no setup.
+**See the customer portal for yourself.** The live demo shows the Ænix Public Cloud Platform customer portal and operator back-office (switch to Admin to see clients, invoices and pricing), running entirely in your browser with demo data — no signup, no cluster, no setup.
+
+**Model the business first.** The [hosting-provider unit economics calculator](/isp-calculator/) estimates revenue and payback, and the [Launch your public cloud webinar](/webinars/launch-public-cloud/) walks through a provider launch. Cloud product leads can start with the [head of cloud guide](/for/head-of-cloud/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
@@ -103,7 +106,7 @@ For sales-led engagement see **[public cloud builder](/services/public-cloud-bui
 </div>
 </div>
 
-Production references: regional hosting providers running Ænix Public Cloud Platform; tier-1 European bank deployments under NDA until mid-2027. Closest written-up case: [a Swiss provider running a commercial public cloud across three data centres](/case-studies/sovereign-public-cloud/).
+Production references: regional hosting providers running Ænix Public Cloud Platform. Closest written-up case: [a provider running a commercial public cloud across three data centres](/case-studies/sovereign-public-cloud/).
 
 ---
 
@@ -114,8 +117,11 @@ Production references: regional hosting providers running Ænix Public Cloud Pla
 - **[Public cloud builder services](/services/public-cloud-builder/)** — engagement
 - **[White-label cloud](/services/white-label-cloud/)** — branded for resellers
 - **[Hosting provider platform modernization article](/blog/2026/05/hosting-provider-platform-modernization/)**
+- **[Virtuozzo migration](/migration/virtuozzo/)** — moving a Virtuozzo estate
+- **[Hosting-provider calculator](/isp-calculator/)** — unit economics
+- **[Launch your public cloud webinar](/webinars/launch-public-cloud/)**
 
 ---
 
-*Ænix is the team behind Cozystack.*
+*Ænix created Cozystack (CNCF Sandbox project) and co-maintains it with maintainers from other companies.*
 

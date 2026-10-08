@@ -1,6 +1,7 @@
 ---
-title: "The Open Source Platform Cozystack Version 0.16.0"
-description: "Key Highlights Cozystack now features an alert system based on the open-source tool Alerta, with the ability to configure notifications…"
+title: "Cozystack v0.16.0: Alert System with Telegram Notifications and More Improvements"
+seo_title: "Cozystack v0.16: alerting with Telegram notifications"
+description: "Cozystack v0.16.0 adds an alert system based on the open-source tool Alerta, with notifications to Telegram, plus a set of other platform improvements."
 date: "2024-10-03"
 author: "Timur Tukaev"
 type: "announcement"
@@ -8,15 +9,15 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "GitOps", "Observabili
 language: "en"
 cover_image: "/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/cover.png"
 source_url: "https://medium.com/@tym83/the-open-source-platform-cozystack-version-0-16-0-e2e86ca6ec47"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### The Open Source Platform Cozystack Version 0.16.0 Released: Alert System with Telegram Notifications and More Improvements
 
 Key Highlights Cozystack now features an alert system based on the open-source tool [Alerta](https://alerta.io/), with the ability to configure notifications directly to Telegram. Additionally, you can receive alerts from k8s-prometheus stack, all Grafana dashboards have been updated, as well as Grafana itself and the grafana-operator.
 
-![image](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/cover.png)
+![Alerta interface with Cozystack alerts](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/cover.png)
 
 Alerta interface
 
@@ -31,15 +32,15 @@ Other changes:
 - Talos Linux updated to version v1.8.0
 - Cilium updated to the latest patch version (v1.16.2)
 
-![image](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/02.jpg)
+![New Grafana dashboard in Cozystack v0.16](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/02.jpg)
 
 New dashboards
 
-![image](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/03.jpg)
+![New Grafana dashboard in Cozystack v0.16](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/03.jpg)
 
 New dashboards
 
-![image](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/04.jpg)
+![New Grafana dashboard in Cozystack v0.16](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/04.jpg)
 
 New dashboards
 

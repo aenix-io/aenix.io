@@ -1,5 +1,6 @@
 ---
 title: "Herstellerneutrale Cloud-Strategie — wie ehrliche Cloud-Beratung 2026 aussieht"
+seo_title: "Herstellerneutrale Cloud-Strategieberatung"
 description: "Was eine herstellerneutrale Cloud-Strategieberatung tatsächlich liefert und worin sie sich von Big-4-Beratung und Hyperscaler-nahen Beratungshäusern abhebt."
 slug: "herstellerneutrale-cloud-strategie-beratung"
 date: "2026-05-06"

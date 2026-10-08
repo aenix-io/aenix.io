@@ -1,5 +1,6 @@
 ---
 title: "CloudStack-Migration zu Cozystack — der Modernisierungspfad für etablierte Service Provider"
+seo_title: "CloudStack-Migration zu Cozystack für Service Provider"
 description: "Wie Service Provider Apache CloudStack auf Cozystack als Kubernetes-natives Ziel modernisieren: Architektur-Mapping, Migrationsphasen und Abwägungen."
 slug: "cloudstack-migration-cozystack-modernisierung"
 date: "2026-05-06"
@@ -29,15 +30,15 @@ quiz:
     - q: "Wie lange dauert eine Migration von CloudStack zu Cozystack realistischerweise insgesamt?"
       options:
         - { text: "Zwölf bis vierundzwanzig Monate insgesamt", correct: true }
-        - { text: "Drei bis sechs Monate insgesamt", correct: false }
+        - { text: "Wenige Wochen insgesamt", correct: false }
         - { text: "Sechs bis neun Monate insgesamt", correct: false }
-      explanation: "Die Gesamtdauer beträgt 12 bis 24 Monate vom Projektstart bis zur vollständigen Abschaltung von CloudStack, verteilt auf Assessment (3–6 Wochen), Fundament (2–4 Monate), Servicekatalog (2–4 Monate), VM-Migration in Kohorten (3–9 Monate) und Rückbau (2–6 Monate)."
+      explanation: "Die Gesamtdauer beträgt 12 bis 24 Monate vom Projektstart bis zur vollständigen Abschaltung von CloudStack, verteilt auf Assessment (14 oder 28 Tage), Fundament (2–4 Monate), Servicekatalog (2–4 Monate), VM-Migration in Kohorten (3–9 Monate) und Rückbau (2–6 Monate)."
     - q: "Wo passt eine CloudStack-Modernisierung laut Artikel schlecht?"
       options:
         - { text: "Bei Betreibern mit wachsender Nachfrage nach Managed-Datenbanken", correct: false }
         - { text: "Bei sehr kleinen Betreibern mit weniger als etwa 200 Kunden", correct: true }
         - { text: "Bei Betreibern, die heute KVM-basiertes CloudStack betreiben", correct: false }
-      explanation: "Die Fixkostenökonomie der Cozystack Public Cloud Platform amortisiert sich für sehr kleine Betreiber (<200 Kunden) nicht, und Betreiber mit sinkender Kundenzahl können die Modernisierungskosten nicht rechtfertigen. Wachsende Nachfrage nach Managed Services und KVM-basiertes CloudStack sind dagegen Signale für eine gute Passung."
+      explanation: "Die Fixkosten eines vollständigen Migrationsprogramms amortisieren sich für sehr kleine Betreiber (<200 Kunden) nicht, und Betreiber mit sinkender Kundenzahl können die Modernisierungskosten nicht rechtfertigen. Wachsende Nachfrage nach Managed Services und KVM-basiertes CloudStack sind dagegen Signale für eine gute Passung."
     - q: "Wie sollte man laut Artikel mit Kunden umgehen, die eigenes Tooling gegen die CloudStack-API gebaut haben?"
       options:
         - { text: "Alle Kunden zwingen, beim Cutover neu zu schreiben", correct: false }
@@ -118,7 +119,7 @@ Cozystack-Paket plus ApplicationDefinition).
 
 ## Migrationsphasen
 
-### Phase 0 — Assessment (3–6 Wochen)
+### Phase 0 — Assessment (14 oder 28 Tage)
 
 Workload-Inventar: Anzahl der VMs, Betriebssystem-Mix,
 vCPU-/RAM-/Disk-Profile, Kritikalitätsstufe. Netzwerk-Inventar: Anzahl
@@ -207,10 +208,10 @@ erfordert sorgfältige Architekturarbeit. Wer das in Phase 0–1
 ### 2. Billing-Integration für Kunden
 
 Die Billing-Hooks von CloudStack unterscheiden sich von denen von
-Cozystack. Provider mit WHMCS-integriertem CloudStack-Billing brauchen
-in der Regel Integrationsarbeit für WHMCS auf der Cozystack-Seite —
-Ænix liefert das als Teil des Projekts, es ist aber für jeden Provider
-spezifisch.
+Cozystack. Provider mit WHMCS-integriertem CloudStack-Billing nutzen
+die WHMCS-Integration von Ænix (ein proprietäres Ænix-Modul, nicht Teil
+von Cozystack); die Anpassung an Tarife und Prozesse ist für jeden
+Provider spezifisch.
 
 ### 3. Abweichende Self-Service-API für Kunden
 
@@ -250,14 +251,14 @@ Schlechte Passung:
 ## Ablauf der Zusammenarbeit
 
 - **Discovery Call** (30 Min., kostenlos)
-- **Migrations-Assessment** (3–6 Wochen, Festpreis) — Inventar,
+- **Migrations-Assessment** (14 oder 28 Tage, Festpreis) — Inventar,
   Workload-Gruppen, Zeitplan
 - **Pilot-Deployment** (3–6 Monate) — Aufbau der Cozystack-Plattform,
   Migration von 5–10 wohlgesonnenen Kunden, Validierung der
   Billing-Workflows
 - **Migration der Kundenkohorten** (6–18 Monate) — Workload-Migration
   in Kohorten, parallel dazu Rückbau von CloudStack
-- **Managed Retainer** (optional, fortlaufend) — Ænix Tier-3-SLA
+- **Managed Retainer** (optional, fortlaufend) — mit Plus- oder Enterprise-Support-Stufe (siehe [Preise](/de/preise/))
 
 Gesamtdauer: 12–24 Monate vom Projektstart bis zur vollständigen
 Abschaltung von CloudStack.

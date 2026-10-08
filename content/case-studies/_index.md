@@ -1,14 +1,16 @@
 ---
 title: "Case studies"
-description: "Nine Aenix deployments written up with numbers: GPU repatriation, Proxmox consolidation, a sovereign public cloud, a bank private cloud, GPU bursting, an AI platform as installer."
-hero_subtitle: "Real Aenix Platform deployments across hosting, AI, and academia"
+seo_title: "Case studies: Cozystack platforms in production"
+description: "Nine anonymised Ænix deployments with numbers: GPU inference, Proxmox consolidation, a sovereign public cloud, a bank private cloud and an AI platform."
+hero_subtitle: "Anonymised deployments across hosting, regulated finance, telecom, AI and academia"
+hide_child_cards: true
 language: "en"
 hreflang_de: /de/case-studies/
 aliases:
   - /kubefarm/
 ---
 
-**Nine deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, public references include regional hosting providers running Ænix Public Cloud Platform, platform R&D for ecosystem vendors, and tier-1 European bank engagements still under NDA.**
+**Nine deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, the hosting providers named below run Ænix Public Cloud Platform in production, and reference calls for other engagements can be arranged under NDA.**
 
 ---
 
@@ -40,7 +42,7 @@ Internal teams get environments and managed services on demand, inside the bank,
 
 ### [An internal data and AI platform, GPUs included](/case-studies/internal-data-and-ai-platform/)
 
-One platform for analytics, data lakes and model training as well as AI/ML services: GPU pools with time-slicing and per-tenant quotas, a single scheduler for pods and VMs, and usage metrics precise enough to charge teams. In rollout, with the GPU layer already complete.
+One platform for analytics, data lakes and model training as well as AI/ML services: GPU pools with per-tenant quotas, a single scheduler for pods and VMs, and usage metrics precise enough to charge teams. In rollout, with the GPU layer already complete.
 
 ### [When the return packet takes the wrong door](/case-studies/metallb-evpn-address-mobility/)
 
@@ -59,11 +61,10 @@ A telecom operator and integrator built a corporate AI platform — GPU scheduli
 
 ## Quick facts
 
-- **Public production customers (subject to permission per use):** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Public Cloud Platform)
 - **Platform R&D engagements:** CSI driver development, block storage research, virtualization platform prototypes — for ecosystem vendors
 - **Detailed written-up deployments:** nine, anonymized by contract, with architecture and figures published in full (above)
-- **Tier-1 European banks:** multi-million-euro Ænix Private Cloud Platform engagements (NDA-protected; naming permitted from mid-2027)
-- **Engagement sizes:** from a $1,250/month Public Cloud Platform support tier through to multi-year Public Cloud and Enterprise builds quoted per RFP
+- **Banks:** Ænix Private Cloud Platform engagements under NDA; one is written up anonymously above ([a private cloud inside a bank](/case-studies/private-cloud-in-a-bank/))
+- **Engagement sizes:** from Ænix Public Cloud Platform subscriptions on the published [support tiers](/pricing/) to Private Cloud Platform programmes quoted per RFP
 
 ---
 
@@ -71,9 +72,9 @@ A telecom operator and integrator built a corporate AI platform — GPU scheduli
 
 ### Regional hosting providers (Ænix Public Cloud Platform)
 
-Production deployments running our hosting-specific edition. WHMCS-integrated billing, branded customer-facing portal, multi-tier reseller model, expanded service catalog (managed databases, S3, GPU), tenant lock/suspension.
+Production deployments of Ænix Public Cloud Platform: WHMCS-integrated billing, branded customer-facing portal, multi-tier reseller model, expanded service catalog (managed databases, S3, GPU), tenant lock/suspension.
 
-**Public customers** (currently listed on aenix.io):
+**Customers named with their permission:**
 - GoHost.kz
 - HDReady
 - Beby Cloud
@@ -86,19 +87,15 @@ These customers use Ænix Public Cloud Platform to deliver multi-tenant cloud pr
 
 [Ænix Public Cloud Platform →](/products/public-cloud-platform/)
 
-### Tier-1 European bank engagements (NDA until mid-2027)
+### Banks and regulated finance (under NDA)
 
-Multi-million-euro Ænix Private Cloud Platform deployments supporting sovereign cloud workloads inside DORA scope. Customer-owned hardware, encryption keys held by the customer, API audit logging routed and retained by the customer, multi-tenant isolation aligned with risk classification. The DORA obligations remain the bank's; the platform supplies controls it can evidence.
+Ænix Private Cloud Platform engagements for banks and financial groups, on customer-owned hardware, with tenant isolation, audit logging the customer routes and retains, and backups and encryption configured during the build. The DORA obligations remain the bank's; the platform supplies controls it can evidence — see the [DORA evidence page](/compliance/dora/). Two of these are written up anonymously: [a private cloud inside a bank](/case-studies/private-cloud-in-a-bank/) and [one portal for a financial group](/case-studies/unified-cloud-portal-financial-group/). Named write-ups depend on customer permission.
 
-**Status:** Multiple engagements active. **First named case studies expected mid-2027** as NDAs expire.
+[DORA readiness engagement →](/solutions/dora-compliance/)
 
-[DORA compliance with Ænix Platform →](/solutions/dora-compliance/)
+### Earlier platform R&D (no write-ups)
 
-### Platform R&D for ecosystem vendors
-
-Ænix has delivered deep platform component R&D for established platform vendors. These engagements demonstrate the technical capability that underpins Ænix Platform delivery.
-
-**Public case studies:**
+Before the current platforms, the team delivered platform component R&D for established platform vendors. There are no published write-ups for these projects; they are listed for the engineering background they represent.
 
 #### CSI driver for shared SAN environments
 Custom Container Storage Interface driver development for shared SAN architecture, integrated into platform vendor's distribution.
@@ -118,7 +115,6 @@ Cloud platform research and prototype for hosting provider modernization.
 #### Virtualization platform research for Kubernetes
 Foundational research on KubeVirt-based virtualization at production scale.
 
-These engagements predate Ænix Platform's commercial launch and represent the technical foundation Ænix brings to platform builds.
 
 ---
 
@@ -126,9 +122,9 @@ These engagements predate Ænix Platform's commercial launch and represent the t
 
 | Customer type | What we can say |
 |---|---|
-| Regional hosting providers | Named (currently listed on aenix.io); deployment scope; Ænix Public Cloud Platform usage |
+| Regional hosting providers | Named with their permission; deployment scope; Ænix Public Cloud Platform usage |
 | Platform R&D for ecosystem vendors | Project name and outcomes; vendor-specific details vary |
-| Tier-1 European banks | Anonymized only ("tier-1 European bank under DORA scope") until mid-2027 NDA expirations |
+| Banks and financial groups | Anonymized only, under NDA |
 | Sovereign cloud initiatives | Anonymized only; named cases pending procurement / publicity windows |
 | AI/ML deployments | Anonymized only; under NDA |
 
@@ -138,25 +134,23 @@ These engagements predate Ænix Platform's commercial launch and represent the t
 
 ### How can I learn more about a specific case?
 
-For named case studies, the engagement details are public — book a [discovery call](/contact/) and we'll walk through them.
-
-For NDA-protected engagements (banks, sovereign cloud, AI/ML), Ænix sales can arrange direct customer reference calls under NDA for active engagement opportunities.
+Book a [discovery call](/contact/) and we will walk through the cases closest to your situation. For the named hosting providers, and for some NDA-protected engagements, we can arrange a reference call under NDA when you are evaluating a concrete project.
 
 ### Are these all Ænix customers?
 
-The platform R&D engagements are historical work — Ænix delivered the projects. Some predate the Ænix legal entities in their current form but are credited as Ænix work.
+The platform R&D engagements are earlier work by the same engineering team.
 
 The hosting providers are current Ænix Public Cloud Platform customers.
 
-The bank engagements are current Ænix Private Cloud Platform customers (NDA-protected until mid-2027).
+The bank engagements are current Ænix Private Cloud Platform customers under NDA.
 
-### When will named bank case studies become available?
+### Will named bank case studies be published?
 
-First NDA expirations are expected mid-2027. As they land, named case studies will be published here. Until then, bank engagements are described only in anonymized form.
+Only when the customers agree. Until then, bank engagements are described in anonymized form, and reference calls can be arranged under NDA.
 
 ### Can I see Cozystack production deployments separately?
 
-Cozystack is open-source — many organizations run it without commercial Ænix engagement. The CNCF Landscape lists Cozystack production users community-wide. Ænix tracks Cozystack production references as part of community engagement, but Cozystack production users are not necessarily Ænix customers.
+Cozystack is open source, and many organizations run it without a commercial Ænix engagement. Those users are not necessarily Ænix customers, and they are not listed here; the project itself is described at [cozystack.io](https://cozystack.io).
 
 ---
 
@@ -170,4 +164,4 @@ Book a discovery call. We'll match your situation against relevant case patterns
 
 ---
 
-*Ænix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of Ænix Platform — a turnkey commercial cloud-in-a-box with three platforms.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project, and co-maintains it with maintainers from other companies. On it, Ænix builds three commercial platforms: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

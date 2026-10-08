@@ -1,6 +1,7 @@
 ---
-title: "Recent Changes in the Cozystack Open Source Platform: Opencost, Log Collection System, Bridge…"
-description: "Over the past couple of months, we have been actively developing our Cozystack Open Source platform, and today we’re presenting the…"
+title: "Recent Changes in the Cozystack Open Source Platform: OpenCost, Log Collection and Bridge Binding for VMs"
+seo_title: "Cozystack v0.12–v0.15: OpenCost and log collection"
+description: "What changed in Cozystack from v0.12 to v0.15: OpenCost cost monitoring, log collection on VictoriaLogs and Fluent Bit, and faster VMs with bridge binding."
 date: "2024-09-26"
 aliases:
   - "/blog/2025/02/recent-changes-in-the-cozystack-open-source-platform-opencost-log-collection-system-bridge/"
@@ -12,9 +13,9 @@ cover_image: "/img/blog/medium/recent-changes-in-the-cozystack-open-source-platf
 source_url: "https://medium.com/p/66bb25b7269b"
 ---
 
-## Over the past couple of months, we have been actively developing our Cozystack Open Source platform, and today we’re presenting the improvements introduced from v0.12 to v0.15.
+Over the past couple of months, we have been actively developing our Cozystack Open Source platform, and today we’re presenting the improvements introduced from v0.12 to v0.15.
 
-![image](/img/blog/medium/recent-changes-in-the-cozystack-open-source-platform-opencost-log-collection-system-bridge/cover.jpg)
+![Cozystack updates from v0.12 to v0.15](/img/blog/medium/recent-changes-in-the-cozystack-open-source-platform-opencost-log-collection-system-bridge/cover.jpg)
 
 > *Cozystack is an Open Source platform that enables building a cloud on bare metal for rapid deployment of managed Kubernetes, database as a service, applications as a service, and virtual machines based on KubeVirt. Within the platform, you can deploy Kafka, FerretDB, PostgreSQL, Cilium, Grafana, Victoria Metrics, and* [*other services*](https://cozystack.io/docs/components/) *with a single click.*
 

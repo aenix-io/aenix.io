@@ -1,6 +1,6 @@
 ---
-title: "Ænix Partner Program"
-description: "Aenix Partner Program — up to 40% margin on Ænix Platform for resellers, integrators, and distributors. Deal protection, sales kit, training, L3 support."
+title: "Ænix Partner Program for resellers and integrators"
+description: "Ænix Partner Program: up to 40% margin on Ænix subscriptions and support for resellers, integrators and distributors. Deal protection, training, L3 support."
 hero_subtitle: "Resell an open cloud platform, up to 40% margin"
 language: "en"
 aliases:
@@ -8,24 +8,24 @@ aliases:
 hreflang_de: /de/partner/
 ---
 
-**Sell Ænix Platform — our turnkey commercial cloud-in-a-box — with up to 40% margin, deal protection, and direct access to the Ænix core team. For integrators, resellers, distributors, and regional cloud / sovereign-cloud builders.**
+**Sell the Ænix platforms and support for Cozystack with up to 40% margin, deal protection, and direct access to the Ænix core team. For integrators, resellers, distributors, and regional cloud / sovereign-cloud builders.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
-  <a class="cta-secondary" href="/products/">Explore platform →</a>
+  <a class="cta-secondary" href="/products/">Explore the platforms →</a>
 </div>
 
 ---
 
 ## Quick facts
 
-- **Margin:** up to **40%** on Ænix Platform license + support sales
+- **Margin:** up to **40%** on Ænix subscription and support sales
 - **Deal protection:** registered opportunities are reserved to the partner — no channel conflict
 - **Five products to sell:** Public Cloud Platform / Private Cloud Platform / AI Platform / Enterprise Support for Cozystack / WHMCS Integration
 - **L3 support access:** direct line to Ænix core engineering for partner-supported customers
-- **Training included:** Kubernetes Deep Dive Course + Ænix Platform-specific enablement
+- **Training included:** Kubernetes Deep Dive Course + platform enablement
 - **Sales kit:** decks, battle cards, demo environment, technical pre-sales support
-- **Geographies:** EU + DACH + Central Asia primary; expanding via partner network globally
+- **Geographies:** EU, DACH and Central Asia directly, US contracts through AENIX INC; other regions through the partner network
 
 ---
 
@@ -33,19 +33,19 @@ hreflang_de: /de/partner/
 
 ### Resellers
 
-Sell Ænix Platform license + support tiers to your customer base. Ænix delivers the platform; you deliver the customer relationship + first-line support. Ideal for regional hosting providers, MSPs, system integrators with established cloud customer base.
+Sell Ænix subscriptions and support tiers to your customer base. Ænix delivers the platform; you deliver the customer relationship + first-line support. Ideal for regional hosting providers, MSPs, system integrators with established cloud customer base.
 
 ### Integrators
 
-Deliver Ænix Platform implementation engagements (Platform Readiness Assessment, build, migration). Ænix supports your team with training, technical pre-sales, L3 escalation. Ideal for cloud-native consultancies and platform-engineering firms.
+Deliver Ænix platform implementation engagements (Platform Readiness Assessment, build, migration). Ænix supports your team with training, technical pre-sales, L3 escalation. Ideal for cloud-native consultancies and platform-engineering firms.
 
 ### Distributors
 
-Aggregate Ænix Platform across regional sub-channels. Deal-protect downstream resellers. Ideal for IT distribution networks in specific geographies (Central Asia, Caribbean, Central + South America, MENA, APAC).
+Aggregate the Ænix platforms across regional sub-channels. Deal-protect downstream resellers. Ideal for IT distribution networks in specific geographies (Central Asia, Caribbean, Central + South America, MENA, APAC).
 
 ### Sovereign cloud / regional cloud builders
 
-Build and operate sovereign cloud products on Ænix Platform with branded customer-facing layer (white-label Cozystack Dashboard, WHMCS-integrated billing, multi-tier reseller model). Ideal for regional cloud / sovereign-cloud product companies.
+Build and operate sovereign cloud products on Ænix Public Cloud Platform with your own branding (Cozystack Dashboard white-labeling, WHMCS-integrated billing, multi-tier reseller model). Ideal for regional cloud / sovereign-cloud product companies.
 
 ---
 
@@ -55,7 +55,7 @@ Build and operate sovereign cloud products on Ænix Platform with branded custom
 Big bold headline number "40%" centered. Supporting text below.
 {{< /design-note >}}
 
-**Up to 40% margin** on Ænix Platform license + support sales. Margin tier depends on engagement size, partner level, and renewal performance.
+**Up to 40% margin** on Ænix subscription and support sales. Margin tier depends on engagement size, partner level, and renewal performance.
 
 Recurring margin on multi-year support contracts compounds — partners earn on initial sale + every renewal.
 
@@ -65,14 +65,14 @@ Recurring margin on multi-year support contracts compounds — partners earn on 
 
 | Resource | Description |
 |---|---|
-| **Sales kit** | Decks, battle cards (vs VMware / OpenStack / Nutanix / OpenShift / Proxmox), product one-pagers, edition-specific positioning |
+| **Sales kit** | Decks, battle cards (vs VMware / OpenStack / Nutanix / OpenShift / Proxmox), product one-pagers, platform-specific positioning |
 | **Technical pre-sales** | Ænix solutions engineers join customer calls, scope architecture, validate fit |
-| **Demo environment** | Pre-deployed Ænix Platform demo for customer presentations and PoCs |
+| **Demo environment** | Pre-deployed demo of the Ænix customer portal and operator back-office for presentations and PoCs |
 | **Deal registration** | Lock opportunities to partner — no internal Ænix sales contention |
 | **L3 support** | Escalation path to Ænix core engineering for partner-supported customers |
-| **Training** | Kubernetes Deep Dive Course + Ænix Platform certification track for partner technical teams |
+| **Training** | Kubernetes Deep Dive Course and the [Ænix Certification for Cozystack](/certification/) for partner technical teams |
 | **Co-marketing** | Joint webinars, conference appearances, case studies, regional events |
-| **Roadmap access** | Quarterly roadmap previews, feature-request channel, early access to new editions |
+| **Roadmap access** | Quarterly roadmap previews, feature-request channel, early access to new features |
 | **Lead sharing** | Ænix-generated leads in partner geographies routed to deal-protected partners |
 | **Onboarding** | 4-week structured onboarding — sales + technical + operations |
 
@@ -88,7 +88,7 @@ Three-tier card layout. Each card: tier name, requirements (sales target / techn
 
 **For:** Newly onboarded partners, regional resellers, sub-channel partners
 
-**Requirements:** Signed partner agreement, completed onboarding, 1+ certified technical engineer
+**Requirements:** Signed partner agreement, completed onboarding, at least one engineer who has passed the [Ænix Certification for Cozystack — Fundamentals](/certification/) exam (the exam is in English; preparation materials are currently in Russian)
 
 **Benefits:** Standard margin, deal registration, demo access, L3 support escalation, sales kit, basic training
 
@@ -96,7 +96,7 @@ Three-tier card layout. Each card: tier name, requirements (sales target / techn
 
 **For:** Active partners with consistent quarterly sales
 
-**Requirements:** Sales-target threshold (set per region), 3+ certified engineers, production customer references
+**Requirements:** Sales-target threshold (set per region), three or more certified engineers, production customer references
 
 **Benefits:** Higher margin tier, priority pre-sales support, joint marketing budget, quarterly roadmap reviews
 
@@ -115,8 +115,6 @@ Three-tier card layout. Each card: tier name, requirements (sales target / techn
 {{< design-note >}}
 Grid of partner cards. Each card: logo, name, location, 1-line description. Existing `{{< partners >}}` shortcode rendered with current partner list.
 {{< /design-note >}}
-
-{{< partners >}}
 
 <aside class="distributor-spot">
   <div class="distributor-spot__logo">
@@ -148,7 +146,7 @@ Numbered horizontal flow (4 steps). Each step: number badge, bold heading, 2-lin
 {{< /design-note >}}
 
 1. **Apply** — submit interest via the Partner Program application form (below) or email sales@aenix.io
-2. **Discovery call** (30 min) — discuss your business, customer base, target editions, geography, partner level fit
+2. **Discovery call** (30 min) — discuss your business, customer base, target platforms, geography, partner level fit
 3. **Onboarding** (4 weeks) — sales + technical + operational training; demo environment access; deal-registration setup
 4. **Go live** — first deal registration, sales kit deployed, full L3 support access
 
@@ -160,11 +158,11 @@ Typical time from application to first deal registration: 4-6 weeks.
 
 ### What's the margin?
 
-Up to 40% on Ænix Platform license + support tier sales. Margin tier depends on partner level (Authorized / Premier / Strategic), engagement size, and renewal performance.
+Up to 40% on Ænix subscription and support tier sales. Margin tier depends on partner level (Authorized / Premier / Strategic), engagement size, and renewal performance.
 
 ### Which products can I sell?
 
-All five: Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform, Enterprise Support for Cozystack, and the WHMCS Integration. They combine — an AI Platform engagement can sit on top of Private Cloud Platform. Most regional partners start with Public Cloud Platform (the productized one; entry from $1,250/month) and add Private Cloud Platform as their team builds up.
+All five: Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform, Enterprise Support for Cozystack, and the WHMCS Integration. They combine — an AI Platform engagement can sit on top of Private Cloud Platform. Most regional partners start with Public Cloud Platform (the productized one; from $1,250 per 10 nodes per month) and add Private Cloud Platform as their team builds up.
 
 ### Is there exclusivity?
 
@@ -172,15 +170,15 @@ Strategic Partner level supports regional or vertical exclusivity options. Autho
 
 ### Do you provide technical pre-sales support?
 
-Yes — Ænix solutions engineers join your customer calls for architecture scoping, edition recommendation, and PoC validation. Available to all partner levels.
+Yes — Ænix solutions engineers join your customer calls for architecture scoping, platform recommendation and PoC validation. Available to all partner levels.
 
 ### What about L3 support for my customers?
 
 Yes — direct escalation to Ænix core engineering for partner-supported production customers. Tier-bound SLAs apply (matching the support tier the customer is on).
 
-### Can I bundle Ænix Platform with my own services?
+### Can I bundle the Ænix platforms with my own services?
 
-Yes — partners frequently bundle Ænix Platform with managed-operations, migration, custom-integration, or vertical-specific add-on services. Ænix doesn't compete with partner services in the partner's deal-protected geography.
+Yes — partners frequently bundle the Ænix platforms with managed-operations, migration, custom-integration, or vertical-specific add-on services. Ænix doesn't compete with partner services in the partner's deal-protected geography.
 
 ### What if I'm a hyperscaler partner already?
 
@@ -188,11 +186,11 @@ Partner Program is non-exclusive at Authorized and Premier levels — you can be
 
 ### What about training my team?
 
-Kubernetes Deep Dive Course is included for partner technical engineers (per partner agreement seat allocation). Plus Ænix Platform certification track and ongoing enablement webinars.
+Kubernetes Deep Dive Course is included for partner technical engineers (per partner agreement seat allocation). Plus the Ænix Certification for Cozystack exam and ongoing enablement webinars.
 
 ### Geographies?
 
-Primary today: EU + DACH + Central Asia (Ænix-direct presence). Expanding via partner network globally — Caribbean / Central + South America (TECH EVOLVERS), MENA, APAC, others.
+Directly: the EU, DACH and Central Asia, with US contracts through AENIX INC (Delaware, USA). Elsewhere through the partner network — Caribbean / Central + South America (TECH EVOLVERS), MENA, APAC, others.
 
 ---
 
@@ -214,4 +212,4 @@ Or email [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
-*Ænix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project — and the maker of [Ænix Platform](/products/) — turnkey commercial cloud-in-a-box in three platforms. AENIX s.r.o. (Czechia) and AENIX INC (Delaware).*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project, and maintains it with maintainers from other companies. Ænix sells [three platforms](/products/) built on it — Public Cloud, Private Cloud and AI. AENIX s.r.o. (Czech Republic) and AENIX INC (Delaware, USA).*

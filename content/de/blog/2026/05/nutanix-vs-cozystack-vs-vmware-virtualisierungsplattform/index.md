@@ -1,5 +1,6 @@
 ---
 title: "Nutanix vs Cozystack vs VMware — die Wahl der Virtualisierungsplattform 2026"
+seo_title: "Nutanix vs. Cozystack vs. VMware im Vergleich"
 description: "Nutanix HCI mit AHV, VMware nach Broadcom und Cozystack im Vergleich: Architektur, Stärken der Plattformen und die Wirtschaftlichkeit von Migrationen."
 slug: "nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform"
 date: "2026-05-19"

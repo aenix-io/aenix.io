@@ -1,6 +1,8 @@
 ---
 title: "Cloud cost optimization — predictable spend on infrastructure you actually control"
-description: "Public-cloud bills don't shrink by themselves. The combination of underutilized commitments, idle resources, egress charges, and hyperscaler-managed-service..."
+seo_title: "Cloud cost optimization without hyperscaler bias"
+primary_keyword: "cloud cost optimization"
+description: "Find where public-cloud spend leaks, what to fix in-cloud and what to move to infrastructure you control. A fixed-price 14- or 28-day engagement."
 type: "page"
 related_pages:
   - /solutions/cloud-repatriation/
@@ -13,7 +15,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cloud cost optimization is the practice of reducing public-cloud spend by eliminating waste, right-sizing resources, tuning commitments, and deciding which workloads belong in the hyperscaler versus on infrastructure you control. It is for organizations with seven-figure annual cloud bills, sustained predictable workloads, and a cost trajectory that worries finance. Aenix runs a structured, vendor-neutral cost engagement (14 or 28 days) that produces an honest TCO model, a quantified cost-leak inventory, right-sizing recommendations, and a 12-month spend trajectory. Aenix holds no hyperscaler partnership, so recommendations are not shaped by partnership economics. When the math favours leaving cloud, Cozystack — the open-source Kubernetes-native platform behind Aenix — provides a customer-controlled destination, typically improving unit economics 30-60% on sustained workloads.**
+  **Cloud cost optimization is the practice of reducing public-cloud spend by eliminating waste, right-sizing resources, tuning commitments, and deciding which workloads belong in the hyperscaler versus on infrastructure you control. It is for organizations with seven-figure annual cloud bills, sustained predictable workloads, and a cost trajectory that worries finance. Ænix runs a structured, vendor-neutral cost engagement (14 or 28 days) that produces an honest TCO model, a quantified cost-leak inventory, right-sizing recommendations, and a 12-month spend trajectory. Ænix holds no hyperscaler partnership, so recommendations are not shaped by partnership economics. When the math favours leaving cloud, Cozystack — the open-source Kubernetes-native platform Ænix created and co-maintains — provides a customer-controlled destination, typically improving unit economics 30-60% on sustained workloads.**
 quick_facts:
   - label: "What it is"
     value: "A structured engagement that quantifies where public-cloud spend leaks and decides what to fix in-cloud versus move to controlled infrastructure"
@@ -22,7 +24,7 @@ quick_facts:
   - label: "Engagement timeline"
     value: "14-day focused cost scope or 28-day full cost program; free 30-minute discovery call on Day 0, written executive readout on the final day"
   - label: "Vendor neutrality"
-    value: "Aenix holds no hyperscaler partnership; recommendations are not shaped by partnership economics"
+    value: "Ænix holds no hyperscaler partnership; recommendations are not shaped by partnership economics"
   - label: "Typical savings range"
     value: "15-25% addressable from cost leaks before any architectural change; 30-60% better unit economics when sustained workloads move to customer-controlled hardware"
   - label: "License"
@@ -31,17 +33,17 @@ quick_facts:
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "Is this a FinOps engagement or a cost-optimization engagement?"
-    a: "Both. Pure FinOps captures configurational savings — right-sizing, reservation tuning, waste elimination. The architecture-level decisions that separate structural from configurational savings require platform engineering. The Aenix engagement covers both layers in one program."
+    a: "Both. Pure FinOps captures configurational savings — right-sizing, reservation tuning, waste elimination. The architecture-level decisions that separate structural from configurational savings require platform engineering. The Ænix engagement covers both layers in one program."
   - q: "How does this differ from a Big-4 cloud cost engagement?"
-    a: "Big-4 engagements are usually delivered by management consultants and shaped by hyperscaler-partnership economics. Aenix engineers do the work, and Aenix is partnered with no hyperscaler. The recommendation states plainly when staying in cloud is right and when leaving is right."
+    a: "Big-4 engagements are usually delivered by management consultants and shaped by hyperscaler-partnership economics. Ænix engineers do the work, and Ænix is partnered with no hyperscaler. The recommendation states plainly when staying in cloud is right and when leaving is right."
   - q: "Can you guarantee a specific percentage of savings?"
-    a: "No, and Aenix does not pitch percentage promises. Well-managed estates typically yield 15-25% before any architectural change; mismanaged estates 30-50%; estates with a strong repatriation case can be higher but require Phase 2 implementation work. The honest figure comes from the assessment."
-  - q: "Will Aenix recommend repatriation at the end?"
+    a: "No, and Ænix does not pitch percentage promises. Well-managed estates typically yield 15-25% before any architectural change; mismanaged estates 30-50%; estates with a strong repatriation case can be higher but require Phase 2 implementation work. The honest figure comes from the assessment."
+  - q: "Will Ænix recommend repatriation at the end?"
     a: "Only when the math supports it and the buyer can operate the destination platform. Often the answer is partial repatriation of selected workloads plus optimization for the remainder; sometimes pure optimization is right. The written report names the answer for your specific case."
-  - q: "What does Aenix deliver at the end of the engagement?"
+  - q: "What does Ænix deliver at the end of the engagement?"
     a: "An honest TCO model by account, service, and team; a quantified cost-leak inventory with named commitments and instance IDs; per-workload right-sizing recommendations; architectural cost decisions; a 12-month spend trajectory with confidence ranges; and a FinOps owner and process plan."
   - q: "Can we run this under a procurement process?"
-    a: "Yes. Aenix accepts RFI and RFP through standard procurement channels in EU member states and Kazakhstan. The engagement is fixed-price with a single invoice; the assessment fee is credited toward Phase 2 implementation subject to scope."
+    a: "Yes. Ænix accepts RFI and RFP through standard procurement channels; EU contracts are with AENIX s.r.o. (Czech Republic). The engagement is fixed-price with a single invoice; the assessment fee is credited toward Phase 2 implementation subject to scope."
 hreflang_de: /de/loesungen/cloud-kostenoptimierung/
 ---
 
@@ -49,7 +51,7 @@ hreflang_de: /de/loesungen/cloud-kostenoptimierung/
 
 **Public-cloud bills don't shrink by themselves. The combination of underutilized commitments, idle resources, egress charges, and hyperscaler-managed-service premiums means most cloud spend is 20-40% higher than it needs to be — before any architectural change. The right cloud cost optimization engagement names where the spend leaks, what's worth fixing inside the hyperscaler, and what's worth moving to a platform you control.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** if you sell cloud to customers; **[Private Cloud Platform](/products/private-cloud-platform/)** if you run it for your own organisation. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** if you sell cloud to customers; **[Private Cloud Platform](/products/private-cloud-platform/)** if you run it for your own organisation. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/). CTOs: see the [CTO guide](/for/cto/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -57,7 +59,7 @@ hreflang_de: /de/loesungen/cloud-kostenoptimierung/
 </div>
 
 <div class="trust-badges">
-No hyperscaler bias · Honest TCO modelling · EU engineers · Written deliverables
+No hyperscaler bias · Honest TCO modelling · Engineers, not consultants · Written deliverables
 </div>
 
 <!-- /BLOCK 1 -->
@@ -77,7 +79,7 @@ The cloud-cost engagement fits when at least three of the following hold:
 - **FinOps function exists but is reactive** — the team flags overspend after it lands; they don't shape architecture decisions before.
 - **A board-level cost decision is upcoming** — budget review, repatriation question, hiring freeze, or M&A.
 
-Match at least three and the engagement returns its cost in identified savings within the assessment itself, before any implementation work begins. With fewer signals, most of the value is in routine FinOps tooling, not a structured engagement.
+Match at least three and the assessment usually identifies savings large enough to justify it, before any implementation work begins — though, as the FAQ says, we do not promise a percentage. With fewer signals, most of the value is in routine FinOps tooling, not a structured engagement.
 
 <!-- /BLOCK 2 -->
 
@@ -198,11 +200,11 @@ Day 0 is a free 30-minute discovery call that fixes the scope. Days 1-13 (or 1-2
 
 <!-- BLOCK 8: PROOF -->
 
-## Cost engagements we've run
+## Companies running platforms built with Ænix
 
 {{< clients >}}
 
-We've run cost-emphasized engagements for service providers, financial-services organizations, telecom operators, and AI/GPU platforms across the EU, DACH, and Central Asia. Identified savings have ranged from 15% (well-managed cloud estate, mostly tactical optimization) to 50%+ (mismanaged spend with strong repatriation case).
+Hosting providers running Ænix Public Cloud Platform in production. Cost outcomes from specific deployments — for example [GPU cost on owned hardware versus rented capacity](/case-studies/multicloud-academic-gpu/) — are on the [case studies page](/case-studies/).
 
 {{< quote-carousel >}}
 
@@ -230,7 +232,7 @@ Adds vendor shortlisting, PoC scoping for top repatriation candidates, multi-BU 
 
 Fixed-price. Single invoice. Phase 2 implementation cost: assessment fee credited subject to scope.
 
-We accept RFI / RFP through standard procurement channels in EU member states and Kazakhstan.
+We accept RFI / RFP through standard procurement channels; EU contracts are with AENIX s.r.o. (Czech Republic).
 
 <!-- /BLOCK 9 -->
 
@@ -267,7 +269,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-cost engagements and platform-engineering programs for service providers, banks, telecom, and AI operators across the EU, DACH, and Central Asia.*
+*Ænix created Cozystack — a CNCF Sandbox project, Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. We run cloud-cost engagements and platform-engineering programmes.*
 
 <!-- /BLOCK 12 -->
 

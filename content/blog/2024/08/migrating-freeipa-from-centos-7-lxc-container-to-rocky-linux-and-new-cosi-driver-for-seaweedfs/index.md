@@ -1,6 +1,7 @@
 ---
 title: "Migrating FreeIPA from CentOS 7 LXC container to Rocky Linux and new COSI driver for SeaweedFS"
-description: "Hi there! We are glad to share our last updates."
+seo_title: "FreeIPA on Rocky Linux and a COSI driver for SeaweedFS"
+description: "Two updates from Ænix: a write-up on moving FreeIPA from a CentOS 7 LXC container to Rocky Linux, and a new open-source COSI driver for SeaweedFS."
 date: "2024-08-01"
 cover_image: "/img/blog/covers/migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-and-new-cosi-driver-for-seaweedfs.jpg"
 author: "Timur Tukaev"
@@ -44,15 +45,13 @@ quiz:
 ---
 
 
----
 
-### Migrating FreeIPA from CentOS 7 LXC container to Rocky Linux and new COSI driver for SeaweedFS
 
 Hi there! We are glad to share our last updates.
 
 **First, we published new article** about updating an outdated FreeIPA in a large enterprise. This FreeIPA instance was installed in an LXC container on CentOS 7 and had been non-functional for several months. Our founder, Andrei Kvapil solved this problem like a ninja.
 
-Details: [https://blog.aenix.io/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging-b8b923499b96](https://blog.aenix.io/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging-b8b923499b96)
+Details: [FreeIPA tips and tricks: migrating FreeIPA from CentOS 7 LXC to Rocky Linux](/blog/2024/08/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/)
 
 **Second, we are pleased to introduce the new COSI driver for SeaweedFS**. [COSI](https://container-object-storage-interface.github.io/) is a unified Container Object Storage Interface for Kubernetes. It introduces [new resources](https://github.com/seaweedfs/seaweedfs-cosi-driver/tree/main/examples) such as BucketClaim, Bucket, and BucketAccess for the declarative provisioning of S3 buckets and access management based on the PVC principle.
 

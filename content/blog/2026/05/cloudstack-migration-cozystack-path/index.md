@@ -1,5 +1,6 @@
 ---
 title: "CloudStack migration to Cozystack — the modernization path for established service providers"
+seo_title: "CloudStack to Cozystack: a modernization path"
 description: "How service providers can modernize Apache CloudStack to Cozystack as a Kubernetes-native target, with architecture mapping, migration phases, and trade-offs."
 date: "2026-05-06"
 cover_image: "/img/blog/covers/cloudstack-migration-cozystack-path.jpg"
@@ -28,15 +29,15 @@ quiz:
     - q: "What's the realistic total elapsed time for a CloudStack-to-Cozystack migration end to end?"
       options:
         - { text: "Twelve to twenty-four months end to end", correct: true }
-        - { text: "Three to six months end to end", correct: false }
+        - { text: "A few weeks end to end", correct: false }
         - { text: "Six to nine months end to end", correct: false }
-      explanation: "Total elapsed time is 12-24 months from project start to CloudStack fully retired, split across assessment (3-6 weeks), foundation (2-4 months), service catalog (2-4 months), VM cohort migration (3-9 months), and decommission (2-6 months)."
+      explanation: "Total elapsed time is 12-24 months from project start to CloudStack fully retired, split across assessment (14 or 28 days), foundation (weeks to 4 months), service catalog (2-4 months), VM cohort migration (3-9 months), and decommission (2-6 months)."
     - q: "Where does the article say CloudStack modernization is a poor fit?"
       options:
         - { text: "Operators with growing managed-database demand", correct: false }
         - { text: "Very small operators below roughly 200 customers", correct: true }
         - { text: "Operators running KVM-based CloudStack today", correct: false }
-      explanation: "Cozystack Public Cloud Platform fixed-cost economics don't pay back for very small operators (<200 customers), and operators with declining customer counts can't justify the modernization cost. Growing managed-service demand and KVM-based CloudStack are strong-fit signals."
+      explanation: "A full migration programme doesn't pay back for very small operators (<200 customers), and operators with declining customer counts can't justify the modernization cost. Growing managed-service demand and KVM-based CloudStack are strong-fit signals."
     - q: "How does the article suggest handling customers who built tooling against the CloudStack API?"
       options:
         - { text: "Force all customers to rewrite at cutover", correct: false }
@@ -112,7 +113,7 @@ service offerings vs Cozystack package + ApplicationDefinition).
 
 ## Migration phases
 
-### Phase 0 — Assessment (3-6 weeks)
+### Phase 0 — Assessment (14 or 28 days)
 
 Workload inventory: VM count, OS mix, vCPU/RAM/disk profiles,
 criticality tier. Network inventory: VPC count, public IP allocation,
@@ -127,9 +128,11 @@ contractual obligations, SLA tiers, billing integration touchpoints.
 Output: a migration plan with workload buckets (migrate-now /
 migrate-later / stay / re-architect), risk flags, timing.
 
-### Phase 1 — Cozystack foundation (2-4 months)
+### Phase 1 — Cozystack foundation (weeks to 4 months)
 
-Hardware procurement (or repurpose). Cozystack platform deployed on
+Hardware procurement (or repurpose) usually sets the pace: once
+hardware is ready, the platform goes live in weeks with the
+productized installer. Cozystack platform deployed on
 new infrastructure alongside the existing CloudStack estate. Cilium
 networking validated. LINSTOR storage operationalised.
 Identity integration (Keycloak or whatever IdP the provider operates).
@@ -224,19 +227,22 @@ Poor fit:
 
 - Operators in declining-customer-count territory — modernisation
   cost is hard to justify
-- Very small operators (<200 customers) — Cozystack Public Cloud Platform fixed
-  cost overshoots the savings
+- Very small operators (<200 customers) — a full migration programme
+  costs more than it saves; a greenfield service line on Ænix Public
+  Cloud Platform at provider scale is the smaller step
 
 ## Engagement structure
 
 - **Discovery call** (30 min, free)
-- **Migration assessment** (3-6 weeks, fixed-price) — inventory,
-  workload buckets, timing
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
+  (fixed price, 14 days focused or 28 days full) — inventory, workload
+  buckets, timing
 - **Pilot deployment** (3-6 months) — Cozystack platform stood up,
   5-10 friendly customers migrated, billing workflows validated
 - **Customer-cohort migration** (6-18 months) — workload migration in
   cohorts, decommission of CloudStack in parallel
-- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
+- **Support subscription** (ongoing) — Plus or Enterprise support tier
+  for 24×7 escalation (see [/pricing/](/pricing/))
 
 Total elapsed time: 12-24 months from project start to CloudStack
 fully retired.

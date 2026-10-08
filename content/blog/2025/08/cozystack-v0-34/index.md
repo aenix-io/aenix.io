@@ -1,6 +1,7 @@
 ---
-title: "Cozystack v0.34:"
-description: "Our maintainers and contributors never stand still, and we’re already ready to present the next stable release of Cozystack v0.34. In this…"
+title: "Cozystack v0.34: Kubernetes Version Selection, PVC Snapshots in Tenants, Windows and RouterOS on VMs"
+seo_title: "Cozystack v0.34: Kubernetes versions and snapshots"
+description: "Cozystack v0.34: tenants choose their Kubernetes version and take PVC snapshots, VMs run Windows and RouterOS, and VPA now autoscales itself."
 date: "2025-08-04"
 author: "Timur Tukaev"
 type: "announcement"
@@ -8,21 +9,21 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-34/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-34-d66557a0deeb"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack v0.34: K8s Version Selection and PVC Snapshots in Tenants, Windows and RouterOS on VMs, VPA for VPA
 
 Our maintainers and contributors never stand still, and we’re already ready to present the next stable release of Cozystack v0.34. In this release, we continued working on expanding the functionality of the Vertical Pod Autoscaler, improving tenant clusters, enhancing the backup system, and moving toward platform decomposition.
 
 Below, we’ll cover the most important changes, and you can find the full list of fixes in the links at the end of the announcement.
 
-![image](/img/blog/medium/cozystack-v0-34/cover.png)
+![Cozystack v0.34 release](/img/blog/medium/cozystack-v0-34/cover.png)
 
 > What is Cozystack? Cozystack is a free PaaS and framework for building clouds that unifies VMs, containers, and GPU workloads under Kubernetes. Companies can turn hardware into a cloud: offer users or customers managed K8s, VMs, managed data bases, applications and GPU services. With KubeVirt integration, multi-tenancy, and bare-metal simplicity, it lets enterprises deploy AI, databases, or edge apps without vendor lock-in. Cozystack is a CNCF Sandbox project.
 
-### Major Features and Improvements
+## Major Features and Improvements
 
 - Enable users to select [Kubernetes versions](https://github.com/cozystack/cozystack/pull/1202) in tenant clusters. Supported versions range from 1.28 to 1.33, updated to the latest patches.
 - Enable [PVC snapshot](https://github.com/cozystack/cozystack/pull/1203) capability in tenant Kubernetes clusters.
@@ -33,13 +34,13 @@ Below, we’ll cover the most important changes, and you can find the full list 
 - Put [YAML editor first](https://github.com/cozystack/cozystack/pull/1227) when deploying and upgrading applications, as a more powerful option. Fix handling multiline strings.
 - Numerous API improvements and progress toward the new UI: [OpenAPI schema for apps](https://github.com/cozystack/cozystack/pull/1174), [OpenAPI Schema](https://github.com/cozystack/cozystack/pull/1173) refactoring, using [singular resource names](https://github.com/cozystack/cozystack/pull/1169) in Cozystack API.
 
-![image](/img/blog/medium/cozystack-v0-34/02.png)
+![Cozystack v0.34 API and UI improvements](/img/blog/medium/cozystack-v0-34/02.png)
 
-### Security
+## Security
 
 - Ensure that JWT signing keys in the SeaweedFS security configuration [remain consistent](https://github.com/cozystack/cozystack/pull/1193) across Helm upgrades. Resolve an [upstream issue](https://github.com/seaweedfs/seaweedfs/pull/6967).
 
-### New components versions
+## New components versions
 
 - FerretDB v2.4.0 (breaking change! before upgrading FerretDB instances, back up and restore the data following the [migration guide](https://docs.ferretdb.io/migration/migrating-from-v1/)).
 - Talos Linux v1.10.5.
@@ -53,7 +54,7 @@ Below, we’ll cover the most important changes, and you can find the full list 
 - MariaDB Operator to v0.38.1.
 - SeaweedFS to v3.94.
 
-### New Documentation
+## New Documentation
 
 - [Updated Cozystack Roadmap and Backlog for 2024–2026](https://cozystack.io/docs/roadmap/).
 - [Running Windows VMs](https://cozystack.io/docs/operations/virtualization/windows/).
@@ -64,13 +65,13 @@ Below, we’ll cover the most important changes, and you can find the full list 
 - [Key Concepts of Cozystack](https://cozystack.io/docs/guides/concepts/).
 - [Cozystack Architecture and Platform Stack](https://cozystack.io/docs/guides/platform-stack/).
 
-### Development, Testing, and CI/CD
+## Development, Testing, and CI/CD
 
 - Improve [workflow for contributors](https://github.com/cozystack/cozystack/pull/1226) submitting PRs from forks. Use Oracle Cloud Infrastructure Registry for non-release PRs, bypassing restrictions preventing pushing to ghcr.io with default GitHub token.
 
 All changes: [v0.34.3](https://github.com/cozystack/cozystack/releases/tag/v0.34.3), [v0.34.2](https://github.com/cozystack/cozystack/releases/tag/v0.34.2), [v0.34.1](https://github.com/cozystack/cozystack/releases/tag/v0.34.1), [v0.34.0](https://github.com/cozystack/cozystack/releases/tag/v0.34.0)
 
-### Join the community
+## Join the community
 
 - Telegram [group](http://t.me/cozystack)
 - Slack [group](https://kubernetes.slack.com/archives/C06L3CPRVN1) (Get invite at [https://slack.kubernetes.io](https://slack.kubernetes.io))

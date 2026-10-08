@@ -1,6 +1,7 @@
 ---
 title: "Cozypkg: How We Simplified Local Development with Helm and Flux"
-description: "Hi! I’m Andrei Kvapil CEO of Ænix and developer of Cozystack, an open source platform and framework for building cloud infrastructure. In…"
+seo_title: "Cozypkg: local development with Helm and Flux"
+description: "Andrei Kvapil shows how Cozystack ships apps with Helm and Flux, why GitOps gets in the way of local development, and how the cozypkg tool solves it."
 date: "2025-06-18"
 author: "Andrei Kvapil"
 type: "article"
@@ -13,17 +14,17 @@ source_url: "https://medium.com/p/003c8ed839ca"
 
 Hi! I’m Andrei Kvapil CEO of Ænix and developer of Cozystack, an open source platform and framework for building cloud infrastructure. In this article I’ll walk through the way we deliver applications to Kubernetes, explain why regular GitOps can be awkward in local development, and show how the new tool [cozyhr](https://github.com/cozystack/cozyhr) (released as cozypkg and renamed to cozyhr in December 2025) fixes those pain points. The article targets engineers who already know Helm and Flux.
 
-![image](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/cover.jpg)
+![Cozypkg: local development with Helm and Flux](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/cover.jpg)
 
 First, I’ll introduce Cozystack, as it’s important for the context. Cozystack is a cloud platform that lets you run and offer managed services — databases, VMs, Kubernetes clusters, and more. Cozystack takes care of the full life‑cycle of every service.
 
 Cozystack exposes many infrastructure services and an interface for requesting them via the Kubernetes API. Each service starts with ready‑made configs, built‑in monitoring and alerts. Some services are IaaS (such as managed Kubernetes and VMs), others are PaaS (DBaaS, queues, S3 buckets, and so on).
 
-![image](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/01.png)
+![Managed services Cozystack exposes through the Kubernetes API](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/01.png)
 
 The platform itself is built on top of Kubernetes, also employing a host of free/open-source cloud‑native components. These include Kubernetes operators, a storage system, a networking fabric, and a custom image for Talos Linux including a pinned kernel version and pre‑loaded modules that guarantee stable operation for all components.
 
-![image](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/02.png)
+![Cloud-native components that Cozystack is built from](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/02.png)
 
 Flux handles the delivery of those components. In practice the platform uses only the Helm Controller part of Flux, which installs Helm charts via `HelmRelease` custom resources.
 
@@ -88,7 +89,7 @@ We used the [helm-diff](https://github.com/databus23/helm-diff) plugin, which sh
 At some point we wanted a single tool that did all of that.
 Enter `cozyhr` — a tiny Go binary (5× smaller than `kubectl`!) that wraps the functionality of multiple other tools: Helm, `helm-diff`, `flux` CLI, `kubectl`, and our own Flux post-processor.
 
-![image](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/03.png)
+![cozyhr combining Helm, helm-diff, Flux CLI and kubectl](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/03.png)
 
 `cozyhr` is focused on *local* chart development and integrates tightly with Flux.
 The default assumption is that you run it from the chart directory.
@@ -143,7 +144,7 @@ We welcome feedback and pull requests: [https://github.com/cozystack/cozyhr](htt
 ## Join the Cozystack Community
 
 - [Telegram](https://t.me/cozystack)
-- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (in the [Kubernetes Slack](https://communityinviter.com/apps/kubernetes/community))
+- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (in the [Kubernetes Slack](https://slack.kubernetes.io/))
 - [Community Meeting Calendar](https://calendar.google.com/calendar?cid=ZTQzZDIxZTVjOWI0NWE5NWYyOGM1ZDY0OWMyY2IxZTFmNDMzZTJlNjUzYjU2ZGJiZGE3NGNhMzA2ZjBkMGY2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 ## See also

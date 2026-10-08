@@ -1,5 +1,6 @@
 ---
 title: "Cloud cost optimization strategies in 2026 — a practical guide for engineering and finance"
+seo_title: "Cloud cost optimization strategies for 2026"
 description: "Eight cloud cost optimization strategies, from commitment-realization gaps to Kubernetes right-sizing — and the point where configurational tuning stops paying."
 date: "2026-05-03"
 cover_image: "/img/blog/covers/cloud-cost-optimization-strategies-2026.jpg"

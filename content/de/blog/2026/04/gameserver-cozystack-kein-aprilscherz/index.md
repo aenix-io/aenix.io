@@ -48,13 +48,13 @@ Hallo, Welt! Wir sind das Team hinter [Cozystack](https://cozystack.io), einer O
 
 ![Bild](/img/blog/medium/game-servers-on-cozystack-no-april-fools-joke/cover.png)
 
-### Was ist Cozystack
+## Was ist Cozystack
 
 Cozystack ist eine Plattform, die gewöhnliche Server in eine vollwertige Cloud verwandelt. Das Projekt gehört zur CNCF Sandbox, steht unter der offenen Lizenz Apache 2.0 und wird auf Bare-Metal-Servern installiert.
 
 Von Haus aus bringt die Plattform mehr als 20 Managed Services mit: Datenbanken (PostgreSQL, MariaDB, MongoDB usw.), Message Queues (Kafka, RabbitMQ), Caching (Redis), S3-Storage, virtuelle Maschinen, Kubernetes-Cluster, Netzwerk und Load Balancer. Alles läuft direkt auf der Hardware, ohne zusätzliche Virtualisierungsschichten.
 
-### Warum Gameserver
+## Warum Gameserver
 
 Wir haben recherchiert und eine stabile Nachfrage gesehen: Hosting-Provider und Gaming-Communities suchen nach Alternativen mit vorhersehbarer Performance, ohne Bindung an einen bestimmten Anbieter und ohne komplizierte Lizenzierung.
 
@@ -64,7 +64,7 @@ Wer schon einmal Gameserver in der Cloud betrieben hat, kennt das Problem: Noisy
 
 Wir haben uns angesehen, was die Plattform bereits mitbringt, und festgestellt, dass der Großteil der Infrastruktur fertig war. S3 für Karten und Assets. Datenbanken für Spielerdaten und Statistiken. Redis für Sessions. Message Queues für die Kommunikation zwischen Servern. Load Balancer, VPN, geplante Backups. Es fehlten nur noch die Spiele selbst.
 
-### Wie es funktioniert
+## Wie es funktioniert
 
 Cozystack hat einen **External-Apps**-Mechanismus, um externe Anwendungs-Repositories anzubinden. Nach dem [Release von v1.0](https://cozystack.io/blog/2026/03/cozystack-1-0-release/) wurde er grundlegend überarbeitet: Die Plattform ist auf eine paketbasierte Architektur mit den Ressourcen **Package** und **PackageSource** umgestiegen, die der cozystack-operator verwaltet. Im Grunde funktioniert das wie apt unter Debian, nur für Kubernetes:
 
@@ -75,7 +75,7 @@ Cozystack hat einen **External-Apps**-Mechanismus, um externe Anwendungs-Reposit
 
 Jeder kann einen eigenen Anwendungskatalog zusammenstellen und an Cozystack anbinden, ohne den Kern anzufassen.
 
-### Cozylex: Die erste Umsetzung
+## Cozylex: Die erste Umsetzung
 
 Den ersten Schritt machte das Repository [cozylex](https://github.com/lexfrei/cozylex), vorbereitet von unserem Entwickler [Aleksei Sviridkin](https://github.com/lexfrei), das einen Managed-Minecraft-Server umsetzt:
 
@@ -85,11 +85,11 @@ Den ersten Schritt machte das Repository [cozylex](https://github.com/lexfrei/co
 
 Die Anbindung an einen Cluster dauert ein paar Minuten, danach erscheint Minecraft im Marketplace neben PostgreSQL und Redis.
 
-### Wie es weitergeht
+## Wie es weitergeht
 
 Wir wollen diesen Ansatz ausbauen und daraus eine eigene Linie machen — die **Game Server Edition**. Kurzfristig planen wir, den Minecraft-Server als offizielles Beispiel einer einbindbaren Anwendung zu übernehmen und die Dokumentation zu aktualisieren. Danach folgen Counter-Strike, Rust, FiveM, Factorio und weitere.
 
-### Zusammengefasst
+## Zusammengefasst
 
 Gameserver sind ein guter Belastungstest für eine Plattform. Wer eine Workload mit strengen Anforderungen an Latenz und I/O zuverlässig stemmt, stemmt alles.
 

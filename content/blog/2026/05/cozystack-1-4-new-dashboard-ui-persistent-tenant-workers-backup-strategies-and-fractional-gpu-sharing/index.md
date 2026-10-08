@@ -1,5 +1,6 @@
 ---
 title: "Cozystack 1.4: New Dashboard UI, Persistent Tenant Workers, Backup Strategies, and Fractional GPU Sharing"
+seo_title: "Cozystack 1.4: new dashboard and GPU sharing"
 description: "Cozystack v1.4.0 is now available. The release was published on May 19, 2026, and rolls up every fix shipped in the v1.3.1 to v1.3.3 patch line."
 date: "2026-05-28"
 author: "Timur Tukaev"
@@ -9,23 +10,23 @@ language: "en"
 cover_image: "/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/cover.jpg"
 source_url: "https://blog.aenix.io/cozystack-1-4-0c5e399a7308"
 hreflang_de: /de/blog/2026/05/cozystack-1-4-neues-dashboard-persistente-tenant-worker-backup-strategien-gpu-sharing/
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack 1.4: New Dashboard UI, Persistent Tenant Workers, Backup Strategies, and Fractional GPU Sharing
 
-> **Editor’s note (September 2026):** this release announcement is preserved as it was published on May 28, 2026. Cozystack has moved on since — the current release is v1.6.2. For anything newer, see the [Cozystack releases](https://github.com/cozystack/cozystack/releases) and the [current documentation](https://cozystack.io/docs/). Documentation links below deliberately point at the v1.4 docs, which describe the release as shipped.
+> **Editor’s note (September 2026):** this release announcement is preserved as it was published on May 28, 2026. Cozystack has moved on since — the current release line is 1.6. For the latest patch release, see the [Cozystack releases](https://github.com/cozystack/cozystack/releases) and the [current documentation](https://cozystack.io/docs/). Documentation links below deliberately point at the v1.4 docs, which describe the release as shipped.
 
 Cozystack v1.4.0 is now available. The release was published on May 19, 2026, and rolls up every fix shipped in the v1.3.1 to v1.3.3 patch line.
 
 This cycle is focused on the operational experience of running Cozystack as a production platform: a faster dashboard architecture, more durable tenant Kubernetes workers, clearer resource sizing, backup workflows for managed applications, better GPU utilization, safer ingress publishing, and fewer race conditions during first installs and upgrades.
 
-![image](/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/cover.jpg)
+![Cozystack 1.4 release](/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/cover.jpg)
 
-### Main highlights
+## Main highlights
 
-#### New schema-driven dashboard UI
+### New schema-driven dashboard UI
 
 Cozystack 1.4 ships a rewritten dashboard from the `cozystack/cozystack-ui` project. The old `openapi-ui` plus BFF stack has been replaced by a React 19 and TypeScript frontend that talks directly to the Kubernetes API.
 
@@ -55,7 +56,7 @@ Documentation:
 - [ApplicationDefinition reference](https://cozystack.io/docs/v1.4/cozystack-api/application-definitions/)
 - [White-labeling and runtime branding](https://cozystack.io/docs/v1.4/operations/configuration/white-labeling/)
 
-#### Persistent worker-node storage for tenant Kubernetes
+### Persistent worker-node storage for tenant Kubernetes
 
 Tenant Kubernetes worker VMs now use PVC-backed persistent disks through KubeVirt `dataVolumeTemplates`. Previously, workers used ephemeral `emptyDisk` storage, which meant kubelet certificates, kubeconfig, and containerd state were lost after a VM reboot. A rebooted worker could lose its identity and require manual recovery.
 
@@ -65,7 +66,7 @@ Existing tenant clusters will roll worker nodes once because the KubeVirt machin
 
 Documentation: [Tenant Kubernetes configuration](https://cozystack.io/docs/v1.4/kubernetes/).
 
-#### Instance-type resource presets
+### Instance-type resource presets
 
 Resource presets now follow a cloud-style `<series>.<size>` taxonomy. The new model covers five CPU-to-memory series:
 
@@ -81,7 +82,7 @@ The previous flat names such as `small`, `medium`, and `large` are still accepte
 
 Documentation: [Resource presets](https://cozystack.io/docs/v1.4/guides/resource-management/).
 
-#### Declarative backup strategies for managed applications
+### Declarative backup strategies for managed applications
 
 The backup strategy controller now supports PostgreSQL, MariaDB, ClickHouse, and FoundationDB. Tenants can define a strategy together with `BackupClass`, `Plan`, `BackupJob`, and `RestoreJob` resources, while the controller composes the backend-specific objects for each managed service.
 
@@ -94,7 +95,7 @@ Documentation:
 - [Managed app backup configuration](https://cozystack.io/docs/v1.4/operations/services/managed-app-backup-configuration/)
 - [Application backup and recovery](https://cozystack.io/docs/v1.4/applications/backup-and-recovery/)
 
-#### HAMi-based fractional GPU sharing
+### HAMi-based fractional GPU sharing
 
 Cozystack 1.4 adds `hami` as an optional system package. HAMi v2.8.1, a CNCF Sandbox project, provides fractional GPU sharing for tenant Kubernetes clusters.
 
@@ -104,7 +105,7 @@ There is one important compatibility note: HAMi compute isolation depends on con
 
 Documentation: [GPU sharing with HAMi](https://cozystack.io/docs/v1.4/kubernetes/gpu-sharing/).
 
-#### One switch for PROXY protocol and hairpin NAT
+### One switch for PROXY protocol and hairpin NAT
 
 The new `publishing.proxyProtocol: true` option enables PROXY protocol on the host ingress-nginx and deploys Ouroboros to solve the related hairpin-NAT problem.
 
@@ -114,7 +115,7 @@ The default behavior is unchanged. Clusters that do not enable PROXY protocol do
 
 Documentation: [PROXY protocol and hairpin NAT](https://cozystack.io/docs/v1.4/networking/hairpin-proxy-protocol/).
 
-#### Better HelmRelease behavior and tenant bootstrap reliability
+### Better HelmRelease behavior and tenant bootstrap reliability
 
 The Cozystack operator now exposes HelmRelease generation knobs as operator flags and chart values, including interval, retry interval, install timeout, upgrade timeout, and max history.
 
@@ -125,7 +126,7 @@ Documentation:
 - [Tenant Kubernetes operations](https://cozystack.io/docs/v1.4/kubernetes/)
 - [Troubleshooting Flux CD](https://cozystack.io/docs/v1.4/operations/troubleshooting/flux-cd/)
 
-#### Kubelet reservations for worker nodes
+### Kubelet reservations for worker nodes
 
 Tenant Kubernetes worker nodes now receive automatically computed kubelet reservations for CPU and memory. This keeps kubelet itself from being targeted under memory pressure and makes scheduler and autoscaler decisions more accurate.
 
@@ -133,7 +134,7 @@ Cluster-autoscaler annotations now report allocatable CPU and memory instead of 
 
 Documentation: [Tenant Kubernetes operations](https://cozystack.io/docs/v1.4/kubernetes/).
 
-### Also in v1.4.0
+## Also in v1.4.0
 
 - PostgreSQL parameters are now typed and protected by a denylist for dangerous values such as `archive_command`, `restore_command`, `ssl_passphrase_command`, `dynamic_library_path`, and `*_preload_libraries`.
 - Keycloak gains `extraEnv` and user profile customization support.
@@ -154,7 +155,7 @@ Documentation:
 - [Monitoring dashboards](https://cozystack.io/docs/v1.4/operations/services/monitoring/dashboards/)
 - [Troubleshooting and diagnostics](https://cozystack.io/docs/v1.4/operations/troubleshooting/)
 
-### Platform components
+## Platform components
 
 Cozystack 1.4 updates the platform base and several core packages:
 
@@ -174,7 +175,7 @@ Documentation:
 - [Platform stack overview](https://cozystack.io/docs/v1.4/guides/platform-stack/)
 - [Upgrade guide](https://cozystack.io/docs/v1.4/operations/cluster/upgrade/)
 
-### Upgrade notes
+## Upgrade notes
 
 Most operators can upgrade to v1.4.0 without manual configuration changes. Cozystack keeps the same API surface for existing workloads, and in-platform migrations handle the main value rewrites.
 
@@ -194,7 +195,7 @@ Documentation:
 - [Resource management](https://cozystack.io/docs/v1.4/guides/resource-management/)
 - [PostgreSQL configuration](https://cozystack.io/docs/v1.4/applications/postgres/)
 
-### Documentation worth knowing about
+## Documentation worth knowing about
 
 - [New dashboard and application catalog](https://cozystack.io/docs/v1.4/getting-started/deploy-app/)
 - [ApplicationDefinition reference](https://cozystack.io/docs/v1.4/cozystack-api/application-definitions/)
@@ -208,13 +209,13 @@ Documentation:
 - [Upgrade guide](https://cozystack.io/docs/v1.4/operations/cluster/upgrade/)
 - [Cozystack v1.4 documentation](https://cozystack.io/docs/v1.4/)
 
-### Thank you to all contributors
+## Thank you to all contributors
 
 This release was shaped by the work of [@androndo](https://github.com/androndo), [@Arsolitt](https://github.com/Arsolitt), [@dislogical](https://github.com/dislogical), [@dvc](https://github.com/dvc), [@IvanHunters](https://github.com/IvanHunters), [@kvaps](https://github.com/kvaps), [@lexfrei](https://github.com/lexfrei), [@matthieu-robin](https://github.com/matthieu-robin), [@mattia-eleuteri](https://github.com/mattia-eleuteri), [@myasnikovdaniil](https://github.com/myasnikovdaniil), [@sircthulhu](https://github.com/sircthulhu), and [@tym83](https://github.com/tym83).
 
 A special welcome to first-time contributors [@dvc](https://github.com/dvc) and [@dislogical](https://github.com/dislogical). Thank you all.
 
-### Release links
+## Release links
 
 - [Cozystack v1.4.0 on GitHub](https://github.com/cozystack/cozystack/releases/tag/v1.4.0)
 - [Full changelog v1.3.0 to v1.4.0](https://github.com/cozystack/cozystack/compare/v1.3.0...v1.4.0)
@@ -222,7 +223,7 @@ A special welcome to first-time contributors [@dvc](https://github.com/dvc) and 
 - [HAMi](https://github.com/Project-HAMi/HAMi)
 - [Ouroboros](https://github.com/lexfrei/ouroboros)
 
-### Join the community
+## Join the community
 
 - GitHub: [cozystack/cozystack](https://github.com/cozystack/cozystack)
 - Telegram: [@cozystack](https://t.me/cozystack)

@@ -1,6 +1,7 @@
 ---
 title: "KubeVirt: The Truth About Virtualization Overhead In Kubernetes"
-description: "When it comes to running virtual machines in Kubernetes via KubeVirt, the first question engineers ask is: “What is the overhead?” Let’s…"
+seo_title: "KubeVirt: the real virtualization overhead"
+description: "How much overhead do KubeVirt virtual machines add in Kubernetes? An analysis of compute, storage and networking, and how to avoid the overhead."
 date: "2026-01-20"
 author: "Andrei Kvapil"
 type: "article"
@@ -13,7 +14,7 @@ source_url: "https://medium.com/p/ba1a5ec21a79"
 
 When it comes to running virtual machines in Kubernetes via KubeVirt, the first question engineers ask is: “What is the overhead?” Let’s dive into the details and break it down by three key areas: compute, storage, and network.
 
-![image](/img/blog/medium/kubevirt-the-truth-about-virtualization-overhead-in-kubernetes/cover.jpg)
+![KubeVirt virtualization overhead in Kubernetes](/img/blog/medium/kubevirt-the-truth-about-virtualization-overhead-in-kubernetes/cover.jpg)
 
 ## Compute Overhead. Spoiler: There Isn’t Any
 
@@ -89,7 +90,7 @@ Some CNI drivers (like Kube-OVN) have their own parallel APIs to offload network
 
 ## Final Thoughts
 
-![image](/img/blog/medium/kubevirt-the-truth-about-virtualization-overhead-in-kubernetes/01.png)
+![KubeVirt overhead summary for compute, storage and networking](/img/blog/medium/kubevirt-the-truth-about-virtualization-overhead-in-kubernetes/01.png)
 
 KubeVirt is a good compromise between performance and flexibility. If you need every bit of performance and don’t mind managing complex setups, you can push it further. But if you want something standard, vendor-neutral, and easy to support, KubeVirt does the job perfectly.
 

@@ -1,6 +1,6 @@
 ---
-title: "WHMCS Kubernetes & cloud — the Cozystack integration for hosters"
-description: "Sell Kubernetes clusters, managed databases, VMs, message brokers, object storage and GPU from WHMCS. The proprietary Aenix integration adds Cozystack services and billing to the panel you already run."
+title: "WHMCS Kubernetes and cloud: the Ænix module for hosters"
+description: "Sell Kubernetes, managed databases, VMs, message brokers, S3 and GPU from WHMCS. A proprietary Ænix module, included in every Public Cloud Platform tier."
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -16,30 +16,33 @@ related_pages:
   - /migration/proxmox/
   - /case-studies/sovereign-public-cloud/
 direct_answer: |
-  **The Aenix WHMCS integration plugs Cozystack straight into the billing panel you already run: your customers order modern cloud services from WHMCS, you bill them through WHMCS, and Cozystack provisions and meters them — no separate control plane, no rip-and-replace. It is a proprietary Aenix product for hosting providers, ISPs, MSPs and regional clouds that want to add Kubernetes, databases, VMs and GPU to their offering without building a cloud platform from scratch.**
+  **The Ænix WHMCS integration plugs Cozystack straight into the billing panel you already run: your customers order modern cloud services from WHMCS, you bill them through WHMCS, and Cozystack provisions and meters them — no separate control plane, no rip-and-replace. It is a proprietary Ænix module, not part of open-source Cozystack, and it is included in every tier of the Ænix Public Cloud Platform subscription (from $1,250 per 10 nodes per month). It is built for hosting providers, ISPs, MSPs and regional clouds that want to add Kubernetes, databases, VMs and GPU to their offering without building a cloud platform from scratch.**
 quick_facts:
   - label: "What it is"
-    value: "A proprietary Aenix module that connects Cozystack service provisioning and metering to WHMCS billing."
+    value: "A proprietary Ænix module that connects Cozystack service provisioning and metering to WHMCS billing."
   - label: "Who it's for"
     value: "Hosting providers, ISPs, MSPs and regional clouds already running WHMCS (or planning to)."
   - label: "Services exposed"
-    value: "Managed Kubernetes, databases (PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS), VMs, message brokers, S3-compatible object storage, GPU workloads."
+    value: "Managed Kubernetes, databases (PostgreSQL, MariaDB, Valkey, ClickHouse), VMs, message brokers (Kafka, RabbitMQ, NATS), S3-compatible object storage, GPU workloads."
   - label: "Billing"
     value: "Provisioning, metering and invoicing flow through your existing WHMCS billing."
   - label: "Foundation"
-    value: "Open-source Cozystack (CNCF project, Apache 2.0); the WHMCS module itself is a proprietary Aenix product."
+    value: "Open-source Cozystack (CNCF project, Apache 2.0) underneath; the WHMCS module itself is proprietary Ænix software."
+  - label: "Price"
+    value: "Included in every Ænix Public Cloud Platform tier: Basic $1,250, Standard $3,000, Plus $5,500 per 10 nodes per month, Enterprise custom."
   - label: "Time to offer"
-    value: "Days, not quarters — new services on the panel your team already knows."
-quick_facts_source: "[Cozystack (CNCF)](https://cozystack.io)"
+    value: "Live in weeks once the hardware is ready, through the productized installer — new services on the panel your team already knows."
 faq:
   - q: "What does the WHMCS integration actually add?"
     a: "It lets your WHMCS customers self-serve modern cloud services — managed Kubernetes, databases, VMs, message brokers, object storage and GPU — while provisioning, metering and invoicing run through your existing WHMCS billing. Cozystack is the platform underneath; WHMCS stays your commercial front."
   - q: "Which services can I sell through it?"
-    a: "Managed Kubernetes clusters, managed databases (PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS), virtual machines (KubeVirt-based, Linux and Windows), message brokers and queues, S3-compatible object storage, and GPU workloads for AI/ML and rendering."
+    a: "Managed Kubernetes clusters, managed databases (PostgreSQL, MariaDB, Valkey, ClickHouse), virtual machines (KubeVirt-based, Linux and Windows), message brokers and queues (Kafka, RabbitMQ, NATS), S3-compatible object storage, and GPU workloads for AI/ML and rendering."
   - q: "Do I have to replace my current setup?"
     a: "No. The integration adds services on top of the WHMCS panel you already run — no separate control plane and no rip-and-replace. Cozystack runs on your own or leased bare metal."
   - q: "Is the plugin open source?"
-    a: "The underlying platform, Cozystack, is open source (CNCF, Apache 2.0). The WHMCS integration module is a proprietary Aenix product, delivered and supported by Aenix."
+    a: "No. The underlying platform, Cozystack, is open source (CNCF, Apache 2.0). The WHMCS integration module is proprietary Ænix software, delivered and supported by Ænix."
+  - q: "How is it priced?"
+    a: "It is included in every tier of the Ænix Public Cloud Platform subscription, which is priced per 10 physical nodes per month: Basic $1,250, Standard $3,000, Plus $5,500 on annual billing, and a custom Enterprise tier. There is no separate charge for the module."
   - q: "We use a different control panel — can you still help?"
     a: "Yes. We integrate Cozystack and billing with other hosting panels too, migrate workloads off other panels, OpenStack, VMware and legacy stacks, and package the specific apps and services your customers ask for."
 service:
@@ -87,7 +90,7 @@ The integration exposes the Cozystack service catalog as WHMCS products your cus
 Multi-tenant Kubernetes clusters with isolation, quotas and RBAC per customer — sold and billed as a WHMCS product.
 
 **Managed databases**
-PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS — provisioned on demand, metered and invoiced.
+PostgreSQL, MariaDB, Valkey, ClickHouse — provisioned on demand, metered and invoiced.
 
 **Virtual machines**
 KubeVirt-based VMs, Linux and Windows, with custom image/template upload.
@@ -99,7 +102,7 @@ Kafka and RabbitMQ/NATS messaging as ready-to-order services.
 SeaweedFS-backed buckets your customers create and pay for by usage.
 
 **GPU workloads**
-GPU-backed workloads for AI/ML and rendering, metered like any other service.
+GPU-backed workloads for AI/ML and rendering. GPU usage is measured per tenant, and charging happens in WHMCS.
 
 </div>
 
@@ -112,11 +115,11 @@ Provisioning, metering and invoicing all flow through your existing **WHMCS bill
 
 ## Why it matters for your hosting business
 
-- **New services, same billing** — Kubernetes, databases, VMs and GPU on the WHMCS workflow you already operate, in days rather than quarters.
+- **New services, same billing** — Kubernetes, databases, VMs and GPU on the WHMCS workflow you already operate, live in weeks rather than quarters.
 - **More margin per customer** — managed services priced per service, instead of competing on shared-hosting price per vCPU.
 - **No platform to build** — Cozystack is the cloud platform; the catalog arrives without a multi-year platform-engineering project.
 
-The module itself is a **proprietary Ænix product**, delivered and supported by the team behind Cozystack.
+The module itself is **proprietary Ænix software**, delivered and supported by Ænix and included in every [Public Cloud Platform tier](/pricing/#support).
 
 ---
 
@@ -128,8 +131,8 @@ Not on WHMCS, or running something else? We also help hosters and clouds:
 - **Integrate** Cozystack and billing with other control panels.
 - **Package and add** the specific apps and services your customers ask for.
 
-See the **[Ænix Public Cloud Platform economics](/products/public-cloud-platform/)** and the anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**.
+Model the business in the **[hosting-provider unit economics calculator](/isp-calculator/)**, see the **[Ænix Public Cloud Platform](/products/public-cloud-platform/)**, and read the anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**.
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project (Sandbox today; Incubating application in due diligence) under Apache 2.0, and maintains it with maintainers from other companies. Ænix sells three platforms on it — Public Cloud, Private Cloud and AI.*

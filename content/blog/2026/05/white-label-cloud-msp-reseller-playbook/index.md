@@ -1,5 +1,6 @@
 ---
 title: "White-label cloud playbook — for MSPs and resellers in 2026"
+seo_title: "White-label cloud playbook for MSPs and resellers"
 description: "Architecture and reseller economics for launching a white-label cloud under your own brand, and how the engagement is structured."
 date: "2026-05-31"
 cover_image: "/img/blog/covers/white-label-cloud-msp-reseller-playbook.jpg"
@@ -53,9 +54,9 @@ Pattern in 2026: MSP gets branded multi-tenant cloud product on open-source plat
 
 ## Architecture
 
-- **Multi-tier Tenant CRD** — Ænix tenant → MSP tenant → MSP customer tenant. Per-tier isolation.
-- **Branded Cozystack Dashboard** — MSP can customize colors, logo, domain, service catalog options
-- **WHMCS integration** — billing flows through MSP's existing customer-management system
+- **Multi-tier Tenant CRD** — root tenant → MSP tenant → MSP customer tenant. Per-tier isolation.
+- **Branded Cozystack Dashboard** — MSP can customize colors, logo, domain, service catalog options (white-labelling is part of open-source Cozystack; Ænix support covers it from the Standard tier)
+- **WHMCS integration** — billing flows through MSP's existing customer-management system via the Ænix [WHMCS integration](/products/whmcs-integration/), a proprietary Ænix module
 - **Service catalog** — MSP can curate which services to expose to customers (e.g., hide Kafka if MSP doesn't support it)
 - **SLA management** — per-customer SLA tracking through Cozystack observability
 
@@ -71,6 +72,7 @@ Break even at 30-50 paying customers when you are covering the platform and tool
 
 ## Engagement structure
 
-- **4-8 week discovery + product-readiness**
-- **4-12 month build**
-- **Optional managed-services**
+- **Free 30-minute discovery call**, then a fixed-price [Platform Readiness Assessment](/services/platform-readiness-assessment/) (14 days focused or 28 days full)
+- **Platform live in weeks** once hardware is ready, using the productized installer; branding, catalogue curation and billing integration follow at your pace
+- **Support subscription** — published tiers per 10 nodes per month; for a white-label product, plan on Standard ($3,000) or higher (see [/pricing/](/pricing/))
+- **Optional managed services**

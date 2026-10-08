@@ -1,6 +1,6 @@
 ---
-title: "Ænix Platform Live Demo"
+title: "Ænix live demo: customer portal and operator back-office"
 layout: "demo-app"
 url: "/demo/"
-description: "Try the Ænix Platform customer portal in your browser — marketplace, cloud console, VMs, billing — running entirely on mock data."
+description: "Try the Ænix Public Cloud Platform portal in your browser: marketplace, cloud console, VMs, and an admin back-office with clients and invoices, on demo data."
 ---

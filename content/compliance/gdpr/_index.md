@@ -1,6 +1,6 @@
 ---
 title: "GDPR and the Ænix platforms"
-description: "Which GDPR Article 32 measures the Aenix platforms supply — residency, encryption, access control, tenant separation, erasure — and which stay with you."
+description: "Which GDPR Article 32 measures the Ænix platforms supply — residency, encryption, access control, tenant separation, erasure — and which stay with you."
 page_type: "solution-landing"
 language: "en"
 quick_facts_style: "rows"
@@ -15,7 +15,7 @@ related_pages:
   - /products/private-cloud-platform/
   - /industries/healthcare/
 direct_answer: |
-  **Personal data on an Ænix platform stays where you put it. The platforms run on your own hardware in a facility you choose: no control plane in someone else's cloud, no vendor account, no telemetry channel required for the software to work. On top of that they supply the measures GDPR Article 32 asks about — encryption in transit and for backups, centralized identity through Keycloak, tenant isolation enforced by Cilium network policy, audit logging, backup and restore. Some measures are available but off until you enable them, notably volume encryption at rest, and this page marks each one. Compliance itself belongs to the organisation holding the data: why it holds it, on what legal basis, for how long. A platform supplies measures and makes them demonstrable — Aenix makes no claim that any configuration satisfies a supervisory authority.**
+  **Personal data on an Ænix platform stays where you put it. The platforms run on your own hardware in a facility you choose: no control plane in someone else's cloud, no vendor account, no telemetry channel required for the software to work. On top of that they supply the measures GDPR Article 32 asks about — encryption in transit and for backups, centralized identity through Keycloak, tenant isolation enforced by Cilium network policy, audit logging, backup and restore. Some measures are available but off until you enable them, notably volume encryption at rest, and this page marks each one. Compliance itself belongs to the organisation holding the data: why it holds it, on what legal basis, for how long. A platform supplies measures and makes them demonstrable — Ænix makes no claim that any configuration satisfies a supervisory authority.**
 quick_facts:
   - label: "Data residency"
     value: "Your hardware, your facility. No vendor control plane, no standing vendor access, no telemetry required to run."
@@ -32,16 +32,16 @@ quick_facts:
   - label: "Certification"
     value: "None for GDPR: there is no GDPR certification for a platform. AENIX s.r.o. holds ISO/IEC 27001:2022 for its own information security management system; there is no SOC 2 report."
 faq:
-  - q: "Is the Aenix platform GDPR compliant?"
-    a: "The question does not apply to infrastructure. An organisation is compliant; a platform supplies measures. The Aenix platforms supply encryption, access control, tenant separation, audit logging, backup and restore, and full control over where data physically resides. The lawful basis, the records of processing, the impact assessments and the breach notifications remain with whoever determines the purposes and means of the processing."
-  - q: "Do these measures describe Cozystack or the Aenix platforms?"
-    a: "Both, because they are the same software. The Aenix Public Cloud Platform, Private Cloud Platform and AI Platform are distributions of Cozystack, the Apache 2.0 CNCF project Aenix creates and maintains, and the observations on this page were made against a Cozystack v1.6 reference cluster. Several settings — the etcd encryption provider in particular — come from the Talos machine configuration applied at install time rather than from the software, so confirm them on your own cluster."
+  - q: "Is the Ænix platform GDPR compliant?"
+    a: "The question does not apply to infrastructure. An organisation is compliant; a platform supplies measures. The Ænix platforms supply encryption, access control, tenant separation, audit logging, backup and restore, and full control over where data physically resides. The lawful basis, the records of processing, the impact assessments and the breach notifications remain with whoever determines the purposes and means of the processing."
+  - q: "Do these measures describe Cozystack or the Ænix platforms?"
+    a: "Both, because they are the same software. The Ænix Public Cloud Platform, Private Cloud Platform and AI Platform are distributions of Cozystack, the Apache 2.0 CNCF project Ænix created and co-maintains, and the observations on this page were made against a Cozystack v1.6 reference cluster. Several settings — the etcd encryption provider in particular — come from the Talos machine configuration applied at install time rather than from the software, so confirm them on your own cluster."
   - q: "Does self-hosting avoid third-country transfer problems?"
     a: "It removes the platform itself from the Chapter V analysis: the software runs on your hardware and needs no vendor access to operate. It does not close the question. Under the EDPB's reading, remote access from a third country is itself a transfer, so support engineers, an integrator's staff, out-of-hours administrators and anything you connect for observability still count. Whether your own applications and integrations move data elsewhere is a separate analysis."
   - q: "Is personal data encrypted at rest by default?"
     a: "For the storage that actually holds personal data — the volumes behind databases and virtual machines — no. Volume encryption is opt-in per StorageClass and belongs in the design rather than in a later change. Backups are encrypted by default. Kubernetes secrets are encrypted in etcd when the API server runs with --encryption-provider-config, which comes from the Talos machine configuration, and secrets hold credentials rather than the personal data your records of processing describe."
   - q: "Does running the platform ourselves introduce a processor?"
-    a: "Running open-source software on your own hardware adds no third party to the processing: there is no service, no account and no data leaving your infrastructure, so there is nobody to appoint under Article 28. Your own role is unchanged — controller for data whose purposes and means you determine, processor only where you host on behalf of another controller. If you contract Aenix or an integrator to operate the platform, that is a processor or sub-processor relationship and needs an Article 28 agreement."
+    a: "Running open-source software on your own hardware adds no third party to the processing: there is no service, no account and no data leaving your infrastructure, so there is nobody to appoint under Article 28. Your own role is unchanged — controller for data whose purposes and means you determine, processor only where you host on behalf of another controller. If you contract Ænix or an integrator to operate the platform, that is a processor or sub-processor relationship and needs an Article 28 agreement."
   - q: "How do we handle erasure when the data is also in backups?"
     a: "Backups exist precisely so that deletions can be undone, so erasure from them is not a technical switch. The commonly used position — described as workable by several supervisory authorities without being settled across the EEA — is documented retention: state how long backups live, put the data beyond use in the meantime, ensure erased data ages out within that window, and do not reintroduce it selectively on restore. The platform lets you set backup retention deliberately and point backups at storage you control; the reasoning and the position are yours to record."
 ---
@@ -61,7 +61,7 @@ That is a strong starting position, and this page walks through it measure by me
 
 Compliance belongs to the organisation holding the data — why it holds it, on what legal basis, for how long. A platform supplies measures and makes them demonstrable. The useful answer to "is this platform GDPR compliant" is what follows below, not a yes that falls apart under the first question.
 
-**And one note on provenance.** The observations here were made against **Cozystack v1.6**, the open-source, Apache 2.0, CNCF engine that Ænix creates and maintains and that all three Ænix platforms are distributions of. There is no separate closed build behaving differently, which is why the measures transfer directly. What Ænix adds around the engine — the Talos machine configuration, the reference architecture, operations — is where several of the settings below actually come from, and each is flagged.
+**And one note on provenance.** The observations here were made against **Cozystack v1.6**, the open-source, Apache 2.0, CNCF engine that Ænix created and co-maintains and that all three Ænix platforms are built on. The proprietary Ænix modules (WHMCS integration, billing and portal components) run on top of it and do not change these measures, which is why they transfer directly. What Ænix adds around the engine — the Talos machine configuration, the reference architecture, operations — is where several of the settings below actually come from, and each is flagged.
 
 ---
 

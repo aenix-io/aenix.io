@@ -1,6 +1,7 @@
 ---
-title: "FreeIPA tips and tricks: migrating FreeIPA from CentOS 7 LXC container to Rocky Linux, debugging…"
-description: "Recently, I had the task of updating an outdated FreeIPA in a large enterprise. This FreeIPA instance was installed in an LXC container…"
+title: "FreeIPA Tips and Tricks: Migrating FreeIPA from a CentOS 7 LXC Container to Rocky Linux, Debugging and Expired Certificates"
+seo_title: "Migrating FreeIPA from CentOS 7 LXC to Rocky Linux"
+description: "How we revived a broken FreeIPA in a CentOS 7 LXC container on Proxmox: debugging systemd, renewing expired certificates and moving it to Rocky Linux."
 date: "2024-08-01"
 cover_image: "/img/blog/medium/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/01.jpg"
 author: "Timur Tukaev"
@@ -48,13 +49,11 @@ quiz:
 ---
 
 
----
 
-### FreeIPA tips and tricks: migrating FreeIPA from CentOS 7 LXC container to Rocky Linux, debugging and expired certificates
 
-Hi! I’m Andrei, [Ænix](http://aenix.io) founder and main developer of the [Cozystack](http://cozystack.io) platform. Recently, I had the task of updating an outdated FreeIPA in a large enterprise. This FreeIPA instance was installed in an LXC container on CentOS 7 and had been non-functional for several months. I was handed a backup of the LXC container for Proxmox, and so the work began.
+Hi! I’m Andrei, [Ænix](https://aenix.io/) founder and main developer of the [Cozystack](https://cozystack.io/) platform. Recently, I had the task of updating an outdated FreeIPA in a large enterprise. This FreeIPA instance was installed in an LXC container on CentOS 7 and had been non-functional for several months. I was handed a backup of the LXC container for Proxmox, and so the work began.
 
-![image](/img/blog/medium/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/01.jpg)
+![FreeIPA migration from a CentOS 7 LXC container to Rocky Linux](/img/blog/medium/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/01.jpg)
 
 Initial Plan:
 
@@ -65,7 +64,7 @@ Initial Plan:
 
 But as usual in such tasks something went wrong:)
 
-### The challenge of running an LXC container with outdated systemd on a fresh Proxmox
+## The challenge of running an LXC container with outdated systemd on a fresh Proxmox
 
 Since the image was in the form of an archived LXC container, upon restoration, it became evident that my Proxmox version was too fresh and didn’t support the container’s version of systemd. The problem was that the new Proxmox works with Cgroups v2, while the outdated container systemd only supports Cgroups v1.
 
@@ -105,7 +104,7 @@ yum update systemd
 
 As a result, we have a functioning system with a fresh systemd that works on the new Proxmox. However, we’ve only just managed to launch the container; we still need to tackle the original problem that the client asked us to solve.
 
-### The issue with expired certificates
+## The issue with expired certificates
 
 When diagnosing FreeIPA, the first thing you should check is the status of the system certificates. To do this, simply run the following command:
 
@@ -179,7 +178,7 @@ timedatectl set-ntp 1
 
 Great! We’ve now successfully progressed another step and have a fully operational FreeIPA, though an older version.
 
-### Preparing for migration to a new OS and updating the nssdb format
+## Preparing for migration to a new OS and updating the nssdb format
 
 Most FreeIPA certificates are stored in isolated nssdb databases (NSS Shared DB). Starting with CentOS 7, nssdb has changed its database format from the older cert8 format to a new SQL-based cert9 format. While CentOS 7 still supported the old format, this support has been removed in newer systems, so the old database format cannot be used.
 
@@ -221,7 +220,7 @@ Now before starting the migration process, ensure that all certificates from the
 
 NSS is built without support of the legacy database(DBM) directory `‘/etc/ipa/nssdb’`.
 
-### Migration to a new OS
+## Migration to a new OS
 
 Before you start the migration, ensure the system and all packages are updated to the latest versions:
 
@@ -298,7 +297,7 @@ ipa-server-upgrade -v
 
 Done, FreeIPA has been successfully restored and updated to the latest version.
 
-### Checking certificates on the new server
+## Checking certificates on the new server
 
 Verify the certificates by running the command once again on the new machine:
 
@@ -323,7 +322,7 @@ journalctl -u pki-tomcatd@pki-tomcat.service.d
 tail -f /var/log/pki/pki-tomcat/ca/debug
 ```
 
-### Let’s Summarize
+## Let’s Summarize
 
 If you encounter issues with certificates, finding a solution is almost always related to the steps described in this article.
 
@@ -333,7 +332,7 @@ General action plan:
 - Check the status of certificate requests using getcert list.
 - Reorder certificates using ipa-getcert resubmit or start-tracking.
 
-### Additional Recommendations
+## Additional Recommendations
 
 The operation of FreeIPA depends on the certificates listed in getcert list. Under normal circumstances, this command should return all certificates in the MONITORING state. If something goes wrong, consult the tips in this article. Most often, the problem lies with the CA service that signs these certificates.
 
