@@ -1,53 +1,53 @@
 ---
 title: "SRE Consulting — Site-Reliability-Praktiken für Produktion im großen Maßstab"
-description: "Site Reliability Engineering als Disziplin wendet Software-Engineering auf Operations an. Das Aenix-SRE-Engagement deckt SLOs, Error-Budgets,..."
+seo_title: "SRE Consulting für Produktionsplattformen"
+description: "SRE Consulting, das SLOs, Error Budgets, Incident Command und Toil-Abbau als System verankert, nicht als Gewohnheit. Assessment, Aufbau oder Rufbereitschaft."
 related_pages:
-  - /de/dienstleistungen/devops-consulting
-  - /de/dienstleistungen/platform-engineering
-  - /de/dienstleistungen/platform-readiness-assessment
+  - /de/dienstleistungen/devops-consulting/
+  - /de/dienstleistungen/platform-engineering/
+  - /de/dienstleistungen/platform-readiness-assessment/
   - /de/produkte/
 language: "de"
 hreflang_en: /services/sre-consulting/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Site Reliability Engineering (SRE) wendet Software-Engineering-Methoden auf den IT-Betrieb an, um Produktion zuverlässig im großen Maßstab zu halten. Das SRE-Consulting von Aenix richtet sich an Plattform- und Operations-Teams und deckt SLO-Design, Error-Budget-Frameworks, Incident-Response mit blameless Post-mortems, Observability-Praktiken sowie Capacity-Planning ab. Als Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) baut Aenix diese Reliability-Praxis direkt in die Plattform-Foundation ein statt sie nachträglich aufzusetzen: Cozystack vereint VMs und Container über eine Kubernetes-API mit Cilium-Networking und LINSTOR-Storage. Das Engagement ist mit jeder Ænix-Plattform koppelbar oder eigenständig als reines SRE-Consulting buchbar.**
-
+  **SRE Consulting von Ænix überträgt die Disziplin des Software-Engineerings auf den Betrieb, damit die Produktion auch beim Wachstum zuverlässig bleibt. Die Leistung umfasst SLO-Design, Error-Budget-Frameworks, Incident Response mit Blameless Post-Mortems, auf Zuverlässigkeit ausgerichtete Observability, Kapazitätsplanung und den Abbau von Toil. Sie richtet sich an Platform-, Infrastruktur- und Betriebsteams mit Kubernetes- und Cozystack-Umgebungen, die messbare Zuverlässigkeit statt ständiger Brandbekämpfung brauchen. Ænix baut diese Praktiken in das Plattformfundament ein, statt sie nachträglich aufzusetzen, und kann die Arbeit mit jeder Ænix-Plattform verbinden oder eigenständig erbringen. Die Formen der Zusammenarbeit reichen von einem Reifegrad-Assessment über 5–10 Tage über eine Umsetzung von 3–9 Monaten in Ihrem Team bis zu einem Managed-Engagement, bei dem Ænix die Rufbereitschaft mitträgt.**
 quick_facts:
   - label: "Was es ist"
-    value: "SRE-Consulting-Engagement, das Reliability-Praktiken (SLOs, Error-Budgets, Incident-Response) in die produktive Plattform-Foundation einbaut"
-  - label: "Zielgruppe"
-    value: "Plattform- und Operations-Teams, die Produktion zuverlässig im großen Maßstab betreiben müssen"
+    value: "Ein SRE-Consulting-Projekt, das SLOs, Error Budgets, Incident Response und Zuverlässigkeitspraktiken für produktive Kubernetes- und Cozystack-Umgebungen etabliert."
+  - label: "Für wen"
+    value: "Platform-, Infrastruktur- und Betriebsteams mit Produktion im großen Maßstab, die messbare Zuverlässigkeit statt reaktiver Brandbekämpfung brauchen."
+  - label: "Formen der Zusammenarbeit"
+    value: "Assessment (5–10 Tage), Umsetzung (3–9 Monate in Ihrem Team) oder Managed-Engagement mit Ænix als Partner in der Rufbereitschaft."
+  - label: "Kernpraktiken"
+    value: "SLO-Design, Error-Budget-Frameworks, Incident Command und Blameless Post-Mortems, Observability für Zuverlässigkeit, Kapazitätsplanung, Abbau von Toil (Ziel: unter 50 %)."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Kernfunktionen"
-    value: "SLO-Design, Error-Budget-Framework, Incident-Response, Observability, Capacity-Planning, Reliability-Engineering (Chaos-Testing, Resilienz-Patterns)"
-  - label: "Engagement"
-    value: "Koppelbar mit jeder Ænix-Plattform oder eigenständig als reines SRE-Consulting"
-
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
 faq:
-  - q: "Was ist SRE-Consulting und wie unterscheidet es sich von klassischem DevOps?"
-    a: "Site Reliability Engineering wendet Software-Engineering auf den Betrieb an: SLOs, Error-Budgets und blameless Post-mortems machen Zuverlässigkeit messbar und steuerbar. Das Aenix-Engagement baut diese Praktiken in die Plattform-Foundation ein, statt sie nachträglich auf bestehende Operations aufzusetzen."
-  - q: "Muss ich die Ænix Platform nutzen, um SRE-Consulting zu buchen?"
-    a: "Nein. Das SRE-Engagement passt zu jeder Ænix-Plattform, ist aber auch eigenständig als reines SRE-Consulting verfügbar. So profitieren auch Teams, die ihre eigene Kubernetes- oder Cozystack-Umgebung betreiben, von SLO-Design, Error-Budgets und Incident-Response-Disziplin."
-  - q: "Welche konkreten Themen deckt das SRE-Engagement ab?"
-    a: "SLO-Design kollaborativ mit Produkt-Teams, ein Error-Budget-Framework zur Priorisierung, Incident-Response mit Incident-Commander-Rollen und Runbook-Disziplin, Observability-Praktiken (Metriken, Logs, Traces, Alert-Hygiene), Capacity-Planning und Performance-Engineering sowie Reliability-Engineering mit Chaos-Testing und Resilienz-Patterns."
-  - q: "Wie hängt SRE-Consulting mit Cozystack zusammen?"
-    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack, einem CNCF-Projekt unter Apache-2.0-Lizenz. Cozystack vereint VMs (KubeVirt) und Container über eine Kubernetes-API mit Cilium-Networking und LINSTOR-Storage. SRE-Praktiken werden in diese Plattform-Foundation eingebaut, sodass Reliability Teil der Architektur ist."
-  - q: "Was kostet ein Engagement mit der Ænix Platform?"
-    a: "Die Ænix Platform gibt es in Stufen: Basic ab 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise mit individueller Vereinbarung. Eigenständiges SRE-Consulting wird im Discovery-Call nach Umfang abgestimmt."
-  - q: "Was sind Error-Budgets und warum sind sie wichtig?"
-    a: "Ein Error-Budget definiert, wie viel Unzuverlässigkeit ein Service haben darf, bevor SLOs verletzt werden. Die Budget-Konsumtion treibt die Priorisierung: Ist das Budget aufgebraucht, hat Stabilität Vorrang vor neuen Features. So wird die Balance zwischen Tempo und Zuverlässigkeit datenbasiert statt aus dem Bauch heraus entschieden."
+  - q: "Was unterscheidet SRE, DevOps und Platform Engineering bei Ænix?"
+    a: "SRE überträgt Software-Engineering auf den Betrieb — über SLOs, Error Budgets und Disziplin im Incident-Management. DevOps-Consulting deckt einen breiteren Bereich aus Delivery und Kultur ab, Platform Engineering baut die Self-Service-Plattform selbst. Ænix bietet jede dieser Leistungen separat an; sie lassen sich kombinieren."
+  - q: "Muss ich eine Ænix-Plattform einsetzen, um SRE Consulting zu erhalten?"
+    a: "Nein. SRE Consulting gibt es auch eigenständig. Es lässt sich mit jeder Ænix-Plattform verbinden, wenn Sie die Zuverlässigkeitspraktiken direkt an die produktive Plattform koppeln möchten, die Sie betreiben — Voraussetzung ist die Plattform aber nicht."
+  - q: "Wie lange dauert ein SRE-Projekt?"
+    a: "Das hängt von der Form ab. Ein Reifegrad-Assessment dauert 5–10 Tage, eine Umsetzung in Ihrem Team 3–9 Monate, während das Team die Praktiken aufbaut, und ein Managed-Engagement läuft fortlaufend mit Ænix als Partner in der Rufbereitschaft."
+  - q: "Was liefert ein SRE-Assessment konkret?"
+    a: "Das Assessment über 5–10 Tage bewertet Ihren aktuellen SRE-Reifegrad und definiert einen Zielzustand. Es zeigt, wo SLOs, Error Budgets, Incident Response, Observability und der Abbau von Toil heute stehen und was nötig ist, um auch im großen Maßstab zuverlässig zu betreiben."
+  - q: "Wie geht Ænix SLOs und Error Budgets an?"
+    a: "SLOs entstehen gemeinsam mit den Produktteams, pro Service und ausgerichtet an den Auswirkungen auf die Nutzer. Der Verbrauch des Error Budgets steuert dann die Priorisierung: Zuverlässigkeitsarbeit und Feature-Arbeit werden gegen ein vereinbartes, messbares Budget abgewogen statt nach Meinung."
+  - q: "Funktioniert SRE Consulting mit Cozystack?"
+    a: "Ja. Ænix ist das Team hinter Cozystack, der Open-Source-CNCF-Plattform auf Basis von Kubernetes, KubeVirt, Cilium und LINSTOR. Die SRE-Praktiken sind in das Plattformfundament eingebaut und passen daher von Haus aus zu Cozystack-Umgebungen."
 ---
 
-**Site Reliability Engineering als Disziplin wendet Software-Engineering auf Operations an. Das Ænix-SRE-Engagement deckt SLOs, Error-Budgets, Incident-Response und die operativen Praktiken ab, die Produktion zuverlässig im großen Maßstab halten — eingebaut in die Plattform-Foundation, nicht aufgesetzt.**
+**Site Reliability Engineering überträgt als Disziplin das Software-Engineering auf den Betrieb. Das SRE-Projekt von Ænix umfasst SLOs, Error Budgets, Incident Response und die Betriebspraktiken, die Produktion im großen Maßstab zuverlässig halten — eingebaut in das Plattformfundament, nicht nachträglich aufgesetzt.**
 
-> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)** — SRE-Praxis verbunden mit der produktiven Plattform, die Sie betreiben. Eigenständiges SRE-Consulting auch verfügbar.
+> **Passt zu:** jeder der drei **[Ænix-Plattformen](/de/produkte/)**, wenn die SLOs an die Plattform gekoppelt sein sollen, die Sie tatsächlich betreiben. Eigenständiges SRE Consulting ist auch ohne Plattform möglich.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/platform-engineering-vs-devops-vs-sre/">SRE, DevOps, Platform Engineering →</a>
 </div>
 
 ---
@@ -55,28 +55,42 @@ faq:
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Was unser SRE-Engagement abdeckt
-
-- **SLO-Design** — kollaborativ mit Produkt-Teams; per-Service-SLOs aligned mit User-Impact
-- **Error-Budget-Framework** — Budget-Konsumtion treibt Priorisierung
-- **Incident-Response** — Incident-Commander-Rollen, Runbook-Disziplin, blameless Post-mortems
-- **Observability-Praktiken** — Metriken, Logs, Traces, Alert-Hygiene
-- **Capacity-Planning** und Performance-Engineering
-- **Reliability-Engineering** — Chaos-Testing, Resilienz-Patterns
+## Was unser SRE-Projekt abdeckt
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>SRE-Praktiken</b></div>
-<div class="diagram__conn">eingebaut in</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack Plattform-Foundation</b></div>
-<div class="diagram__conn">hält</div>
-<div class="diagram__node"><b>Produktion zuverlässig im großen Maßstab</b></div>
+<div class="diagram__node"><b>Zuverlässigkeitsziele</b><div class="diagram__chips"><span>Produktion im großen Maßstab</span><span>Messbare Zuverlässigkeit</span></div></div>
+<div class="diagram__conn">umgesetzt durch</div>
+<div class="diagram__node diagram__node--brand"><b>SRE-Projekt mit Ænix</b><div class="diagram__chips"><span>SLOs</span><span>Observability</span><span>Incident Response</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Zuverlässiger Betrieb im großen Maßstab</b><div class="diagram__chips"><span>Error Budgets</span><span>Blameless Post-Mortems</span></div></div>
 </div>
 </div>
+
+- **SLO-Design** — gemeinsam mit den Produktteams; SLOs pro Service, ausgerichtet an den Auswirkungen auf die Nutzer
+- **Error-Budget-Framework** — der Verbrauch des Budgets steuert die Priorisierung
+- **Incident Response** — Rollen für Incident Commander, Disziplin bei Runbooks, Blameless Post-Mortems
+- **Observability für Zuverlässigkeit** — abgestimmt auf Sicherheit und die Einhaltung der SLOs, nicht nur auf Performance
+- **Kapazitätsplanung** — auf Basis der SLO-Entwicklung und der Wachstumsprognosen
+- **Abbau von Toil** — Automatisierung wiederkehrender Betriebsarbeit; Ziel: unter 50 %
+
+Für einen breiteren DevOps-Umfang siehe **[DevOps-Consulting](/de/dienstleistungen/devops-consulting/)**. Für Platform Engineering siehe **[Platform Engineering](/de/dienstleistungen/platform-engineering/)**.
 
 </div>
 </div>
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*
+## Formen der Zusammenarbeit
+
+- Assessment (5–10 Tage) — aktueller SRE-Reifegrad und Zielzustand
+- Umsetzung (3–9 Monate) — in Ihrem Team, Aufbau der Praktiken
+- Managed-Engagement — Ænix als Partner in der Rufbereitschaft
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+</div>
+
+---
+
+*Ænix ist das Team hinter Cozystack.*

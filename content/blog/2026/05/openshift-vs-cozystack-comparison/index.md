@@ -1,12 +1,14 @@
 ---
 title: "OpenShift vs Cozystack — comparison for KubeVirt-based platform decisions"
+seo_title: "OpenShift or Cozystack: choosing a KubeVirt platform"
 description: "Two KubeVirt-based platforms compared: shared foundations, where they genuinely differ, when OpenShift wins, and what migration between them involves."
 date: "2026-05-19"
-cover_image: "/img/blog/covers/openshift-vs-cozystack-comparison.png"
+cover_image: "/img/blog/covers/openshift-vs-cozystack-comparison.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/openshift-vs-cozystack-vergleich-kubevirt/"
 companion_landing: "/alternatives/openshift-alternative/"
 quiz:
   title: "Test yourself: OpenShift Virtualization vs Cozystack"
@@ -34,7 +36,7 @@ quiz:
         - { text: "Existing Red Hat commitments + Red-Hat-standardised procurement", correct: true }
         - { text: "Service-provider multi-customer model (white-label resale)", correct: false }
         - { text: "Open-source-first procurement and sovereignty mandate", correct: false }
-      explanation: "OpenShift wins for: existing Red Hat commitments, enterprise procurement standardised on Red Hat, integrated Red Hat ecosystem (Ansible/Satellite/IDM), commercial-grade SLA support, compliance requirements that call for major-vendor support model."
+      explanation: "OpenShift wins for: existing Red Hat commitments, enterprise procurement standardised on Red Hat, integrated Red Hat ecosystem (Ansible/Satellite/IDM), and procurement that requires a Red Hat contract specifically. SLA-backed support is available for both: from Red Hat for OpenShift, from the Cozystack maintainers at Ænix for Cozystack."
     - q: "For OpenShift→Cozystack migration of a mid-size deployment, what timeline does the article quote?"
       options:
         - { text: "Days (image-compatible lift-and-shift on shared KubeVirt)", correct: false }
@@ -89,11 +91,13 @@ For organizations standardized on Red Hat procurement, OpenShift is administrati
 - Existing Red Hat / OpenShift commitments
 - Enterprise procurement standardized on Red Hat
 - Need integrated Red Hat ecosystem (Ansible Automation Platform, etc.)
-- Want commercial-grade support with established SLAs
-- Compliance requirements that call for a major-vendor support model
+- Procurement that requires a Red Hat contract specifically
 
 ## When Cozystack wins
 
+- SLA-backed support from the maintainers — published response times,
+  24×7 on the Plus and Enterprise tiers ([pricing](/pricing/)); AENIX
+  s.r.o. holds [ISO/IEC 27001](/compliance/iso-27001/)
 - Open-source-first procurement
 - Service-provider model (multi-customer cloud)
 - Sovereignty / regulator requirements where open-source matters
@@ -106,8 +110,8 @@ For organizations standardized on Red Hat procurement, OpenShift is administrati
 Both KubeVirt-based, so VM-level migration is straightforward (image-level compatibility). The architectural delta is in:
 
 - Multi-tenancy model (Project CRD vs Tenant CRD)
-- Networking (OpenShift SDN/OVN vs Cilium)
-- Storage (OpenShift Container Storage / Ceph vs LINSTOR / DRBD)
+- Networking (OVN-Kubernetes, which replaced the deprecated OpenShift SDN, vs Cilium)
+- Storage (OpenShift Data Foundation / Ceph vs LINSTOR / DRBD)
 - Operational tooling (OpenShift CLI/Console vs Cozystack Dashboard/standard kubectl)
 
 Realistic migration timeline: 3-9 months for mid-size deployment.

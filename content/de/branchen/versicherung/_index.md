@@ -1,59 +1,60 @@
 ---
-title: "Cloud-Plattform für Versicherungen — DORA-konform, KI-bereit, souverän"
-description: "Versicherer und Rückversicherer im Jahr 2026 stehen vor überlappenden Drücken: DORA-Durchsetzung (in Kraft seit Januar 2025), GenAI-getriebene..."
+title: "Cloud-Plattform für Versicherungen — an DORA ausgerichtet, bereit für KI, souverän"
+seo_title: "Cloud-Plattform für Versicherungen, an DORA ausgerichtet"
+description: "Cloud für Erst- und Rückversicherer unter DORA: IKT-Drittparteienrisiko und Exit-Planung, Datenresidenz je Markt, Schaden- und Underwriting-KI auf eigenen GPUs."
 related_pages:
-  - /de/loesungen/dora-compliance
-  - /de/loesungen/data-sovereignty
-  - /de/loesungen/sovereign-ai
-  - /de/dienstleistungen/platform-readiness-assessment
+  - /de/loesungen/dora-compliance/
+  - /de/loesungen/data-sovereignty/
+  - /de/loesungen/sovereign-ai/
+  - /de/dienstleistungen/platform-readiness-assessment/
   - /de/produkte/private-cloud-platform/
   - /de/produkte/ai-platform/
-  - /de/produkte/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/insurance/
 direct_answer: |
-  **Eine Cloud-Plattform für Versicherungen ist eine souveräne, DORA-konforme Infrastruktur-Foundation, auf der Versicherer und Rückversicherer regulierte Workloads — Schadenfall-Bearbeitung, Underwriting und Schadenfall-KI sowie Underwriting-KI — selbstbestimmt betreiben. Sie richtet sich an CIOs, CISOs und Compliance-Verantwortliche in EU, DACH und Zentralasien, die DORA-Kontrollen (Artikel 28), Datenresidenz pro Markt und IKT-Drittanbieter-Konzentrationsrisiken adressieren müssen. Aenix baut solche Plattformen auf Cozystack, einem CNCF-Projekt unter Apache-2.0-Lizenz: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage und Tenant-CRD-Mandantenfähigkeit. Souveränität, Audit-Bereitschaft und KI-Fähigkeit sind eingebaut — nicht aufgesetzt.**
+  **Ænix baut Cloud-Plattformen für Erst- und Rückversicherer, die DORA (seit Januar 2025 EU-weit anwendbar), die Datenresidenzregeln einzelner Märkte und die Prüfung von IKT-Drittanbieter-Konzentrationsrisiken erfüllen müssen und zugleich GenAI für Schadenbearbeitung, Underwriting und Betrugserkennung einführen. Das Fundament ist Cozystack, ein CNCF-Projekt unter Apache 2.0, das virtuelle Maschinen und Container über KubeVirt auf einer Kubernetes-API betreibt, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Mandantenfähigkeit über Tenant-CRDs, die Geschäftsbereiche und Konzerngesellschaften voneinander trennt. Darauf bietet Ænix die Ænix Private Cloud Platform und die Ænix AI Platform (beide per RFP) sowie Implementierungsleistungen an — eine souveräne, auditfähige und KI-fähige Plattform, die darauf ausgelegt ist, die Anforderungen von DORA zu unterstützen, ohne Lizenzkosten pro CPU oder Core.**
 quick_facts:
   - label: "Was es ist"
-    value: "Souveräne, DORA-konforme Cloud-Plattform für Versicherer und Rückversicherer — reguliert, audit-bereit und KI-fähig"
+    value: "Eine souveräne, KI-fähige Cloud-Plattform für Erst- und Rückversicherer, die darauf ausgelegt ist, DORA zu unterstützen — gebaut auf Cozystack, geliefert als Ænix Private Cloud Platform und AI Platform plus Services."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Zielgruppe"
-    value: "CIOs, CISOs und Compliance-Teams bei Versicherern und Rückversicherern in EU, DACH und Zentralasien"
-  - label: "Regulatorik"
-    value: "DORA-Kontrollen zum IKT-Drittparteien- und Konzernstrukturrisiko nach Artikel 28, Datenresidenz je Markt und IKT-Drittanbieter-Konzentrationsrisiko"
-  - label: "Technologie-Basis"
-    value: "Cozystack: KubeVirt (VMs + Container), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
-  - label: "Engagement"
-    value: "Ænix Private Cloud Platform für die regulierte Cloud-Foundation, AI Platform für Schadenfall- und Underwriting-KI"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Erstversicherer, Rückversicherer und Versicherungsgruppen in der EU, im DACH-Raum und in Zentralasien"
+  - label: "Regulatorischer Rahmen"
+    value: "DORA (anwendbar seit 17. Januar 2025), einschließlich IKT-Drittparteienrisiko (Artikel 28–30) und Exit-Planung, dazu Datenresidenzanforderungen je Markt. Die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert"
+  - label: "Kernfunktion"
+    value: "VMs und Container auf einer Kubernetes-API (KubeVirt), Mandantenfähigkeit über Tenant-CRDs, Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und souveräne KI für Schadenbearbeitung, Underwriting und Betrugserkennung"
+  - label: "Kommerzielles Angebot"
+    value: "Die Ænix Private Cloud Platform und die AI Platform werden nach einem Platform Readiness Assessment zum Festpreis (14 oder 28 Tage) per RFP angeboten"
 faq:
-  - q: "Wie hilft die Plattform bei der DORA-Compliance?"
-    a: "Die Ænix Private Cloud Platform liefert eine regulierte Cloud-Foundation mit den IKT-Drittparteien- und Trennungskontrollen nach DORA Artikel 28. Mandantentrennung über Tenant-CRDs, Audit-Bereitschaft und Datenresidenz pro Markt adressieren IKT-Drittanbieter-Konzentrationsrisiken. Eine kostenlose DORA-Compliance-Checkliste steht auf der Ressourcen-Seite bereit."
-  - q: "Kann KI auf regulierten Versicherungsdaten betrieben werden?"
-    a: "Ja. Die AI Platform betreibt Schadenfall-KI und Underwriting-Modelle auf historischen, regulierten Daten unter Souveränitätskontrollen. Die Daten verlassen die selbstbestimmte Plattform nicht, was Datenresidenz- und Compliance-Anforderungen erfüllt."
-  - q: "Eignet sich die Plattform für grenzüberschreitende Versicherer?"
-    a: "Ja. Multi-Jurisdiktions-Souveränität ist ein Kernanwendungsfall: Datenresidenz wird pro Markt durchgesetzt, sodass grenzüberschreitende Versicherer und Rückversicherer unterschiedliche regulatorische Anforderungen auf einer kohärenten Plattform abbilden können."
-  - q: "Warum von Hyperscalern auf eine souveräne Plattform wechseln?"
-    a: "Zwei Treiber: die Ökonomie von Sustained Workloads, die auf eigener Infrastruktur günstiger laufen, und der DORA-Druck zu IKT-Drittanbieter-Konzentration. Eine souveräne Plattform reduziert Abhängigkeit von einzelnen Cloud-Anbietern und schafft Audit-Bereitschaft."
-  - q: "Welche Technologie steckt hinter der Plattform?"
-    a: "Cozystack, ein CNCF-Projekt unter Apache-2.0-Lizenz: KubeVirt führt VMs und Container über eine Kubernetes-API aus, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD den Storage und Tenant-CRDs die Mandantenfähigkeit. Aenix produktisiert dies als Ænix Platform."
-  - q: "Was kostet die Ænix Platform?"
-    a: "Vier Stufen: Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise mit individueller Preisgestaltung. Es gibt keine CPU- oder Core-basierte Lizenzierung — die Software ist Apache 2.0."
+  - q: "Fallen Versicherungen unter DORA, und wie hilft die Plattform?"
+    a: "Ja. Versicherungs- und Rückversicherungsunternehmen sind Finanzunternehmen im Sinne von DORA, das seit Januar 2025 EU-weit anwendbar ist. Die Plattform ist darauf ausgelegt, DORA zu unterstützen: Sie läuft auf Infrastruktur unter Ihrer Kontrolle, trennt Geschäftsbereiche über Mandantenfähigkeit mit Tenant-CRDs und unterstützt das Informationsregister zu IKT-Drittdienstleistern und die Exit-Strategie, die DORA in den Artikeln 28–30 verlangt. Die Pflichten selbst bleiben beim Versicherer."
+  - q: "Können wir GenAI auf sensiblen Schaden- und Underwriting-Daten betreiben, ohne sie in eine Public Cloud zu schicken?"
+    a: "Ja. Die AI Platform betreibt KI für Schadenbearbeitung, Underwriting und Betrugserkennung auf privater LLM-Infrastruktur in Ihrer eigenen souveränen Umgebung, sodass regulierte Versicherungsdaten auf Infrastruktur unter Ihrer Kontrolle bleiben statt bei einem KI-Dienst in der Public Cloud."
+  - q: "Worauf basiert die Plattform?"
+    a: "Auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs und Container über KubeVirt auf einer Kubernetes-API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Mandantenfähigkeit über Tenant-CRDs. Ænix verkauft darauf Plattform-Abonnements und Services."
+  - q: "Wie hilft das Versicherern beim Ausstieg aus VMware?"
+    a: "Cozystack betreibt virtuelle Maschinen und Container über KubeVirt auf einer Kubernetes-API, sodass bestehende VM-Workloads auf eine einzige Plattform migrieren. Die Apache-2.0-Lizenz kennt keine Gebühren pro CPU oder Core und nimmt damit den Kostendruck der VCF-Abonnements, unter dem viele Versicherer stehen."
+  - q: "Wo ist Ænix für Versicherungskunden tätig?"
+    a: "Ænix baut Plattformen für Versicherungsunternehmen in der EU, im DACH-Raum und in Zentralasien und unterstützt die Datenresidenzanforderungen einzelner Märkte für Erst- und Rückversicherer, die in mehreren Rechtsräumen tätig sind."
+  - q: "Was kostet das?"
+    a: "Die Ænix Private Cloud Platform wird nach einem Platform Readiness Assessment per RFP angeboten. Support-Stufen für selbst betriebenes Cozystack beginnen bei 1.250 USD pro 10 Nodes und Monat (Basic, jährliche Abrechnung) — siehe Preisseite. Cozystack selbst ist Open Source unter Apache 2.0 und ohne Lizenzkosten."
 ---
 
-**Versicherer und Rückversicherer stehen 2026 vor überlappenden Belastungen: DORA-Durchsetzung (in Kraft seit Januar 2025), GenAI-getriebene Transformation der Schadenbearbeitung, sektorale Aufsicht zur IKT-Drittanbieter-Konzentration und zunehmende Datenresidenz-Anforderungen pro Markt. Die architektonische Antwort ist eine kohärente Plattform mit eingebauter Souveränität, Audit-Bereitschaft und KI-Fähigkeit — nicht nachträglich aufgesetzt.**
+**Erst- und Rückversicherer stehen 2026 unter mehrfachem Druck: DORA wird durchgesetzt (anwendbar seit Januar 2025), GenAI verändert die Schadenbearbeitung, die Aufsicht prüft die Konzentration bei IKT-Drittanbietern, und die Datenresidenzanforderungen einzelner Märkte nehmen zu. Die architektonische Antwort ist eine durchgängige Plattform, in die Souveränität, Auditfähigkeit und KI-Fähigkeit eingebaut sind — nicht nachträglich aufgesetzt.**
 
-Ænix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zentralasien.
+Ænix baut Plattformen für Versicherungsunternehmen in der EU, im DACH-Raum und in Zentralasien. Die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert ([Zertifikat](/de/compliance/iso-27001/)); Sicherheitsverantwortliche starten am besten mit dem [Leitfaden für CISOs](/de/fuer/ciso/).
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für die DORA-konforme regulierte Cloud-Foundation; **[AI Platform](/de/produkte/ai-platform/)** für Schadenbearbeitungs-KI und Underwriting-KI-Workloads auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als an DORA ausgerichtetes Fundament für eine regulierte Cloud; **[AI Platform](/de/produkte/ai-platform/)** für KI-Workloads in Schadenbearbeitung und Underwriting auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/loesungen/dora-compliance/">DORA-Compliance-Lösungen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/loesungen/dora-compliance/">DORA-Compliance →</a>
 </div>
 
 ---
@@ -61,61 +62,55 @@ faq:
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wofür Versicherungs-Teams zu uns kommen
-
-- **DORA-konforme Plattform-Readiness** — Versicherungen fallen in den DORA-Geltungsbereich; Artikel 28 gilt
-- **Souveräne KI für sensible Versicherungsdaten** — Schaden-, Underwriting-, Fraud-Detection-KI auf regulierten Daten
-- **Cloud Repatriation** — dauerhaft ausgelastete Workloads, bei denen die Public-Cloud-Ökonomie nicht mehr passt
-- **VMware-Ausstieg** — VCF-Subscription-Druck im Versicherungssektor
+## Womit Versicherungsteams zu uns kommen
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>Versicherungs-Workloads</b><div class="diagram__chips"><span>VMs und Container</span><span>Schaden-, Underwriting-, Fraud-Detection-KI</span></div></div>
+<div class="diagram__node"><b>Versicherungs-Workloads</b><div class="diagram__chips"><span>VMs und Container</span><span>KI für Schaden, Underwriting, Betrugserkennung</span></div></div>
 <div class="diagram__conn">laufen auf</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Plattformen</b><div class="diagram__chips"><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
 <div class="diagram__conn">basiert auf</div>
 <div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Eine Kubernetes-API (KubeVirt)</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Apache 2.0, CNCF</span></div></div>
-<div class="diagram__conn">trennt Business Units über</div>
-<div class="diagram__node"><b>Tenant-CRD-Mandantenfähigkeit</b><div class="diagram__chips"><span>Bildet DORA Artikel 28 ab</span></div></div>
+<div class="diagram__conn">trennt Geschäftsbereiche über</div>
+<div class="diagram__node"><b>Mandantenfähigkeit mit Tenant-CRDs</b><div class="diagram__chips"><span>Trennung der Geschäftsbereiche</span></div></div>
 </div>
 </div>
+
+- **DORA-Drittparteienrisiko in einer Konzernstruktur** — Versicherungs- und Rückversicherungsunternehmen sind Finanzunternehmen im Sinne von DORA, und die Kontrollen zu IKT-Drittdienstleistern (Artikel 28–30) sowie die Trennung der Geschäftsbereiche müssen über Risikoträger, Assekuradeure (MGAs) und konzerneigene Servicegesellschaften hinweg tragen.
+- **KI auf Schaden- und Underwriting-Daten** — Schadentriage, Underwriting und Betrugserkennung sind die Workloads, die Versicherer auf GPUs bringen wollen und nicht an einen öffentlichen Modell-Endpunkt schicken dürfen.
+- **Datenresidenz je Markt für ein Geschäft in mehreren Märkten** — ein Versicherer, der in mehreren Mitgliedstaaten zeichnet, erbt für denselben Bestandsführungs-Stack mehrere Residenzregeln.
+
+Kosten und VMware-Ausstieg betreffen den gesamten Finanzsektor; diese Auslöser behandeln wir unter **[Finanzdienstleistungen](/de/branchen/finanzdienstleistungen/)**.
 
 </div>
 </div>
 
 ---
 
-## Branchen-Kontext
+## Fallstudien aus dem Finanzsektor
 
-- **LSEG Global Cloud Survey 2025:** 82% der Finanzdienstleister (inkl. Versicherungen) in Hybrid-/Multi-Cloud; 84% haben ihre Strategie aufgrund regulatorischer Entwicklungen angepasst
-- **Nutanix FS ECI 2025:** 92% bewerten ihre Infrastruktur als nicht bereit für Cloud-native; 62% stellen GenAI-Spezialisten ein
-- **DORA-Durchsetzung:** seit Januar 2025 EU-weit in Kraft
+Versicherungskunden werden nicht namentlich genannt. Die am nächsten liegenden ausgearbeiteten Projekte stammen aus Banken und Finanzdienstleistungen — anonymisiert, aber mit vollständiger Architektur und Zahlen:
 
----
+- **[Private Cloud in einer Bank](/de/case-studies/private-cloud-in-a-bank/)**
+- **[Einheitliches Cloud-Portal für eine Finanzgruppe](/de/case-studies/unified-cloud-portal-financial-group/)**
 
-## Was in Versicherungen auf Cozystack läuft
-
-{{< clients >}}
-
-*Kunden-Evidenz — von Ænix zu befüllen. Anonyme Proof Points:*
-- Ein regionaler Rückversicherer mit multi-jurisdiktionalen Souveränitätsanforderungen betreibt eine interne Cloud-Plattform
-- Eine Versicherungsgruppe mit KI-gestützter Schadenbearbeitung auf privater LLM-Infrastruktur
-- Ein Multi-Produkt-Versicherer mit Multi-BU-Trennung unter DORA-Artikel-28-Kontrollen
+[Alle Fallstudien →](/de/case-studies/)
 
 {{< quote-carousel >}}
 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 - **[DORA-Compliance](/de/loesungen/dora-compliance/)**
-- **[Souveräne KI](/de/loesungen/sovereign-ai/)** — Schaden- / Underwriting-KI
+- **[Souveräne KI](/de/loesungen/sovereign-ai/)** — KI für Schaden und Underwriting
 - **[Cloud Repatriation](/de/loesungen/cloud-repatriation/)**
 - **[VMware-Alternative](/de/alternativen/vmware-alternative/)**
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**
+- **[Leitfaden für CISOs](/de/fuer/ciso/)**
 
 ---
 
-*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI.*

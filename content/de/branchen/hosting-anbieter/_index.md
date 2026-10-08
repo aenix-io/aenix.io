@@ -1,55 +1,62 @@
 ---
-title: "Cloud-Plattform für Hosting-Anbieter — Modernisierung über VPS hinaus"
-description: "Hosting-Anbieter im Jahr 2026 stehen vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren, aber mit den..."
+title: "Cloud-Plattform für Hosting-Anbieter — über VPS hinaus modernisieren, Cloud-Produkte starten"
+seo_title: "Public-Cloud-Plattform für Hosting-Anbieter"
+description: "Vom VPS zum Cloud-Produkt: Mandantenisolation, WHMCS-Billing in zwei Modi, Managed Databases, S3 und GPU — ohne Lizenzkosten pro CPU, die die Marge schmälern."
 related_pages:
-  - /de/dienstleistungen/public-cloud-builder
+  - /de/dienstleistungen/public-cloud-builder/
+  - /de/dienstleistungen/white-label-cloud/
+  - /de/produkte/public-cloud-platform/
+  - /de/partner/
   - /de/produkte/cozystack/
+  - /de/migration/virtuozzo/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/hosting-providers/
 direct_answer: |
-  **Eine Cloud-Plattform für Hosting-Anbieter ermöglicht es traditionellen Hostern (Shared, VPS, Dedicated, Bare Metal), Cloud-Dienste anzubieten, die preislich mit Hyperscalern konkurrieren, ohne ihre direkten Kundenbeziehungen aufzugeben. Aenix liefert dies über Cozystack, eine Kubernetes-native Open-Source-Plattform, die VMs (KubeVirt) und Container über eine einzige API bereitstellt, Kunden über das Tenant-CRD mandantenfähig isoliert und einen Service-Katalog jenseits reiner VMs bietet. Die produktisierte Ænix Public Cloud Platform ergänzt WHMCS-Billing-Integration, Sperren und Stilllegen von Mandanten und Migrations-Tooling von VMware, OpenStack und Virtuozzo. Lizenzierung erfolgt unter Apache 2.0 ohne per-CPU-Modell.**
+  **Mit einer Cloud-Plattform für Hosting-Anbieter kann ein klassisches Shared-, VPS- oder Dedicated-Server-Geschäft Cloud-Produkte auf Hyperscaler-Niveau einführen und dabei seine direkten Kundenbeziehungen, seine Preisgestaltung und seine Marge behalten. Ænix setzt das mit Cozystack um, einem Kubernetes-nativen Open-Source-CNCF-Sandbox-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs (über KubeVirt) und Container auf einer API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Mandantenisolation über die Tenant-CRD. Als Produkt ist es die Ænix Public Cloud Platform (mit dem produktisierten Installer live innerhalb weniger Wochen, sobald die Hardware bereitsteht), mit WHMCS-integriertem Billing, Sperren und Stilllegen von Mandanten, einem Service-Katalog über VMs hinaus (Managed Databases, S3, GPU) und Migrationswerkzeugen für VMware, OpenStack und Virtuozzo. Durch die Apache-2.0-Lizenz fallen keine Gebühren pro CPU an, die Hosting-Marge bleibt erhalten.**
 quick_facts:
   - label: "Was es ist"
-    value: "Eine Kubernetes-native Cloud-Plattform, mit der Hosting-Anbieter über reine VPS hinaus Cloud-Dienste anbieten, die preislich mit Hyperscalern konkurrieren"
-  - label: "Zielgruppe"
-    value: "Traditionelle Hosting-Anbieter (Shared, VPS, Dedicated), regionale Cloud-Anbieter, Spezial-Hoster (Gaming, KI, Finanzdienstleistungen) und Bare-Metal-as-a-Service-Anbieter"
-  - label: "Schlüsselfunktion"
-    value: "Multi-Tenant Tenant-CRD, WHMCS-Billing-Integration (zwei Modi), Service-Katalog jenseits von VMs und Migrations-Tooling von VMware/OpenStack/Virtuozzo"
-  - label: "Technologie"
-    value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage"
+    value: "Eine Kubernetes-native Open-Source-Cloud-Plattform, mit der Hosting-Anbieter mandantenfähige Cloud-Produkte über VPS hinaus einführen — gebaut auf Cozystack, als Produkt die Ænix Public Cloud Platform."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
-  - label: "Engagement"
-    value: "Ænix Public Cloud Platform ab 1.250 USD/Monat Support-Tier; Partner-Programm mit bis zu 40% Marge"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Zielgruppe"
+    value: "Klassische Hosting-Anbieter, regionale und souveräne Cloud-Anbieter, spezialisierte Hoster (Gaming, KI, Finanzdienstleistungen) und Anbieter von Bare Metal as a Service."
+  - label: "Kernfunktionen"
+    value: "Mandantenfähigkeit über die Tenant-CRD, WHMCS-Billing-Integration (zwei Modi), Service-Katalog mit VMs, Containern, Managed Databases, S3 und GPU sowie Migrationswerkzeuge für VMware, OpenStack und Virtuozzo."
+  - label: "Technologie"
+    value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium-(eBPF-)Networking, LINSTOR/DRBD-Storage."
+  - label: "Kommerzieller Einstieg"
+    value: "Support-Stufen ab 1.250 USD pro 10 Nodes und Monat (Basic, jährliche Abrechnung), Support für die White-Label-Konfiguration ab Standard (3.000 USD); das Partnerprogramm bietet bis zu 40 % Marge auf Ænix-Plattform-Abonnements und Support."
 faq:
-  - q: "Wie können Hosting-Anbieter preislich mit Hyperscalern konkurrieren?"
-    a: "Durch eine Open-Source-Plattform ohne per-CPU-Lizenzierung (Apache 2.0) entfallen die Lizenzkosten, die proprietäre Stacks aufschlagen. Cozystack bündelt VMs, Container und einen Service-Katalog über eine Kubernetes-API, sodass Hoster wettbewerbsfähige Cloud-Dienste anbieten und zugleich ihre direkten Kundenbeziehungen behalten."
-  - q: "Lässt sich die Plattform in mein bestehendes Billing integrieren?"
-    a: "Ja. Die Ænix Public Cloud Platform bietet eine WHMCS-Integration in zwei Modi sowie Sperren und Stilllegen von Mandanten. So lassen sich Provisionierung, Abrechnung und Sperrung säumiger Kunden direkt an die Mandanten-Isolation über das Tenant-CRD koppeln."
-  - q: "Wie funktioniert die Migration von VMware, OpenStack oder Virtuozzo?"
-    a: "Die Public Cloud Platform enthält produktisiertes Migrations-Tooling für Workloads von VMware, OpenStack und Virtuozzo. KubeVirt führt migrierte VMs und neue Container über dieselbe Kubernetes-API aus, sodass kein paralleler Betrieb zweier Stacks nötig ist."
-  - q: "Wie werden Kunden auf einer gemeinsamen Plattform voneinander isoliert?"
-    a: "Cozystack nutzt ein Multi-Tenant Tenant-CRD für die Kunden-Isolation. Networking läuft über Cilium (eBPF), persistenter Storage über LINSTOR/DRBD. Jeder Mandant erhält abgegrenzte Ressourcen über eine einzige Kubernetes-API."
-  - q: "Was kostet die Ænix Public Cloud Platform?"
-    a: "Cozystack selbst ist Open Source unter Apache 2.0 und kostenlos. Die produktisierte Ænix Platform mit Support beginnt beim Basic-Support-Tier der Public Cloud Platform ab 1.250 USD/Monat. Das Partner-Programm bietet Hosting-Anbietern bis zu 40% Marge."
-  - q: "Worin unterscheidet sich die Plattform von OpenStack für Hosting-Anbieter?"
-    a: "Die Public Cloud Platform positioniert sich als moderne Alternative zu OpenStack: produktisierter Installer, schnellere Feature-Bereitstellung, WHMCS-integriertes Billing und ein Service-Katalog jenseits reiner VMs — bei geringerer operativer Komplexität durch die Kubernetes-native Architektur."
+  - q: "Warum sollte ein Hosting-Anbieter von VPS auf eine Kubernetes-native Cloud-Plattform wechseln?"
+    a: "Kunden erwarten zunehmend Cloud-Funktionen, die mit Hyperscalern mithalten — Managed Databases, Object Storage, GPU und Self-Service. Eine Kubernetes-native Plattform bündelt diese in einem Service-Katalog, während der Anbieter seine direkte Kundenbeziehung und seine Preisgestaltung behält."
+  - q: "Unterstützt Cozystack virtuelle Maschinen und Container?"
+    a: "Ja. Cozystack nutzt KubeVirt, um VMs und Container auf einer Kubernetes-API zu betreiben. Ein Anbieter bedient so klassische VM-Kunden und moderne Container-Workloads mit derselben Plattform und demselben Betriebsteam."
+  - q: "Wie funktioniert die Billing-Integration für Hosting-Anbieter?"
+    a: "Die Ænix Public Cloud Platform enthält eine WHMCS-Integration in zwei Modi: die native Cozystack-Oberfläche und ein kundenseitiges Frontend auf Basis des Cozystack Dashboard. Außerdem lassen sich Mandanten abhängig vom Abrechnungsstatus sperren und stilllegen."
+  - q: "Gibt es Lizenzkosten pro CPU oder Core?"
+    a: "Nein. Cozystack steht unter Apache 2.0, es fallen also keine Gebühren pro CPU oder Core an. Das erhält die Hosting-Marge im Vergleich zu proprietären Virtualisierungsplattformen, die pro Sockel oder Core lizenzieren."
+  - q: "Kann ein Anbieter bestehende Workloads von VMware, OpenStack oder Virtuozzo migrieren?"
+    a: "Ja. Die Ænix Public Cloud Platform bringt Migrationswerkzeuge für VMware, OpenStack und Virtuozzo mit, sodass Anbieter bestehende Kunden-Workloads auf die neue Plattform übernehmen können."
+  - q: "Wie werden Kunden voneinander isoliert?"
+    a: "Cozystack bietet über die Tenant-CRD eine Isolation auf Produktionsniveau: Jeder Kunde erhält eine abgegrenzte, isolierte Umgebung auf gemeinsamer Infrastruktur — die Grundlage, um Cloud-Produkte sicher an viele Kunden zu verkaufen."
 ---
 
-**Hosting-Anbieter stehen 2026 vor Kundennachfrage nach Cloud-Fähigkeiten, die preislich mit Hyperscalern konkurrieren, aber mit den Kundenbeziehungs-Vorteilen und der Preisflexibilität, die Hosting-Anbieter bereits haben. Die architektonische Antwort ist eine Kubernetes-native Plattform mit Multi-Tenant-Kunden-Isolation, Billing-Integration und einem Service-Katalog jenseits von VMs — Cozystacks Designziel.**
+**Hosting-Kunden erwarten 2026 Cloud-Funktionen, die mit Hyperscalern mithalten — kombiniert mit der Nähe zum Kunden und der Preisflexibilität, die Hosting-Anbieter bereits haben. Die architektonische Antwort ist eine Kubernetes-native Plattform mit Mandantenisolation, Billing-Integration und einem Service-Katalog über VMs hinaus — genau dafür ist Cozystack entworfen.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Sperren und Stilllegen von Mandanten, Fast Feature Delivery, produktisierter Installer, Migrations-Tooling von VMware/OpenStack/Virtuozzo. Einstieg ab 1.250 USD/Monat Support-Tier. Öffentliche Produktionskunden: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
+> **Passende Plattform:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Sperren und Stilllegen von Mandanten, schnelle Bereitstellung neuer Funktionen, produktisierter Installer, Migrationswerkzeuge für VMware, OpenStack und Virtuozzo ([Virtuozzo-Migration](/de/migration/virtuozzo/)). Sie verkaufen heute Cloud über VMware Cloud Director? Siehe [die VMware-Cloud-Director-Alternative für Service Provider](/de/alternativen/vmware-cloud-director-alternative/). Support-Stufen ab 1.250 USD pro 10 Nodes und Monat; Support für die White-Label-Konfiguration ab Standard (3.000 USD). Hosting-Anbieter, die sie produktiv betreiben: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Im **[Partnerprogramm](/de/partner/)** erhalten Sie bis zu 40 % Marge auf Ænix-Plattform-Abonnements und Support.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/">Hosting-Plattform-Modernisierung →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/">Modernisierung der Hosting-Plattform →</a>
 </div>
 
-**Sehen Sie das Kundenportal selbst.** Die Cozystack Dashboard-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
+**Sehen Sie sich das Kundenportal selbst an.** Die Live-Demo zeigt das Kundenportal und das Operator-Backoffice der Ænix Public Cloud Platform (wechseln Sie zu Admin, um Kunden, Rechnungen und Preise zu sehen). Sie läuft vollständig in Ihrem Browser mit Demodaten — ohne Anmeldung, ohne Cluster, ohne Einrichtung.
+
+**Rechnen Sie zuerst das Geschäftsmodell durch.** Der [Rechner für die Unit Economics von Hosting-Anbietern](/isp-calculator/) schätzt Umsatz und Amortisation, und das [Webinar „Launch your public cloud“](/webinars/launch-public-cloud/) zeigt einen Provider-Launch Schritt für Schritt. Verantwortliche für Cloud-Produkte beginnen am besten mit dem [Leitfaden für Cloud-Leitungen](/de/fuer/leiter-cloud/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
@@ -58,27 +65,27 @@ faq:
 
 ---
 
-## Wer in der Zielgruppe ist
+## Für wen die Seite gedacht ist
 
-- Traditionelle Hosting-Anbieter (Shared, VPS, Dedicated Server) bei der Modernisierung
-- Regionale Cloud-Anbieter, die lokale Souveränitäts-Mandate bedienen
-- Spezial-Hosting-Anbieter (Gaming, KI, Finanzdienstleistungen)
-- Bare-Metal-as-a-Service-Anbieter
+- Klassische Hosting-Anbieter (Shared, VPS, Dedicated Server), die modernisieren
+- Regionale Cloud-Anbieter, die lokale Souveränitätsvorgaben bedienen
+- Spezialisierte Hosting-Anbieter (Gaming, KI, Finanzdienstleistungen)
+- Anbieter von Bare Metal as a Service
 
 ---
 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wofür Hosting-Anbieter zu uns kommen
+## Weshalb Hosting-Anbieter zu uns kommen
 
-- **Modernisierung von VPS zum Cloud-Produkt** — Multi-Tenant-Kubernetes-native Plattform
-- **Service-Katalog-Erweiterung** — VMs + Container + Managed Databases + S3 + GPU auf einer Plattform
+- **Vom VPS zum Cloud-Produkt** — mandantenfähige, Kubernetes-native Plattform
+- **Erweiterung des Service-Katalogs** — VMs, Container, Managed Databases, S3 und GPU auf einer Plattform
 - **WHMCS-Integration** — produktionsreif, zwei Integrationsmodi
-- **Kundenseitiges Portal** — Cozystack Dashboard, anpassbar pro Anbieter
-- **Souveräne-Cloud-Produkt-Launches** — für regionale Märkte
+- **Kundenportal** — Cozystack Dashboard, pro Anbieter anpassbar
+- **Start souveräner Cloud-Produkte** — für regionale Märkte
 
-Für ein sales-geführtes Engagement siehe **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** und **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)**.
+Für ein vertriebsgeführtes Projekt siehe **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** und **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)**.
 
 </div>
 </div>
@@ -87,36 +94,39 @@ Für ein sales-geführtes Engagement siehe **[Public Cloud Builder](/de/dienstle
 
 ## Warum Cozystack zu Hosting-Anbietern passt
 
-- **Multi-Tenant Tenant CRD** — Kunden-Isolation auf Produktionsniveau
-- **WHMCS-Integration** — zwei Modi (native UI + Cozystack Dashboard-Frontend)
-- **Open-Source-Plattform** — keine Per-CPU-Lizenzierung, Hosting-Marge bleibt erhalten
-- **Service-Katalog** — weit über VMs hinaus (Managed DBs, S3, GPU)
-- **Operative Einfachheit** — eine Plattform, ein Team
+- **Mandantenfähigkeit über die Tenant-CRD** — Kundenisolation auf Produktionsniveau
+- **WHMCS-Integration** — zwei Modi (native Oberfläche und Frontend auf Basis des Cozystack Dashboard)
+- **Open-Source-Plattform** — keine Lizenzkosten pro CPU, die Hosting-Marge bleibt erhalten
+- **Service-Katalog** — weit über VMs hinaus (Managed Databases, S3, GPU)
+- **Einfacher Betrieb** — eine Plattform, ein Team
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>WHMCS-Billing</b><div class="diagram__chips"><span>Zwei Integrationsmodi</span><span>Sperren und Stilllegen von Mandanten</span></div></div>
+<div class="diagram__node"><b>WHMCS-Billing</b><div class="diagram__chips"><span>Zwei Integrationsmodi</span><span>Sperren/Stilllegen von Mandanten</span></div></div>
 <div class="diagram__conn">provisioniert über</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b><div class="diagram__chips"><span>Cozystack Dashboard</span><span>Migrations-Tooling</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b><div class="diagram__chips"><span>Cozystack Dashboard</span><span>Migrationswerkzeuge</span></div></div>
 <div class="diagram__conn">stellt bereit</div>
-<div class="diagram__node"><b>Cozystack Service-Katalog</b><div class="diagram__chips"><span>VMs</span><span>Managed Databases</span><span>S3</span><span>GPU</span></div></div>
+<div class="diagram__node"><b>Cozystack-Service-Katalog</b><div class="diagram__chips"><span>VMs</span><span>Managed Databases</span><span>S3</span><span>GPU</span></div></div>
 <div class="diagram__conn">isoliert Kunden über</div>
 <div class="diagram__node"><b>Tenant-CRD</b><div class="diagram__chips"><span>Isolation auf Produktionsniveau</span></div></div>
 </div>
 </div>
 
-Produktive Referenzen: regionale Hosting-Anbieter betreiben die Ænix Public Cloud Platform; Tier-1-europäische Bank-Deployments unter NDA bis Mitte 2027.
+Produktive Referenzen: regionale Hosting-Anbieter, die die Ænix Public Cloud Platform betreiben. Die am nächsten liegende beschriebene Fallstudie: [ein Anbieter, der eine kommerzielle Public Cloud über drei Rechenzentren betreibt](/de/case-studies/sovereign-public-cloud/).
 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-- **[Public-Cloud-Builder-Services](/de/dienstleistungen/public-cloud-builder/)** — Engagement
-- **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)** — gebrandet für Reseller
-- **[Artikel: Hosting-Anbieter-Plattform-Modernisierung](/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/)**
+- **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** — Projektleistung
+- **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)** — unter eigener Marke für Reseller
+- **[Artikel: Modernisierung der Plattform für Hosting-Anbieter](/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/)**
+- **[Virtuozzo-Migration](/de/migration/virtuozzo/)** — einen Virtuozzo-Bestand umziehen
+- **[Rechner für Hosting-Anbieter](/isp-calculator/)** — Unit Economics
+- **[Webinar „Launch your public cloud“](/webinars/launch-public-cloud/)**
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

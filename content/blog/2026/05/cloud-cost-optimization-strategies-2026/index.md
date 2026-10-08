@@ -1,8 +1,9 @@
 ---
 title: "Cloud cost optimization strategies in 2026 — a practical guide for engineering and finance"
+seo_title: "Cloud cost optimization strategies for 2026"
 description: "Eight cloud cost optimization strategies, from commitment-realization gaps to Kubernetes right-sizing — and the point where configurational tuning stops paying."
 date: "2026-05-03"
-cover_image: "/img/blog/covers/cloud-cost-optimization-strategies-2026.png"
+cover_image: "/img/blog/covers/cloud-cost-optimization-strategies-2026.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["Kubernetes", "Cloud Repatriation", "Financial Services", "Cost Optimization"]
@@ -43,6 +44,7 @@ quiz:
         - { text: "When the platform team rotates onto other work", correct: false }
         - { text: "After the first internal cost audit finishes", correct: false }
       explanation: "Configurational first, captures those savings, then evaluate architectural moves. Skipping configurational leaves money on the table; skipping architectural means optimisation hits a structural ceiling and the operator is stuck."
+hreflang_de: /de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/
 ---
 
 

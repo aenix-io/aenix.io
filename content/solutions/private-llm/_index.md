@@ -1,6 +1,6 @@
 ---
 title: "Private LLM: Self-Hosted and On-Prem GenAI on Your GPUs"
-description: "Run a private LLM on your own GPUs: self-hosted open-weight models, RAG on Qdrant, fine-tuning, with weights, keys, and the audit trail under your control."
+description: "Run a private LLM on your own GPUs: self-hosted open-weight models, RAG on Qdrant, fine-tuning, with weights, data and the audit trail under your control."
 date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
@@ -22,10 +22,10 @@ service:
   areaServed: ["EU", "DACH"]
   audience: "AI/ML, Enterprise, Public Sector"
 direct_answer: |
-  **A private LLM is a large language model you run on your own GPUs, inside your own network, so prompts, embeddings, model weights, and the audit trail never leave your control. It typically uses open-weight models — Llama, Mistral, Qwen, and similar — served for inference, augmented with retrieval (RAG) over your own documents, and optionally fine-tuned on your data. Aenix builds these platforms on Cozystack (a CNCF project, Apache 2.0): GPU scheduling, a vector database for RAG, and efficient inference serving, all on infrastructure you own. It suits banks, healthcare, the public sector, and any enterprise that cannot send sensitive text to a third-party AI API. Unlike a hosted assistant, a private LLM keeps the weights, the keys, and the logs on your side of the boundary.**
+  **A private LLM is a large language model you run on your own GPUs, inside your own network, so prompts, embeddings, model weights, and the audit trail never leave your control. It typically uses open-weight models — Llama, Mistral, Qwen, and similar — served for inference, augmented with retrieval (RAG) over your own documents, and optionally fine-tuned on your data. Ænix builds these platforms on Cozystack (a CNCF Sandbox project, Apache 2.0, accepted into the CNCF Kubernetes AI Conformance program): GPU scheduling, a vector database for RAG, and efficient inference serving, all on infrastructure you own. It suits banks, healthcare, the public sector, and any enterprise that cannot send sensitive text to a third-party AI API. Unlike a hosted assistant, a private LLM keeps the weights, the data and the logs on your side of the boundary.**
 quick_facts:
   - label: "What it is"
-    value: "A large language model run on your own GPUs and network, with weights, keys, and logs kept under your control."
+    value: "A large language model run on your own GPUs and network, with weights, data and logs kept under your control."
   - label: "Models"
     value: "Open-weight models — Llama, Mistral, Qwen and similar — served for inference; no dependency on a third-party AI API."
   - label: "RAG"
@@ -34,29 +34,29 @@ quick_facts:
     value: "NVIDIA Dynamo for disaggregated serving and KV-cache-aware routing — higher GPU utilization, no extra vendor licenses."
   - label: "Data boundary"
     value: "Prompts, embeddings, and fine-tuning data stay inside your jurisdiction and infrastructure."
-  - label: "Platform license"
+  - label: "Cozystack licence"
     value: "Cozystack is open source under Apache 2.0 — no per-GPU or per-CPU licensing."
   - label: "Distinct from sovereign AI"
     value: "Private LLM is the workload; sovereign AI is the broader jurisdiction-and-control strategy it fits inside."
-quick_facts_source: "[CNCF Landscape](https://landscape.cncf.io), [AI universal installer case study](/case-studies/ai-universal-installer/)"
+quick_facts_source: "[AI universal installer case study](/case-studies/ai-universal-installer/)"
 faq:
   - q: "What is a private LLM?"
     a: "A private LLM is a large language model you host on your own GPUs and network, rather than calling a third-party AI API. Prompts, retrieved documents, embeddings, model weights, and the audit trail all stay inside your infrastructure and jurisdiction, so sensitive text never leaves your control. Most private LLM deployments use open-weight models such as Llama, Mistral, or Qwen."
   - q: "Why run a self-hosted LLM instead of a cloud AI API?"
-    a: "Regulated organizations often cannot send prompts and documents containing personal, financial, or classified data to an external API whose data handling they cannot audit. A self-hosted LLM keeps the data in-boundary, removes per-token vendor pricing on high-volume workloads, and lets you pin the model version so behaviour does not change underneath you."
+    a: "Regulated organizations often cannot send prompts and documents containing personal or financial data to an external API whose data handling they cannot audit. A self-hosted LLM keeps the data in-boundary, removes per-token vendor pricing on high-volume workloads, and lets you pin the model version so behaviour does not change underneath you."
   - q: "How does RAG work on a private LLM platform?"
     a: "Retrieval-augmented generation indexes your own documents into a vector database — Qdrant on this platform — and retrieves the most relevant passages at query time to ground the model's answer. It runs next to the GPU inference workloads inside the same boundary, so both the source documents and the generated answers stay private."
   - q: "Can I fine-tune models on my own data?"
-    a: "Yes. Because the GPUs and the data are inside the same platform, you can fine-tune or adapt open-weight models on proprietary data without that data leaving your infrastructure. The AI Platform provides GPU scheduling, fractional sharing, and blueprints for both inference and fine-tuning workloads."
+    a: "Yes. Because the GPUs and the data are inside the same platform, you can fine-tune or adapt open-weight models on proprietary data without that data leaving your infrastructure. The AI Platform provides GPU scheduling and fractional sharing (HAMi) for both inference and fine-tuning workloads; MIG and time-slicing are on the roadmap."
   - q: "How is a private LLM different from sovereign AI?"
     a: "They are related but not the same head term. Private LLM names the concrete workload — a self-hosted model on your GPUs. Sovereign AI is the broader strategy of keeping AI compute, data, and governance within a jurisdiction you control. A private LLM is usually one component of a sovereign-AI programme; see the sovereign AI page for the wider picture."
-  - q: "What does an Aenix private-LLM engagement include?"
-    a: "It runs as an AI platform build: GPU architecture, an inference stack, a Qdrant vector database for RAG, multi-tenant isolation, and single sign-on, deployed on your own hardware. In a live engagement the same platform packaged NVIDIA Dynamo inference and a Qdrant RAG stack and was shipped into a state-owned customer's boundary."
+  - q: "What does an Ænix private-LLM engagement include?"
+    a: "It runs as an AI platform build: GPU architecture, an inference stack, a Qdrant vector database for RAG, multi-tenant isolation, and single sign-on, deployed on your own hardware. In a published engagement the same platform packaged NVIDIA Dynamo inference and a Qdrant RAG stack and was shipped into an end customer's environment, with data staying inside that boundary."
 ---
 
 **Run your own large language model on hardware you control — open-weight models like Llama, Mistral, and Qwen, served for inference, grounded in your documents with RAG, and fine-tuned on your data when you need it. A private LLM keeps prompts, embeddings, weights, keys, and the audit trail on your side of the boundary, so you get modern GenAI without shipping sensitive text to a third-party API. Ænix builds these platforms on [Cozystack](/products/cozystack/), on your own GPUs.**
 
-> **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — GPU scheduling, fractional sharing, and blueprints for inference and fine-tuning. For the elastic GPU capacity underneath it, combine with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)**. For the wider strategy, see **[Sovereign AI](/solutions/sovereign-ai/)**.
+> **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — GPU scheduling and fractional sharing for inference and fine-tuning, quoted per RFP. For the elastic GPU capacity underneath it, combine with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)**. For the wider strategy, see **[Sovereign AI](/solutions/sovereign-ai/)**. ML platform leads: see the [Head of AI/ML guide](/for/head-of-ai-ml/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -70,7 +70,7 @@ faq:
 
 For a lot of organizations the blocker to GenAI is not the model — it is the data path. A hosted assistant means sending prompts, and often the documents behind them, to an external API you cannot audit.
 
-- **Data cannot leave the boundary.** Banks, healthcare providers, and public-sector bodies handle personal, financial, or classified text that a third-party API's data-handling terms do not adequately cover. A self-hosted LLM keeps that text in-jurisdiction and in-infrastructure by construction.
+- **Data cannot leave the boundary.** Banks, healthcare providers, and public-sector bodies handle personal, financial or otherwise sensitive text that a third-party API's data-handling terms do not adequately cover. A self-hosted LLM keeps that text in-jurisdiction and in-infrastructure by construction.
 - **Predictable economics on volume.** Per-token pricing is fine for a pilot and punishing at scale. Owning the GPUs turns a variable API bill into a capacity you control — the same logic behind **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)**.
 - **Version stability.** A pinned open-weight model does not change behaviour underneath you when a vendor ships a new release, which matters when your workflows and evaluations depend on consistent output.
 
@@ -95,22 +95,22 @@ An on-prem GenAI platform is more than a model file. Ænix assembles the full st
 - **Open-weight model serving.** Models such as Llama, Mistral, and Qwen served for inference on your GPUs, exposed to teams as ordinary Kubernetes services rather than an external endpoint.
 - **RAG over your documents.** A **Qdrant** vector database indexes your own content and retrieves the relevant passages at query time, grounding answers in your data. Both the source documents and the generated answers stay inside the boundary.
 - **Efficient inference.** **NVIDIA Dynamo** provides disaggregated serving and KV-cache-aware routing across the GPU fleet, raising utilization of expensive cards with no extra vendor licenses.
-- **GPU scheduling and isolation.** The [Kubernetes](https://kubernetes.io/docs/concepts/scheduling-eviction/) scheduler plus the NVIDIA GPU-operator make GPUs a first-class, schedulable resource; per-tenant hosted control planes keep teams isolated on shared hardware.
+- **GPU scheduling and isolation.** The [Kubernetes](https://kubernetes.io/docs/concepts/scheduling-eviction/) scheduler plus the NVIDIA GPU Operator make GPUs a first-class, schedulable resource (whole GPUs to pods or VMs, fractional sharing via HAMi); per-tenant hosted control planes keep teams isolated on shared hardware.
 - **Fine-tuning in-place.** Because the GPUs and the data live in the same platform, you can adapt open-weight models on proprietary data without that data leaving your infrastructure.
 
 ---
 
-## Keeping weights, keys, and the audit trail on your side
+## Keeping weights, data, and the audit trail on your side
 
-The defining property of a private LLM is custody. On this platform the model weights sit on storage you own; single sign-on runs through your own **Keycloak**; and every request produces logs you hold, not a vendor's telemetry. For a regulator or an internal risk team, that converts "the AI is secure" into an inspectable claim: you can show where the data went, who invoked the model, and that nothing crossed the boundary. Encryption at rest and an encrypted mesh between sites keep the same guarantees when the platform spans more than one data centre.
+The defining property of a private LLM is custody. On this platform the model weights sit on storage you own; single sign-on runs through your own **Keycloak**; and every request produces logs you hold, not a vendor's telemetry. For a regulator or an internal risk team, that converts "the AI is secure" into an inspectable claim: you can show where the data went, who invoked the model, and that nothing crossed the boundary. Volume encryption is available opt-in per storage class, and an encrypted WireGuard mesh connects sites when the platform spans more than one data centre.
 
 ---
 
 ## Evidence: a RAG-and-inference platform shipped into a customer's boundary
 
-The pattern is already in production. In our anonymized **[AI universal installer case study](/case-studies/ai-universal-installer/)**, a telecom integrator built a corporate AI platform on Cozystack — corporate LLM assistants, RAG search over regulatory documentation, and computer vision — and used the same distribution to ship those services *into a state-owned end customer's environment, with data staying inside the customer's boundary*.
+The pattern is already in production. In our anonymized **[AI universal installer case study](/case-studies/ai-universal-installer/)**, a telecom integrator built a corporate AI platform on Cozystack — corporate LLM assistants, RAG search over regulatory documentation, and computer vision — and used the same distribution to ship those services *into an end customer's environment, with data staying inside the customer's boundary*.
 
-Concretely, the team packaged **Qdrant** as a platform app for RAG next to the GPU workloads, packaged **NVIDIA Dynamo** as a full inference stack to raise GPU utilization, and ran a **geo-distributed GPU** cluster joined to the main cluster by an encrypted WireGuard mesh — models reachable by every tenant as ordinary services. That is a private LLM platform doing real work: 141 of 141 managed releases healthy, single sign-on, multi-tenancy, and no prompts leaving the customer's jurisdiction.
+Concretely, the team packaged **Qdrant** as a platform app for RAG next to the GPU workloads, packaged **NVIDIA Dynamo** as a full inference stack to raise GPU utilization, and ran a **geo-distributed GPU** cluster joined to the main cluster by an encrypted WireGuard mesh — models reachable by every tenant as ordinary services. That is a private LLM platform doing real work: every managed platform component deployed and healthy, single sign-on, multi-tenancy, and no prompts leaving the customer's jurisdiction.
 
 ---
 
@@ -140,4 +140,4 @@ The engagement runs as an **[AI platform build](/services/ai-platform-build/)**:
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build private-LLM and on-prem GenAI platforms for enterprises and public-sector organizations across the EU and DACH.*
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0 — and co-maintains it. Ænix sells three platforms on that engine — Public Cloud, Private Cloud and AI. We build private-LLM and on-prem GenAI platforms for enterprises and public-sector organisations.*

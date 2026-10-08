@@ -1,0 +1,13 @@
+{{- /*
+  i18n/field.html — returns a data item's field in the page language.
+
+  Data files keep German next to English as a `<field>_de` sibling
+  (e.g. data/tour2026.yaml: title / title_de). On a German page the `_de`
+  value wins when present; otherwise, and on every other page, the plain
+  field is returned unchanged.
+
+  Usage: {{ partial "i18n/field.html" (dict "item" . "key" "title" "de" $de) }}
+*/ -}}
+{{- $v := index .item .key -}}
+{{- if .de -}}{{- with index .item (printf "%s_de" .key) -}}{{- $v = . -}}{{- end -}}{{- end -}}
+{{- return $v -}}

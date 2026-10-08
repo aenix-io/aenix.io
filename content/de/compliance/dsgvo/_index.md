@@ -1,6 +1,6 @@
 ---
 title: "DSGVO und die Ænix-Plattformen"
-description: "Welche Maßnahmen nach Art. 32 DSGVO die Aenix-Plattformen liefern — Datenhaltung, Verschlüsselung, Zugriffskontrolle, Trennung — und welche bei Ihnen bleiben."
+description: "Welche Maßnahmen nach Art. 32 DSGVO die Ænix-Plattformen liefern — Datenhaltung, Verschlüsselung, Zugriffskontrolle, Trennung — und welche bei Ihnen bleiben."
 page_type: "solution-landing"
 language: "de"
 quick_facts_style: "rows"
@@ -15,7 +15,7 @@ related_pages:
   - /de/produkte/private-cloud-platform/
   - /de/branchen/gesundheitswesen/
 direct_answer: |
-  **Personenbezogene Daten auf einer Ænix-Plattform bleiben dort, wo Sie sie hinlegen. Die Plattformen laufen auf Ihrer eigenen Hardware in einem Rechenzentrum Ihrer Wahl: keine Control Plane in fremder Cloud, kein Anbieterkonto, kein Telemetriekanal, der für den Betrieb erforderlich wäre. Darüber hinaus liefern sie die Maßnahmen, nach denen Art. 32 DSGVO fragt — Verschlüsselung bei der Übertragung und für Backups, zentrale Identität über Keycloak, Tenant-Isolierung durch Cilium-Netzwerk-Policies, Audit-Logging, Backup und Wiederherstellung. Einige Maßnahmen sind verfügbar, aber deaktiviert, allen voran die Volume-Verschlüsselung im Ruhezustand; diese Seite markiert jede davon. Compliance selbst liegt bei der Organisation, die die Daten hält: warum sie sie hält, auf welcher Rechtsgrundlage, wie lange. Eine Plattform liefert Maßnahmen und macht sie nachweisbar — Aenix behauptet nicht, dass irgendeine Konfiguration eine Aufsichtsbehörde zufriedenstellt.**
+  **Personenbezogene Daten auf einer Ænix-Plattform bleiben dort, wo Sie sie hinlegen. Die Plattformen laufen auf Ihrer eigenen Hardware in einem Rechenzentrum Ihrer Wahl: keine Control Plane in fremder Cloud, kein Anbieterkonto, kein Telemetriekanal, der für den Betrieb erforderlich wäre. Darüber hinaus liefern sie die Maßnahmen, nach denen Art. 32 DSGVO fragt — Verschlüsselung bei der Übertragung und für Backups, zentrale Identität über Keycloak, Tenant-Isolierung durch Cilium-Netzwerk-Policies, Audit-Logging, Backup und Wiederherstellung. Einige Maßnahmen sind verfügbar, aber deaktiviert, allen voran die Volume-Verschlüsselung im Ruhezustand; diese Seite markiert jede davon. Compliance selbst liegt bei der Organisation, die die Daten hält: warum sie sie hält, auf welcher Rechtsgrundlage, wie lange. Eine Plattform liefert Maßnahmen und macht sie nachweisbar — Ænix behauptet nicht, dass irgendeine Konfiguration eine Aufsichtsbehörde zufriedenstellt.**
 quick_facts:
   - label: "Datenhaltung"
     value: "Ihre Hardware, Ihr Rechenzentrum. Keine Anbieter-Control-Plane, kein dauerhafter Anbieterzugriff, keine Telemetrie als Betriebsvoraussetzung."
@@ -30,18 +30,18 @@ quick_facts:
   - label: "Größte Lücke"
     value: "Integritätsüberwachung. Weder IDS noch Dateiintegritäts- oder Änderungserkennung werden mitgeliefert."
   - label: "Zertifizierung"
-    value: "Keine. Eine DSGVO-Zertifizierung für eine Plattform existiert nicht, und Aenix hält weder ISO 27001 noch SOC 2."
+    value: "Keine für die DSGVO: Eine DSGVO-Zertifizierung für eine Plattform existiert nicht. Die AENIX s.r.o. ist für ihr eigenes Informationssicherheits-Managementsystem nach ISO/IEC 27001:2022 zertifiziert; einen SOC-2-Bericht gibt es nicht."
 faq:
-  - q: "Ist die Aenix-Plattform DSGVO-konform?"
-    a: "Die Frage passt nicht auf Infrastruktur. Eine Organisation ist konform; eine Plattform liefert Maßnahmen. Die Aenix-Plattformen liefern Verschlüsselung, Zugriffskontrolle, Tenant-Trennung, Audit-Logging, Backup und Wiederherstellung sowie vollständige Kontrolle darüber, wo Daten physisch liegen. Rechtsgrundlage, Verzeichnis von Verarbeitungstätigkeiten, Datenschutz-Folgenabschätzungen und Meldungen von Datenschutzverletzungen bleiben bei demjenigen, der über Zwecke und Mittel der Verarbeitung entscheidet."
-  - q: "Beschreiben diese Maßnahmen Cozystack oder die Aenix-Plattformen?"
-    a: "Beides, denn es ist dieselbe Software. Die Aenix Public Cloud Platform, die Private Cloud Platform und die AI Platform sind Distributionen von Cozystack, dem Apache-2.0-lizenzierten CNCF-Projekt, das Aenix entwickelt und pflegt; die Beobachtungen auf dieser Seite stammen von einem Cozystack-v1.6-Referenzcluster. Mehrere Einstellungen — insbesondere der etcd-Verschlüsselungsprovider — stammen aus der zum Installationszeitpunkt angewendeten Talos-Maschinenkonfiguration und nicht aus der Software; prüfen Sie sie auf Ihrem eigenen Cluster."
+  - q: "Erfüllt die Ænix-Plattform die DSGVO?"
+    a: "Die Frage passt nicht auf Infrastruktur. Die DSGVO erfüllt eine Organisation; eine Plattform liefert Maßnahmen. Die Ænix-Plattformen liefern Verschlüsselung, Zugriffskontrolle, Tenant-Trennung, Audit-Logging, Backup und Wiederherstellung sowie vollständige Kontrolle darüber, wo Daten physisch liegen. Rechtsgrundlage, Verzeichnis von Verarbeitungstätigkeiten, Datenschutz-Folgenabschätzungen und Meldungen von Datenschutzverletzungen bleiben bei demjenigen, der über Zwecke und Mittel der Verarbeitung entscheidet."
+  - q: "Beschreiben diese Maßnahmen Cozystack oder die Ænix-Plattformen?"
+    a: "Beides, denn es ist dieselbe Software. Die Ænix Public Cloud Platform, die Private Cloud Platform und die AI Platform sind Distributionen von Cozystack, dem Apache-2.0-lizenzierten CNCF-Projekt, das Ænix initiiert hat und mitpflegt; die Beobachtungen auf dieser Seite stammen von einem Cozystack-v1.6-Referenzcluster. Mehrere Einstellungen — insbesondere der etcd-Verschlüsselungsprovider — stammen aus der zum Installationszeitpunkt angewendeten Talos-Maschinenkonfiguration und nicht aus der Software; prüfen Sie sie auf Ihrem eigenen Cluster."
   - q: "Vermeidet der Eigenbetrieb Probleme mit Drittlandtransfers?"
     a: "Er nimmt die Plattform selbst aus der Kapitel-V-Prüfung: Die Software läuft auf Ihrer Hardware und braucht keinen Anbieterzugriff. Die Frage ist damit nicht geschlossen. Nach Lesart des EDSA ist Fernzugriff aus einem Drittland selbst eine Übermittlung — Support-Engineers, Personal eines Integrators, Administratoren außerhalb der Geschäftszeiten und alles, was Sie zur Beobachtbarkeit anbinden, zählen weiterhin. Ob Ihre eigenen Anwendungen und Integrationen Daten verlagern, ist eine separate Prüfung."
   - q: "Sind personenbezogene Daten standardmäßig ruhend verschlüsselt?"
     a: "Für den Speicher, in dem personenbezogene Daten tatsächlich liegen — die Volumes hinter Datenbanken und virtuellen Maschinen — nein. Volume-Verschlüsselung ist pro StorageClass optional und gehört ins Design, nicht in eine spätere Änderung. Backups sind standardmäßig verschlüsselt. Kubernetes-Secrets sind in etcd verschlüsselt, wenn der API-Server mit --encryption-provider-config läuft; das stammt aus der Talos-Maschinenkonfiguration, und Secrets enthalten Zugangsdaten, nicht die personenbezogenen Daten, die Ihr Verarbeitungsverzeichnis beschreibt."
   - q: "Entsteht durch den Eigenbetrieb ein Auftragsverarbeiter?"
-    a: "Quelloffene Software auf eigener Hardware zu betreiben fügt der Verarbeitung keinen Dritten hinzu: Es gibt keinen Dienst, kein Konto und keine Daten, die Ihre Infrastruktur verlassen — also niemanden, der nach Art. 28 zu bestellen wäre. Ihre eigene Rolle bleibt unverändert: Verantwortlicher für Daten, über deren Zwecke und Mittel Sie entscheiden, Auftragsverarbeiter nur dort, wo Sie für einen anderen Verantwortlichen hosten. Beauftragen Sie Aenix oder einen Integrator mit dem Betrieb, ist das ein Auftragsverarbeitungs- oder Unterauftragsverhältnis und braucht einen Vertrag nach Art. 28."
+    a: "Quelloffene Software auf eigener Hardware zu betreiben fügt der Verarbeitung keinen Dritten hinzu: Es gibt keinen Dienst, kein Konto und keine Daten, die Ihre Infrastruktur verlassen — also niemanden, der nach Art. 28 zu bestellen wäre. Ihre eigene Rolle bleibt unverändert: Verantwortlicher für Daten, über deren Zwecke und Mittel Sie entscheiden, Auftragsverarbeiter nur dort, wo Sie für einen anderen Verantwortlichen hosten. Beauftragen Sie Ænix oder einen Integrator mit dem Betrieb, ist das ein Auftragsverarbeitungs- oder Unterauftragsverhältnis und braucht einen Vertrag nach Art. 28."
   - q: "Wie behandeln wir Löschung, wenn die Daten auch in Backups liegen?"
     a: "Backups existieren gerade dafür, Löschungen rückgängig machen zu können; Löschung daraus ist also kein technischer Schalter. Die gängige Position — von mehreren Aufsichtsbehörden als gangbar beschrieben, ohne EWR-weit abschließend geklärt zu sein — ist dokumentierte Aufbewahrung: festlegen, wie lange Backups leben, die Daten zwischenzeitlich außer Gebrauch setzen, sicherstellen, dass gelöschte Daten innerhalb dieses Fensters ausaltern, und sie bei einer Wiederherstellung nicht selektiv wieder einspielen. Die Plattform erlaubt, die Backup-Aufbewahrung bewusst zu setzen und Backups auf von Ihnen kontrollierten Speicher zu richten; Begründung und Position bleiben Ihre."
 ---
@@ -59,9 +59,9 @@ Das ist eine starke Ausgangslage, und diese Seite geht sie Maßnahme für Maßna
 
 ## Eine Einordnung vorweg
 
-Compliance liegt bei der Organisation, die die Daten hält — warum sie sie hält, auf welcher Rechtsgrundlage, wie lange. Eine Plattform liefert Maßnahmen und macht sie nachweisbar. Die brauchbare Antwort auf „ist diese Plattform DSGVO-konform“ ist das, was unten steht, und kein Ja, das der ersten Nachfrage nicht standhält.
+Compliance liegt bei der Organisation, die die Daten hält — warum sie sie hält, auf welcher Rechtsgrundlage, wie lange. Eine Plattform liefert Maßnahmen und macht sie nachweisbar. Die brauchbare Antwort auf „erfüllt diese Plattform die DSGVO“ ist das, was unten steht, und kein Ja, das der ersten Nachfrage nicht standhält.
 
-**Und eine Anmerkung zur Herkunft.** Die Beobachtungen hier stammen von **Cozystack v1.6**, der quelloffenen, Apache-2.0-lizenzierten, bei der CNCF gehosteten Engine, die Ænix entwickelt und pflegt und von der alle drei Ænix-Plattformen Distributionen sind. Es gibt keinen separaten geschlossenen Build mit abweichendem Verhalten — deshalb übertragen sich die Maßnahmen unmittelbar. Was Ænix um die Engine herum ergänzt — die Talos-Maschinenkonfiguration, die Referenzarchitektur, den Betrieb —, ist der Ort, aus dem mehrere der folgenden Einstellungen tatsächlich stammen; jede davon ist gekennzeichnet.
+**Und eine Anmerkung zur Herkunft.** Die Beobachtungen hier stammen von **Cozystack v1.6**, der quelloffenen, Apache-2.0-lizenzierten, bei der CNCF gehosteten Engine, die Ænix initiiert hat und mitpflegt und auf der alle drei Ænix-Plattformen basieren. Die proprietären Ænix-Module (WHMCS-Integration, Billing- und Portal-Komponenten) laufen darauf und verändern diese Maßnahmen nicht — deshalb übertragen sich die Maßnahmen unmittelbar. Was Ænix um die Engine herum ergänzt — die Talos-Maschinenkonfiguration, die Referenzarchitektur, den Betrieb —, ist der Ort, aus dem mehrere der folgenden Einstellungen tatsächlich stammen; jede davon ist gekennzeichnet.
 
 ---
 
@@ -71,7 +71,7 @@ Die Datenhaltung ist meist die erste Frage und die am leichtesten gut zu beantwo
 
 Die Plattform installiert auf Ihrer eigenen Hardware, in einem Rechenzentrum Ihrer Wahl. Es gibt keine Control Plane in fremder Cloud, keinen Anbieter, der dauerhaften Zugriff braucht, damit die Plattform funktioniert, und keinen Telemetriekanal zu einem Anbieter als Betriebsvoraussetzung. Für Kapitel V — Übermittlungen personenbezogener Daten an Drittländer — entfällt damit das größte Einzelelement der Prüfung.
 
-Geschlossen ist sie damit nicht. Nach Lesart des EDSA ist Fernzugriff aus einem Drittland selbst eine Übermittlung; Support-Engineers, Personal eines Integrators, Administratoren außerhalb der Geschäftszeiten und alles, was Sie zur Beobachtbarkeit anbinden, zählen also weiterhin. Die ausgehenden Pfade, die das Cluster tatsächlich nutzt — Container-Registries, Zertifizierungsstellen, Zeitquellen und Update-Kanäle —, lohnt es sich einmal aufzulisten, denn sie sagen, wohin die Umgebung reicht, auch wenn die personenbezogenen Daten es nicht tun. Wenn Sie in mehreren Jurisdiktionen arbeiten, erlauben Tenants und Knotenplatzierung, die Verarbeitung in einer davon zu halten, statt sie über alle zu verteilen.
+Geschlossen ist sie damit nicht. Nach Lesart des EDSA ist Fernzugriff aus einem Drittland selbst eine Übermittlung; Support-Engineers, Personal eines Integrators, Administratoren außerhalb der Geschäftszeiten und alles, was Sie zur Beobachtbarkeit anbinden, zählen also weiterhin. Die ausgehenden Pfade, die der Cluster tatsächlich nutzt — Container-Registries, Zertifizierungsstellen, Zeitquellen und Update-Kanäle —, lohnt es sich einmal aufzulisten, denn sie sagen, wohin die Umgebung reicht, auch wenn die personenbezogenen Daten es nicht tun. Wenn Sie in mehreren Jurisdiktionen arbeiten, erlauben Tenants und Knotenplatzierung, die Verarbeitung in einer davon zu halten, statt sie über alle zu verteilen.
 
 Die architektonische Fassung dieser Diskussion — kundenkontrollierte Schlüssel, jurisdiktionsgebundene Datenhaltung, Aufsichtszugang — steht unter [Datensouveränität](/de/loesungen/data-sovereignty/).
 
@@ -98,7 +98,7 @@ Für personenbezogene Daten der Identitätsschicht ergänzte v1.6 einen optional
 
 ### Vertraulichkeit und Zugriffskontrolle
 
-Die Authentifizierung lässt sich über OIDC in Keycloak zentralisieren, womit Eintritte, Austritte, Mehrfaktor-Authentifizierung und Passwort-Policy an einer Stelle liegen statt über kubeconfig-Dateien verstreut. Das ist nicht der Default — ein frisches Cluster authentifiziert sich mit einem Cluster-Credential, einem geteilten Konto, ungeeignet für alles, was personenbezogene Daten trägt. Aktivieren Sie OIDC, bevor die Umgebung echte Daten trägt.
+Die Authentifizierung lässt sich über OIDC in Keycloak zentralisieren, womit Eintritte, Austritte, Mehrfaktor-Authentifizierung und Passwort-Policy an einer Stelle liegen statt über kubeconfig-Dateien verstreut. Das ist nicht der Default — ein frischer Cluster authentifiziert sich mit einem Cluster-Credential, einem geteilten Konto, ungeeignet für alles, was personenbezogene Daten trägt. Aktivieren Sie OIDC, bevor die Umgebung echte Daten trägt.
 
 Die Autorisierung ist tenant-begrenzt, und strenger, als Teams erwarten: Ein Tenant-Nutzer kann über die Plattform-API Datenbanken und virtuelle Maschinen anlegen, aber keine rohen Kubernetes-Secrets lesen. Prüfen statt glauben — als Tenant-Nutzer, gegen den Tenant-Namespace:
 
@@ -127,7 +127,7 @@ Art. 32 Abs. 1 lit. c fragt nach der Fähigkeit, den Zugang zu personenbezogenen
 
 ### Regelmäßige Überprüfung der Maßnahmen
 
-Art. 32 Abs. 1 lit. d verlangt ein Verfahren zur Überprüfung und Bewertung der Wirksamkeit. Die [CIS-Benchmark-Seite](/de/compliance/cis-benchmark/) zeigt einen solchen Test gegen ein laufendes Cluster, mit den Fehlschlägen sortiert in echte Abweichungen und Artefakte der Architektur. Nichts hindert Sie daran, ihn nach eigenem Plan auszuführen; das Manifest ist dort veröffentlicht.
+Art. 32 Abs. 1 lit. d verlangt ein Verfahren zur Überprüfung und Bewertung der Wirksamkeit. Die [CIS-Benchmark-Seite](/de/compliance/cis-benchmark/) zeigt einen solchen Test gegen einen laufenden Cluster, mit den Fehlschlägen sortiert in echte Abweichungen und Artefakte der Architektur. Nichts hindert Sie daran, ihn nach eigenem Plan auszuführen; das Manifest ist dort veröffentlicht.
 
 </div>
 </div>

@@ -1,0 +1,22 @@
+{{- /*
+  Social preview image of a page, as a site-relative path. Order:
+  1. images: in front matter (hand-picked or named card from scripts/generate-og-cards.py)
+  2. cover_image: (blog posts)
+  3. a per-page card from scripts/generate-og-cards.py, static/img/og/pages/<key>.jpg,
+     where <key> is the page path with "/" replaced by "--" ("home" for the front page)
+  4. the site-wide card
+*/ -}}
+{{- $img := "img/aenix-social-card.jpg" -}}
+{{- with .Params.images -}}
+  {{- $img = index . 0 -}}
+{{- else -}}
+  {{- with .Params.cover_image -}}
+    {{- $img = . -}}
+  {{- else -}}
+    {{- $key := trim .RelPermalink "/" | replaceRE "/" "--" -}}
+    {{- if eq $key "" }}{{ $key = "home" }}{{ end -}}
+    {{- $card := printf "img/og/pages/%s.jpg" $key -}}
+    {{- if fileExists (printf "static/%s" $card) }}{{ $img = $card }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- return (strings.TrimPrefix "/" $img) -}}

@@ -1,6 +1,6 @@
 ---
-title: "Your download is ready — Platform Engineering Maturity Assessment"
-description: "Download your copy of the Platform Engineering Maturity Assessment from Aenix."
+title: "Download ready: Platform Engineering Maturity"
+description: "Your copy of the Platform Engineering Maturity Assessment (rubric and scoring sheet, PDF) from Ænix is ready."
 robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
@@ -24,4 +24,4 @@ hreflang_de: /de/ressourcen/platform-engineering-maturity-assessment/thank-you/
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0.*
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0 — and co-maintains it with maintainers from other companies.*

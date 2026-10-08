@@ -1,6 +1,6 @@
 ---
-title: "Your download is ready — Sovereign AI Decision Guide"
-description: "Download your copy of the Sovereign AI Decision Guide from Aenix."
+title: "Download ready: Sovereign AI Decision Guide"
+description: "Your copy of the Sovereign AI Architecture Decision Guide (10-page PDF) from Ænix is ready to download."
 robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
@@ -24,4 +24,4 @@ hreflang_de: /de/ressourcen/sovereign-ai-architektur-leitfaden/thank-you/
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0.*
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0 — and co-maintains it with maintainers from other companies.*

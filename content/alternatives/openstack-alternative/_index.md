@@ -1,23 +1,29 @@
 ---
 title: "OpenStack alternative — when operational complexity stops paying"
-description: "OpenStack is mature, broad, and proven at telco / government scale. It also requires significant operational expertise to run well, and finding OpenStack..."
+seo_title: "OpenStack alternative: Kubernetes-native Cozystack"
+primary_keyword: "openstack alternative"
+secondary_keywords:
+  - "openstack alternative for hosting providers"
+  - "replace openstack"
+description: "An OpenStack alternative with a lighter footprint: Cozystack runs VMs and containers on one Kubernetes API with multi-tenancy, under Apache 2.0 as well."
 related_pages:
-  - /alternatives/vmware-alternative
+  - /compare/cozystack-vs-openstack/
+  - /migration/openstack/
   - /products/public-cloud-platform/
-  - /products/cozystack
-  - /services/private-cloud-consulting
+  - /products/cozystack/
+  - /services/private-cloud-consulting/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **An OpenStack alternative is a cloud platform that delivers OpenStack's open-source and multi-tenant guarantees with a lighter operational footprint. Cozystack is a Kubernetes-native, Apache 2.0 alternative for service providers, regulated multi-tenant operators, and modern greenfield deployments that no longer need OpenStack's 50-100+ services or its shrinking engineering talent pool. It runs virtual machines (KubeVirt) and containers on one Kubernetes API, uses Cilium (eBPF) for networking, LINSTOR/DRBD for storage, and a Tenant CRD for multi-tenancy. Aenix, the team behind Cozystack, offers Ænix Platform, a productized commercial offering, plus migration and consulting services for organizations moving from OpenStack to a Kubernetes-native foundation.**
+  **An OpenStack alternative is a cloud platform that delivers OpenStack's open-source and multi-tenant guarantees with a lighter operational footprint. Cozystack is a Kubernetes-native, Apache 2.0 alternative for service providers, regulated multi-tenant operators, and modern greenfield deployments that no longer need OpenStack's 50-100+ services or its shrinking engineering talent pool. It runs virtual machines (KubeVirt) and containers on one Kubernetes API, uses Cilium (eBPF) for networking, LINSTOR/DRBD for storage, and a Tenant CRD for multi-tenancy. Ænix, which created Cozystack and co-maintains it, offers Ænix Public Cloud Platform, commercial support, and migration and consulting services for organizations moving from OpenStack to a Kubernetes-native foundation.**
 quick_facts:
   - label: "What it is"
     value: "A Kubernetes-native, Apache 2.0 platform that replaces OpenStack's multi-component stack with a smaller set of operators while keeping open-source and multi-tenant guarantees."
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Best for"
     value: "Service providers, regulated multi-tenant environments, and modern greenfield projects; not large-telco teams with deep OpenStack expertise."
   - label: "Operational footprint"
@@ -25,7 +31,7 @@ quick_facts:
   - label: "Migration timeline"
     value: "Typically 4-12 months for a mid-size deployment (Keystone to Tenant CRD, Neutron to Cilium, Cinder to LINSTOR (DRBD))."
   - label: "Commercial offering"
-    value: "Ænix Platform tiers: Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise custom."
+    value: "Support tiers for Ænix Public Cloud Platform and self-run Cozystack: Basic $1,250, Standard $3,000, Plus $5,500 per 10 nodes per month (annual), Enterprise custom."
 faq:
   - q: "Is Cozystack a drop-in replacement for OpenStack?"
     a: "No. Cozystack is a Kubernetes-native platform with a different architecture. VM image migration (KVM to KubeVirt) is straightforward, but the tenant model is re-architected from Keystone projects to the Tenant CRD, networking moves from Neutron to Cilium, and storage from Cinder to LINSTOR/DRBD (Ceph often stays). Plan a migration rather than a swap."
@@ -37,8 +43,8 @@ faq:
     a: "A mid-size deployment typically takes 4-12 months. The main work is re-architecting the tenant model from Keystone projects to the Tenant CRD and moving networking from Neutron to Cilium; VM image migration and storage are usually less involved."
   - q: "Both are Apache 2.0, so why migrate at all?"
     a: "License is not the driver. Organizations migrate because OpenStack engineering talent is shrinking while Kubernetes expertise is plentiful, because a 50-100+ service footprint can outweigh the value for a mostly modern workload portfolio, and because a Kubernetes-native foundation runs VMs and containers on one API."
-  - q: "Does Aenix offer commercial support for the migration?"
-    a: "Yes. Aenix is the team behind Cozystack and offers Ænix Platform, a productized commercial offering, alongside private-cloud consulting and migration services. Ænix Platform tiers start at Basic $1,250/mo for 10 nodes, with Standard, Plus, and Enterprise options."
+  - q: "Does Ænix offer commercial support for the migration?"
+    a: "Yes. Ænix created Cozystack and offers Ænix Public Cloud Platform alongside private-cloud consulting and migration services; migration work is quoted after scoping. Support tiers start at Basic $1,250 per 10 nodes per month, with Standard, Plus and Enterprise options."
 hreflang_de: /de/alternativen/openstack-alternative/
 ---
 
@@ -49,8 +55,8 @@ Cozystack is the open-source alternative for organizations that want OpenStack's
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — hosting providers and regional clouds modernizing from OpenStack, and large operators consolidating OpenStack onto a multi-region control plane.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
-  <a class="cta-secondary" href="/blog/2026/05/openstack-vs-cozystack-modernization/">OpenStack → Cozystack guide →</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture call</a>
+  <a class="cta-secondary" href="/compare/cozystack-vs-openstack/">Cozystack vs OpenStack →</a>
 </div>
 
 ---
@@ -58,7 +64,7 @@ Cozystack is the open-source alternative for organizations that want OpenStack's
 ## When OpenStack stops being the right answer
 
 - **Engineer hiring is hard** — OpenStack operators are specialists and scarce on the market; Kubernetes expertise is plentiful.
-- **Operational footprint exceeds value** — you're running 30+ OpenStack components when 5-10 Kubernetes operators would do.
+- **Operational footprint exceeds value** — you're running 30+ OpenStack components when 5-15 Kubernetes operators would do.
 - **Workload portfolio is mostly modern** — most workloads are Kubernetes-friendly; legacy VMs are minority.
 - **You're maintaining your own forks / patches** — vendor-distro version is too far behind upstream.
 - **Greenfield project** — new deployment doesn't need OpenStack's specific telco-scale features.
@@ -117,14 +123,16 @@ Typical migration: 4-12 months for mid-size deployment.
   <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
-- **[OpenStack vs Cozystack guide](/blog/2026/05/openstack-vs-cozystack-modernization/)**
+- **[Cozystack vs OpenStack — head to head](/compare/cozystack-vs-openstack/)**
+- **[OpenStack migration hub](/migration/openstack/)**
+- **[OpenStack vs Cozystack guide (blog)](/blog/2026/05/openstack-vs-cozystack-modernization/)**
 - **[VMware alternative](/alternatives/vmware-alternative/)**
 - **[Cozystack](/products/cozystack/)**
 - **[Private cloud consulting](/services/private-cloud-consulting/)**
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix created Cozystack (CNCF Sandbox project) and co-maintains it with maintainers from other companies. On top of it we offer Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!-- SEO: title "OpenStack Alternative — When Operational Complexity Stops Paying | Ænix"
 -->

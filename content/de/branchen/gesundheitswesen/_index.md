@@ -1,6 +1,7 @@
 ---
-title: "Souveräne Cloud Gesundheitswesen — Datenresidenz & NIS2"
-description: "Souveräne Cloud fürs Gesundheitswesen: NIS2-fähig, DSGVO-Datenresidenz, BYOK-Verschlüsselung und souveräne KI auf Patientendaten in der EU und DACH."
+title: "Souveräne Cloud fürs Gesundheitswesen — Datenresidenz & NIS2"
+seo_title: "Souveräne Cloud Gesundheitswesen: Datenresidenz und NIS2"
+description: "Souveräne Cloud fürs Gesundheitswesen: ausgelegt auf NIS2, DSGVO-Datenresidenz für Gesundheitsdaten, optionale Verschlüsselung und souveräne KI in der EU."
 date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "industry-landing"
@@ -25,61 +26,61 @@ service:
   areaServed: ["EU", "DACH"]
   audience: "Healthcare"
 direct_answer: |
-  **Eine souveräne Cloud fürs Gesundheitswesen ist eine Cloud-Plattform, auf der Patientendaten physisch innerhalb einer definierten Rechtsordnung verbleiben, die Verschlüsselungsschlüssel beim Leistungserbringer liegen (BYOK) und der Software-Stack auditierbare Open Source statt ein undurchsichtiger Hyperscaler-Dienst ist. Das ist entscheidend, weil Gesundheitsdaten nach DSGVO Artikel 9 zu den besonderen Kategorien personenbezogener Daten zählen und Krankenhäuser, Kliniken und Krankenversicherer als wesentliche Einrichtungen unter NIS2 fallen. Aenix baut diese Plattformen auf Cozystack (ein CNCF-Projekt, Apache 2.0) auf eigener Hardware des Leistungserbringers, sodass Datenresidenz, Schlüsselhoheit und Audit-Trails strukturell verankert statt bloße vertragliche Zusagen sind. Sie eignet sich für Klinikverbünde, Krankenversicherer, Diagnostiklabore und Medizin-KI-Teams in der EU und DACH.**
+  **Eine souveräne Cloud fürs Gesundheitswesen ist eine Cloud-Plattform, auf der Patientendaten physisch innerhalb eines festgelegten Rechtsraums bleiben, auf Hardware laufen, die die Gesundheitseinrichtung besitzt oder direkt anmietet, und deren Betriebs-Stack auditierbare Open Source ist statt eines undurchsichtigen Hyperscaler-Dienstes. Das ist wichtig, weil Gesundheitsdaten nach DSGVO Artikel 9 zu den besonderen Kategorien personenbezogener Daten gehören und Gesundheitsdienstleister nach NIS2 (Anhang I) ein Sektor wesentlicher Einrichtungen sind. Ænix baut diese Plattformen auf Cozystack (CNCF-Sandbox-Projekt, Apache 2.0) auf der eigenen Hardware des Betreibers, sodass Datenresidenz und Audit-Trails Eigenschaften der Architektur sind und keine vertraglichen Zusagen. Sie eignet sich für Klinikverbünde, Krankenversicherer, Diagnostiklabore und Teams für medizinische KI in der EU und im DACH-Raum.**
 quick_facts:
   - label: "Was es ist"
-    value: "Eine Gesundheits-Cloud, in der Patientendaten, Verschlüsselungsschlüssel und Audit-Trails unter der Kontrolle und Rechtsordnung des Leistungserbringers bleiben."
-  - label: "NIS2-Geltungsbereich"
-    value: "Der Gesundheitssektor ist als wesentliche Einrichtung in NIS2 (Richtlinie (EU) 2022/2555, Anhang I) gelistet."
+    value: "Eine Gesundheits-Cloud, in der Patientendaten und Audit-Trails unter der eigenen Kontrolle und im Rechtsraum der Einrichtung bleiben."
+  - label: "NIS2-Anwendungsbereich"
+    value: "Gesundheitsdienstleister sind in NIS2 (Richtlinie (EU) 2022/2555, Anhang I) als Sektor wesentlicher Einrichtungen aufgeführt."
   - label: "Datenklassifizierung"
-    value: "Gesundheitsdaten sind besondere Kategorien personenbezogener Daten nach DSGVO Artikel 9 — die Verarbeitung erfordert eine spezifische Rechtsgrundlage und verschärfte Schutzmaßnahmen."
+    value: "Gesundheitsdaten sind besondere Kategorien personenbezogener Daten nach DSGVO Artikel 9 — ihre Verarbeitung erfordert eine spezifische Rechtsgrundlage und erhöhte Schutzmaßnahmen."
   - label: "Datenresidenz"
-    value: "Workloads an benannte EU-/DACH-Regionen auf eigener oder vertraglich gebundener Hardware gebunden; keine standardmäßige grenzüberschreitende Replikation."
-  - label: "Verschlüsselung / Schlüsselhoheit"
-    value: "Verschlüsselung im Ruhezustand und bei der Übertragung mit kundeneigenen Schlüsseln (BYOK); der Betreiber hat keinen stehenden Zugriff auf Klartext-Patientendaten."
-  - label: "Plattform-Lizenz"
-    value: "Cozystack ist Open Source unter Apache 2.0 — keine Lizenzierung pro CPU, vollständige Auditierbarkeit der Control Plane."
-  - label: "Projekt-Zeitrahmen"
-    value: "Platform Readiness Assessment in 14-28 Tagen; vollständige Migration des Bestands typischerweise 9-18 Monate."
-quick_facts_source: "[NIS2-Richtlinie (EU) 2022/2555, EUR-Lex](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), [ENISA](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new)"
+    value: "Workloads sind an benannte EU- bzw. DACH-Regionen auf eigener oder direkt angemieteter Hardware gebunden; keine standardmäßige grenzüberschreitende Replikation."
+  - label: "Verschlüsselung / Schlüsselverwaltung"
+    value: "Volume-Verschlüsselung (LUKS auf LINSTOR) lässt sich pro Storage Class optional aktivieren; das Schlüsselmanagement legen wir beim Aufbau gemeinsam mit Ihnen fest."
+  - label: "Cozystack-Lizenz"
+    value: "Cozystack ist Open Source unter Apache 2.0 — keine Lizenzkosten pro CPU, vollständige Auditierbarkeit der Control Plane."
+  - label: "Projektablauf"
+    value: "Platform Readiness Assessment zum Festpreis (14 oder 28 Tage), danach 3–12 Monate Aufbau je nach Umfang."
+quick_facts_source: "[NIS2-Richtlinie (EU) 2022/2555, EUR-Lex](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), [ENISA](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive)"
 faq:
   - q: "Was ist eine souveräne Cloud fürs Gesundheitswesen?"
-    a: "Es ist eine Cloud-Plattform, auf der Patienten- und klinische Daten physisch innerhalb einer definierten Rechtsordnung verbleiben, die Verschlüsselungsschlüssel bei der Gesundheitseinrichtung liegen und der Software-Stack auditierbare Open Source ist. Sie gibt Krankenhäusern, Versicherern und Laboren nachweisbare Kontrolle über Gesundheitsdaten statt vertraglicher Zusicherungen eines Hyperscalers."
-  - q: "Fallen Gesundheitseinrichtungen unter NIS2?"
-    a: "Ja. NIS2 (Richtlinie (EU) 2022/2555) führt den Gesundheitssektor — einschließlich Krankenhäusern sowie bestimmten Medizinprodukt- und Pharmaakteuren — in Anhang I unter den wesentlichen Einrichtungen. Betroffene Organisationen tragen verbindliche Pflichten zum Risikomanagement und zur Meldung von Vorfällen, mit Verantwortlichkeit auf Leitungsebene."
-  - q: "Wie geht eine souveräne Cloud mit DSGVO-Gesundheitsdaten der Sonderkategorie um?"
-    a: "Gesundheitsdaten sind besondere Kategorien nach DSGVO Artikel 9 und benötigen daher eine spezifische Rechtsgrundlage und stärkere Schutzmaßnahmen. Eine souveräne Plattform bindet die Speicherung an eine benannte EU-Region, verschlüsselt Daten mit kundeneigenen Schlüsseln und erzeugt Audit-Logs im Besitz des Leistungserbringers — Residenz und Zugriffskontrollen sind so gegenüber einer Aufsichts- oder Datenschutzbehörde nachweisbar."
-  - q: "Können wir Medizin-KI auf Patientendaten betreiben, ohne sie an einen Hyperscaler zu senden?"
-    a: "Ja. Die AI Platform führt GPU-Inferenz und -Training innerhalb desselben souveränen Perimeters wie die Daten aus, sodass Bildgebungsmodelle, klinisches NLP und Entscheidungsunterstützung Patientendaten verarbeiten, ohne dass diese die Rechtsordnung oder Kontrolle des Leistungserbringers verlassen."
+    a: "Eine Cloud-Plattform, auf der Patienten- und klinische Daten physisch innerhalb eines festgelegten Rechtsraums bleiben, die Infrastruktur der Gesundheitseinrichtung gehört oder direkt von ihr angemietet ist und der Software-Stack auditierbare Open Source ist. Krankenhäuser, Kliniken und Labore erhalten so nachweisbare Kontrolle über Gesundheitsdaten statt vertraglicher Zusicherungen eines Hyperscalers."
+  - q: "Fallen Gesundheitsdienstleister unter NIS2?"
+    a: "Ja. NIS2 (Richtlinie (EU) 2022/2555) führt den Gesundheitssektor — darunter Krankenhäuser sowie bestimmte Akteure aus Medizinprodukten und Pharma — in Anhang I unter den Sektoren wesentlicher Einrichtungen. Betroffene Organisationen unterliegen verbindlichen Pflichten zu Risikomanagement und Meldung von Sicherheitsvorfällen, mit Verantwortung auf Leitungsebene."
+  - q: "Wie geht eine souveräne Cloud mit Gesundheitsdaten der besonderen Kategorien nach DSGVO um?"
+    a: "Gesundheitsdaten sind besondere Kategorien personenbezogener Daten nach DSGVO Artikel 9 und brauchen daher eine spezifische Rechtsgrundlage und stärkere Schutzmaßnahmen. Eine souveräne Plattform bindet die Speicherung an eine benannte EU-Region, kann Volumes verschlüsseln (pro Storage Class optional aktivierbar) und erzeugt Audit-Logs, die die Einrichtung in ihren eigenen Speicher ausleiten kann. Residenz und Zugriffskontrollen lassen sich so gegenüber einer Aufsichts- oder Datenschutzbehörde belegen."
+  - q: "Können wir medizinische KI auf Patientendaten betreiben, ohne sie an einen Hyperscaler zu senden?"
+    a: "Ja. Die AI Platform führt GPU-Inferenz und -Training innerhalb desselben souveränen Perimeters aus, in dem die Daten liegen. Bildgebungsmodelle, klinisches NLP und Entscheidungsunterstützung verarbeiten Patientendaten so, ohne dass diese den Rechtsraum oder die Kontrolle der Einrichtung verlassen."
   - q: "Nennen Sie Referenzkunden aus dem Gesundheitswesen?"
-    a: "Namentliche Gesundheitsreferenzen sind noch nicht öffentlich — Gesundheitsprojekte sind durch NDA geschützt. Wir teilen eine anonymisierte souveräne Public-Cloud-Fallstudie als architektonisches Nachweismuster; Gesundheits-Logos werden ergänzt, sobald die Freigaben vorliegen."
-  - q: "Wie läuft ein Projekt ab und wie lange dauert es?"
-    a: "Der Einstieg ist ein Platform Readiness Assessment zu Souveränität, NIS2-Lage, Kosten und Platform Engineering, geliefert in 14-28 Tagen. Es erzeugt einen schriftlichen Bericht und eine Umsetzungs-Roadmap für Phase 2. Die vollständige Migration des Bestands dauert je nach Umfang typischerweise 9-18 Monate."
+    a: "Nein. Wir veröffentlichen keine Namen von Kunden aus dem Gesundheitswesen. Als architektonisches Nachweismuster teilen wir eine anonymisierte Fallstudie zu einer souveränen Public Cloud; Referenzen besprechen wir im Erstgespräch, soweit Kunden es erlauben."
+  - q: "Wie läuft ein Projekt ab, und wie lange dauert es?"
+    a: "Der Einstieg ist ein Platform Readiness Assessment zum Festpreis zu Souveränität, NIS2-Status, Kosten und Platform Engineering, geliefert in 14 oder 28 Tagen. Es liefert einen schriftlichen Bericht und eine Roadmap für die Umsetzung in Phase 2. Der Aufbau dauert danach typischerweise 3–12 Monate je nach Umfang."
 ---
 
 <!-- BLOCK 1: HERO -->
 
-# Souveräne Cloud fürs Gesundheitswesen
+**Krankenhäuser, Diagnostiklabore, Krankenversicherer und Teams für medizinische KI verarbeiten die sensibelsten personenbezogenen Daten der Wirtschaft unter den DSGVO-Pflichten für besondere Datenkategorien — und Gesundheitsdienstleister tragen zusätzlich die NIS2-Pflichten wesentlicher Einrichtungen. Die architektonische Antwort ist nicht „ein Gesundheits-SaaS in einer fremden Cloud“ — sondern eine souveräne Plattform, in der Datenresidenz und Audit-Trails Eigenschaften der Architektur sind. Ænix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/), auf der eigenen Hardware der Einrichtung.**
 
-**Krankenhäuser, Krankenversicherer, Diagnostiklabore und Medizin-KI-Teams verarbeiten die sensibelsten personenbezogenen Daten der Wirtschaft unter zwei harten Vorgaben: den DSGVO-Pflichten für besondere Datenkategorien und den NIS2-Pflichten für wesentliche Einrichtungen. Die architektonische Antwort ist nicht „ein Gesundheits-SaaS in fremder Cloud“ — sondern eine souveräne Plattform, in der Datenresidenz, Schlüsselhoheit und Audit-Trails strukturell verankert sind. Ænix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/) und lässt produktive Gesundheits-Workloads auf eigener Hardware des Leistungserbringers laufen.**
+Die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert ([Zertifikat](/de/compliance/iso-27001/)). Sicherheitsverantwortliche beginnen am besten mit dem [Leitfaden für CISOs](/de/fuer/ciso/).
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für das regulierte Cloud-Fundament; **[AI Platform](/de/produkte/ai-platform/)** für medizinische Bildgebung, klinisches NLP und Entscheidungsunterstützung auf Patientendaten. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
+> **Passende Plattformen:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Grundlage; **[AI Platform](/de/produkte/ai-platform/)** für KI in der medizinischen Bildgebung, klinisches NLP und Entscheidungsunterstützung auf Patientendaten. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Buchen Sie ein 30-minütiges Erstgespräch</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränität →</a>
 </div>
 
 ---
 
-## Womit Gesundheitsteams zu uns kommen
+## Weshalb Gesundheitsteams zu uns kommen
 
-Die vier häufigsten Einstiegspunkte:
+Die vier häufigsten Einstiege:
 
-- **Datensouveränität im Gesundheitswesen** — Patientenakten, Bildarchive und genomische Daten, die mit Schlüsseln des Leistungserbringers in der Rechtsordnung verbleiben müssen. Siehe **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
-- **NIS2-Bereitschaft für den Gesundheitssektor** — Risikomanagement für wesentliche Einrichtungen, Meldung von Vorfällen und Lieferketten-Kontrollen. Siehe **[NIS2-Compliance](/de/loesungen/nis2-compliance/)**.
-- **Souveräne KI auf klinischen Daten** — Bildgebungsmodelle, klinisches NLP und Entscheidungsunterstützung, die keine Patientendaten an einen Hyperscaler senden dürfen. Siehe **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
-- **Abgleich mit regulierter öffentlicher Infrastruktur** — gemeinsame Muster mit öffentlichen Gesundheitsträgern und dem breiteren öffentlichen Sektor. Siehe **[Öffentlicher Sektor](/de/branchen/oeffentlicher-sektor/)**.
+- **Datensouveränität im Gesundheitswesen** — Patientenakten, Bildarchive und genomische Daten, die im Rechtsraum bleiben müssen. Siehe **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
+- **NIS2-Bereitschaft für den Gesundheitssektor** — Risikomanagement wesentlicher Einrichtungen, Meldung von Sicherheitsvorfällen und Kontrollen in der Lieferkette. Siehe **[NIS2-Compliance](/de/loesungen/nis2-compliance/)**.
+- **Souveräne KI auf klinischen Daten** — Bildgebungsmodelle, klinisches NLP und Entscheidungsunterstützung, die keine Patientendaten an einen Hyperscaler senden dürfen. Siehe **[Souveräne KI](/de/loesungen/sovereign-ai/)**.
+- **Abstimmung mit öffentlicher und regulierter Infrastruktur** — gemeinsame Muster mit öffentlichen Gesundheitsträgern und dem übrigen öffentlichen Sektor. Siehe **[Öffentlicher Sektor](/de/branchen/oeffentlicher-sektor/)**.
 
 Die meisten Projekte verbinden zwei oder mehr dieser Auslöser.
 
@@ -87,41 +88,50 @@ Die meisten Projekte verbinden zwei oder mehr dieser Auslöser.
 
 ## Warum das Gesundheitswesen eine souveräne Architektur braucht, kein Compliance-Häkchen
 
-Gesundheitsdaten sind die reibungsintensivste Datenklasse im europäischen Recht, und zwei Regelwerke treffen hier aufeinander.
+Gesundheitsdaten sind die am stärksten regulierte Datenklasse im europäischen Recht, und zwei Regelwerke treffen hier aufeinander.
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>Patientendaten</b><div class="diagram__chips"><span>DSGVO Artikel 9 Sonderkategorie</span><span>Patientenakten, Bildarchive, genomische Daten</span></div></div>
+<div class="diagram__node"><b>Patientendaten</b><div class="diagram__chips"><span>Besondere Kategorie nach DSGVO Artikel 9</span><span>Akten, Bildgebung, genomische Daten</span></div></div>
 <div class="diagram__conn">gebunden an</div>
-<div class="diagram__node diagram__node--brand"><b>Souveräne Plattform auf Cozystack</b><div class="diagram__chips"><span>Benannte EU-/DACH-Regionen</span><span>Eigene Hardware des Leistungserbringers</span><span>Kundeneigene Schlüssel (BYOK)</span><span>Apache 2.0</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Souveräne Plattform auf Cozystack</b><div class="diagram__chips"><span>Benannte EU-/DACH-Regionen</span><span>Eigene Hardware der Einrichtung</span><span>Optionale Volume-Verschlüsselung</span><span>Apache 2.0</span></div></div>
 <div class="diagram__conn">erzeugt</div>
-<div class="diagram__node"><b>Audit-Trails im Besitz des Leistungserbringers</b><div class="diagram__chips"><span>Nachweisbar gegenüber Aufsichtsbehörden</span><span>NIS2-Nachweis für wesentliche Einrichtungen</span></div></div>
+<div class="diagram__node"><b>Audit-Trails im Besitz der Einrichtung</b><div class="diagram__chips"><span>Gegenüber der Aufsicht belegbar</span><span>NIS2-Nachweise für wesentliche Einrichtungen</span></div></div>
 </div>
 </div>
 
-**DSGVO-Daten der Sonderkategorie.** Nach [Artikel 9 der DSGVO](https://eur-lex.europa.eu/eli/reg/2016/679/oj) sind Gesundheitsdaten besondere Kategorien personenbezogener Daten. Die Verarbeitung ist untersagt, sofern keine spezifische Bedingung greift, und selbst dann müssen Leistungserbringer verschärfte technische und organisatorische Schutzmaßnahmen nachweisen — Verschlüsselung, Zugriffskontrolle und dokumentierte Residenz. Ein generischer Hyperscaler-Vertrag behauptet diese Kontrollen; eine souveräne Plattform lässt Sie sie beweisen, weil die Schlüssel und Audit-Logs nie Ihre Hoheit verlassen.
+**Daten besonderer Kategorien nach DSGVO.** Nach [Artikel 9 DSGVO](https://eur-lex.europa.eu/eli/reg/2016/679/oj) sind Gesundheitsdaten besondere Kategorien personenbezogener Daten. Ihre Verarbeitung ist untersagt, sofern nicht eine bestimmte Ausnahme greift, und selbst dann müssen Einrichtungen erhöhte technische und organisatorische Schutzmaßnahmen nachweisen — Verschlüsselung, Zugriffskontrolle und dokumentierte Residenz. Ein gewöhnlicher Hyperscaler-Vertrag behauptet diese Kontrollen; eine souveräne Plattform lässt Sie sie belegen, weil Infrastruktur und Audit-Logs in Ihrer Obhut bleiben.
 
-**NIS2-Pflichten für wesentliche Einrichtungen.** Der Gesundheitssektor ist eine wesentliche Einrichtung nach [NIS2 (Richtlinie (EU) 2022/2555)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), Anhang I. Betroffene Krankenhäuser und Gesundheitsorganisationen tragen verbindliche Pflichten zu Risikomanagement, Lieferkettensicherheit und Vorfallmeldung, mit Verantwortlichkeit auf Leitungsebene. [ENISA](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new) liefert die Referenzleitlinien, auf denen die nationalen Behörden aufbauen. Eine Plattform, deren Control Plane auditierbare Open Source ist, verkürzt den Weg von „wir arbeiten sicher“ zu „hier ist der Nachweis“.
+**NIS2-Pflichten wesentlicher Einrichtungen.** Der Gesundheitssektor ist nach [NIS2 (Richtlinie (EU) 2022/2555)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), Anhang I, ein Sektor wesentlicher Einrichtungen. Betroffene Krankenhäuser und Gesundheitsorganisationen tragen verbindliche Pflichten zu Risikomanagement, Lieferkettensicherheit und Meldung von Sicherheitsvorfällen, mit Verantwortung auf Leitungsebene. Die [ENISA](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive) stellt die Referenzleitlinien bereit, auf denen die nationalen Behörden aufbauen. Eine Plattform, deren Control Plane auditierbare Open Source ist, verkürzt den Weg von „wir arbeiten sicher“ zu „hier ist der Nachweis“.
 
-**Datenresidenz und Schlüsselhoheit.** Auf einer souveränen Plattform sind Workloads an benannte EU- oder DACH-Regionen auf Hardware gebunden, die der Leistungserbringer besitzt oder direkt vertraglich bindet — es gibt keine standardmäßige grenzüberschreitende Replikation zu einem US-eigenen Mutterkonzern. Die Verschlüsselung nutzt kundeneigene Schlüssel (BYOK), sodass der Betreiber keinen stehenden Zugang zu Klartext-Patientendaten hat.
+**Datenresidenz und Schlüsselverwaltung.** Auf einer souveränen Plattform sind Workloads an benannte EU- oder DACH-Regionen auf Hardware gebunden, die die Einrichtung besitzt oder direkt anmietet — es gibt keine standardmäßige grenzüberschreitende Replikation zu einer Muttergesellschaft in US-Besitz. Volume-Verschlüsselung (LUKS auf LINSTOR) lässt sich pro Storage Class optional aktivieren; das Schlüsselmanagement legen wir beim Aufbau gemeinsam mit Ihnen fest — was standardmäßig enthalten ist und was nicht, zeigen die [DSGVO-Nachweise](/de/compliance/dsgvo/).
 
-**Souveräne KI auf Patientendaten.** Medizinische KI ist der Punkt, an dem Souveränität und Ökonomie kollidieren: Bildgebungs- und klinische Sprachmodelle wollen GPUs, doch die Daten dürfen den Perimeter nicht verlassen. GPU-Inferenz und -Training auf derselben Plattform wie die Daten auszuführen — statt Akten an eine externe KI-API zu schicken — hält Sonderkategorie-Daten in der Rechtsordnung und liefert dennoch moderne Modellleistung.
+**Souveräne KI auf Patientendaten.** Bei medizinischer KI prallen Souveränität und Wirtschaftlichkeit aufeinander: Bildgebungs- und klinische Sprachmodelle brauchen GPUs, aber die Daten dürfen den Perimeter nicht verlassen. Wer GPU-Inferenz und -Training auf derselben Plattform wie die Daten betreibt — statt Akten an eine externe KI-API zu schicken —, hält Daten besonderer Kategorien im Rechtsraum und erreicht trotzdem die Leistung moderner Modelle.
+
+### Was das für die Systeme bedeutet, die Sie tatsächlich betreiben
+
+Gesundheits-IT ist keine beliebige Infrastruktur, und die Plattform muss den Bestand dort abholen, wo er steht.
+
+- **PACS und Bildarchiv.** Ein PACS ist ein Speicherproblem im klinischen Gewand: große unveränderliche Objekte, eine lange gesetzliche Aufbewahrungsfrist, Latenzen, die Radiologen bemerken, und eine DICOM-Schnittstelle, die alles spricht. Cozystack stellt dafür S3-kompatiblen Object Storage für die Archivebene und LINSTOR/DRBD-Block-Storage für die Online-Ebene bereit, beide im selben Cluster und innerhalb derselben Verschlüsselungsgrenze wie der übrige Bestand — die Bildgebung wird so kein separates Silo mit eigenem Backup-Konzept. Die Aufbewahrung wird pro Bucket festgelegt; der Object Storage wird nicht mit einem Public-Cloud-Mandanten geteilt, den Sie nicht benennen können.
+- **Der DICOM- und HL7/FHIR-Pfad.** Modalitäten-Gateways, DICOM-Router, Integrationsengines und FHIR-Server sind meist langlebige, zustandsbehaftete Dienste, oft vom Hersteller als Appliance oder VM-Image geliefert, mit einer Support-Matrix, die ein bestimmtes Betriebssystem nennt. Sie laufen als KubeVirt-VMs auf derselben Plattform wie die containerisierten Dienste, im selben Netz, mit derselben Backup-Klasse — ohne einen zweiten Virtualisierungs-Stack, der neben Kubernetes lizenziert und betrieben werden muss.
+- **Herstellergebundene klinische Anwendungen.** Jedes Krankenhaus hat eine Handvoll Anwendungen, die der Hersteller nur auf einem bestimmten Betriebssystem und einer bestimmten Hypervisor-Generation unterstützt. Genau diese Workloads blockieren eine reine Container-Plattform. Sie bleiben dauerhaft VMs und sind nicht länger der Grund, warum eine Modernisierung stockt.
+- **Bildgebungs-KI direkt neben den Bilddaten.** Weil die Inferenz als Tenant-Workload im selben Cluster wie das Archiv läuft, liest ein Segmentierungs- oder Triage-Modell aus dem lokalen Object Storage statt aus einer anderswo hin verschickten Kopie — die GPU steht innerhalb des Perimeters, den die DSFA bereits abdeckt.
 
 ---
 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wie Ænix mit Gesundheitsorganisationen arbeitet
+## Wie Ænix mit Einrichtungen im Gesundheitswesen arbeitet
 
-Das Standardprojekt läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit für den Gesundheitskontext gewichteten Arbeitssträngen:
+Das Standardprojekt läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**, mit Arbeitspaketen, die auf das Gesundheitswesen zugeschnitten sind:
 
-- **Souveränität + NIS2** — Kartierung der Datenresidenz, DSGVO-Artikel-9-Schutzmaßnahmen, Verschlüsselungs- und Schlüsselhoheit-Lage, Bereitschaft zur Vorfallmeldung, Prüfung der Lieferkettensicherheit.
-- **Platform Engineering** — ein mandantenfähiges, Kubernetes-natives Fundament mit Isolation zwischen klinischen, administrativen und Forschungs-Workloads sowie Golden Paths für interne Teams.
-- **KI-Infrastruktur** (sofern zutreffend) — souveräne GPU-Architektur für Bildgebung, klinisches NLP und Entscheidungsunterstützung, die Patientendaten im Perimeter verarbeiten muss.
-- **Kosten** — ein ehrliches TCO-Modell und Repatriation-Kandidaten für dauerhafte Workloads, bei denen sich die Public-Cloud-Ökonomie nicht mehr rechnet.
+- **Arbeitspaket Souveränität und NIS2** — Erfassung der Datenresidenz, Schutzmaßnahmen nach DSGVO Artikel 9, Status von Verschlüsselung und Schlüsselverwaltung, Bereitschaft zur Meldung von Sicherheitsvorfällen, Prüfung der Lieferkettensicherheit.
+- **Arbeitspaket Platform Engineering** — ein mandantenfähiges, Kubernetes-natives Fundament mit Isolation zwischen klinischen, administrativen und Forschungs-Workloads sowie Golden Paths für interne Entwicklungsteams.
+- **Arbeitspaket KI-Infrastruktur** (wo relevant) — souveräne GPU-Architektur für Bildgebung, klinisches NLP und Modelle zur Entscheidungsunterstützung, die Patientendaten innerhalb des Perimeters verarbeiten müssen.
+- **Arbeitspaket Kosten** — ein ehrliches TCO-Modell und Kandidaten für die Rückverlagerung dauerhaft laufender Workloads, bei denen sich die Public Cloud wirtschaftlich nicht mehr rechnet.
 
-Ergebnis ist ein schriftlicher Bericht, ausgerichtet auf den Dialog mit Aufsichtsbehörden, sowie eine Umsetzungs-Roadmap für Phase 2.
+Ergebnis ist ein schriftlicher Bericht, ausgerichtet auf den Dialog mit der Aufsicht, sowie eine Roadmap für die Umsetzung in Phase 2.
 
 </div>
 </div>
@@ -130,10 +140,12 @@ Ergebnis ist ein schriftlicher Bericht, ausgerichtet auf den Dialog mit Aufsicht
 
 ## Nachweismuster
 
-Wir veröffentlichen keine namentlichen Gesundheitskunden — Gesundheitsprojekte sind bis zur Freigabe durch NDA geschützt. Als architektonisches Nachweismuster siehe unsere anonymisierte **[souveräne Public-Cloud-Fallstudie](/de/case-studies/sovereign-public-cloud/)**: eine mandantenfähige Plattform, die regulierte Workloads mit vollständiger Datenresidenz und Schlüsseln im Besitz des Leistungserbringers betreibt — dasselbe strukturelle Muster, das ein Klinikverbund oder Krankenversicherer einsetzen würde.
+Wir veröffentlichen keine Namen von Kunden aus dem Gesundheitswesen. Als architektonisches Nachweismuster dient unsere anonymisierte **[Fallstudie zur souveränen Public Cloud](/de/case-studies/sovereign-public-cloud/)**: eine mandantenfähige Plattform über drei Rechenzentren mit vollständiger Datenresidenz — dasselbe strukturelle Muster, das ein Klinikverbund einsetzen würde. [Alle Fallstudien →](/de/case-studies/)
 
-{{< clients >}}
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+</div>
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert Cozystack als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI, kombinierbar statt einander ausschließend.*
+*Ænix hat [Cozystack](https://cozystack.io) initiiert — ein CNCF-Sandbox-Projekt (Antrag auf Incubation in der Due-Diligence-Prüfung) unter Apache 2.0 — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen auf einer Engine an — Public Cloud, Private Cloud und AI —, die sich kombinieren lassen, statt einander auszuschließen.*

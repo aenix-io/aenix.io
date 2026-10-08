@@ -1,6 +1,6 @@
 ---
-title: "Your download is ready — NIS2 Compliance Readiness Checklist"
-description: "Download your copy of the NIS2 Compliance Readiness Checklist from Aenix."
+title: "Download ready: NIS2 Compliance Checklist"
+description: "Your copy of the NIS2 Compliance Cloud Architecture Checklist (35-point PDF) from Ænix is ready to download."
 robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
@@ -8,7 +8,7 @@ hide_closing_cta: true
 hreflang_de: /de/ressourcen/nis2-compliance-checkliste/thank-you/
 ---
 
-**Thank you — your download is ready.** The NIS2 Compliance Readiness Checklist is below. We've also sent a copy to the email you provided.
+**Thank you — your download is ready.** The NIS2 Compliance Cloud Architecture Checklist is below. We've also sent a copy to the email you provided.
 
 <div class="cta-row">
   <a class="cta-primary" href="/downloads/aenix-nis2-compliance-checklist.pdf" download>Download PDF ↓</a>
@@ -24,4 +24,4 @@ hreflang_de: /de/ressourcen/nis2-compliance-checkliste/thank-you/
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0.*
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0 — and co-maintains it with maintainers from other companies.*

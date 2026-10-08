@@ -1,12 +1,13 @@
 ---
-title: "Platformize it! Part 2: Extending Kubernetes and the API Aggregation Layer"
-description: "In our previous article, we showed you how to build a platform that deploys multiple managed applications through a unified API and UI…"
+title: "Platformize It! Part 2: Extending Kubernetes and the API Aggregation Layer"
+seo_title: "Platformize It, part 2: the API Aggregation Layer"
+description: "Part 2 of Platformize It: how to extend Kubernetes with the API Aggregation Layer to serve managed applications through one API and UI."
 date: "2026-02-26"
 author: "Andrei Kvapil"
 type: "tutorial"
 topics: ["DevOps", "Kubernetes", "Open Source", "Platform Engineering", "Cloud"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*0JxiacW57UaxFSuyG2avlw.png"
+cover_image: "/img/blog/medium/platformize-it-part-2-extending-kubernetes-and-the-api-aggregation-layer/cover.jpg"
 source_url: "https://medium.com/p/1b49265edc7f"
 external_only: True
 ---

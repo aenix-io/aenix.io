@@ -1,13 +1,13 @@
 ---
 title: "One portal over OpenNebula, VMware and Kubernetes"
-description: "A financial group in Asia put a single self-service portal over OpenNebula, VMware and Kubernetes-as-a-Service — four months to production, support load cut by automation."
+description: "A financial group in Asia put one self-service portal over OpenNebula, VMware and Kubernetes-as-a-Service: four months to production, tickets became automation."
 hero_subtitle: "One catalogue over three infrastructures, four months to production"
 date: 2026-08-21
 lastmod: 2026-08-21
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/unified-cloud-portal-financial-group/"
-images: ["img/og/og-case-unified-cloud-portal-financial-group.png"]
+images: ["img/og/og-case-unified-cloud-portal-financial-group.jpg"]
 primary_keyword: "self-service cloud portal"
 secondary_keywords:
   - "unified cloud portal"
@@ -16,7 +16,6 @@ secondary_keywords:
   - "cloud service catalog"
   - "private cloud billing portal"
 related_pages:
-  - /products/public-cloud-platform/
   - /products/public-cloud-platform/
   - /industries/financial-services/
   - /services/public-cloud-builder/
@@ -49,6 +48,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">1 entry point</div><div class="cs-stat__label">for users, instead of several disconnected systems and a ticket each</div></div>
 </div>
 
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
+</div>
+
 ## About the project
 
 The client is a financial group operating its own infrastructure for internal teams and for customers. Over the years it had accumulated the usual layering: an OpenNebula estate, a VMware estate, and a newer Kubernetes-as-a-Service offering. Each was competently run. None of them shared a front door.
@@ -74,7 +78,7 @@ That choice does more work than it first appears to:
 - **Scalability** — horizontal scaling out of the box.
 - **Real time** — the Watch API pushes changes to the frontends as they happen, so the console reflects reality rather than the last poll.
 
-{{< placeholder-image width="1200" height="640" label="Portal architecture: frontend portals (accounting, console, support) talk to the Kubernetes API server acting as an aggregation layer and unified data bus; behind it, backend API services and backend controllers reach out to external databases, OpenNebula, VMware and Kubernetes-as-a-Service" >}}
+{{< case-diagram src="/img/case-studies/unified-cloud-portal-financial-group-en.webp" alt="Portal architecture: frontend portals (accounting, console, support) talk to the Kubernetes API server acting as an aggregation layer and unified data bus; behind it, backend API services and backend controllers reach out to external databases, OpenNebula, VMware and Kubernetes-as-a-Service" >}}
 
 **Portal components.** User registration and SSO; a personal dashboard; the service catalogue covering virtual machines and Kubernetes-as-a-Service through OpenNebula; a ticket centre; a knowledge base and documentation; logging and audit; billing and invoicing; and a platform-administrator interface.
 
@@ -100,8 +104,17 @@ That choice does more work than it first appears to:
   <div class="card"><div class="card-body"><h3 class="card-title">Support load is an automation problem</h3><p class="card-description">The team was not short of people; it was short of automated provisioning. Fixing that is what changed the workload.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
+*This case study is published in anonymized form: the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

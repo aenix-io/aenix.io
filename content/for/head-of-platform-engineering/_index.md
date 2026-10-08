@@ -1,10 +1,11 @@
 ---
 title: "For Heads of Platform Engineering — an IDP without the lock-in"
-description: "Give developers golden-path self-service on an open, Kubernetes-native platform. Buy it turnkey or have Aenix build your internal developer platform with you."
+seo_title: "Internal developer platform for platform teams"
+description: "Give developers golden-path self-service on an open, Kubernetes-native platform. Buy it turnkey or have Ænix build your internal developer platform with you."
 hero_subtitle: "Golden-path developer self-service without the lock-in"
 type: "page"
 language: "en"
-images: ["img/og/og-head-of-platform-engineering.png"]
+images: ["img/og/og-head-of-platform-engineering.jpg"]
 hreflang_de: /de/fuer/leiter-platform-engineering/
 primary_keyword: "internal developer platform for platform teams"
 related_pages:
@@ -20,7 +21,7 @@ hide_closing_cta: true
 
 **You build the platform every other team builds on. The win is golden paths and real self-service — multi-tenant Kubernetes, databases and environments developers spin up themselves — with no ticket queue and no closed vendor. Ænix delivers that as a turnkey internal developer platform, or builds yours on open foundations.**
 
-> **Pairs with:** **[Developer self-service](/products/private-cloud-platform/)(/products/private-cloud-platform/)** for a ready internal developer platform, or **[Internal Developer Platform build](/services/internal-developer-platform/)** to design one to your org. Open-source core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** (developer self-service included) for a ready internal developer platform, or **[Internal Developer Platform build](/services/internal-developer-platform/)** to design one to your org. Open-source core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -28,7 +29,7 @@ hide_closing_cta: true
 </div>
 
 <div class="trust-badges">
-EU-based engineers · Apache 2.0 platform · Multi-tenant by design · Built on KubeVirt + Kubernetes
+Apache 2.0 platform · Multi-tenant by design · KubeVirt + Kubernetes
 </div>
 
 <!-- /BLOCK 1 -->
@@ -52,7 +53,7 @@ Turn infrastructure into a product: self-service provisioning of VMs, managed Ku
 
 ## Two ways Ænix helps you
 
-**1. Run a turnkey IDP.** [Developer self-service](/products/private-cloud-platform/)(/products/private-cloud-platform/) ships the multi-tenant control plane, self-service portal, service catalog and golden-path provisioning on the open-source Cozystack core. Your platform team curates; developers self-serve.
+**1. Run a turnkey IDP.** The developer self-service in [Ænix Private Cloud Platform](/products/private-cloud-platform/) ships the multi-tenant control plane, self-service portal, service catalog and golden-path provisioning on the open-source Cozystack core. Your platform team curates; developers self-serve.
 
 **2. Build your own, with our team.** Cozystack is the framework; **Ænix is your outsourced platform-engineering team**. We design tenancy, golden paths and the catalog around your org, integrate your CI/CD and identity, and hand over a platform your team owns. See [platform engineering](/services/platform-engineering/) and [IDP build](/services/internal-developer-platform/).
 
@@ -63,17 +64,16 @@ Turn infrastructure into a product: self-service provisioning of VMs, managed Ku
 - **What it is:** a multi-tenant internal developer platform (self-service VMs, K8s, DBs, storage) on a Kubernetes-native core.
 - **Who it's for:** Heads / Directors of Platform Engineering, Platform / DevEx leads.
 - **License:** Apache 2.0 — no per-seat platform tax.
-- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** buying a portal (Backstage) with no real multi-tenant backend, so self-service still bottlenecks on infra tickets.
 
-[Source: [CNCF Platforms white paper](https://www.cncf.io/reports/), [Cozystack docs](https://cozystack.io)]
 
 ---
 
 ## Why platform teams pick Ænix
 
 - **A real backend, not just a portal.** Multi-tenant compute, storage and databases under the self-service layer — the part Backstage doesn't give you.
-- **Authors as partners.** Ænix maintains Cozystack; you get the people who built the tenancy model.
+- **Authors as partners.** Ænix created Cozystack and co-maintains it; you get the people who built the tenancy model.
 - **Own it.** Open source and your infrastructure — no renewal that holds your developer experience hostage.
 
 ---
@@ -87,7 +87,7 @@ Backstage is a developer portal; it needs a platform behind it. Cozystack is tha
 Yes — nested tenants with quotas and RBAC, so each team self-serves inside guardrails without a cluster sprawl.
 
 **Build or buy — which should we do?**
-The discovery call scopes it. Teams wanting speed take the Developer Self-Service; teams wanting a bespoke fit take the build-with engagement where we're your platform bench.
+The discovery call scopes it. Teams wanting speed take the developer self-service in Private Cloud Platform; teams wanting a bespoke fit take the build-with engagement where we're your platform bench.
 
 **Does it run our existing workloads?**
 VMs (KubeVirt) and containers on one platform, plus managed databases and S3-compatible storage — so legacy and cloud-native coexist.
@@ -99,7 +99,7 @@ Apache 2.0 core, no per-developer licensing. You pay for support and/or the buil
 
 ## Start with a 30-minute discovery call
 
-Free, no prep. We look at how your teams provision today and tell you whether the Developer Self-Service or a build-with engagement gets you to self-service faster.
+Free, no prep. We look at how your teams provision today and tell you whether Private Cloud Platform's developer self-service or a build-with engagement gets you to self-service faster.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -108,7 +108,7 @@ Free, no prep. We look at how your teams provision today and tell you whether th
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!--
 SEO/GEO:

@@ -1,16 +1,18 @@
 ---
-title: "Developer Self-Service — the cost of developer drag, and what an internal developer platform actually pays back"
-description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
+title: "Developer self-service — the cost of developer drag, and what an internal developer platform actually pays back"
+seo_title: "Developer self-service: what an IDP actually pays back"
+description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP that pays back inside 12 months at 200+ engineers."
 date: "2026-05-13"
-cover_image: "/img/blog/covers/idp-edition-developer-velocity-economics.png"
+cover_image: "/img/blog/covers/idp-edition-developer-velocity-economics.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/developer-self-service-oekonomie-entwicklungsgeschwindigkeit/"
 companion_landing: "/products/private-cloud-platform/"
-companion_label: "See Developer Self-Service product details →"
+companion_label: "See Private Cloud Platform (incl. developer self-service) →"
 quiz:
-  title: "Test yourself: Developer Self-Service economics"
+  title: "Test yourself: developer self-service economics"
   questions:
     - q: "What is the typical time-to-environment in 200+-engineer organisations the article describes as the core symptom of developer drag?"
       options:
@@ -24,7 +26,7 @@ quiz:
         - { text: "Backstage is a portal, not a platform substrate", correct: true }
         - { text: "Backstage performs poorly past 50 product teams", correct: false }
       explanation: "The article states explicitly: 'Backstage is a portal, not a platform' and warns that buying it before underlying capabilities are truly self-service produces a beautiful catalog over the same operational chaos, and adoption stalls."
-    - q: "What is the typical mature ratio of platform engineers to product engineers recommended in Developer Self-Service?"
+    - q: "What is the typical mature ratio of platform engineers to product engineers recommended in developer self-service?"
       options:
         - { text: "About 1 platform engineer per 3-5 product engineers", correct: false }
         - { text: "About 1 platform engineer per 50-100 product engineers", correct: false }
@@ -36,7 +38,7 @@ quiz:
         - { text: "Reliable enough to work the first time, every time", correct: true }
         - { text: "Documented in one page or less per golden path", correct: false }
       explanation: "The five characteristics list specifies that if the self-service path breaks 1 in 10 times, teams stop trusting it and adoption stalls — reliability is the trust threshold for the documented use case."
-    - q: "For whom does the article say Developer Self-Service is a POOR fit?"
+    - q: "For whom does the article say developer self-service is a POOR fit?"
       options:
         - { text: "Organisations with 200+ engineers and 5+ product teams", correct: false }
         - { text: "Organisations with regulated data-residency requirements", correct: false }
@@ -117,9 +119,9 @@ Product teams can deviate when their case is special. The escape is
 to a real conversation with the platform team, not "use the path or
 fail."
 
-## What Developer Self-Service ships
+## What developer self-service on Private Cloud Platform ships
 
-the developer self-service layer of Ænix Private Cloud Platform is the productisation of these characteristics
+The developer self-service layer of Ænix Private Cloud Platform is the productisation of these characteristics
 on top of the Cozystack foundation. Specifically:
 
 ### A multi-tenant Cozystack platform with Tenant CRD
@@ -134,7 +136,7 @@ operationally expensive" trilemma without compromise.
 
 ### Golden-path-first Cozystack Dashboard
 
-The Cozystack Dashboard in Developer Self-Service exposes opinionated paths for the 5-10
+The Cozystack Dashboard in Private Cloud Platform exposes opinionated paths for the 5-10
 most common product-team needs: environment provisioning, application
 deployment, managed-database provisioning, observability onboarding,
 secrets management. Each path completes in minutes.
@@ -158,13 +160,13 @@ weeks.
 ### Internal-product-management discipline built in
 
 The platform team is treated as a function with product-team
-customers. Developer Self-Service engagement includes platform-team RACI,
+customers. The engagement includes platform-team RACI,
 internal-NPS metrics, deprecation policy templates, roadmap-management
 patterns. The discipline is often the missing piece.
 
 ## What stays the customer's responsibility
 
-Developer Self-Service is the platform substrate plus the operational discipline.
+Developer self-service on Private Cloud Platform is the platform substrate plus the operational discipline.
 Several things remain yours:
 
 - **Defining your specific golden paths** — the 5-10 you build first
@@ -191,7 +193,7 @@ identity, release engineering independently. Above ~50 engineers the
 duplication overwhelms the savings. Above ~200 engineers it's an
 operational drag.
 
-Developer Self-Service shifts the model: platform engineering compounds
+Developer self-service on Private Cloud Platform shifts the model: platform engineering compounds
 sublinearly with team count. Adding the 21st product team doesn't add
 21st-team's-worth of platform overhead — the existing platform absorbs
 them.
@@ -204,7 +206,8 @@ engineering capacity and clear architectural opinions. Trade-off:
 ready" for product teams; ongoing platform-component maintenance
 overhead.
 
-Developer Self-Service delivers the platform substrate in 3-6 months with
+Ænix Private Cloud Platform, which includes developer self-service,
+delivers the platform substrate within a 3-12 month build, with
 ongoing Ænix support. For organisations not staffed for a 12-24
 month build, this is the difference between platform engineering
 happening this year or in 2028.
@@ -215,7 +218,7 @@ Backstage is a portal, not a platform. Buying Backstage before the
 underlying capabilities are self-service produces a beautiful catalog
 over the same operational chaos. Adoption stalls.
 
-Developer Self-Service's Cozystack Dashboard can be replaced or augmented by Backstage if
+Private Cloud Platform's Cozystack Dashboard can be replaced or augmented by Backstage if
 the customer prefers — but the underlying capabilities (environment
 provisioning, observability, secrets, identity) are self-service
 because the platform is, not because the portal pretends they are.
@@ -228,12 +231,12 @@ vendor's; you can't replicate exactly elsewhere); cost ceiling
 (hyperscaler economics on sustained workloads); sovereignty
 implications.
 
-Developer Self-Service fits when the cost or sovereignty trade-offs make
+Private Cloud Platform fits when the cost or sovereignty trade-offs make
 self-managed worth the operational investment. For early-stage
 companies without sovereignty pressure, hyperscaler-managed is still
 the right call.
 
-## When Developer Self-Service is the right answer
+## When developer self-service is the right answer
 
 Strong fit:
 
@@ -252,7 +255,7 @@ Marginal fit:
   start with Cozystack Enterprise Support and scale into the Ænix
   Private Cloud Platform as the team grows
 - Strong existing in-house platform with specific gaps — partial
-  engagement may fit better than full Developer Self-Service
+  engagement may fit better than a full Private Cloud Platform build
 
 Poor fit:
 
@@ -268,16 +271,17 @@ Poor fit:
   recommended golden paths
 - **Pilot deployment** (3-6 months) — Cozystack platform + 3-5 golden
   paths + 2-3 pilot product teams onboarded
-- **Full Developer Self-Service build** (6-18 months) — platform expanded to
-  full engineering organisation, all targeted golden paths shipped
-- **Managed retainer** (optional, ongoing) — Ænix runs platform
-  Tier-3 under SLA
+- **Full build** (within the 3-12 month Private Cloud Platform build,
+  depending on scope) — platform expanded to the full engineering
+  organisation, all targeted golden paths shipped
+- **Support subscription** (ongoing) — Plus or Enterprise support tier
+  for 24×7 escalation (see [/pricing/](/pricing/))
 
-Engagement size: Project plus managed retainer, quoted per RFP.
+Engagement size: project plus support subscription, quoted per RFP.
 
 ## Where to dig deeper
 
-- **[Developer Self-Service landing](/products/private-cloud-platform/)** —
+- **[Private Cloud Platform landing](/products/private-cloud-platform/)** —
   feature list, product-specific FAQ
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   engagement details

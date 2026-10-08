@@ -1,22 +1,23 @@
 ---
 title: "Webinar: the cluster that survives a datacenter outage"
-description: "A free live webinar with Andrei Kvapil, creator of Cozystack: build a distributed Kubernetes cluster on your own hardware that survives losing a whole datacenter — metro-stretch, two-DC + witness, storage, GPU and live migration."
+description: "Webinar held on 30 September 2026 with Andrei Kvapil, creator of Cozystack: a Kubernetes cluster on your own hardware that survives losing a datacenter."
 language: "en"
+# The German version was withdrawn; its URL redirects here.
+aliases: ["/de/webinare/verteilter-cluster/"]
 layout: "event-landing"
 bodyClass: "webinar-landing"
 primary_keyword: "distributed kubernetes cluster"
 secondary_keywords: ["metro stretch cluster", "kubernetes disaster recovery", "two datacenter witness quorum", "cozystack distributed webinar", "geo-redundant private cloud"]
 images: ["img/og/og-webinar-en.png"]
 hide_child_cards: true
-hero_eyebrow: "Free live webinar · Online · Wednesday 30 September 2026 · 16:00 CEST (14:00 UTC)"
+hero_eyebrow: "Webinar · Took place online on Wednesday 30 September 2026"
 hero_title: "The cluster that survives a datacenter outage"
 hero_tagline: "One hour with Andrei Kvapil, the creator of Cozystack: build real geo-resilience on your own hardware — metro-stretch, two datacenters plus a witness, and remote-DC DR — from iron and network to storage, GPU and databases that fail over on their own. Shown on a real production cluster across three datacenters."
 hero_chips:
-  - "Free with registration"
-  - "60 minutes, live Q&A"
-  - "Recording to every registrant"
-  - "Bring your stack — questions answered live"
-hero_primary: { text: "Save my seat", href: "#register" }
+  - "Took place on 30 September 2026"
+  - "60 minutes, with a live Q&A"
+  - "Recording not published yet"
+hero_primary: { text: "Talk to the team", href: "/contact/" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
 inshort_title: "About the webinar"
@@ -26,48 +27,48 @@ event:
   language: "en"
   mode: "online"
   performer: "Andrei Kvapil"
-  performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
+  performer_role: "Creator and maintainer of Cozystack, co-founder and CEO of Ænix"
   price: 0
 direct_answer: |
-  **This is a free live webinar for enterprise infrastructure teams and for clouds, hosters and data centre operators that need geo-resilience they can prove. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — builds a distributed Kubernetes cluster live: the three topologies for three levels of latency (metro-stretch with RPO=0, two datacenters plus a witness, and remote-DC DR), the quorum math for surviving a lost site, synchronous storage across datacenters, live migration of VMs and databases, GPU across sites, and the real DR drills where a whole datacenter was powered off on purpose. Shown on a real production cluster stretched across three datacenters. Attendance is free with registration, and every registrant receives the recording.**
+  **This was a free live webinar, held on 30 September 2026, for enterprise infrastructure teams and for clouds, hosters and data centre operators that need geo-resilience they can prove. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — built a distributed Kubernetes cluster live: the three topologies for three levels of latency (metro-stretch with RPO=0, two datacenters plus a witness, and remote-DC DR), the quorum math for surviving a lost site, synchronous storage across datacenters, live migration of VMs and databases, GPU across sites, and the real DR drills where a whole datacenter was powered off on purpose. Shown on a real production cluster stretched across three datacenters. The recording is not published yet.**
 
 quick_facts:
   - label: "Format"
     value: "A live online webinar, about 60 minutes: a practical walkthrough with live demos, followed by a live Q&A with the speaker"
   - label: "Date"
-    value: "Wednesday 30 September 2026, 16:00 CEST (14:00 UTC) — online. Register to get the calendar invite and the recording."
+    value: "Took place on Wednesday 30 September 2026, 16:00 CEST (14:00 UTC), online"
   - label: "Price"
-    value: "Free with registration; every registrant receives the recording"
+    value: "Free; the recording is not published yet"
   - label: "Language"
     value: "English"
   - label: "Who it's for"
     value: "Architects, SREs, CTOs and infrastructure leaders who sign off on DR — and providers selling geo-redundant services"
   - label: "Host"
-    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), founder of Aenix"
+    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), co-founder and CEO of Ænix"
   - label: "After the webinar"
-    value: "The recording, plus a map of the three topologies and a readiness checklist you can score your own datacenters against"
+    value: "A map of the three topologies and a readiness checklist you can score your own datacenters against"
 
 faq:
   - q: "Is this a real production system or a lab demo?"
     a: "Real production. The core case is a Cozystack cluster stretched across three datacenters, plus the actual DR drills we ran with the provider — including what broke and what we fixed."
   - q: "Do I need three datacenters to get value?"
-    a: "No. We cover single-site teams planning their first second site, two-DC plus witness setups, and full three-site stretch — so you can place yourself on the map wherever you start."
+    a: "No. The session covered single-site teams planning their first second site, two-DC plus witness setups, and full three-site stretch — so you can place yourself on the map wherever you start."
   - q: "How is this different from VMware vSAN stretched + SRM?"
     a: "The same metro-stretch resilience, without per-socket licensing or vendor lock-in, on an open-source core you can run on your own hardware. We compare the approaches honestly."
   - q: "Can you really lose a datacenter with zero data loss?"
-    a: "In a synchronous metro-stretch topology — datacenters within metro distance, roughly a couple of milliseconds round-trip — yes, RPO=0. We show it live and are explicit about where synchronous replication stops working over longer distances, and what you use instead."
+    a: "In a synchronous metro-stretch topology — datacenters within metro distance, roughly a couple of milliseconds round-trip — yes, RPO=0. The session showed it live and was explicit about where synchronous replication stops working over longer distances, and what you use instead."
   - q: "What about GPU and databases across sites?"
-    a: "We cover both: GPU sharing within a site and cloud-burst to other sites or a public cloud, and managed databases that place replicas per zone and switch over automatically when a site is lost."
+    a: "The session covered both: GPU sharing within a site and cloud-burst to other sites or a public cloud, and managed databases that place replicas per zone and switch over automatically when a site is lost."
   - q: "Which storage — DRBD or Ceph?"
     a: "Both. We compare synchronous DRBD and Ceph across datacenters — the replication model, the quorum, dedicated storage networks and the tuning that keeps latency from triggering false failovers."
-  - q: "Will there be a recording?"
-    a: "Yes, to everyone who registers. The Q&A is the exception — that part only happens live."
+  - q: "Is there a recording?"
+    a: "The webinar took place on 30 September 2026; the recording is not published yet. To go through geo-resilience for your own setup, [talk to the team](/contact/)."
 
 final_cta:
-  heading: "Bring your datacenters to the Q&A"
-  text: "Wednesday 30 September 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
-  button: "Save my seat"
-  href: "#register"
+  heading: "Bring your datacenters to a conversation"
+  text: "The webinar took place on 30 September 2026, and the recording is not published yet. Talk to the team about geo-resilience for your own setup."
+  button: "Talk to the team"
+  href: "/contact/"
 ---
 
 <section class="ws-section ws-story wb-story" aria-labelledby="wb-story-h">
@@ -166,7 +167,7 @@ final_cta:
 
 <section class="ws-section wb-cover" id="agenda" aria-labelledby="wb-cover-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-cover-h">What we'll cover</h2>
+<h2 class="ws-h2" id="wb-cover-h">What the session covers</h2>
 <p class="ws-lead">Live demos, not slides — then your questions.</p>
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
@@ -200,14 +201,14 @@ final_cta:
 <p class="wb-cover__text"><strong>DR drills with a real provider.</strong> How we deliberately powered off a datacenter, what broke, what we tuned, and how it became a product default.</p>
 </li>
 </ol>
-<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>The session ends with a <strong>live Q&amp;A</strong>. Questions submitted at registration get priority — and this part only happens live.</span></p>
+<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>The session ended with a <strong>live Q&amp;A</strong> with the speaker.</span></p>
 </div>
 </section>
 
 <section class="ws-section ws-outcomes wb-outcomes" aria-labelledby="wb-outcomes-h">
 <div class="ws-outcomes__bg" aria-hidden="true"></div>
 <div class="ws-wrap">
-<h2 class="ws-h2 ws-h2--light" id="wb-outcomes-h">What you'll leave with</h2>
+<h2 class="ws-h2 ws-h2--light" id="wb-outcomes-h">What you take away</h2>
 <div class="ws-outcomes__grid">
 <article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">01</span>
@@ -230,13 +231,13 @@ final_cta:
 <p class="ws-outcome__text"><strong>A readiness checklist</strong> to score your own datacenters against before you build.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Save my seat</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Talk to the team</a></div>
 </div>
 </section>
 
 <section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who should attend</h2>
+<h2 class="ws-h2" id="wb-audience-h">Who it is for</h2>
 <p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosters and data centre operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session is built around your situation.</p>
 <ul class="wb-audience__tiles">
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Enterprise infrastructure teams</li>
@@ -261,7 +262,7 @@ final_cta:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
-<div class="ws-speaker__role">Creator of Cozystack · Founder of Aenix</div>
+<div class="ws-speaker__role">Creator of Cozystack · Co-founder and CEO of Ænix</div>
 <p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers across Europe build geo-resilient infrastructure on hardware they own.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
@@ -275,15 +276,12 @@ LinkedIn</a>
 </div>
 </section>
 
-<section class="ws-section ws-register" id="register" aria-labelledby="wb-register-h">
+<section class="ws-section ws-register" id="recording" aria-labelledby="wb-recording-h">
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
-<h2 class="ws-h2 ws-h2--light" id="wb-register-h">Registration</h2>
-<p class="ws-register__lead">Wednesday 30 September 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
-<div class="ws-register__form">
-
-{{< clickmeeting room="18263597110070205" >}}
-
-</div>
+<h2 class="ws-h2 ws-h2--light" id="wb-recording-h">The webinar has taken place</h2>
+<p class="ws-register__lead">It ran online on Wednesday 30 September 2026. The recording is not published yet.</p>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Talk to the team</a></div>
+<p class="ws-register__lead">The team can go through geo-resilience for your own setup. For hands-on sessions coming up, see the <a href="/workshops/">workshops</a>.</p>
 </div>
 </section>

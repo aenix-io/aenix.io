@@ -1,6 +1,6 @@
 ---
 title: "Compliance evidence for the Ænix platforms"
-description: "Which controls the Aenix platforms provide by default, which are opt-in, and which stay with you — across PCI DSS, GDPR, DORA, CIS and Kubernetes conformance."
+description: "Which controls the Ænix platforms provide by default, which are opt-in, and which stay with you — across PCI DSS, GDPR, DORA, CIS and Kubernetes conformance."
 hero_subtitle: "What the platform controls, what you switch on, and what stays yours"
 language: "en"
 quick_facts_style: "rows"
@@ -15,7 +15,7 @@ related_pages:
   - /products/private-cloud-platform/
   - /products/cozystack-enterprise-support/
 direct_answer: |
-  **This section publishes the control-level evidence behind the Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform: which technical controls are active on a fresh installation, which ship but stay off until you enable them, and which no infrastructure product can hold for you. It covers PCI DSS v4.0.1, GDPR Article 32, DORA, the CIS Kubernetes Benchmark and CNCF Kubernetes conformance. Every measured result on these pages was produced by running the tool against Cozystack — the open-source, Apache 2.0, CNCF engine the Ænix platforms are built from — not against a separate closed build, because no separate closed build exists. Auditors do not certify a platform; they certify the environment you build on it. These pages exist so you can tell an assessor which half is which.**
+  **This section publishes the control-level evidence behind the Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform: which technical controls are active on a fresh installation, which ship but stay off until you enable them, and which no infrastructure product can hold for you. It covers PCI DSS v4.0.1, GDPR Article 32, DORA, the CIS Kubernetes Benchmark and CNCF Kubernetes conformance. Every measured result on these pages was produced by running the tool against Cozystack — the open-source, Apache 2.0, CNCF engine the Ænix platforms are built from. The proprietary Ænix components (the WHMCS integration and the billing and portal modules) sit outside the infrastructure controls measured here. Auditors do not certify a platform; they certify the environment you build on it. These pages exist so you can tell an assessor which half is which.**
 quick_facts:
   - label: "What this section is"
     value: "Per-framework control mapping plus the raw test runs behind it — reproducible on your own cluster."
@@ -24,18 +24,20 @@ quick_facts:
   - label: "What was tested"
     value: "Cozystack v1.6 / v1.6.1 on Talos Linux — the same engine the three Ænix platforms ship, not a separate build."
   - label: "Certifications held"
-    value: "No security certification. Aenix holds no ISO 27001 or SOC 2 certificate, and no platform can hold a PCI DSS or GDPR certification. The one certification that does exist is CNCF Certified Kubernetes for Cozystack, which is a conformance mark and says nothing about security."
+    value: "AENIX s.r.o. holds ISO/IEC 27001:2022 for its information security management system (certificate № SIC.MS.008.ISO/IEC27001.5719, valid through 26 February 2027). There is no SOC 2 report, and no platform can hold a PCI DSS or GDPR certification. Cozystack is a CNCF Certified Kubernetes distribution, a conformance mark that says nothing about security."
   - label: "Conformance"
     value: "Tenant Kubernetes clusters pass the CNCF conformance suite in full on Kubernetes v1.31 through v1.35; Cozystack v1.6.1 is listed as a Certified Kubernetes distribution for v1.34 and v1.35."
   - label: "CIS Benchmark"
     value: "54 pass, 24 fail, 53 warn on the management cluster — with every failure sorted into deviation, control met otherwise, or not applicable."
+  - label: "AI conformance"
+    value: "Cozystack was accepted into the CNCF Kubernetes AI Conformance program in September 2026 (Kubernetes v1.35, all 12 requirements) — see the Kubernetes conformance page."
   - label: "Licence of the engine"
     value: "Apache 2.0. Source, advisories and test manifests are public, so nothing here has to be taken on trust."
 faq:
-  - q: "Are these benchmark results for Cozystack or for the Aenix platforms?"
-    a: "For Cozystack, and that is the honest and useful answer. The Aenix Public Cloud Platform, Private Cloud Platform and AI Platform are distributions of Cozystack, the Apache 2.0 CNCF project Aenix creates and maintains. There is no separate closed-source engine to test. A control that passes on Cozystack passes on the platform built from it; a deviation on Cozystack is a deviation on the platform. Where a result depends on the Talos machine configuration or the reference architecture Aenix supplies around the engine rather than on the software itself, each page says so explicitly."
-  - q: "Is the Aenix platform certified — ISO 27001, SOC 2, PCI DSS?"
-    a: "No. Aenix holds no ISO 27001 or SOC 2 certificate, and does not claim one. PCI DSS certification applies to a scoped cardholder data environment and is signed by a Qualified Security Assessor, not granted to a platform. The CIS Benchmark has no pass or fail verdict to award at all — it is a list of controls. What the platforms do is supply and evidence the technical controls those programmes depend on, and support your certification work; that is a narrower claim, and it is the one we make."
+  - q: "Are these benchmark results for Cozystack or for the Ænix platforms?"
+    a: "For Cozystack, and that is the honest and useful answer. The Ænix Public Cloud Platform, Private Cloud Platform and AI Platform are built on Cozystack, the Apache 2.0 CNCF project Ænix created and co-maintains with maintainers from other companies. The infrastructure engine is the same open-source code; the proprietary Ænix modules (WHMCS integration, billing and portal components) do not change the controls measured here. A control that passes on Cozystack passes on the platform built from it; a deviation on Cozystack is a deviation on the platform. Where a result depends on the Talos machine configuration or the reference architecture Ænix supplies around the engine rather than on the software itself, each page says so explicitly."
+  - q: "Is the Ænix platform certified — ISO 27001, SOC 2, PCI DSS?"
+    a: "The company is, the platform is not. AENIX s.r.o. holds ISO/IEC 27001:2022 for its information security management system — a certificate for how the company works, not for a product. There is no SOC 2 report. PCI DSS certification applies to a scoped cardholder data environment and is signed by a Qualified Security Assessor, not granted to a platform. The CIS Benchmark has no pass or fail verdict to award at all — it is a list of controls. What the platforms do is supply and evidence the technical controls those programmes depend on, and support your certification work; that is a narrower claim, and it is the one we make."
   - q: "Can we reproduce these results on our own cluster?"
     a: "Yes, and you should before an assessment. The CIS Benchmark page publishes the exact kube-bench job manifest, pinned image version and benchmark revision used for the published run. The Kubernetes conformance page publishes the Sonobuoy invocation. The PCI DSS and GDPR pages give kubectl commands that verify tenant isolation and RBAC scope directly. Your installation may produce different numbers, particularly where the Talos machine configuration differs."
   - q: "How does this section relate to the DORA and NIS2 solution pages?"
@@ -45,6 +47,8 @@ faq:
 ---
 
 **Auditors do not certify a platform. They certify the environment you build on it — your systems, your processes, your evidence. So the useful question is never "is the platform compliant", it is "which controls does this platform give me, which do I have to switch on, and which stay mine".**
+
+AENIX s.r.o. holds ISO/IEC 27001:2022 certification for its own ISMS ([certificate details](/compliance/iso-27001/)). Cozystack is a CNCF Certified Kubernetes distribution and was accepted into the CNCF Kubernetes AI Conformance program in September 2026 ([conformance evidence](/compliance/kubernetes-conformance/)).
 
 These pages answer that one framework at a time, for the three Ænix platforms and for Cozystack underneath them. Each separates what is enforced on a fresh installation, what ships but is off until you enable it, and what no infrastructure product can do for you.
 
@@ -57,11 +61,11 @@ These pages answer that one framework at a time, for the three Ænix platforms a
 
 ## Where these numbers come from
 
-Every measured result in this section — the kube-bench run, the conformance runs, the verification commands — was produced against **Cozystack**, the open-source engine, on a reference cluster. Not against a separate proprietary Ænix build.
+Every measured result in this section — the kube-bench run, the conformance runs, the verification commands — was produced against **Cozystack**, the open-source engine, on a reference cluster. The infrastructure controls are the same in the Ænix platforms, because they ship the same engine.
 
 That is deliberate, and it is the reason the results transfer:
 
-- **There is no separate engine.** The Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform are distributions of Cozystack. Ænix creates and maintains Cozystack — it is a CNCF project under Apache 2.0 — and the platforms ship the same releases. Nothing is forked away and re-tested behind a licence.
+- **There is no separate engine.** The Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform are built on Cozystack and ship the same releases. Cozystack is a CNCF Sandbox project under Apache 2.0; Ænix created it and co-maintains it with maintainers from other companies. The proprietary Ænix modules — the WHMCS integration and the billing and portal components — run on top of the engine and do not replace any control discussed here.
 - **So the mapping is one-to-one.** A control that passes on Cozystack passes on a platform built from it. A deviation on Cozystack is a deviation on the platform. There is no gap for a marketing claim to hide in.
 - **What Ænix adds sits around the engine, not inside it.** The Talos machine configuration applied at install time, the reference architecture, the operational runbooks, and support during the assessment. Several of the settings these pages discuss — `--encryption-provider-config`, the audit policy, the authorization configuration, the time source — come from that machine configuration rather than from Cozystack itself. Where that is the case, the page says so and tells you how to verify it on your own cluster.
 - **Which is also why your numbers may differ.** The same benchmark on your installation is a different run. Treat the published figures as a reference point and a method, not as a certificate covering your environment.
@@ -75,11 +79,12 @@ The alternative framing — publishing these as results for a proprietary produc
 
 ## Frameworks
 
+- **[ISO/IEC 27001](/compliance/iso-27001/)** — the ISO/IEC 27001:2022 certificate of AENIX s.r.o.: number, scope, validity, and what an organisation's certificate does and does not say about the platforms.
 - **[PCI DSS](/compliance/pci-dss/)** — a requirement-by-requirement mapping of all twelve PCI DSS v4.0.1 requirements: what is active by default, what is one setting away, what stays with you, with commands to verify each control on your own cluster.
 - **[GDPR](/compliance/gdpr/)** — the Article 32 technical measures the platform supplies, where personal data physically sits, and the parts of the right to erasure that infrastructure cannot settle.
 - **[CIS Kubernetes Benchmark](/compliance/cis-benchmark/)** — the full kube-bench run: 54 pass, 24 fail, 53 warn, with every failure sorted into a real deviation, a control met another way, or a check that does not apply on an immutable node.
 - **[DORA](/compliance/dora/)** — the platform-side evidence for resilience, backup and restore, incident records and the ICT third-party risk chapter, where self-hosted open source changes the answer.
-- **[Kubernetes conformance](/compliance/kubernetes-conformance/)** — CNCF conformance results for both shapes the platform is used in: self-hosted tenant clusters passing in full across five Kubernetes releases, two of them listed in the CNCF's own record, and a hosted platform listed there as well. What a listing covers, and what it does not, is spelled out.
+- **[Kubernetes conformance](/compliance/kubernetes-conformance/)** — CNCF conformance results for both shapes the platform is used in: self-hosted tenant clusters passing in full across five Kubernetes releases, two of them listed in the CNCF's own record, and a hosted platform listed there as well; plus Cozystack's acceptance into the CNCF Kubernetes AI Conformance program (September 2026). What a listing covers, and what it does not, is spelled out.
 
 </div>
 </div>
@@ -92,7 +97,7 @@ Precision here is worth more than reassurance, because an assessor will test eve
 
 | Claim we do **not** make | What is true instead |
 |---|---|
-| "Ænix is ISO 27001 certified" | Aenix holds no ISO 27001 certificate. The platforms are built to support an ISMS — audit logging, access control, change control through declarative configuration — and Ænix supports customers' certification work. That is a different claim. |
+| "The Ænix platform is ISO 27001 certified" | ISO/IEC 27001 certifies a management system, not a product. AENIX s.r.o. holds the certificate for its own ISMS ([certificate details](/compliance/iso-27001/)); the platforms support your ISMS with audit logging, access control and declarative change control, but your environment needs its own certification. |
 | "Ænix is SOC 2 attested" | There is no SOC 2 report. Where a customer needs one for their own service running on the platform, the platform supplies control evidence; the report is theirs. |
 | "The platform is PCI DSS certified" | No platform is. A Qualified Security Assessor certifies a scoped cardholder data environment. The platform supplies the technical controls the assessment leans on. |
 | "The platform is GDPR compliant" | Compliance belongs to the controller. The platform supplies Article 32 measures and makes them demonstrable. |
@@ -106,8 +111,8 @@ Precision here is worth more than reassurance, because an assessor will test eve
 The pages above are evidence. If what you need is the programme around it — a gap analysis, a control-level map of what you can demonstrate today, a remediation plan — those live under solutions:
 
 - **[DORA compliance](/solutions/dora-compliance/)** — fixed-price readiness engagement for financial entities and the ICT third parties serving them: ICT third-party risk, concentration risk, exit-feasibility, resilience testing. Free [DORA compliance checklist](/resources/dora-compliance-checklist/).
-- **[NIS2 compliance](/solutions/nis2-compliance/)** — the equivalent for essential and important entities under NIS2. Free [NIS2 compliance checklist](/resources/nis2-compliance-checklist/).
-- **[Data sovereignty](/solutions/data-sovereignty/)** — customer-controlled keys, customer-controlled hardware, jurisdictional residency.
+- **[NIS2 compliance](/solutions/nis2-compliance/)** — the equivalent for essential and important entities under NIS2. Free [NIS2 compliance checklist](/resources/nis2-compliance-checklist/). There is no separate NIS2 evidence page yet; the Article 21 measures overlap with the controls on the DORA, GDPR and CIS pages above.
+- **[Data sovereignty](/solutions/data-sovereignty/)** — customer-controlled hardware, jurisdictional residency, and opt-in volume encryption designed with you.
 
 The split is deliberate: the solution pages answer "what does the regulation require of us and where are we short", these pages answer "what does the infrastructure actually do, and how was that measured".
 

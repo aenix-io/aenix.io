@@ -1,7 +1,9 @@
 ---
 title: "Cloud Readiness Assessment — was 14 Tage tatsächlich abdecken (Methodik 2026)"
-description: "Begleitung zur Platform-Readiness-Assessment-Page."
+seo_title: "Cloud Readiness Assessment: Methodik in 14 Tagen"
+description: "Was ein Platform Readiness Assessment in 14 Tagen abdeckt: vier parallele Workstreams, der Ablauf Tag für Tag und was der Abschlussbericht konkret enthält."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/cloud-readiness-assessment-methodik.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Cozystack", "GitOps", "Cloud Repatriation", "Platform Engineering"]
@@ -40,9 +42,10 @@ quiz:
         - { text: "Ein gerade unterschriebenes mehrjähriges Hyperscaler-Commitment", correct: false }
         - { text: "Ein konkreter aufsichtsrechtlicher Termin, etwa DORA oder NIS2", correct: true }
       explanation: "Gute Passform: ein konkreter aufsichtsrechtlicher Termin (DORA Artikel 28, NIS2-Umsetzung, ein sektorales Audit), eine anstehende Kostenentscheidung auf Vorstandsebene, eine neu aufgebaute Platform-Engineering-Funktion, die eine externe Ausgangsbasis braucht, oder ein KI- beziehungsweise Datenresidenz-Projekt, das im Architektur-Review feststeckt."
+hreflang_en: /blog/2026/05/cloud-readiness-assessment-14-day-methodology/
 ---
 
-Begleitung zur **[Platform-Readiness-Assessment-Page](/de/dienstleistungen/platform-readiness-assessment)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 ## Vier parallele Workstreams in 14 Tagen
 
@@ -82,5 +85,5 @@ Jeder hat einen benannten Eigentümer auf unserer Seite, ein definiertes Ergebni
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

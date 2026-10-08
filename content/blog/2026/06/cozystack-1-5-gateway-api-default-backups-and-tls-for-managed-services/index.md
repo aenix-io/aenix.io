@@ -1,9 +1,10 @@
 ---
 title: "Cozystack 1.5: Gateway API, default backups, Flux sharding, and TLS for managed services"
+seo_title: "Cozystack 1.5: Gateway API and default backups"
 description: "Cozystack v1.5.0 adds opt-in Gateway API via Cilium, a default BackupClass, Flux v2.8 with sharding, TLS for managed databases, and GPU passthrough."
 slug: "cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services"
 date: "2026-06-22"
-cover_image: "/img/blog/covers/cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services.png"
+cover_image: "/img/blog/covers/cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services.jpg"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "Cilium", "KubeVirt", "GPU", "Platform Engineering"]
@@ -14,7 +15,7 @@ companion_label: "See enterprise support for Cozystack →"
 ---
 
 
-{{< placeholder-image width="1200" height="630" label="Cozystack v1.5.0 — cover image (1200×630)" >}}
+![Cozystack 1.5: Gateway API, default backups, Flux sharding, and TLS for managed services](/img/blog/covers/cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services.jpg)
 
 Cozystack v1.5.0 was published on 22 June 2026. It rolls up every fix from the v1.4.1 to v1.4.4 patch line and pushes the platform in five directions: a second ingress path via Gateway API, backups that work without per-app S3 configuration, stricter and shardable Flux reconciliation, TLS on externally published managed services, and GPU passthrough that no longer needs a manual `kubectl patch`.
 
@@ -117,7 +118,7 @@ GPU sharing in Cozystack remains NVIDIA GPU Operator plus HAMi. Reference: [GPU 
 
 ## The 1.5 patch line
 
-- **v1.5.1** (23 June 2026) fixes a v1.5.0 regression: persistent EFI/TPM state was restored for the `windows.11`, `windows.2k22` and `windows.2k25` KubeVirt preferences, which made KubeVirt provision a ReadWriteOnce `persistent-state-for-<vm>` PVC on the `replicated` StorageClass. That pins the VM to its node and blocks live migration and node drains — on clusters using `evictionStrategy: LiveMigrate` it can stall a cluster upgrade outright. Secure Boot and the vTPM still work; only the state persistence across reboots is dropped.
+- **v1.5.1** (24 June 2026) fixes a v1.5.0 regression: persistent EFI/TPM state was restored for the `windows.11`, `windows.2k22` and `windows.2k25` KubeVirt preferences, which made KubeVirt provision a ReadWriteOnce `persistent-state-for-<vm>` PVC on the `replicated` StorageClass. That pins the VM to its node and blocks live migration and node drains — on clusters using `evictionStrategy: LiveMigrate` it can stall a cluster upgrade outright. Secure Boot and the vTPM still work; only the state persistence across reboots is dropped.
 - **v1.5.2** (3 July 2026) covers ten fixes, including a Kamaji DataStore deletion deadlock that wedged tenant namespaces, a victoria-metrics-operator dependency that could never resolve when `certManager.enabled: false`, and single-replica MariaDB instances being rejected by the operator webhook.
 - **v1.5.3** was tagged but its GitHub release was left a draft and never published. No operator received it.
 - **v1.5.4** (19 August 2026) is the final 1.5 release and the one to deploy.
@@ -137,7 +138,7 @@ The annotations are required, not optional — without them, removing or upgradi
 
 ## Where Ænix fits
 
-Cozystack is a CNCF Sandbox project under Apache 2.0, and the upgrade paths above are the same for everyone running it. Ænix maintains the project and sells [enterprise support for Cozystack](/products/cozystack-enterprise-support/) — including upgrade planning for the sharp edges in this release — for teams that would rather not carry the platform alone.
+Cozystack is a CNCF Sandbox project under Apache 2.0, and the upgrade paths above are the same for everyone running it. Ænix created Cozystack and is one of its maintainers; it sells [enterprise support for Cozystack](/products/cozystack-enterprise-support/) — including upgrade planning for the sharp edges in this release — for teams that would rather not carry the platform alone.
 
 ## Release links
 

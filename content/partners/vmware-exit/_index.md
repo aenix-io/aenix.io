@@ -3,7 +3,7 @@ title: "VMware exit for integrators & MSPs — turn the renewal into margin"
 description: "Your clients' VMware costs jumped. Offer an open, sovereign cloud you resell or co-deliver on Cozystack — up to 40% margin, deal protection."
 type: "page"
 language: "en"
-images: ["img/og/og-vmware-exit-partners.png"]
+images: ["img/og/og-vmware-exit-partners.jpg"]
 hreflang_de: /de/partner/vmware-exit/
 primary_keyword: "vmware exit for integrators and msps"
 secondary_keywords: ["vmware alternative for partners", "broadcom vmware alternative", "vmware migration partner"]
@@ -51,7 +51,7 @@ If your clients are getting VMware renewal quotes they don't like, this is built
 <div class="grid-2x2">
 
 **1. Resell a ready platform**
-Sell [Ænix Platform](/partners/) (Public Cloud / Private Cloud / AI) under your brand. Up to **40% margin**, deal protection, sales kit, technical pre-sales, L3 support. The Public Cloud Platform ships a white-label portal and WHMCS billing.
+Sell the [Ænix platforms](/products/) (Public Cloud / Private Cloud / AI) under your brand. Up to **40% margin**, deal protection, sales kit, technical pre-sales, L3 support. The Public Cloud Platform includes the WHMCS integration, and its customer portal takes your branding.
 
 **2. Co-deliver / build with our team**
 Want your own differentiated cloud? Cozystack is the framework and **Ænix is your outsourced engineering team** — we run the [VMware migration](/migration/vmware/) and stand up a [white-label cloud](/services/white-label-cloud/) you own, filling the Kubernetes/KubeVirt gap without a hiring cycle.
@@ -66,9 +66,9 @@ Either way, the per-core license your client pays VMware becomes margin and recu
 
 - **What it is:** a VMware-exit offer integrators and MSPs resell or co-deliver on an open platform.
 - **Who it's for:** Heads of Cloud, Cloud Practice Leads, Heads of Alliances at SIs / MSPs / resellers.
-- **Margin:** up to **40%** on license + support; plus your own managed-services revenue.
+- **Margin:** up to **40%** on Ænix subscriptions and support; plus your own managed-services revenue.
 - **License:** Apache 2.0 (Cozystack) — no per-core/per-socket cost in the stack.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** competing on price reselling a hyperscaler while owning none of the platform value or the renewal relationship.
 
 [Source: [Ænix Partner Program](/partners/); [Cozystack docs](https://cozystack.io)]
@@ -102,7 +102,7 @@ Either way, the per-core license your client pays VMware becomes margin and recu
 Both are supported. Resell the Public Cloud Platform for speed; co-build a differentiated cloud with us for your own IP. The partner call scopes which fits per deal.
 
 **What margin can we make?**
-Up to 40% on Ænix Platform license + support via the [Partner Program](/partners/), plus recurring managed-services margin on top.
+Up to 40% on Ænix subscriptions and support via the [Partner Program](/partners/), plus recurring managed-services margin on top.
 
 **Is there deal protection?**
 Yes — registered opportunities are reserved to the partner; no channel conflict.
@@ -117,7 +117,7 @@ Use the [VMware cost calculator](/resources/vmware-cost-calculator/) on the call
 
 ## Start the partner conversation
 
-Free, no prep. We map your client base to the editions, walk through margin and deal protection, and decide resell vs co-deliver.
+Free, no prep. We map your client base to the platforms, walk through margin and deal protection, and decide resell vs co-deliver.
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
@@ -126,7 +126,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF-Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/partners/vmware-exit/ ; hreflang de → /de/partner/vmware-exit/, x-default EN.

@@ -13,6 +13,7 @@ hreflang_de: "/de/migration/nutanix/"
 hreflang_en: "/migration/nutanix/"
 related_pages:
   - /alternatives/nutanix-alternative/
+  - /tco-calculator/vs-nutanix/
   - /migration/vmware/
   - /products/
   - /services/platform-readiness-assessment/
@@ -22,7 +23,7 @@ service:
   areaServed: ["EU", "DACH"]
   audience: "Enterprise, Hosting Providers, Public Sector"
 direct_answer: |
-  **A Nutanix migration moves virtual machines and workloads off Nutanix HCI — the AOS storage layer and the AHV hypervisor — onto a different platform, usually because licensing and renewal costs, or hyperconverged lock-in, no longer justify staying. The Kubernetes-native destination is Cozystack (a CNCF project, Apache 2.0): it runs VMs on KubeVirt alongside containers on the same cluster, with LINSTOR for replicated block storage and no per-node hypervisor licensing. Aenix runs these migrations end to end — inventory, destination architecture, cohort-based cutover, and decommission — with the same engineers who build and operate the destination platform. It suits enterprises, hosting providers, and public-sector operators who want to own their virtualization stack rather than rent it under a renewal that keeps climbing.**
+  **A Nutanix migration moves virtual machines and workloads off Nutanix HCI — the AOS storage layer and the AHV hypervisor — onto a different platform, usually because licensing and renewal costs, or hyperconverged lock-in, no longer justify staying. The Kubernetes-native destination is Cozystack (a CNCF Sandbox project, Apache 2.0): it runs VMs on KubeVirt alongside containers on the same cluster, with LINSTOR for replicated block storage and no per-node hypervisor licensing. Ænix runs these migrations end to end — inventory, destination architecture, cohort-based cutover, and decommission — with the engineers who created and co-maintain the destination platform. It suits enterprises, hosting providers, and public-sector operators who want to own their virtualization stack rather than rent it under a renewal that keeps climbing.**
 quick_facts:
   - label: "What it is"
     value: "Moving VMs and workloads off Nutanix AOS/AHV onto a Kubernetes-native platform you own."
@@ -54,7 +55,7 @@ faq:
     a: "Yes. Use the ROI and TCO calculator to model the delta between the current Nutanix renewal path and an owned Cozystack platform, including hardware, platform-team capacity, and the operational learning curve, before you commit to hardware or a migration timeline."
 ---
 
-**Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Ænix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor license. The destination is [Cozystack](/products/cozystack/), built and operated by the same engineers who run your migration.**
+**Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Ænix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor license. The destination is [Cozystack](/products/cozystack/), created and co-maintained by the engineers who run your migration.**
 
 > **Pairs with:** the Ænix platform that matches your estate — **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated organisations running cloud for themselves, **[Public Cloud Platform](/products/public-cloud-platform/)** if you sell cloud to customers. Decide the destination on the **[Nutanix alternative](/alternatives/nutanix-alternative/)** comparison, then model the numbers with the **[ROI & TCO calculator](/roi-calculator/)**.
 
@@ -136,15 +137,19 @@ The assessment names each of these explicitly for your estate, so the plan refle
 
 ## Model the cost before you commit
 
-Migration economics look attractive in theory and turn on the details in practice: hardware refresh, platform-team capacity, and the operational learning curve all belong in the model. Before committing to hardware or a timeline, run your estate size and current Nutanix renewal through the **[ROI & TCO calculator](/roi-calculator/)** to see the annual delta, the multi-year net after migration, and the payback period. An honest TCO up front is what separates a migration that pays back from one that stalls.
+Migration economics look attractive in theory and turn on the details in practice: hardware refresh, platform-team capacity, and the operational learning curve all belong in the model. Before committing to hardware or a timeline, run your estate size and current Nutanix renewal through the **[Nutanix vs Cozystack TCO calculator](/tco-calculator/vs-nutanix/)** or the **[ROI & TCO calculators](/roi-calculator/)** to see the annual delta, the multi-year net after migration, and the payback period. An honest TCO up front is what separates a migration that pays back from one that stalls.
 
 ---
 
 ## How Ænix engages on Nutanix migration
 
-The engagement mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with Nutanix emphasis: AOS/AHV inventory, destination architecture, workload classification, cutover sequencing against renewal dates, and a Phase 2 roadmap — delivered in 14-28 days. Phase 2 is implementation, with Ænix engineers integrated into your team for the migration cohorts and knowledge transfer throughout; an optional Phase 3 covers managed Cozystack operations after the estate has moved. Because we build the destination platform, the effort estimates are calibrated against work we have shipped, not guessed.
+The engagement mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with Nutanix emphasis: AOS/AHV inventory, destination architecture, workload classification, cutover sequencing against renewal dates, and a Phase 2 roadmap — delivered in 14 or 28 days at a fixed price. Phase 2 is implementation, with Ænix engineers integrated into your team for the migration cohorts and knowledge transfer throughout; an optional Phase 3 covers managed Cozystack operations after the estate has moved. Because we created and co-maintain the destination platform, the effort estimates are calibrated against work we have shipped, not guessed.
 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We run Nutanix and VMware migrations for enterprises, hosting providers, and public-sector operators across the EU and DACH.*
+Comparing destinations first? See the **[Nutanix alternative](/alternatives/nutanix-alternative/)** page.
+
+---
+
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0 — and co-maintains it with maintainers from other companies. On top of it, Ænix offers three platforms — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

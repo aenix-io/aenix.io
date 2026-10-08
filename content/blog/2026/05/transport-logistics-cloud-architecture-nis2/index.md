@@ -1,22 +1,23 @@
 ---
 title: "Transport and logistics cloud architecture — NIS2, AI, edge in 2026"
+seo_title: "Transport and logistics cloud architecture under NIS2"
 description: "A three-tier architecture for transport and logistics, the NIS2 controls that apply to the sector, and where AI workloads fit."
 date: "2026-05-29"
-cover_image: "/img/blog/covers/transport-logistics-cloud-architecture-nis2.png"
+cover_image: "/img/blog/covers/transport-logistics-cloud-architecture-nis2.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["NIS2", "Cozystack", "Sovereignty", "AI/ML", "GPU"]
+topics: ["NIS2", "Cozystack", "Sovereignty", "AI and ML", "GPU"]
 language: "en"
 companion_landing: "/industries/transport-logistics/"
 quiz:
   title: "Test yourself: transport / logistics cloud"
   questions:
-    - q: "Under NIS2, what category does transport fall into?"
+    - q: "Under NIS2, where does transport fall?"
       options:
-        - { text: "Essential entity under Annex I", correct: true }
-        - { text: "Important entity under Annex II", correct: false }
+        - { text: "Annex I sector; essential or important depending on size (Article 3)", correct: true }
+        - { text: "Annex II sector; always an important entity", correct: false }
         - { text: "Out of scope for transport ICT", correct: false }
-      explanation: "Transport is in NIS2 Annex I as an essential entity. Article 21 risk-management measures and Article 23 incident reporting apply to ICT used by transport organisations (rail, road, water, air)."
+      explanation: "Transport (air, rail, water, road) is an Annex I sector of high criticality. Under Article 3, large transport entities are essential and medium-sized ones important. Either way, Article 21 risk-management measures and Article 23 incident reporting apply to the ICT they use."
     - q: "What three-tier architecture does the article describe for transport / logistics?"
       options:
         - { text: "Single hyperscaler region for everything", correct: false }
@@ -41,12 +42,13 @@ quiz:
         - { text: "Tracing is trivial with modern TMS tooling", correct: false }
         - { text: "Chains run 5+ sub-contracting levels deep", correct: true }
       explanation: "Logistics chains often have 5+ levels of sub-contracting (carrier → forwarder → broker → handler → terminal operator). NIS2 (and DORA) expect supplier transparency to second hop — for logistics, even that is unusually hard, and beyond second hop is often impossible without dedicated traceability tooling."
+hreflang_de: /de/blog/2026/05/transport-logistik-cloud-architektur-nis2/
 ---
 
 
 ## Three pressures
 
-1. **NIS2 essential entity** — transport is Annex I; Article 21/23 apply to ICT
+1. **NIS2 scope** — transport is an Annex I sector (essential or important entity depending on size); Article 21/23 apply to ICT
 2. **AI optimization** — routing, demand forecasting, predictive maintenance
 3. **Edge compute density** — depots, ports, terminals, vehicles
 

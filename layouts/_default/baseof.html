@@ -30,8 +30,8 @@
   </script>
   {{- end }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} – Ænix{{ end }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Params.seo_title | default .Title }} – Ænix{{ end }}</title>
+  <meta name="description" content="{{ partial "seo/description.html" . }}">
 
   {{/* Open Graph / Twitter meta are emitted once by seo/head.html (partial invoked below) — do not duplicate here. */}}
 
@@ -53,13 +53,11 @@
   {{/* Self-hosted fonts (Inter + JetBrains Mono, latin + latin-ext subsets).
        Replaces fonts.googleapis.com CDN — faster (no Google DNS+TLS),
        GDPR-clean (no IP leakage to Google's servers). */}}
-  <link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/fonts.css">
 
   {{/* CSS — theme base */}}
-  {{ $style := resources.Get "css/main.css" | fingerprint }}
+  {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
   {{ if $style }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   {{ end }}
@@ -89,13 +87,16 @@
        activate on consent. Defaults consent to "denied" before user choice
        per Google Consent Mode v2. */}}
   <div id="aenix-consent-root"
-       data-lang="{{ .Site.Language.Lang | default "en" }}"
+       data-lang="{{ $lang }}"
        {{ with .Site.Params.googleAnalytics }}data-ga-id="{{ . }}"{{ end }}
        {{ with .Site.Params.gtmContainer }}data-gtm-container="{{ . }}"{{ end }}
        {{ with .Site.Params.ahrefsAnalytics }}data-ahrefs-key="{{ . }}"{{ end }}
        {{ with .Site.Params.hotjarId }}data-hotjar-id="{{ . }}"{{ end }}
        hidden></div>
   <script src="/js/consent.js" defer></script>
+  {{/* GA4 conversion events (generate_lead, cta_click, outbound_click,
+       calculator_use/_result) — sent through the consent-gated gtag queue. */}}
+  <script src="/js/aenix-events.js" defer></script>
 
   {{ $js := resources.Get "js/main.js" | fingerprint }}
   {{ if $js }}

@@ -1,10 +1,11 @@
 ---
 title: "For Heads of Cloud at SIs & MSPs — a cloud you resell or build"
-description: "Turn the VMware exit into your margin. Offer clients a branded cloud on an open platform — resell it, or have Aenix build it as your team. Up to 40% margin."
+seo_title: "White-label cloud platform for SIs and MSPs"
+description: "Turn the VMware exit into your margin. Offer clients a branded cloud on an open platform — resell it, or have Ænix build it as your team. Up to 40% margin."
 hero_subtitle: "Turn the VMware exit into your margin"
 type: "page"
 language: "en"
-images: ["img/og/og-head-of-cloud.png"]
+images: ["img/og/og-head-of-cloud.jpg"]
 hreflang_de: /de/fuer/leiter-cloud/
 primary_keyword: "white-label cloud platform for service providers"
 related_pages:
@@ -61,12 +62,12 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 
 - **What it is:** a branded, multi-tenant cloud (IaaS/PaaS) you deliver to clients on an open core.
 - **Who it's for:** Heads of Cloud / Cloud Practice Leads at SIs, MSPs and resellers.
-- **Margin:** up to **40%** via the Partner Program; the VMware license line becomes your margin.
+- **Margin:** up to **40%** via the Partner Program; the VMware licence line becomes your margin.
 - **License:** Apache 2.0 — no per-core cost dragging your unit economics.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** reselling a hyperscaler and competing on price while owning none of the platform value.
 
-[Source: [Cozystack docs](https://cozystack.io); [Ænix Partner Program](/partners/)]
+Details: [Ænix Partner Program](/partners/).
 
 ---
 
@@ -84,16 +85,16 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 Both are supported. Resell the Public Cloud Platform for speed-to-market; build a differentiated platform with us when you want your own IP. The call scopes which fits.
 
 **What's the margin model?**
-Up to 40% on Ænix Platform license + support via the [Partner Program](/partners/), plus your own recurring managed-services revenue on top.
+Up to 40% on Ænix platform subscriptions and support via the [Partner Program](/partners/), plus your own recurring managed-services revenue on top.
 
 **Can it be fully our brand?**
-Yes — the customer portal and service catalog are white-labelable; clients see you, not us.
+Yes — the customer portal and service catalog are white-labelable (white-labelling is an open-source Cozystack feature; Ænix supports it from the Standard support tier); clients see you, not us.
 
 **We lack deep Kubernetes staff. Is that a blocker?**
 No — that's the build-with model. We engineer the platform and enable your team.
 
 **Does it cover billing?**
-WHMCS-integrated billing ships with the Public Cloud Platform, with two integration modes.
+WHMCS-integrated billing (a proprietary Ænix module) ships with the Public Cloud Platform, with two integration modes.
 
 ---
 
@@ -108,7 +109,7 @@ Free, no prep. We look at your client base and tell you whether reselling the Pu
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!--
 SEO/GEO:

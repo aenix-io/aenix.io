@@ -1,12 +1,14 @@
 ---
 title: "Cloud-native research and teaching infrastructure — what universities actually need in 2026"
+seo_title: "Cloud-native research and teaching infrastructure"
 description: "Architecture patterns for university research and teaching infrastructure: the three missions, GPU scheduling for labs, and the pitfalls that recur."
 date: "2026-05-04"
-cover_image: "/img/blog/covers/cloud-native-research-and-teaching-infrastructure.png"
+cover_image: "/img/blog/covers/cloud-native-research-and-teaching-infrastructure.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["Kubernetes", "AI/ML", "GPU", "Multi-tenancy"]
+topics: ["Kubernetes", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/cloud-native-forschung-lehre-infrastruktur-hochschulen/"
 companion_landing: "/industries/universities/"
 quiz:
   title: "Test yourself: cloud-native infra for universities"
@@ -50,7 +52,7 @@ University and research-institute IT in 2026 sits at a difficult intersection: r
 
 ## The three missions revisited
 
-In the [industry page](/industries/universities) we identified three university missions. Here we go deeper on each.
+In the [industry page](/industries/universities/) we identified three university missions. Here we go deeper on each.
 
 ### Mission 1 — research computing for the AI era
 
@@ -106,7 +108,7 @@ Cozystack handles each:
 - **Self-service for instructors** — instructor can create / destroy student environments without IT ticket
 - **CNCF Project status** — students gain familiarity with CNCF ecosystem, valuable post-graduation
 
-The CNOE (CNCF Cloud Native Operational Excellence) project is also worth mentioning — it provides reference cloud-native patterns suitable for academic teaching contexts.
+The CNOE (Cloud Native Operational Excellence) industry initiative is also worth mentioning — it provides reference cloud-native patterns suitable for academic teaching contexts.
 
 ## Architecture patterns we've seen work
 
@@ -171,4 +173,4 @@ Building research infrastructure without reproducibility patterns from day 1 mea
 - **Multi-institution consortia** supported
 - **Academic-friendly support tiers** — discounted commercial support for academic deployments
 
-For details see **[universities industry page](/industries/universities)**.
+For details see **[universities industry page](/industries/universities/)**.

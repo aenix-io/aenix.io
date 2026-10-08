@@ -1,12 +1,14 @@
 ---
 title: "OpenStack migration — a cohort-based playbook for moving to Cozystack in 2026"
+seo_title: "OpenStack to Kubernetes migration: cohort sequencing"
 description: "Cohort-based playbook for migrating production OpenStack to Cozystack: component mapping, image conversion, networking redesign, handover, and timeline."
 date: "2026-05-20"
-cover_image: "/img/blog/covers/openstack-migration-cozystack-cohort-playbook.png"
+cover_image: "/img/blog/covers/openstack-migration-cozystack-cohort-playbook.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["OpenStack", "Cozystack", "Migration", "Multi-tenancy", "Kubernetes"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/openstack-migration-cozystack-kohorten-playbook/"
 companion_landing: "/migration/openstack/"
 companion_label: "See OpenStack migration hub →"
 quiz:
@@ -18,12 +20,12 @@ quiz:
         - { text: "Cilium on Talos (networking layer)", correct: false }
         - { text: "LINSTOR (block-storage layer)", correct: false }
       explanation: "Per the component mapping: Nova (compute) → KubeVirt on Talos. Neutron maps to Cilium (eBPF); Cinder maps to LINSTOR, the DRBD-replicated block storage Cozystack ships."
-    - q: "Which of the three migration pressures is structurally tied to Red Hat OSP transitioning toward OpenShift Virtualization?"
+    - q: "Which of the three migration pressures is tied to Red Hat steering OSP customers toward OpenShift-based offerings?"
       options:
         - { text: "Engineer scarcity (shrinking OpenStack talent pool)", correct: false }
-        - { text: "Vendor distro lifecycle (OSP 17/18 final major lines)", correct: true }
+        - { text: "Vendor distro lifecycle (distribution vendors changing course)", correct: true }
         - { text: "Service-catalog ceiling (limited day-2 platform features)", correct: false }
-      explanation: "Red Hat OSP 17/18 are the final major release lines as Red Hat transitions toward OpenShift Virtualization. Mirantis transitioned years ago; Canonical Charmed OpenStack has narrower enterprise sales motion. Vendor distro lifecycle is the structural pressure forcing the decision."
+      explanation: "Red Hat is steering OSP customers toward OpenShift-based offerings, and the wider OpenStack distribution market is consolidating. Check your own vendor's support dates; vendor distro lifecycle is the structural pressure forcing the decision."
     - q: "For a tier-1 telco with 1,000-5,000 nodes and certified VNFs, what's the realistic total modernization timeline?"
       options:
         - { text: "6-12 months end-to-end (rapid greenfield programme)", correct: false }
@@ -75,13 +77,12 @@ Three pressures dominate the 2026 conversation:
 
 ### 1. Vendor distro lifecycle
 
-Red Hat OSP (OpenStack Platform) is being transitioned by Red Hat
-toward OpenShift Virtualization, with OSP 17/18 as the final major
-release lines. Mirantis Cloud Platform transitioned its commercial
-focus years ago. Canonical Charmed OpenStack remains active but with
-narrower enterprise sales motion. Vendor support for OpenStack distros
-is consolidating; mid-2020s deployments face a structural transition
-in the next 24-36 months.
+Red Hat is steering OSP (OpenStack Platform) customers toward
+OpenShift-based offerings. Other distributions (Mirantis, Canonical)
+remain on the market, but the vendor landscape for OpenStack
+distributions is consolidating. Check the support dates in your own
+vendor contract: for many mid-2020s deployments they fall within the
+next few years.
 
 ### 2. Engineer scarcity
 
@@ -130,7 +131,7 @@ domain depth.
 
 ## Cohort-based migration phases
 
-### Phase 0 — Assessment (3-6 weeks)
+### Phase 0 — Assessment (14 or 28 days)
 
 Inventory the OpenStack deployment:
 
@@ -202,8 +203,8 @@ Cohorts of 50-200 instances migrating at a time. Per cohort:
 ### Phase 4 — Operational handover (2-4 months, parallel to Phase 3)
 
 Ænix engineers reduce direct involvement. Customer operations team
-absorbs Tier-1 / Tier-2 incidents. Ænix retainer continues for
-Tier-3 SLA escalation. Documentation handover. Knowledge transfer
+absorbs first- and second-line incidents. Ænix support (Plus or
+Enterprise tier for 24×7) continues for escalation. Documentation handover. Knowledge transfer
 sessions.
 
 ### Phase 5 — OpenStack decommission (2-6 months)
@@ -253,7 +254,7 @@ not on Cozystack. Three approaches:
   Kubernetes; the migration may align with vendor's own CNF
   modernization.
 
-In our tier-1 telco engagements, all three patterns appear,
+In practice all three patterns appear, often in the same operator,
 depending on which VNF vendor and which generation.
 
 ### 4. Operational culture shift
@@ -273,7 +274,7 @@ investment in the cultural transition is also required.
 Mid-size enterprise (200-500 nodes, simple multi-tenancy, mostly
 default networking):
 
-- Phase 0: 3-6 weeks
+- Phase 0: 14 or 28 days
 - Phase 1: 2-3 months
 - Phase 2: 1-2 months
 - Phase 3: 6-12 months
@@ -323,14 +324,16 @@ Poor fit:
 ## Engagement structure
 
 - **Discovery call** (30 min, free)
-- **Migration assessment** (3-6 weeks, fixed-price) — workload buckets,
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
+  (fixed price, 14 days focused or 28 days full) — workload buckets,
   phasing options, risk flags
 - **Pilot deployment** (2-3 months) — Cozystack stood up, 50-100
   workloads migrated, billing / operational workflows validated
 - **Cohort migration** (6-24 months) — workload migration in cohorts
 - **OpenStack decommission** (parallel to cohort migration) — staged
   as cohorts complete
-- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
+- **Support subscription** (ongoing) — Plus or Enterprise support tier
+  for 24×7 escalation (see [/pricing/](/pricing/))
 
 ## Where to dig deeper
 
@@ -342,5 +345,3 @@ Poor fit:
   alternative-focused commercial landing
 - **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
   common target product for hosting-provider OpenStack migrations
-- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
-  common target product for tier-1 telco OpenStack migrations

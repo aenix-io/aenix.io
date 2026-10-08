@@ -1,0 +1,13 @@
+{{/*
+  case-diagram — an architecture diagram in a case study.
+
+  Usage:
+    {{< case-diagram src="/img/case-studies/<slug>-en.webp" alt="What the diagram shows" >}}
+
+  The images are drawn by scripts/generate-case-diagrams.py. The alt text
+  carries the full description of the architecture for screen readers and
+  search engines.
+*/}}
+<figure class="case-diagram">
+  <img src="{{ .Get "src" | relURL }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async">
+</figure>

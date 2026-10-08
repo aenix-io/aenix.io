@@ -1,11 +1,12 @@
 ---
 title: "Hybrid cloud architecture patterns 2026 — what works, what fails, and how to choose"
+seo_title: "Hybrid cloud architecture patterns for 2026"
 description: "Five hybrid cloud patterns that work in production, what makes them work, the failure modes to avoid, and when hybrid is the wrong answer."
 date: "2026-05-13"
-cover_image: "/img/blog/covers/hybrid-cloud-architecture-patterns-2026.png"
+cover_image: "/img/blog/covers/hybrid-cloud-architecture-patterns-2026.jpg"
 author: "Aenix Team"
 type: "tutorial"
-topics: ["AI/ML", "Observability"]
+topics: ["AI and ML", "Observability"]
 language: "en"
 companion_landing: "/solutions/hybrid-cloud-platform/"
 quiz:
@@ -41,6 +42,7 @@ quiz:
         - { text: "AI workload economics and GPU availability", correct: false }
         - { text: "Sovereignty — DORA, sectoral rules, data residency", correct: true }
       explanation: "Pattern 2 puts regulated workloads (banking, healthcare, public-sector) on private cloud and auxiliary workloads (analytics, internal tooling, dev/test) in public cloud. The driver is sovereignty — DORA, sectoral rules, data-residency mandates — not pure cost."
+hreflang_de: /de/blog/2026/05/hybrid-cloud-architektur-muster-2026/
 ---
 
 

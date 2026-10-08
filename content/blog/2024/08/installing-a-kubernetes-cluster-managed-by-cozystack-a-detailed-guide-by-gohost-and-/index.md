@@ -1,12 +1,13 @@
 ---
-title: "Installing a Kubernetes Cluster Managed by Cozystack: A Detailed Guide by Gohost and Ænix"
-description: "This article was written by Vladislav Karabasov from Kazakhstani hosting company gohost, therefore the narrative will be conducted in the…"
+title: "Installing a Kubernetes Cluster Managed by Cozystack: A Detailed Guide by GoHost and Ænix"
+seo_title: "Installing a Cozystack cluster: a GoHost.kz guide"
+description: "A step-by-step guide from GoHost.kz: cluster topology, booting Talos Linux, talos-bootstrap, installing Cozystack and configuring the disk subsystem."
 date: "2024-08-16"
 author: "Timur Tukaev"
 type: "tutorial"
 topics: ["Proxmox", "Kubernetes", "Cozystack", "Talos", "Hosting", "etcd"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*ZLyJcdvbsPSJnErGKwlJ0g.png"
+cover_image: "/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/cover.jpg"
 source_url: "https://medium.com/@tym83/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-%C3%A6nix-2b2d2e0ddbdb"
 quiz:
   title: "Test yourself: Cozystack + Talos installation"
@@ -48,20 +49,18 @@ quiz:
       explanation: "The author calls out that Cozystack runs tenant Kubernetes control planes inside the host Kubernetes — no virtualization for the control plane — while workers run as VMs. That gives optimal resource use without sacrificing tenant isolation."
 ---
 
----
 
-### **Installing a Kubernetes Cluster Managed by Cozystack: A Detailed Guide by Gohost and Ænix**
 
 > **Historical guide — written against Cozystack v0.7.0 (August 2024). The installation commands below no longer apply.**
 > Cozystack v1.0 replaced the `cozystack-installer.yaml` manifest and the `cozystack` ConfigMap with a Helm-installed operator plus a `Package` custom resource, and replaced bundles (`paas-full`, `distro-full`) with variants (`isp-full`, `isp-full-generic`, `isp-hosted`, `default`). The current procedure is in the [Cozystack getting-started guide](https://cozystack.io/docs/v1.6/getting-started/). The hardware, network and Talos topology design below is still representative.
 
 This article was written by Vladislav Karabasov from Kazakhstani hosting company [gohost](https://gohost.kz), therefore the narrative will be conducted in the first person.
 
-![image](https://cdn-images-1.medium.com/max/800/1*ZLyJcdvbsPSJnErGKwlJ0g.png)
+![Cover: installing a Cozystack-managed Kubernetes cluster, a guide by GoHost.kz and Ænix](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/cover.jpg)
 
 At the time of my transition to gohost.kz, the company had already been operating in the Kazakhstan market for 15 years, providing clients with a standard set of services: VPS/VDC, IaaS, virtual hosting, etc. However, clients developed new needs, so I was tasked with developing the direction of Kubernetes as a Service.
 
-That’s how my “2.0 acquaintance” with *nix systems began (this time with [Talos Linux](https://www.talos.dev)), as well as with the world of containers (through Kubernetes). While working on the tasks of launching and developing this new direction, I came across the Open Source platform [Cozystack](http://cozystack.io) and got acquainted with its developers, Andrey Kvapil and Georg Gaal. We talked, and I decided to deploy a Kubernetes cluster managed by Cozystack, which is based on Talos Linux.
+That’s how my “2.0 acquaintance” with *nix systems began (this time with [Talos Linux](https://www.talos.dev)), as well as with the world of containers (through Kubernetes). While working on the tasks of launching and developing this new direction, I came across the Open Source platform [Cozystack](https://cozystack.io/) and got acquainted with its developers, Andrey Kvapil and Georg Gaal. We talked, and I decided to deploy a Kubernetes cluster managed by Cozystack, which is based on Talos Linux.
 
 Here’s what interested me in Cozystack:
 
@@ -73,7 +72,7 @@ As it turned out, gohost has been participating in this Open Source project from
 
 I was motivated to write this article for several reasons: I wanted to systematize the knowledge I had acquired, share my experience of installing Cozystack on Talos Linux with the community, and talk about my experiences working with various tools in the Kubernetes ecosystem. Moreover, there are undoubtedly readers who will find this material useful for their work — in general, this is my humble attempt to give something back to the community. So, let’s begin.
 
-### Cluster Topology
+## Cluster Topology
 
 Although Cozystack can be deployed on bare metal in just a few minutes, the platform can also be launched in any virtual environment. For instance, I started by deploying clusters in [Proxmox](https://en.wikipedia.org/wiki/Proxmox_Virtual_Environment) and [KVM](https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine).
 
@@ -87,17 +86,17 @@ You can also use network-attached storage (NAS), for example, with a [DRBD](http
 
 Here is a diagram of the equipment setup for deploying Cozystack in my case (Fig. 1). I will leave the switching configuration out of the scope here.
 
-![image](https://cdn-images-1.medium.com/max/800/0*Of3PAg2vcAX_FEzu)
+![Fig. 1: cluster topology with port aggregation](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/02.png)
 
 Fig. 1. Topology with Port Aggregation
 
-![image](https://cdn-images-1.medium.com/max/800/0*kLbJNezJWLnPcGJk)
+![Fig. 2: cluster topology without port aggregation](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/03.png)
 
 Fig. 2. Topology without Port Aggregation
 
 When organizing the cluster topology, it is necessary to ensure access to the Internet (SRV1, SRV2, SRV3). In my case, access is managed through a management-host. SRV1, SRV2, and SRV3 use the management-host as their default gateway. Additionally, routing is enabled on the management-host with appropriate iptables rules set up. However, you can use another gateway if preferred — the management-host is needed only for the initial cluster setup.
 
-### Management Host Preparation
+## Management Host Preparation
 
 First, let’s configure the management-host, which will be used to deploy the Kubernetes cluster managed by Cozystack. Assuming you already know how to set up a host with an operating system, I will skip the details — in my case, I used Ubuntu 22.04.
 
@@ -295,13 +294,13 @@ As a result of the script’s execution, the talos-bootstrap script for cluster 
 
 In the end, the directory contents should look like this:
 
-![image](https://cdn-images-1.medium.com/max/800/0*15udxlRlOeZYxfF7)
+![Fig. 3: contents of the /opt/cozystack directory](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/04.png)
 
 Fig. 3. Directory /opt/cozystack
 
 The management host is ready for further work.
 
-### Booting from the Talos Linux System Image
+## Booting from the Talos Linux System Image
 
 The operating system that Cozystack is based on is Talos Linux. There are several ways to install Cozystack:
 
@@ -311,39 +310,39 @@ The operating system that Cozystack is based on is Talos Linux. There are severa
 
 We will use the [ISO file](https://github.com/aenix-io/cozystack/releases) for installation. The Cozystack developers generate and test ready-to-use platform images with all necessary software. All software also undergoes compatibility testing with the platform and the Talos Linux distribution.
 
-### Initial System Configuration
+## Initial System Configuration
 
 After booting from the image, the screen looks like this. Now, we need to configure the network settings — to do this, press F3 (if using PXE installation, addressing on the nodes is configured automatically).
 
-![image](https://cdn-images-1.medium.com/max/800/0*qCyRC6ImUz0sgsBD)
+![Fig. 4: Talos Linux console screen after booting from the image](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/05.jpg)
 
 Fig. 4. Talos Linux screen after loading
 
 We set the network addresses — you can specify multiple DNS and Time Servers (entered separated by spaces or commas). Click “Save.”
 
-![image](https://cdn-images-1.medium.com/max/800/0*vUUk_WTbP_TuNC96)
+![Fig. 5: Talos Linux network setup screen](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/06.png)
 
 Fig. 5. Talos Linux setup screen
 
 Similarly, configure the remaining nodes. I used my own addressing, so some of the IP addresses in the screenshots will be blurred.
 
-### Starting the Installation with talos-bootstrap
+## Starting the Installation with talos-bootstrap
 
 Run the file `./talos-bootstrap` without any parameters to get the help information.
 
-![image](https://cdn-images-1.medium.com/max/800/0*PZMYzk0CUpKTqW7q)
+![Fig. 6: talos-bootstrap help output on first start](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/07.png)
 
 Fig. 6. talos-bootstrap (first start)
 
 After that, run `./talos-bootstrap install`, and in the first dialog window, it will suggest the default cluster name — it matches the directory where the script is located (by default, the name will be `cozystack` if you haven’t specified your own name).
 
-![image](https://cdn-images-1.medium.com/max/800/0*b9-jBcYmZdvkMa4_)
+![Fig. 7: talos-bootstrap dialog for the cluster name](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/08.png)
 
 Fig. 7. talos-bootstrap (cluster naming)
 
 Set the network in which the nodes will be searched.
 
-![image](https://cdn-images-1.medium.com/max/800/0*hGR7H5OwHk-dRk7c)
+![Fig. 8: talos-bootstrap searching for nodes in the given network](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/09.png)
 
 Fig. 8. talos-bootstrap (searching for nodes in the specified network)
 
@@ -351,91 +350,91 @@ The script will automatically find the nodes and display them — as we can 
 
 You can also search for nodes manually using the command: `nmap -Pn -n -p 50000 your_ip_network -vv | awk ‘/Discovered open port/ {print $NF}’`.(This outputs a list of IPs.)
 
-![image](https://cdn-images-1.medium.com/max/800/0*xIsMBjMhmhxqBpMF)
+![Fig. 9: talos-bootstrap node selection for installation](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/10.png)
 
 Fig. 9. talos-bootstrap (selecting a node for installation)
 
 At this stage, select the “ControlPlane” option and click OK (all 3 nodes in the cluster are set up as Control Plane).
 
-![image](https://cdn-images-1.medium.com/max/800/0*W2wNXAL42usxPldQ)
+![Fig. 10: talos-bootstrap node role selection (ControlPlane)](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/11.png)
 
 Fig. 10. talos-bootstrap (select the role of the node)
 
 Next, the script takes all the settings from the nodes (we configured them when we set the network settings in Talos Linux, Fig. 5) and outputs them to the console. We only need to confirm that everything is correct.
 
-![image](https://cdn-images-1.medium.com/max/800/0*LCo8ItBTAINeUYpG)
+![Fig. 11: talos-bootstrap host name dialog](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/12.png)
 
 Fig. 11. talos-bootstrap (specify the host name)
 
 Selecting the disk to install the system on — for me, it’s `sda`.
 
-![image](https://cdn-images-1.medium.com/max/800/0*KAdAkS7j8gsD8nSP)
+![Fig. 12: talos-bootstrap installation disk selection](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/13.png)
 
 Fig. 12. talos-bootstrap (selecting the disk to installing)
 
 After that, our interface with the pre-configured IP address appears (in my case, it’s `eno4`). Agree and click “OK”.
 
-![image](https://cdn-images-1.medium.com/max/800/0*1RzB2i39Sw0EhYxE)
+![Fig. 13: talos-bootstrap network interface selection](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/14.png)
 
 Fig. 13. talos-bootstrap (selecting network interface)
 
 Select our gateway, then agree.
 
-![image](https://cdn-images-1.medium.com/max/800/0*F52GB8Qg15ue69ge)
+![Fig. 14: talos-bootstrap gateway selection](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/15.png)
 
 Fig. 14. talos-bootstrap (the gateway will be used for Internet access)
 
 The window for entering DNS server addresses appears; you can add them separated by spaces. After that, click “OK”.
 
-![image](https://cdn-images-1.medium.com/max/800/0*s_gdfDIfZ0YjX7M0)
+![Fig. 15: talos-bootstrap DNS servers dialog](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/16.png)
 
 Fig. 15. talos-bootstrap (specify the DNS servers or agree with the suggested ones)
 
 In the next window, you need to enter the floating IP. This mechanism in Talos is very similar to how VRRP works, but instead of using a low-level network protocol for state checking, it uses an etcd cluster deployed on the Control Plane nodes. The floating IP is used to ensure high availability of the cluster in the network: it “floats” between nodes, allowing the IP address to move without changing the configuration. Enter any free IP from our network’s address space here (you can use the same one as in the topology diagram, for example, `192.168.100.10`) — this will be the cluster’s IP.
 
-![image](https://cdn-images-1.medium.com/max/800/0*nLmkmQC9ArjbkAyf)
+![Fig. 16: talos-bootstrap floating IP dialog](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/17.png)
 
 Fig. 16. talos-bootstrap (enter the floating IP)
 
 After that, a window with our IP should appear. Agree again.
 
-![image](https://cdn-images-1.medium.com/max/800/0*UVQEykPP6HczIVE7)
+![Fig. 17: talos-bootstrap API address for kubelet](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/18.png)
 
 Fig. 17. talos-bootstrap (API for kubelet)
 
 Next, the script will display the settings that are applied to the master node.
 
-![image](https://cdn-images-1.medium.com/max/800/0*p-HiQdufxs4mAYv9)
+![Fig. 18: talos-bootstrap final configuration before installation](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/19.png)
 
 Fig. 18. talos-bootstrap (the final configuration for starting the installation)
 
 Click “OK” and wait for the installation to complete. During the installation process, similar lines will appear on our node:
 
-![image](https://cdn-images-1.medium.com/max/800/0*DjigT1rglLIJAjg9)
+![Fig. 19: Talos Linux console during installation](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/20.png)
 
 Fig. 19. talos-bootstrap (Talos Linux screen)
 
 On the management host in another console, you can observe an increase in traffic consumption (using the nload utility) — this means that the image is being downloaded from the network.
 
-![image](https://cdn-images-1.medium.com/max/800/0*c-uWtTELv0a7gInS)
+![Fig. 20: nload network monitor showing the image download](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/21.png)
 
 Fig. 20. nload (network load monitor)
 
 After the installation, the node will be rebooted, and the progress bar will first show 20%, then 50%, then 70%. It is at 70% that the node will reboot. Wait again — the speed of the internet connection will determine the wait time: the faster the internet, the quicker the download.
 
-![image](https://cdn-images-1.medium.com/max/800/0*qtI6jSHwtt4FX5yA)
+![Fig. 21: talos-bootstrap installation progress](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/22.png)
 
 Fig. 21. talos-bootstrap (installation process)
 
 After installing the first node of the cluster, we are prompted to install etcd. Click “Yes”.
 
-![image](https://cdn-images-1.medium.com/max/800/0*HLBqBa_tVxDysQDW)
+![Fig. 22: talos-bootstrap prompt to install etcd](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/23.png)
 
 Fig. 22. talos-bootstrap (etcd installation)
 
 The remaining nodes are installed in a similar manner, except for the second-to-last step. So, let’s proceed with installing the remaining nodes.
 
-![image](https://cdn-images-1.medium.com/max/800/0*WLBCJtf2BN9L2mmE)
+![Fig. 23: talos-bootstrap installation completed](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/24.png)
 
 Fig. 23. talos-bootstrap (installation process is done)
 
@@ -443,7 +442,7 @@ Now we have the first node of our future cluster.
 
 After the installation, new files will appear in the `/opt/your_name` directory — the `ls` command should produce the following output:
 
-![image](https://cdn-images-1.medium.com/max/800/0*bZs2kdKXWVItTSGu)
+![Fig. 24: new files in the cluster directory after installation](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/25.png)
 
 Fig. 24. New files in the directory
 
@@ -466,13 +465,13 @@ kubectl get node
 
 And you will get the following output:
 
-![image](https://cdn-images-1.medium.com/max/800/0*_O0J1xhi4m7d57cC)
+![Fig. 25: kubectl output listing the cluster nodes](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/26.png)
 
 Fig. 25. Nodes in our cluster
 
 After installing the remaining nodes, we have completed the initial setup of the cluster. At this point, it contains only a few system components, and the nodes are in a `NotReady` state because we disabled the installation of CNI and kube-proxy in the Talos configuration. These components will be provided and managed by Cozystack.
 
-### Installing Cozystack
+## Installing Cozystack
 
 > **Superseded from Cozystack v1.0.** The current step is `helm upgrade --install cozystack oci://ghcr.io/cozystack/cozystack/cozy-installer --version X.Y.Z --namespace cozy-system --create-namespace`, followed by a `cozystack.io/v1alpha1` `Package` resource named `cozystack.cozystack-platform` carrying `spec.variant` plus the `publishing` and `networking` values. See [Install Cozystack](https://cozystack.io/docs/v1.6/getting-started/install-cozystack/). The v0.7.0 flow below is kept for the historical record.
 
@@ -512,13 +511,13 @@ whatch -n1 kubectl get hr -A
 
 And now, wait until the state `READY` becomes `True` in all `NAMESPACE`s.
 
-![image](https://cdn-images-1.medium.com/max/800/0*Qzj07Bopc5Uhdzyy)
+![Fig. 26: Cozystack components being installed in the cluster](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/27.jpg)
 
 Fig. 26. The installation of components in the cluster process
 
 When this happens, we can proceed.
 
-### Disk subsystem configuration
+## Disk subsystem configuration
 
 Execute the following commands:
 
@@ -575,7 +574,7 @@ linstor sp l
 
 Let’s see what we have:
 
-![image](https://cdn-images-1.medium.com/max/800/0*7n7BM4CKJEe2EZcQ)
+![Fig. 27: list of LINSTOR storage pools](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/28.png)
 
 Fig. 27. List of storage pools
 
@@ -629,11 +628,11 @@ kubectl get storageclasses
 
 Let’s see what we have:
 
-![image](https://cdn-images-1.medium.com/max/800/0*zXXtpTTBM5LJc7rj)
+![Fig. 28: list of storage classes](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/29.png)
 
 Fig. 28. List of storage classes
 
-### Network Configuration
+## Network Configuration
 
 Set a pool for allocating IP addresses from the subnet that we specified earlier (see Fig. 1). Note: If you have a different address space (e.g., `192.168.100.200/192.168.100.250`), it will be necessary to make changes to the configuration because the settings here are applied immediately without creating a file. However, you can save the configuration to a file and apply the manifest using `kubectl apply -f path_to_file`.
 
@@ -662,7 +661,7 @@ spec:
 EOT
 ```
 
-### Access Configuration for the Cluster Web UI
+## Access Configuration for the Cluster Web UI
 
 Retrieve the token:
 
@@ -676,39 +675,39 @@ Note: By running this command on the management host, we will get a token that m
 kubectl port-forward -n cozy-dashboard svc/dashboard 8000:80
 ```
 
-Now, go to the link [http://localhost:8000](http://localhost:8000) and enter the previously generated token.
+Now, go to the link `http://localhost:8000` and enter the previously generated token.
 
-![image](https://cdn-images-1.medium.com/max/800/0*lNOxgmZiTZfZIikx)
+![Fig. 29: Cozystack dashboard login window](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/30.png)
 
 Fig. 29. Authorization window
 
 Click on “tenant-root”:
 
-![image](https://cdn-images-1.medium.com/max/800/0*l_GRZqleA5P0J0KV)
+![Fig. 30: selecting tenant-root in the Cozystack dashboard](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/31.png)
 
 Fig. 30. Choose tenant-root
 
 Click on “Upgrade” to redeploy the application with the parameters we need:
 
-![image](https://cdn-images-1.medium.com/max/800/0*1Tya45nXua9OxU0j)
+![Fig. 31: Upgrade button for tenant-root](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/32.png)
 
 Fig. 31. Proceed to update tenant-root
 
 If the page doesn’t refresh immediately, press F5.
 
-![image](https://cdn-images-1.medium.com/max/800/0*LjJC7INRyWk52iog)
+![Fig. 32: tenant-root settings form](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/33.png)
 
 Fig. 32. Window for making changes to tenant-root
 
 Enter your values; we will type `kuber.gohost.kz` in the host field, move the sliders from `false` to `true`, and click “DEPLOY”.
 
-![image](https://cdn-images-1.medium.com/max/800/0*sFJjdCGk1p8rDAEi)
+![Fig. 33: enabling components and setting the host for tenant-root](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/34.png)
 
 Fig. 33. Add components and update tenant-root
 
 You will be redirected to a page where you can see the configured values:
 
-![image](https://cdn-images-1.medium.com/max/800/0*RHRR6Op5mOQbGvSl)
+![Fig. 34: tenant-root after the update](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/35.png)
 
 Fig. 34. tenant-root is updated
 
@@ -720,17 +719,17 @@ kubectl get pvc -n tenant-root
 
 If your output is similar to mine, then everything is fine:
 
-![image](https://cdn-images-1.medium.com/max/800/0*MO1oRfARTWrAPAcb)
+![Fig. 35: list of persistent volume claims](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/36.png)
 
 Fig. 35. List of PVC’s
 
 Returning to the web interface on the main page, you should see something like this:
 
-![image](https://cdn-images-1.medium.com/max/800/0*ffmR8cmONnVg3IQj)
+![Fig. 36: Cozystack dashboard main page](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/37.png)
 
 Fig. 36. Cozystack main page
 
-### Checking the pods
+## Checking the pods
 
 To check the pods, execute the standard command:
 
@@ -740,7 +739,7 @@ kubectl get pod -n tenant-root
 
 The output should look something like this:
 
-![image](https://cdn-images-1.medium.com/max/800/0*LB60EUghQG5pK7aO)
+![Fig. 37: pods in the tenant-root namespace](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/38.png)
 
 Fig. 37. List all pods in the `tenant-root` namespace
 
@@ -757,19 +756,19 @@ NAME                      TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S
 root-ingress-controller   LoadBalancer   10.96.58.227   192.168.100.200   80:30149/TCP,443:32152/TCP   7d8h
 ```
 
-### Monitoring
+## Monitoring
 
 After installing the Cozystack platform, we have pre-configured monitoring based on Grafana. We set up monitoring during the tenant-root upgrade (Figures 27–31). Let’s verify the monitoring settings.
 
 To begin, select the “monitoring” tile on the main page:
 
-![image](https://cdn-images-1.medium.com/max/800/0*fdWX3D9TZXL4kbFt)
+![Fig. 38: monitoring tile on the Cozystack dashboard main page](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/39.png)
 
 Fig. 38. Access to monitoring
 
 Click the “Upgrade” button. In the host field, verify your values (for example, `grafana.kuber.gohost.kz`). You can obtain the credentials by viewing or copying the `password` and `user`.
 
-![image](https://cdn-images-1.medium.com/max/800/0*iU7PkiLDgsdAKwXt)
+![Fig. 38: retrieving the Grafana credentials](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/40.png)
 
 Fig. 38. Retrieve the authorization data
 
@@ -781,7 +780,7 @@ To access the web interface, you will need to update the `/etc/hosts` file on th
 
 On this host, open a web browser and enter `grafana.kuber.gohost.kz`. This will open the Grafana interface.
 
-![image](https://cdn-images-1.medium.com/max/800/0*nauGsGzvebD5_COZ)
+![Fig. 39: Grafana login window](/img/blog/medium/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/41.png)
 
 Fig. 39. Monitoring system login window
 
@@ -794,9 +793,9 @@ As a result of the steps we’ve taken, we have achieved the following:
 
 In the next article of this series, we will explore Kubernetes in Kubernetes, understand how Kubernetes as a Service functions in Cozystack, and examine the application catalog, where applications can be deployed with just a few clicks. We will assign real IP addresses to the cluster and set it up for public network access.
 
-And that’s it — we’ve successfully installed the Cozystack cluster! Stay tuned for more… 😊
+And that’s it — we’ve successfully installed the Cozystack cluster! Stay tuned for more…
 
-### Additional links
+## Additional links
 
 - [Cozystack on Talos Linux, Andrei Kvapil, Talos Linux Install Fest’24](https://www.youtube.com/watch?v=s79VqXu-eG4)
 - [DIY: Create Your Own Cloud with Kubernetes (Part 1)](https://blog.aenix.io/diy-create-your-own-cloud-with-kubernetes-part-1-7a692c37f0a8)

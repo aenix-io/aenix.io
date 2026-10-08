@@ -1,6 +1,6 @@
 ---
-title: "Your download is ready — Cloud Repatriation TCO Worksheet"
-description: "Download your copy of the Cloud Repatriation TCO Worksheet from Aenix."
+title: "Download ready: Cloud Repatriation TCO Worksheet"
+description: "Your copy of the Cloud Repatriation TCO Worksheet (PDF and editable CSV) from Ænix is ready to download."
 robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
@@ -25,4 +25,4 @@ hreflang_de: /de/ressourcen/cloud-repatriation-tco-worksheet/thank-you/
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0.*
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0 — and co-maintains it with maintainers from other companies.*

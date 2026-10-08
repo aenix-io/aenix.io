@@ -1,5 +1,6 @@
 ---
 title: "Virtuozzo-Migration — drei Produkte, drei verschiedene Ausstiege"
+seo_title: "Virtuozzo-Migration: drei Produkte, drei Ausstiege"
 description: "Weg von Virtuozzo: Application Management (ex-Jelastic) heißt Re-Platforming, Infrastructure ist echtes OpenStack, die Container-Linie endet ohne Nachfolger."
 date: 2026-09-03
 lastmod: 2026-09-03
@@ -13,11 +14,12 @@ related_pages:
   - /tco-calculator/vs-virtuozzo/
   - /de/produkte/public-cloud-platform/
   - /de/produkte/private-cloud-platform/
-  - /de/produkte/cozystack
-  - /de/dienstleistungen/platform-readiness-assessment
+  - /de/produkte/cozystack/
+  - /de/dienstleistungen/platform-readiness-assessment/
+  - /de/alternativen/openstack-alternative/
   - /de/migration/openstack/
 direct_answer: |
-  **Der Weg weg von Virtuozzo beginnt damit, das richtige Produkt zu benennen, denn die drei steigen völlig unterschiedlich aus. Virtuozzo Server, früher Hybrid Server, ist der aus OpenVZ hervorgegangene Host mit System-Containern und KVM-Gästen; die Wartung endete im Juli 2024, und Virtuozzo Server 9 ist ein anderes Produkt, das System-Container gar nicht mehr implementiert — die Container-Linie hat also keinen Nachfolger. Virtuozzo Infrastructure, früher Hybrid Infrastructure, ist das IaaS und darunter eine echte OpenStack-Installation; das ist der einzige Pfad, auf dem Standardwerkzeuge greifen. Virtuozzo Application Management, früher Application Platform und ursprünglich Jelastic, ist eine PaaS, deren Umgebungs-Export eine Topologie-JSON ist, die sich nur in eine andere Virtuozzo-Installation importieren lässt; ein Lift-and-Shift gibt es nicht, der ehrliche Weg ist ein Re-Platforming auf Kubernetes. Aenix führt alle drei auf Cozystack, ein Apache-2.0-lizenziertes CNCF-Projekt.**
+  **Der Weg weg von Virtuozzo beginnt damit, das richtige Produkt zu benennen, denn die drei steigen völlig unterschiedlich aus. Virtuozzo Server, früher Hybrid Server, ist der aus OpenVZ hervorgegangene Host mit System-Containern und KVM-Gästen; die Wartung endete im Juli 2024, und Virtuozzo Server 9 ist ein anderes Produkt, das System-Container gar nicht mehr implementiert — die Container-Linie hat also keinen Nachfolger. Virtuozzo Infrastructure, früher Hybrid Infrastructure, ist das IaaS und darunter eine echte OpenStack-Installation; das ist der einzige Pfad, auf dem Standardwerkzeuge greifen. Virtuozzo Application Management, früher Application Platform und ursprünglich Jelastic, ist eine PaaS, deren Umgebungs-Export eine Topologie-JSON ist, die sich nur in eine andere Virtuozzo-Installation importieren lässt; ein Lift-and-Shift gibt es nicht, der ehrliche Weg ist ein Re-Platforming auf Kubernetes. Ænix migriert alle drei auf Cozystack, ein CNCF-Sandbox-Projekt unter Apache 2.0.**
 quick_facts:
   - label: "2026 umbenannt"
     value: "Aus Hybrid Infrastructure wurde Virtuozzo Infrastructure, aus Application Platform wurde Virtuozzo Application Management, aus Hybrid Server wurde Virtuozzo Server. Unter beiden Namen suchen."
@@ -32,7 +34,7 @@ quick_facts:
   - label: "Forklift-Abdeckung"
     value: "Es gibt keinen Virtuozzo-Quellprovider. Auf Virtuozzo Infrastructure ist der OpenStack-Provider der Kandidat und muss getestet werden; der garantierte Rückfallweg ist qcow2-Export nach KubeVirt CDI."
   - label: "Kostenreferenz"
-    value: "Virtuozzo-Infrastructure-Lizenzierung im Fünf-Jahres-TCO-Vergleich mit 100 $/Core/Jahr Liste und rund 75 $/Core/Jahr typisch verhandelt."
+    value: "Virtuozzo-Infrastructure-Lizenzierung im Fünf-Jahres-TCO-Vergleich mit 100 USD pro Core und Jahr laut Liste und rund 75 USD als typischem Verhandlungsergebnis."
 quick_facts_source: "[Virtuozzo Product Lifecycle Policy](https://www.virtuozzo.com/server-docs/product-lifecycle-policy/), [Virtuozzo Infrastructure Dokumentation](https://www.virtuozzo.com/infrastructure-docs/), [Virtuozzo Application Management Dokumentation](https://www.virtuozzo.com/application-management-docs/)"
 faq:
   - q: "Welches Virtuozzo-Produkt migrieren wir eigentlich?"
@@ -48,7 +50,7 @@ faq:
   - q: "Was passiert mit unseren OpenVZ-System-Containern?"
     a: "Es sind System-Container mit vollständigem Init-System, keine OCI-Images, und einen Konverter gibt es nicht. Zwei Wege sind legitim. Jeden als KubeVirt-VM zu kapseln erhält den Mehrprozess-Gast exakt und ist begrenzte, vorhersagbare Arbeit, bezahlt in Dichte. Den Workload als Container-Image neu zu bauen ist dichter und im Betrieb günstiger, aber Aufwand pro Workload und braucht jemanden, der den Workload kennt. Virtuozzos eigene Dokumentation räumt den Bruch ein: Anwendungen könnten beim Wechsel auf Application Container Probleme bekommen, weil Zustandslosigkeit und Einzelprozess-Erwartungen fehlen, und das sei besonders bei Orchestrierern wie Kubernetes relevant. Der Datenpfad ist in beiden Fällen derselbe: ploop-Image mounten und das Dateisystem herauskopieren, denn prl_disk_tool kann keine Formatkonvertierung."
   - q: "Unterstützt Forklift Virtuozzo?"
-    a: "Nein. Die Quellprovider von Forklift sind VMware vSphere, oVirt/RHV, OpenStack, von vSphere erzeugte OVA-Dateien und entfernte KubeVirt-Cluster, dazu Hyper-V und AWS EC2 als Technology Preview. Einen Virtuozzo-Provider gibt es nicht, und der OVA-Weg ist doppelt versperrt — Forklift akzeptiert nur von vSphere erzeugte OVAs, und Virtuozzo hat keinen OVA-Export. Auf Virtuozzo Infrastructure ist der OpenStack-Provider der Hebel, weil die API tatsächlich OpenStack ist. Für Virtuozzo Server und Application Management baut Ænix Engineering den Export- und Konvertierungspfad im Projekt."
+    a: "Nein. Die Quellprovider von Forklift sind VMware vSphere, oVirt/RHV, OpenStack, von vSphere erzeugte OVA-Dateien und entfernte KubeVirt-Cluster, dazu Hyper-V und AWS EC2 als Technology Preview. Einen Virtuozzo-Provider gibt es nicht, und der OVA-Weg ist doppelt versperrt — Forklift akzeptiert nur von vSphere erzeugte OVAs, und Virtuozzo hat keinen OVA-Export. Auf Virtuozzo Infrastructure ist der OpenStack-Provider der Hebel, weil die API tatsächlich OpenStack ist. Für Virtuozzo Server und Application Management baut das Engineering-Team von Ænix den Export- und Konvertierungspfad im Projekt."
 service:
   type: "Virtuozzo Migration"
   areaServed: ["EU", "DACH", "Zentralasien"]
@@ -57,10 +59,10 @@ service:
 
 **„Weg von Virtuozzo“ sind drei verschiedene Projekte unter einem Namen. Klären Sie das Produkt, bevor irgendjemand schätzt — und beachten Sie, dass Virtuozzo 2026 alle drei umbenannt hat, Ihre eigene Dokumentation und jedes Suchergebnis also alte und neue Namen mischen.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn Sie Virtuozzo-Kapazität an Kunden weiterverkaufen — der Mehrheitsfall, denn das Produkt wird überwiegend über regionale Hosting-Anbieter vertrieben, die es unter eigener Marke anbieten; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn dort interne Workloads laufen. Rechnen Sie zuerst mit dem **[Fünf-Jahres-TCO-Vergleich Virtuozzo vs Cozystack](/tco-calculator/vs-virtuozzo/)**.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn Sie Virtuozzo-Kapazität an Kunden weiterverkaufen — der Mehrheitsfall, denn das Produkt wird überwiegend über regionale Hosting-Anbieter vertrieben, die es unter eigener Marke anbieten; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn dort interne Workloads laufen. Rechnen Sie zuerst mit dem **[Fünf-Jahres-TCO-Vergleich Virtuozzo vs. Cozystack](/tco-calculator/vs-virtuozzo/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 
@@ -103,7 +105,7 @@ Der Beleg ist betrieblich, nicht werblich: Administratoren konfigurieren `nova.c
 
 Daraus folgt:
 
-- **Compute und Images.** Beide Seiten sind KVM, Gast-Disks importieren also ohne Neuaufbau nach KubeVirt. [Konveyor Forklift](https://github.com/kubev2v/forklift), in der Ænix-Plattform enthalten, hat einen OpenStack-Quellprovider — und der ist der Kandidat, **im Assessment getestet, nicht angenommen**. Zwei Gründe zu testen statt zu versprechen: Forklift dokumentiert OpenStack ab Version 16.1 in der Zählung der Red Hat OpenStack Platform, und Virtuozzo veröffentlicht nicht, welchem Upstream-Release es folgt; außerdem arbeitet der OpenStack-Pfad von Forklift über einen Snapshot des angehängten Images, wofür sich Glance und Cinder auf dem Virtuozzo-Storage-Backend konventionell verhalten müssen. Zudem gilt: **von OpenStack aus führt Forklift ausschließlich Kaltmigrationen durch** — jede Instanz braucht ein echtes Abschaltfenster.
+- **Compute und Images.** Beide Seiten sind KVM, Gast-Disks importieren also ohne Neuaufbau nach KubeVirt. [Konveyor Forklift](https://github.com/kubev2v/forklift), in den Ænix-Plattformen enthalten, hat einen OpenStack-Quellprovider — und der ist der Kandidat, **im Assessment getestet, nicht angenommen**. Zwei Gründe zu testen statt zu versprechen: Forklift dokumentiert OpenStack ab Version 16.1 in der Zählung der Red Hat OpenStack Platform, und Virtuozzo veröffentlicht nicht, welchem Upstream-Release es folgt; außerdem arbeitet der OpenStack-Pfad von Forklift über einen Snapshot des angehängten Images, wofür sich Glance und Cinder auf dem Virtuozzo-Storage-Backend konventionell verhalten müssen. Zudem gilt: **von OpenStack aus führt Forklift ausschließlich Kaltmigrationen durch** — jede Instanz braucht ein echtes Abschaltfenster.
 - **Der Rückfallweg, der immer funktioniert.** Virtuozzo dokumentiert einen Volume-zu-Image-Export: Volume snapshotten, als Image registrieren, dann `vinfra service compute image save --file <name>.qcow2 <id>`. Das Ergebnis ist eine gewöhnliche qcow2-Datei, die KubeVirt CDI als DataVolume aus HTTP, S3, einer Registry oder einem PVC importiert. Orchestrierungsaufwendiger als ein Forklift-Plan, dafür ohne Unbekannte. Ein belastbarer Programmplan führt beide Wege und entscheidet nach dem Piloten.
 - **Storage.** Virtuozzo Storage kommt nicht mit. Ersetzt wird es durch LINSTOR/DRBD oder Ceph, wenn Sie einen verteilten Cluster bevorzugen. Das ist ein Datenumzug und bestimmt die Programmgröße stärker als der Compute-Teil.
 - **Netzwerk und Mandanten.** Derselbe Neuentwurf wie bei jedem OpenStack-Ausstieg: Mandantennetze, Floating-Adressen und Security Groups werden zu Cilium-Policy, LB-IPAM und BGP- oder L2-Announcements; das Projektmodell wird zum Tenant-CRD. Der **[OpenStack-Migrations-Hub](/de/migration/openstack/)** beschreibt das Dienst für Dienst und gilt hier unverändert.
@@ -169,10 +171,10 @@ Die Zuordnung nach Kubernetes:
 
 ## Werkzeuglage, klar gesagt
 
-[Konveyor Forklift](https://github.com/kubev2v/forklift) ist Bestandteil der Ænix-Plattform und übernimmt den VM-Transfer bei den Quellen, die es unterstützt: VMware vSphere, oVirt/RHV, OpenStack, von vSphere erzeugte OVA-Dateien und entfernte KubeVirt-Cluster, dazu Hyper-V und AWS EC2 als Technology Preview. **Einen Virtuozzo-Quellprovider gibt es nicht**, und der OVA-Weg ist doppelt versperrt — Forklift akzeptiert nur von vSphere erzeugte OVAs, und Virtuozzo hat keinen OVA-Export.
+[Konveyor Forklift](https://github.com/kubev2v/forklift) ist Bestandteil der Ænix-Plattformen und übernimmt den VM-Transfer bei den Quellen, die es unterstützt: VMware vSphere, oVirt/RHV, OpenStack, von vSphere erzeugte OVA-Dateien und entfernte KubeVirt-Cluster, dazu Hyper-V und AWS EC2 als Technology Preview. **Einen Virtuozzo-Quellprovider gibt es nicht**, und der OVA-Weg ist doppelt versperrt — Forklift akzeptiert nur von vSphere erzeugte OVAs, und Virtuozzo hat keinen OVA-Export.
 
 - Auf **Virtuozzo Infrastructure** ist der OpenStack-Provider der Hebel, getestet statt angenommen, mit qcow2-Export nach CDI als garantiertem Rückfallweg.
-- Auf **Virtuozzo Server** und **Application Management** baut Ænix Engineering den Export- und Konvertierungspfad im Projekt. Das sagen wir lieber, als zu suggerieren, ein generisches Werkzeug decke einen Fall ab, den es nicht abdeckt.
+- Auf **Virtuozzo Server** und **Application Management** baut das Engineering-Team von Ænix den Export- und Konvertierungspfad im Projekt. Das sagen wir lieber, als zu suggerieren, ein generisches Werkzeug decke einen Fall ab, den es nicht abdeckt.
 
 ---
 
@@ -188,17 +190,17 @@ Die Zuordnung nach Kubernetes:
 </div>
 </div>
 
-1. **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Inventar getrennt nach Produkt; Triage Container für Container in „kapseln oder neu bauen“; der OpenStack-Provider von Forklift gegen Ihre tatsächliche Virtuozzo-Infrastructure-Version getestet und der qcow2-Rückfallweg daneben nachgewiesen; Mandanten- und Adressentwurf; bei Application Management ein Preismodell neben dem technischen Plan.
+1. **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 oder 28 Tage, Festpreis) — Inventar getrennt nach Produkt; Triage Container für Container in „kapseln oder neu bauen“; der OpenStack-Provider von Forklift gegen Ihre tatsächliche Virtuozzo-Infrastructure-Version getestet und der qcow2-Rückfallweg daneben nachgewiesen; Mandanten- und Adressentwurf; bei Application Management ein Preismodell neben dem technischen Plan.
 2. **Pilot-Kohorte** — der einfachste echte Workload zuerst. Bei Application-Management-Beständen sind das die Docker- und Kubernetes-Umgebungen, wo bereits Images existieren.
 3. **Rollende Migration** — Kohorte für Kohorte mit Parallel-Run-Validierung, Virtuozzo-Hosts wandern in den Zielcluster, sobald sie frei werden.
 4. **Betrieb** — Ihr Team mit **[Cozystack Enterprise Support](/de/produkte/cozystack-enterprise-support/)** im Rücken, oder Betrieb durch Ænix.
 
-Rechnen Sie die Kostenseite vorher durch: Der **[Fünf-Jahres-TCO-Vergleich Virtuozzo vs Cozystack](/tco-calculator/vs-virtuozzo/)** vergleicht bei 50, 200 und 1.000 VMs, mit Virtuozzo-Lizenzierung zu 100 $ pro Core und Jahr Liste und rund 75 $ typisch verhandelt.
+Rechnen Sie die Kostenseite vorher durch: Der **[Fünf-Jahres-TCO-Vergleich Virtuozzo vs. Cozystack](/tco-calculator/vs-virtuozzo/)** vergleicht bei 50, 200 und 1.000 VMs, mit Virtuozzo-Lizenzierung zu 100 USD pro Core und Jahr laut Liste und rund 75 USD als typischem Verhandlungsergebnis.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 ---
 
-*Ænix ist das Team hinter Cozystack (CNCF-Projekt, Apache 2.0).*
+*Ænix hat Cozystack initiiert (ein CNCF-Sandbox-Projekt, Apache 2.0) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

@@ -6,6 +6,7 @@ weight: 3
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/catalog/"
+page_type: "flag-page"
 ---
 
 Каталог — то, ради чего платформу обычно и берут. Вместо «поставьте нам PostgreSQL»

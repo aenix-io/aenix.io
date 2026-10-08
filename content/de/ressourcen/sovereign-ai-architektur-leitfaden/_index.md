@@ -1,105 +1,114 @@
 ---
-title: "Sovereign-AI-Architektur-Leitfaden — visueller Flowchart + Q&A (kostenloses PDF)"
-description: "Kostenloser 11-seitiger Decision-Guide für souveräne KI-Infrastruktur: sieben Entscheidungen, vier Referenzarchitekturen, GPU-Sizing-Tabellen."
+title: "Sovereign-AI-Architektur-Leitfaden — Entscheidungsbaum und Referenzarchitekturen (kostenloses PDF)"
+seo_title: "Sovereign-AI-Architektur-Leitfaden (kostenloses PDF)"
+description: "Kostenloser elfseitiger Leitfaden für souveräne KI-Infrastruktur: sieben Entscheidungen, vier Referenzarchitekturen, Tabellen zur GPU-Dimensionierung."
 type: "page"
 related_pages:
-  - /de/loesungen/sovereign-ai
-  - /de/dienstleistungen/ai-platform-build
+  - /de/loesungen/sovereign-ai/
+  - /de/dienstleistungen/ai-platform-build/
   - /de/produkte/ai-platform/
 hreflang_en: /resources/sovereign-ai-decision-guide/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloser 11-seitiger Decision-Guide für IT- und Compliance-Verantwortliche, die souveräne KI-Infrastruktur evaluieren. Ein visueller Flowchart führt durch sieben Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope (DORA, NIS2, souveränes-Cloud-Mandat), Modell-Auswahl (Open-Weight wie Llama, Mistral, Qwen), Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen und operatives Modell. Der Guide liefert vier annotierte Architektur-Patterns und Sizing-Referenztabellen. Das Ergebnis lässt sich unmittelbar auf die Ænix AI Platform — eine turnkey, selbst-gehostete KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0) mit Multi-Tenant-GPU-Scheduling und Souveränitätskontrollen.**
+  **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloses elfseitiges PDF für Organisationen, die souveräne KI-Infrastruktur prüfen — also KI-Workloads auf Infrastruktur, die sie selbst kontrollieren, statt über die API eines Hyperscalers. Er richtet sich an Verantwortliche für KI-Infrastruktur, CTOs und Platform-Engineering-Teams. Ein Flussdiagramm führt durch sieben Entscheidungen: Auslöser, regulatorischer Rahmen (DORA, NIS2, Vorgaben für souveräne Clouds), Auswahl von Open-Weight-Modellen, Dimensionierung der GPU-Hardware, Mandantenmodell, Souveränitätskontrollen und Betriebsmodell; die Antworten führen zu einem von vier Architekturmustern. Ænix nutzt dieses Framework, um Projekte für souveräne KI abzustecken. Das Ergebnis lässt sich direkt auf die Ænix AI Platform übertragen, die auf Cozystack, einem CNCF-Sandbox-Projekt, basiert und mandantenfähiges GPU-Scheduling mit Blueprints für Inferenz, Fine-Tuning und RAG bietet.**
 quick_facts:
   - label: "Was es ist"
-    value: "Kostenloser 11-seitiger Decision-Guide (PDF) mit Master-Decision-Tree zur Planung souveräner KI-Infrastruktur"
+    value: "Kostenloser elfseitiger Leitfaden mit einem zentralen Entscheidungsbaum für den Entwurf souveräner KI-Infrastruktur — dasselbe Framework, mit dem Ænix Projekte für souveräne KI absteckt"
   - label: "Zielgruppe"
-    value: "IT-Leiter, Architekten und Compliance-Teams in regulierten Branchen, die selbst-gehostete KI evaluieren"
-  - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
-  - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Verantwortliche für KI-Infrastruktur, CTOs, Architekten und Platform-Engineering-Teams, die souveräne KI gegen KI beim Hyperscaler abwägen"
   - label: "Inhalt"
-    value: "7-stufiger Decision-Tree, vier Architektur-Patterns (Single-Tenant bis Air-Gapped) und Hardware-Sizing-Tabellen"
-  - label: "Regulatorik"
-    value: "Deckt DORA, NIS2 und souveräne-Cloud-Mandate als regulatorische Trigger ab"
-  - label: "Verwandtes Produkt"
-    value: "Ænix AI Platform — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling auf Cozystack"
+    value: "Sieben Entscheidungen und vier Architekturmuster: Single-Tenant-Inferenz, mandantenfähige Inferenzflotte, Inferenz + Fine-Tuning + RAG sowie souveränes Air-Gap-Deployment"
+  - label: "Passt zu"
+    value: "Ænix AI Platform — mandantenfähiges GPU-Scheduling mit Blueprints für Inferenz, Fine-Tuning und RAG"
+  - label: "Format"
+    value: "Kostenloses elfseitiges PDF, Zustellung per E-Mail; typischerweise 1–3 Stunden Durcharbeiten mit Ihrem Team"
 faq:
   - q: "Was ist souveräne KI-Infrastruktur?"
-    a: "Souveräne KI-Infrastruktur bedeutet, KI-Modelle und -Daten auf eigener oder selbst-kontrollierter Infrastruktur zu betreiben, statt auf einer Public-Cloud-API. So bleiben Daten, Verschlüsselungsschlüssel und Audit-Trails unter eigener Kontrolle — eine Voraussetzung für Organisationen unter DORA, NIS2 oder einem souveränen-Cloud-Mandat."
-  - q: "Für wen ist der Sovereign-AI-Architektur-Leitfaden gedacht?"
-    a: "Für IT-Leiter, Plattform-Architekten und Compliance-Teams in regulierten Branchen, die selbst-gehostete oder air-gapped KI evaluieren. Der visuelle Flowchart hilft, in sieben Schritten von Trigger-Profil und regulatorischem Scope bis zum operativen Modell eine passende Architektur zu bestimmen."
-  - q: "Welche Architektur-Patterns deckt der Leitfaden ab?"
-    a: "Vier gängige Patterns mit annotierten Diagrammen: Single-Tenant Inferenz-Cluster, Multi-Tenant Inferenz-Fleet, kombiniertes Inferenz + Fine-Tuning + RAG sowie Air-Gapped souveränes Deployment. Jedes Pattern mappt auf einen Deployment-Scope der Ænix AI Platform."
-  - q: "Wie hängt der Leitfaden mit Cozystack und der Ænix Platform zusammen?"
-    a: "Das Decision-Ergebnis mappt direkt auf die Ænix AI Platform — eine turnkey KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0). Cozystack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und das Tenant-CRD für Mandantenfähigkeit."
-  - q: "Welche KI-Modelle und GPU-Hardware werden behandelt?"
-    a: "Bei der Modell-Auswahl werden Open-Weight-Modelle wie Llama, Mistral, Qwen, DeepSeek, Phi und Gemma gegen proprietäre abgewogen. Beim Hardware-Sizing werden NVIDIA A100, H100, H200, L40S und Blackwell sowie CPU-, Memory- und Network-Anforderungen pro Workload-Profil behandelt."
-  - q: "Was kostet die Ænix Platform für KI-Workloads?"
-    a: "Die Ænix Platform wird in vier Stufen angeboten: Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Aufwand. Cozystack selbst ist Open Source unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
+    a: "Souveräne KI-Infrastruktur betreibt KI-Workloads (Inferenz, Fine-Tuning, RAG) auf Infrastruktur, die eine Organisation selbst kontrolliert — on-premises oder in einer gewählten Rechtsordnung — statt über die KI-API eines Hyperscalers. Daten, Modelle und Schlüssel bleiben unter der Kontrolle des Betreibers, um Anforderungen an Regulierung, Datenresidenz und Auditierbarkeit zu erfüllen."
+  - q: "Für wen ist der Sovereign-AI-Leitfaden gedacht?"
+    a: "Für Verantwortliche für KI-Infrastruktur und CTOs in Organisationen mit hohem KI-Anteil, für Architekten, die souveräne KI mit KI beim Hyperscaler vergleichen, für Platform-Engineering-Leads, die KI-Infrastruktur planen, und für CTOs von KI-Start-ups, die eigene Infrastruktur planen. Der Leitfaden gibt ihnen einen strukturierten Rahmen für die wichtigsten Architekturentscheidungen, bevor sie sich auf einen Aufbau festlegen."
+  - q: "Welche KI-Modelle und GPUs behandelt der Leitfaden?"
+    a: "Er behandelt die Auswahl von Open-Weight-Modellen aus Familien wie Llama, Mistral, Qwen, DeepSeek, Phi und Gemma und wägt Open-Weight gegen proprietäre Modelle ab. Für die Hardware-Dimensionierung dienen NVIDIA-GPU-Generationen für Rechenzentren (A100, H100, H200, L40S, Blackwell) als Eingangsgrößen, mit praktischen Tabellen für gängige Workload-Profile. Es handelt sich um Planungswerte, nicht um eine Liste getesteter Hardware."
+  - q: "Wie hängt der Leitfaden mit der Ænix AI Platform zusammen?"
+    a: "Der Leitfaden liefert ein Architekturmuster, das sich direkt auf den Umfang eines Deployments der Ænix AI Platform übertragen lässt — schlüsselfertige KI-Infrastruktur mit mandantenfähigem GPU-Scheduling und Blueprints für Inferenz, Fine-Tuning und RAG, aufgebaut auf Cozystack mit Souveränitätskontrollen."
+  - q: "Wie ermöglicht Cozystack mandantenfähige souveräne KI?"
+    a: "Cozystack betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, nutzt Cilium (eBPF) für das Networking und LINSTOR/DRBD für Storage und trennt Teams über die Tenant-CRD. Damit lassen sich Namespace pro Team, Cluster pro Tenant und mandantenfähiges GPU-Scheduling umsetzen, unter der Apache-2.0-Lizenz und ohne Lizenzkosten pro Core. GPUs werden über den NVIDIA GPU Operator bereitgestellt: Passthrough ganzer GPUs an VMs und anteilige Nutzung für Pods über HAMi; MIG und Time-Slicing stehen auf der Roadmap."
+  - q: "Was kostet der Leitfaden?"
+    a: "Der Leitfaden ist ein kostenloser PDF-Download. Die Ænix AI Platform, auf die er abzielt, wird nach einem Assessment per RFP angeboten, weil GPU-Bestand, Modelle und Betriebsmodell stark variieren."
 ---
 
-**Ein 11-seitiger Decision-Guide für Organisationen, die souveräne KI-Infrastruktur evaluieren. Visueller Flowchart führt durch 7 Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope, Modell-Auswahl, Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen, operatives Modell.**
+**Ein elfseitiger Leitfaden für Organisationen, die souveräne KI-Infrastruktur prüfen. Ein zentraler Entscheidungsbaum führt durch sieben Schlüsselentscheidungen: Auslöser, regulatorischer Rahmen, Modellauswahl, Hardware-Dimensionierung, Mandantenmodell, Souveränitätskontrollen, Betriebsmodell. Ænix setzt ihn ein, um Projekte für souveräne KI abzustecken.**
 
-> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling, fertigen Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen. Der Decision-Guide liefert ein Architektur-Pattern, das direkt auf den Deployment-Scope der AI Platform abgebildet wird.
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — schlüsselfertige KI-Infrastruktur mit mandantenfähigem GPU-Scheduling, fertigen Blueprints für Inferenz, Fine-Tuning und RAG sowie Souveränitätskontrollen. Der Leitfaden liefert ein Architekturmuster, das sich direkt auf den Umfang eines AI-Platform-Deployments übertragen lässt.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" resource="sovereign-ai-decision-guide" >}}
-<p class="lead-magnet-form__note">Sovereign-AI-Decision-Guide herunterladen (PDF)</p>
+<p class="lead-magnet-form__note">Sovereign-AI-Leitfaden herunterladen (PDF)</p>
 </div>
 
 ---
 
-## Was im Leitfaden enthalten ist
+## Was der Leitfaden enthält
 
-### Decision-Tree
+### Entscheidungsbaum
 Ein Flussdiagramm, das Sie durch folgende Schritte führt:
 
-1. **Trigger-Profil** — regulierte Daten, Inferenz-Ökonomie, Auditierbarkeit, Air-Gap
-2. **Regulatorischer Scope** — DORA, NIS2, sektoral, souveränes-Cloud-Mandat
-3. **Modell-Auswahl** — Llama, Mistral, Qwen, DeepSeek, Phi, Gemma; Open-Weight vs proprietär
-4. **Hardware-Sizing** — A100, H100, H200, L40S, Blackwell; CPU/Memory/Network
-5. **Multi-Tenancy-Modell** — Tenant CRD, Namespace-per-Team, Cluster-per-Tenant
-6. **Souveränitätskontrollen** — Verschlüsselungsschlüssel, Lieferanten-Transparenz, Audit-Bereitschaft
-7. **Operatives Modell** — kunden-betrieben, vendor-betrieben, hybrid
+1. **Auslöser** — regulierte Daten, Wirtschaftlichkeit der Inferenz, Auditierbarkeit, Air-Gap
+2. **Regulatorischer Rahmen** — DORA, NIS2, branchenspezifische Vorgaben, Vorgaben für souveräne Clouds
+3. **Modellauswahl** — Llama, Mistral, Qwen, DeepSeek, Phi, Gemma; Open-Weight vs. proprietär
+4. **Hardware-Dimensionierung** — NVIDIA-GPU-Generationen für Rechenzentren als Eingangsgrößen; CPU, Arbeitsspeicher, Netzwerk
+5. **Mandantenmodell** — Tenant-CRD, Namespace pro Team, Cluster pro Tenant
+6. **Souveränitätskontrollen** — Verschlüsselung und Schlüsselverwaltung, Transparenz über Lieferanten, Auditfähigkeit
+7. **Betriebsmodell** — vom Kunden betrieben, vom Anbieter betrieben, hybrid
 
-### Architektur-Patterns
-Vier gängige Patterns mit annotierten Diagrammen:
-- Single-Tenant Inferenz-Cluster
-- Multi-Tenant Inferenz-Fleet
+### Fragen und Antworten
+Zu jeder Entscheidung ausführliche Fragen und Antworten mit den jeweiligen Abwägungen.
+
+### Architekturmuster
+Vier gängige Muster mit kommentierten Diagrammen:
+- Single-Tenant-Inferenzcluster
+- Mandantenfähige Inferenzflotte
 - Inferenz + Fine-Tuning + RAG
-- Air-Gapped souveränes Deployment
+- Souveränes Air-Gap-Deployment
 
-### Sizing-Referenz
-Praktische Sizing-Tabellen für gängige Workload-Profile.
+### Referenz zur Dimensionierung
+Praktische Tabellen zur Dimensionierung für gängige Workload-Profile.
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>7 Schlüssel-Entscheidungen</b><div class="diagram__chips"><span>Trigger-Profil</span><span>regulatorischer Scope</span><span>Modell- + Hardware-Sizing</span></div></div>
-<div class="diagram__conn">mappt auf</div>
-<div class="diagram__node"><b>Architektur-Pattern</b><div class="diagram__chips"><span>eines von vier Patterns</span></div></div>
-<div class="diagram__conn">Deployment-Scope</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix AI Platform</b><div class="diagram__chips"><span>Multi-Tenant-GPU-Scheduling</span><span>Inferenz + Fine-Tuning + RAG</span></div></div>
+<div class="diagram__node"><b>7 Schlüsselentscheidungen</b><div class="diagram__chips"><span>Auslöser</span><span>Regulatorischer Rahmen</span><span>Modell + Hardware-Dimensionierung</span></div></div>
+<div class="diagram__conn">führt zu</div>
+<div class="diagram__node"><b>Architekturmuster</b><div class="diagram__chips"><span>Eines von vier Mustern</span></div></div>
+<div class="diagram__conn">umgesetzt als</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix AI Platform</b><div class="diagram__chips"><span>Mandantenfähiges GPU-Scheduling</span><span>Inferenz + Fine-Tuning + RAG</span></div></div>
 </div>
 </div>
 
 ---
 
-## Wer das nutzt
+## Wer ihn nutzt
 
-- KI-Infrastruktur-Leads und CTOs in KI-lastigen Organisationen
-- Architekten, die souveräne KI gegen Hyperscaler-KI abwägen
-- Platform-Engineering-Leads, die KI-Infrastruktur scopen
+- Verantwortliche für KI-Infrastruktur / CTOs in Organisationen mit hohem KI-Anteil
+- Architekten, die souveräne KI gegen KI beim Hyperscaler abwägen
+- Platform-Engineering-Leads, die KI-Infrastruktur planen
+- CTOs von KI-Start-ups, die eigene Infrastruktur planen
 
 ---
 
 ## Nach dem Download
 
-Der Leitfaden liefert das architektonische Rahmenwerk für die Entscheidung. Für ein konkretes Engagement siehe **[Souveräne-KI-Lösung](/de/loesungen/sovereign-ai/)** oder **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)**.
+Der Leitfaden liefert den architektonischen Rahmen für Ihre Entscheidungen. Für ein konkretes Projekt siehe **[Sovereign AI](/de/loesungen/sovereign-ai/)** oder **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)**.
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und bietet die Ænix Platform an — eine schlüsselfertige kommerzielle Cloud-in-a-Box.*
+## Verwandte Ressourcen
+
+- **[Sovereign AI](/de/loesungen/sovereign-ai/)** — Details zum Vorgehen
+- **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)** — breiterer Umfang
+- **[Data Sovereignty](/de/loesungen/data-sovereignty/)** — Anlass aus Sicht der Regulierung
+
+---
+
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*

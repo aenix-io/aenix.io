@@ -1,60 +1,71 @@
 ---
-title: "Hybrid Cloud — eine Plattform, mehrere Substrate"
-description: "Die meisten Unternehmen im Jahr 2026 sind bereits Hybrid — Public Cloud für elastische und kundenorientierte Workloads, Private Cloud oder On-Prem für stetige,..."
+title: "Hybrid-Cloud-Plattform — eine Plattform betreiben, den Ort jedes Workloads frei wählen"
+seo_title: "Hybrid-Cloud-Plattform: ein Betriebsmodell"
+primary_keyword: "hybrid cloud plattform"
+description: "VMs und Container auf einer Kubernetes-nativen Plattform über eigene Hardware, Public-Cloud-Regionen und Edge betreiben — ein Plattform-Team, kein Lock-in."
 type: "page"
-related_pages: ["/de/loesungen/cloud-repatriation", "/de/produkte/private-cloud-platform/", "/de/produkte/cozystack/"]
+related_pages:
+  - /de/loesungen/cloud-repatriation/
+  - /de/loesungen/data-sovereignty/
+  - /de/dienstleistungen/private-cloud-consulting/
+  - /de/dienstleistungen/platform-readiness-assessment/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/public-cloud-platform/
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/hybrid-cloud-platform/
 direct_answer: |
-  **Hybrid Cloud bedeutet, mehrere Substrate — Public Cloud, Private Cloud und On-Prem oder Edge — als eine kohärente Plattform zu betreiben statt als fragmentierten Flickenteppich. Aenix baut und betreibt Hybrid-Cloud-Plattformen auf Cozystack: Kubernetes-nativ und mandantenfähig, mit konsistenten Operations über Kunden-Hardware, Public-Cloud-Regionen und Edge-Sites. Eine Control Plane verbindet On-Prem mit VMware, OpenNebula, OpenShift und Public Clouds. Gleiche Kubernetes-API, gleiche Observability und gleiche Deployment-Muster über alle Substrate hinweg verhindern operative Drift und Vendor-Lock-in. Geeignet für Unternehmen und Telcos, die elastische Workloads in der Public Cloud und stetige, regulierte oder KI-Workloads On-Prem fahren.**
+  **Eine Hybrid-Cloud-Plattform ist ein einheitliches Betriebsmodell, das Workloads konsistent über kundeneigene Hardware, Public-Cloud-Regionen und Edge-Standorte betreibt — statt in getrennten, fragmentierten Silos. Sie passt zu Unternehmen mit einem wirklich heterogenen Workload-Portfolio: teils elastisch und kundennah, teils gleichmäßig ausgelastet oder reguliert, teils GPU-gebunden für KI-Inferenz. Ænix konzipiert und baut Hybrid-Plattformen auf Cozystack, einem Open-Source-CNCF-Sandbox-Projekt, das virtuelle Maschinen (KubeVirt) und Container unter einer Kubernetes-API vereint — mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Mandantenfähigkeit über das Tenant-CRD. Das Ergebnis: ein Plattform-Team, ein Observability-Stack und einheitliche Deployment-Muster auf jedem Substrat, ohne Vendor-Lock-in und ohne Lizenzkosten pro CPU.**
+
 quick_facts:
   - label: "Was es ist"
-    value: "Eine Plattform-Abstraktion über mehrere Substrate (Public Cloud, Private Cloud, On-Prem, Edge) mit einheitlicher Kubernetes-API, Observability und Deployment-Mustern"
+    value: "Ein einheitliches, Kubernetes-natives Betriebsmodell, das Workloads konsistent on-prem, in der Public Cloud und am Edge betreibt"
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Zielgruppe"
-    value: "Unternehmen und Telcos, die elastische Workloads in der Public Cloud und stetige, regulierte oder KI-Workloads On-Prem oder am Edge betreiben"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Unternehmen mit heterogenem Workload-Portfolio aus elastischen, gleichmäßig ausgelasteten, regulierten und GPU-/KI-Workloads"
+  - label: "Lieferform"
+    value: "Platform Readiness Assessment zum Festpreis (14 oder 28 Tage), danach ein Aufbau von typischerweise 3–12 Monaten je nach Umfang"
+  - label: "Kernfunktion"
+    value: "Ein gemeinsames Self-Service-Portal und eine API über bestehende VMware- oder OpenNebula-Umgebungen während der Migration, mit der Ænix Private Cloud Platform"
   - label: "Technische Basis"
-    value: "Cozystack mit KubeVirt (VMs und Container über eine Kubernetes-API), Cilium (eBPF) Networking und LINSTOR/DRBD Storage; Mandantenfähigkeit über das Tenant-CRD"
-  - label: "Passende Plattform"
-    value: "Ænix Private Cloud Platform verbindet On-Prem mit VMware, OpenNebula, OpenShift und Public Clouds; für große Betreiber kombinierbar mit der Public Cloud Platform"
-  - label: "Engagement"
-    value: "Aenix liefert die produktisierte Ænix Platform plus Services; Preisstufen Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell"
+    value: "KubeVirt für VMs und Container unter einer API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage, Tenant-CRD für Mandantenfähigkeit"
+
 faq:
-  - q: "Was unterscheidet eine kohärente Hybrid-Cloud-Architektur von einem fragmentierten Flickenteppich?"
-    a: "Bei einer kohärenten Architektur teilen alle Substrate dieselbe Kubernetes-API, dieselbe Observability und dieselben Deployment-Muster. Ein fragmentierter Flickenteppich entsteht durch getrennte Teams und Tools für Public Cloud und On-Prem, was zu operativer Drift führt — gleiche Workloads laufen unterschiedlich an verschiedenen Orten."
-  - q: "Welche Substrate kann die Ænix Platform über eine Control Plane verbinden?"
-    a: "Die Ænix Private Cloud Platform verbindet On-Prem-Hardware mit VMware, OpenNebula, OpenShift und Public Clouds über eine einzige Control Plane. Für große Betreiber oder Telcos lässt sie sich mit der Public Cloud Platform kombinieren."
-  - q: "Vermeidet Cozystack Vendor-Lock-in in einer Hybrid-Cloud?"
-    a: "Ja. Cozystack ist unter Apache 2.0 lizenziert, ohne CPU- oder Core-basierte Lizenzierung, und baut auf CNCF-Standardbausteinen wie KubeVirt, Cilium und LINSTOR. Dadurch entfällt das strukturelle Lock-in vieler Vendor-getriebener Hybrid-Lösungen."
-  - q: "Für welche Workloads eignet sich Public Cloud, für welche On-Prem?"
-    a: "Public Cloud passt für elastische und kundenorientierte Workloads mit schwankender Last. Private Cloud oder On-Prem passt für stetige, regulierte oder KI-ökonomisch ungeeignete Workloads, bei denen feste Kapazität und Datenkontrolle wirtschaftlicher oder vorgeschrieben sind."
-  - q: "Wie behandelt Cozystack virtuelle Maschinen und Container in einer Hybrid-Umgebung?"
-    a: "Cozystack nutzt KubeVirt, um VMs und Container über eine einzige Kubernetes-API zu betreiben. Damit laufen Legacy-VM-Workloads und Cloud-native Container mit denselben Operations-, Networking- (Cilium/eBPF) und Storage-Mustern (LINSTOR/DRBD) über alle Substrate."
-  - q: "Was kostet der Betrieb der Ænix Platform für Hybrid Cloud?"
-    a: "Aenix liefert die produktisierte Ænix Platform plus Services. Die Preisstufen sind Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach individuellem Angebot. Cozystack selbst ist Open Source unter Apache 2.0."
+  - q: "Worin unterscheidet sich Hybrid Cloud von Multi-Cloud?"
+    a: "Hybrid bezeichnet meist eine Kombination aus Public Cloud und On-Prem- oder Private-Infrastruktur. Multi-Cloud bedeutet die Nutzung mehrerer Public Clouds. Beides kann nebeneinander bestehen. Die architektonischen Herausforderungen überschneiden sich, die strategischen Treiber unterscheiden sich jedoch: Bei Hybrid geht es oft um Souveränität, Kosten und gleichmäßig ausgelastete Workloads, bei Multi-Cloud um die Streuung über mehrere Anbieter."
+  - q: "Müssen alle Workloads zwischen den Substraten portabel sein?"
+    a: "Nein. Manche Workloads laufen am besten hyperscaler-nativ mit proprietären Cloud-Diensten. Eine solide Hybrid-Architektur behandelt sie als bewusste, nicht portable Entscheidung statt als Zufall und ordnet jeden Workload dem Substrat zu, auf dem er wirtschaftlich und betrieblich sinnvoll ist."
+  - q: "Entsteht mit einer Hybrid-Plattform auf Cozystack ein Vendor-Lock-in?"
+    a: "Nein. Cozystack ist Open Source unter Apache 2.0 und ein CNCF-Projekt. Dieselbe Plattform läuft auf Kundenhardware, in Public-Cloud-Regionen und an Edge-Standorten. So vermeiden Sie das strukturelle Lock-in eines Hybrid-Produkts aus einer Hand, dessen Roadmap zu Ihrer Roadmap wird."
+  - q: "Für wen lohnt sich eine Hybrid-Plattform nicht?"
+    a: "Wenn die meisten Ihrer Workloads eindeutig an einen Ort gehören — komplett Public Cloud oder komplett Private Cloud —, ist Hybrid Over-Engineering. Die Investition zahlt sich erst aus, wenn Ihr Portfolio tatsächlich auf elastische, gleichmäßig ausgelastete, regulierte und KI-getriebene Workloads verteilt ist."
+  - q: "Wie liefert Ænix eine Hybrid-Cloud-Plattform?"
+    a: "Am Anfang steht ein Platform Readiness Assessment zum Festpreis (14 oder 28 Tage). Es liefert eine Workload-Klassifizierung, eine Zielarchitektur für Hybrid, ein Betriebsmodell über alle Substrate und eine Migrationsreihenfolge. In der Aufbauphase liefern Ænix-Engineers die Plattform von Anfang bis Ende, typischerweise in 3–12 Monaten je nach Umfang."
+  - q: "Welche Technologie steckt hinter der Plattform?"
+    a: "Cozystack nutzt KubeVirt, um virtuelle Maschinen und Container unter einer Kubernetes-API zu betreiben, Cilium (eBPF) für Networking, LINSTOR/DRBD für replizierten Storage, SeaweedFS für S3-kompatiblen Object Storage und ein Tenant-CRD für Mandantenfähigkeit. Ænix verkauft auf derselben Engine drei Plattformen — Public Cloud Platform, Private Cloud Platform und AI Platform — sowie Engineering-Leistungen."
 ---
 
 <!-- BLOCK 1 -->
 
-**Die meisten Unternehmen sind 2026 bereits hybrid — Public Cloud für elastische und kundenorientierte Workloads, Private Cloud oder on-prem für stetige, regulierte oder AI-ökonomisch begründete Workloads. Die Herausforderung ist längst nicht mehr, ob man hybrid sein sollte, sondern ob man Hybrid als kohärente Architektur oder als fragmentierten Flickenteppich betreibt. Letzteres haben die meisten Unternehmen. Ersteres ist der Ort, an dem Hebelwirkung entsteht.**
 
-Ænix baut und betreibt Hybrid-Cloud-Plattformen auf Basis von [Cozystack](/de/produkte/cozystack/) — Kubernetes-nativ, mandantenfähig, mit konsistenten Operations über Kunden-Hardware, Public-Cloud-Regionen und Edge-Standorte hinweg.
+**Die meisten Unternehmen sind 2026 bereits hybrid — Public Cloud für elastische und kundennahe Workloads, Private Cloud oder On-Prem für gleichmäßig ausgelastete, regulierte oder KI-getriebene Workloads. Die Frage ist nicht mehr, ob Sie hybrid arbeiten, sondern ob Sie Hybrid als kohärente Architektur betreiben oder als fragmentierten Flickenteppich. Letzteres haben die meisten Unternehmen. Im Ersteren liegt der Hebel.**
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telcos: kombinieren Sie diese mit der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
+Ænix baut und betreibt Hybrid-Cloud-Plattformen auf Basis von [Cozystack](/de/produkte/cozystack/) — Kubernetes-nativ, mandantenfähig, mit einheitlichem Betrieb über Kundenhardware, Public-Cloud-Regionen und Edge-Standorte hinweg.
+
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — ein gemeinsames Self-Service-Portal und eine API über bestehende VMware- oder OpenNebula-Umgebungen, während die Workloads umziehen (siehe die [Fallstudie zum Portal einer Finanzgruppe](/de/case-studies/unified-cloud-portal-financial-group/)). Für große Betreiber oder Telcos: kombinieren Sie sie mit der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/">Hybrid-Architektur-Muster →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/">Hybrid-Architekturmuster →</a>
 </div>
 
-
 <div class="trust-badges">
-Open-Source-Fundament · Kubernetes-nativ · Multi-Cluster im Produktivbetrieb · Kein Vendor-Lock-in</div>
+Open-Source-Fundament · Kubernetes-nativ · Multi-Cluster-Betrieb · Kein Vendor-Lock-in</div>
 
 <!-- /BLOCK 1 -->
 
@@ -64,15 +75,17 @@ Open-Source-Fundament · Kubernetes-nativ · Multi-Cluster im Produktivbetrieb �
 
 ## Wer eine Hybrid-Cloud-Plattform braucht
 
-Das Engagement passt, wenn:
+Das Projekt passt, wenn:
 
-- **Das Workload-Portfolio wirklich heterogen ist** — manche elastisch, manche stetig, manche reguliert.
-- **Die Kostenentwicklung nicht zusammenpasst** — eine Public-Cloud-Rechnung, deren Wachstum sich selbst verstärkt; manche Workloads lassen sich wirtschaftlich sinnvoll repatriieren.
-- **Souveränität für einige Workloads, Public-Cloud-Fähigkeiten für andere** — eine vollständige Repatriierung ist nicht gerechtfertigt, der Status quo aber auch nicht.
-- **AI-/Inferenz-Ökonomie dedizierte GPU verlangt** — Ihre Business-Anwendungen aber in der Cloud sinnvoll aufgehoben sind.
-- **Mehrere Infrastruktur-Teams** eine fragmentierte Infrastruktur zu einer kohärenten Plattform konsolidieren.
+- **Das Workload-Portfolio wirklich heterogen ist** — manches elastisch, manches gleichmäßig ausgelastet, manches reguliert.
+- **Die Kostenentwicklung nicht passt** — die Public-Cloud-Rechnung wächst und wächst; für manche Workloads lohnt sich die Rückholung wirtschaftlich.
+- **Manche Workloads Souveränität brauchen, andere Public-Cloud-Funktionen** — eine vollständige Rückholung ist nicht gerechtfertigt, der Status quo aber auch nicht.
+- **Die Wirtschaftlichkeit von KI und Inferenz dedizierte GPUs verlangt** — Ihre Geschäftsanwendungen aber in der Cloud gut aufgehoben sind.
+- **Mehrere Infrastruktur-Teams** eine fragmentierte Infrastruktur zu einer kohärenten Plattform zusammenführen.
 
-Wenn die meisten Workloads an einen Ort gehören — komplett Public Cloud oder komplett Private Cloud — ist Hybrid Over-Engineering. Wenn Sie tatsächlich dazwischen liegen, zahlt sich die Investition in eine Hybrid-Plattform mit der Zeit aus.
+Wenn die meisten Workloads an einen Ort gehören — komplett Public Cloud oder komplett Private Cloud —, ist Hybrid Over-Engineering. Liegen Sie tatsächlich dazwischen, zahlt sich die Investition in eine Hybrid-Plattform mit der Zeit aus.
+
+> **Sie verantworten die Infrastruktur?** Der [Leitfaden für Infrastrukturverantwortliche](/de/fuer/leiter-infrastruktur/) behandelt den VMware-Ausstieg und das Betriebsmodell.
 
 <!-- /BLOCK 2 -->
 
@@ -80,31 +93,31 @@ Wenn die meisten Workloads an einen Ort gehören — komplett Public Cloud oder 
 
 <!-- BLOCK 3: WHAT MAKES HYBRID WORK -->
 
-## Was Hybrid Cloud zum Funktionieren bringt
+## Was eine Hybrid Cloud funktionieren lässt
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Eine Control Plane</b><div class="diagram__chips"><span>Cozystack</span><span>gleiche Kubernetes-API</span></div></div>
-<div class="diagram__conn">verbindet On-Prem mit</div>
-<div class="diagram__node"><b>VMware, OpenNebula, OpenShift</b><div class="diagram__chips"><span>Private Cloud Platform</span></div></div>
-<div class="diagram__conn">und betreibt</div>
-<div class="diagram__node"><b>Public Clouds</b><div class="diagram__chips"><span>elastische Workloads</span></div></div>
+<div class="diagram__node"><b>Gemischte Umgebung</b><div class="diagram__chips"><span>VMware</span><span>OpenNebula</span><span>OpenShift</span><span>Public Cloud</span></div></div>
+<div class="diagram__conn">verbunden durch</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack Control Plane</b><div class="diagram__chips"><span>Eine Kubernetes-API</span><span>KubeVirt-VMs + Container</span><span>Cilium (eBPF)</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Einheitlicher Hybrid-Betrieb</b><div class="diagram__chips"><span>Ein Plattform-Team</span><span>Ein Observability-Stack</span><span>Einheitliches Deployment</span></div></div>
 </div>
 </div>
 
 <div class="grid-2x2">
 
 **1. Eine Plattform, mehrere Substrate**
-Dieselbe Kubernetes-API, dieselbe Observability, dieselben Deployment-Muster — egal ob der Workload auf Kunden-Hardware, in AWS/Azure/GCP oder am Edge läuft. Cozystack sorgt dafür, dass sich das Ganze wie eine einzige Plattform verhält.
+Dieselbe Kubernetes-API, dieselbe Observability, dieselben Deployment-Muster — egal, ob der Workload auf Kundenhardware, in AWS/Azure/GCP oder am Edge läuft. Cozystack sorgt dafür, dass sich das wie eine einzige Plattform anfühlt.
 
-**2. Workload-Portabilität**
-Workloads nutzen Plattform-Abstraktionen, die über alle Substrate hinweg konsistent funktionieren. KubeVirt für VMs, Kubernetes für Container, S3-kompatibel für Object Storage — alles auf jedem Substrat verfügbar.
+**2. Portable Workloads**
+Workloads nutzen Plattform-Abstraktionen, die auf allen Substraten gleich funktionieren: KubeVirt für VMs, Kubernetes für Container, S3-kompatiblen Object Storage — überall verfügbar.
 
-**3. Explizite Kontrolle der Datenflüsse**
-Cloud- und regionsübergreifende Datenflüsse sind architektonische Entscheidungen, keine Zufälle. Egress-Kosten, Latenz und Souveränitätsanforderungen werden von Anfang an eingeplant.
+**3. Bewusst gesteuerte Datenflüsse**
+Cloud- und regionsübergreifende Datenflüsse sind Architekturentscheidungen, kein Zufall. Egress-Kosten, Latenz und Souveränitätsvorgaben werden von Anfang an eingeplant.
 
-**4. Vereinheitlichte Operations**
-Ein einziges Plattform-Team, einheitliche Runbooks, konsistente Observability, ein einziger Incident-Response-Prozess. Das Plattform-Team betreibt eine Plattform, die an drei Orten lebt.
+**4. Einheitlicher Betrieb**
+Ein Plattform-Team, einheitliche Runbooks, konsistente Observability, ein Incident-Response-Prozess. Das Plattform-Team betreibt eine Plattform, die an drei Orten zu Hause ist.
 
 </div>
 
@@ -114,28 +127,22 @@ Ein einziges Plattform-Team, einheitliche Runbooks, konsistente Observability, e
 
 <!-- BLOCK 4: COMMON FAILURES -->
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
-
 ## Woran die meisten „hybriden“ Architekturen tatsächlich scheitern
 
 <div class="gap-cards-2">
 
 **Hybrid als fragmentierter Flickenteppich**
-Public-Cloud-Team und On-Prem-Team arbeiten getrennt, mit getrennten Tools. Hybrid nur dem Namen nach; in Wirklichkeit Multi-Cloud-Wildwuchs.
+Public-Cloud-Team und On-Prem-Team arbeiten getrennt, mit getrennten Werkzeugen. Hybrid nur dem Namen nach; in Wirklichkeit Multi-Cloud-Wildwuchs.
 
-**Cloud-Bursting, das niemand nutzt**
-Die Architektur unterstützt das Bursting von on-prem in die Public Cloud; im Produktivbetrieb bleibt diese Fähigkeit theoretisch, weil die Datenbewegung zwischen den Clouds nicht schnell genug ist.
+**Cloud Bursting, das niemand nutzt**
+Die Architektur erlaubt Bursting von On-Prem in die Public Cloud; im Produktivbetrieb bleibt das Theorie, weil Daten zwischen den Clouds nicht schnell genug bewegt werden können.
 
-**Vendor-getriebene „Hybrid-Lösung“**
+**Die „Hybrid-Lösung“ eines Herstellers**
 Ein einzelner Anbieter verkauft eine einheitliche Hybrid-Plattform, die auf seiner Software in Ihrem und in seinem Rechenzentrum läuft. Das Lock-in ist strukturell; die Roadmap des Anbieters wird zu Ihrer Roadmap.
 
-**Operative Divergenz**
-Derselbe Workload läuft in der Public Cloud anders als on-prem. Operative Altlasten häufen sich an; die Portabilität verschlechtert sich mit der Zeit.
+**Auseinanderlaufender Betrieb**
+Derselbe Workload läuft in der Public Cloud anders als On-Prem. Betriebliche Altlasten wachsen, die Portabilität nimmt mit der Zeit ab.
 
-</div>
-
-</div>
 </div>
 
 <!-- /BLOCK 4 -->
@@ -144,17 +151,23 @@ Derselbe Workload läuft in der Public Cloud anders als on-prem. Operative Altla
 
 <!-- BLOCK 5: HOW WE HELP -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wie Ænix hilft
 
-Das Hybrid-Plattform-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**. Ergebnis:
+Das Hybrid-Plattform-Projekt läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**. Ergebnis:
 
 - **Workload-Klassifizierung** — welche Workloads auf welches Substrat gehören
-- **Ziel-Architektur für Hybrid** — auf Cozystack-Basis oder als Erweiterung der bestehenden Plattform
-- **Betriebsmodell über Substrate hinweg** — Observability, Deployment, Identity, Audit
-- **Migrations-Reihenfolge** — was zuerst umzieht, was bleibt, was hybrid wird
+- **Zielarchitektur für Hybrid** — auf Basis von Cozystack oder als Erweiterung der bestehenden Plattform
+- **Betriebsmodell über alle Substrate** — Observability, Deployment, Identity, Audit
+- **Migrationsreihenfolge** — was zuerst umzieht, was bleibt, was hybrid wird
 - **Umsetzungs-Roadmap für Phase 2**
 
-Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis Ende — typischerweise 6-18 Monate Laufzeit.
+Aufbauphase: Ænix-Engineers liefern die Hybrid-Plattform von Anfang bis Ende — typischerweise in 3–12 Monaten, je nach Umfang.
+
+</div>
+</div>
 
 <!-- /BLOCK 5 -->
 
@@ -164,10 +177,10 @@ Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 ## Warum gerade Ænix
 
-- **Produktive Hybrid-Erfahrung.** Cozystack läuft produktiv gleichzeitig auf kundenkontrollierter Hardware, in Public-Cloud-Regionen und an Edge-Standorten.
-- **Open-Source-Fundament.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Eine Plattform, mehrere Substrate, kein Vendor-Lock-in.
-- **Workload-Klassifizierung mit Kosten-Ehrlichkeit.** Wir sagen Ihnen, wann Public Cloud richtig ist, wann on-prem richtig ist und wann Hybrid richtig ist.
-- **Expertise für Cross-Cluster-Operations.** Ein einziges Plattform-Team, das mehrere Substrate betreibt, ist eine eigene Disziplin.
+- **Hybrid-Erfahrung aus echten Projekten.** Veröffentlichte Fallstudien zeigen [GPU-Kapazität über eigene Hardware und Public Clouds hinweg](/de/case-studies/multicloud-academic-gpu/) und ein [gemeinsames Portal über bestehende VMware- und OpenNebula-Umgebungen](/de/case-studies/unified-cloud-portal-financial-group/).
+- **Open-Source-Fundament.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Sandbox-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Eine Plattform, mehrere Substrate, kein Vendor-Lock-in.
+- **Ehrliche Workload-Klassifizierung, auch bei den Kosten.** Wir sagen Ihnen, wann Public Cloud richtig ist, wann On-Prem und wann Hybrid.
+- **Erfahrung im clusterübergreifenden Betrieb.** Ein Plattform-Team, das mehrere Substrate betreibt, ist eine eigene Disziplin.
 
 <!-- /BLOCK 6 -->
 
@@ -177,10 +190,10 @@ Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 | Wann | Was |
 |---|---|
-| Tag 0 | Discovery-Call (kostenlos) |
-| Tage 1-13 (oder 1-27) | Assessment mit Workload-Klassifizierung + Hybrid-Ziel |
-| Tag 14 (oder 28) | Executive-Readout |
-| Phase 2 (6-18 Monate) | Umsetzung |
+| Tag 0 | Discovery-Gespräch (kostenlos) |
+| Tage 1–13 (oder 1–27) | Assessment mit Workload-Klassifizierung und Hybrid-Ziel |
+| Tag 14 (oder 28) | Ergebnispräsentation für die Geschäftsleitung |
+| Aufbau (3–12 Monate, je nach Umfang) | Umsetzung |
 
 <!-- /BLOCK 7 -->
 
@@ -188,7 +201,11 @@ Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 <!-- BLOCK 8: PROOF -->
 
+## Unternehmen, die Plattformen mit Ænix betreiben
+
 {{< clients >}}
+
+Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben.
 
 {{< quote-carousel >}}
 
@@ -200,11 +217,11 @@ Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 <div class="pricing-cards-2">
 
-### Assessment (14-28 Tage)
+### Assessment (14 oder 28 Tage, Festpreis)
 **Auf Anfrage**
 
 ### Umsetzung
-**Auf Anfrage**
+**Angebot per RFP**
 
 </div>
 
@@ -214,21 +231,16 @@ Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 <!-- BLOCK 10: FAQ -->
 
-
-**Weitere Fragen?** Siehe den **[Artikel über Hybrid-Architektur-Muster](/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/)** oder **[sprechen Sie mit uns](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: CTA -->
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-- **[Hybrid-Cloud-Architektur-Muster](/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/)**
+- **[Hybrid-Cloud-Architekturmuster](/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/)**
 - **[Cloud-Repatriierung](/de/loesungen/cloud-repatriation/)**
 - **[Private-Cloud-Consulting](/de/dienstleistungen/private-cloud-consulting/)**
 - **[Cozystack](/de/produkte/cozystack/)**
@@ -237,4 +249,4 @@ Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 ---
 
-*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*
+*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, Certified-Kubernetes-Distribution) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud Platform, Private Cloud Platform und AI Platform.*

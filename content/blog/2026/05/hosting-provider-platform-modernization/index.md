@@ -1,13 +1,15 @@
 ---
 title: "Hosting provider platform modernization — from VPS to cloud product"
+seo_title: "Hosting provider modernization: VPS to cloud product"
 description: "Architectural starting point, migration sequencing, and unit economics for hosting providers modernizing onto a Kubernetes-native multi-tenant platform."
 date: "2026-05-12"
-cover_image: "/img/blog/covers/hosting-provider-platform-modernization.png"
+cover_image: "/img/blog/covers/hosting-provider-platform-modernization.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU", "Multi-tenancy"]
+topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
 companion_landing: "/industries/hosting-providers/"
+companion_label: "See Ænix for hosting providers →"
 quiz:
   title: "Test yourself: hosting-provider modernization"
   questions:
@@ -17,12 +19,12 @@ quiz:
         - { text: "Better hardware procurement leverage with OEMs", correct: false }
         - { text: "Lower network latency to leading LLM endpoints", correct: false }
       explanation: "Hosting providers in 2026 have customer relationships, regional presence, pricing flexibility, and sovereignty positioning that hyperscalers can't easily replicate. They lack the cloud product to monetize this at scale — Cozystack-based modernization closes the gap."
-    - q: "What is the typical end-to-end timeline from project start to GA for a hosting-provider modernization?"
+    - q: "How long does it take to get the platform live for a single hosting provider, once hardware is ready?"
       options:
-        - { text: "Roughly 1 to 2 months end-to-end", correct: false }
-        - { text: "Roughly 9 to 18 months end-to-end", correct: true }
+        - { text: "Weeks, using the productized installer", correct: true }
+        - { text: "At least two years before the first customer", correct: false }
         - { text: "Five years or more before any GA", correct: false }
-      explanation: "Six steps from assessment → Cozystack pilot → beta customer cohort (3-5 friendlies) → limited GA (10-50 customers, billing patterns validated) → general availability → specialty expansion (GPU, AI, regional sovereignty). Total: 9-18 months."
+      explanation: "At provider scale the platform goes live in weeks once hardware is ready, via the productized installer. The beta cohort (3-5 friendlies), limited GA (10-50 customers) and catalogue expansion then run at the provider's commercial pace. Only multi-region national or operator programmes follow a 3-6 month pilot and 9-18 months to full multi-region."
     - q: "For a mid-size hosting provider (1000-10000 customers), what is the typical operational team size post-launch?"
       options:
         - { text: "Just 1 engineer covering everything", correct: false }
@@ -41,6 +43,7 @@ quiz:
         - { text: "Email and shared web hosting as primary services", correct: false }
         - { text: "VMs, Kubernetes, managed databases, S3, and GPU", correct: true }
       explanation: "Most hosting providers in 2026: bare-metal/VPS, per-customer manual provisioning, limited service catalog (VMs maybe managed DBs), custom or WHMCS billing. Target: Kubernetes-native multi-tenant Cozystack, self-service portal, expanded catalog (VMs/K8s/managed DBs/S3/GPU), WHMCS-integrated billing, per-customer observability and audit."
+hreflang_de: /de/blog/2026/05/hosting-anbieter-plattform-modernisierung/
 ---
 
 
@@ -67,14 +70,14 @@ The modernization target:
 
 ## Migration sequencing
 
-1. **Assessment** — current platform, customer profile, service catalog gap analysis
-2. **Cozystack pilot** — parallel deployment, internal validation
+1. **Assessment** — current platform, customer profile, service catalog gap analysis (the [Platform Readiness Assessment](/services/platform-readiness-assessment/) is fixed-price: 14 days focused or 28 days full)
+2. **Platform live** — parallel deployment with the productized installer, internal validation
 3. **Beta customer cohort** — 3-5 friendly customers; rough edges fixed
 4. **Limited GA** — 10-50 customers, billing patterns validated
 5. **General availability** — open to market
 6. **Specialty expansion** — GPU, AI services, regional sovereignty positioning
 
-Total elapsed: 9-18 months from project start to GA.
+The platform itself goes live in weeks once hardware is ready. How fast steps 3-6 follow depends on your sales pace, not on the platform build. Multi-region national or operator programmes are different: plan a 3-6 month pilot, then 9-18 months to full multi-region operation.
 
 ## Economics
 

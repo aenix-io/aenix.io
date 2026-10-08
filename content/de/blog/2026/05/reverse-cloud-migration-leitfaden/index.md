@@ -1,7 +1,9 @@
 ---
 title: "Reverse Cloud Migration — praktischer Leitfaden für Public-Cloud-Ausstieg im Jahr 2026"
-description: "Begleitung zur Cloud-Repatriation-Page."
+seo_title: "Reverse Cloud Migration: Leitfaden für 2026"
+description: "Reverse Cloud Migration 2026: warum Repatriation selten alles oder nichts ist, ein Playbook in fünf Schritten und die Fehler, die Ausstiegsprojekte verzögern."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/reverse-cloud-migration-leitfaden.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Cloud Repatriation", "Migration"]
@@ -40,9 +42,10 @@ quiz:
         - { text: "Den Aufwand der Datenverlagerung als erledigt abzuhaken", correct: true }
         - { text: "Eine bestimmte Backup-Strategie während der Migration", correct: false }
       explanation: "Fallstrick: die Datenschwerkraft unterschätzen. 50 Terabyte Produktionsdaten zu verlagern ist keine Wochenendaufgabe. Übertragung über das Netz, Cutover-Fenster, Phasen mit Doppelschreiben, Rückfallpfade und Backups während der Migration brauchen eigenes Engineering. Teams, die das nicht planen, landen mitten in einem mehrwöchigen Notfall."
+hreflang_en: /blog/2026/05/reverse-cloud-migration-playbook/
 ---
 
-Begleitung zur **[Cloud-Repatriation-Page](/de/loesungen/cloud-repatriation)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Cloud Repatriation](/de/loesungen/cloud-repatriation/)**.
 
 ## Repatriation ist nicht alles-oder-nichts
 
@@ -68,5 +71,5 @@ Typischer repatriierter Bestand:
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

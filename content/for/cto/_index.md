@@ -1,10 +1,11 @@
 ---
 title: "For CTOs & VPs of Engineering — control your cloud economics"
-description: "Cloud bills up, lock-in tightening. Repatriate or build on an open, sovereign platform — turnkey or with Aenix as your engineering team. EU-based, Apache 2.0."
+seo_title: "Cloud repatriation platform for CTOs"
+description: "Cloud bills up, lock-in tightening. Repatriate or build on an open, sovereign platform — turnkey or with Ænix as your engineering team. Apache 2.0."
 hero_subtitle: "Cut cloud costs and escape vendor lock-in"
 type: "page"
 language: "en"
-images: ["img/og/og-cto.png"]
+images: ["img/og/og-cto.jpg"]
 hreflang_de: /de/fuer/cto/
 primary_keyword: "cloud repatriation platform for CTOs"
 related_pages:
@@ -18,7 +19,7 @@ hide_closing_cta: true
 
 <!-- BLOCK 1: HERO -->
 
-**Your cloud bill scales with growth, lock-in tightens, and "sovereign" is now a customer requirement. Take back the economics and the control without slowing the roadmap: an open, Kubernetes-native platform on your own or leased hardware — delivered turnkey, or built with you by the team behind it.**
+**Your cloud bill scales with growth, lock-in tightens, and "sovereign" is now a customer requirement. Take back the economics and the control without slowing the roadmap: an open, Kubernetes-native platform on your own or leased hardware — delivered turnkey, or built with you by the team that created it.**
 
 > **Pairs with:** **[Cloud repatriation](/solutions/cloud-repatriation/)** and **[cost optimization](/solutions/cloud-cost-optimization/)** engagements, **[Ænix Private Cloud Platform](/products/private-cloud-platform/)**, all on open-source **[Cozystack](/products/cozystack/)**.
 
@@ -28,7 +29,7 @@ hide_closing_cta: true
 </div>
 
 <div class="trust-badges">
-EU-based engineers · Apache 2.0 platform · Run on your hardware · No hyperscaler lock-in
+Apache 2.0 platform · Your hardware · No hyperscaler lock-in
 </div>
 
 <!-- /BLOCK 1 -->
@@ -63,17 +64,17 @@ Take back cost and data-location control for the workloads that don't belong on 
 - **What it is:** an open, Kubernetes-native platform you run on owned or leased hardware (no per-core tax).
 - **Who it's for:** CTOs and VPs of Engineering at scale-ups, SaaS and product companies.
 - **License:** Apache 2.0.
-- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** repatriating compute but leaving data, backups and observability on the hyperscaler, so the savings and the sovereignty both leak.
 
-[Source: [CNCF Landscape](https://landscape.cncf.io); see also the [TCO worksheet](/resources/cloud-repatriation-tco-worksheet/)]
+See also the [cloud repatriation TCO worksheet](/resources/cloud-repatriation-tco-worksheet/).
 
 ---
 
 ## Why CTOs pick Ænix
 
 - **Economics you can defend.** We model the TCO honestly, including the workloads that should stay in the cloud.
-- **Authors, not resellers.** Ænix maintains Cozystack; you get senior engineers, not a sales channel.
+- **Authors, not resellers.** Ænix created Cozystack and co-maintains it; you get senior engineers, not a sales channel.
 - **Velocity preserved.** Developers still get self-service Kubernetes and databases — the platform doesn't slow the roadmap.
 
 ---
@@ -87,13 +88,13 @@ No. The point is selective: move the workloads where cost or sovereignty justify
 Start with the [TCO worksheet](/resources/cloud-repatriation-tco-worksheet/) and a discovery call; we build the model on your real workloads.
 
 **We're small — can we run this without a platform team?**
-Yes — take the turnkey edition with our support, or have us operate it during ramp.
+Yes — take the turnkey platform with our support, or have us operate it during ramp.
 
 **Is it sovereign enough for EU customers?**
-Your hardware, your jurisdiction, your keys, cluster-level access. See [data sovereignty](/solutions/data-sovereignty/).
+Your hardware, your jurisdiction, opt-in volume encryption, cluster-level access. See [data sovereignty](/solutions/data-sovereignty/).
 
 **What's the lock-in with you?**
-Apache 2.0 and your infrastructure. Support and engagements are services, not a license that traps you.
+Apache 2.0 and your infrastructure. Support and engagements are a subscription and services, not a licence that traps you.
 
 ---
 
@@ -108,7 +109,7 @@ Free, no prep. We pressure-test the economics and tell you whether turnkey or a 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!--
 SEO/GEO:

@@ -1,22 +1,25 @@
 ---
 title: "Webinar: add Kubernetes, databases and GPU to your price list"
-description: "A free live webinar with Andrei Kvapil, creator of Cozystack: how a working hosting or cloud provider widens the catalog — managed Kubernetes, databases, S3 and GPU — beside the platform they already run, keeping their billing and their panel."
+seo_title: "Webinar: Kubernetes, databases and GPU for providers"
+description: "Recording of the 19 August 2026 webinar with Andrei Kvapil: how a hosting or cloud provider adds managed Kubernetes, databases, S3 and GPU to its catalog."
 language: "en"
+# The German version was withdrawn; its URL redirects here.
+aliases: ["/de/webinare/public-cloud-starten/"]
 layout: "event-landing"
 bodyClass: "webinar-landing"
 primary_keyword: "managed services for hosting providers"
 secondary_keywords: ["sell managed kubernetes", "managed database hosting provider", "gpu as a service provider", "cozystack webinar", "cloud service catalog"]
 images: ["img/og/og-webinar-en.png"]
 hide_child_cards: true
-hero_eyebrow: "Free live webinar · Online · Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC)"
+hero_eyebrow: "Webinar · Took place online on Wednesday 19 August 2026 · Recording available"
 hero_title: "Add Kubernetes, databases and GPU to your price list"
 hero_tagline: "One hour with Andrei Kvapil, the creator of Cozystack: how a working provider widens the catalog on the racks it already owns — beside the platform it already runs, keeping its own billing and its own panel."
 hero_chips:
-  - "Free with registration"
-  - "60 minutes, live Q&A"
-  - "Recording to every registrant"
-  - "Bring your stack — questions answered live"
-hero_primary: { text: "Save my seat", href: "#register" }
+  - "Recording on YouTube"
+  - "60 minutes, with a live Q&A"
+  - "Free to watch"
+  - "Questions about your own stack — talk to the team"
+hero_primary: { text: "Watch the recording", href: "https://youtu.be/eRFap6FzNj0" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
 inshort_title: "About the webinar"
@@ -28,24 +31,24 @@ event:
   language: "en"
   mode: "online"
   performer: "Andrei Kvapil"
-  performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
+  performer_role: "Creator and maintainer of Cozystack, co-founder and CEO of Ænix"
   price: 0
 direct_answer: |
-  **This is a free live webinar for hosting providers, cloud providers, data centre operators, MSPs and telecoms that already sell infrastructure and are deciding what to sell next. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — walks through how a working provider widens its catalog with managed Kubernetes, managed databases, S3-compatible object storage and GPU: what runs beside the current stack, what happens to billing and to the customer panel, how customers move across one at a time, and what the first ninety days look like. Attendance is free with registration, and every registrant receives the recording.**
+  **This was a free live webinar, held on 19 August 2026, for hosting providers, cloud providers, data centre operators, MSPs and telecoms that already sell infrastructure and are deciding what to sell next. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — walked through how a working provider widens its catalog with managed Kubernetes, managed databases, S3-compatible object storage and GPU: what runs beside the current stack, what happens to billing and to the customer panel, how customers move across one at a time, and what the first ninety days look like. The recording is free to watch on YouTube.**
 
 quick_facts:
   - label: "Format"
     value: "A live online webinar, about 60 minutes: a practical walkthrough followed by a live Q&A with the speaker"
   - label: "Date"
-    value: "Wednesday 19 August 2026, 16:00 CEST (14:00 UTC) — online. Register to get the calendar invite and the recording."
+    value: "Took place on Wednesday 19 August 2026, 16:00 CEST (14:00 UTC), online"
   - label: "Price"
-    value: "Free with registration; every registrant receives the recording"
+    value: "Free; the recording is public on YouTube"
   - label: "Language"
     value: "English"
   - label: "Who it's for"
     value: "Founders, CTOs, COOs and product leaders at hosting providers, cloud providers, data centres, MSPs and telecoms that already sell infrastructure"
   - label: "Host"
-    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), founder of Aenix"
+    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), co-founder and CEO of Ænix"
   - label: "After the webinar"
     value: "The recording, plus a practical view of a catalog and migration plan you can adapt to your own stack"
 
@@ -57,21 +60,21 @@ faq:
   - q: "What happens to our billing?"
     a: "It stays yours. WHMCS has a ready integration, anything else connects over the platform API, and usage metering exports into whatever you invoice from today. Your customer database stays the source of truth."
   - q: "We wrote our own control panel. Do we throw it away?"
-    a: "No. The platform exposes a REST API and its own panel is optional. Andrei covers both patterns: keeping your panel as the customer-facing surface, or white-labelling ours."
+    a: "No. The platform exposes a REST API and its own panel is optional. Andrei covered both patterns: keeping your panel as the customer-facing surface, or white-labelling ours."
   - q: "Can we sell GPU from the same platform?"
-    a: "Yes. Whole-card passthrough, vGPU and MIG on supported cards, so one card can serve more than one tenant. Andrei covers what each mode gives you and what you can put in a customer contract."
+    a: "Yes. Whole-card passthrough, plus vGPU and fractional sharing (HAMi) on supported cards, so one card can serve more than one tenant; MIG is on the roadmap. Andrei covered what each mode gives you and what you can put in a customer contract."
   - q: "How many engineers does it take to run?"
     a: "Fewer than OpenStack. The platform is one coherent Kubernetes-native stack rather than a dozen services you integrate yourself, and upgrades are a release rather than a project."
   - q: "What does a pilot involve?"
     a: "One node's worth of hardware to start, access, and someone to accept the result against criteria agreed by both sides. The pilot environment becomes your production — you add nodes as you grow into it."
-  - q: "Will there be a recording?"
-    a: "Yes, to everyone who registers. The Q&A is the exception — that part only happens live."
+  - q: "Is there a recording?"
+    a: "Yes. The webinar took place on 19 August 2026 and the recording is on YouTube: [watch the recording](https://youtu.be/eRFap6FzNj0). For questions about your own stack, [talk to the team](/contact/)."
 
 final_cta:
-  heading: "Bring your stack to the Q&A"
-  text: "Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
-  button: "Save my seat"
-  href: "#register"
+  heading: "Bring your stack to a conversation"
+  text: "The webinar took place on 19 August 2026. Watch the recording, then talk to the team about the catalog that fits your own platform."
+  button: "Talk to the team"
+  href: "/contact/"
 ---
 
 <section class="ws-section ws-story wb-story" aria-labelledby="wb-story-h">
@@ -122,7 +125,7 @@ final_cta:
 <li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12c0 1.66 3.13 3 7 3s7-1.34 7-3"/></svg></span>Managed databases</li>
 <li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>Virtual machines</li>
 <li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.3A3.5 3.5 0 0 1 17.5 18H7Z"/></svg></span>S3-compatible storage</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>GPU · passthrough, vGPU, MIG</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>GPU · passthrough, vGPU, HAMi sharing</li>
 </ul>
 <div class="wb-platform__plus"><span>+ Ænix modules</span></div>
 <ul class="wb-platform__modules">
@@ -137,7 +140,7 @@ final_cta:
 <div class="ws-wrap">
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">20+</div><div class="cs-stat__label">managed services in the catalog, ready to price and sell</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">1 GPU → many tenants</div><div class="cs-stat__label">whole-card passthrough, vGPU and MIG on supported cards</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">1 GPU → many tenants</div><div class="cs-stat__label">whole-card passthrough, vGPU and fractional sharing on supported cards</div></div>
   <div class="cs-stat"><div class="cs-stat__num">€0</div><div class="cs-stat__label">per-core hypervisor licensing — Apache 2.0, CNCF Sandbox project</div></div>
 </div>
 </div>
@@ -171,7 +174,7 @@ final_cta:
 
 <section class="ws-section wb-cover" id="agenda" aria-labelledby="wb-cover-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-cover-h">What we'll cover</h2>
+<h2 class="ws-h2" id="wb-cover-h">What the session covers</h2>
 <p class="ws-lead">Forty-five minutes of practice, then your questions.</p>
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
@@ -197,7 +200,7 @@ final_cta:
 <li class="wb-cover__item">
 <span class="wb-cover__num">05</span>
 <span class="wb-cover__icon">{{< ws-icon name="vm" >}}</span>
-<p class="wb-cover__text"><strong>GPU as a product.</strong> Renting a whole card or a slice of one: passthrough, vGPU and MIG, what each isolates, and what you can put in a customer contract.</p>
+<p class="wb-cover__text"><strong>GPU as a product.</strong> Renting a whole card or a share of one: passthrough, vGPU and fractional sharing (HAMi), what each isolates, and what you can put in a customer contract.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">06</span>
@@ -205,14 +208,14 @@ final_cta:
 <p class="wb-cover__text"><strong>The pilot, and the first ninety days.</strong> One node, roughly two weeks to a working environment, and the pilot becomes your production — no reinstall, acceptance criteria agreed by both sides.</p>
 </li>
 </ol>
-<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>The session ends with a <strong>live Q&amp;A</strong>. Questions submitted at registration get priority — and this part only happens live.</span></p>
+<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>The session ended with a <strong>live Q&amp;A</strong> with the speaker.</span></p>
 </div>
 </section>
 
 <section class="ws-section ws-outcomes wb-outcomes" aria-labelledby="wb-outcomes-h">
 <div class="ws-outcomes__bg" aria-hidden="true"></div>
 <div class="ws-wrap">
-<h2 class="ws-h2 ws-h2--light" id="wb-outcomes-h">What you'll leave with</h2>
+<h2 class="ws-h2 ws-h2--light" id="wb-outcomes-h">What you take away</h2>
 <div class="ws-outcomes__grid">
 <article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">01</span>
@@ -235,13 +238,13 @@ final_cta:
 <p class="ws-outcome__text"><strong>A pilot you can actually start</strong> — one node, two weeks, and it becomes your production.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Save my seat</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Watch the recording</a></div>
 </div>
 </section>
 
 <section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who should attend</h2>
+<h2 class="ws-h2" id="wb-audience-h">Who it is for</h2>
 <p class="ws-lead">Providers that already sell infrastructure and are deciding what to sell next. If your platform today is VMware, OpenStack, Proxmox, Virtuozzo, CloudStack, OpenNebula or something you wrote yourself, the session is built around your situation.</p>
 <ul class="wb-audience__tiles">
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
@@ -266,7 +269,7 @@ final_cta:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
-<div class="ws-speaker__role">Creator of Cozystack · Founder of Aenix</div>
+<div class="ws-speaker__role">Creator of Cozystack · Co-founder and CEO of Ænix</div>
 <p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers across Europe turn their infrastructure into commercial cloud services.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
@@ -280,15 +283,12 @@ LinkedIn</a>
 </div>
 </section>
 
-<section class="ws-section ws-register" id="register" aria-labelledby="wb-register-h">
+<section class="ws-section ws-register" id="recording" aria-labelledby="wb-recording-h">
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
-<h2 class="ws-h2 ws-h2--light" id="wb-register-h">Registration</h2>
-<p class="ws-register__lead">Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
-<div class="ws-register__form">
-
-{{< clickmeeting room="18263597110070205" >}}
-
-</div>
+<h2 class="ws-h2 ws-h2--light" id="wb-recording-h">Watch the recording</h2>
+<p class="ws-register__lead">The webinar took place online on Wednesday 19 August 2026. The recording is on YouTube.</p>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Watch the recording</a></div>
+<p class="ws-register__lead">Weighing what to add to your own catalog? <a href="/contact/">Talk to the team</a>, or see the <a href="/workshops/">upcoming workshops</a>.</p>
 </div>
 </section>

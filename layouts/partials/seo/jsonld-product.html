@@ -1,0 +1,117 @@
+{{- /*
+  JSON-LD for product pages and the pricing page.
+
+  Each page describes what it sells, not the open-source project:
+    - Ænix Public Cloud Platform (product page, /pricing/): Product with the
+      published list price from data/pricing.yaml (per 10 physical nodes per
+      month, USD). /pricing/ lists every priced tier.
+    - Ænix Private Cloud Platform, Ænix AI Platform: quoted per RFP, so a
+      Service with no price.
+    - Enterprise support for Cozystack: Service with the same tier prices,
+      which apply to support for self-run Cozystack.
+    - WHMCS integration: Service, no separate price.
+    - /products/cozystack/: SoftwareApplication "Cozystack" — free,
+      Apache-2.0, home at cozystack.io. The only page that describes it.
+  Pages not listed here (the /products/ hub) emit nothing: Organization,
+  BreadcrumbList and FAQPage already describe them.
+*/ -}}
+{{- $path := .RelPermalink -}}
+{{- $org := dict "@id" ("/#org" | absURL) -}}
+{{- $unit := "per 10 physical nodes per month, billed annually" -}}
+{{- $offers := slice -}}
+{{- range site.Data.pricing.plans -}}
+  {{- if .price_annual -}}
+  {{- $offers = $offers | append (dict
+      "@type" "Offer"
+      "name" (printf "%s support tier" .name)
+      "price" .price_annual
+      "priceCurrency" "USD"
+      "url" ("/pricing/" | absURL)
+      "priceSpecification" (dict
+        "@type" "UnitPriceSpecification"
+        "price" .price_annual
+        "priceCurrency" "USD"
+        "unitText" $unit)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $entry := dict -}}
+{{- with $offers }}{{ $entry = index . 0 }}{{ end -}}
+{{- $node := dict -}}
+{{- $publicCloud := slice "/products/public-cloud-platform/" "/de/produkte/public-cloud-platform/" -}}
+{{- $pricing := slice "/pricing/" "/de/preise/" -}}
+{{- $private := slice "/products/private-cloud-platform/" "/de/produkte/private-cloud-platform/" -}}
+{{- $ai := slice "/products/ai-platform/" "/de/produkte/ai-platform/" -}}
+{{- $support := slice "/products/cozystack-enterprise-support/" "/de/produkte/cozystack-enterprise-support/" -}}
+{{- $whmcs := slice "/products/whmcs-integration/" "/de/produkte/whmcs-integration/" -}}
+{{- $cozystack := slice "/products/cozystack/" "/de/produkte/cozystack/" -}}
+{{- if or (in $publicCloud $path) (in $pricing $path) -}}
+  {{- $node = dict
+      "@context" "https://schema.org"
+      "@type" "Product"
+      "name" "Ænix Public Cloud Platform"
+      "url" ("/products/public-cloud-platform/" | absURL)
+      "description" "Turnkey public cloud platform for hosting and cloud providers, built on open-source Cozystack: multi-tenant virtual machines, managed Kubernetes and databases, billing and a white-label customer portal."
+      "brand" (dict "@type" "Brand" "name" "Ænix")
+      "manufacturer" $org
+      "category" "Cloud platform software and support subscription" -}}
+  {{- if in $pricing $path -}}
+    {{- with $offers }}{{ $node = merge $node (dict "offers" .) }}{{ end -}}
+  {{- else -}}
+    {{- with $entry }}{{ $node = merge $node (dict "offers" .) }}{{ end -}}
+  {{- end -}}
+{{- else if in $private $path -}}
+  {{- $node = dict
+      "@context" "https://schema.org"
+      "@type" "Service"
+      "name" "Ænix Private Cloud Platform"
+      "url" .Permalink
+      "serviceType" "Private cloud platform for regulated enterprises, including developer self-service"
+      "description" .Description
+      "provider" $org
+      "brand" (dict "@type" "Brand" "name" "Ænix") -}}
+{{- else if in $ai $path -}}
+  {{- $node = dict
+      "@context" "https://schema.org"
+      "@type" "Service"
+      "name" "Ænix AI Platform"
+      "url" .Permalink
+      "serviceType" "GPU and AI infrastructure platform"
+      "description" .Description
+      "provider" $org
+      "brand" (dict "@type" "Brand" "name" "Ænix") -}}
+{{- else if in $support $path -}}
+  {{- $node = dict
+      "@context" "https://schema.org"
+      "@type" "Service"
+      "name" "Enterprise support for Cozystack"
+      "url" .Permalink
+      "serviceType" "Commercial support for self-run Cozystack clusters"
+      "description" .Description
+      "provider" $org -}}
+  {{- with $offers }}{{ $node = merge $node (dict "offers" .) }}{{ end -}}
+{{- else if in $whmcs $path -}}
+  {{- $node = dict
+      "@context" "https://schema.org"
+      "@type" "Service"
+      "name" "Ænix WHMCS integration"
+      "url" .Permalink
+      "serviceType" "WHMCS billing integration for Ænix Public Cloud Platform"
+      "description" .Description
+      "provider" $org -}}
+{{- else if in $cozystack $path -}}
+  {{- $node = dict
+      "@context" "https://schema.org"
+      "@type" "SoftwareApplication"
+      "name" "Cozystack"
+      "applicationCategory" "Cloud platform"
+      "operatingSystem" "Linux"
+      "url" "https://cozystack.io"
+      "description" "Open-source cloud platform built on Kubernetes, KubeVirt, Cilium and LINSTOR; a CNCF Sandbox project. Ænix created it and is one of its maintainers."
+      "license" "https://www.apache.org/licenses/LICENSE-2.0"
+      "isAccessibleForFree" true
+      "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "USD")
+      "creator" $org -}}
+{{- end -}}
+{{- with $node }}
+<script type="application/ld+json">{{ . | jsonify | safeJS }}</script>
+{{- end }}

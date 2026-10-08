@@ -1,5 +1,6 @@
 ---
 title: "Cozystack 1.6: Talos-Worker, Tenant-SSO, SecurityGroups und hierarchische Quotas"
+seo_title: "Cozystack 1.6: Talos-Worker und Tenant-SSO"
 description: "Cozystack v1.6.0 stellt Tenant-Worker auf Talos um und bringt Tenant-OIDC, eine SecurityGroup-Firewall-API, hierarchische Quotas und etcd v1alpha2."
 slug: "cozystack-1-6-talos-worker-tenant-sso-hierarchische-quotas"
 date: "2026-07-22"
@@ -10,10 +11,10 @@ language: "de"
 hreflang_en: "/blog/2026/07/cozystack-1-6-talos-workers-tenant-sso-and-hierarchical-quotas/"
 companion_landing: "/de/produkte/cozystack-enterprise-support/"
 companion_label: "Enterprise-Support für Cozystack ansehen →"
-cover_image: ""
+cover_image: "/img/blog/covers/de/cozystack-1-6-talos-worker-tenant-sso-hierarchische-quotas.jpg"
 ---
 
-{{< placeholder-image width="1200" height="630" label="Cozystack v1.6.0 — Titelbild (1200×630)" >}}
+![Cozystack 1.6: Talos-Worker, Tenant-SSO, SecurityGroups und hierarchische Quotas](/img/blog/covers/de/cozystack-1-6-talos-worker-tenant-sso-hierarchische-quotas.jpg)
 
 Cozystack v1.6.0 ist am 22. Juli 2026 erschienen. Das Release ersetzt den Ubuntu-und-kubeadm-Bootstrap der Tenant-Kubernetes-Worker durch Talos Linux über Cluster API, schließt die Migration auf `etcd-operator v1alpha2` mit In-place-Adoption laufender Cluster ab, bringt OIDC-Single-Sign-on für Tenant-kube-apiserver und einzelne Grafana-Instanzen, führt die tenantseitige Firewall-API `SecurityGroup` ein und macht Ressourcenquotas hierarchisch. Alle Fixes aus v1.5.1 und v1.5.2 sind enthalten.
 
@@ -21,7 +22,7 @@ Es bringt außerdem die größte Upgrade-Oberfläche seit v1.0 mit. Die Migratio
 
 ## Vor dem Upgrade lesen
 
-**Steigen Sie auf v1.6.2 um, nicht auf v1.6.0.** Drei der Fixes nach v1.6.0 gehören zur Sorte, die still versagt:
+**Steigen Sie auf v1.6.4 (oder das neueste 1.6.x) um, nicht auf v1.6.0.** Drei der Fixes nach v1.6.0 gehören zur Sorte, die still versagt:
 
 - v1.6.0 lieferte eine **fail-open**-Fassung von `hack/seaweedfs-naming-audit.sh` aus — ausgerechnet des Skripts, dessen Ausgabe einen Runbook-Schritt freigibt, der PVCs löscht. Jeder `kubectl`-Aufruf darin war mit `2>/dev/null` stummgeschaltet, ein Timeout oder eine RBAC-Ablehnung erzeugte also eine leere „alles sauber“-Tabelle, die byte-identisch zu der einer tatsächlich sauberen Flotte war. Behoben in v1.6.1. Führen Sie das Audit aus einem Checkout ab v1.6.1 aus und lesen Sie den **Exit-Code**, nicht die Tabelle. Ein sauberes Ergebnis aus der v1.6.0-Fassung beweist nichts.
 - v1.6.2 behebt, dass Velero-CRDs auf der zuerst installierten Version einfrieren, weil Helm das Verzeichnis `crds/` eines Charts beim Upgrade nie anfasst. Sobald das Velero-Image auf eine Version mit neuen Backup-Phasen wechselte, wies der Apiserver die Phasenübergänge gegen die veralteten CRDs ab — **die Backups liefen nicht mehr, während die HelmRelease grün blieb**.
@@ -181,6 +182,7 @@ Zwei API-Gruppen sind vor allem als Nicht-Ereignis erwähnenswert. Bei `Security
 
 - **v1.6.1** (5. August 2026): CNPG-Operator und CRDs gemeinsam auf 1.28.2 gehoben, was einen PVC-Resize-Deadlock behebt, der einen PostgreSQL-Cluster mit einer einzigen Instanz ohne jede Instanz zurücklassen konnte; der Job `talos-reconcile` wird jetzt auch für die implizite Gruppe `md0` gerendert, sodass die erste vom Autoscaler getriebene Skalierung nicht mehr Machines ohne passendes `TalosConfigTemplate` dauerhaft blockiert; der Pre-Delete-Job `keycloak-configure` patcht die HelmRelease im richtigen Namespace und macht Deinstallation und Neuinstallation von Keycloak wieder möglich; das SeaweedFS-Namens-Audit bricht bei Fehlern hart ab; etcd-operator auf v0.5.4.
 - **v1.6.2** (19. August 2026): das Lookup-Gate der Backup-Strategien, das Velero-CRD-Upgrade und das Nachladen des kube-ovn-Webhook-Zertifikats. Letzteres wiegt schwer: `kube-ovn-webhook` lud sein Serverzertifikat nur beim Start und las es nie neu ein, sodass nach einer cert-manager-Erneuerung unter `failurePolicy: Fail` jede Pod-Erstellung in Tenant-Namespaces abgelehnt wurde — inklusive `virt-launcher`-Pods, was den VMI-Start blockierte. Außerdem: barman-cloud fordert S3-Prüfsummen nur noch, wenn nötig, sodass Backups nach Ceph RGW und manchen MinIO- und R2-Builds nicht mehr komplett scheitern; geshardete helm-controller crashloopen hinter einem HTTP-Proxy nicht mehr; `kubectl apply --validate` funktioniert wieder gegen die API-Gruppen `core` und `sdn`.
+- Danach folgten die Patch-Releases v1.6.3 und v1.6.4. Verwenden Sie das neueste 1.6.x; siehe die [Cozystack-Releases](https://github.com/cozystack/cozystack/releases).
 
 ## Upgrade
 
@@ -189,7 +191,7 @@ kubectl annotate namespace cozy-system helm.sh/resource-policy=keep --overwrite
 kubectl annotate configmap -n cozy-system cozystack-version helm.sh/resource-policy=keep --overwrite
 
 helm upgrade cozystack oci://ghcr.io/cozystack/cozystack/cozy-installer \
-  --version 1.6.2 \
+  --version 1.6.4 \
   --namespace cozy-system
 ```
 
@@ -197,11 +199,12 @@ Die Annotationen sind Pflicht — ohne sie kann das Entfernen oder Aktualisieren
 
 ## Wo Ænix ins Spiel kommt
 
-Cozystack ist ein CNCF-Sandbox-Projekt unter Apache 2.0. v1.6 ist ein gutes Release und ein anspruchsvolles Upgrade — der Talos-Worker-Rollover, die etcd-Adoption und die geänderte Löschsemantik verdienen jeweils eine Generalprobe auf einem Nicht-Produktivcluster. Ænix pflegt das Projekt und bietet [Enterprise-Support für Cozystack](/de/produkte/cozystack-enterprise-support/), einschließlich Upgrade-Planung und begleiteter Migration für Teams im Produktivbetrieb.
+Cozystack ist ein CNCF-Sandbox-Projekt unter Apache 2.0. v1.6 ist ein gutes Release und ein anspruchsvolles Upgrade — der Talos-Worker-Rollover, die etcd-Adoption und die geänderte Löschsemantik verdienen jeweils eine Generalprobe auf einem Nicht-Produktivcluster. Ænix hat Cozystack geschaffen und gehört zu seinen Maintainern; es bietet [Enterprise-Support für Cozystack](/de/produkte/cozystack-enterprise-support/), einschließlich Upgrade-Planung und begleiteter Migration für Teams im Produktivbetrieb.
 
 ## Release-Links
 
 - [Cozystack v1.6.0 auf GitHub](https://github.com/cozystack/cozystack/releases/tag/v1.6.0)
 - [Cozystack v1.6.2 auf GitHub](https://github.com/cozystack/cozystack/releases/tag/v1.6.2)
+- [Alle Cozystack-Releases auf GitHub](https://github.com/cozystack/cozystack/releases)
 - [Cozystack-v1.6-Dokumentation](https://cozystack.io/docs/v1.6/)
 - [Telegram](https://t.me/cozystack) und [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (Einladung über [slack.kubernetes.io](https://slack.kubernetes.io/))

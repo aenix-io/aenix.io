@@ -1,85 +1,96 @@
 ---
-title: "Proxmox zu Cozystack Migration — wenn SMB-Virtualisierung nicht mehr passt"
-description: "Proxmox VE ist exzellent at SMB-Skala. Wenn Deployments zu Multi-Tenant-Cloud-Buildern oder Service-Provider-Modellen wachsen, strapaziert das operative..."
-related_pages:
-  - /de/alternativen/proxmox-alternative
-  - /de/produkte/public-cloud-platform/
-  - /de/produkte/cozystack
-  - /de/dienstleistungen/platform-readiness-assessment
+title: "Proxmox-zu-Cozystack-Migration — wenn SMB-Virtualisierung nicht mehr passt"
+seo_title: "Proxmox-Migration zu Cozystack für Service-Provider"
+description: "Proxmox VE ist im SMB-Umfeld hervorragend. Muss es viele Tenants mit Servicekatalog und Billing bedienen, migriert Ænix es durchgängig auf Cozystack."
+primary_keyword: "Proxmox Migration"
+secondary_keywords:
+  - "Proxmox zu Cozystack Migration"
+  - "Proxmox zu KubeVirt"
+  - "von Proxmox migrieren"
+related_pages: ["/de/alternativen/proxmox-alternative/", "/de/vergleichen/cozystack-vs-proxmox/", "/de/produkte/public-cloud-platform/", "/de/produkte/cozystack/", "/de/dienstleistungen/platform-readiness-assessment/"]
 language: "de"
 hreflang_en: /migration/proxmox/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Eine Proxmox-zu-Cozystack-Migration verlagert Workloads von Proxmox VE auf Cozystack, eine offene Cloud-Plattform auf Kubernetes-Basis. Sie richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds, die das operative Modell von Proxmox bei 50+ Hosts, Multi-Tenancy für externe Kunden oder einem Service-Katalog jenseits reiner VMs entwachsen haben. VM-Images werden von KVM auf KubeVirt übertragen, Storage von ZFS oder Ceph auf LINSTOR, und Proxmox-Berechtigungen auf das Tenant-CRD-Modell. Aenix, das Open-Core-Unternehmen hinter Cozystack, führt diese Migrationen end-to-end durch: produktisierter Installer für die Public Cloud Platform in Wochen, Workload-Migration in Kohorten über 3 bis 6 Monate.**
+  **Eine Proxmox-zu-Cozystack-Migration verlagert Virtualisierungs-Workloads von Proxmox VE auf Cozystack, die Open-Source-Cloud-Plattform auf Kubernetes-Basis. Sie richtet sich an Hosting-Anbieter, ISPs und Service-Provider-Clouds, die dem Einzelorganisationsmodell von Proxmox entwachsen sind und ein Tenant-Modell, einen Servicekatalog über reine VMs hinaus (Managed Databases, S3, Kubernetes-Mandanten, GPU) sowie produktionsreife Multi-Cluster-Föderation brauchen. Ænix hat Cozystack initiiert, pflegt es mit und führt diese Migrationen durchgängig durch: VM-Images werden per CDI von qcow2 nach KubeVirt konvertiert, das Mandantenmodell wird während der Migration mit dem Tenant-CRD entworfen, Storage und Netzwerk werden auf LINSTOR/DRBD und Cilium neu aufgebaut. Cozystack steht unter Apache 2.0, ohne Gebühren pro CPU oder Core. Für Single-Tenant-Umgebungen unter 50 Hosts empfehlen wir, bei Proxmox zu bleiben.**
 
 quick_facts:
   - label: "Was es ist"
-    value: "End-to-end-Migration von Proxmox VE auf Cozystack — KVM zu KubeVirt, ZFS/Ceph zu LINSTOR, Proxmox-Permissions zu Tenant CRD"
+    value: "Durchgängige Migration von Proxmox VE auf Cozystack für Multi-Tenant-Clouds und Service-Provider-Umgebungen"
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Zielgruppe"
-    value: "Hosting-Anbieter, Service-Provider und regionale Clouds, die Proxmox bei 50+ Hosts oder Multi-Tenant-Anforderungen entwachsen"
-  - label: "Technologie-Stack"
-    value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
-  - label: "Migrations-Zeitrahmen"
-    value: "Public Cloud Platform über produktisierten Installer in Wochen live; Workload-Migration in Kohorten über 3 bis 6 Monate für mittelgroße Bestände"
-  - label: "Engagement"
-    value: "Ænix Public Cloud Platform ab 1.250 USD/Monat Support-Tier, mit WHMCS-integriertem Billing und White-Label-Customer-Portal"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; der Antrag auf Incubation befindet sich in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Hosting-Anbieter, ISPs und regionale Clouds, die an die Grenzen von Proxmox bei Mandantenfähigkeit und Servicekatalog stoßen"
+  - label: "Zeitplan"
+    value: "Platform Readiness Assessment (14 oder 28 Tage, Festpreis); die Plattform ist innerhalb weniger Wochen live, sobald die Hardware bereitsteht; der Umzug von Workloads und Kunden dauert typischerweise 3–9 Monate"
+  - label: "Migrationspfad"
+    value: "VM-Images werden per CDI von qcow2 nach KubeVirt konvertiert; die Mandantenfähigkeit wird während der Migration mit dem Tenant-CRD entworfen; Storage und Netzwerk werden auf LINSTOR/DRBD und Cilium neu aufgebaut"
+  - label: "Wann bei Proxmox bleiben"
+    value: "Single-Tenant-Umgebungen unter etwa 50 Hosts, bei denen sich der Migrationsaufwand nicht rechnet"
 
 faq:
   - q: "Wann lohnt sich eine Migration von Proxmox zu Cozystack?"
-    a: "Wenn das Proxmox-Deployment auf 50+ Hosts wächst und Skalierungs-Schmerz entsteht, Multi-Tenancy für externe Kunden gefordert ist, der Service-Katalog über VMs hinausgeht (DBs, S3, GPU), Billing-Integration nötig wird, ein White-Label-Customer-Portal gebraucht wird oder der Anteil an Kubernetes-Workloads steigt."
-  - q: "Wie werden bestehende Proxmox-VMs nach Cozystack migriert?"
-    a: "VM-Images werden von KVM unter Proxmox auf KubeVirt unter Cozystack übertragen. Storage wandert von ZFS oder Ceph auf LINSTOR/DRBD. Das Berechtigungsmodell von Proxmox wird auf das Tenant-CRD-Modell von Cozystack abgebildet. VMs und Container laufen anschließend auf einer gemeinsamen Kubernetes-API."
+    a: "Sie lohnt sich in der Größenordnung eines Service-Providers: wenn Sie Mandantenfähigkeit über die Pools und ACLs von Proxmox hinaus brauchen, einen Servicekatalog jenseits von VMs (Managed Databases, S3, Kubernetes-Mandanten, GPU), produktionsreife Multi-Cluster-Föderation oder eine regulierte Mandantentrennung. Single-Tenant-Umgebungen unter etwa 50 Hosts sollten bei Proxmox bleiben."
+  - q: "Wie werden Proxmox-VMs nach Cozystack migriert?"
+    a: "Die Migration der VM-Images ist unkompliziert: qcow2-Disks werden mit dem Containerized Data Importer (CDI) nach KubeVirt konvertiert. Das Tenant-Modell (Quotas, Netze und Dienste pro Mandant) wird während der Migration entworfen, weil sich Pools und ACLs von Proxmox nicht eins zu eins darauf abbilden lassen. Storage und Netzwerk werden auf den Cozystack-Grundlagen LINSTOR/DRBD und Cilium neu aufgebaut."
   - q: "Wie lange dauert eine Proxmox-zu-Cozystack-Migration?"
-    a: "Der produktisierte Installer bringt die Public Cloud Platform innerhalb von Wochen live. Die eigentliche Workload-Migration erfolgt in Kohorten über 3 bis 6 Monate für mittelgroße Bestände, um Risiko und Ausfallzeiten zu begrenzen."
-  - q: "Welche Ænix Plattform passt für Hosting-Anbieter, die Proxmox ablösen?"
-    a: "Die Ænix Public Cloud Platform — eine turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds. Sie bietet WHMCS-integriertes Billing, ist Multi-Tenant by design und kommt mit produktisiertem Installer. Support ab 1.250 USD/Monat."
-  - q: "Wie wird Cozystack lizenziert und welche Folgekosten gibt es?"
-    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Es gibt keine pro-Socket- oder pro-Core-Gebühren wie bei proprietären Virtualisierungs-Stacks. Aenix verkauft die produktisierte Ænix Platform plus Services in vier Tiers: Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise Custom."
-  - q: "Bringt Cozystack neben VMs auch weitere Cloud-Dienste mit?"
-    a: "Ja. Über reine Virtualisierung hinaus bietet Cozystack Managed Databases, S3-kompatiblen Object Storage und GPU-Workloads auf derselben Kubernetes-API. Genau dieser Service-Katalog jenseits von VMs ist häufig der Auslöser für einen Wechsel von Proxmox."
+    a: "Ein typisches Projekt beginnt mit einem Platform Readiness Assessment zum Festpreis über 14 oder 28 Tage. Mit dem Installer der Ænix Public Cloud Platform ist die Plattform innerhalb weniger Wochen live, sobald die Hardware bereitsteht; der Umzug von Workloads und Kunden dauert typischerweise 3–9 Monate. Die genaue Dauer hängt von der Zahl der Workloads, den Anforderungen an die Mandantenfähigkeit und dem Umfang des Storage- und Netzwerk-Umbaus ab."
+  - q: "Braucht Cozystack wie kommerzielle Hypervisoren eine Lizenz pro CPU oder Core?"
+    a: "Nein. Cozystack ist Open Source unter Apache 2.0, ohne Lizenzkosten pro CPU oder Core. Ænix verkauft ein Abonnement (Support, kommerzielle Module wie Billing und WHMCS-Integration sowie Services), keine Lizenz. Die Support-Stufen für die Ænix Public Cloud Platform und selbst betriebenes Cozystack beginnen bei 1.250 USD pro 10 Nodes und Monat (Basic, jährliche Abrechnung)."
+  - q: "Was bietet Cozystack, das Proxmox nicht bietet?"
+    a: "Cozystack vereint VMs und Container über KubeVirt auf einer einzigen Kubernetes-API und ergänzt native Mandantenfähigkeit über das Tenant-CRD, eBPF-Networking mit Cilium und replizierten Storage mit LINSTOR/DRBD, dazu einen Servicekatalog mit Managed Databases, S3, Kubernetes-Mandanten und GPU-Unterstützung."
+  - q: "Wer führt die Migration durch?"
+    a: "Ænix, das Unternehmen, das Cozystack initiiert hat und gemeinsam mit anderen Maintainern pflegt, führt die Migration durchgängig durch, vom Assessment bis zur Umsetzung. Cozystack ist ein CNCF-Sandbox-Projekt (der Antrag auf Incubation befindet sich in der Due-Diligence-Prüfung); die zugrunde liegende Plattform ist also Open Source und nicht an einen einzelnen Anbieter gebunden."
 ---
 
-**Proxmox VE ist exzellent at SMB-Skala. Wenn Deployments zu Multi-Tenant-Cloud-Buildern oder Service-Provider-Modellen wachsen, strapaziert das operative Modell. Ænix führt Proxmox-zu-Cozystack-Migrationen end-to-end durch.**
+**Proxmox VE ist im SMB-Umfeld hervorragend. Wachsen Umgebungen zu Multi-Tenant-Clouds oder Service-Provider-Modellen heran, kommt das Betriebsmodell an seine Grenzen. Ænix führt Proxmox-zu-Cozystack-Migrationen durchgängig durch.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — schlüsselfertige Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen. Billing mit WHMCS-Integration, Mandantenfähigkeit über das Tenant-CRD, produktisierter Installer. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/alternativen/proxmox-alternative">Proxmox-Alternative →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/alternativen/proxmox-alternative/">Proxmox-Alternative →</a>
 </div>
 
 ---
 
-## Wann Migration Sinn macht
+## Wann sich eine Migration lohnt
 
-- 50+ Hosts, Skalierungs-Schmerz
-- Multi-Tenant-Anforderungen für externe Kunden
-- Service-Katalog jenseits VMs (DBs, S3, GPU)
-- Billing-Integration erforderlich
-- White-Label-Customer-Portal-Bedarf
-- Kubernetes-Workload-Mix wachsend
+- Proxmox stößt in der Größenordnung eines Service-Providers (Cloud für viele Kunden) an Grenzen
+- Mandantenfähigkeit über Pools und ACLs von Proxmox hinaus (Quotas, Netze und Self-Service pro Mandant)
+- Servicekatalog jenseits von VMs (Managed Databases, S3, Kubernetes-Mandanten, GPU)
+- Produktionsreife Multi-Cluster-Föderation
+- Regulierte Anforderungen an die Mandantentrennung
+
+Ist Ihre Umgebung Single-Tenant und kleiner als 50 Hosts, **bleiben Sie bei Proxmox**. Der Migrationsaufwand rechnet sich dann nicht.
 
 ---
 
-## Migrations-Pattern
+## Vorgehen bei der Migration
 
-VM-Image-Migration: KVM (Proxmox) → KubeVirt (Cozystack). Storage: ZFS / Ceph → LINSTOR. Tenant-Modell: Proxmox-Permissions → Tenant CRD. Produktisierter Installer bringt Public Cloud Platform in Wochen live; Workload-Migration in Kohorten über 3-6 Monate für mittelgroße Bestände.
+Die Migration der VM-Images ist unkompliziert (qcow2 → KubeVirt-CDI). Das Tenant-Modell wird während der Migration entworfen, weil sich Pools und ACLs von Proxmox nicht eins zu eins auf Cozystack-Tenants abbilden lassen. Storage und Netzwerk werden neu aufgebaut.
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>Proxmox VE</b><div class="diagram__chips"><span>KVM</span><span>ZFS / Ceph</span></div></div>
-<div class="diagram__conn">verlagert via</div>
-<div class="diagram__node"><b>VM-Image-Migration</b><div class="diagram__chips"><span>KVM zu KubeVirt</span><span>Permissions zu Tenant CRD</span></div></div>
-<div class="diagram__conn">läuft auf</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR/DRBD</span></div></div>
+<div class="diagram__node"><b>Proxmox VE</b><div class="diagram__chips"><span>qcow2-VM-Disks</span><span>Einzelorganisationsmodell</span></div></div>
+<div class="diagram__conn">konvertiert über</div>
+<div class="diagram__node"><b>Migrationspfad</b><div class="diagram__chips"><span>KubeVirt-CDI-Import</span><span>Mandantenentwurf mit Tenant-CRD</span></div></div>
+<div class="diagram__conn">landet auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>LINSTOR/DRBD-Storage</span><span>Cilium-Networking</span></div></div>
 </div>
+</div>
+
+Typischer Ablauf: ein Assessment über 14 oder 28 Tage, die Plattform innerhalb weniger Wochen live, sobald die Hardware bereitsteht, danach 3–9 Monate für den Umzug von Workloads und Kunden.
+
+Sie wählen noch das Ziel? Siehe **[Proxmox-Alternative](/de/alternativen/proxmox-alternative/)** und **[Cozystack vs. Proxmox](/de/vergleichen/cozystack-vs-proxmox/)** oder den ausführlichen Beitrag **[Proxmox vs. VMware vs. Cozystack](/de/blog/2026/05/proxmox-vs-vmware-vs-cozystack/)**.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller der Ænix Public Cloud Platform, der Ænix Private Cloud Platform und der Ænix AI Platform.*
+*Ænix hat Cozystack initiiert (ein CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

@@ -1,19 +1,20 @@
 ---
 title: "Cloud engineering services — practical engineering across hyperscaler, hybrid, and on-prem"
+seo_title: "Cloud engineering services from platform engineers"
 description: "Senior cloud engineers who do the work: architecture, IaC, observability, CI/CD and FinOps across hyperscaler, hybrid and on-prem. Review, build or managed."
 related_pages: ["/services/platform-engineering", "/services/devops-consulting", "/services/platform-readiness-assessment", "/products/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cloud engineering services cover the full spectrum of technical work needed to design, automate, and operate cloud infrastructure across public hyperscaler, hybrid, and on-premises environments. Aenix delivers these services with senior engineers rather than advisory-only consultants, spanning cloud architecture review, infrastructure-as-code, observability, CI/CD and GitOps, Kubernetes platform decisions, network and identity, FinOps, and compliance posture for DORA and NIS2. The work is aimed at CTOs, VP Engineering, and platform teams that need execution capacity, not just recommendations. When scope expands into a productized private cloud, the engagement pairs with Ænix Platform, the commercial offering built on Cozystack, an Apache 2.0 CNCF project unifying virtual machines and containers on one Kubernetes API.**
+  **Cloud engineering services cover the full spectrum of technical work needed to design, automate, and operate cloud infrastructure across public hyperscaler, hybrid, and on-premises environments. Ænix delivers these services with senior engineers rather than advisory-only consultants, spanning cloud architecture review, infrastructure-as-code, observability, CI/CD and GitOps, Kubernetes platform decisions, network and identity, FinOps, and compliance posture for DORA and NIS2. The work is aimed at CTOs, VP Engineering, and platform teams that need execution capacity, not just recommendations. When scope expands into a productized private cloud, the engagement pairs with an Ænix platform, the commercial offerings built on Cozystack, an Apache 2.0 CNCF project unifying virtual machines and containers on one Kubernetes API.**
 quick_facts:
   - label: "What it is"
     value: "Hands-on engineering services for cloud architecture, automation, and operations across public, hybrid, and private/on-prem environments."
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Who it's for"
     value: "CTOs, VP Engineering, and platform teams that need execution capacity, not advisory-only recommendations."
   - label: "Engagement modes"
@@ -23,13 +24,13 @@ quick_facts:
   - label: "Standards addressed"
     value: "DORA and NIS2 compliance posture, plus sectoral requirements."
 faq:
-  - q: "What does Aenix cloud engineering cover?"
+  - q: "What does Ænix cloud engineering cover?"
     a: "Cloud architecture review and target design across public, private, and hybrid; infrastructure-as-code maturity; observability stack engineering; CI/CD and GitOps; Kubernetes platform decisions; network and identity engineering; FinOps integration; and compliance posture for DORA, NIS2, and sectoral requirements."
   - q: "How is this different from advisory consulting?"
-    a: "Aenix applies senior engineers who do the architecture, automation, and operations work directly, rather than producing recommendations a separate team must implement. Engagements range from a short architecture review to multi-month implementation or an ongoing managed engagement."
+    a: "Ænix applies senior engineers who do the architecture, automation, and operations work directly, rather than producing recommendations a separate team must implement. Engagements range from a short architecture review to multi-month implementation or an ongoing managed engagement."
   - q: "What engagement options are available?"
-    a: "Three modes: an architecture review (5-10 days), an implementation engagement (1-6 months), and a managed engagement for ongoing operations. Stand-alone engineering augmentation is available even if you are not yet evaluating Ænix Platform."
-  - q: "Do I have to adopt Ænix Platform or Cozystack to use these services?"
+    a: "Three modes: an architecture review (5-10 days), an implementation engagement (1-6 months), and a managed engagement for ongoing operations. Stand-alone engineering augmentation is available even if you are not yet evaluating an Ænix platform."
+  - q: "Do I have to adopt an Ænix platform or Cozystack to use these services?"
     a: "No. Cloud engineering is offered stand-alone across hyperscaler, hybrid, and on-prem stacks. When scope expands into a productized private cloud, the engagement can pair with an Ænix platform, which is built on the open-source Cozystack project."
   - q: "Can the engineering work address DORA and NIS2 compliance?"
     a: "Yes. Compliance posture for DORA, NIS2, and sectoral regulations is part of the standard scope, covering the architecture, automation, and operational controls these frameworks require."
@@ -46,7 +47,7 @@ aliases:
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/services/cloud-engineering/">Cloud engineering disciplines →</a>
+  <a class="cta-secondary" href="/services/">All services →</a>
 </div>
 
 ---
@@ -92,5 +93,5 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF-Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
 

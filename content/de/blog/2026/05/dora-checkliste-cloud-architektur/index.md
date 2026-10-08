@@ -1,10 +1,12 @@
 ---
 title: "DORA-Compliance-Checkliste für Cloud-Architektur — was Finanzunternehmen 2026 nachweisen müssen"
-description: "Begleitung zur DORA-Compliance-Page. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung."
+seo_title: "DORA-Checkliste für die Cloud-Architektur"
+description: "DORA-Checkliste für Cloud-Architekten: Geltungsbereich, Portabilität, Konzentrationsrisiko, operative Resilienz, Aufsichtszugang und die häufigsten Lücken."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/dora-checkliste-cloud-architektur.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["DORA", "Compliance", "Backup & DR", "Observability"]
+topics: ["DORA", "Compliance", "Backup and DR", "Observability"]
 language: "de"
 companion_landing: "/de/loesungen/dora-compliance/"
 quiz:
@@ -40,9 +42,10 @@ quiz:
         - { text: "Einen häufigen Fehler: vertragliche statt architektonischer Vielfalt", correct: true }
         - { text: "Eine ausdrückliche Anforderung aus der DSGVO", correct: false }
       explanation: "Häufige Lücke: Das Konzentrationsrisiko wird erkannt und dann mit vertraglichen Diversitätsklauseln beruhigt — ohne dass sich architektonisch etwas daran ändert, wie stark die Workloads von einem Anbieter abhängen. DORA fordert die tatsächliche Resilienz, nicht die vertragliche Formalie."
+hreflang_en: /blog/2026/05/dora-compliance-checklist-cloud-architecture/
 ---
 
-Begleitung zur **[DORA-Compliance-Page](/de/loesungen/dora-compliance)**. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung.
+Dieser Beitrag vertieft das Thema unserer Seite **[DORA](/de/loesungen/dora-compliance/)**. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung.
 
 ## DORA-Geltungsbereich
 
@@ -89,5 +92,5 @@ Strukturierte DORA-Bewertung → **[Platform Readiness Assessment](/de/dienstlei
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

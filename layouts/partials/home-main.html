@@ -1,0 +1,57 @@
+{{/*
+  home-main.html — the homepage body, shared by the English home
+  (layouts/index.html) and the German home (/de/, which is a section page in
+  this single-language site and selects it with `layout: "locale-home"`, see
+  layouts/_default/locale-home.html). Renders:
+    - Hero: H1 + subtitle (front matter hero_h1 / hero_subtitle, falling back
+      to .Title / .Description) + 2 CTAs + trust strip
+    - .Content (markdown body)
+  Every visible hero string can be overridden from front matter so the German
+  home is not stuck with English labels; the English defaults stay here.
+*/}}
+{{- $p := .Params -}}
+{{- $h1 := $p.hero_h1 | default .Title -}}
+{{- $sub := $p.hero_subtitle | default .Description -}}
+{{- $trust := $p.hero_trust | default (slice "CNCF Project" "Apache 2.0" "AENIX s.r.o. (CZ)" "AENIX INC (Delaware, USA)") -}}
+<article class="page page-home">
+  <section class="page-hero page-hero--home page-hero--split">
+    <div class="page-hero-bg">
+      <div class="page-hero-grid"></div>
+      <div class="page-hero-glow"></div>
+    </div>
+    <div class="container hero-split">
+      <div class="hero-split__copy">
+        <div class="page-hero-tag">{{ $p.hero_tag | default "Turnkey cloud-in-a-box · Open-source core · CNCF" }}</div>
+        <h1 class="page-hero-title">{{ $h1 }}</h1>
+        {{ with $sub }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+        <div class="page-hero-cta">
+          <a href="{{ $p.hero_cta_primary_url | default "/contact/" }}" class="btn btn-primary btn-xl">{{ $p.hero_cta_primary | default "Book a call" }}</a>
+          <a href="{{ $p.hero_cta_secondary_url | default "/products/" }}" class="btn btn-secondary btn-xl">{{ $p.hero_cta_secondary | default "Explore platform →" }}</a>
+        </div>
+        <p class="page-hero-microcopy">{{ $p.hero_microcopy | default "30-minute discovery call — no slides, we scope your build or migration." }}</p>
+        <div class="page-hero-trust page-hero-trust--pills" aria-label="{{ $p.hero_trust_label | default "Trust indicators" }}">
+          {{- range $trust }}
+          <span class="trust-pill">{{ . }}</span>
+          {{- end }}
+          <a class="trust-pill" href="{{ $p.hero_trust_iso_url | default "/compliance/iso-27001/" }}">ISO/IEC 27001 (AENIX s.r.o.)</a>
+          <span class="trust-pill">CNCF Kubernetes AI Conformance</span>
+        </div>
+      </div>
+      <div class="hero-split__visual">
+        {{ partial "hero-diagram.html" . }}
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+    {{/* GEO blocks (direct_answer, quick_facts, faq) from front matter, after
+         the visual sections so the designed home is not interrupted. Same
+         partials as landing pages; they render nothing when the fields are
+         absent. FAQPage JSON-LD comes from seo/head.html. */}}
+    {{ partial "seo/geo-intro.html" . }}
+    {{ partial "seo/geo-faq.html" . }}
+  </div>
+</article>

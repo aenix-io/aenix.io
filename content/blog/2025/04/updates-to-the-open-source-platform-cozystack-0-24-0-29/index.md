@@ -1,18 +1,19 @@
 ---
-title: "Updates to the Open-Source Platform Cozystack 0.24–0.29:"
-description: "We haven’t shared much about Cozystack’s new features lately, even though we’ve released six new versions over the past month and a half…"
+title: "Cozystack 0.24–0.29: PXE Machine Provisioning, Inter-Datacenter RTT Monitoring and Dedicated IP Addresses for VMs"
+seo_title: "Cozystack 0.24–0.29: PXE provisioning and VM IPs"
+description: "Six Cozystack releases in six weeks: PXE machine provisioning, RTT monitoring between data centres, dedicated IP addresses for VMs and more."
 date: "2025-04-10"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*XPWNsEtGmcIiY6zs"
+cover_image: "/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/cover.png"
 source_url: "https://medium.com/@tym83/updates-to-the-open-source-platform-cozystack-0-24-0-29-d47788ab7ebe"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Updates to the Open-Source Platform Cozystack 0.24–0.29: PXE Machine Provisioning, Inter-Datacenter RTT Monitoring, and Dedicated IP Addresses for VMs
 
 We haven’t shared much about Cozystack’s new features lately, even though we’ve released six new versions over the past month and a half: 0.24, 0.25, 0.26, 0.27, 0.28, and 0.29. Let’s take a closer look at the changes, starting from the latest release and going back to version 0.24.
 
@@ -20,7 +21,7 @@ We haven’t shared much about Cozystack’s new features lately, even though we
 
 > Cozystack is an open-source platform that enables building a bare-metal cloud for rapid deployment of managed Kubernetes, Database as a Service, Applications as a Service, and KubeVirt-based virtual machines. With just a click, users can deploy services like Kafka, FerretDB, PostgreSQL, Cilium, Grafana, VictoriaMetrics, and more.
 
-### Key Changes
+## Key Changes
 
 - Platform Stabilization for Multi-Datacenter Configurations: Significant improvements were made to etcd, Cilium, Kube-OVN, Linstor, and other components.
 - Enhanced Observability Stack: New dashboards were added for several components, and Grafana settings were optimized for better performance.
@@ -29,7 +30,7 @@ We haven’t shared much about Cozystack’s new features lately, even though we
 - Documentation Refactoring and Expansion: New sections were added to improve clarity and usability.
 - Repository Migration: The platform and its utilities were moved from the [aenix-io](https://github.com/aenix-io) organization to [cozystack](https://github.com/cozystack) after the project was accepted into the CNCF Sandbox.
 
-### Cozystack v0.29
+## Cozystack v0.29
 
 In v0.29.0, the development team focused on improving platform stability and reliability, including patching [CVE-2025–1974](https://github.com/advisories/GHSA-mgvx-rpfc-9mpv) in ingress-nginx. New features include:
 
@@ -46,7 +47,7 @@ Other Changes:
 
 Details: [v0.29.0](https://github.com/cozystack/cozystack/releases/tag/v0.29.0), [v0.29.1](https://github.com/cozystack/cozystack/releases/tag/v0.29.1).
 
-### Cozystack v0.28
+## Cozystack v0.28
 
 The highlight of this release was the introduction of Vertical Pod Autoscaler (VPA) to automatically set resource limits for applications. The repository was also moved from aenix-io to the cozystack GitHub organization.
 
@@ -59,11 +60,11 @@ The highlight of this release was the introduction of Vertical Pod Autoscaler (V
 
 Details: [v0.28.0](https://github.com/cozystack/cozystack/releases/tag/v0.28.0), [v0.28.2](https://github.com/cozystack/cozystack/releases/tag/v0.28.2).
 
-### Cozystack v0.27
+## Cozystack v0.27
 
 This release focused on platform stabilization and introduced linstor-plunger scripts to automatically fix issues in LINSTOR (e.g., DRBD lost connection, stuck loop devices). It also added support for distributing PostgreSQL replicas across different nodes.
 
-![image](https://cdn-images-1.medium.com/max/800/0*XPWNsEtGmcIiY6zs)
+![Cozystack releases 0.24 to 0.29](/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/cover.png)
 
 **Other Changes:**
 
@@ -74,7 +75,7 @@ This release focused on platform stabilization and introduced linstor-plunger sc
 
 **Details: **[v0.27.0](https://github.com/cozystack/cozystack/releases/tag/v0.27.0).
 
-### Cozystack v0.26
+## Cozystack v0.26
 
 This release improved stability for multi-datacenter configurations and added network connectivity monitoring. These metrics help fine-tune platform components.
 
@@ -88,7 +89,7 @@ This release improved stability for multi-datacenter configurations and added ne
 
 **Details: **[v0.26.0](https://github.com/cozystack/cozystack/releases/tag/v0.26.0), [v0.26.1](https://github.com/cozystack/cozystack/releases/tag/v0.26.1).
 
-### Cozystack v0.25
+## Cozystack v0.25
 
 This release introduced cozy-proxy, a standalone tool for assigning dedicated IP addresses to VMs (instead of just ports). This is crucial for service providers running VM-based applications requiring unique IPs.
 
@@ -100,9 +101,9 @@ This release introduced cozy-proxy, a standalone tool for assigning dedicated IP
 
 **Details: **[v0.25.0](https://github.com/cozystack/cozystack/releases/tag/v0.25.0), [v0.25.1](https://github.com/cozystack/cozystack/releases/tag/v0.25.1), [v0.25.2](https://github.com/cozystack/cozystack/releases/tag/v0.25.2), [v0.25.3](https://github.com/cozystack/cozystack/releases/tag/v0.25.3).
 
-![image](https://cdn-images-1.medium.com/max/800/0*CIY_xKXLnyUjRk4U)
+![Cozystack v0.25 feature illustration](/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/02.png)
 
-### Cozystack v0.24
+## Cozystack v0.24
 
 This release added PXE provisioning for nodes to automatically deploy Talos Linux. The [smee](https://github.com/tinkerbell/smee) (DHCP/PXE server) from [Tinkerbell](https://tinkerbell.org/) was integrated for this purpose.
 
@@ -114,16 +115,16 @@ This release added PXE provisioning for nodes to automatically deploy Talos Linu
 
 **Details: **[v0.24.0](https://github.com/cozystack/cozystack/releases/tag/v0.24.0), [v0.24.1](https://github.com/cozystack/cozystack/releases/tag/v0.24.1).
 
-![image](https://cdn-images-1.medium.com/max/800/0*PNjPPNo9algUKb7J)
+![Cozystack v0.24 feature illustration](/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/03.png)
 
-### What’s Next
+## What’s Next
 
 We’re finalizing GPU support for VMs to enable AI/ML workloads on the platform.
 
-### Join Our Community
+## Join Our Community
 
 - [Telegram](https://t.me/cozystack)
-- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (in [Kubernetes Slack workspace](https://communityinviter.com/apps/kubernetes/community))
+- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (in [Kubernetes Slack workspace](https://slack.kubernetes.io/))
 - [Community Meeting Calendar](https://calendar.google.com/calendar?cid=ZTQzZDIxZTVjOWI0NWE5NWYyOGM1ZDY0OWMyY2IxZTFmNDMzZTJlNjUzYjU2ZGJiZGE3NGNhMzA2ZjBkMGY2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 By [Timur Tukaev](https://medium.com/@tym83) on [April 10, 2025](https://medium.com/p/d47788ab7ebe).

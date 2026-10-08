@@ -1,6 +1,6 @@
 ---
 title: "CIS Kubernetes Benchmark results for the Ænix platforms"
-description: "Full kube-bench run behind the Aenix platforms: CIS v1.12 against Cozystack v1.6 on Talos — 54 pass, 24 fail, and why only four failures are real."
+description: "Full kube-bench run behind the Ænix platforms: CIS v1.12 on Cozystack v1.6 on Talos: 54 pass, 24 fail, and why only four failures are real."
 page_type: "solution-landing"
 language: "en"
 quick_facts_style: "rows"
@@ -32,8 +32,8 @@ quick_facts:
   - label: "Verdict awarded"
     value: "None. The CIS Benchmark has no pass or fail verdict to grant; compliance is a judgment about a specific cluster."
 faq:
-  - q: "Is this a CIS Benchmark run of Cozystack or of the Aenix platform?"
-    a: "Of Cozystack, on purpose. The Aenix platforms are distributions of Cozystack — the Apache 2.0 CNCF project Aenix creates and maintains — so there is no separate closed engine to benchmark. A control that passes on Cozystack passes on the platform built from it, and a deviation on one is a deviation on the other. The qualifier that matters more is scope: this run covers the management cluster, and several of the settings it measures come from the Talos machine configuration applied at install time rather than from the software, so a run on your own installation can legitimately differ."
+  - q: "Is this a CIS Benchmark run of Cozystack or of the Ænix platform?"
+    a: "Of Cozystack, on purpose. The Ænix platforms are distributions of Cozystack — the Apache 2.0 CNCF project Ænix created and co-maintains — and the proprietary Ænix modules (WHMCS integration, billing and portal components) run on top of it without changing anything a benchmark measures. A control that passes on Cozystack passes on the platform built from it, and a deviation on one is a deviation on the other. The qualifier that matters more is scope: this run covers the management cluster, and several of the settings it measures come from the Talos machine configuration applied at install time rather than from the software, so a run on your own installation can legitimately differ."
   - q: "Is the platform CIS Kubernetes Benchmark certified?"
     a: "No, and nothing is. The benchmark has no pass or fail verdict to award — it is a list of controls, and compliance is a judgment about a specific cluster made by whoever assesses it. On the run published here, 54 controls pass and four deviations are worth closing. Of the remaining twenty, about fifteen test file modes on an immutable node, three test a flag that structured authorization replaced, one wants a kubelet unit file Talos has no use for, and one wants a kube-proxy that Cilium replaced."
   - q: "Why do so many CIS checks fail on Talos Linux?"
@@ -59,9 +59,9 @@ This page publishes the full run rather than the flattering part of it. A raw ku
 
 ## What was measured, and on what
 
-CIS Kubernetes Benchmark v1.12, executed by [kube-bench](https://github.com/aquasec/kube-bench) v0.12.0 against **Cozystack v1.6 on Kubernetes v1.34.3**, on 18 August 2026. Control-plane checks ran on a control-plane node, worker checks on a worker.
+CIS Kubernetes Benchmark v1.12, executed by [kube-bench](https://github.com/aquasecurity/kube-bench) v0.12.0 against **Cozystack v1.6 on Kubernetes v1.34.3**, on 18 August 2026. Control-plane checks ran on a control-plane node, worker checks on a worker.
 
-**Read the target carefully, because it is the point.** The run is against Cozystack — the open-source, Apache 2.0, CNCF-hosted engine that Ænix creates and maintains — and not against a separate proprietary product. There is no separate proprietary product: the Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform are distributions of that same engine. So a control that passes here passes on the platform, and a deviation here is a deviation there. What Ænix supplies around the engine — the Talos machine configuration applied at install time, the reference architecture, the runbooks — is exactly where several of the settings below come from, which is why the same benchmark on your installation is a different run and may produce different totals.
+**Read the target carefully, because it is the point.** The run is against Cozystack — the open-source, Apache 2.0, CNCF-hosted engine that Ænix created and co-maintains with maintainers from other companies. The Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform are built on that same engine; the proprietary Ænix modules (WHMCS integration, billing and portal components) run on top of it and do not change anything this benchmark checks. So a control that passes here passes on the platform, and a deviation here is a deviation there. What Ænix supplies around the engine — the Talos machine configuration applied at install time, the reference architecture, the runbooks — is exactly where several of the settings below come from, which is why the same benchmark on your installation is a different run and may produce different totals.
 
 **Scope: the management cluster** — the Talos nodes and the Kubernetes control plane the platform itself runs on. Tenant Kubernetes clusters are not covered by these numbers. Their control planes are Kamaji Deployments with their own API server flags and their own etcd, so sections 1, 2 and 3 must be evaluated separately for them.
 

@@ -1,12 +1,14 @@
 ---
 title: "RWX (ReadWriteMany) volumes in Cozystack — native shared storage for your workloads"
-description: "Starting with Cozystack v1.0, you can use ReadWriteMany (RWX) persistent volumes out of the box. This means multiple pods and VMs can mount the same volume..."
+seo_title: "RWX volumes in Cozystack: native shared storage"
+description: "Since Cozystack v1.0, ReadWriteMany (RWX) volumes work out of the box: several pods and VMs can mount the same volume at once, without external NFS."
 date: "2026-04-07"
 author: "Timur Tukaev"
 type: "article"
 topics: ["Platform Engineering", "CNCF", "Storage", "DevOps", "Kubernetes", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*StrJHMn6Ie1s_vkNrX_-UQ.png"
+hreflang_de: "/de/blog/2026/04/rwx-readwritemany-volumes-cozystack-shared-storage/"
+cover_image: "/img/blog/medium/rwx-readwritemany-volumes-in-cozystack-native-shared-storage-for-your-workloads/cover.jpg"
 source_url: "https://blog.aenix.io/rwx-readwritemany-volumes-in-cozystack-native-shared-storage-for-your-workloads-485de0775faa"
 quiz:
   title: "Test yourself: RWX volumes in Cozystack"
@@ -46,7 +48,7 @@ quiz:
 
 Starting with Cozystack v1.0, you can use ReadWriteMany (RWX) persistent volumes out of the box. This means multiple pods and VMs can mount the same volume simultaneously — a capability essential for shared filesystems, multi-replica applications, and cross-VM data sharing.
 
-![image](https://cdn-images-1.medium.com/max/1024/1*StrJHMn6Ie1s_vkNrX_-UQ.png)
+![ReadWriteMany volumes in Cozystack](/img/blog/medium/rwx-readwritemany-volumes-in-cozystack-native-shared-storage-for-your-workloads/cover.jpg)
 
 Under the hood, the kubevirt-csi-driver provisions a dedicated NFS server for each RWX PVC, backed by DRBD-replicated (LINSTOR) block storage, with CiliumNetworkPolicy handling traffic isolation. For tenants, it’s as simple as creating a standard PVC with accessModes: [ReadWriteMany] and storageClassName: nfs.
 
@@ -60,12 +62,12 @@ What this unlocks:
 
 What is Cozystack? Cozystack is a free and open-source PaaS platform and framework for building clouds. It enables you to run a full-featured cloud platform on bare metal with managed Kubernetes, VMs, databases, and storage — all powered by proven CNCF technologies like Talos Linux, KubeVirt, Flux CD, and LINSTOR.
 
-📖 Documentation: [https://cozystack.io/docs/v1.6/storage/nfs/](https://cozystack.io/docs/v1.6/storage/nfs/)
-🔧 Feature PR: [https://github.com/cozystack/cozystack/pull/2042](https://github.com/cozystack/cozystack/pull/2042)
+Documentation: [https://cozystack.io/docs/v1.6/storage/nfs/](https://cozystack.io/docs/v1.6/storage/nfs/)
+Feature PR: [https://github.com/cozystack/cozystack/pull/2042](https://github.com/cozystack/cozystack/pull/2042)
 
 — -
-🌐 Website: [https://cozystack.io](https://cozystack.io)
-💻 GitHub: [https://github.com/cozystack/cozystack](https://github.com/cozystack/cozystack)
+Website: [https://cozystack.io](https://cozystack.io)
+GitHub: [https://github.com/cozystack/cozystack](https://github.com/cozystack/cozystack)
 
 ---
 

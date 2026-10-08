@@ -1,21 +1,24 @@
 ---
 title: "Platform Engineering Maturity Assessment — score your organization (free PDF)"
-description: "An 8-dimension self-assessment that scores your platform engineering practice on a 5-stage maturity scale. Free PDF, used by Aenix during Platform Readiness Assessments."
+seo_title: "Platform Engineering Maturity Assessment (free PDF)"
+primary_keyword: "platform engineering maturity assessment"
+secondary_keywords:
+  - "platform engineering maturity model"
+  - "internal developer platform maturity"
+description: "A free 8-dimension self-assessment that scores your platform engineering practice on a 5-stage maturity scale, with the full rubric and a scoring sheet."
 type: "page"
-related_pages: ["/services/platform-engineering", "/services/internal-developer-platform", "/products/private-cloud-platform/"]
+related_pages: ["/services/platform-engineering/", "/services/internal-developer-platform/", "/products/private-cloud-platform/", "/for/head-of-platform-engineering/"]
 hreflang_de: /de/ressourcen/platform-engineering-maturity-assessment/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The Platform Engineering Maturity Assessment is a free, 8-dimension self-assessment that scores an organization's platform engineering practice on a 5-stage rubric: pre-platform, shared infrastructure, self-service primitives, Internal Developer Platform, mature. The eight dimensions are workload portability, GitOps adoption, observability unification, secrets handling, identity model, multi-tenancy, disaster-recovery posture, and self-service depth. It is built for engineering managers, VP Engineering, platform leads, and CIOs/CTOs scoping platform investment. Aenix uses the same instrument in its paid Platform Readiness Assessment to baseline organizations before recommending follow-on work, and now offers it free as a downloadable PDF with the full rubric and a scoring sheet. Most outcomes point to the developer self-service layer of Ænix Private Cloud Platform, built on the open-source Cozystack platform, as the structured next step.**
+  **The Platform Engineering Maturity Assessment is a free, 8-dimension self-assessment that scores an organization's platform engineering practice on a 5-stage rubric: pre-platform, shared infrastructure, self-service primitives, Internal Developer Platform, mature. The eight dimensions are workload portability, GitOps adoption, observability unification, secrets handling, identity model, multi-tenancy, disaster-recovery posture, and self-service depth. It is built for engineering managers, VP Engineering, platform leads, and CIOs/CTOs scoping platform investment. Ænix uses the same instrument in its paid Platform Readiness Assessment to baseline organizations before recommending follow-on work, and now offers it free as a downloadable PDF with the full rubric and a scoring sheet. Most outcomes point to the developer self-service layer of Ænix Private Cloud Platform, built on the open-source Cozystack platform, as the structured next step.**
 quick_facts:
   - label: "What it is"
     value: "A free 8-dimension self-assessment that scores a platform engineering practice on a 5-stage maturity scale"
-  - label: "License"
-    value: "Apache 2.0 (no per-CPU / per-core licensing)"
-  - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Format"
+    value: "Free 9-page PDF with the full rubric and a scoring sheet, delivered by email; typically 1-3 hours with your team"
   - label: "Dimensions scored"
     value: "Workload portability, GitOps adoption, observability unification, secrets handling, identity model, multi-tenancy, disaster-recovery posture, self-service depth"
   - label: "Who it's for"
@@ -28,13 +31,13 @@ faq:
   - q: "What does the Platform Engineering Maturity Assessment measure?"
     a: "It scores eight dimensions of a platform engineering practice (workload portability, GitOps adoption, observability unification, secrets handling, identity model, multi-tenancy, disaster-recovery posture, and self-service depth) against a 5-stage rubric: pre-platform, shared infrastructure, self-service primitives, Internal Developer Platform, and mature."
   - q: "Is the assessment free?"
-    a: "Yes. Aenix uses the same instrument in its paid Platform Readiness Assessment, but the self-assessment itself is available free as a downloadable PDF containing the full rubric and a scoring sheet you can walk through with your team."
+    a: "Yes. Ænix uses the same instrument in its paid Platform Readiness Assessment, but the self-assessment itself is available free as a downloadable PDF containing the full rubric and a scoring sheet you can walk through with your team."
   - q: "Who should use this assessment?"
     a: "Engineering managers and VP Engineering, platform engineering leads, and CIOs or CTOs scoping platform investment. It is also useful for anyone building a platform engineering business case who needs a structured baseline to share with leadership."
   - q: "What is the recommended next step after completing it?"
-    a: "Walk through the results with engineering leadership to identify priority dimensions. Most outcomes point to the developer self-service layer of Ænix Private Cloud Platform (the Internal Developer Platform layer on top of Cozystack), or to Aenix platform engineering and internal developer platform services for a deeper engagement."
-  - q: "How does this relate to Cozystack and Aenix?"
-    a: "Aenix is the team behind Cozystack, a CNCF Sandbox project licensed under Apache 2.0 that runs VMs and containers on one Kubernetes API. Aenix sells Ænix Platform, a productized offering built on Cozystack, plus the services and assessments that help organizations adopt it."
+    a: "Walk through the results with engineering leadership to identify priority dimensions. Most outcomes point to the developer self-service layer of Ænix Private Cloud Platform (the Internal Developer Platform layer on top of Cozystack), or to Ænix platform engineering and internal developer platform services for a deeper engagement."
+  - q: "How does this relate to Cozystack and Ænix?"
+    a: "Ænix created Cozystack, a CNCF Sandbox project licensed under Apache 2.0 that runs VMs and containers on one Kubernetes API, and co-maintains it with maintainers from other companies. Ænix Private Cloud Platform, which includes developer self-service, is built on it; Ænix also sells the services and assessments that help organizations adopt it."
   - q: "What do I receive when I download it?"
     a: "A PDF self-assessment you can print and walk through: the 5-stage rubric for each of the eight dimensions, a scoring sheet that totals into a maturity stage, and guidance on which dimensions to prioritize for investment."
 ---
@@ -106,6 +109,6 @@ Walk through with engineering leadership. Identify priority dimensions. For deep
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix created Cozystack (a CNCF Sandbox project) and co-maintains it with maintainers from other companies. On top of it, Ænix offers three platforms — Public Cloud, Private Cloud and AI.*
 
 <!-- Word count: ~400. -->

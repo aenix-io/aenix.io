@@ -1,53 +1,54 @@
 ---
-title: "Cloud-Plattform für Mittelstand — ehrliche Antwort, wann Cozystack passt"
-description: "Cozystack ist zweckgebaut für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder. Für KMU und kleinen Mittelstand (unter ~100..."
+title: "Cloud-Plattform für den Mittelstand — ehrliche Antwort, wann Cozystack passt"
+seo_title: "Cloud-Plattform für den Mittelstand: wann sie passt"
+description: "Unter etwa 100 Mitarbeitenden ist Cozystack meist Over-Engineering. Diese Seite zeigt, wann das so ist, was stattdessen passt und wann es wirklich passt."
 related_pages:
   - /de/produkte/cozystack/
-  - /de/dienstleistungen/platform-readiness-assessment
+  - /de/produkte/public-cloud-platform/
+  - /de/partner/
+  - /de/dienstleistungen/platform-readiness-assessment/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/smb-mid-market/
 direct_answer: |
-  **Diese Seite beantwortet ehrlich, wann Cozystack für den deutschen Mittelstand passt und wann nicht. Cozystack ist zweckgebaut für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder. Für kleine KMU (unter ~100 Mitarbeitern, single-tenant, einfache Infrastruktur) ist Cozystack Over-Engineering — Hyperscaler, Hetzner oder Proxmox sind dort einfacher. Cozystack lohnt sich für Mittelständler mit regulierten Daten, DACH-Souveränitätsanforderungen, interner Plattform-Engineering-Funktion oder einem Weg zu Multi-Tenant (etwa SaaS). KMU konsumieren die Plattform meist als Produkt über einen Aenix-Partner (regionaler MSP oder Hosting-Anbieter), der die Ænix Platform darunter betreibt. Direktes Aenix-Engagement ist im KMU-Maßstab selten passend.**
+  **Für KMU und kleineren Mittelstand — unter etwa 100 Mitarbeitenden, ein einzelner Tenant, einfache Infrastruktur — ist Cozystack meist Over-Engineering, und Ænix sagt das offen. Cozystack ist für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder gebaut, die KubeVirt-VMs und Container auf einer Kubernetes-API, Cilium-eBPF-Networking, LINSTOR-Storage und Isolation über Tenant-CRDs brauchen. Die meisten Ænix-Projekte laufen mit Service Providern und Organisationen, die ein eigenes Plattform-Team betreiben. Im KMU-Umfeld und im Mittelstand ist ein Fit die Ausnahme — ausgelöst durch regulierte Daten, Souveränitätsanforderungen oder Multi-Tenant-SaaS, nicht durch allgemeinen Bedarf an einer Cloud-Plattform. Ænix bietet einen kostenlosen 15-minütigen Fit-Check und ein Platform Readiness Assessment zum Festpreis (14 Tage) und empfiehlt einfachere Optionen wie Proxmox VE oder Managed Services der Hyperscaler, wenn Cozystack nicht passt.**
 quick_facts:
   - label: "Was es ist"
-    value: "Ehrliche Fit-Einschätzung, wann Cozystack als Cloud-Plattform für den Mittelstand sinnvoll ist und wann nicht"
+    value: "Eine ehrliche Einordnung, wann Cozystack und Ænix für KMU und Mittelstand sinnvoll sind und wann eine einfachere Plattform die richtige Wahl ist."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Wann es NICHT passt"
-    value: "Single-Tenant, unter 50 Hosts, IT-Team unter 5 Personen, keine Plattform-Engineering-Funktion, einfaches Workload-Portfolio"
-  - label: "Wann es passt"
-    value: "Regulierte Daten, DACH-Souveränität, interne Plattform-Engineering-Funktion, Weg zu Multi-Tenant (SaaS) oder konkreter Kosten-Trigger"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Mittelstand mit regulierten Daten, Souveränitätsdruck, interner Platform-Engineering-Funktion oder dem Weg zu Multi-Tenant-SaaS; in der Regel nicht KMU mit einem einzelnen Tenant und unter ~50 Hosts."
   - label: "Bezugsweg für KMU"
-    value: "Über einen Aenix-Partner (regionaler MSP / Hosting-Anbieter), der die Ænix Platform betreibt"
-  - label: "Technologie"
-    value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
+    value: "Typischerweise über einen Ænix-Partner (regionaler MSP oder Hosting-Anbieter), der die Ænix Public Cloud Platform betreibt; eine direkte Zusammenarbeit mit Ænix passt im KMU-Maßstab selten."
+  - label: "Erster Schritt"
+    value: "Kostenloser 15-minütiger Fit-Check, danach optional ein Platform Readiness Assessment zum Festpreis (14 Tage) vor jeder Umsetzung."
 faq:
-  - q: "Passt Cozystack für ein kleines KMU mit unter 100 Mitarbeitern?"
-    a: "In der Regel nicht. Für single-tenant Betrieb, unter 50 Hosts und ein IT-Team unter 5 Personen ohne Plattform-Engineering-Funktion ist Cozystack Over-Engineering. Hyperscaler, Hetzner oder Proxmox sind in diesen Fällen einfacher und schneller einsatzbereit."
-  - q: "Wann lohnt sich Cozystack für den Mittelstand?"
-    a: "Wenn regulierte Daten (Banking- oder Healthcare-adjacent), DACH-spezifische Souveränitätsanforderungen, eine interne Plattform-Engineering-Funktion, ein Weg zu Multi-Tenant-Angeboten wie SaaS oder ein konkreter Kosten-Trigger vorliegen. Ein Discovery-Call bestätigt den Fit oder verweist auf eine einfachere Lösung."
-  - q: "Wie beziehen KMU Cozystack beziehungsweise die Ænix Platform?"
-    a: "Meist über einen Aenix-Partner — einen regionalen MSP oder Hosting-Anbieter, der die Ænix Public Cloud Platform darunter betreibt. KMU konsumieren Cloud als fertiges Produkt vom Partner. Ein direktes Aenix-Engagement ist im KMU-Maßstab selten passend."
-  - q: "Was kostet Cozystack als Software?"
-    a: "Cozystack ist Open Source unter Apache 2.0 ohne Lizenzkosten und ohne CPU- oder Core-basierte Gebühren. Aenix verkauft die produktisierte Ænix Platform plus Services. Die Preisstufen beginnen bei Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Aufwand."
-  - q: "Warum empfiehlt Aenix Cozystack nicht jedem Mittelständler?"
-    a: "Cozystack ist Open Source und Aenix verkauft keine Lizenzen. Eine Plattform zu empfehlen, die ein KMU nicht braucht, würde der Reputation schaden. Die ehrliche Fit-Einschätzung zählt mehr als der Sales-Pitch."
-  - q: "Worin liegt der Unterschied zwischen Cozystack und einem Hyperscaler für den Mittelstand?"
-    a: "Cozystack bringt VMs und Container über KubeVirt auf einer Kubernetes-API zusammen, mit Cilium-Networking, LINSTOR-Storage und Tenant-CRD-Mandantenfähigkeit — geeignet für souveräne, Multi-Tenant-Cloud-Builds. Hyperscaler sind einfacher für simple single-tenant Workloads, bieten aber weder volle Datensouveränität noch lizenzkostenfreien Betrieb."
+  - q: "Passt Cozystack für ein kleines Unternehmen?"
+    a: "Meist nicht. Für KMU mit einem Team, einem einzelnen Tenant, unter etwa 50 Hosts und ohne Platform-Engineering-Funktion ist Cozystack Over-Engineering. Einfachere Optionen wie Proxmox VE, Managed Services der Hyperscaler oder Anbieter wie Hetzner und OVHcloud passen in der Regel besser."
+  - q: "Wann lohnt sich Cozystack für ein mittelständisches Unternehmen?"
+    a: "Wenn regulierte Daten, konkreter Souveränitätsdruck, eine interne Platform-Engineering-Funktion, der Schritt zu Multi-Tenant-SaaS mit mehr als 100 Kunden oder ein klarer Kostenauslöser bei wachsender Größe vorliegen. Ein Discovery-Gespräch klärt, ob Cozystack passt oder ob etwas Einfacheres richtig ist."
+  - q: "Wie bezieht ein KMU eine Ænix-Plattform?"
+    a: "Die meisten KMU nutzen Cloud als fertiges Produkt eines Ænix-Partners (regionaler MSP oder Hosting-Anbieter), der darunter die Ænix Public Cloud Platform betreibt. Eine direkte Zusammenarbeit mit Ænix passt im KMU-Maßstab selten."
+  - q: "Was berechnet Ænix?"
+    a: "Die Support-Stufen für selbst betriebenes Cozystack und für Abonnements der Ænix Public Cloud Platform sind Basic (1.250 USD), Standard (3.000 USD) und Plus (5.500 USD) pro 10 Nodes und Monat bei jährlicher Abrechnung; Enterprise wird individuell angeboten — siehe Preisseite. Die Ænix Private Cloud Platform wird per RFP angeboten. Cozystack selbst ist Open Source unter Apache 2.0 und ohne Lizenzkosten."
+  - q: "Warum rät Ænix KMU von Cozystack ab?"
+    a: "Cozystack ist Open Source, und Ænix verkauft Abonnements und Services, keine Lizenzen. Etwas zu bauen, das ein Kunde nicht braucht, würde Vertrauen zerstören. Von Anfang an ehrlich zu sein und nur passende Projekte anzunehmen, schützt den Kunden und den Ruf von Ænix."
+  - q: "Was umfasst der kostenlose Fit-Check?"
+    a: "Ein 15-minütiges Gespräch ohne Verkaufsdruck, in dem Ænix ehrlich einschätzt, ob Cozystack zu Ihrer Situation passt. Wenn nicht, erhalten Sie eine Empfehlung für eine einfachere Alternative; wenn ja, ist der nächste Schritt optional ein Platform Readiness Assessment zum Festpreis (14 Tage)."
 ---
 
-**Cozystack ist zweckgebaut für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder. Für KMU und kleinen Mittelstand (unter ~100 Mitarbeitern, single-tenant, einfache Infrastruktur) ist Cozystack Over-Engineering. Die ehrliche Antwort zählt mehr als der Sales-Pitch.**
+**Cozystack ist gezielt für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder gebaut. Für KMU und kleineren Mittelstand (unter ~100 Mitarbeitende, ein einzelner Tenant, einfache Infrastruktur) ist Cozystack Over-Engineering. Die ehrliche Antwort zählt mehr als das Verkaufsargument.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — aber **nur über einen Ænix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden konsumieren Cloud als Produkt vom Partner, der die Ænix Platform darunter betreibt. Ein direktes Ænix-Engagement passt im KMU-Maßstab selten.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — aber **nur über einen Ænix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden nutzen Cloud als Produkt des Partners, der darunter die Ænix Public Cloud Platform betreibt. Eine direkte Zusammenarbeit mit Ænix passt im KMU-Maßstab selten.
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>KMU-Kunde</b></div>
-<div class="diagram__conn">konsumiert Cloud von</div>
+<div class="diagram__conn">nutzt Cloud von</div>
 <div class="diagram__node"><b>Ænix-Partner</b><div class="diagram__chips"><span>Regionaler MSP</span><span>Hosting-Anbieter</span></div></div>
 <div class="diagram__conn">betreibt</div>
 <div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b></div>
@@ -57,7 +58,7 @@ faq:
 </div>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Kurzer Fit-Check-Call (15 Min, kostenlos)</a>
+  <a class="cta-primary" href="/de/kontakt/">Fit-Check vereinbaren →</a>
 </div>
 
 ---
@@ -65,20 +66,20 @@ faq:
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wann Cozystack NICHT für KMU passt
+## Wann Cozystack für KMU NICHT passt
 
 - Ein Team, eine Produktlinie, ein Tenant
-- Unter 50 Server / Hosts
-- Bestehendes IT-Team kleiner als 5
-- Keine Plattform-Engineering-Funktion (und kein Plan, eine aufzubauen)
-- Einfaches Workload-Portfolio (ein paar VMs, einfache Datenbanken)
-- Public-Cloud-Ökonomie (AWS/Azure/GCP) funktioniert und das Team ist damit vertraut
+- Weniger als 50 Server / Hosts
+- Bestehendes IT-Team mit weniger als 5 Personen
+- Keine Platform-Engineering-Funktion (und kein Plan, eine aufzubauen)
+- Einfaches Workload-Portfolio (einige VMs, einfache Datenbanken)
+- Die Wirtschaftlichkeit der Public Cloud (AWS/Azure/GCP) stimmt, und das Team kommt damit gut zurecht
 
 In diesen Fällen ist **Cozystack Over-Engineering**. Realistische Alternativen:
 
-- **Einfache Hyperscaler-Deployments** — AWS/Azure/GCP mit Managed Services
-- **Proxmox VE** — für KMU-On-Prem-Virtualisierung
-- **Hetzner / OVHcloud / ähnliche** — Managed Infrastructure
+- **Einfache Hyperscaler-Setups** — AWS/Azure/GCP mit Managed Services
+- **Proxmox VE** — für On-Prem-Virtualisierung im KMU
+- **Hetzner / OVHcloud / vergleichbare Anbieter** — Managed Infrastructure
 - **Cloud-Managed-Plattformen** — DigitalOcean, Linode, Hostinger für sehr kleine Teams
 
 </div>
@@ -86,40 +87,40 @@ In diesen Fällen ist **Cozystack Over-Engineering**. Realistische Alternativen:
 
 ---
 
-## Wann Cozystack für den Mittelstand passen könnte
+## Wann Cozystack für den Mittelstand passen kann
 
-- Mittelstand mit **regulierten Daten** (Banking-nah, Healthcare-nah)
-- Mittelstand mit **spezifischem Souveränitäts-Druck** (DACH-Finanzdienstleistungs-KMU)
-- Mittelstand mit **interner Plattform-Engineering-Funktion**
-- Mittelstand, der **Multi-Tenant** wird (z.B. SaaS-Unternehmen mit 100+ Kunden)
-- Mittelstand mit **spezifischem Kosten-Trigger** bei Skalierung (FinOps-Mandat)
+- Mittelstand mit **regulierten Daten** (bankennah, gesundheitswesennah)
+- Mittelstand mit **konkretem Souveränitätsdruck** (KMU aus dem DACH-Finanzsektor)
+- Mittelstand mit **interner Platform-Engineering-Funktion**
+- Mittelstand auf dem Weg zu **Multi-Tenant** (z. B. SaaS-Unternehmen mit mehr als 100 Kunden)
+- Mittelstand mit **konkretem Kostenauslöser** bei wachsender Größe (FinOps-Vorgabe)
 
-Für diese Fälle bestätigt ein Discovery-Call, ob Cozystack passt oder ob etwas Einfacheres richtig ist.
-
----
-
-## Was wir KMU / Mittelstand anbieten
-
-- **15-minütiger Fit-Check-Call** — kostenlos, ehrlich, ohne Sales-Druck. Wir sagen Ihnen, ob Cozystack passt oder nicht.
-- **Architektur-Review** (5-10 Tage, Festpreis) — für Organisationen, die vor einer Festlegung eine strukturierte Bewertung wünschen.
-- **Phase-2-Implementierung** — nur wenn die Bewertung bestätigt, dass Cozystack passt.
+In diesen Fällen klärt ein Discovery-Gespräch, ob Cozystack passt oder ob etwas Einfacheres richtig ist.
 
 ---
 
-## Warum wir das ehrlich publizieren
+## Was wir KMU und Mittelstand anbieten
 
-Cozystack ist Open Source. Wir verkaufen keine Lizenzen. Ihnen etwas zu bauen, das Sie nicht brauchen, würde unserer Reputation schaden. Besser, von Anfang an ehrlich zu sein und uns auf Right-Fit-Projekte einzulassen.
+- **15-minütiger Fit-Check** — kostenlos, ehrlich, ohne Verkaufsdruck. Wir sagen Ihnen, ob Cozystack passt oder nicht.
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 Tage fokussiert oder 28 Tage vollständig, Festpreis) — für Organisationen, die vor einer Entscheidung eine strukturierte Bewertung wünschen.
+- **Umsetzung in Phase 2** — nur wenn das Assessment bestätigt, dass Cozystack passt.
 
-Evidenz aus dem Kundenstamm: Die meisten Ænix-Engagements betreffen Engineering-Organisationen mit 200+ Mitarbeitern. KMU-Engagements sind selten — und wenn sie vorkommen, werden sie durch Ausnahmefälle mit regulierten Daten getrieben, nicht durch generische „Cloud-Plattform“-Bedürfnisse.
+---
+
+## Warum wir das offen sagen
+
+Cozystack ist Open Source. Wir verkaufen Abonnements und Services, keine Lizenzen. Ihnen etwas zu bauen, das Sie nicht brauchen, würde unserem Ruf schaden. Besser, von Anfang an ehrlich zu sein und uns auf Projekte zu konzentrieren, die wirklich passen.
+
+Projekte mit KMU sind selten — und wenn es sie gibt, sind Ausnahmefälle mit regulierten Daten der Auslöser, nicht ein allgemeiner Bedarf an einer „Cloud-Plattform“.
 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 - **[Wann Cozystack für KMU und Mittelstand passt — ehrliche Antwort](/de/blog/2026/05/wann-cozystack-fuer-mittelstand-passt/)**
 
 ---
 
-*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack. Wir engagieren uns bei Projekten, bei denen die Architektur wirklich passt.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI. Wir übernehmen Projekte, bei denen die Architektur wirklich passt.*

@@ -1,16 +1,17 @@
 ---
 title: "Cloud platform for transport and logistics — NIS2-aligned, edge-aware, AI-ready"
+seo_title: "Cloud platform for transport and logistics, NIS2"
 description: "NIS2-scope cloud for freight, ports and depots: the TOS keeps its VM, gate and telematics ingest stays local, and a site keeps running when the link drops."
 related_pages:
-  - /solutions/nis2-compliance
-  - /solutions/data-sovereignty
+  - /solutions/nis2-compliance/
+  - /solutions/data-sovereignty/
   - /products/private-cloud-platform/
-  - /products/cozystack
+  - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Transport and logistics operators classified as essential entities under NIS2 (the transport sector falls under Annex I) need a cloud platform that runs consistently at headquarters, regional sites, and the edge — depots, ports, terminals, and vehicles — under one operational model. Aenix addresses this with Cozystack, the CNCF open-source platform it builds, and the commercial Ænix Platform on top. Cozystack runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage, and supports air-gapped operational-technology systems such as rail signalling and port automation. Built-in Tenant-CRD multi-tenancy separates freight, passenger, and intermodal business units, while AI infrastructure serves routing, demand forecasting, and predictive maintenance. NIS2-aligned controls are structural rather than bolted on.**
+  **Transport and logistics operators classified as essential entities under NIS2 (the transport sector falls under Annex I) need a cloud platform that runs consistently at headquarters, regional sites, and the edge — depots, ports, terminals, and vehicles — under one operational model. Ænix addresses this with Cozystack, the CNCF Sandbox open-source project it created and co-maintains, and Ænix Private Cloud Platform on top. Cozystack runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage, and supports air-gapped operational-technology systems such as rail signalling and port automation. Built-in Tenant-CRD multi-tenancy separates freight, passenger, and intermodal business units, while AI infrastructure serves routing, demand forecasting, and predictive maintenance. The platform is built to support NIS2 risk-management measures (Article 21) rather than bolting them on.**
 
 quick_facts:
   - label: "What it is"
@@ -20,17 +21,17 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Regulation in scope"
-    value: "NIS2 — the transport sector is classified as an essential entity under Annex I; controls are addressed structurally in the platform."
+    value: "NIS2 — the transport sector is listed in Annex I (sectors of high criticality); the platform is built to support Article 21 measures. AENIX s.r.o. holds ISO/IEC 27001:2022 for its own ISMS."
   - label: "Key capability"
     value: "VMs and containers on one Kubernetes API (KubeVirt), Cilium eBPF networking, LINSTOR/DRBD storage, and air-gap support for OT systems like rail signalling and port automation."
   - label: "Commercial offering"
-    value: "Ænix Platform tiers — Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise custom."
+    value: "Ænix Private Cloud Platform is quoted per RFP after a fixed-price 14- or 28-day Platform Readiness Assessment."
 
 faq:
   - q: "Is transport in scope for NIS2?"
-    a: "Yes. The transport sector (air, rail, water, and road) is classified as an essential entity under NIS2 Annex I. Aenix designs the platform so NIS2-aligned controls — tenancy isolation, network policy, and sovereignty options — are structural rather than added afterward."
+    a: "Yes. The transport sector (air, rail, water, and road) is classified as an essential entity under NIS2 Annex I. Ænix designs the platform so controls supporting NIS2 — tenancy isolation, network policy, and sovereignty options — are structural rather than added afterward."
   - q: "Can the same platform run at HQ, regional sites, and the edge?"
     a: "Yes. Cozystack runs HQ, regional, and depot/port/terminal/vehicle edge locations under one Kubernetes API, so teams operate every site with one model instead of separate stacks for cloud and edge."
   - q: "How does it handle operational-technology systems like rail signalling or port automation?"
@@ -38,7 +39,7 @@ faq:
   - q: "Can different business units share the platform safely?"
     a: "Yes. Cozystack uses a Tenant CRD for multi-tenancy, allowing cross-business-unit separation — for example freight, passenger, and intermodal — on shared infrastructure with isolated namespaces and policy boundaries."
   - q: "Does it support AI workloads for routing and predictive maintenance?"
-    a: "Yes. The platform provides AI infrastructure for routing optimization, demand forecasting, and predictive maintenance, running those workloads alongside VMs and containers on the same Kubernetes API."
+    a: "Yes. The platform provides GPU infrastructure (NVIDIA GPU Operator) for routing optimization, demand forecasting, and predictive maintenance, running those workloads alongside VMs and containers on the same Kubernetes API."
   - q: "Is it a good fit for a VMware exit or OpenStack modernization?"
     a: "Yes. Cozystack is Apache 2.0 with no per-CPU or per-core licensing and runs VMs via KubeVirt, making it a common target for transport operators migrating off VMware or modernizing OpenStack-based infrastructure."
 hreflang_de: /de/branchen/transport-logistik/
@@ -46,7 +47,7 @@ hreflang_de: /de/branchen/transport-logistik/
 
 **Transport and logistics is in NIS2 scope as an essential-entity sector (Annex I, covering air, rail, water and road), and it is the sector where the compute follows the freight: a terminal, a depot, a marshalling yard and a vehicle each need to keep working when the link to headquarters does not. The architectural consequence is that site autonomy, not central elegance, is the property the platform is judged on.**
 
-> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC + edge architecture, NIS2 compliance, sovereign-cloud option for cross-border logistics data.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC + edge architecture built to support NIS2, sovereign-cloud option for cross-border logistics data. AENIX s.r.o. holds [ISO/IEC 27001:2022 certification](/compliance/iso-27001/) for its own ISMS.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -78,7 +79,7 @@ Air, rail, water and road freight operators, multi-modal logistics service provi
 <div class="diagram">
 <div class="diagram__node"><b>HQ + regional sites</b><div class="diagram__chips"><span>TMS</span><span>Planning</span><span>Cross-site aggregation</span></div></div>
 <div class="diagram__conn">run on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix Platform</b><div class="diagram__chips"><span>One Kubernetes API</span><span>KubeVirt VMs + containers</span><span>Tenant CRD</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix Private Cloud Platform</b><div class="diagram__chips"><span>One Kubernetes API</span><span>KubeVirt VMs + containers</span><span>Tenant CRD</span></div></div>
 <div class="diagram__conn">extends to</div>
 <div class="diagram__node"><b>Site clusters</b><div class="diagram__chips"><span>TOS / WMS</span><span>Gate and OCR</span><span>Telematics ingest</span></div></div>
 <div class="diagram__conn">bounded from</div>
@@ -105,8 +106,9 @@ Air, rail, water and road freight operators, multi-modal logistics service provi
 - **[Transport architecture article](/blog/2026/05/transport-logistics-cloud-architecture-nis2/)**
 - **[NIS2 compliance](/solutions/nis2-compliance/)**
 - **[Sovereign AI](/solutions/sovereign-ai/)**
+- **[Case studies](/case-studies/)** — nine deployments written up in anonymized form
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix created Cozystack (CNCF Sandbox project) and co-maintains it with maintainers from other companies. On top of it we offer three platforms — Public Cloud, Private Cloud and AI.*
 

@@ -1,7 +1,9 @@
 ---
 title: "Cozystack — was es ist, Architektur und 2026-Positionierung"
-description: "Begleitung zur Cozystack-Page."
+seo_title: "Cozystack: Architektur und Einordnung 2026"
+description: "Was Cozystack ist und warum es so gebaut ist: KubeVirt, Talos, LINSTOR, Cilium, Tenants und Flux, der Vergleich mit OpenStack und OpenShift und wann es passt."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/cozystack-einfuehrung-architektur.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Kubernetes", "Cozystack"]
@@ -41,9 +43,10 @@ quiz:
         - { text: "Kubernetes-nativ und mit deutlich leichterem Betriebsaufwand", correct: true }
         - { text: "Cozystack ist ein Fork der OpenStack-Codebasis", correct: false }
       explanation: "Cozystack ist Kubernetes-nativ und hat einen leichteren Betriebsaufwand als OpenStack, das mit 50 und mehr Komponenten betrieblich schwer ist. Gegenüber OpenShift steht Apache 2.0 ohne Vendor-Lock-in, gegenüber Proxmox die Auslegung auf Mandantenfähigkeit im großen Maßstab."
+hreflang_en: /blog/2026/05/cozystack-introduction-architecture/
 ---
 
-Begleitung zur **[Cozystack-Page](/de/produkte/cozystack)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Cozystack](/de/produkte/cozystack/)**.
 
 ## Architektonische Entscheidungen und warum
 

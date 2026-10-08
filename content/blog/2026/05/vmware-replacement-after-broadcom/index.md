@@ -1,13 +1,14 @@
 ---
 title: "VMware replacement after Broadcom: a guide for service providers, banks, and sovereign clouds in 2026"
+seo_title: "VMware replacement after Broadcom: a 2026 guide"
 description: "What changed under Broadcom, a component-by-component VMware-to-Cozystack mapping, how the migration actually runs, and the FAQ engineers ask first."
 date: "2026-05-30"
-cover_image: "/img/blog/covers/vmware-replacement-after-broadcom.png"
+cover_image: "/img/blog/covers/vmware-replacement-after-broadcom.jpg"
 author: "Aenix Team"
 type: "tutorial"
-topics: ["VMware", "Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU"]
+topics: ["VMware", "Kubernetes", "Cozystack", "Sovereignty", "AI and ML", "GPU"]
 language: "en"
-images: ["img/og/og-vmware-replacement-broadcom.png"]
+images: ["img/og/og-vmware-replacement-broadcom.jpg"]
 companion_landing: "/alternatives/vmware-alternative/"
 quiz:
   title: "Test yourself: VMware replacement essentials"
@@ -45,6 +46,7 @@ quiz:
         - { text: "First production cohort in 6-12 weeks; whole estate 7-10 months", correct: true }
         - { text: "16-25 months regardless of estate size", correct: false }
       explanation: "The article separates two numbers deliberately. The first production cohort runs 6-12 weeks after kickoff, which is when the platform stops being a proof of concept; decommissioning the whole estate takes 7-10 months under 100 VMs and longer above that. Quoting the cohort figure as the estate figure is how migration plans slip."
+hreflang_de: /de/blog/2026/05/vmware-ablosung-nach-broadcom/
 ---
 
 
@@ -65,7 +67,7 @@ If you're scoping the market, here is how Cozystack compares to the most-cited a
 - **Microsoft Azure Stack HCI** — Hyper-V on validated hardware. Locks into Microsoft licensing.
 - **Verge.io / Spectro Cloud / Platform9** — vendor-led KubeVirt or hyperconverged stacks; comparable to Cozystack on architecture, different commercial models.
 
-The rest of this page goes deep on Cozystack as a Cozystack-specific VMware replacement. For a head-to-head listicle, see [VMware alternatives](/alternatives/vmware-alternatives).
+The rest of this page goes deep on Cozystack as a Cozystack-specific VMware replacement. For a head-to-head listicle, see [VMware alternatives](/alternatives/vmware-alternatives/).
 
 ---
 
@@ -105,11 +107,11 @@ Cozystack is a single platform you install on bare metal. Once it's up, you have
 - **Tenant Kubernetes clusters** for customers who want containers — every tenant gets their own K8s, isolated.
 - **Managed databases** — PostgreSQL, MariaDB, MongoDB, Redis, Valkey, RabbitMQ, Kafka, NATS, ClickHouse, OpenSearch, Qdrant, FoundationDB — exposed as cloud services your tenants self-provision.
 - **S3-compatible object storage** — for backups, application data, and AI training sets.
-- **GPU as a service** — for VMs (VFIO passthrough, or NVIDIA vGPU with an NVIDIA licence) and for Kubernetes pods (whole-GPU through the NVIDIA GPU Operator, fractional sharing through HAMi). Validated on A100, H100, H200, L40S, and Blackwell.
+- **GPU as a service** — for VMs (VFIO passthrough, or NVIDIA vGPU with an NVIDIA licence) and for Kubernetes pods (whole-GPU through the NVIDIA GPU Operator, fractional sharing through HAMi). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator.
 - **Multi-tenant control plane** — `Tenant` Kubernetes CRD, nested tenants, per-tenant quotas and presets.
 - **Observability built in** — VictoriaMetrics + VictoriaLogs, no Prometheus/Loki licensing trap.
 - **Backup and DR** — Velero + S3 + per-database point-in-time recovery for managed services.
-- **Self-service portal and billing** — through Cozystack Dashboard or via WHMCS integration (production-ready, two integration modes — see below).
+- **Self-service portal** — Cozystack Dashboard. Billing runs in your own system or through the Ænix [WHMCS integration](/products/whmcs-integration/), a proprietary Ænix module (two integration modes) that is not part of open-source Cozystack.
 
 It runs on your bare metal. No public cloud dependency. No phone-home telemetry by default.
 
@@ -165,9 +167,9 @@ Each migrated workload runs in parallel on Cozystack until validated by the appl
 
 Licenses end on their own terms. Hardware repurposed into the Cozystack cluster (we run on commodity x86 — your existing servers usually qualify).
 
-For OpenStack, CloudStack, and Proxmox sources we run the same playbook with different image-import and network-mapping steps. Ænix has shipped each path in production.
+For OpenStack, CloudStack, and Proxmox sources the same playbook applies, with different image-import and network-mapping steps.
 
-> **Looking for a checklist?** A detailed migration assessment template is on the roadmap. For now, a structured assessment is part of the engagement — book it through the form below.
+> **Looking for a checklist?** Use the [VMware migration checklist](/resources/vmware-migration-checklist/). A structured assessment is part of the engagement — [book a call](/contact/) to scope it.
 
 ---
 
@@ -180,7 +182,7 @@ Cozystack was built for service providers first. The same model works for any or
 - **Air-gap install** — supported and documented; works behind Harbor / Nexus / proxy patterns.
 - **No phone-home** — telemetry is opt-in and disabled by default.
 - **DORA / NIS2-aligned controls** — operational resilience, incident reporting, supplier-risk documentation. Architecture maps to the controls; certification, where required, is the customer's audit process to run.
-- **Ænix support model** — advisory, runbooks, GitOps PR review. We do not require kubectl access to your production cluster. Critical for banks, telcos, and any regulated buyer who cannot expose infrastructure to a vendor.
+- **Ænix support model** — access is your choice. Advisory, runbooks and GitOps PR review need no access to your production cluster; remote access to your clusters, with your approval, and external monitoring are available on the higher [support tiers](/pricing/). Critical for banks, telcos, and any regulated buyer who cannot expose infrastructure to a vendor.
 
 ---
 
@@ -200,10 +202,10 @@ Cozystack was built for service providers first. The same model works for any or
 | **GPU for VMs** | NVIDIA vGPU under Horizon | NVIDIA vGPU + KubeVirt (NVIDIA Enterprise license required) |
 | **GPU for containers** | Tanzu (limited) | Whole-GPU via NVIDIA GPU Operator; fractional sharing (GPU memory + cores) via HAMi — Kubernetes-native |
 | **Observability** | vRealize / Aria (licensed separately) | VictoriaMetrics + VictoriaLogs (OSS, included) |
-| **Ops model** | Vendor support requires environment access | Advisory + runbooks + GitOps PR review (no kubectl access needed) |
-| **Sovereignty** | Closed source, US vendor | Open source, hosted on your hardware, EU-based support team |
+| **Ops model** | Vendor support requires environment access | Your choice: advisory + runbooks + GitOps PR review with no cluster access, or remote access with your approval |
+| **Sovereignty** | Closed source, US vendor | Open source, hosted on your hardware, EU contracting entity (AENIX s.r.o.) |
 | **Air-gap install** | Supported (additional licensing) | Supported (no additional cost) |
-| **Compliance posture** | Customer responsibility on top of VCF | Architecture aligned with DORA / NIS2 controls; OpenSSF Best Practices, Kubernetes Certified |
+| **Compliance posture** | Customer responsibility on top of VCF | Architecture aligned with DORA / NIS2 controls; CNCF Certified Kubernetes, CNCF Kubernetes AI Conformance, OpenSSF Best Practices; AENIX s.r.o. holds [ISO/IEC 27001](/compliance/iso-27001/) |
 | **Pricing transparency** | Quote-driven; non-public | Public pricing on aenix.io/pricing; OSS is free |
 
 ---
@@ -228,11 +230,11 @@ The hypervisor concepts (VMs, snapshots, templates, networking) carry over. The 
 
 ### What about VMware Cloud Foundation specifically — is the migration different?
 
-VCF migrations are larger (more components, more integrations). The discovery phase covers SDDC Manager, Workspace ONE, Aria, NSX-T overlays, and any custom service definitions. Ænix has run VCF migrations end-to-end.
+VCF migrations are larger (more components, more integrations). The discovery phase covers SDDC Manager, Workspace ONE, Aria, NSX-T overlays, and any custom service definitions, and the assessment sizes the extra work.
 
 ### What if we use vCloud Director for our customers?
 
-vCD migration is the most common path for service providers. Tenant model maps to Cozystack Tenant CRD, service catalog maps to ApplicationDefinition, billing maps to the WHMCS integration or Cozystack Dashboard. We've shipped this for several providers — happy to share architecture in an NDA call.
+vCD migration is the most common path for service providers. Tenant model maps to Cozystack Tenant CRD, service catalog maps to ApplicationDefinition, billing maps to the Ænix WHMCS integration or your own billing system. We are happy to walk through the architecture in a call.
 
 ### Is GPU live migration supported?
 

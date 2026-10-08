@@ -1,12 +1,14 @@
 ---
 title: "Proxmox to Cozystack — when single-tenant outgrows itself"
+seo_title: "Proxmox to Cozystack: when single-tenant outgrows itself"
 description: "When does Proxmox VE outgrow single-tenant? A Proxmox-to-Cozystack migration guide for MSPs and growing teams hitting multi-tenancy and scale limits."
 date: "2026-05-23"
-cover_image: "/img/blog/covers/proxmox-migration-when-cozystack-fits.png"
+cover_image: "/img/blog/covers/proxmox-migration-when-cozystack-fits.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["Proxmox", "Cozystack", "Migration", "Multi-tenancy", "Hosting"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/proxmox-migration-cozystack-single-tenant-grenzen/"
 companion_landing: "/migration/proxmox/"
 companion_label: "See Proxmox migration hub →"
 quiz:
@@ -17,11 +19,11 @@ quiz:
         - { text: "~300 customers (tenant audit and quota pain starts)", correct: true }
         - { text: "~50 customers (single-rack deployment thresholds)", correct: false }
         - { text: "~5,000 customers (hyperscale-tier operational ceiling)", correct: false }
-      explanation: "Above ~300 customer-facing tenants, Proxmox's namespace+permissions model (no hard isolation) starts to feel thin; per-customer audit trails, isolation guarantees, and quota enforcement become operational pain."
+      explanation: "Above ~300 customer-facing tenants, Proxmox's pools + realms + permissions model (no hard isolation) starts to feel thin; per-customer audit trails, isolation guarantees, and quota enforcement become operational pain."
     - q: "Which two Proxmox components map to KubeVirt and Cilium respectively in Cozystack?"
       options:
         - { text: "ZFS storage and Proxmox Backup Server (PBS)", correct: false }
-        - { text: "LXC containers and pvecli (CLI management plane)", correct: false }
+        - { text: "LXC containers and pvesh (CLI management plane)", correct: false }
         - { text: "KVM hypervisor and Linux SDN / Linux bridges", correct: true }
       explanation: "Per the architectural mapping table: KVM hypervisor → KubeVirt (KVM-based), and Linux SDN / bridges → Cilium (eBPF). LXC needs redesign rather than 1:1 mapping; PBS maps to Velero+S3+PITR."
     - q: "For a typical 300-1,000 customer hosting provider, what's the realistic end-to-end migration timeline?"
@@ -36,12 +38,12 @@ quiz:
         - { text: "Because LXC = system containers; K8s = application containers", correct: true }
         - { text: "Because LXC doesn't support live snapshots or replication", correct: false }
       explanation: "Proxmox LXC = system containers (full OS image); Kubernetes containers = application containers (single process or small set). Workloads using LXC for system-container patterns either migrate to KubeVirt VMs (1:1 but heavier) or get refactored to Kubernetes-native apps."
-    - q: "When does the article say a hosting provider should stay on Proxmox rather than migrate?"
+    - q: "When does the article say a hosting provider should stay on Proxmox rather than run a full migration?"
       options:
         - { text: "Stable base under ~200 customers, mostly-VM workloads", correct: true }
         - { text: "When customers demand managed PostgreSQL as a service", correct: false }
         - { text: "When the operator needs multi-DC active/active topology", correct: false }
-      explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — Cozystack Public Cloud Platform is over-engineered for that scope. Managed services and multi-DC active/active are pressures that justify migration."
+      explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — a full migration programme is over-engineered for that scope; a greenfield service line on Ænix Public Cloud Platform at provider scale is the alternative if new services are the goal. Managed services and multi-DC active/active are pressures that justify migration."
 ---
 
 
@@ -81,7 +83,7 @@ hold:
 
 ### 1. Customer count growing past ~300
 
-Proxmox's multi-tenancy model (namespace + permissions, not hard
+Proxmox's multi-tenancy model (pools, realms and permissions, not hard
 isolation) starts to feel thin above ~300 customer-facing tenants.
 Per-customer audit trails, isolation guarantees, and quota enforcement
 become operational pain.
@@ -96,8 +98,9 @@ external systems.
 ### 3. WHMCS or similar customer-management integration
 
 Proxmox has WHMCS integration, but the service catalog beyond VMs is
-manual integration work. Cozystack Public Cloud Platform ships with WHMCS
-integration for the full service catalog.
+manual integration work. Ænix Public Cloud Platform adds a WHMCS
+integration (a proprietary Ænix module, not part of open-source
+Cozystack) that covers the full service catalog.
 
 ### 4. Multi-DC active/active
 
@@ -131,7 +134,7 @@ upside of Cozystack tips the decision.
 | **Proxmox web UI** | Cozystack Dashboard |
 | **Proxmox Backup Server (PBS)** | Velero + S3-compatible target + per-app PITR |
 | **PVE-Storage replication** | LINSTOR DRBD replication |
-| **Proxmox API / pvecli** | Kubernetes API |
+| **Proxmox API / pvesh, qm, pct** | Kubernetes API |
 | **Datacenter / Pool / VM** | Tenant CRD + namespace + KubeVirt VM |
 | **Permission model (roles)** | Kubernetes RBAC + Tenant CRD scope |
 
@@ -142,30 +145,32 @@ Two areas need redesign rather than 1:1 mapping:
   (single process or small set). Workloads using LXC for system-
   container patterns either migrate to KubeVirt VMs or get
   refactored.
-- **Multi-tenancy model** — Proxmox tenant model (namespace +
-  permissions) versus Cozystack Tenant CRD (Kubernetes-native).
+- **Multi-tenancy model** — Proxmox tenant model (pools, realms
+  and permissions) versus Cozystack Tenant CRD (Kubernetes-native).
   Customer-facing isolation is stronger in Cozystack; operational
   abstraction is different.
 
 ## Migration phases
 
-### Phase 0 — Assessment (2-4 weeks)
+### Phase 0 — Assessment (14 or 28 days)
 
 Inventory: customer count, customer-facing services consumed, VM
 count, OS mix, LXC usage, storage tiers, network topology, backup
 patterns, WHMCS / customer-management integration.
 
 Honest TCO comparison: current Proxmox + commercial subscription +
-operational team versus Cozystack Public Cloud Platform + hardware refresh +
+operational team versus Ænix Public Cloud Platform + hardware refresh +
 Ænix support tier. For operators under ~300 customers, this often
 shows Proxmox staying competitive; above ~500, Cozystack typically
 wins on service-catalog and operational depth.
 
 Output: go/no-go decision with quantified justification.
 
-### Phase 1 — Cozystack foundation (1-3 months)
+### Phase 1 — Cozystack foundation (weeks to 3 months)
 
-Cozystack platform deployed on new hardware or repurposed Proxmox
+The platform goes live in weeks once hardware is ready, using the
+productized installer; catalogue and brand work take the rest of the
+phase. Cozystack platform deployed on new hardware or repurposed Proxmox
 hardware (commodity x86 servers move easily). Cilium networking
 configured. LINSTOR storage operationalised. Identity integration
 (typically Keycloak + customer IdP). Cozystack Dashboard brand customisation
@@ -213,8 +218,8 @@ cycle. Proxmox Backup Server data archived per customer agreements.
 
 For typical mid-size hosting provider (300-1,000 customers):
 
-- Phase 0: 2-4 weeks
-- Phase 1: 1-3 months
+- Phase 0: 14 or 28 days
+- Phase 1: weeks to 3 months
 - Phase 2: 1-3 months
 - Phase 3: 3-9 months
 - Phase 4: 1-3 months
@@ -245,7 +250,7 @@ compatibility shim) is engagement work.
 ### 3. Operations team training
 
 Proxmox operators are comfortable with the Proxmox web UI and the
-imperative `pvecli` command. Cozystack expects GitOps for production
+imperative `qm` / `pct` / `pvesh` CLI tools. Cozystack expects GitOps for production
 changes. Operations team needs 4-8 weeks of focused training plus
 3-6 months of practice. Ænix engagement includes training; customer
 investment in the transition is also required.
@@ -253,16 +258,16 @@ investment in the transition is also required.
 ### 4. ZFS-specific workloads
 
 Some customers chose Proxmox specifically for ZFS-on-host features
-(advanced snapshots, ZFS-replicated backups). Cozystack uses LINSTOR
-or Ceph; ZFS-specific operational patterns don't translate. Customer
+(advanced snapshots, ZFS-replicated backups). Cozystack ships LINSTOR
+(DRBD); ZFS-specific operational patterns don't translate. Customer
 dialogue about feature equivalence is part of Phase 0.
 
 ## Versus other alternatives
 
 **Versus building it yourself on raw KVM + libvirt + Kubernetes:**
 Same trade-offs as for any open-source-build option. Cozystack
-delivers in 3-6 months what raw-builds take 12-24 months to reach
-production-grade for multi-tenant operation. For operators with
+gets a multi-tenant platform to production in weeks to a few months;
+raw builds take 12-24 months to reach the same level. For operators with
 strong platform engineering capacity, the raw-build is a credible
 alternative.
 
@@ -299,19 +304,23 @@ Poor fit:
 
 - SMB IT (<100 internal VMs) — Proxmox is still better
 - Lab / dev environments — Proxmox simplicity wins
-- Sub-200-customer hosting providers — fixed-cost economics
+- Sub-200-customer hosting providers — poor fit for a full migration
+  programme; consider a greenfield service line on Ænix Public Cloud
+  Platform at provider scale instead
 
 ## Engagement structure
 
 - **Discovery call** (30 min, free)
-- **Migration assessment** (2-4 weeks, fixed-price) — go/no-go with
-  TCO comparison
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
+  (fixed price, 14 days focused or 28 days full) — go/no-go with TCO
+  comparison
 - **Pilot deployment** (1-3 months) — Cozystack stood up, 5-20
   friendly customers migrated
 - **Cohort migration** (3-12 months) — customer migration in cohorts
 - **Proxmox decommission** (1-3 months, parallel) — as cohorts
   complete
-- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
+- **Support subscription** (ongoing) — Plus or Enterprise support tier
+  for 24×7 coverage (see [/pricing/](/pricing/))
 
 ## Where to dig deeper
 

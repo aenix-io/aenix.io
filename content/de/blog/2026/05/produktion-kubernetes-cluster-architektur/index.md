@@ -1,7 +1,9 @@
 ---
 title: "Produktions-Kubernetes-Cluster — Architekturentscheidungen, Sizing und Operations 2026"
-description: "Begleitung zur Kubernetes-Consulting-Page."
+seo_title: "Kubernetes in Produktion: Architektur und Betrieb"
+description: "Kubernetes-Cluster für die Produktion: zehn Architekturentscheidungen von Distribution bis Upgrades, bewährte Betriebspraktiken und die häufigsten Fehler."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/produktion-kubernetes-cluster-architektur.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "Cilium", "LINSTOR", "GitOps"]
@@ -40,9 +42,10 @@ quiz:
         - { text: "Sowohl Argo CD als auch Flux", correct: true }
         - { text: "Ausschließlich Argo CD", correct: false }
       explanation: "Sowohl Argo CD als auch Flux sind produktionsreif und CNCF-graduiert. Argo CD bietet eine reichhaltige Oberfläche, ein großes Plugin-Ökosystem und Mandantenfähigkeit über Projects. Flux liegt näher am Upstream-Kubernetes, ist eng mit dem Helm-Controller verzahnt und hat einen leichteren Betriebsaufwand. In Cozystack ist Flux der Standard."
+hreflang_en: /blog/2026/05/kubernetes-cluster-setup-production-architecture/
 ---
 
-Begleitung zur **[Kubernetes-Consulting-Page](/de/dienstleistungen/kubernetes-consulting)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Kubernetes-Beratung](/de/dienstleistungen/kubernetes-consulting/)**.
 
 ## 10 Architekturentscheidungen, die zählen
 
@@ -76,5 +79,5 @@ Begleitung zur **[Kubernetes-Consulting-Page](/de/dienstleistungen/kubernetes-co
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

@@ -1,13 +1,13 @@
 ---
 title: "Eine Private Cloud in einer Bank"
-description: "Eine Bank in Osteuropa gab ihren internen Teams eine vollwertige Self-Service-Cloud — drei Monate bis Produktion, eigenes Keycloak und Ceph, RBAC je Tenant."
+description: "Eine Bank gab ihren internen Teams eine Self-Service-Private-Cloud auf Cozystack: drei Monate bis Produktion, eigenes Keycloak und Ceph, RBAC und Backups."
 hero_subtitle: "Self-Service-Umgebungen für interne Teams, drei Monate bis Produktion"
 date: 2026-08-21
 lastmod: 2026-08-21
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/private-cloud-in-a-bank/"
-images: ["img/og/og-case-private-cloud-in-a-bank.png"]
+images: ["img/og/og-case-private-cloud-in-a-bank.jpg"]
 primary_keyword: "Private Cloud für Banken"
 secondary_keywords:
   - "Private-Cloud-Plattform Bank"
@@ -19,7 +19,6 @@ related_pages:
   - /de/produkte/private-cloud-platform/
   - /de/branchen/finanzdienstleistungen/
   - /de/loesungen/dora-compliance/
-  - /de/produkte/private-cloud-platform/
 faq:
   - q: "Musste die Bank ein neues Identity-System einführen?"
     a: "Nein. Das bestehende Keycloak der Bank blieb die maßgebliche Quelle, die Plattform integriert sich damit und bildet Gruppen und Rollen der Bank auf Plattformrollen ab. Niemand bekam einen zweiten Satz Zugangsdaten, und die Joiner-Mover-Leaver-Prozesse funktionieren weiter so, wie die Revision sie bereits kennt."
@@ -47,6 +46,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">3 Monate</div><div class="cs-stat__label">vom Beginn der Integration bis zur Produktion</div></div>
   <div class="cs-stat"><div class="cs-stat__num">Bestehendes Keycloak</div><div class="cs-stat__label">bleibt Identity-Quelle, mit Mapping von Gruppen und Rollen auf Plattformrollen</div></div>
   <div class="cs-stat"><div class="cs-stat__num">Je Tenant</div><div class="cs-stat__label">RBAC, Netzregeln, Backup-Policy, Monitoring-Schwellen und Verbrauchsberichte</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
 </div>
 
 ## Über das Projekt
@@ -78,7 +82,7 @@ Eine Self-Service-Cloud-Plattform, als Produkt geliefert und in die bestehenden 
 - **Ceph** — das bestehende externe Cluster dient als Storage, mit seiner Kapazitätsplanung und Betriebshistorie.
 - **RBAC** — global und innerhalb jedes Tenants durchgesetzt, konsistent mit der bestehenden Zugriffsprüfung.
 
-{{< placeholder-image width="1200" height="640" label="Private Cloud in einer Bank: interne Teams steigen über Webkonsole oder öffentliche API ein; die Plattform setzt RBAC, Quotas, Netz-Policy (Firewall, Load Balancer, ACL), Backup-Policy und Schwellwert-Monitoring je Tenant durch; Identity kommt aus dem bestehenden Keycloak der Bank mit Gruppen- und Rollen-Mapping, Storage aus dem externen Ceph-Cluster; Verbrauchsberichte speisen die interne Leistungsverrechnung" >}}
+{{< case-diagram src="/img/case-studies/private-cloud-in-a-bank-de.webp" alt="Private Cloud in einer Bank: interne Teams steigen über Webkonsole oder öffentliche API ein; die Plattform setzt RBAC, Quotas, Netz-Policy (Firewall, Load Balancer, ACL), Backup-Policy und Schwellwert-Monitoring je Tenant durch; Identity kommt aus dem bestehenden Keycloak der Bank mit Gruppen- und Rollen-Mapping, Storage aus dem externen Ceph-Cluster; Verbrauchsberichte speisen die interne Leistungsverrechnung" >}}
 
 ## Ergebnisse
 
@@ -97,8 +101,17 @@ Eine Self-Service-Cloud-Plattform, als Produkt geliefert und in die bestehenden 
   <div class="card"><div class="card-body"><h3 class="card-title">Verbrauchsberichte ab dem ersten Tag</h3><p class="card-description">Verbrauch je Service und je Nutzer auf einen Klick — die Zahl, nach der eine interne Plattform gefragt wird, sobald sie beliebt ist.</p></div></div>
 </div>
 
+## Ein ähnliches Projekt besprechen
+
+Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+</div>
+
 ---
 
-*Diese Case Study erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
+*Diese Case Study erscheint anonymisiert: Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform in drei Plattformen — Provider und Enterprise — mit den Modulen AI Platform und Developer Self-Service.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

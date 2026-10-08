@@ -1,7 +1,9 @@
 ---
 title: "K-12-Schulträger-Cloud-Infrastruktur — wenn Souveränität wichtiger ist als Bequemlichkeit"
-description: "Begleitung zur K-12-Bildung-Page."
+seo_title: "Cloud-Infrastruktur für Schulträger"
+description: "Cloud-Infrastruktur für Schulträger: warum Schulen andere Anforderungen haben als Hochschulen, passende Architekturmuster und die häufigsten Fehler."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/k12-schultraeger-cloud-infrastruktur.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Multi-tenancy"]
@@ -40,9 +42,10 @@ quiz:
         - { text: "Eine schnellere Bereitstellung neuer Cloud-Umgebungen", correct: false }
         - { text: "Niedrigere Kosten als jede andere Betriebsvariante", correct: false }
       explanation: "Souverän nach Architektur heißt: Schülerdaten liegen auf der Hardware des Schulträgers, die Verschlüsselungsschlüssel kontrolliert der Schulträger selbst, und in der Plattformschicht entsteht kein Vendor-Lock-in. Das passt für Schulträger mit erhöhtem Datenschutzbedarf oder entsprechenden Beschaffungsvorgaben."
+hreflang_en: /blog/2026/05/k12-school-district-cloud-infrastructure/
 ---
 
-Begleitung zur **[K-12-Bildung-Page](/de/branchen/k12-bildung)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Schulträger und K-12-Bildung](/de/branchen/k12-bildung/)**.
 
 ## Warum K-12 anders als Universitäten ist
 
@@ -68,5 +71,5 @@ Begleitung zur **[K-12-Bildung-Page](/de/branchen/k12-bildung)**.
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

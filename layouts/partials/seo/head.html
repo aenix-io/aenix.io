@@ -73,9 +73,19 @@
   {{- end -}}
 {{- end -}}
 <link rel="canonical" href="{{ $canonical }}" />
+{{- /* The blog's feed, discoverable from every page: German pages point to the German one. */}}
+{{- if or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") }}
+<link rel="alternate" type="application/rss+xml" title="Ænix Blog (Deutsch)" href="{{ "de/blog/index.xml" | absURL }}" />
+{{- else }}
+<link rel="alternate" type="application/rss+xml" title="Ænix Blog" href="{{ "blog/index.xml" | absURL }}" />
+{{- end }}
 
 {{- with .Params.robots }}
 <meta name="robots" content="{{ . }}" />
+{{- else }}
+{{- if (partial "seo/noindex.html" .).emit }}
+<meta name="robots" content="noindex, follow" />
+{{- end }}
 {{- end }}
 
 {{/* ============================================================ */}}
@@ -96,32 +106,52 @@
 {{/* Open Graph + Twitter (citation-ready meta)                     */}}
 {{/* ============================================================ */}}
 
-<meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:title" content="{{ .Params.seo_title | default .Title }}" />
+<meta property="og:site_name" content="Ænix" />
+{{- if eq $type "blog-article" }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{- with .Params.author }}<meta property="article:author" content="{{ . }}" />{{ end }}
+{{- range .Params.topics }}
+<meta property="article:tag" content="{{ . }}" />
+{{- end }}
+{{- end }}
+<meta property="og:description" content="{{ partial "seo/description.html" . }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:type" content="{{ if eq $type "blog-article" }}article{{ else }}website{{ end }}" />
 <meta property="og:locale" content="{{ if eq .Params.language "de" }}de_DE{{ else if eq .Params.language "ru" }}ru_RU{{ else if eq .Params.language "fr" }}fr_FR{{ else }}en_US{{ end }}" />
-{{- if and (ne .Params.language "de") .Params.hreflang_de }}
+{{- $pairs := partial "seo/locale-counterparts.html" . -}}
+{{- if $pairs.de }}
 <meta property="og:locale:alternate" content="de_DE" />
 {{- end }}
-{{- if and (ne .Params.language "ru") .Params.hreflang_ru }}
+{{- if $pairs.ru }}
 <meta property="og:locale:alternate" content="ru_RU" />
 {{- end }}
-{{- if and (ne (.Params.language | default "en") "en") .Params.hreflang_en }}
+{{- if $pairs.en }}
 <meta property="og:locale:alternate" content="en_US" />
 {{- end }}
-{{- with .Params.images }}
-<meta property="og:image" content="{{ index . 0 | absURL }}" />
-{{- else }}
-<meta property="og:image" content="{{ "img/aenix-social-card.png" | absURL }}" />
-{{- end }}
+{{- $ogImg := partial "seo/og-image.html" . -}}
+<meta property="og:image" content="{{ $ogImg | absURL }}" />
+{{- /* The real size of the image, not an assumed 1200x630: a third of the blog's
+       covers are Medium artwork of other proportions. Looked up where the file
+       lives (static/, or a page bundle under content/); omitted when unknown. */}}
+{{- $ogFile := "" -}}
+{{- $ogPath := index (split $ogImg "?") 0 -}}
+{{- range slice (printf "static/%s" $ogPath) (printf "content/%s" $ogPath) -}}
+  {{- if and (not $ogFile) (fileExists .) }}{{ $ogFile = . }}{{ end -}}
+{{- end -}}
+{{- with $ogFile }}{{ with imageConfig . }}
+<meta property="og:image:width" content="{{ .Width }}" />
+<meta property="og:image:height" content="{{ .Height }}" />
+{{- end }}{{ end }}
+<meta name="twitter:image" content="{{ partial "seo/og-image.html" . | absURL }}" />
 <meta name="twitter:card" content="summary_large_image" />
 
 {{/* ============================================================ */}}
 {{/* SEO extensions stylesheet (badge / callout / card / 404)        */}}
 {{/* ============================================================ */}}
 
-{{ $seoCss := resources.Get "css/aenix-seo-extensions.css" | fingerprint }}
+{{ $seoCss := resources.Get "css/aenix-seo-extensions.css" | minify | fingerprint }}
 {{ with $seoCss }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
 
 {{/* ============================================================ */}}
@@ -154,8 +184,8 @@
   {{ partial "seo/jsonld-blogposting.html" . }}
 {{- end }}
 
-{{- if eq $type "product" }}
-  {{ partial "seo/jsonld-softwareapplication.html" . }}
+{{- if or (eq $type "product") (in (slice "/pricing/" "/de/preise/") .RelPermalink) }}
+  {{ partial "seo/jsonld-product.html" . }}
 {{- end }}
 
 {{- if eq $type "event-landing" }}

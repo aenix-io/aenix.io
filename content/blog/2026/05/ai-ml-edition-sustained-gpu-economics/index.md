@@ -1,12 +1,14 @@
 ---
 title: "AI Platform — when sustained-inference economics beat hyperscaler GPU"
-description: "GPU economics for sustained inference, multi-tenant GPU scheduling, and when dedicated AI infra pays back."
+seo_title: "AI Platform: when sustained inference beats cloud GPU"
+description: "GPU economics for sustained inference on the Ænix AI Platform: multi-tenant GPU scheduling, fractional sharing, and when dedicated AI infrastructure pays back."
 date: "2026-05-01"
-cover_image: "/img/blog/covers/ai-ml-edition-sustained-gpu-economics.png"
+cover_image: "/img/blog/covers/ai-ml-edition-sustained-gpu-economics.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["AI/ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
+topics: ["AI and ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/ai-platform-gpu-wirtschaftlichkeit-inferenz/"
 companion_landing: "/products/ai-platform/"
 companion_label: "See AI Platform product details →"
 quiz:
@@ -103,8 +105,7 @@ A typical multi-tenant inference fleet runs a mix:
 - **CPU-only nodes** for RAG retrieval, embedding generation,
   preprocessing pipelines that don't need GPU
 
-Validated configurations in our deployments: A100 40/80GB, H100 80GB,
-H200 141GB, L40S 48GB, Blackwell B100/B200. NVLink for multi-GPU
+NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator (passthrough to VMs, sharing via HAMi). NVLink for multi-GPU
 training where applicable; 25-100 Gbps Ethernet sufficient for most
 inference patterns.
 
@@ -213,7 +214,7 @@ programme. This is the typical AI Platform flagship deployment.
 **Pattern 4 — air-gapped sovereign deployment.** No internet egress;
 updates through controlled channels. Customer-supplied hardware,
 customer-controlled keys (HSM-backed), customer-side audit SIEM. Best
-for: classified workloads, defence-adjacent, healthcare with strict
+for: classified workloads, healthcare with strict
 residency.
 
 ## Common pitfalls
@@ -277,16 +278,19 @@ Poor fit:
 ## Engagement structure
 
 - **Discovery call** (30 min, free)
-- **Sovereign AI architecture review** (1-2 weeks, fixed-price) —
-  using the [Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/) framework plus Ænix experience
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
+  (fixed price, 14 days focused or 28 days full) — using the
+  [Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/) framework plus Ænix experience
 - **Pilot engagement** (3-6 months) — defined slice: one workload
   class, one tenant, one model family
-- **Full AI Platform build** (6-12 months) — production AI
-  infrastructure with all targeted workload types
-- **Managed retainer** (ongoing) — Ænix runs the AI platform under
-  SLA
+- **Full AI Platform build** — production AI infrastructure with all
+  targeted workload types; scope and duration are set in the
+  assessment
+- **Support subscription** (ongoing) — Plus or Enterprise tier for
+  24×7 (see [/pricing/](/pricing/)), or managed operations quoted
+  separately
 
-Engagement size: Project plus managed retainer, quoted per RFP.
+Engagement size: project plus support subscription, quoted per RFP.
 
 ## Where to dig deeper
 

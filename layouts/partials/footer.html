@@ -10,7 +10,7 @@
 {{- $f := dict
   "tagline"    "Turnkey cloud platform.<br>Built on Cozystack."
   "product"    "Product"
-  "platform"   "Ænix Platform"
+  "platform"   "Platforms"
   "cozystack"  "Cozystack"
   "pricing"    "Pricing"
   "pricingUrl" "/pricing/"
@@ -40,6 +40,16 @@
   "course"     "Course"
   "courseUrl"  "/kubernetes-deep-dive/"
   "oss"        "OSS report"
+  "events"     "Workshops & events"
+  "eventsUrl"  "/workshops/"
+  "webinars"   "Webinars"
+  "webinarsUrl" "/webinars/"
+  "cert"       "Certification"
+  "certUrl"    "/certification/"
+  "compliance" "Compliance evidence"
+  "complianceUrl" "/compliance/"
+  "regNo"      "Company ID (IČO)"
+  "vatNo"      "VAT"
   "company"    "Company"
   "about"      "About"
   "aboutUrl"   "/about/"
@@ -65,6 +75,7 @@
 {{- $f = merge $f (dict
   "tagline"    "Schlüsselfertige Cloud-Plattform.<br>Auf Basis von Cozystack."
   "product"    "Produkt"
+  "platform"   "Plattformen"
   "pricing"    "Preise"
   "pricingUrl" "/de/preise/"
   "platformUrl" "/de/produkte/"
@@ -91,12 +102,20 @@
   "course"     "Schulung"
   "courseUrl"  "/de/kubernetes-deep-dive/"
   "oss"        "OSS-Bericht"
+  "events"     "Workshops & Events"
+  "compliance" "Compliance-Nachweise"
+  "complianceUrl" "/de/compliance/"
+  "cert"       "Zertifizierung"
+  "regNo"      "IČO"
+  "vatNo"      "USt-IdNr."
   "company"    "Unternehmen"
   "about"      "Über uns"
   "aboutUrl"   "/de/ueber-uns/"
+  "partners"   "Partner"
   "partnersUrl" "/de/partner/"
   "conferences" "Konferenzen"
   "conferencesUrl" "/de/konferenzen/"
+  "cases"      "Fallstudien"
   "casesUrl"   "/de/case-studies/"
   "contact"    "Kontakt"
   "contactUrl" "/de/kontakt/"
@@ -145,6 +164,10 @@
           <a href="{{ index $f "resourcesUrl" }}">{{ index $f "leadMagnets" }}</a>
           <a href="{{ index $f "blogUrl" }}">{{ index $f "blog" }}</a>
           <a href="{{ index $f "courseUrl" }}">{{ index $f "course" }}</a>
+          <a href="{{ index $f "eventsUrl" }}">{{ index $f "events" }}</a>
+          <a href="{{ index $f "webinarsUrl" }}">{{ index $f "webinars" }}</a>
+          <a href="{{ index $f "certUrl" }}">{{ index $f "cert" }}</a>
+          <a href="{{ index $f "complianceUrl" }}">{{ index $f "compliance" }}</a>
           <a href="/oss-contribution/">{{ index $f "oss" }}</a>
         </div>
         <div class="footer-nav-group">
@@ -160,7 +183,7 @@
           <a href="https://github.com/cozystack/cozystack" target="_blank" rel="noopener">GitHub</a>
           <a href="https://cozystack.io" target="_blank" rel="noopener">cozystack.io</a>
           <a href="https://t.me/cozystack" target="_blank" rel="noopener">Telegram</a>
-          <a href="https://www.linkedin.com/company/aenix/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.linkedin.com/company/aenix-io/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -170,6 +193,14 @@
         {{ with index $f "imprintUrl" }}<a href="{{ . }}">{{ index $f "imprint" }}</a> &nbsp;·&nbsp;{{ end }}
         <a href="#" data-aenix-consent-open>{{ index $f "cookies" }}</a>
       </p>
+      {{- /* Legal identification of the contracting entities; one source with
+             the Organization JSON-LD (hugo.yaml params.company). */}}
+      {{- with site.Params.company }}
+      <p class="footer-legal">
+        {{ .eu.name }}, {{ .eu.address }}, {{ .eu.zip }} {{ .eu.city }}, {{ if $de }}Tschechische Republik{{ else }}{{ .eu.country }}{{ end }} · {{ index $f "regNo" }} {{ .eu.cin }} · {{ index $f "vatNo" }} {{ .eu.vat }}<br>
+        {{ .us.name }}, {{ .us.state }}, USA
+      </p>
+      {{- end }}
     </div>
   </div>
 </footer>

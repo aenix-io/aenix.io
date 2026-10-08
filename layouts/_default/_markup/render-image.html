@@ -1,0 +1,5 @@
+{{- /* Markdown images: lazy, async-decoded, with their real size so the page
+       does not jump as they load (CLS). */ -}}
+{{- $d := partial "img/dims.html" (dict "page" .Page "src" .Destination) -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ with $d }} width="{{ .w }}" height="{{ .h }}"{{ end }} loading="lazy" decoding="async">
+{{- /**/ -}}

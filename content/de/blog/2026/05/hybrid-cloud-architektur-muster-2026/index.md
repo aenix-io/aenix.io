@@ -1,7 +1,9 @@
 ---
 title: "Hybrid-Cloud-Architektur-Muster 2026 — was funktioniert, was scheitert"
-description: "Begleitung zur Hybrid-Cloud-Page."
+seo_title: "Hybrid-Cloud-Architektur: fünf Muster für 2026"
+description: "Fünf Hybrid-Cloud-Muster, die 2026 funktionieren, drei Architekturprinzipien dahinter und die Fälle, in denen Hybrid die falsche Antwort ist."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/hybrid-cloud-architektur-muster-2026.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "GPU", "Financial Services"]
@@ -40,9 +42,10 @@ quiz:
         - { text: "Souveränität und aufsichtsrechtlicher Druck", correct: true }
         - { text: "Die Wirtschaftlichkeit von KI-Workloads", correct: false }
       explanation: "Muster 2 legt regulierte Workloads aus Banking, Gesundheit und öffentlichem Sektor in die Private Cloud und Hilfs-Workloads wie Analytics, interne Werkzeuge sowie Dev und Test in die Public Cloud. Treiber ist die Souveränität — DORA, sektorale Regeln, Datenresidenzvorgaben — nicht die reine Kostenfrage."
+hreflang_en: /blog/2026/05/hybrid-cloud-architecture-patterns-2026/
 ---
 
-Begleitung zur **[Hybrid-Cloud-Page](/de/loesungen/hybrid-cloud)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Hybrid Cloud](/de/loesungen/hybrid-cloud/)**.
 
 ## Fünf funktionierende Hybrid-Muster
 
@@ -79,5 +82,5 @@ KI-Training und Inferenz auf dediziertem GPU (Private Cloud); Rest des Geschäft
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

@@ -1,60 +1,67 @@
 ---
-title: "NIS2-Compliance für Cloud-Infrastruktur — auditbereite Architektur"
-description: "Die NIS2-Richtlinie (EU) 2022/2555 ist seit dem Umsetzungstermin 17. Oktober 2024 in den meisten EU-Mitgliedstaaten in Kraft. Für wesentliche und wichtige..."
+title: "NIS2-Compliance für Cloud-Infrastruktur — die Architektur auditfähig machen"
+seo_title: "NIS2-Compliance für Cloud-Infrastruktur"
+primary_keyword: "nis2 compliance cloud infrastruktur"
+description: "NIS2 war bis 17.10.2024 umzusetzen. Ein Festpreis-Projekt bildet Ihre Cloud-Architektur auf die Maßnahmen nach Art. 21 und die Meldepflichten nach Art. 23 ab."
 type: "page"
-related_pages: ["/de/loesungen/dora-compliance", "/de/loesungen/data-sovereignty", "/de/dienstleistungen/platform-readiness-assessment/"]
+related_pages:
+  - /de/loesungen/dora-compliance/
+  - /de/loesungen/data-sovereignty/
+  - /de/dienstleistungen/platform-readiness-assessment/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/nis2-compliance/
 direct_answer: |
-  **NIS2-Compliance für Cloud-Infrastruktur bedeutet, die Cyber­sicherheits- und Vorfallsmanagement-Pflichten der Richtlinie (EU) 2022/2555 (Umsetzungstermin 17. Oktober 2024) direkt in der Plattform­architektur umzusetzen. Sie betrifft wesentliche und wichtige Einrichtungen — Energie, Verkehr, Banken, Gesundheitswesen, digitale Infrastruktur, öffentliche Verwaltung — sowie deren IKT-Drittanbieter. Aenix liefert mit der auf Cozystack aufbauenden Ænix Private Cloud Platform eine auditbereite Grundlage: Tenant-CRD-Mandantenfähigkeit mit NetworkPolicy und Cilium (eBPF) für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging und Coordinated Vulnerability Disclosure nach Artikel 30 — alles Open Source unter Apache 2.0 ohne Vendor-Lock-in.**
+  **NIS2-Compliance für Cloud-Infrastruktur bedeutet, Ihre Plattformarchitektur an der EU-Richtlinie NIS2 (EU 2022/2555) auszurichten. Sie verpflichtet wesentliche und wichtige Einrichtungen sowie die IKT-Drittanbieter, die sie bedienen, zu Risikomanagementmaßnahmen im Bereich Cybersicherheit (Artikel 21), zu Meldungen von Sicherheitsvorfällen nach 24 Stunden, 72 Stunden und einem Monat (Artikel 23) und zum Management von Risiken in der IKT-Lieferkette. Ænix führt an NIS2 ausgerichtete Platform-Readiness-Projekte durch. Sie liefern eine Übersicht auf Kontrollebene, eine Lieferkettenanalyse bis zur zweiten Stufe, eine Bewertung der Fähigkeit zur Vorfallserkennung und einen Maßnahmenplan auf Architekturebene. Die Ænix Private Cloud Platform ist darauf ausgelegt, die NIS2-Arbeit zu unterstützen. Sie basiert auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0, mit Tenant-Isolation, Netzwerksegmentierung über Cilium (eBPF), optionaler Volume-Verschlüsselung und Audit-Logging mit konfigurierbarer Aufbewahrung.**
 quick_facts:
   - label: "Was es ist"
-    value: "Auditbereite Cloud-Architektur, die die Cybersicherheits- und Vorfall-Reporting-Pflichten der NIS2-Richtlinie (EU) 2022/2555 technisch umsetzt"
+    value: "Ein an NIS2 ausgerichtetes Platform-Readiness-Projekt, das Ihre Cloud-Architektur der EU-Richtlinie NIS2 (EU 2022/2555) gegenüberstellt und einen Maßnahmenplan auf Architekturebene liefert."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Zielgruppe"
-    value: "Wesentliche und wichtige Einrichtungen nach NIS2 (Energie, Verkehr, Banken, Gesundheitswesen, digitale Infrastruktur, öffentliche Verwaltung) sowie deren IKT-Drittanbieter"
-  - label: "Schlüsselfunktion"
-    value: "Tenant-CRD-Mandantenfähigkeit mit NetworkPolicy / Cilium (eBPF) für Segmentierung, kundenkontrollierte Verschlüsselung und audit-bereites Logging"
-  - label: "Regulatorik"
-    value: "Artikel 21 (Risikomanagement, 10 Bereiche), Artikel 23 (24-h-Frühwarnung / 72-h-Meldung / 1-Monat-Endbericht), Artikel 20 (Verantwortlichkeit der Leitungsorgane), Artikel 12 (koordinierte Offenlegung von Schwachstellen)"
-  - label: "Passendes Produkt"
-    value: "Ænix Private Cloud Platform; Einstieg über Platform-Readiness-Assessment, Preisstufen ab Basic 1.250 $/Monat (10 Nodes)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Wesentliche und wichtige Einrichtungen (Energie, Verkehr, Bankwesen, Gesundheitswesen, digitale Infrastruktur, öffentliche Verwaltung und weitere) sowie die IKT-Drittanbieter, die sie bedienen."
+  - label: "Projektdauer"
+    value: "14-tägige, auf NIS2 fokussierte Variante oder 28-tägige Variante, die NIS2, DORA und DSGVO in einem Projekt abbildet."
+  - label: "Abgedeckte Vorgaben"
+    value: "NIS2-Richtlinie (EU) 2022/2555 — Artikel 20 (Governance und Verantwortung der Leitungsorgane), 21 (Risikomanagementmaßnahmen, inkl. Sicherheit der Lieferkette nach 21(2)(d)) und 23 (Berichtspflichten)."
+  - label: "Kernfunktion"
+    value: "Cozystack bietet Tenant-Isolation, Segmentierung über Cilium/NetworkPolicy, optionale Volume-Verschlüsselung, Air-Gap-Installation und Audit-Logging mit konfigurierbarer Aufbewahrung (standardmäßig 30 Tage)."
 faq:
-  - q: "Was ist die NIS2-Richtlinie und seit wann gilt sie?"
-    a: "NIS2 (Richtlinie (EU) 2022/2555) ist der EU-Rechtsrahmen für Cybersicherheit kritischer und wichtiger Einrichtungen. Der Umsetzungstermin war der 17. Oktober 2024; sie ist seitdem in den meisten EU-Mitgliedstaaten in nationales Recht überführt und in Kraft."
-  - q: "Wer fällt unter den Geltungsbereich von NIS2?"
-    a: "Wesentliche Einrichtungen (Energie, Verkehr, Banken, Finanzmarktinfrastrukturen, Gesundheitswesen, Trinkwasser, digitale Infrastruktur, öffentliche Verwaltung) und wichtige Einrichtungen (Postdienste, Abfall, Chemie, Lebensmittel, kritische Produkte, digitale Diensteanbieter) sowie IKT-Drittanbieter, die diese bedienen."
-  - q: "Welche Fristen gelten für das Vorfall-Reporting nach Artikel 23?"
-    a: "NIS2 schreibt eine dreistufige Meldung vor: eine Frühwarnung innerhalb von 24 Stunden, eine Vorfallsmeldung innerhalb von 72 Stunden und einen Endbericht innerhalb eines Monats. Audit-bereites Logging ist hierfür Grundvoraussetzung."
-  - q: "Wie unterstützt die Ænix Platform die NIS2-Konformität technisch?"
-    a: "Über die Private Cloud Platform: Tenant-CRD-Mandantenfähigkeit mit NetworkPolicy und Cilium (eBPF) für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging und Coordinated Vulnerability Disclosure nach Artikel 30 — als architektonische Grundlage für Risikomanagement und Nachweispflichten."
-  - q: "Gibt es bei Aenix einen Vendor-Lock-in für NIS2-Workloads?"
-    a: "Nein. Die Plattform basiert auf Cozystack, das vollständig unter Apache 2.0 quelloffen ist, ohne CPU- oder Core-basierte Lizenzierung. Workloads laufen auf standardisierten Kubernetes-APIs mit KubeVirt für VMs und Container, LINSTOR/DRBD für Storage und Cilium für Networking."
-  - q: "Wie steigt man in ein NIS2-Compliance-Projekt mit Aenix ein?"
-    a: "Üblicher Einstieg ist ein Platform-Readiness-Assessment, gefolgt von einem Discovery-Call. Die produktisierte Ænix Platform startet bei Basic 1.250 $/Monat (10 Nodes); Standard, Plus und Enterprise (Custom) decken größere und stärker regulierte Umgebungen ab."
+  - q: "Ist die Frist zur Umsetzung von NIS2 abgelaufen?"
+    a: "Ja. Artikel 41 legte für alle Mitgliedstaaten eine einheitliche Umsetzungsfrist bis zum 17. Oktober 2024 fest. Einige Mitgliedstaaten haben verspätet umgesetzt; prüfen Sie daher den Stand Ihres nationalen Rechts. Betroffene Einrichtungen sollten die Pflichten aber als geltend behandeln."
+  - q: "Gibt es eine NIS2-Zertifizierung, die wir erwerben können?"
+    a: "Nein. NIS2 ist ergebnisorientiert. Nationale Zertifizierungsschemata für Cybersicherheit können in Durchführungsbestimmungen referenziert werden, aber es gibt kein einheitliches NIS2-Siegel und kein NIS2-Zertifikat."
+  - q: "Wie unterscheidet sich NIS2 von DORA?"
+    a: "DORA gilt speziell für den Finanzsektor; NIS2 ist ebenfalls sektorbezogen, aber deutlich breiter. Viele Einrichtungen fallen unter beide Regelwerke, mit sich überschneidenden, aber nicht identischen Anforderungen. Die 28-tägige Ænix-Variante bildet beide Regelwerke und zusätzlich die DSGVO in einem Projekt ab."
+  - q: "Was liefert das NIS2-Projekt von Ænix?"
+    a: "Eine NIS2-Übersicht auf Kontrollebene, eine Lieferkettenanalyse bis zur zweiten Stufe für IKT-Drittanbieter kritischer Funktionen, eine Bewertung der Fähigkeit zur Erkennung und Meldung von Vorfällen gemessen an den Fristen von 24/72 Stunden und einem Monat, eine Überprüfung von Betriebskontinuität und Schwachstellenmanagement sowie einen Maßnahmenplan auf Architekturebene."
+  - q: "Wie unterstützt Cozystack die Anforderungen von NIS2?"
+    a: "Cozystack bietet Tenant-Isolation mit Segmentierung über Cilium (eBPF) und NetworkPolicy, optionale Volume-Verschlüsselung, Air-Gap-Installation sowie Audit-Logs mit konfigurierbarer Aufbewahrung (standardmäßig 30 Tage), die sich in Ihren eigenen unveränderlichen Speicher ausleiten lassen. Das unterstützt die in Artikel 21(2) genannten Risikomanagementmaßnahmen — Zugriffskontrolle, Netzwerksicherheit, Betriebskontinuität — und die Telemetrie, mit der sich die Meldefristen nach Artikel 23 einhalten lassen. Was die Plattform standardmäßig bietet und was nicht, ist auf den Compliance-Nachweisseiten dokumentiert."
+  - q: "Wer führt das Projekt durch?"
+    a: "Ænix-Engineers — Engineering-Teams in der EU und in Zentralasien; EU-Verträge über die AENIX s.r.o. (Tschechien), die nach ISO/IEC 27001:2022 zertifiziert ist. Die Empfehlungen richten sich nach technischer Eignung und regulatorischer Ausrichtung, ohne Voreingenommenheit durch Hyperscaler-Partnerschaften."
 ---
 
 <!-- BLOCK 1 -->
 
-**Die NIS2-Richtlinie (EU) 2022/2555 wird in den EU-Mitgliedstaaten umgesetzt, wobei die Fristen für viele bereits verstrichen sind. Für wesentliche und wichtige Einrichtungen — Energie, Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheitswesen, Trinkwasser, digitale Infrastruktur, öffentliche Verwaltung, Postdienste, Abfall, IKT-Dienste und mehrere weitere Sektoren — schreibt NIS2 spezifische Cybersicherheits- und Vorfallsmanagement-Anforderungen vor, die direkt auf die Cloud-Architektur abbilden.**
 
-Ænix führt NIS2-konforme Platform-Readiness-Engagements für betroffene Einrichtungen und die sie bedienenden IKT-Drittanbieter durch. Ergebnis: eine Kontroll-Level-Landkarte, die zeigt, wo Sie heute stehen, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
+**Die NIS2-Richtlinie (EU 2022/2555) musste bis zum 17. Oktober 2024 in nationales Recht umgesetzt werden; einige Mitgliedstaaten haben verspätet umgesetzt, prüfen Sie daher Ihr nationales Recht. Für wesentliche und wichtige Einrichtungen — Energie, Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheitswesen, Trinkwasser, digitale Infrastruktur, öffentliche Verwaltung, Postdienste, Abfallwirtschaft, IKT-Dienste und mehrere weitere Sektoren — schreibt NIS2 konkrete Anforderungen an Cybersicherheit und Vorfallsmanagement vor, die sich unmittelbar auf die Cloud-Architektur auswirken.**
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — NIS2-konform by design (Artikel 21 Risikomanagement-Maßnahmen, Artikel 23 Meldepflichten, Artikel 12 koordinierte Offenlegung von Schwachstellen). Tenant CRD mit NetworkPolicy / Cilium für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
+Ænix führt an NIS2 ausgerichtete Platform-Readiness-Projekte für betroffene Einrichtungen und die IKT-Drittanbieter durch, die sie bedienen. Ergebnis: eine Übersicht auf Kontrollebene, die zeigt, wo Sie heute stehen, wo die Lücken liegen und wie ein Maßnahmenplan auf Architekturebene aussieht.
+
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — darauf ausgelegt, die NIS2-Arbeit zu unterstützen (Risikomanagementmaßnahmen nach Art. 21, Meldung von Vorfällen nach Art. 23 und ein veröffentlichter Prozess zur Offenlegung von Schwachstellen — siehe Art. 12). Tenant-Isolation mit Segmentierung über NetworkPolicy und Cilium, optionale Volume-Verschlüsselung, Audit-Logging mit konfigurierbarer Aufbewahrung. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/nis2-checkliste-cloud-architektur/">NIS2-Checkliste lesen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/ressourcen/nis2-compliance-checkliste/">NIS2-Checkliste anfordern →</a>
 </div>
 
 <div class="trust-badges">
-Ingenieure mit Sitz in der EU · Gegenseitige NDA · Keine Hyperscaler-Voreingenommenheit · Schriftliche Ergebnisse</div>
-
+ISO/IEC 27001:2022 (AENIX s.r.o.) · Gegenseitige NDA · Keine Hyperscaler-Bindung · Schriftliche Ergebnisse</div>
 
 <!-- /BLOCK 1 -->
 
@@ -62,15 +69,19 @@ Ingenieure mit Sitz in der EU · Gegenseitige NDA · Keine Hyperscaler-Voreingen
 
 <!-- BLOCK 2: WHO -->
 
-## Wer fällt in den NIS2-Geltungsbereich
+## Wer unter NIS2 fällt
 
-NIS2 gilt breit für:
+> **Die gemessenen Nachweise hinter diesen Kontrollen** — vollständige Ergebnisse des CIS Kubernetes Benchmark, Kubernetes-Conformance-Einträge und eine klare Aussage, was Ænix zusagt und was nicht — finden Sie auf den [Compliance-Nachweisseiten](/de/compliance/). Dort stehen echte Prüfergebnisse und ihre Begründung, veröffentlicht, damit ein Prüfer sie nachvollziehen kann. Die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert ([Zertifikat](/de/compliance/iso-27001/)).
 
-- **Wesentliche Einrichtungen** — Energie, Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheitswesen, Trinkwasser, Abwasser, digitale Infrastruktur (IXPs, DNS, TLD, Cloud-Anbieter, Rechenzentrumsanbieter, CDN, MSPs, MSSPs, öffentliche elektronische Kommunikation), öffentliche Verwaltung, Raumfahrt.
-- **Wichtige Einrichtungen** — Postdienste, Abfallwirtschaft, Chemie, Lebensmittel, Herstellung kritischer Produkte, Anbieter digitaler Dienste (Online-Marktplätze, Suchmaschinen, soziale Plattformen), Forschung und Entwicklung.
+> **Sie lesen als CISO?** Der [CISO-Leitfaden](/de/fuer/ciso/) fasst zusammen, was die Plattform bietet und was nicht.
+
+NIS2 gilt in großer Breite für:
+
+- **Wesentliche Einrichtungen** — Energie, Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheitswesen, Trinkwasser, Abwasser, digitale Infrastruktur (IXPs, DNS, TLD, Cloud-Anbieter, Rechenzentrumsbetreiber, CDN, MSPs, MSSPs, öffentliche elektronische Kommunikation), öffentliche Verwaltung, Weltraum.
+- **Wichtige Einrichtungen** — Postdienste, Abfallwirtschaft, Chemie, Lebensmittel, Herstellung kritischer Produkte, Anbieter digitaler Dienste (Online-Marktplätze, Suchmaschinen, soziale Netzwerke), Forschung und Entwicklung.
 - **IKT-Drittanbieter**, die betroffene Einrichtungen bedienen.
 
-Wenn Ihr Sektor betroffen ist oder Ihre Kunden betroffen sind, gelten die architektonischen NIS2-Anforderungen.
+Fällt Ihr Sektor oder fallen Ihre Kunden unter NIS2, gelten die architektonischen Anforderungen von NIS2 auch für Sie.
 
 <!-- /BLOCK 2 -->
 
@@ -78,35 +89,31 @@ Wenn Ihr Sektor betroffen ist oder Ihre Kunden betroffen sind, gelten die archit
 
 <!-- BLOCK 3: WHAT NIS2 REQUIRES -->
 
-## Was NIS2 von der Cloud-Architektur fordert
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
-<div class="arch-section__fig">
-<div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Ænix Private Cloud Platform</b><div class="diagram__chips"><span>Cozystack</span><span>Apache 2.0</span></div></div>
-<div class="diagram__conn">liefert</div>
-<div class="diagram__node"><b>Segmentierung, Verschlüsselung, audit-bereites Logging</b><div class="diagram__chips"><span>Tenant-CRD</span><span>Cilium (eBPF)</span></div></div>
-<div class="diagram__conn">unterstützt</div>
-<div class="diagram__node"><b>NIS2-Konformität</b><div class="diagram__chips"><span>Artikel 21 / 23 / 12</span></div></div>
-</div>
-</div>
+## Was NIS2 von der Cloud-Architektur verlangt
 
 <div class="grid-2x2">
 
-**1. Risikomanagement-Maßnahmen (Artikel 21)**
-Dokumentierte Cybersicherheits-Risikomanagement-Praktiken mit Konzepten für Risikoanalyse, IKT-Asset-Management, Vorfallsbehandlung, Betriebskontinuität, Lieferkettensicherheit, Schwachstellenbehandlung und Sicherheit bei Beschaffung von Netzwerken/Informationssystemen.
+**1. Risikomanagementmaßnahmen (Artikel 21)**
+Dokumentierte Verfahren für das Cybersicherheits-Risikomanagement mit Konzepten für Risikoanalyse, Verwaltung der IKT-Assets, Bewältigung von Sicherheitsvorfällen, Betriebskontinuität, Sicherheit der Lieferkette, Umgang mit Schwachstellen und Sicherheit beim Erwerb von Netz- und Informationssystemen.
 
-**2. Meldepflichten (Artikel 23)**
-Vorfälle werden dem CSIRT bzw. der zuständigen Behörde binnen 24 Stunden (Frühwarnung), 72 Stunden (Vorfallsmeldung) und einem Monat (Abschlussbericht) gemeldet. Die Architektur muss Erkennung und Meldung innerhalb dieser Fristen unterstützen.
+**2. Meldung von Vorfällen (Artikel 23)**
+Vorfälle werden dem CSIRT bzw. der zuständigen Behörde innerhalb von 24 Stunden (Frühwarnung), 72 Stunden (Meldung des Vorfalls) und einem Monat (Abschlussbericht) gemeldet. Die Architektur muss Erkennung und Meldung innerhalb dieser Fristen ermöglichen.
 
-**3. Lieferketten- und IKT-Drittparteirisiko**
-Spezifische Pflichten zum Management von Risiken aus der IKT-Lieferkette, einschließlich direkter Anbieter und (soweit zutreffend) Unterlieferanten. Konzentrationsrisiko, Ausstiegsfähigkeit und Pflichten zur Anbieterüberwachung.
+**3. Sicherheit der Lieferkette (Artikel 21(2)(d))**
+Die Risikomanagementmaßnahmen müssen die Sicherheit der Lieferkette abdecken, einschließlich der Beziehungen zwischen der Einrichtung und ihren unmittelbaren Anbietern und Dienstleistern. In der Praxis heißt das: Lieferanten erfassen, den Ausstieg vorbereiten und Lieferanten überwachen — nicht nur einen ausgefüllten Fragebogen ablegen.
 
-**4. Verantwortung der Leitungsorgane**
-Die Unternehmensleitung ist verantwortlich und wird im Cybersicherheits-Risikomanagement geschult. Die Compliance wird nicht vollständig an technische Teams delegiert.
+**4. Verantwortung der Leitungsorgane (Artikel 20)**
+Die Leitungsorgane müssen die Risikomanagementmaßnahmen billigen, ihre Umsetzung überwachen und an Cybersicherheitsschulungen teilnehmen — und können bei Verstößen haftbar gemacht werden. Compliance lässt sich nicht vollständig an technische Teams delegieren.
 
 </div>
 
-Eine Kontroll-Level-Checkliste finden Sie im **[Artikel zu den NIS2-Anforderungen](/de/blog/2026/05/nis2-checkliste-cloud-architektur/)**.
+Eine Checkliste auf Kontrollebene finden Sie in der **[NIS2-Compliance-Checkliste](/de/ressourcen/nis2-compliance-checkliste/)**.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -114,28 +121,22 @@ Eine Kontroll-Level-Checkliste finden Sie im **[Artikel zu den NIS2-Anforderunge
 
 <!-- BLOCK 4: WHERE COMMON SETUPS FAIL -->
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
-
-## Wo die meisten Cloud-Setups das NIS2-Audit nicht bestehen
+## Woran die meisten Cloud-Setups im NIS2-Audit scheitern
 
 <div class="gap-cards-2">
 
 **Vorfallserkennung zu langsam für die 24-Stunden-Frist**
-Die Erkennung erfordert Telemetrie und Monitoring, die auf jene Ereignisse abgestimmt sind, die NIS2 als meldepflichtig betrachtet. Die meisten Cloud-Setups verfügen über Observability für Performance, nicht für die Vorfallserkennung innerhalb der NIS2-Fristen.
+Erkennung braucht Telemetrie und Monitoring, die auf die Art von Ereignissen abgestimmt sind, die NIS2 als meldepflichtig ansieht. Die meisten Cloud-Setups haben Observability für Performance, nicht für die Vorfallserkennung innerhalb der NIS2-Fristen.
 
 **IKT-Lieferkette nur bis zur ersten Stufe erfasst**
-NIS2 verlangt Transparenz über die Lieferkette für IKT-Drittanbieter mit kritischer Funktion. Die meisten Organisationen können über ihre direkten Anbieter hinaus keine Auflistung vornehmen.
+NIS2 verlangt Transparenz über die Lieferkette von IKT-Drittanbietern kritischer Funktionen. Die meisten Organisationen können über ihre direkten Lieferanten hinaus niemanden benennen.
 
 **Backup und BCP funktionieren auf dem Papier, nicht in der Übung**
-NIS2 verlangt Betriebskontinuität. Die meisten BCP-Pläne sind Dokumente, die nie unter realistischen Ausfallszenarien getestet wurden.
+NIS2 verlangt Betriebskontinuität. Die meisten BCP-Pläne sind Dokumente, die nie unter realistischen Ausfallszenarien erprobt wurden.
 
 **Schwachstellenmanagement ist reaktiv**
-Patch-Zyklen laufen im monatlichen Rhythmus; kritische Schwachstellen erhalten Notfall-Patches. NIS2 erwartet eine proaktivere Schwachstellenbehandlung für kritische Infrastruktur.
+Patch-Zyklen laufen monatlich; kritische Schwachstellen bekommen Notfall-Patches. Für kritische Infrastruktur erwartet NIS2 einen vorausschauenderen Umgang mit Schwachstellen.
 
-</div>
-
-</div>
 </div>
 
 <!-- /BLOCK 4 -->
@@ -146,15 +147,25 @@ Patch-Zyklen laufen im monatlichen Rhythmus; kritische Schwachstellen erhalten N
 
 ## Wie Ænix hilft
 
-Das NIS2-Engagement läuft als Teil unseres **[Platform Readiness Assessments](/de/dienstleistungen/platform-readiness-assessment/)** mit Schwerpunkt auf dem Workstream Souveränität und Lücken gegenüber der Aufsicht. Das 14- oder 28-tägige Engagement liefert:
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>NIS2-Pflichten</b><div class="diagram__chips"><span>Art. 21 Risikomanagementmaßnahmen</span><span>Art. 23 Meldung von Vorfällen</span><span>Art. 21(2)(d) Sicherheit der Lieferkette</span></div></div>
+<div class="diagram__conn">Kontrolle für Kontrolle abgebildet durch</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Projekt auf Cozystack</b><div class="diagram__chips"><span>Tenant-Isolation</span><span>Segmentierung über Cilium/NetworkPolicy</span><span>Optionale Volume-Verschlüsselung</span><span>Audit-Logging</span></div></div>
+<div class="diagram__conn">ergibt</div>
+<div class="diagram__node"><b>Auditfähige Architektur</b><div class="diagram__chips"><span>Maßnahmenplan auf Architekturebene</span></div></div>
+</div>
+</div>
 
-- **NIS2-Kontroll-Level-Landkarte** — Kontrolle für Kontrolle, was Ihre Architektur nachweist
-- **Lieferketten-Mapping** — bis zur zweiten Stufe für IKT-Drittanbieter mit kritischer Funktion
-- **Bewertung der Fähigkeit zur Vorfallserkennung und -meldung** — Telemetrie und Prozesse gegenüber den Fristen von 24/72 Stunden und einem Monat
-- **Aufstellung zu Betriebskontinuität und Schwachstellenmanagement**
-- **Remediationsplan auf Architekturebene**
+Das NIS2-Projekt läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**, mit Schwerpunkt auf dem Arbeitsstrang Souveränität und regulatorische Lücken. Das 14- oder 28-tägige Projekt liefert:
 
-Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulierungsbehörden. Dieselben Ingenieure führen auch die [DORA-Compliance](/de/loesungen/dora-compliance/) durch — die 28-Tage-Variante bildet beide Regulierungsbehörden in einem Engagement ab.
+- **NIS2-Übersicht auf Kontrollebene** — Kontrolle für Kontrolle, was Ihre Architektur nachweisen kann
+- **Lieferkettenanalyse** — bis zur zweiten Stufe für IKT-Drittanbieter kritischer Funktionen
+- **Bewertung der Fähigkeit zur Erkennung und Meldung von Vorfällen** — Telemetrie und Prozesse gemessen an den Fristen von 24/72 Stunden und einem Monat
+- **Stand von Betriebskontinuität und Schwachstellenmanagement**
+- **Maßnahmenplan auf Architekturebene**
+
+Durchgeführt von Ænix-Engineers mit Erfahrung im Dialog mit Aufsichtsbehörden (Engineering-Teams in der EU und in Zentralasien; EU-Verträge über die AENIX s.r.o.). Dieselben Engineers betreuen auch [DORA-Compliance](/de/loesungen/dora-compliance/) — die 28-tägige Variante bildet beide Regelwerke in einem Projekt ab.
 
 <!-- /BLOCK 5 -->
 
@@ -164,10 +175,10 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 ## Warum gerade Ænix
 
-- **Ingenieure mit Sitz in der EU** mit Erfahrung innerhalb derselben Regulierungsrahmen wie Ihre Kunden.
-- **Keine Hyperscaler-Voreingenommenheit.** Empfehlungen spiegeln technische Eignung und regulatorische Passung wider, nicht die Ökonomie von Partnerschaften.
-- **Open-Source-Plattformfundament.** [Cozystack](/de/produkte/cozystack/) unterstützt Air-Gap, kundenkontrollierte Schlüssel und vollständige Audit-Trails — Souveränität durch Architektur.
-- **Regulierungsübergreifendes Engagement** — DORA + NIS2 + DSGVO gemeinsam in der 28-Tage-Variante abgebildet.
+- **Engineers, die die Plattformen selbst bauen** — Teams in der EU und in Zentralasien, mit Erfahrung in denselben regulatorischen Rahmenwerken wie Ihre Kunden.
+- **Keine Hyperscaler-Bindung.** Die Empfehlungen richten sich nach technischer Eignung und regulatorischer Ausrichtung, nicht nach Partnerschaftsinteressen.
+- **Open-Source-Plattform als Fundament.** [Cozystack](/de/produkte/cozystack/) unterstützt Air-Gap-Installation, optionale Volume-Verschlüsselung und Audit-Logging; die [Compliance-Nachweisseiten](/de/compliance/) legen offen, was standardmäßig enthalten ist und was nicht.
+- **Regelwerksübergreifendes Projekt** — DORA, NIS2 und DSGVO gemeinsam abgebildet in der 28-tägigen Variante.
 
 <!-- /BLOCK 6 -->
 
@@ -177,9 +188,9 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 | Wann | Was | Ergebnis |
 |---|---|---|
-| **Tag 0** | 30-minütiger Discovery-Call (kostenlos) | Passung bestätigen, NIS2-Umfang eingrenzen (welche Sektoren / welche Pflichten) |
-| **Tage 1-13 (oder 1-27)** | Workstream Souveränität und Lücken gegenüber der Aufsicht | Tägliche Updates, drei Checkpoints |
-| **Tag 14 (oder 28)** | Executive-Readout (60-90 Min.) | Schriftlicher Bericht: NIS2-Kontroll-Landkarte, Lieferketten-Landkarte, BCP-/Vorfalls-Aufstellung, Remediationsplan |
+| **Tag 0** | 30-minütiges Discovery-Gespräch (kostenlos) | Passung bestätigen, NIS2-Umfang eingrenzen (welche Sektoren, welche Pflichten) |
+| **Tage 1–13 (oder 1–27)** | Arbeitsstrang Souveränität und regulatorische Lücken | Tägliche Updates, drei Checkpoints |
+| **Tag 14 (oder 28)** | Ergebnispräsentation für die Geschäftsleitung (60–90 Min.) | Schriftlicher Bericht: NIS2-Kontrollübersicht, Lieferkettenanalyse, Stand von BCP und Vorfallsmanagement, Maßnahmenplan |
 
 <!-- /BLOCK 7 -->
 
@@ -187,7 +198,9 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 <!-- BLOCK 8: PROOF -->
 
-{{< clients >}}
+## Fallstudien
+
+Die dokumentierten Projekte finden Sie auf der Seite mit den [Fallstudien](/de/case-studies/), anonymisiert, wo der Kunde es verlangt. Referenzgespräche vermitteln wir unter NDA, sofern der Kunde zustimmt.
 
 {{< quote-carousel >}}
 
@@ -199,10 +212,10 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 <div class="pricing-cards-2">
 
-### 14 Tage (fokussiert auf NIS2)
+### 14 Tage (auf NIS2 fokussiert)
 **Auf Anfrage**
 
-### 28 Tage (NIS2 + DORA + DSGVO-Overlay)
+### 28 Tage (NIS2 + DORA + DSGVO)
 **Auf Anfrage**
 
 </div>
@@ -211,17 +224,22 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 ---
 
+<!-- BLOCK 10: FAQ -->
+
+---
+
 <!-- BLOCK 11: CTA -->
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-- **[NIS2-Anforderungen-Artikel](/de/blog/2026/05/nis2-checkliste-cloud-architektur/)** — Leitfaden auf Kontroll-Level
-- **[DORA-Compliance](/de/loesungen/dora-compliance/)** — Regulierungsbehörde für Finanzdienstleistungen
-- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — angrenzender Auslöser
-- **[Cozystack](/de/produkte/cozystack/)** — Plattform, die Souveränität architektonisch verankert
+- **[NIS2-Compliance-Checkliste](/de/ressourcen/nis2-compliance-checkliste/)** — Checkliste auf Kontrollebene
+- **[NIS2-Anforderungen an die Cloud-Infrastruktur](/de/blog/2026/05/nis2-checkliste-cloud-architektur/)** — ausführlicher Fachartikel
+- **[DORA-Compliance](/de/loesungen/dora-compliance/)** — Regelwerk für den Finanzsektor
+- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — verwandter Auslöser
+- **[Cozystack](/de/produkte/cozystack/)** — Plattform mit Souveränität in der Architektur
 
 <!-- /BLOCK 11 -->
 
@@ -229,6 +247,6 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix ist das Team hinter Cozystack — einem CNCF-Projekt und einer Kubernetes Certified Distribution.*
+*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt und eine Certified-Kubernetes-Distribution — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.*
 
 <!-- /BLOCK 12 -->

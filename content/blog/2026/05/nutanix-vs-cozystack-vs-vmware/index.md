@@ -1,12 +1,14 @@
 ---
 title: "Nutanix vs Cozystack vs VMware — choosing your virtualization platform in 2026"
+seo_title: "Nutanix vs Cozystack vs VMware in 2026"
 description: "Nutanix HCI with AHV, VMware after Broadcom, and Cozystack compared on architecture, where each wins, and the migration economics between them."
 date: "2026-05-19"
-cover_image: "/img/blog/covers/nutanix-vs-cozystack-vs-vmware.png"
+cover_image: "/img/blog/covers/nutanix-vs-cozystack-vs-vmware.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Nutanix", "Kubernetes", "Cozystack", "KubeVirt", "Cilium"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform/"
 companion_landing: "/alternatives/nutanix-alternative/"
 quiz:
   title: "Test yourself: Nutanix vs Cozystack vs VMware"
@@ -33,14 +35,14 @@ quiz:
       options:
         - { text: "Native Kubernetes (containers + VMs on one plane)", correct: false }
         - { text: "Tanzu integration (federated control plane)", correct: false }
-        - { text: "Karbon (separate Kubernetes product alongside AHV)", correct: true }
-      explanation: "Nutanix containers = Karbon (separate product). VMware = Tanzu (separate product). Cozystack = native Kubernetes (containers and VMs on the same platform). The \"separate product\" pattern is a key architectural difference."
+        - { text: "NKP (separate Kubernetes product alongside AHV)", correct: true }
+      explanation: "Nutanix containers = Nutanix Kubernetes Platform (NKP, successor to Karbon; separate product). VMware = Tanzu (separate product). Cozystack = native Kubernetes (containers and VMs on the same platform). The \"separate product\" pattern is a key architectural difference."
     - q: "What kind of hardware does Nutanix run on vs Cozystack?"
       options:
         - { text: "Both run on standard commodity x86 servers", correct: false }
         - { text: "Both require modern ARM-based server hardware", correct: false }
-        - { text: "Nutanix on Nutanix appliances; Cozystack on commodity x86", correct: true }
-      explanation: "Nutanix = Nutanix appliance hardware (HCI model). VMware VCF = x86 (general). Cozystack = commodity x86. Cozystack's commodity-x86 fit means existing VMware hardware usually qualifies for repurpose during migration."
+        - { text: "Nutanix on NX or certified OEM nodes; Cozystack on commodity x86", correct: true }
+      explanation: "Nutanix = Nutanix NX appliances or certified OEM hardware from Dell, HPE, Lenovo and others (HCI model). VMware VCF = x86 (general). Cozystack = commodity x86. Cozystack's commodity-x86 fit means existing VMware hardware usually qualifies for repurpose during migration."
 ---
 
 
@@ -64,8 +66,8 @@ In 2026 the realistic shortlist for production virtualization platforms includes
 | **Multi-tenancy** | Limited | vCloud Director | Tenant CRD |
 | **Storage** | Distributed (proprietary) | vSAN | LINSTOR (DRBD) |
 | **Network** | AHV networking | NSX | Cilium |
-| **Containers** | Karbon (separate) | Tanzu (separate) | Native |
-| **Hardware** | Nutanix appliance | x86 | Commodity x86 |
+| **Containers** | NKP (separate) | Tanzu (separate) | Native |
+| **Hardware** | Nutanix NX or certified OEM (Dell, HPE, Lenovo, others) | x86 | Commodity x86 |
 | **Best for** | HCI-focused enterprises | Existing VMware estates | Service providers + sovereign cloud |
 
 ## When each wins

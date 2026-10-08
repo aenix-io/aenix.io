@@ -1,13 +1,13 @@
 ---
 title: "Eine interne Daten- und KI-Plattform, GPUs inklusive"
-description: "Eine interne Plattform für Daten und KI/ML: GPU-Pools mit Time-Slicing und Quotas je Tenant, ein Scheduler für Pods und VMs, Verbrauchsmetriken fürs Billing."
+description: "Eine interne Plattform für Daten und KI/ML: GPU-Pools mit Quotas je Tenant, ein Scheduler für Pods und VMs, Verbrauchsmetriken fürs Billing. In Einführung."
 hero_subtitle: "GPU-Pools, Quotas und ein Scheduler für Pods und VMs"
 date: 2026-08-21
 lastmod: 2026-08-21
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/internal-data-and-ai-platform/"
-images: ["img/og/og-case-internal-data-and-ai-platform.png"]
+images: ["img/og/og-case-internal-data-and-ai-platform.jpg"]
 primary_keyword: "interne KI-Plattform GPU"
 secondary_keywords:
   - "mandantenfähiges GPU-Scheduling"
@@ -24,7 +24,7 @@ faq:
   - q: "Warum eine Plattform für Daten und KI zugleich?"
     a: "Weil es zweimal dasselbe Infrastrukturproblem ist. Analytik, Data Lakes und Marts, Modelltraining und Model Serving brauchen alle Objektspeicher, Datenbanken, Scheduling, Quotas und Pipelines. Sie zu trennen bedeutet zwei Betriebsmodelle, zwei Kapazitätsplanungen und eine Kopie jedes Datensatzes dazwischen."
   - q: "Wie werden GPUs zwischen Teams geteilt?"
-    a: "GPUs liegen in Ressourcen-Pools mit Time-Slicing, Quotas gelten je Tenant und je Projekt. Frei werdende Kapazität wird dynamisch umverteilt, statt hinter demjenigen brachzuliegen, der sie gebucht hat. Jedes Team sieht einen isolierten Bereich, und die Plattform führt ein Inventar über jede Karte, ihren Ort und ihren Zustand."
+    a: "GPUs liegen in Ressourcen-Pools, Quotas gelten je Tenant und je Projekt. Frei werdende Kapazität wird dynamisch umverteilt, statt hinter demjenigen brachzuliegen, der sie gebucht hat. Jedes Team sieht einen isolierten Bereich, und die Plattform führt ein Inventar über jede Karte, ihren Ort und ihren Zustand."
   - q: "Konkurrieren virtuelle Maschinen und Container um dieselben GPUs?"
     a: "Sie teilen sich einen Scheduler. Pods und VMs werden vom selben Planer platziert, mit denselben Verbrauchsmetriken dahinter — und genau das macht Leistungsverrechnung und belastbare Auslastungsanalyse erst möglich. Was zwei getrennte Scheduler jeweils für ihr Eigentum halten, lässt sich weder abrechnen noch auswerten."
   - q: "Gilt das nur für NVIDIA?"
@@ -41,12 +41,17 @@ faq:
   <span class="cs-tag">In Einführung</span>
 </div>
 
-**Eine interne Plattform für zwei Dinge, die große Organisationen sonst zweimal bauen: Daten — Analytik, Lakes und Marts, Modelltraining — und KI/ML-Services von der Entwicklung über das Training bis zum Serving. Darunter liegt KI-taugliche Infrastruktur: GPU-Ressourcenpools mit Time-Slicing und Quotas je Tenant, ein einziger Scheduler, der Pods und virtuelle Maschinen platziert, und Verbrauchsmetriken, die fein genug sind, um Teams zu verrechnen und zu sehen, wohin Kapazität tatsächlich geht. Das Projekt ist in Einführung: GPU-Unterstützung läuft, das MVP der KI-Services ist weitgehend fertig.**
+**Eine interne Plattform für zwei Dinge, die große Organisationen sonst zweimal bauen: Daten — Analytik, Lakes und Marts, Modelltraining — und KI/ML-Services von der Entwicklung über das Training bis zum Serving. Darunter liegt KI-taugliche Infrastruktur: GPU-Ressourcenpools mit Quotas je Tenant, ein einziger Scheduler, der Pods und virtuelle Maschinen platziert, und Verbrauchsmetriken, die fein genug sind, um Teams zu verrechnen und zu sehen, wohin Kapazität tatsächlich geht. Das Projekt ist in Einführung: GPU-Unterstützung läuft, das MVP der KI-Services ist weitgehend fertig.**
 
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">Ein Scheduler</div><div class="cs-stat__label">für Pods und virtuelle Maschinen, mit Metriken hinter Billing und Analyse</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">Je Tenant</div><div class="cs-stat__label">GPU-Pools, Time-Slicing und Quotas je Team und je Projekt</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">Je Tenant</div><div class="cs-stat__label">GPU-Pools und Quotas je Team und je Projekt</div></div>
   <div class="cs-stat"><div class="cs-stat__num">Phase 2 · 70%</div><div class="cs-stat__label">MVP der KI-Services in einer zweimonatigen Phase; GPU-Support bereits fertig</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
 </div>
 
 ## Über das Projekt
@@ -67,7 +72,7 @@ Beides wird üblicherweise als getrennte Programme geführt — und verbringt da
 
 **KI-taugliche Infrastruktur: GPUs für Kubernetes und für VMs.**
 
-- **GPU-Infrastrukturschicht** — GPU-Ressourcenpools, Time-Slicing, Quotas je Tenant und je Projekt.
+- **GPU-Infrastrukturschicht** — GPU-Ressourcenpools und Quotas je Tenant und je Projekt.
 - **Ein Scheduler** — ein Planer für Pods und virtuelle Maschinen, mit Auslastungsmetriken, die Leistungsverrechnung und tiefe Analyse speisen.
 - **Daten und Pipelines** — S3-kompatibler Speicher, Datenbanken und Modell-Artefakte, Pipelines GitOps-artig automatisiert.
 
@@ -78,7 +83,7 @@ Beides wird üblicherweise als getrennte Programme geführt — und verbringt da
 - Lifecycle- und Ressourcenmanagement, Autoscaling und Provisioning auf Abruf.
 - Sicherheit und Mandantenfähigkeit, Außerbetriebnahme und Rolling Upgrades.
 
-{{< placeholder-image width="1200" height="640" label="Interne Daten- und KI-Plattform: GPU-Pools mit Time-Slicing und Quotas je Tenant speisen einen Scheduler, der Pods und VMs platziert; darüber Datendienste (S3-Objektspeicher, Datenbanken, Modell-Artefakte) und GitOps-Pipelines; die GPU-Lifecycle-Schicht übernimmt automatisiertes Provisioning, Passthrough zu VM und Kubernetes, Treiberverwaltung, Autoscaling, Außerbetriebnahme und Rolling Upgrades; Verbrauchsmetriken fließen in Billing, Quotas und Inventar" >}}
+{{< case-diagram src="/img/case-studies/internal-data-and-ai-platform-de.webp" alt="Interne Daten- und KI-Plattform: GPU-Pools mit Quotas je Tenant speisen einen Scheduler, der Pods und VMs platziert; darüber Datendienste (S3-Objektspeicher, Datenbanken, Modell-Artefakte) und GitOps-Pipelines; die GPU-Lifecycle-Schicht übernimmt automatisiertes Provisioning, Passthrough zu VM und Kubernetes, Treiberverwaltung, Autoscaling, Außerbetriebnahme und Rolling Upgrades; Verbrauchsmetriken fließen in Billing, Quotas und Inventar" >}}
 
 ## Was die Plattform heute kann
 
@@ -105,8 +110,17 @@ Beides wird üblicherweise als getrennte Programme geführt — und verbringt da
   <div class="card"><div class="card-body"><h3 class="card-title">Eine Roadmap mit einer fertigen Phase</h3><p class="card-description">GPU-Unterstützung läuft; die KI-Service-Schicht entsteht darauf. Veröffentlicht während der Umsetzung, nicht im Rückblick.</p></div></div>
 </div>
 
+## Ein ähnliches Projekt besprechen
+
+Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+</div>
+
 ---
 
-*Diese Case Study beschreibt ein laufendes Projekt und erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
+*Diese Case Study beschreibt ein laufendes Projekt und erscheint anonymisiert: Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform in drei Plattformen — Provider und Enterprise — mit den Modulen AI Platform und Developer Self-Service.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

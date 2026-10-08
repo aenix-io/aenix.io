@@ -1,197 +1,205 @@
 ---
-title: "Cloud-Plattform für Universitäten — Research Computing, KI/ML-Labore und Cloud-native-Lehre"
-description: "Universitäten und Forschungsinstitute im Jahr 2026 brauchen Cloud-native Infrastruktur für drei überlappende Missionen: ernsthaftes Research Computing (besonders..."
+title: "Cloud-Plattform für Universitäten — Research Computing, KI/ML-Labore und Cloud-native Lehre"
+seo_title: "Cloud-Plattform für Universitäten und Research Computing"
+description: "Eine Plattform für Research Computing, reproduzierbare Forschung und Lehre: geteilte GPUs, Tenants pro Labor, Air-Gap für sensible Daten, Slurm bleibt."
 related_pages:
-  - /de/loesungen/sovereign-ai
-  - /de/loesungen/data-sovereignty
-  - /de/dienstleistungen/platform-readiness-assessment
+  - /de/loesungen/sovereign-ai/
+  - /de/loesungen/data-sovereignty/
+  - /de/dienstleistungen/platform-readiness-assessment/
   - /de/produkte/private-cloud-platform/
   - /de/produkte/ai-platform/
-  - /de/produkte/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/universities/
 direct_answer: |
-  **Eine Cloud-Plattform für Universitäten ist eine Cloud-native Infrastruktur, die drei überlappende Hochschul-Missionen auf einer Foundation bedient: Research Computing (besonders KI/ML und HPC), reproduzierbare Forschungs-Environments für Publikation und Cloud-native Curriculum-Auslieferung. Cozystack, das CNCF-Sandbox-Projekt hinter der Ænix Platform, liefert genau diese Foundation als Open Source unter Apache 2.0: Multi-Tenant-Isolation per Tenant CRD für Departments, Labore und Studierenden-Kohorten, KubeVirt für VMs und Container auf einer Kubernetes-API, GPU-as-a-Service für KI-Forschung sowie Air-Gapped-Support für souveräne Forschungsdaten. Aenix baut und betreibt diese Plattformen für Universitäten und Forschungsinstitute in der EU, DACH und Zentralasien.**
+  **Cozystack ist eine Open-Source-Cloud-Plattform, mit der Universitäten und Forschungseinrichtungen drei sich überschneidende Aufgaben auf einem Fundament bedienen: Research Computing (einschließlich GPU-Clustern für KI/ML), reproduzierbare Forschungsumgebungen für Publikationen und die Lehre in Cloud-native-Kursen. Die Plattform ist über eine Tenant-CRD mandantenfähig, sodass Fakultäten, Labore und Studierendenkohorten isolierte Quotas, RBAC und Audit-Trails erhalten; sie betreibt VMs und Container über KubeVirt nebeneinander auf einer Kubernetes-API; und sie unterstützt Air-Gap-Deployments, wo die Souveränität von Forschungsdaten zählt. Ænix hat Cozystack initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen; wir bauen und betreuen solche Plattformen für Universitäten, Forschungsinstitute und F&E-Organisationen in der EU, im DACH-Raum und in Zentralasien, in Phasen, die sich an Förderzyklen orientieren.**
 quick_facts:
   - label: "Was es ist"
-    value: "Eine Cloud-native Plattform auf Cozystack, die Research Computing, reproduzierbare Forschungs-Environments und Cloud-native Lehre auf einer Open-Source-Foundation vereint"
+    value: "Eine mandantenfähige Open-Source-Cloud-Plattform auf Cozystack für universitäres Research Computing, reproduzierbare Forschung und Cloud-native Lehre, aufgebaut und betreut von Ænix."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Zielgruppe"
-    value: "Universitäten, Forschungsinstitute und R&D-Organisationen in der EU, DACH und Zentralasien"
-  - label: "Mandantenfähigkeit"
-    value: "Tenant CRD isoliert Departments, Labore und Studierenden-Kohorten auf gemeinsamer Infrastruktur"
-  - label: "Schlüsselfunktion"
-    value: "KubeVirt für VMs und Container auf einer Kubernetes-API, GPU-as-a-Service für KI/ML, Air-Gapped-Betrieb für souveräne Forschungsdaten"
-  - label: "Regulatorik"
-    value: "DSGVO und nationale Bildungsgesetze für souveräne Studierendendaten"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Universitäten, Forschungsinstitute und F&E-Organisationen in der EU, im DACH-Raum und in Zentralasien."
+  - label: "Kernfunktion"
+    value: "GPU-as-a-Service für NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator (Passthrough an VMs, anteilige Nutzung für Pods über HAMi), Isolation pro Labor und pro Kohorte über Tenant-CRDs, KubeVirt-VMs und Container sowie Air-Gap-Unterstützung. Cozystack ist seit September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen."
+  - label: "Standards und Föderation"
+    value: "Unterstützt reproduzierbare Forschung (Plan S, FAIR, Horizon Europe) durch deklarative, versionierte Umgebungen; über Standard-Kubernetes-APIs lässt sich die Plattform als projektspezifische Integration an Forschungsinfrastrukturen wie EOSC anbinden."
+  - label: "Vorgehen"
+    value: "Phasenweise Zusammenarbeit entlang der Förderzyklen, beginnend mit einem Platform Readiness Assessment zum Festpreis (14 oder 28 Tage), und ausdrücklicher Kompetenztransfer an die Hochschul-IT."
 faq:
-  - q: "Welche Hochschul-Missionen deckt eine Cozystack-Plattform ab?"
-    a: "Drei überlappende Missionen auf einer Foundation: ernsthaftes Research Computing (KI/ML, HPC, simulationsintensive Workloads), reproduzierbare und Container-basierte Forschungs-Environments für Publikation sowie Cloud-native Curriculum-Auslieferung mit kurzlebigen Studierenden-Sandboxes. Statt drei getrennter Silos betreibt die Hochschule alles auf einer Open-Source-Plattform."
-  - q: "Wie werden Departments, Labore und Studierenden-Kohorten voneinander isoliert?"
-    a: "Über das Tenant CRD von Cozystack. Jedes Department, Labor oder jede Studierenden-Kohorte erhält einen isolierten Mandanten mit eigenen Ressourcen-Grenzen auf gemeinsamer Infrastruktur. So lassen sich Forschungsgruppen sauber trennen, ohne separate Cluster pro Gruppe zu betreiben."
-  - q: "Eignet sich die Plattform für KI/ML-Forschung mit GPUs?"
-    a: "Ja. Cozystack bietet GPU-as-a-Service für KI/ML-Forschungs-Labore mit GPU-Pools. Die **[AI Platform](/de/produkte/ai-platform/)** der Ænix Platform ist für genau diese Forschungs-Labore ausgelegt, während die Private Cloud Platform souveräne Studierendendaten und Multi-Tenant-Isolation adressiert."
-  - q: "Können Forschungsdaten souverän und air-gapped betrieben werden?"
-    a: "Ja. Cozystack unterstützt Air-Gapped-Betrieb für Umgebungen, in denen Forschungs-IP-Schutz und Daten-Souveränität zählen. Studierendendaten lassen sich konform zu DSGVO und nationalen Bildungsgesetzen halten, da die gesamte Plattform auf eigener Infrastruktur läuft."
-  - q: "Worauf basiert die Plattform technisch und ist sie quelloffen?"
-    a: "Sie basiert auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0. Der Stack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage. Keine CPU- oder Core-basierte Lizenzierung."
-  - q: "Was bietet Aenix zusätzlich zur Open-Source-Foundation?"
-    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und liefert die produktisierte Ænix Platform plus Betriebs- und Aufbau-Services. Die Preisstufen sind Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise (Custom)."
+  - q: "Kann Cozystack GPU-Zugang für KI/ML-Forschungslabore bereitstellen?"
+    a: "Ja. GPUs werden über den NVIDIA GPU Operator bereitgestellt; HAMi ermöglicht die anteilige Nutzung, sodass sich mehrere Labore eine Karte teilen, statt auf eine ganze zu warten. Ganze GPUs lassen sich auch per Passthrough an VMs durchreichen; MIG und Time-Slicing stehen auf der Roadmap. Labore stellen GPU-Umgebungen im Self-Service innerhalb ihrer Quotas pro Labor über die Tenant-CRD bereit — ohne Ticket-Warteschlangen."
+  - q: "Wie isoliert Cozystack Fakultäten, Labore und Studierendenkohorten?"
+    a: "Über das Mandantenmodell der Tenant-CRD. Jede Fakultät, jedes Labor und jede Studierendenkohorte erhält einen eigenen Tenant mit Quotas, RBAC und Audit-Trails. Sandboxes für Kohorten unterstützen Quotas pro Studierendem und automatisches Aufräumen, sodass Lehre und Forschung auf gemeinsamer Hardware isoliert bleiben."
+  - q: "Unterstützt Cozystack sensible Forschungsdaten?"
+    a: "Ja. Cozystack unterstützt Air-Gap-Installationen für medizinische Forschung oder Forschung mit Industriepartnern unter NDA und hält die Daten unter Kontrolle der Einrichtung. Das passt zu Souveränitätsanforderungen, bei denen Forschungsdaten die Einrichtung nicht verlassen dürfen."
+  - q: "Kann die Plattform sowohl ältere VM-Workloads als auch moderne Container betreiben?"
+    a: "Ja. Cozystack betreibt VMs und Container über KubeVirt nebeneinander auf einer einzigen Kubernetes-API. So laufen gewachsene Forschungs-Workflows neben modernen containerisierten Pipelines, ohne dass ein separater Virtualisierungs-Stack nötig ist."
+  - q: "Eignet sich Cozystack für die Lehre in Cloud-native-Kursen?"
+    a: "Ja. Informatik- und Ingenieursfakultäten nutzen es, um Kubernetes, KubeVirt, GitOps und Observability zu lehren. Da es Open Source (Apache 2.0) und ein CNCF-Projekt ist, können Studierende es auf eigener Hardware betreiben und lernen das CNCF-Ökosystem so kennen, wie es in der Praxis eingesetzt wird."
+  - q: "Wie gestaltet Ænix Projekte mit Universitäten?"
+    a: "Ænix arbeitet in Phasen, die sich an den Zyklen der Forschungsförderung orientieren, und mit ausdrücklichem Kompetenztransfer, damit die Hochschul-IT die Plattform nach dem Aufbau selbst betreibt. Projekte können über EU-TED und nationale Vergabeportale laufen und Konsortien mehrerer Einrichtungen bedienen."
 ---
 
-**Universitäten und Forschungsinstitute brauchen 2026 Cloud-native Infrastruktur für drei überlappende Missionen: ernsthaftes Research Computing (besonders KI/ML), reproduzierbare Forschungs-Environments für Publikationen und die Curriculum-Auslieferung für Cloud-native-Kurse. Cozystack bietet eine einzige Open-Source-Foundation, die alle drei bedient — Multi-Tenant für Departments, Labore und Studierenden-Kohorten; KubeVirt für Legacy- und moderne Workloads; GPU-as-a-Service für KI-Forschung; Air-Gapped-Support, wo Forschungsdaten-Souveränität zählt.**
+**Universitäten und Forschungseinrichtungen brauchen 2026 Cloud-native Infrastruktur für drei sich überschneidende Aufgaben: ernsthaftes Research Computing (vor allem KI/ML), reproduzierbare Forschungsumgebungen für Publikationen und die Lehre in Cloud-native-Kursen. Cozystack bietet ein einziges Open-Source-Fundament für alle drei — mandantenfähig für Fakultäten, Labore und Studierendenkohorten; KubeVirt für ältere und moderne Workloads; GPU-as-a-Service für KI-Forschung; Air-Gap-Unterstützung, wo die Souveränität von Forschungsdaten zählt.**
 
-Ænix baut Cozystack-basierte Plattformen für Universitäten, Forschungsinstitute und R&D-Organisationen in der EU, DACH und Zentralasien.
+Ænix baut Plattformen auf Basis von Cozystack für Universitäten, Forschungsinstitute und F&E-Organisationen in der EU, im DACH-Raum und in Zentralasien.
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Studierendendaten + Multi-Tenant-Isolation von Forschungsgruppen; **[AI Platform](/de/produkte/ai-platform/)** für KI/ML-Forschungslabore mit GPU-Pools.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Studierendendaten und die mandantenfähige Isolation von Forschungsgruppen; **[AI Platform](/de/produkte/ai-platform/)** für KI/ML-Forschungslabore mit GPU-Pools.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/cloud-native-research-and-teaching-infrastructure/">Cloud-native Forschungs-Infrastruktur (englisch) →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/cloud-native-forschung-lehre-infrastruktur-hochschulen/">Cloud-native Forschungsinfrastruktur →</a>
 </div>
 
 ---
 
-## Drei universitäre Missionen, die Cozystack bedient
+## Drei Aufgaben der Universität, die Cozystack bedient
 
-### 1. Research-Computing-Infrastruktur
+### 1. Infrastruktur für Research Computing
 
-Moderne Forschung verlangt zunehmend GPU-Cluster, großskaliges Data Processing und HPC-nahe Workloads. KI/ML-Forschung, Computational Biology, Klimamodellierung, Materialwissenschaften — alle brauchen Infrastruktur, die zwischen klassischem HPC und modernem Cloud-native liegt.
+Moderne Forschung verlangt zunehmend GPU-Cluster, Datenverarbeitung in großem Maßstab und HPC-nahe Workloads. KI/ML-Forschung, Computational Biology, Klimamodellierung, Materialwissenschaften — sie alle brauchen Infrastruktur zwischen klassischem HPC und modernem Cloud-native.
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>Departments, Labore, Kohorten</b><div class="diagram__chips"><span>Quotas</span><span>RBAC</span><span>Audit-Trails</span></div></div>
+<div class="diagram__node"><b>Fakultäten, Labore, Kohorten</b><div class="diagram__chips"><span>Quotas</span><span>RBAC</span><span>Audit-Trails</span></div></div>
 <div class="diagram__conn">isoliert durch</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack Tenant CRD</b><div class="diagram__chips"><span>Multi-Tenant</span><span>Self-Service</span></div></div>
-<div class="diagram__conn">provisioniert</div>
-<div class="diagram__node"><b>GPU-as-a-Service</b><div class="diagram__chips"><span>vGPU</span><span>GPU Operator</span><span>HAMi-Sharing</span></div></div>
-<div class="diagram__conn">läuft neben</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack Tenant-CRD</b><div class="diagram__chips"><span>Mandantenfähig</span><span>Self-Service</span></div></div>
+<div class="diagram__conn">stellt bereit</div>
+<div class="diagram__node"><b>GPU-as-a-Service</b><div class="diagram__chips"><span>NVIDIA GPU Operator</span><span>Anteilige Nutzung mit HAMi</span></div></div>
+<div class="diagram__conn">neben</div>
 <div class="diagram__node"><b>VMs + Container</b><div class="diagram__chips"><span>KubeVirt</span><span>Eine Kubernetes-API</span></div></div>
 </div>
 </div>
 
 Cozystack liefert:
-- **GPU-Cluster** mit NVIDIA vGPU für VMs und fraktionalem GPU-Sharing über HAMi auf dem NVIDIA GPU Operator für geteilte Auslastung (validiert für A100, H100, H200, L40S, Blackwell)
-- **Multi-Tenant-Isolation pro Labor** — Tenant-CRD-Modell mit Quotas, RBAC und Audit-Trails pro Labor
-- **VM und Container Seite an Seite** — bildet Legacy-Forschungs-Workflows neben modernen containerisierten Pipelines ab
-- **Self-Service für Principal Investigators** — Labore können ihre eigenen Environments ohne Ticket-Warteschlangen provisionieren
-- **Reproduzierbare Environments** — deklaratives IaC bedeutet, dass Experimente noch Jahre später reproduziert werden können
+- **GPU-Cluster** für NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator, mit anteiliger Nutzung über HAMi, sodass sich mehrere Labore eine Karte teilen, statt auf eine ganze zu warten, und mit Passthrough ganzer GPUs an VMs (MIG und Time-Slicing stehen auf der Roadmap)
+- **Mandantenfähige Isolation pro Labor** — Tenant-CRD-Modell mit Quotas, RBAC und Audit-Trails pro Labor
+- **VMs und Container nebeneinander** — gewachsene Forschungs-Workflows laufen neben modernen containerisierten Pipelines
+- **Self-Service für Projektleitungen** — Labore stellen ihre Umgebungen selbst bereit, ohne Ticket-Warteschlangen
+- **Reproduzierbare Umgebungen** — deklaratives IaC bedeutet, dass sich Experimente auch Jahre später reproduzieren lassen
 
 ### 2. Reproduzierbare Forschung und Publikation
 
-Open Science und Reproduzierbarkeitsauflagen für Publikationen (Plan S, FAIR-Data-Prinzipien, Horizon-Europe-Anforderungen) verlangen zunehmend, dass Forschungsartefakte reproduzierbare Compute-Environments enthalten — nicht nur Datensätze und Code, sondern auch die Runtime, die sie ausgeführt hat.
+Open Science und Vorgaben zur Reproduzierbarkeit von Publikationen (Plan S, FAIR-Prinzipien, Anforderungen von Horizon Europe) verlangen zunehmend, dass Forschungsartefakte reproduzierbare Rechenumgebungen enthalten — nicht nur Datensätze und Code, sondern auch die Laufzeitumgebung, in der sie ausgeführt wurden.
 
 Cozystack liefert:
-- **Containerisierte Forschungsartefakte** — Forschungs-Environments als Kubernetes-Manifeste + Container-Images
-- **Air-Gapped-Support** — für sensible Forschungsdaten (medizinisch, klassifiziert, industrieller Partner)
-- **Langzeit-Archivierung** — Environments werden neben den Daten für eine Reproduzierbarkeit über mehrere Jahrzehnte erhalten
-- **DOI-Integration** mit Workflows für Forschungsdatenmanagement
-- **EOSC und ähnliche Föderationen** — Cozystack-Plattformen können an Föderationen der European Open Science Cloud teilnehmen
+- **Containerisierte Forschungsartefakte** — Forschungsumgebungen als Kubernetes-Manifeste und Container-Images
+- **Air-Gap-Unterstützung** — für sensible Forschungsdaten (medizinisch, mit Industriepartnern)
+- **Langzeitarchivierung** — Umgebungen werden zusammen mit den Daten aufbewahrt, für Reproduzierbarkeit über Jahrzehnte
+- **Forschungsdatenmanagement** — Umgebungen lassen sich aus Ihren RDM- und DOI-Workflows referenzieren; die Anbindung ist projektspezifische Integrationsarbeit
+- **Föderationen** — die Anbindung einer Plattform an EOSC oder eine nationale Forschungs-Cloud ist über Standard-Kubernetes-APIs möglich und wird pro Projekt festgelegt
 
-### 3. Cloud-native-Ausbildung und R&D
+### 3. Cloud-native Lehre und angewandte F&E
 
-CS-/Ingenieur-Departments lehren zunehmend Kubernetes, KubeVirt, GitOps, Observability — den modernen Cloud-native-Stack. Industriepartner, die Cozystack produktiv betreiben, profitieren von Absolventen, die mit der Plattform bereits vertraut sind.
+Informatik- und Ingenieursfakultäten lehren zunehmend Kubernetes, KubeVirt, GitOps und Observability — den modernen Cloud-native-Stack. Industriepartner, die Cozystack produktiv betreiben, profitieren von Absolventinnen und Absolventen, die die Plattform bereits kennen.
 
 Cozystack liefert:
-- **Studierenden-/Kohorten-Sandboxes** — Tenant-CRD pro Kohorte, Quotas pro Studierendem, automatische Bereinigung
-- **Curriculum-bereit** — Install-/Upgrade-Workflows, die für akademische IT-Teams funktionieren
-- **Open-Source-first** — Studierende können die Plattform auf eigener Hardware betreiben; das reproduziert die Produktionsrealität
-- **CNCF-Verbindung** — Cozystack ist ein CNCF-Projekt; Studierende erwerben Vertrautheit mit dem CNCF-Ökosystem
-- **Industrierelevant** — Absolventen sind mit Plattformen vertraut, die von Hosting-Providern, Banken und KI-Betreibern genutzt werden
+- **Sandboxes für Studierende und Kohorten** — eine Tenant-CRD pro Kohorte, Quotas pro Studierendem, automatisches Aufräumen
+- **Bereit für das Curriculum** — Installations- und Upgrade-Abläufe, die für Hochschul-IT-Teams funktionieren
+- **Open Source zuerst** — Studierende können die Plattform auf eigener Hardware betreiben, so wie sie in Produktion läuft
+- **Bezug zur CNCF** — Cozystack ist ein CNCF-Sandbox-Projekt; Studierende lernen das CNCF-Ökosystem kennen
+- **Praxisrelevant** — Absolventinnen und Absolventen kennen die Plattform, die Hosting-Anbieter produktiv betreiben
 
 ---
 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Warum Universitäten speziell von Cozystack profitieren
+## Warum gerade Universitäten von Cozystack profitieren
 
-Über die drei Missionen hinaus gibt es mehrere universitätsspezifische Überlegungen:
+Über die drei Aufgaben hinaus gibt es mehrere hochschulspezifische Gründe:
 
-### Open Source bevorzugt
-Akademisches Ethos, Transparenz und Budgetbeschränkungen sprechen alle für Open-Source-Infrastruktur. Die Apache-2.0-Lizenz passt zu akademischen Präferenzen und Beschaffungsrealitäten.
+### Open Source wird bevorzugt
+Akademisches Selbstverständnis, Transparenz und knappe Budgets sprechen für Open-Source-Infrastruktur. Die Apache-2.0-Lizenz passt zu akademischen Präferenzen und zur Realität der Beschaffung.
 
 ### Souveränität für sensible Forschung
-Medizinische Forschungsdaten, klassifizierte Forschung (verteidigungsnah), industriepartnerbezogene Forschung mit NDA-Beschränkungen — alle profitieren von souveräner Infrastruktur, die Daten unter institutioneller Kontrolle hält. Air-Gap-Support deckt die sensibelsten Fälle ab.
+Medizinische Forschungsdaten und Forschung mit Industriepartnern unter NDA profitieren von souveräner Infrastruktur, die Daten unter Kontrolle der Einrichtung hält. Die Air-Gap-Unterstützung deckt die sensibelsten Fälle ab.
 
-### Föderation mit nationaler / europäischer Forschungsinfrastruktur
-EuroHPC, EOSC, GÉANT, nationale Forschungsnetze — Cozystack-Plattformen können über Standard-Kubernetes-APIs mit breiteren Forschungsinfrastruktur-Föderationen integriert werden.
+### Föderation mit nationaler und europäischer Forschungsinfrastruktur
+EuroHPC, EOSC, GÉANT, nationale Forschungsnetze — da Cozystack Standard-Kubernetes-APIs bereitstellt, lässt sich eine Plattform als projektspezifische Integrationsarbeit an diese Dienste anbinden; eine eingebaute Funktion ist das nicht.
 
-### Multi-Stakeholder-Governance
-Universitäten haben komplexe Stakeholder: Principal Investigators, IT-Abteilungen, Forschungsförderungsagenturen, Industriepartner, Studierende. Das Multi-Tenant-Modell von Cozystack bildet dies ab, ohne einen einzelnen Stakeholder zu bevorzugen.
+### Governance mit vielen Beteiligten
+Universitäten haben viele Beteiligte: Projektleitungen, IT-Abteilungen, Forschungsförderer, Industriepartner, Studierende. Das Mandantenmodell von Cozystack bildet das ab, ohne eine Gruppe zu bevorzugen.
 
 ### Langfristige Planung
-Universitäten erneuern Infrastruktur nicht nach den Zeitplänen kommerzieller Anbieter. Eine Open-Source-Plattform mit Community-Governance passt zu Planungshorizonten über mehrere Jahrzehnte.
+Universitäten erneuern ihre Infrastruktur nicht im Takt kommerzieller Anbieter. Eine Open-Source-Plattform mit Community-Governance passt zu Planungshorizonten über Jahrzehnte.
 
-### EuroHPC- und nationale HPC-Einrichtungen benachbart
-Viele Universitäten haben Zugang zu EuroHPC oder nationalem HPC; Cozystack arbeitet daneben für das Workload-Portfolio, das keine volle HPC-Skala benötigt.
+### Neben EuroHPC und nationalen HPC-Zentren
+Viele Universitäten haben Zugang zu EuroHPC oder nationalem HPC; Cozystack arbeitet daneben für den Teil der Workloads, der keine volle HPC-Größenordnung braucht.
+
+### Slurm ist nicht der Gegner, und wir ersetzen es nicht
+Jedes Gespräch über Research Computing kommt an diesen Punkt, deshalb gehört er hierher und nicht in eine Fußnote. Slurm ist der richtige Scheduler für eng gekoppelte Batch-Jobs auf einem homogenen Cluster — MPI-Jobs, eine Fair-Share-Queue, monatelange Accounting-Historie und Nutzer, die `sbatch` bereits kennen. Eine Kubernetes-Plattform plant diese Art von Arbeit nicht besser, und eine Migration, die sie wegnimmt, erzeugt nur Unmut.
+
+Die Plattform ist für alles da, worin der Batch-Cluster schlecht ist: lang laufende interaktive Notebooks, JupyterHub pro Gruppe, öffentlich erreichbare Forschungsdienste und Portale, die Datenbanken hinter diesen Diensten, Lehrumgebungen, die für ein Semester entstehen und wieder verschwinden, VMs für Software, die eine Forschungsgruppe nicht containerisieren kann, und geteilte GPUs für Inferenz statt für Training in der Warteschlange.
+
+Zwei Muster funktionieren in der Praxis, und beide sind unspektakulär:
+
+- **Nebeneinander.** Slurm behält die Batch-Partition; die Plattform übernimmt Dienste und interaktive Arbeit, und auf beiden Seiten ist derselbe Storage eingebunden, sodass ein Datensatz nicht kopiert werden muss, um von beiden Seiten genutzt zu werden.
+- **Slurm in einem Tenant.** Ein Slurm-Cluster läuft als Workload auf der Plattform — Controller und Nodes als VMs oder Container in einem Tenant —, sodass eine Gruppe ihre eigene Queue bekommt, ohne zweiten physischen Cluster und ohne dass die zentrale IT ihn von Hand betreibt.
+
+Erst die Mandantenfähigkeit macht beides belastbar: Quotas pro Gruppe für CPU, Arbeitsspeicher, Storage und GPU, isolierte Netze und eine Nutzung, die sich einem Förderprojekt zuordnen lässt — genau die Zahl, nach der die Leitung des Research Computing tatsächlich gefragt wird.
 
 </div>
 </div>
 
 ---
 
-## Was in Forschungs- und akademischen Umgebungen auf Cozystack läuft
+## Unternehmen, die Plattformen mit Ænix betreiben
 
 {{< clients >}}
 
-*Kunden-Evidenz — von Ænix zu befüllen. Beispiele für einzubindende Proof Points:*
-- Eine europäische Forschungsuniversität betreibt einen geteilten GPU-Cluster für KI/ML-Forschung über 12 Labore
-- Ein R&D-Institut mit klassifizierten Forschungsdaten auf einem Air-Gapped-Cozystack-Deployment
-- Ein Informatik-Department betreibt ein Cozystack-basiertes Curriculum für einen Cloud-native-Kurs
-- Ein Forschungskonsortium mehrerer Institutionen mit föderiertem Cozystack über die Institutionen hinweg
-- Ein Research-Computing-Service, der Cozystack Fakultäten über mehrere Universitäten hinweg anbietet
+Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben. Kunden aus der Wissenschaft werden nicht namentlich genannt, die Architektur ist aber öffentlich: [Eine Plattform für akademisches Computing ist von einem Hyperscaler auf eigenes Bare Metal umgezogen, hat eine Cluster API über mehrere Clouds beibehalten und die GPU-Kosten etwa um den Faktor fünf gesenkt](/de/case-studies/multicloud-academic-gpu/). Verantwortliche für KI und ML starten am besten mit dem [Leitfaden für Leiter AI/ML](/de/fuer/leiter-ai-ml/). Cozystack steht unter Apache 2.0 und lässt sich ohne uns installieren — so evaluieren die meisten Research-Computing-Gruppen es, bevor sie mit uns zusammenarbeiten.
 
 {{< quote-carousel >}}
 
 ---
 
-## Engagement-Struktur
+## Wie Projekte aufgebaut sind
 
-Universitäts-Engagements haben oft spezifische Merkmale:
+Projekte mit Universitäten haben oft besondere Merkmale:
 
-- **Beschaffung über öffentliche Vergabeportale** — EU-TED, Portale der Mitgliedstaaten, KZ goszakup.gov.kz wo zutreffend
-- **Konsortien mehrerer Institutionen** — Engagements können mehrere Universitäten gleichzeitig bedienen
-- **Kompetenztransfer an die interne IT** — akademische IT-Teams betreiben die Plattform nach dem Aufbau; Wissenstransfer ist erstklassig
-- **Ausrichtung an Forschungsförderung** — der Engagement-Zeitplan ist oft an Förderzyklen ausgerichtet
-- **Kollaborations-Scope mit Industriepartnern** — Universitäten kooperieren zunehmend mit der Industrie; die Plattform unterstützt Multi-Stakeholder-Zugriff
+- **Beschaffung über öffentliche Vergabeportale** — EU-TED, nationale Portale, in Kasachstan goszakup.gov.kz, wo zutreffend
+- **Konsortien mehrerer Einrichtungen** — ein Projekt kann mehrere Universitäten gleichzeitig bedienen
+- **Kompetenztransfer an die interne IT** — die Hochschul-IT betreibt die Plattform nach dem Aufbau; die Wissensübergabe ist ein Kernbestandteil
+- **Ausrichtung an der Forschungsförderung** — der Zeitplan orientiert sich oft an Förderzyklen
+- **Zusammenarbeit mit Industriepartnern** — Universitäten kooperieren zunehmend mit der Industrie; die Plattform unterstützt den Zugriff vieler Beteiligter
 
 Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 ---
 
-## Preisgestaltung
+## Preise
 
-Die Cozystack-Plattform ist Open Source (Apache 2.0). Ænix bietet akademiefreundliche Engagement-Strukturen:
+Die Cozystack-Plattform ist Open Source (Apache 2.0). Die Ænix Private Cloud Platform und die Ænix AI Platform werden per RFP angeboten; Support-Stufen für selbst betriebenes Cozystack beginnen bei 1.250 USD pro 10 Nodes und Monat (siehe [Preise](/de/preise/)). Aufbau der Zusammenarbeit:
 
-- **Akademischer Rabatt** auf kommerzielle Support-Tiers
-- **Phasenweises Engagement** ausgerichtet an Förderzyklen
-- **Fokus auf Kompetenztransfer** — das Engagement investiert explizit in langfristige institutionelle Fähigkeiten
-- **CNCF-Projekt-Status** — Cozystack ist Teil des akademischen Open-Source-Ökosystems; einige Universitäten können CNCF- / Open-Source-Beschaffungsrahmen anwenden
+- **Phasenweise Zusammenarbeit** entlang der Förderzyklen
+- **Fokus auf Kompetenztransfer** — das Projekt investiert ausdrücklich in langfristige Fähigkeiten der Einrichtung
+- **Status als CNCF-Projekt** — Cozystack ist ein CNCF-Sandbox-Projekt; manche Universitäten können Rahmenregelungen für die Beschaffung von Open Source anwenden
 
-Für konkrete Konditionen siehe Discovery-Call.
+Konkrete Konditionen klären wir im Discovery-Gespräch.
 
 ---
 
-## Wie Sie starten
+## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-Oder mehr lesen:
-- **[Artikel zu Cloud-native Forschungs- und Lehr-Infrastruktur (englisch)](/blog/2026/05/cloud-native-research-and-teaching-infrastructure/)** — Langform
+Weiterlesen:
+- **[Artikel: Cloud-native Infrastruktur für Forschung und Lehre](/de/blog/2026/05/cloud-native-forschung-lehre-infrastruktur-hochschulen/)** — ausführlich
 - **[Souveräne KI](/de/loesungen/sovereign-ai/)** — KI/ML-Forschung mit sensiblen Daten
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Souveränität von Forschungsdaten
-- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Engagement-Methodik
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — unsere Methodik
 - **[Cozystack](/de/produkte/cozystack/)** — die Plattform
-- **[cozystack.io](https://cozystack.io)** — Open-Source-Projekt, Install/Docs/Community
+- **[Leitfaden für Leiter AI/ML](/de/fuer/leiter-ai-ml/)** — für Verantwortliche von Research Computing und KI
+- **[cozystack.io](https://cozystack.io)** — das Open-Source-Projekt: Installation, Dokumentation, Community
 
 ---
 
-*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen Cloud-native Infrastruktur für Universitäten, Forschungsinstitute und R&D-Organisationen in der EU, DACH und Zentralasien.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution, CNCF Kubernetes AI Conformance, OpenSSF Best Practices) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI — für Universitäten, Forschungsinstitute und F&E-Organisationen in der EU, im DACH-Raum und in Zentralasien.*

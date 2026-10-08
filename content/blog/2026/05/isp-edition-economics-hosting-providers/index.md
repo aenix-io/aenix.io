@@ -1,12 +1,14 @@
 ---
 title: "Public Cloud Platform economics — when a turnkey cloud-in-a-box pays back for hosting providers"
-description: "Unit economics of Aenix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
+seo_title: "Public Cloud Platform economics for hosting providers"
+description: "Unit economics of Ænix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
 date: "2026-05-15"
-cover_image: "/img/blog/covers/isp-edition-economics-hosting-providers.png"
+cover_image: "/img/blog/covers/isp-edition-economics-hosting-providers.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/public-cloud-platform-wirtschaftlichkeit-hosting-anbieter/"
 companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Public Cloud Platform product details →"
 quiz:
@@ -24,24 +26,24 @@ quiz:
         - { text: "Around €80 to €100 per tenant per month", correct: false }
         - { text: "Around €20 to €40 per tenant per month", correct: true }
       explanation: "The unit economics section calculates €15-30/month direct infra cost plus €5-10 platform-team allocation across 500 tenants, landing at €20-40/month all-in per typical tenant at the lower end of resource consumption."
-    - q: "Around what break-even tenant count does the article say Public Cloud Platform starts to make economic sense?"
+    - q: "For a provider with a dedicated 3-5 person platform team and 50 nodes, around what break-even tenant count does the article compute?"
       options:
         - { text: "Roughly 100 to 200 paying tenants", correct: false }
-        - { text: "Roughly 1,000 to 2,000 paying tenants", correct: true }
+        - { text: "Roughly 1,200 to 4,000 paying tenants", correct: true }
         - { text: "Roughly 10,000 or more paying tenants", correct: false }
-      explanation: "The break-even math section computes total monthly fixed cost of €50-90k and with €40-80/month margin per tenant, break-even sits at roughly 1,000-2,000 paying tenants depending on ARPU mix."
+      explanation: "The break-even section adds Standard-tier support for 50 nodes ($15,000/month at list price) to €44-85k of team, hardware, colocation, support and sales cost. With €25-50/month margin per tenant, break-even sits at roughly 1,200-4,000 paying tenants. A smaller start on 10 nodes with existing staff changes this picture."
     - q: "Which of these is identified as the biggest single failure mode for Public Cloud Platform providers in the pipeline?"
       options:
         - { text: "Customer-facing portal getting under-invested", correct: false }
         - { text: "Operations team undersized for 18-month-out volume", correct: true }
         - { text: "Service catalog exposing services ops can't operate", correct: false }
       explanation: "The article calls the operations under-staffing 'the biggest single failure mode in our pipeline': 4-person ops teams that worked at 50 customers can't scale at 200+, SLA breaches multiply, churn picks up."
-    - q: "Why does the article say providers below ~300 customers are usually NOT a fit for Public Cloud Platform?"
+    - q: "Why does the article say a full programme with a dedicated platform team is often premature below ~300 customers?"
       options:
         - { text: "Cozystack technically cannot scale to that small a tenant count", correct: false }
         - { text: "EU regulators forbid commercial clouds with under 300 tenants", correct: false }
-        - { text: "The fixed-cost stack overwhelms the margin contribution at that scale", correct: true }
-      explanation: "The article explicitly says 'for providers below ~300 customers, Public Cloud Platform is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
+        - { text: "A dedicated team's fixed cost overwhelms the margin contribution at that scale", correct: true }
+      explanation: "Below ~300 customers, a full programme with a dedicated 3-5 person platform team usually costs more than the margin it earns. The article suggests a smaller start instead: 10 nodes on the Basic tier, a narrow catalogue and existing staff."
 ---
 
 
@@ -82,18 +84,21 @@ depth.
 
 ## Pricing model
 
-The Public Cloud Platform is the only Ænix product with a published entry
-price: from **$1,250/month** for the Basic support tier covering 10
-nodes. Higher tiers (Standard, Enterprise) add SLA, dedicated TAM,
-24×7 response, with pricing on RFP. Ænix does not charge per VM,
+Public Cloud Platform subscriptions use the published support tiers,
+priced per 10 physical nodes per month on annual billing: **Basic
+$1,250**, **Standard $3,000**, **Plus $5,500**; Enterprise is quoted
+individually. Higher tiers add faster response times, unlimited
+incidents, 24×7 support (Plus and Enterprise) and a wider support
+scope — the full matrix is on [/pricing/](/pricing/). Ænix does not charge per VM,
 per CPU, or per GB — the Cozystack platform itself is free under
 Apache 2.0; what you pay for is engagement, support, and operational
 assurance.
 
 For a typical mid-size hosting provider running 30-100 customer-facing
-nodes, Ænix support cost lands in the €4-15k/month range depending on
-tier and SLA. That's a fraction of the recurring license cost most
-providers have been paying VMware or OpenStack distribution vendors.
+nodes, that is $3,750-12,500/month on Basic or $9,000-30,000/month on
+Standard at list price. Compare it with the recurring licence and
+subscription cost you pay VMware or an OpenStack distribution vendor
+today.
 
 ## Unit economics — per-tenant view
 
@@ -141,28 +146,34 @@ The fixed cost stack for a mid-size hosting provider on Public Cloud Platform:
 
 | Item | Monthly | Annual |
 |---|---|---|
-| Ænix support (Standard tier) | €6k | €72k |
+| Ænix support (Standard tier, 50 nodes = 5 × $3,000) | $15k | $180k |
 | Platform-engineering team (3-5 FTE) | €20-35k | €240-420k |
 | Hardware amortisation (50 nodes) | €5-8k | €60-100k |
 | Colocation / power / bandwidth | €4-7k | €50-85k |
 | Customer support team (2-4 FTE for cloud) | €10-20k | €120-240k |
 | Marketing / sales | €5-15k | €60-180k |
 
-**Total monthly fixed: €50-90k.**
+**Total monthly fixed: €44-85k, plus $15k for Ænix support.**
 
-With €40-80/month margin per tenant (after direct infrastructure cost),
-break-even sits at **~1,000-2,000 paying tenants** depending on ARPU
-mix and where you are in the salary band.
+With €25-50/month margin per tenant (€40-80 ARPU after €15-30 direct
+infrastructure cost), break-even sits at **roughly 1,200-4,000 paying tenants** depending on ARPU
+mix and where you are in the salary band. This is the full-programme
+case with a dedicated team; a 10-node start on the Basic tier with
+existing staff breaks even far earlier — model your own numbers in the
+[ISP calculator](/isp-calculator/).
 
 For providers currently running ~500 customers on legacy infrastructure
 who are evaluating the move, this matters: you need a credible path to
-double tenant count within 18-24 months for the economics to actually
+at least double tenant count within 18-24 months for the economics to actually
 work. Without growth, Public Cloud Platform is a cost reduction (modest) but not
 a transformation.
 
-For providers below ~300 customers, Public Cloud Platform is often *premature* —
-the fixed-cost stack overwhelms the margin contribution. We'll say so
-in a discovery call rather than push the engagement.
+For providers below ~300 customers, a full programme with a dedicated
+3-5 person platform team is often *premature* — that fixed cost
+overwhelms the margin contribution. A smaller start (10 nodes on the
+Basic tier, a narrow catalogue, existing staff) is usually the better
+first step. We'll say so in a discovery call rather than push a larger
+engagement.
 
 ## Where the model breaks
 
@@ -207,9 +218,9 @@ vCD is the historical incumbent for hosting providers. Post-Broadcom,
 subscription pricing has reshaped the math — 2-5× increases on
 renewal, mandatory VCF bundling, end of perpetual licensing. For most
 providers running vCD today, the renewal cycle is the trigger.
-Cozystack Public Cloud Platform migration path is documented; we've shipped it
-for several providers. Engagement scope: 6-18 months depending on
-estate size.
+Ænix Public Cloud Platform goes live in weeks once hardware is ready;
+moving an existing vCD estate onto it is a separate migration project,
+sized by estate in the assessment.
 
 **Versus OpenStack:**
 
@@ -267,19 +278,22 @@ managed-cloud-product as a smaller-margin route.
 For providers where Public Cloud Platform fits:
 
 - **Discovery call** (30 min, free)
-- **Architecture assessment** (1-2 weeks, fixed-price) — current
-  estate inventory, target architecture, migration plan
-- **Pilot deployment** (1-3 months) — Cozystack platform stood up
-  on your hardware, 5-10 friendly customers migrated, billing
-  validated
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
+  (fixed price, 14 days focused or 28 days full) — current estate
+  inventory, target architecture, migration plan
+- **Platform live and pilot cohort** — the platform goes live in weeks
+  on your hardware with the productized installer; 5-10 friendly
+  customers migrated, billing validated
 - **Limited GA** (2-4 months) — 50-100 customers, operational
   workflows stabilised
 - **General availability** — open market launch
-- **Managed retainer** (optional, ongoing) — Ænix runs Tier-3
-  operations under SLA
+- **Support subscription** (ongoing) — one of the [published tiers](/pricing/);
+  Plus or Enterprise for 24×7 coverage
 
-Typical end-to-end timeline from project start to market launch: 9-18
-months depending on estate complexity and team readiness.
+How long the commercial launch takes after the platform is live
+depends on migration scope and team readiness. Multi-region national
+or operator programmes follow a 3-6 month pilot, then 9-18 months to
+full multi-region operation.
 
 ## Where to dig deeper
 

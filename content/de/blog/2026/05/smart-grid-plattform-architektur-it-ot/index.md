@@ -1,7 +1,9 @@
 ---
 title: "Smart-Grid-Plattform-Architektur — IT/OT-Konvergenz, Edge und KI auf kundenkontrollierter Infrastruktur"
-description: "Begleitung zur Energie-Industry-Page."
+seo_title: "Smart-Grid-Plattform: IT/OT-Architektur"
+description: "Plattformarchitektur für Smart Grids: drei Ebenen von Edge bis Core, IT/OT-Konvergenz mit klaren Grenzen, NIS2-Kontrollen und KI auf Netzbetriebsdaten."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/smart-grid-plattform-architektur-it-ot.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Cozystack", "Compliance"]
@@ -40,9 +42,10 @@ quiz:
         - { text: "16–64 GPUs", correct: true }
         - { text: "Mindestens 500 GPUs", correct: false }
       explanation: "Typische Größe für einen mittelgroßen Versorger mit 5 bis 10 GW: 16 bis 64 GPUs. Die Workloads — Inferenz für Lastprognose, Erzeugungsprognose und vorausschauende Wartung — laufen dauerhaft rund um die Uhr, und genau dort trägt die Wirtschaftlichkeit eigener GPUs."
+hreflang_en: /blog/2026/05/smart-grid-platform-architecture-it-ot/
 ---
 
-Begleitung zur **[Energie-Industry-Page](/de/branchen/energie)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Energiewirtschaft](/de/branchen/energie/)**.
 
 ## Drei Druckpunkte konvergieren auf Energie-Infrastruktur
 
@@ -82,5 +85,5 @@ Typische Hardware-Größe für mittelgroßen Energieversorger (5-10 GW): 16-64 G
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

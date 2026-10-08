@@ -1,10 +1,11 @@
 ---
 title: "For Heads of Alliances — add an open cloud line, up to 40% margin"
-description: "Post-Broadcom, your clients need a VMware alternative. Add Ænix Platform to your portfolio: up to 40% margin, deal protection, co-sell. Resell or co-deliver."
+seo_title: "Cloud partner program for alliances: up to 40% margin"
+description: "Post-Broadcom, your clients need a VMware alternative. Add the Ænix platforms to your portfolio: up to 40% margin, deal protection, co-sell."
 hero_subtitle: "Add an open cloud line, up to 40% margin"
 type: "page"
 language: "en"
-images: ["img/og/og-head-of-alliances.png"]
+images: ["img/og/og-head-of-alliances.jpg"]
 hreflang_de: /de/fuer/leiter-allianzen/
 primary_keyword: "cloud partner program for alliances leaders"
 related_pages:
@@ -19,15 +20,15 @@ related_pages:
 
 **Broadcom reshaped the VMware partner program — and your clients want what's next. Add an open, sovereign cloud line your team co-sells into every VMware account: up to 40% margin, deal protection. Resell it, or co-deliver with Ænix as the engineering team behind it.**
 
-> **Pairs with:** the **[Ænix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/)** (three platforms plus two modules to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** the **[Ænix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[the Ænix platforms](/products/)** (Public Cloud, Private Cloud and AI, plus support and the WHMCS integration), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
-  <a class="cta-secondary" href="/products/">Explore editions →</a>
+  <a class="cta-secondary" href="/products/">Explore the platforms →</a>
 </div>
 
 <div class="trust-badges">
-Up to 40% margin · Deal protection · Co-sell and pre-sales support · Three platforms to sell, plus support and the WHMCS integration
+Up to 40% margin · Deal protection · Co-sell and pre-sales support
 </div>
 
 <!-- /BLOCK 1 -->
@@ -51,7 +52,7 @@ Add a portfolio line that your sales team can take into every VMware renewal con
 
 ## Two ways your firm engages
 
-**1. Resell.** Sell [Ænix Platform](/products/) (Public Cloud / Private Cloud / AI) with up to 40% margin via the [Partner Program](/partners/): deal protection, sales kit, technical pre-sales, L3 support access, training.
+**1. Resell.** Sell [the Ænix platforms](/products/) (Public Cloud / Private Cloud / AI) with up to 40% margin via the [Partner Program](/partners/): deal protection, sales kit, technical pre-sales, L3 support access, training.
 
 **2. Co-deliver.** For partners who deliver the build, Cozystack is the framework and **Ænix is the engineering bench** behind your team — [white-label cloud](/services/white-label-cloud/) and platform builds where you own the client and we provide the deep-tech capacity.
 
@@ -63,12 +64,12 @@ Either way the per-core license line your clients pay VMware turns into margin a
 
 - **What it is:** a partner program + open cloud platform you co-sell and/or co-deliver.
 - **Who it's for:** Heads of Alliances / Partnerships / Channel at SIs, MSPs, distributors.
-- **Margin:** up to **40%** on license + support; deal protection on registered opportunities.
+- **Margin:** up to **40%** on Ænix platform subscriptions and support; deal protection on registered opportunities.
 - **License:** Apache 2.0 core (Cozystack) — no per-CPU cost in the stack.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Active partners include:** GoHost.kz, Hidora, QOSI, TECH EVOLVERS INC.
 
-[Source: [Ænix Partner Program](/partners/)]
+Details: [Ænix Partner Program](/partners/).
 
 ---
 
@@ -83,7 +84,7 @@ Either way the per-core license line your clients pay VMware turns into margin a
 ## FAQ
 
 **What margin can we make?**
-Up to 40% on Ænix Platform license + support, plus your own services and managed-services margin on top.
+Up to 40% on Ænix platform subscriptions and support, plus your own services and managed-services margin on top.
 
 **Is there deal protection?**
 Yes — registered opportunities are reserved to the partner; no channel conflict.
@@ -101,7 +102,7 @@ Three platforms on one engine — Public Cloud, Private Cloud and AI — plus en
 
 ## Start the partnership conversation
 
-Free, no prep. We map your client base to the editions, walk through margin and deal protection, and set up enablement.
+Free, no prep. We map your client base to the platforms, walk through margin and deal protection, and set up enablement.
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
@@ -110,7 +111,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!--
 SEO/GEO:

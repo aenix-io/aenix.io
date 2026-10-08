@@ -4,9 +4,15 @@
   Renders the seven public production customers (Public Cloud Platform) with the
   legacy-site logo assets from static/images/clients/. Usage cleared
   per CLAUDE.md Rule 1 (Timur sign-off, 2026-07-09, replacing the
-  placeholder-logos markers). Logos only — the surrounding heading on
-  each page provides the context line.
+  placeholder-logos markers). The permission covers them as Public Cloud
+  Platform customers, so the strip always says so in a caption under the
+  logos, whatever heading the page puts above it (a DORA or banking heading
+  must not read as if these were bank references).
+  Override the caption with caption="..." where a more specific true line
+  exists.
 */}}
+{{- $de := or (eq .Page.Params.language "de") (hasPrefix .Page.RelPermalink "/de/") -}}
+{{- $caption := .Get "caption" | default (cond $de "Hosting-Anbieter, die Ænix Public Cloud Platform in Produktion betreiben" "Hosting providers running Ænix Public Cloud Platform in production") -}}
 {{- $clients := slice
   (dict "name" "GoHost.kz" "url" "https://gohost.kz/" "logo" "/images/clients/gohost.svg")
   (dict "name" "HDReady" "url" "https://hdready.com/" "logo" "/images/clients/hdready.svg")
@@ -23,3 +29,4 @@
   </a>
   {{- end }}
 </div>
+<p class="clients-caption">{{ $caption }}</p>

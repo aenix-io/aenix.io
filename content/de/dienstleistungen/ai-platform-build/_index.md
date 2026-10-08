@@ -1,94 +1,117 @@
 ---
-title: "AI Platform Build — Custom-KI-Infrastruktur für Startups und Unternehmen"
-description: "KI-Startups und KI-lastige Unternehmen im Jahr 2026 stehen vor der gleichen architektonischen Wahl: Inferenz zu Hyperscaler-Konditionen mieten, oder dedizierte..."
+title: "AI Platform Build — KI-Infrastruktur nach Maß für Startups und Unternehmen"
+seo_title: "AI Platform Build: dedizierte GPU-Infrastruktur"
+description: "Dedizierte GPU-Infrastruktur für dauerhafte Inferenz, Fine-Tuning und Training auf NVIDIA-GPUs für Rechenzentren, mit vLLM oder Triton, gebaut auf Cozystack."
 related_pages:
-  - /de/loesungen/sovereign-ai
+  - /de/loesungen/sovereign-ai/
   - /de/produkte/ai-platform/
-  - /de/produkte/cozystack
-  - /de/branchen/finanzdienstleistungen
+  - /de/produkte/cozystack/
+  - /de/case-studies/bare-metal-gpu-inference/
 language: "de"
 hreflang_en: /services/ai-platform-build/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **AI Platform Build ist der End-to-End-Service von Aenix für den Aufbau dedizierter KI-Infrastruktur für KI-Startups und KI-lastige Unternehmen. Statt Inferenz dauerhaft zu Hyperscaler-Preisen zu mieten, baut Aenix on-premises- oder colocation-basierte Plattformen mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), Modell-Deployment-Workflows (vLLM, Triton), Vector-DB- und Object-Storage-Integration sowie Souveränitätskontrollen. Für dauerhaft ausgelastete Workloads wie 24/7-Inferenz, Fine-Tuning und Training amortisiert sich dedizierte Infrastruktur typischerweise nach rund einem Jahr Betrieb. Die Plattform basiert auf Cozystack (CNCF-Projekt, Apache 2.0), das KubeVirt, Cilium und LINSTOR auf einer Kubernetes-API vereint.**
+  **Ein AI Platform Build ist ein End-to-End-Projekt, in dem Ænix dedizierte GPU-Infrastruktur für Organisationen mit dauerhaften KI-Workloads entwirft und betreibt — 24/7-Inferenz, Fine-Tuning und Training —, bei denen gemietete Hyperscaler-GPU-Kapazität auf Dauer zu teuer wird. Er richtet sich an KI-Startups, GPU-Betreiber, forschungsintensive Organisationen, Telcos und Unternehmen mit regulierten Daten, die nicht an externe Modellanbieter gehen dürfen. Ænix liefert die Plattform auf Cozystack, einem CNCF-Projekt unter Apache 2.0, das in das CNCF-Programm Kubernetes AI Conformance aufgenommen wurde und VM- und Container-GPU-Workloads über KubeVirt auf einer Kubernetes-API betreibt. NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt, mit Passthrough an VMs und anteiliger Nutzung über HAMi; das Serving läuft über vLLM oder Triton.**
 quick_facts:
   - label: "Was es ist"
-    value: "End-to-End-Service zum Aufbau dedizierter KI-Infrastruktur (Inferenz, Fine-Tuning, RAG, Air-Gapped) auf Basis von Cozystack."
+    value: "Ein End-to-End-Projekt, um dedizierte GPU-Infrastruktur für dauerhafte KI-Inferenz, Fine-Tuning und Training zu entwerfen, aufzubauen und optional zu betreiben."
+  - label: "Für wen"
+    value: "KI-Startups, GPU- und Inferenz-Betreiber, Forschungsorganisationen, Telcos und Edge-Anbieter sowie Unternehmen mit regulierten Daten."
+  - label: "Plattformbasis"
+    value: "Cozystack — VM- und Container-GPU-Workloads über KubeVirt auf einer Kubernetes-API, Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Mandantenfähigkeit über das Tenant-CRD."
+  - label: "GPUs"
+    value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough an VMs, anteilige Nutzung über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Serving über vLLM und Triton."
+  - label: "Zeitplan"
+    value: "Discovery-Gespräch, Assessment über 14 oder 28 Tage mit Workload-Eignung und GPU-Sizing, danach 3–12 Monate Aufbau je nach Umfang; optional Managed Operations."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Zielgruppe"
-    value: "KI-Startups mit dauerhaft ausgelasteten Inferenz-Workloads, Banken und Versicherer mit regulierten KI-Workloads, öffentlicher Sektor und Gesundheitswesen mit KI auf sensiblen Daten."
-  - label: "Schlüsselfunktion"
-    value: "Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), Modell-Deployment (vLLM, Triton), Vector-DB- und Object-Storage-Integration."
-  - label: "Souveränität"
-    value: "Kundenkontrollierte Schlüssel und Souveränitätskontrollen für regulierte KI-Workloads; passend für DORA-/NIS2-relevante Branchen."
-  - label: "Leistungsumfang"
-    value: "Architektur-Design, GPU-Sizing und -Beschaffung, Observability für KI-Workloads und Training des Operations-Teams."
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
 faq:
-  - q: "Wann lohnt sich dedizierte KI-Infrastruktur gegenüber gemieteter Hyperscaler-GPU?"
-    a: "Für dauerhaft ausgelastete Workloads wie 24/7-Inferenz, Fine-Tuning und Training gewinnt dedizierte Infrastruktur in der Regel nach rund einem Jahr Betrieb. Bei kurzlebigen oder stark schwankenden Workloads kann gemietete GPU weiterhin günstiger sein. Aenix bewertet das Lastprofil im Discovery-Call."
-  - q: "Welche GPUs unterstützt die Plattform?"
-    a: "Die Plattform unterstützt Multi-Tenant-GPU-Scheduling für NVIDIA H100, H200, L40S, A100 und Blackwell. Aenix übernimmt auf Wunsch auch GPU-Sizing und -Beschaffung als Teil des Services."
-  - q: "Ist die Plattform für regulierte KI-Workloads in Banken oder im Gesundheitswesen geeignet?"
-    a: "Ja. Aenix baut Souveränitätskontrollen mit kundenkontrollierten Schlüsseln ein und unterstützt Air-Gapped-Architekturen. Das eignet sich für Fraud-Detection, Schadenfall-KI, KI auf Bürgerdaten und KI auf medizinischen Daten."
-  - q: "Worauf basiert die KI-Plattform technisch?"
-    a: "Auf Cozystack, einem CNCF-Projekt unter Apache 2.0, das KubeVirt für VMs und Container, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage auf einer Kubernetes-API vereint. Mandantenfähigkeit erfolgt über das Tenant-CRD."
-  - q: "Was ist im AI-Platform-Build-Service enthalten?"
-    a: "Architektur-Design, GPU-Sizing und -Beschaffung, Multi-Tenant-GPU-Scheduling, Modell-Deployment-Workflows (vLLM, Triton), Vector-DB- und Object-Storage-Integration, Souveränitätskontrollen, Observability für KI-Workloads und Training des Operations-Teams."
-  - q: "Wie unterscheidet sich dieser Service von der Ænix AI Platform?"
-    a: "Die [Ænix AI Platform](/de/produkte/ai-platform/) ist das produktisierte, turnkey Angebot mit fertigen Blueprints. AI Platform Build ist der begleitende Service, der die Plattform end-to-end für die spezifische Architektur und Beschaffung des Kunden aufbaut."
+  - q: "Wann lohnt sich eine dedizierte KI-Plattform gegenüber gemieteter Hyperscaler-GPU?"
+    a: "Für dauerhafte Workloads wie 24/7-Inferenz, Fine-Tuning und Training ist dedizierte Infrastruktur in der Regel nach rund einem Jahr Betrieb im Vorteil. Kurzlebige oder stark schwankende Experimente bleiben auf gemieteter Kapazität oft günstiger. Ænix rechnet im Assessment für den konkreten Workload aus, ab wann sich die eigene Infrastruktur rechnet."
+  - q: "Welche GPUs und Inferenz-Stacks unterstützt Ænix?"
+    a: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator, ganz an VMs durchgereicht oder mit HAMi zwischen Containern geteilt; zu unseren veröffentlichten Deployments gehört ein Inferenz-Server mit 8×H100. Eine Liste validierter Modelle veröffentlichen wir nicht, und die Partner-Validierung des Stacks bei NVIDIA steht noch aus. Das Inferenz-Serving wird passend zur Modellarchitektur gewählt — vLLM, Triton oder eigene Serving-Stacks —, und die Plattform unterstützt mandantenfähiges Model Serving für KI-Produkte, die Sie Ihren Kunden anbieten."
+  - q: "Kann eine dedizierte KI-Plattform regulierte Daten im eigenen Haus halten?"
+    a: "Ja. Die Plattform ist für Unternehmen mit regulierten Datenklassen gebaut, die nicht an externe Modellanbieter gehen dürfen. Souveränitätskontrollen werden auf die betroffenen Datenklassen angewendet, und das Tenant-CRD von Cozystack sorgt für die Isolation der Mandanten. Projekte mit Schwerpunkt Souveränität behandeln wir unter Sovereign AI."
+  - q: "Wie läuft der Aufbau ab und wie lange dauert er?"
+    a: "Nach einem kostenlosen Discovery-Gespräch klärt ein Platform Readiness Assessment zum Festpreis über 14 oder 28 Tage die Workload-Eignung und das GPU-Sizing. Der Aufbau dauert danach je nach Umfang 3–12 Monate; ein Kunde war mit einem 8×H100-Server nach rund zwei Monaten produktiv. Anschließend kann Ænix die Plattform als Managed Service betreiben."
+  - q: "Auf welcher Software läuft die Plattform?"
+    a: "Die Plattform basiert auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0. Es betreibt VM- und Container-GPU-Workloads über KubeVirt auf einer einzigen Kubernetes-API, mit Cilium-Networking (eBPF) und LINSTOR/DRBD-Storage. Lizenzkosten pro CPU oder Core gibt es nicht."
+  - q: "Was unterscheidet diesen Service von der Ænix AI Platform?"
+    a: "Die AI Platform ist die dritte Ænix-Plattform: mandantenfähiges GPU-Scheduling und Blueprints für Inferenz, Fine-Tuning und RAG auf Basis von Cozystack. Der AI Platform Build ist das Dienstleistungsprojekt, das eine individuelle Plattform von Anfang bis Ende entwirft und liefert, meist auf Grundlage dieses Produkts."
 ---
 
-**KI-Startups und KI-lastige Unternehmen im Jahr 2026 stehen vor der gleichen architektonischen Wahl: Inferenz zu Hyperscaler-Konditionen mieten, oder dedizierte Infrastruktur bauen, die sich im großen Maßstab auszahlt. Für dauerhaft ausgelastete Workloads (24/7 Inferenz, Fine-Tuning, Training) gewinnt dedizierte Infrastruktur normalerweise nach einem Jahr Betrieb. Ænix baut diese Plattformen end-to-end.**
+**KI-Startups und KI-intensive Unternehmen stehen 2026 vor derselben Architekturentscheidung: Inferenz zu Hyperscaler-Preisen mieten oder dedizierte Infrastruktur aufbauen, die sich bei entsprechendem Volumen auszahlt. Für dauerhafte Workloads (24/7-Inferenz, Fine-Tuning, Training) ist dedizierte Infrastruktur in der Regel nach einem Jahr Betrieb im Vorteil. Ænix baut diese Plattformen von Anfang bis Ende.**
 
-> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), fertige Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen für regulierte KI-Workloads. Kostenloser [Sovereign AI Decision Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — KI-Infrastruktur mit mandantenfähigem GPU-Scheduling auf NVIDIA-GPUs für Rechenzentren, Blueprints für Inferenz, Fine-Tuning und RAG, Souveränitätskontrollen für regulierte KI-Workloads. Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/ai-platform-gpu-wirtschaftlichkeit-inferenz/">Playbook lesen →</a>
 </div>
+
+---
+
+## Wer dedizierte KI-Plattformen baut
+
+- **KI-Startups** mit dauerhaften Inferenz-Workloads, für die Hyperscaler-GPUs zu teuer sind
+- **KI- und GPU-Betreiber**, die Inferenz als Produkt für ihre Kunden anbieten
+- **Unternehmen mit regulierten Daten**, die nicht an Modellanbieter gehen dürfen
+- **Forschungsintensive Organisationen** mit dauerhaften Trainings-Workloads
+- **Telcos und Edge-Anbieter** mit KI-Angeboten am Edge
 
 ---
 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wer baut dedizierte KI-Plattformen
-
-- **KI-Startups** mit dauerhaft ausgelasteten Inferenz-Workloads, wo Hyperscaler-GPU zu teuer ist
-- **Banken und Versicherer** mit regulierten KI-Workloads (Fraud-Detection, Schadenfall-KI)
-- **Öffentlicher Sektor** mit KI auf Bürgerdaten
-- **Gesundheitswesen** mit KI auf medizinischen Daten
-- **GPU-lastige Produkt-Unternehmen** mit Multi-Tenant-Anforderungen
-
-</div>
-</div>
-
----
-
-## Leistungsumfang
-
-- Architektur-Design (Inferenz / Fine-Tuning / RAG / Air-Gapped)
-- GPU-Sizing und -Beschaffung
-- Multi-Tenant-GPU-Scheduling
-- Modell-Deployment-Workflows (vLLM, Triton)
-- Vector-DB + Object-Storage-Integration
-- Souveränitätskontrollen (kundenkontrollierte Schlüssel)
-- Observability für KI-Workloads
-- Operations-Team-Training
+## Was wir liefern
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Dedizierte KI-Plattform</b><div class="diagram__chips"><span>Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell)</span><span>Modell-Deployment (vLLM, Triton)</span><span>Vector-DB + Object-Storage</span></div></div>
-<div class="diagram__conn">basiert auf</div>
-<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>CNCF-Projekt</span><span>Apache 2.0</span></div></div>
-<div class="diagram__conn">vereint</div>
-<div class="diagram__node"><b>KubeVirt, Cilium und LINSTOR</b><div class="diagram__chips"><span>auf einer Kubernetes-API</span><span>Mandantenfähigkeit über Tenant-CRD</span></div></div>
+<div class="diagram__node"><b>AI Platform Build</b><div class="diagram__chips"><span>Assessment</span><span>Aufbau</span><span>Managed Operations</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack-GPU-Plattform</b><div class="diagram__chips"><span>KubeVirt</span><span>VM- und Container-GPU-Workloads</span><span>Eine Kubernetes-API</span></div></div>
+<div class="diagram__conn">betreibt</div>
+<div class="diagram__node"><b>KI-Workloads</b><div class="diagram__chips"><span>Inferenz</span><span>Fine-Tuning</span><span>Training</span></div></div>
+</div>
+</div>
+
+- **KI-Plattform auf Basis von Cozystack** — KubeVirt und Kubernetes für VM- und Container-GPU-Workloads
+- **NVIDIA-GPUs** — über den NVIDIA GPU Operator: Passthrough an VMs, anteilige Nutzung für Container über HAMi
+- **Inferenz-Serving** — vLLM, Triton oder eigene Stacks, passend zur Modellarchitektur
+- **Mandantenfähiges Model Serving** — für KI-Produkte, die Sie Ihren Kunden anbieten
+- **Souveränitätskontrollen** für regulierte Datenklassen
+- **Betriebsmodell** für GPU-Cluster im 24×7-Betrieb
+
 </div>
 </div>
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*
+## Ablauf des Projekts
+
+- **Discovery-Gespräch** (30 Minuten, kostenlos)
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 oder 28 Tage, Festpreis) — Workload-Eignung, GPU-Sizing, Architektur
+- **Aufbau** (3–12 Monate, je nach Umfang)
+- **Managed AI Platform** (optional)
+
+Dokumentiert: [GPU-Inferenz mit 8×H100 auf eigenem Bare Metal](/de/case-studies/bare-metal-gpu-inference/) und [GPU-Kosten eines akademischen SaaS-Anbieters auf rund ein Fünftel gesenkt](/de/case-studies/multicloud-academic-gpu/).
+
+Für Workloads mit Schwerpunkt Souveränität siehe **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
+
+---
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+</div>
+
+- **[Playbook für KI-Plattform-Startups](/de/blog/2026/05/ai-platform-gpu-wirtschaftlichkeit-inferenz/)**
+- **[Sovereign AI](/de/loesungen/sovereign-ai/)** — KI-Infrastruktur mit Schwerpunkt Souveränität
+- **[Cozystack](/de/produkte/cozystack/)** — Open-Source-Basis der Plattform
+
+---
+
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Projekt, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

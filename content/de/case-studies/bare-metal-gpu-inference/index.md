@@ -1,13 +1,13 @@
 ---
-title: "GPU-Inferenz auf eigenem Bare Metal"
-description: "Eine Foto/Video-App verlagerte KI-Inferenz on-premise auf eigene GPU-Infrastruktur: 8xH100 auf Cozystack, 2-3x GPU-Effizienz, in ~2 Monaten produktiv."
+title: "8xH100-Inferenz auf eigenem Bare Metal"
+description: "Eine Foto- und Video-App holte ihre GPU-Inferenz aus einer Miet-GPU-Cloud auf einen eigenen 8xH100-Server mit Cozystack: 2-3x GPU-Effizienz, rund 2 Monate."
 hero_subtitle: "8xH100-Inferenz von der Miet-GPU-Cloud auf eigenes Bare Metal"
 date: 2026-06-20
 lastmod: 2026-06-20
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/bare-metal-gpu-inference/"
-images: ["img/og/og-case-bare-metal-gpu-inference.png"]
+images: ["img/og/og-case-bare-metal-gpu-inference.jpg"]
 primary_keyword: "KI-Inferenz on-premise"
 secondary_keywords:
   - "eigene GPU-Infrastruktur"
@@ -49,6 +49,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">2-3x</div><div class="cs-stat__label">GPU-Effizienzgewinn beim Wechsel von der Stundenmiete auf eigenes Bare Metal</div></div>
 </div>
 
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
+</div>
+
 ## Über das Projekt
 
 Der Kunde ist ein schnell wachsender Anbieter einer Massenmarkt-Mobile-App für die kreative Foto- und Video-Bearbeitung. Mehrere seiner zentralen Funktionen — Hintergrund entfernen und ersetzen, Beautification, visuelle Effekte — laufen über die eigenen KI-Modelle des Unternehmens statt über Drittanbieter-APIs.
@@ -75,7 +80,7 @@ Ein einzelner Server mit 8xH100, von oben nach unten geschichtet, verwandelt eig
 
 Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway → RabbitMQ-Queue → GPU-ML-Worker → Webhook-Callback. Synchron: HTTP-Inferenz-Endpunkte, autoskaliert mit KEDA über die Request-Rate (RPS) des nginx-ingress, mit VictoriaMetrics als Metrik-Quelle.
 
-{{< placeholder-image width="1200" height="640" label="Einzelner Bare-Metal-Knoten mit 8xH100, geschichtet: ML-Worker des Kunden (Inferenzmodelle, RabbitMQ-Queues, sync/async) auf einem verschachtelten Mandanten-Kubernetes mit durchgereichten GPUs und dem NVIDIA GPU Operator darin; isolierter Mandant (eigenes etcd, Secrets, Registry, Monitoring) auf Cozystack über k3s/generisches Linux (LINSTOR, Cilium+Kube-OVN, KubeVirt, vfio-pci-Passthrough, MetalLB); Bare Metal: 8x NVIDIA H100 80GB, NVLink, 2 TB RAM" >}}
+{{< case-diagram src="/img/case-studies/bare-metal-gpu-inference-de.webp" alt="Einzelner Bare-Metal-Knoten mit 8xH100, geschichtet: ML-Worker des Kunden (Inferenzmodelle, RabbitMQ-Queues, sync/async) auf einem verschachtelten Mandanten-Kubernetes mit durchgereichten GPUs und dem NVIDIA GPU Operator darin; isolierter Mandant (eigenes etcd, Secrets, Registry, Monitoring) auf Cozystack über k3s/generisches Linux (LINSTOR, Cilium+Kube-OVN, KubeVirt, vfio-pci-Passthrough, MetalLB); Bare Metal: 8x NVIDIA H100 80GB, NVLink, 2 TB RAM" >}}
 
 ## Umsetzung: neue Anforderungen und wie wir sie gelöst haben
 
@@ -83,7 +88,7 @@ Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway 
 - **GPU-Passthrough aller acht H100.** Jede H100 wird über vfio-pci an die KubeVirt-Mandanten-VM durchgereicht. Das klassische Wettrennen „nvidia-Treiber vs. vfio-pci“ beim Booten — bei dem der Host-Treiber eine Karte belegt, bevor vfio zugreifen kann — lösten wir mit einem initramfs-`driver_override`, sodass die Geräte deterministisch in der VM landen.
 - **RWX-Storage für gemeinsame Modellgewichte.** Viele Worker-Pods benötigen dieselben Modellgewichte gleichzeitig. Wir stellten geteilten Read-Write-Many-Storage über einen CSI-Wrapper plus NFS-Ganesha bereit; der Fix wurde upstream zu Cozystack beigesteuert.
 - **Traffic-basiertes Autoscaling.** Synchrone Inferenz-Worker skalieren mit der Live-Nachfrage über KEDA, gesteuert durch nginx-ingress-RPS-Metriken aus VictoriaMetrics. Der Metrics-Path-Fix, der dies zuverlässig machte, ging ebenfalls upstream.
-- **GPU-Dichte.** Um mehr Inferenz auf jede Karte zu packen, aktivierten wir GPU-Sharing über HAMi / MIG / Time-Slicing, sodass sich mehrere Jobs eine physische H100 teilen können.
+- **GPU-Dichte.** Um mehr Inferenz auf jede Karte zu packen, aktivierten wir anteiliges GPU-Sharing mit HAMi, sodass sich mehrere Jobs eine physische H100 teilen.
 
 ## Ergebnisse und aktueller Stand
 
@@ -95,7 +100,7 @@ Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway 
 ## Wie es weitergeht
 
 - Ausbau der GPU-Server-Flotte über den ersten Knoten hinaus.
-- GPU-Partitionierung (HAMi / MIG) für höhere Inferenzdichte pro Karte.
+- Höhere Inferenzdichte pro Karte: jetzt weiteres HAMi-Tuning, MIG-Partitionierung, sobald sie die Cozystack-Roadmap verlässt.
 - Eine dedizierte Harbor-Registry für schwere (~100 GB) Modell-Images.
 - Ausbau des Self-Service auf Basis des Mandantenfähigkeits-Modells.
 
@@ -108,8 +113,17 @@ Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway 
   <div class="card"><div class="card-body"><h3 class="card-title">Engineering-Tiefe mit Zinseszinseffekt</h3><p class="card-description">RWX-Storage- und Metrics-Fixes gingen upstream zu Cozystack — die Plattform selbst wurde im Projektverlauf besser.</p></div></div>
 </div>
 
+## Ein ähnliches Projekt besprechen
+
+Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+</div>
+
 ---
 
-*Diese Fallstudie ist anonymisiert veröffentlicht (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht namentlich. Eine Kundenreferenz unter NDA ist auf Anfrage verfügbar — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie ist anonymisiert veröffentlicht: Der Kunde wird über sein Profil beschrieben, nicht namentlich. Eine Kundenreferenz unter NDA ist auf Anfrage verfügbar — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

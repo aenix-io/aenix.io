@@ -1,12 +1,14 @@
 ---
 title: "Vendor-neutral cloud strategy — what an honest cloud advisory engagement looks like in 2026"
+seo_title: "Vendor-neutral cloud strategy: how the engagement works"
 description: "What a vendor-neutral cloud strategy engagement actually delivers, and how it differs from Big-4 cloud advisory and hyperscaler-aligned consultancies."
 date: "2026-05-06"
-cover_image: "/img/blog/covers/cloud-strategy-engagement-vendor-neutral.png"
+cover_image: "/img/blog/covers/cloud-strategy-engagement-vendor-neutral.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cloud", "Platform Engineering", "Sovereignty", "Compliance"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/herstellerneutrale-cloud-strategie-beratung/"
 companion_landing: "/services/cloud-strategy-consultancy/"
 companion_label: "See cloud strategy consultancy →"
 quiz:
@@ -97,8 +99,8 @@ and growth trajectory; mismatches cost more than they save.
 
 ### 5. How does the regulatory landscape evolve?
 
-DORA in force since Jan 2025. NIS2 transposition Oct 2024. EUCS
-finalising. Sectoral overlays expanding. Sovereign-cloud frameworks
+DORA applies since Jan 2025. NIS2 transposition deadline Oct 2024. EUCS
+adoption still pending. Sectoral overlays expanding. Sovereign-cloud frameworks
 sharpening. The strategy can't be locked to today's regulatory
 state; it has to incorporate likely 24-36 month evolution.
 
@@ -179,7 +181,7 @@ priority hiring queue.
 
 ### Workstream 5 — Regulatory trajectory
 
-24-36 month outlook on applicable regulations. EUCS finalisation,
+24-36 month outlook on applicable regulations. EUCS adoption,
 NIS2 enforcement, sectoral overlay sharpening, sovereignty
 framework expansion. How the workload-portfolio strategy adapts as
 the regulatory landscape evolves.
@@ -189,7 +191,7 @@ triggers.
 
 ### Synthesis: the 18-36 month plan
 
-Three workstream outputs synthesised into a board-grade strategy
+Five workstream outputs synthesised into a board-grade strategy
 document. Executive summary (3-5 pages). Workstream detail (5-8 pages
 per workstream). Roadmap with milestones (2-3 pages). Implementation
 sequencing recommendations.

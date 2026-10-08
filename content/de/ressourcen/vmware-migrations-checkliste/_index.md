@@ -1,11 +1,11 @@
 ---
-title: "VMware-Migrations-Assessment-Checkliste — kostenlos herunterladen"
-description: "Eine 25-Punkt-Checkliste für Organisationen, die einen VMware-Ausstieg evaluieren. Deckt Inventar, Abhängigkeiten, Networking, Storage, Multi-Tenancy,..."
+title: "VMware-Migrations-Checkliste — kostenlos herunterladen"
+description: "Kostenlose Checkliste mit 25 Punkten für den VMware-Ausstieg: Inventar, Abhängigkeiten, Netzwerk und Storage, Mandantenfähigkeit, GPU, Souveränität, Kosten."
 type: "page"
 related_pages:
-  - /de/migration/vmware
-  - /de/alternativen/vmware-alternative
-  - /de/dienstleistungen/platform-readiness-assessment
+  - /de/migration/vmware/
+  - /de/alternativen/vmware-alternative/
+  - /de/dienstleistungen/platform-readiness-assessment/
   - /de/produkte/public-cloud-platform/
   - /de/produkte/private-cloud-platform/
 hreflang_en: /resources/vmware-migration-checklist/
@@ -13,38 +13,36 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Die VMware-Migrations-Assessment-Checkliste von Aenix ist eine kostenlose 25-Punkt-Checkliste für Organisationen, die einen VMware-Ausstieg evaluieren. Sie strukturiert die interne Discovery über Inventar, Abhängigkeiten (vSAN, NSX, vCD, vRealize), Network- und Storage-Redesign, Multi-Tenancy-Modell, KI/GPU-Workloads, Souveränität und Compliance (DORA/NIS2) sowie operative Bereitschaft und Kosten-Trajektorie. Aenix nutzt dieselbe Checkliste während seiner 14-Tage-Platform-Readiness-Assessments. Sie richtet sich an Infrastruktur-Leads, Plattform-Engineers, CIO-Offices und Beschaffungs-Teams in früher Evaluierungs-Phase. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und liefert die Zielplattform für VMware-Migrationen auf Basis von KubeVirt, Cilium und LINSTOR.**
+  **Die VMware-Migrations-Checkliste ist ein strukturiertes Discovery-Framework mit 25 Punkten für Organisationen, die einen Ausstieg aus VMware prüfen. Sie umfasst Workload-Inventar, Abhängigkeiten (vSAN, NSX, vCloud Director, vRealize), die Neugestaltung von Netzwerk und Storage, das Mandantenmodell, KI/GPU-Workloads, Souveränität und Compliance (DORA, NIS2), Betriebsbereitschaft und Kostenentwicklung. Sie richtet sich an Infrastruktur-Leads, Platform Engineers, CIO-Büros und Einkaufsteams in der frühen Bewertungsphase. Ænix nutzt dieselbe Checkliste im Platform Readiness Assessment (14 oder 28 Tage) und stellt sie kostenlos als PDF bereit. Als Ziel empfohlen wird Cozystack, das CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, das Ænix initiiert hat und mitpflegt. Es betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, mit Cilium-Networking und LINSTOR/DRBD-Storage.**
 quick_facts:
   - label: "Was es ist"
-    value: "Kostenlose 25-Punkt-Assessment-Checkliste zur Evaluierung eines VMware-Ausstiegs (Inventar, Abhängigkeiten, Networking, Storage, Multi-Tenancy, KI/GPU, Souveränität, operative Bereitschaft)"
-  - label: "Zielgruppe"
-    value: "Infrastruktur-Leads, Plattform-Engineers, CIO-Offices und Beschaffungs-Teams in früher VMware-Exit-Evaluierung"
+    value: "Kostenlose Checkliste mit 25 Punkten zur Bewertung eines VMware-Ausstiegs: Inventar, Abhängigkeiten, Networking, Storage, Mandantenfähigkeit, KI/GPU, Souveränität und Kosten."
   - label: "Format"
-    value: "PDF-Download via Formular; identisch zur Discovery in Aenix' 14-Tage-Platform-Readiness-Assessment"
+    value: "Kostenloses PDF, 25 Punkte in acht Bereichen, Zustellung per E-Mail; typischerweise 1–3 Stunden zum Durcharbeiten"
+  - label: "Zielgruppe"
+    value: "Infrastruktur-Leads, Platform Engineers, CIO-Büros und Einkaufsteams in der frühen Bewertung eines VMware-Ausstiegs."
+  - label: "Wie Ænix sie nutzt"
+    value: "Sie bildet die strukturierte Discovery ab, die Ænix im Platform Readiness Assessment durchführt (Festpreis, 14 oder 28 Tage)."
   - label: "Zielplattform"
-    value: "Cozystack — VMs und Container auf einer Kubernetes-API via KubeVirt, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
-  - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
-  - label: "Regulatorik"
-    value: "Checkliste deckt DORA/NIS2-Alignment und Schlüsselverwahrung für Souveränitäts-Anforderungen ab"
-  - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack — VMs über KubeVirt und Container auf einer Kubernetes-API, Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Mandantenfähigkeit über die Tenant-CRD."
+  - label: "Compliance"
+    value: "Die Punkte der Checkliste ordnen Entscheidungen zum VMware-Ausstieg der Ausrichtung an DORA und NIS2 sowie dem Schlüsselmanagement zu."
 faq:
   - q: "Was deckt die VMware-Migrations-Checkliste ab?"
-    a: "Acht Bereiche über 25 Punkte: Inventar (Workload-Anzahl, OS-Mix, Kritikalität), Abhängigkeiten (vSAN, NSX, vCD, vRealize), Network- und Storage-Redesign, Multi-Tenancy-Modell, KI/GPU-Workloads, Souveränität und Compliance (DORA/NIS2), operative Bereitschaft sowie Kosten-Trajektorie mit TCO-Inputs und Commitment-Abläufe."
+    a: "Acht Bereiche: Workload-Inventar und Kritikalitätsstufen, Abhängigkeiten (vSAN, NSX, vCloud Director, vRealize), Neugestaltung von Netzwerk und Storage, Mandantenmodell, KI/GPU-Workloads, Souveränität und Compliance, Betriebsbereitschaft und Kostenentwicklung."
   - q: "Was kostet die Checkliste?"
-    a: "Die Checkliste ist kostenlos. Sie wird als PDF über das Formular auf dieser Seite bereitgestellt und ist dieselbe strukturierte Discovery, die Aenix während seiner 14-Tage-Platform-Readiness-Assessments verwendet."
-  - q: "Für wen ist die Checkliste gedacht?"
-    a: "Für Infrastruktur-Leads in früher Evaluierungs-Phase, Plattform-Engineers in Vorbereitung auf ein Assessment-Engagement, CIO-Offices vor einer Vorstands-Empfehlung und Beschaffungs-Teams im RFP-Scoping."
-  - q: "Auf welche Zielplattform migriere ich aus VMware?"
-    a: "Auf Cozystack, die Open-Source-Plattform hinter Aenix. Sie betreibt VMs und Container auf einer Kubernetes-API via KubeVirt, mit Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und dem Tenant CRD für Mandantenfähigkeit — als direkter Ersatz für vSphere, NSX, vSAN und vCloud Director."
-  - q: "Wie werden vCloud-Director-Organisationen abgebildet?"
-    a: "Die Checkliste mappt vCD-Organisationen auf das Cozystack Tenant CRD. Dieses Multi-Tenancy-Modell ist besonders für Hosting-Anbieter relevant, die VMware Cloud Director verlassen — passend zur Ænix Public Cloud Platform."
-  - q: "Was passiert nach dem Download?"
-    a: "Die Checkliste liefert die Discovery, die Ihr Team intern durchführen kann. Für eine tiefere Bewertung mit TCO-Modellierung und Architektur-Design bietet Aenix das kostenpflichtige Platform Readiness Assessment sowie den VMware-Migrations-Hub an."
+    a: "Nichts. Für den Download geben Sie eine E-Mail-Adresse an; Kosten oder Verpflichtungen entstehen nicht."
+  - q: "Auf welche Plattform empfiehlt die Checkliste zu migrieren?"
+    a: "Auf Cozystack, das CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, mit Cilium-Networking und LINSTOR/DRBD-Storage. Organisationen aus vCloud Director werden auf die Tenant-CRD von Cozystack abgebildet."
+  - q: "Wie bildet die Checkliste die Mandantenfähigkeit von vCloud Director ab?"
+    a: "Sie überträgt Organisationen aus vCloud Director auf die Tenant-CRD von Cozystack, das native Mittel für Mandantenfähigkeit. So können Hosting-Anbieter ihre bestehenden Mandantengrenzen auf der neuen Plattform abbilden."
+  - q: "Gibt es eine tiefere Bewertung als die Checkliste?"
+    a: "Ja. Die Checkliste unterstützt die interne Discovery; für TCO-Modellierung und Architekturdesign führt Ænix ein Platform Readiness Assessment zum Festpreis durch, 14 oder 28 Tage. Der anschließende Aufbau wird nach dem Assessment angeboten; Support-Stufen für selbst betriebenes Cozystack beginnen bei 1.250 USD pro 10 Nodes und Monat."
+  - q: "Berücksichtigt die Checkliste KI- und GPU-Workloads?"
+    a: "Ja. Sie stellt VMware vGPU und KubeVirt vGPU gegenüber, damit Teams mit GPU-gestützten KI/ML-Workloads planen können, wie diese nach dem VMware-Ausstieg auf eine Kubernetes-basierte Plattform übergehen."
 ---
 
-**Eine 25-Punkt-Checkliste für Organisationen, die einen VMware-Ausstieg evaluieren. Deckt Inventar, Abhängigkeiten, Networking, Storage, Multi-Tenancy, KI/GPU, Souveränität und operative Bereitschaft ab. Verwendet von Ænix während 14-Tage-Platform-Readiness-Assessments und kostenlos angeboten für Teams in früher Evaluierung.**
+**Eine Checkliste mit 25 Punkten für Organisationen, die einen Ausstieg aus VMware prüfen. Sie deckt Inventar, Abhängigkeiten, Networking, Storage, Mandantenfähigkeit, KI/GPU, Souveränität und Betriebsbereitschaft ab. Ænix setzt sie im Platform Readiness Assessment (14 oder 28 Tage) ein und stellt sie Teams in der frühen Bewertung kostenlos bereit.**
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen.
 
@@ -55,42 +53,52 @@ faq:
 
 ---
 
-## Was in der Checkliste enthalten ist
+## Was die Checkliste enthält
 
-- **Inventar** — Workload-Anzahl, OS-Mix, Kritikalitäts-Stufen
-- **Abhängigkeiten** — vSAN, NSX, vCD, vRealize, Custom-Integrationen
-- **Netzwerk- und Storage-Redesign** — was direkt mappt, was neue Architektur braucht
-- **Multi-Tenancy-Modell** — vCD-Organisationen zu Cozystack Tenant CRD
-- **KI/GPU-Workloads** — VMware vGPU vs KubeVirt vGPU
-- **Souveränität und Compliance** — DORA/NIS2-Alignment, Schlüsselverwahrung
-- **Operative Bereitschaft** — Runbooks, Rufbereitschaft, Wissenstransfer
-- **Kosten-Trajektorie** — TCO-Inputs, Commitment-Abläufe, Repatriation-Kandidaten
+- **Inventar** — Anzahl der Workloads, Betriebssystem-Mix, Kritikalitätsstufen
+- **Abhängigkeiten** — vSAN, NSX, vCD, vRealize, eigene Integrationen
+- **Neugestaltung von Netzwerk und Storage** — was sich direkt übertragen lässt, was eine neue Architektur braucht
+- **Mandantenmodell** — vCD-Organisationen auf die Tenant-CRD von Cozystack
+- **KI/GPU-Workloads** — VMware vGPU vs. KubeVirt vGPU
+- **Souveränität und Compliance** — Ausrichtung an DORA/NIS2, Schlüsselverwahrung
+- **Betriebsbereitschaft** — Runbooks, Rufbereitschaft, Wissenstransfer
+- **Kostenentwicklung** — TCO-Eingangsgrößen, auslaufende Commitments, Kandidaten für die Repatriation
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>25-Punkt-Checkliste</b><div class="diagram__chips"><span>8 Bereiche</span><span>Kostenloses PDF</span></div></div>
-<div class="diagram__conn">führt zu</div>
-<div class="diagram__node diagram__node--brand"><b>14-Tage-Platform-Readiness-Assessment</b><div class="diagram__chips"><span>TCO-Modellierung</span><span>Architektur-Design</span></div></div>
-<div class="diagram__conn">Zielplattform</div>
-<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>VMs + Container auf einer Kubernetes-API</span></div></div>
+<div class="diagram__node"><b>Checkliste mit 25 Punkten</b><div class="diagram__chips"><span>8 Bereiche</span><span>Kostenloses PDF</span></div></div>
+<div class="diagram__conn">fließt ein in</div>
+<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment (14 oder 28 Tage)</b><div class="diagram__chips"><span>TCO-Modellierung</span><span>Architekturdesign</span></div></div>
+<div class="diagram__conn">zielt auf</div>
+<div class="diagram__node"><b>Zielplattform Cozystack</b><div class="diagram__chips"><span>VMs + Container auf einer Kubernetes-API</span></div></div>
 </div>
 </div>
 
 ---
 
-## Wer das nutzt
+## Wer sie nutzt
 
-- Infrastruktur-Leads in früher Evaluierungs-Phase
-- Plattform-Engineers in Vorbereitung auf Assessment-Engagement
-- CIO-Offices in Vorbereitung auf Vorstands-Empfehlung
-- Beschaffungs-Teams in RFP-Scoping
+- Infrastruktur-Leads in der frühen Bewertungsphase
+- Platform Engineers, die sich auf ein Assessment vorbereiten
+- CIO-Büros, die eine Empfehlung für die Geschäftsleitung vorbereiten
+- Einkaufsteams, die eine Ausschreibung (RFP) abstecken
 
 ---
 
 ## Nach dem Download
 
-Die Checkliste gibt Ihnen die strukturierte Discovery, die Ihre Organisation intern durchführen kann. Für eine tiefere Bewertung mit TCO-Modellierung und Architektur-Design siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** oder **[VMware-Migrations-Hub](/de/migration/vmware/)**.
+Die Checkliste gibt Ihnen die strukturierte Discovery an die Hand, die Ihre Organisation intern durchführen kann. Für eine tiefere Bewertung mit TCO-Modellierung und Architekturdesign siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** oder den **[VMware-Migrations-Hub](/de/migration/vmware/)**.
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und bietet die Ænix Platform an — eine schlüsselfertige kommerzielle Cloud-in-a-Box.*
+## Verwandte Ressourcen
+
+- **[VMware-Migration](/de/migration/vmware/)** — wie die Migration selbst abläuft
+- **[VMware-Alternative](/de/alternativen/vmware-alternative/)** — unsere Empfehlung
+- **[Cozystack vs. VMware](/de/vergleichen/cozystack-vs-vmware/)** — der direkte Vergleich
+- **[Die besten VMware-Alternativen 2026](/de/alternativen/vmware-alternativen/)** — Marktvergleich
+- **[Cloud Repatriation](/de/loesungen/cloud-repatriation/)** — wenn der VMware-Ausstieg mit dem Ausstieg aus dem Hyperscaler zusammenfällt
+
+---
+
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*

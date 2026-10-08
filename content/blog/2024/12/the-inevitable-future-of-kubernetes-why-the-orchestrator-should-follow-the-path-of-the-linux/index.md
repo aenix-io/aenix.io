@@ -1,12 +1,14 @@
 ---
-title: "The Inevitable Future of Kubernetes: Why the Orchestrator Should Follow the Path of the Linux…"
-description: "At KubeCon + CloudNativeCon in Chicago on November 9, Tim Hockin, one of the early developers of Kubernetes, delivered a talk (here’s a…"
+title: "The Inevitable Future of Kubernetes: Why the Orchestrator Should Follow the Path of the Linux Kernel"
+seo_title: "Kubernetes should follow the path of the Linux kernel"
+description: "Tim Hockin asked for a complexity budget for Kubernetes. Timur Tukaev argues it should become like the Linux kernel, with platforms as distributions."
 date: "2024-12-27"
 author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Talos"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*25rAkaFo6sux9O2L"
+hreflang_de: "/de/blog/2024/12/zukunft-kubernetes-linux-kernel/"
+cover_image: "/img/blog/medium/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux/cover.jpg"
 source_url: "https://medium.com/@tym83/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux-367f49916712"
 quiz:
   title: "Test yourself: Kubernetes-as-the-Linux-kernel argument"
@@ -43,9 +45,7 @@ quiz:
       explanation: "Under the current framing, infrastructure depends on engineers who fully understand Kubernetes — a scarce specialty. Few people understand the Linux kernel deeply, but the industry doesn't expect it because distributions abstract that away. The same shift is needed for Kubernetes."
 ---
 
----
 
-### The Inevitable Future of Kubernetes: Why the Orchestrator Should Follow the Path of the Linux Kernel
 
 At KubeCon + CloudNativeCon in Chicago on November 9, Tim Hockin, one of the early developers of Kubernetes, [delivered a talk](https://www.youtube.com/watch?v=WqeShpaztZY) (here’s a [summary](https://thenewstack.io/tim-hockin-kubernetes-needs-a-complexity-budget/)) highlighting one of the orchestrator’s major challenges: the relentless growth in complexity. His main point was straightforward: Kubernetes is being applied to an ever-widening range of specialized use cases, such as machine learning.
 
@@ -56,7 +56,7 @@ As a result, user demands on K8s keep increasing, developers strive to keep up, 
 
 To address this, Tim proposed introducing a “complexity budget.” This approach would allocate a fixed “budget” for the project’s complexity, where each new feature in a release would consume part of that budget. In his view, this could help control the project’s complexity.
 
-![image](https://cdn-images-1.medium.com/max/800/0*25rAkaFo6sux9O2L)
+![Kubernetes as the kernel, platforms as distributions](/img/blog/medium/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux/cover.jpg)
 
 While this idea is reasonable, I believe the broader ecosystem — including Kubernetes developers, businesses leveraging it, and engineers deploying it — needs to rethink their expectations of an orchestrator in the coming years.
 

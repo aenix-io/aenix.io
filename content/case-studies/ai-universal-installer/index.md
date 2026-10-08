@@ -1,13 +1,14 @@
 ---
 title: "Cozystack as a universal installer: an AI platform shipped into the customer's environment"
-description: "A telecom integrator built a corporate AI platform on Cozystack — GPU, RAG on Qdrant, NVIDIA Dynamo inference, geo-distributed GPU — and shipped the same distribution into a state-owned end customer."
+seo_title: "An AI platform shipped as a Cozystack installer"
+description: "A telecom integrator built a corporate AI platform on Cozystack (GPU, RAG on Qdrant, NVIDIA Dynamo inference) and shipped the same distribution to its customer."
 hero_subtitle: "A corporate AI platform shipped into the customer's environment"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/ai-universal-installer/"
-images: ["img/og/og-case-ai-universal-installer.png"]
+images: ["img/og/og-case-ai-universal-installer.jpg"]
 related_pages:
   - /solutions/sovereign-ai/
   - /products/ai-platform/
@@ -29,6 +30,11 @@ related_pages:
   <div class="cs-stat"><div class="cs-stat__num">141 / 141</div><div class="cs-stat__label">managed releases in Ready state on the production cluster</div></div>
   <div class="cs-stat"><div class="cs-stat__num">12–20 ms</div><div class="cs-stat__label">between data centres — geo-GPU joined by an encrypted mesh</div></div>
   <div class="cs-stat"><div class="cs-stat__num">1 → 2</div><div class="cs-stat__label">one distribution, two delivery models (SaaS + in-customer boundary)</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
 </div>
 
 ## About the project
@@ -57,7 +63,7 @@ Cozystack here is not a "box" but a framework that already ships storage, networ
 
 We proposed a phased rollout: first the base infrastructure and catalog, then distributed training and model serving, then full MLOps and a data lake.
 
-{{< placeholder-image width="1200" height="640" label="Architecture: one distribution, platform layers and geo-GPU — hardware → Cozystack framework → multi-tenancy → client's products, with a geo-distributed GPU cluster joined over an encrypted mesh" >}}
+{{< case-diagram src="/img/case-studies/ai-universal-installer-en.webp" alt="Architecture: one distribution, platform layers and geo-GPU — hardware → Cozystack framework → multi-tenancy → client's products, with a geo-distributed GPU cluster joined over an encrypted mesh" >}}
 
 ## Execution: new requirements and how we handled them
 
@@ -93,8 +99,17 @@ Worth noting the engineering depth of support: some of the needed fixes (bucket-
   <div class="card"><div class="card-body"><h3 class="card-title">Speed and customization</h3><p class="card-description">Non-standard requirements closed in "a day to a week", with some improvements going upstream into Cozystack.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the integrator and end customer are described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
+*This case study is published in anonymized form: the integrator and end customer are described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

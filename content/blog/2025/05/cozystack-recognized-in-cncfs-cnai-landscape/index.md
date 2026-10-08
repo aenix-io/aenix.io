@@ -1,22 +1,21 @@
 ---
-title: "🚀 Cozystack Recognized in CNCF’s CNAI Landscape!"
-description: "We’re thrilled to share that Cozystack has been added to the Cloud Native AI (CNAI) Landscape by the Cloud Native Computing Foundation…"
+title: "Cozystack Recognized in the CNCF Cloud Native AI Landscape"
+seo_title: "Cozystack joins the CNCF Cloud Native AI Landscape"
+description: "The Cloud Native Computing Foundation has added Cozystack to its Cloud Native AI (CNAI) Landscape as a platform for running AI workloads on Kubernetes."
 date: "2025-05-21"
 author: "Timur Tukaev"
 type: "news"
-topics: ["Kubernetes", "Cozystack", "AI/ML", "GPU", "CNCF", "Platform Engineering"]
+topics: ["Kubernetes", "Cozystack", "AI and ML", "GPU", "CNCF", "Platform Engineering"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*JqeVSHv3Vzld4DhSKOA5GQ.png"
+cover_image: "/img/blog/medium/cozystack-recognized-in-cncfs-cnai-landscape/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-recognized-in-cncfs-cnai-landscape-331f892b9639"
 ---
 
----
 
-### 🚀 Cozystack Recognized in CNCF’s CNAI Landscape!
 
 We’re thrilled to share that Cozystack has been added to the Cloud Native AI (CNAI) Landscape by the Cloud Native Computing Foundation (CNCF)! This is a significant validation of our work in bridging cloud-native infrastructure with AI workloads.
 
-![image](https://cdn-images-1.medium.com/max/800/1*JqeVSHv3Vzld4DhSKOA5GQ.png)
+![Cozystack in the CNCF Cloud Native AI Landscape](/img/blog/medium/cozystack-recognized-in-cncfs-cnai-landscape/cover.png)
 
 Why This Matters:
 

@@ -1,0 +1,20 @@
+{{- /* Width and height of an image used on a page: a dict {w, h}, or empty.
+       Context: dict "page" .Page "src" "<src as written>".
+       Looks in the page bundle first, then static/, then assets/. Remote and
+       SVG images have no intrinsic size here and give an empty dict. */ -}}
+{{- $src := .src | default "" -}}
+{{- $res := dict -}}
+{{- if and $src (not (hasPrefix $src "http")) (not (strings.HasSuffix (lower $src) ".svg")) -}}
+  {{- $r := .page.Resources.GetMatch (strings.TrimPrefix "./" $src) -}}
+  {{- if and $r (eq $r.ResourceType "image") -}}
+    {{- $res = dict "w" $r.Width "h" $r.Height -}}
+  {{- else -}}
+    {{- $p := strings.TrimPrefix "/" (index (split $src "?") 0) -}}
+    {{- range slice (printf "static/%s" $p) (printf "assets/%s" $p) -}}
+      {{- if and (not $res) (fileExists .) -}}
+        {{- with imageConfig . }}{{ $res = dict "w" .Width "h" .Height }}{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $res -}}

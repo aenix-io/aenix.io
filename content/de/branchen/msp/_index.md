@@ -1,96 +1,79 @@
 ---
-title: "Cloud-Plattform für MSPs — gebrandeter Cloud-Produkt für Managed Service Provider"
-description: "Managed Service Provider im Jahr 2026 werden von Enterprise-Kunden nach Cloud-Fähigkeiten gefragt, die MSP-Managed-Service-Beziehung mit..."
-related_pages: ["/de/dienstleistungen/white-label-cloud", "/de/produkte/cozystack/"]
+title: "Cloud-Plattform für MSPs — Cloud-Produkt unter eigener Marke für Managed Service Provider"
+seo_title: "White-Label-Cloud-Plattform für MSPs"
+description: "White-Label-Cloud für MSPs, bei der die verschachtelte Mandantenfähigkeit das Produkt ist: Ihre Marke, Ihr Billing, Ihre Kunden, Marge ohne Erosion."
+related_pages: ["/de/dienstleistungen/white-label-cloud/", "/de/dienstleistungen/public-cloud-builder/", "/de/produkte/public-cloud-platform/", "/de/partner/", "/de/produkte/cozystack/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/msp/
 direct_answer: |
-  **Eine Cloud-Plattform für MSPs ist eine white-label-fähige Cloud-Infrastruktur, mit der Managed Service Provider unter eigener Marke Hyperscaler-ähnliche Dienste an ihre Kunden verkaufen. Zielgruppe sind Tier-2/Tier-3-MSPs, Systemintegratoren, Spezial-MSPs in regulierten Branchen und Reseller-Channel-Partner, die Cloud-Fähigkeiten ohne Bindung an einen Hyperscaler aufbauen wollen. Aenix liefert die produktisierte Ænix Platform (Public Cloud Platform) auf Basis von Cozystack: KubeVirt für VMs und Container über eine Kubernetes-API, Cilium-Networking (eBPF) und LINSTOR/DRBD-Storage. Sie umfasst vollständig white-label-fähiges Cozystack Dashboard, ein Multi-Tier-Reseller-Modell (Aenix zu MSP zu MSP-Kunden), WHMCS-integriertes Billing und ein Partner-Programm mit bis zu 40 Prozent Marge auf weiterverkaufte Engagements.**
+  **Mit einer Cloud-Plattform für MSPs liefert ein Managed Service Provider Cloud-Funktionen auf Hyperscaler-Niveau unter eigener Marke, statt einen Hyperscaler weiterzuverkaufen. Ænix baut sie auf Cozystack auf, einem Open-Source-Projekt der CNCF (Sandbox), das Ænix initiiert hat und gemeinsam mit anderen pflegt. Cozystack betreibt virtuelle Maschinen (über KubeVirt) und Container auf einer Kubernetes-API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und einer verschachtelten Tenant-CRD, die die Reseller-Hierarchie Provider → MSP → Kunde direkt abbildet. MSPs erhalten ein Cozystack Dashboard in eigenem Branding (White-Labeling ist eine Open-Source-Funktion von Cozystack), Billing über die proprietäre WHMCS-Integration von Ænix (Teil der Ænix Public Cloud Platform) und einen kuratierten Service-Katalog. Da Cozystack unter Apache 2.0 steht und keine Lizenzkosten pro CPU oder Core kennt, entgehen MSPs der Lizenzökonomie von Hyperscalern und VMware und behalten volle Kontrolle über Marge, Datenresidenz und Kundenbeziehungen.**
 quick_facts:
   - label: "Was es ist"
-    value: "White-Label-Cloud-Plattform, mit der MSPs unter eigener Marke Cloud-Dienste an ihre Kunden verkaufen"
+    value: "Eine mandantenfähige White-Label-Cloud-Plattform, mit der MSPs Cloud-Dienste unter eigener Marke auf Open-Source-Cozystack verkaufen, statt einen Hyperscaler weiterzuverkaufen."
+  - label: "Für wen"
+    value: "Mittelgroße und regionale MSPs, Systemintegratoren, spezialisierte MSPs in regulierten Branchen und Reseller-Partner."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Zielgruppe"
-    value: "Tier-2/Tier-3-MSPs, Systemintegratoren, Spezial-MSPs in regulierten Branchen, Reseller-Channel-Partner"
-  - label: "Schlüsselfunktionen"
-    value: "White-Label-Cozystack Dashboard, Multi-Tier-Reseller-Modell, WHMCS-integriertes Billing, Operations-Workflow"
-  - label: "Technologie"
-    value: "Cozystack: KubeVirt (VMs und Container über eine Kubernetes-API), Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Tenant-CRD-Mandantenfähigkeit"
-  - label: "Engagement"
-    value: "Ænix Public Cloud Platform ab Support-Tier ca. 1.250 $/Monat (10 Nodes); Partner-Programm bis 40 Prozent Marge"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Mehrstufiges Modell"
+    value: "Die verschachtelte Tenant-CRD bildet Provider-Tenant → MSP-Tenant → Tenant des MSP-Kunden ab, mit Cozystack Dashboard in eigenem Branding und Billing über die WHMCS-Integration (Ænix Public Cloud Platform)."
+  - label: "Produktisiertes Angebot"
+    value: "Passt zur Ænix Public Cloud Platform; Support-Stufen ab 1.250 USD pro 10 Nodes und Monat (Basic), Support für die White-Label-Konfiguration ab Standard (3.000 USD); bis zu 40 % Partnermarge auf Ænix-Plattform-Abonnements und Support."
 faq:
-  - q: "Was ist eine White-Label-Cloud-Plattform für MSPs?"
-    a: "Eine Infrastruktur, mit der ein Managed Service Provider unter eigener Marke Cloud-Dienste an seine Kunden verkauft. Die Ænix Public Cloud Platform auf Basis von Cozystack bietet ein vollständig white-label-fähiges Cozystack Dashboard, sodass das Aenix-Branding für Endkunden nicht sichtbar ist."
-  - q: "Für welche MSPs ist die Plattform gedacht?"
-    a: "Für Tier-2- und Tier-3-MSPs, Systemintegratoren, Spezial-MSPs in regulierten Branchen sowie Reseller-Channel-Partner, die Hyperscaler-ähnliche Cloud-Fähigkeiten unter eigener Marke aufbauen wollen, ohne sich an einen einzelnen Hyperscaler zu binden."
-  - q: "Unterstützt die Plattform ein Reseller-Modell?"
-    a: "Ja. Das Multi-Tier-Reseller-Modell bildet die Kette Aenix zu MSP zu MSP-Kunden ab. Über das Partner-Programm sind bis zu 40 Prozent Marge auf weiterverkaufte Engagements möglich."
-  - q: "Wie funktioniert das Billing?"
-    a: "Die Public Cloud Platform ist mit WHMCS integriert, sodass MSPs Abrechnung und Kundenverwaltung über ein etabliertes Billing-System abwickeln können. Der Operations-Workflow ist Teil der Plattform."
-  - q: "Welche Technologie steckt hinter der Plattform?"
-    a: "Cozystack, ein CNCF-Sandbox-Projekt unter Apache 2.0. Es nutzt KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und eine Tenant-CRD für Mandantenfähigkeit. Keine CPU-/Core-basierte Lizenzierung."
-  - q: "Was kostet der Einstieg?"
-    a: "Die Ænix Public Cloud Platform startet bei einem Support-Tier von rund 1.250 $/Monat für 10 Nodes (Basic). Weitere Stufen: Standard 3.000 $, Plus 5.500 $ und Enterprise nach Vereinbarung."
+  - q: "Was ist eine Cloud-Plattform für MSPs?"
+    a: "Eine Cloud-Plattform, die ein MSP unter eigener Marke betreibt, um seinen Kunden Compute, Storage und Managed Services zu liefern. Ænix setzt sie auf Cozystack um, sodass Kundenbeziehung, Billing und Marge beim MSP bleiben, statt einen Hyperscaler weiterzuverkaufen."
+  - q: "Wie funktioniert White-Labeling mit Cozystack?"
+    a: "White-Labeling ist eine Open-Source-Funktion von Cozystack: Die Self-Service-Konsole Cozystack Dashboard lässt sich anpassen — Farben, Logo und Domain —, sodass Kunden die Marke des MSP sehen. Support von Ænix für die White-Label-Konfiguration beginnt mit der Stufe Standard. Die verschachtelte Tenant-CRD liefert eine mehrstufige Hierarchie vom obersten Tenant bis zum Tenant jedes MSP-Kunden."
+  - q: "Gibt es Lizenzkosten pro Core oder CPU?"
+    a: "Nein. Cozystack ist Open Source unter Apache 2.0, es gibt also keine Lizenzkosten pro CPU oder Core. MSPs zahlen für ein Ænix-Abonnement (Support-Stufen) und Services statt für kapazitätsabhängige Lizenzen — das schützt die Marge, wenn die Workloads der Kunden wachsen."
+  - q: "Wie wird das Billing für MSPs eingebunden?"
+    a: "Die Ænix Public Cloud Platform enthält ein proprietäres WHMCS-Integrationsmodul (es ist nicht Teil von Open-Source-Cozystack), sodass die Abrechnung über das bestehende Kundenverwaltungssystem des MSP läuft. Das unterstützt das mehrstufige Reseller-Modell, in dem der MSP seine Kunden direkt abrechnet."
+  - q: "Können MSPs regulierte Branchen bedienen?"
+    a: "Ja. Da die Plattform auf Infrastruktur unter Kontrolle des MSP selbst gehostet wird, unterstützt sie eine Positionierung über Datensouveränität und Datenresidenz für Kunden aus Finanzwesen, Gesundheitswesen und Verwaltung. Der MSP entscheidet, wo Daten liegen und welche Services er anbietet."
+  - q: "Was kostet eine Zusammenarbeit?"
+    a: "Die Support-Stufen für Abonnements der Ænix Public Cloud Platform sind Basic (1.250 USD), Standard (3.000 USD) und Plus (5.500 USD) pro 10 Nodes und Monat bei jährlicher Abrechnung; Enterprise wird individuell angeboten. Support für die White-Label-Konfiguration beginnt mit Standard. Die Ænix Public Cloud Platform ergänzt das Reseller-Modell und das Billing (WHMCS-Integration); Partner erzielen bis zu 40 % Marge auf Ænix-Plattform-Abonnements und Support. Siehe Preisseite."
 ---
 
-**Managed Service Provider (MSPs) werden 2026 von Enterprise-Kunden nach Cloud-Fähigkeiten gefragt, die die MSP-Managed-Service-Beziehung mit Fähigkeiten der Hyperscaler-Klasse kombinieren. Dies von Grund auf zu bauen ist nicht trivial. Eine Cozystack-basierte Plattform mit White-Label-Branding ist der realistische Pfad — und das, was Ænix liefert.**
+**Managed Service Provider (MSPs) werden 2026 von Enterprise-Kunden nach Cloud-Funktionen gefragt, die die Betreuung eines MSP mit Fähigkeiten auf Hyperscaler-Niveau verbinden. Eine Plattform auf Basis von Cozystack mit White-Label-Branding ist der realistische Weg — und genau das liefert Ænix.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — vollständig white-label-fähiges Cozystack Dashboard, Multi-Tier-Reseller-Modell, WHMCS-integriertes Billing, ab 1.250 USD/Monat Support-Tier. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — Cozystack Dashboard mit White-Label-Fähigkeit, mehrstufiges Reseller-Modell, Billing über die WHMCS-Integration. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat; Support für die White-Label-Konfiguration ab Standard (3.000 USD). Im **[Partnerprogramm](/de/partner/)** erzielen Sie bis zu 40 % Marge auf Ænix-Plattform-Abonnements und Support.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
   <a class="cta-secondary" href="/de/blog/2026/05/msp-cloud-plattform-modernisierung/">MSP-Cloud-Modernisierung →</a>
 </div>
 
 ---
 
-## Wer in der Zielgruppe ist
+## Für wen das gedacht ist
 
-- Tier-2- / Tier-3-MSPs, die Cloud als Teil breiterer Managed Services anbieten
-- Systemintegratoren, die in Managed Cloud expandieren
-- Spezial-MSPs in regulierten Branchen (Finanzen, Gesundheitswesen, Behörden)
-- Reseller-Channel-Partner
-- IT-Beratungen, die Cloud ins Portfolio aufnehmen
-
----
-
-## Wofür MSPs zu uns kommen
-
-- **White-Label-Cloud-Plattform** — Ihre Marke, Ihre Kunden
-- **Multi-Tier-Reseller-Modell** — Ænix-Tenant → MSP-Tenant → MSP-Kunden-Tenant
-- **WHMCS-integriertes Billing** — produktionsreif, zwei Modi
-- **Operations-Workflow** — Kundensupport, SLA-Management, Observability
-- **Souveränitäts-Positionierung** — für MSPs, die regulierte Branchen bedienen
+Mittelgroße und regionale MSPs, Systemintegratoren auf dem Weg in die Managed Cloud, Reseller-Partner und spezialisierte MSPs in regulierten Branchen. Gemeinsam ist ihnen eine Kundenbeziehung, die mehr wert ist als die Marge, die ihnen ein Hyperscaler beim Weiterverkauf lässt.
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Ænix-Tenant</b></div>
-<div class="diagram__conn">verschachtelt</div>
-<div class="diagram__node"><b>MSP-Tenant</b><div class="diagram__chips"><span>Gebrandetes Cozystack Dashboard</span><span>WHMCS-integriertes Billing</span></div></div>
-<div class="diagram__conn">rechnet ab</div>
-<div class="diagram__node"><b>MSP-Kunden-Tenant</b></div>
+<div class="diagram__node diagram__node--brand"><b>Provider-Tenant</b></div>
+<div class="diagram__conn">enthält</div>
+<div class="diagram__node"><b>MSP-Tenant</b><div class="diagram__chips"><span>Cozystack Dashboard in eigenem Branding</span><span>WHMCS-Billing</span></div></div>
+<div class="diagram__conn">rechnet direkt ab</div>
+<div class="diagram__node"><b>Tenant des MSP-Kunden</b></div>
 </div>
 </div>
 
-Für das vollständige Engagement siehe **[White-Label-Cloud-Services](/de/dienstleistungen/white-label-cloud/)**.
+Die vollständige Leistung finden Sie unter **[White-Label-Cloud-Services](/de/dienstleistungen/white-label-cloud/)**.
 
 ---
 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Warum Cozystack zu MSPs passt
+## Warum das Mandantenmodell das entscheidende Argument ist
 
-- **Nested Tenant CRD** — mehrstufige Kunden-Hierarchie
-- **Gebrandetes Cozystack Dashboard** — Farben, Logo, Domain anpassbar
-- **WHMCS nativ** — Billing läuft über das bestehende Kundenmanagement des MSP
-- **Open-Source-Plattform** — MSP ist nicht in Vendor-Lizenzierungs-Ökonomie eingesperrt
-- **Service-Katalog-Flexibilität** — MSP kuratiert, welche Services exponiert werden
+Ein MSP, der einen Hyperscaler weiterverkauft, besitzt die Rechnung und sonst nichts: Kundenkonto, Quotas und Supportweg liegen in einer Konsole, die der MSP nicht kontrolliert, und die Marge ist das, was die Partnerstufe zulässt.
+
+Die Tenant-CRD von Cozystack lässt sich verschachteln, die Hierarchie ist also das Produkt. Ein oberster Tenant enthält den MSP-Tenant, und dieser enthält je einen Tenant pro MSP-Kunde — jeweils mit eigenen Quotas, eigener Isolation, eigenem Observability-Bereich und eigenem Audit-Trail. Das Cozystack Dashboard wird pro Ebene gebrandet — Farben, Logo, Domain —, und die WHMCS-Integration von Ænix rechnet aus dem bestehenden Kundenverwaltungssystem des MSP ab, sodass der Kunde nie einen zweiten Anbieter sieht. Weil die Plattform unter Apache 2.0 steht und keine Gebühr pro CPU kennt, schrumpft die Marge nicht, wenn die Workloads der Kunden wachsen, und der MSP entscheidet selbst, welche Services aus dem Katalog er anbietet, statt die Auswahl eines anderen zu übernehmen.
 
 </div>
 </div>
@@ -98,12 +81,13 @@ Für das vollständige Engagement siehe **[White-Label-Cloud-Services](/de/diens
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-- **[White-Label-Cloud-Services](/de/dienstleistungen/white-label-cloud/)** — Engagement
+- **[White-Label-Cloud-Services](/de/dienstleistungen/white-label-cloud/)** — Leistungsumfang
 - **[Artikel: MSP-Cloud-Modernisierung](/de/blog/2026/05/msp-cloud-plattform-modernisierung/)**
+- **[Leitfaden für Leiter Cloud](/de/fuer/leiter-cloud/)** — für die Führungskraft, die das Cloud-Produkt verantwortet
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

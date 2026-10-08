@@ -1,67 +1,69 @@
 ---
-title: "Private Cloud Consulting — Engineers, die in Produktion bauen, nicht nur Slide-Decks"
-description: "Private Cloud ist 2026 zurück — getrieben durch Broadcom-induzierten VMware-Ausstieg, Souveränitätsmandate, KI-Workload-Ökonomie und FinOps-Druck auf..."
+title: "Private Cloud Consulting — Engineers, die sie entwerfen, aufbauen und in Produktion betreiben"
+seo_title: "Private Cloud Consulting: Design, Aufbau, Betrieb"
+description: "Private Cloud Consulting für VMware-Ausstieg, Souveränitätsvorgaben und Repatriierung: Assessment über 14 oder 28 Tage, dann 3–12 Monate Aufbau."
 related_pages:
-  - /de/loesungen/data-sovereignty
-  - /de/loesungen/cloud-repatriation
-  - /de/dienstleistungen/platform-engineering
-  - /de/dienstleistungen/platform-readiness-assessment
+  - /de/loesungen/data-sovereignty/
+  - /de/loesungen/cloud-repatriation/
+  - /de/dienstleistungen/platform-engineering/
+  - /de/dienstleistungen/platform-readiness-assessment/
   - /de/produkte/private-cloud-platform/
   - /de/produkte/public-cloud-platform/
-  - /de/produkte/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/private-cloud-consulting/
 direct_answer: |
-  **Private Cloud Consulting von Aenix ist eine Engineering-geführte Beratung für Organisationen, die eine private, hybride oder souveräne Cloud planen und in Produktion bauen — nicht nur in Slide-Decks. Sie richtet sich an Banken und Versicherer unter DORA-Druck, öffentliche Verwaltung mit Souveränitätsmandaten, Telcos, Hosting-Anbieter und Unternehmen mit VMware-Ausstieg- oder Repatriation-Bedarf. Aenix ist das Team hinter Cozystack, einem Open-Source CNCF-Projekt unter Apache-2.0-Lizenz, das VMs und Container über eine Kubernetes-API (KubeVirt) vereint. Die Beratung deckt Architektur-Review, VMware-Ausstieg-Strategie, Souveränitäts-Anforderungen (DORA/NIS2), TCO-Modellierung, Kompetenz-Bewertung und eine Phase-2-Implementations-Roadmap ab.**
+  **Private Cloud Consulting ist eine Beratungs- und Umsetzungsleistung, bei der erfahrene Platform Engineers eine Private Cloud auf vom Kunden kontrollierter Infrastruktur entwerfen, aufbauen, dorthin migrieren und sie betreiben. Ænix erbringt sie als das Team hinter Cozystack, einem Open-Source-CNCF-Projekt, das virtuelle Maschinen (über KubeVirt) und Container auf einer Kubernetes-API betreibt — mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Multi-Tenancy über das Tenant-CRD. Die Leistung passt zu Organisationen, die VMware nach den Änderungen durch Broadcom verlassen, Souveränitätsvorgaben erfüllen müssen, Workloads von Hyperscalern zurückholen oder private Infrastruktur für KI-Workloads dimensionieren. Ænix deckt Architekturdesign, Multi-Tenancy und Betriebsmodell, Migration und Übergabe in den Betrieb ab und empfiehlt Plattformen nach technischer Eignung statt nach Partnerprovisionen — ohne Lizenzkosten pro CPU und ohne Bindung an die Roadmap eines Herstellers.**
 
 quick_facts:
   - label: "Was es ist"
-    value: "Engineering-geführte Private-Cloud-Beratung — Architektur, VMware-Ausstieg, Souveränität, TCO und Implementations-Roadmap, basierend auf Cozystack in Produktion"
+    value: "Beratungs- und Umsetzungsleistung, bei der Ænix-Engineers eine vom Kunden kontrollierte Private Cloud entwerfen, aufbauen, dorthin migrieren und betreiben."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
-  - label: "Zielgruppe"
-    value: "Banken/Versicherer (DORA), öffentliche Verwaltung (Souveränität), Telcos, Hosting-Anbieter, Unternehmen mit Repatriation-Druck"
-  - label: "Engagement-Format"
-    value: "Discovery-Call (30 min, kostenlos), Architektur-Workshop (1-2 Tage), Platform Readiness Assessment** (14 oder 28 Tage, Festpreis vorab vereinbart), Phase-2 Implementation (3-18 Monate)"
-  - label: "Technologie-Basis"
-    value: "Cozystack: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
-  - label: "Produkt"
-    value: "Ænix Platform in drei Plattformen; passend Private Cloud Platform (regulierte Unternehmen) und Public Cloud Platform (große Betreiber)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Organisationen, die VMware nach Broadcom verlassen, Souveränitätsvorgaben unterliegen, Workloads von Hyperscalern zurückholen, eine Service-Provider-Cloud aufbauen oder private KI-Infrastruktur dimensionieren."
+  - label: "Form der Zusammenarbeit"
+    value: "Platform Readiness Assessment (14 oder 28 Tage), Umsetzung (3–12 Monate) oder Managed Private Cloud; vorab ein kostenloses 30-minütiges Discovery-Gespräch."
+  - label: "Plattformgrundlage"
+    value: "Cozystack: KubeVirt-VMs und Container auf einer Kubernetes-API, Cilium-eBPF-Networking, LINSTOR/DRBD-Storage, Multi-Tenancy über das Tenant-CRD."
+  - label: "Herstellerposition"
+    value: "Keine Bindung an Hyperscaler; OpenStack, OpenShift und Herstellerplattformen werden unterstützt, wenn sie besser passen als Cozystack."
 
 faq:
-  - q: "Was umfasst ein Private Cloud Consulting bei Aenix?"
-    a: "Es umfasst Architektur-Review und Ziel-Design (privat, hybrid, souverän), VMware-Ausstieg-Strategie nach Broadcom, Souveräne-Cloud-Anforderungen (DORA/NIS2/nationale Mandate), TCO-Modellierung, Kompetenz- und Personal-Bewertung, Pilot-Scope-Definition und eine Phase-2-Implementations-Roadmap."
-  - q: "Für wen ist diese Beratung gedacht?"
-    a: "Für Banken und Versicherer mit DORA-Druck, Regierungen und öffentliche Verwaltung mit Souveränitätsmandaten, Telcos, die Cloud-Produkte starten, Unternehmen mit Hyperscaler-Repatriation-Druck sowie Hosting-Anbieter, die zu Cloud-Providern modernisieren."
-  - q: "Auf welcher Technologie basiert die empfohlene Plattform?"
-    a: "Auf Cozystack, einem Open-Source CNCF-Projekt unter Apache 2.0. Es vereint VMs und Container über eine Kubernetes-API (KubeVirt), nutzt Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und ein Tenant-CRD für Mandantenfähigkeit."
-  - q: "Was kostet ein Engagement und wie läuft es ab?"
-    a: "Der Einstieg ist ein kostenloser Discovery-Call (30 min), gefolgt von einem Architektur-Workshop (1-2 Tage). Das Platform Readiness Assessment dauert 14 oder 28 Tage zu einem vorab vereinbarten Festpreis. Eine Phase-2-Implementation läuft je nach Scope 3-18 Monate."
-  - q: "Hilft Aenix beim VMware-Ausstieg nach der Broadcom-Übernahme?"
-    a: "Ja. Die VMware-Ausstieg-Strategie ist ein Kernbestandteil. Da KubeVirt VMs und Container auf einer Kubernetes-API betreibt, lassen sich bestehende VM-Workloads auf eine Apache-2.0-lizenzierte Plattform ohne CPU-/Core-basierte Lizenzierung migrieren."
-  - q: "Vermeidet die Plattform Vendor-Lock-in und Lizenzkosten?"
-    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Als CNCF-Projekt mit offenem Code vermeidet es proprietären Lock-in. Aenix bietet zusätzlich die produktisierte Ænix Platform mit kommerziellem Support in drei Plattformen an."
+  - q: "Müssen wir Cozystack für die Private Cloud einsetzen?"
+    a: "Nein. Cozystack ist das Open-Source-Fundament, das Ænix für Multi-Tenant- und Souveränitätsszenarien empfiehlt, aber die Projekte erweitern auch OpenStack, OpenShift und Herstellerplattformen, wenn diese technisch besser passen. Die Empfehlungen folgen der technischen Eignung, nicht Partnerprovisionen."
+  - q: "Worin unterscheidet sich Private Cloud Consulting von einer Beratung zur VMware-Migration?"
+    a: "Die VMware-Migration ist ein möglicher Weg in die Private Cloud, wenn das Ziel privat ist. Ein Private-Cloud-Projekt deckt alle Wege zu einer vom Kunden kontrollierten Plattform ab: VMware-Ausstieg, Neuaufbau einer OpenStack-Umgebung, Repatriierung von Hyperscalern und Greenfield-Aufbau."
+  - q: "Was umfasst ein Projekt?"
+    a: "Vier Bereiche: Architekturdesign (Compute über KubeVirt, Storage mit LINSTOR (DRBD), Cilium-Networking, Identity, Observability, Backup/DR); Multi-Tenancy und Betriebsmodell mit Tenant-CRD, Quotas, RBAC und Audit; Migration und Integration; sowie die Übergabe in den Betrieb mit Runbooks und Wissenstransfer an Ihr Platform-Team."
+  - q: "Wie lange dauert es und wie ist es aufgebaut?"
+    a: "Am Anfang steht ein kostenloses 30-minütiges Discovery-Gespräch, danach ein Platform Readiness Assessment zum Festpreis über 14 oder 28 Tage, das eine Zielarchitektur und ein Kapazitätsmodell liefert. Optional folgt ein Umsetzungsprojekt über 3–12 Monate, in dem Ænix-Engineers in Ihrem Team arbeiten, und danach optional der Managed-Betrieb."
+  - q: "Ist die Private-Cloud-Plattform an einen Hersteller gebunden oder pro CPU lizenziert?"
+    a: "Nein. Das empfohlene Fundament, Cozystack, ist Open Source unter Apache 2.0 ohne Lizenzkosten pro CPU oder Core; die Plattform gehört also Ihnen, ohne Bindung an die Roadmap eines Herstellers. Ænix baut darauf drei kommerzielle Plattformen und verkauft Dienstleistungen, das zugrunde liegende Projekt bleibt aber offen."
+  - q: "Private Cloud oder Hybrid Cloud — was sollten wir wählen?"
+    a: "Die meisten modernen Installationen werden hybrid: ausgewählte Workloads laufen auf privater Infrastruktur, andere bleiben in der Public Cloud. Eine reine Private Cloud ist eine bewusste Entscheidung aus Souveränitäts- oder Kostengründen. Im Projekt prüfen wir, welches Modell zu Ihren Workloads, Vorgaben und Ihrem Budget passt."
 ---
 
 <!-- BLOCK 1 -->
 
-**Private Cloud ist zurück — getrieben durch Broadcom-induzierten VMware-Ausstieg, Souveränitätsmandate, KI-Workload-Ökonomie und FinOps-Druck auf Hyperscaler-Rechnungen. Der Broadcom Private Cloud Outlook 2025 fand heraus, dass 53% der Organisationen jetzt Private Cloud für neue Workloads priorisieren und 69% Repatriation evaluieren. Die Architektur-Entscheidungen sind größer als die Wahl eines Vendors — sie formen den Betrieb für das nächste Jahrzehnt.**
 
-Ænix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Kubernetes-nativen Private-Cloud-Plattform, die wir in Produktion mit Service Providern, Banken und regulierten Unternehmen betreiben. Unsere Private-Cloud-Consulting-Engagements bringen dieselben Engineers in Ihr Engagement.
+**Die Private Cloud ist zurück — getrieben durch den VMware-Ausstieg nach der Übernahme durch Broadcom, Souveränitätsvorgaben, die Wirtschaftlichkeit von KI-Workloads und FinOps-Druck auf Hyperscaler-Rechnungen. Laut dem Broadcom Private Cloud Outlook 2025 priorisieren 53 % der Organisationen inzwischen die Private Cloud für neue Workloads, und 69 % prüfen eine Repatriierung. Die Architekturentscheidungen reichen weiter als die Wahl eines Herstellers — sie prägen den Betrieb für das nächste Jahrzehnt.**
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die ihre eigene Public-Cloud-Class-Plattform betreiben.
+Ænix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Kubernetes-nativen Private-Cloud-Plattform, die wir mit Service Providern, Banken und regulierten Unternehmen in Produktion betreiben. In unseren Private-Cloud-Consulting-Projekten arbeiten dieselben Engineers für Sie.
+
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die eine private oder hybride souveräne Cloud aufbauen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die eine eigene Plattform auf Public-Cloud-Niveau betreiben.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/private-cloud-architecture-2026/">Architektur-Leitfaden lesen (englisch) →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/private-cloud-architektur-2026/">Leitfaden lesen →</a>
 </div>
 
 <div class="trust-badges">
-Produktions-Private-Cloud-Erfahrung · Open-Source-Foundation · Kein Hyperscaler-Bias · EU + Zentralasien</div>
+Erfahrung mit Private Clouds in Produktion · Open-Source-Fundament · Keine Bindung an Hyperscaler · EU + Zentralasien</div>
 
 <!-- /BLOCK 1 -->
 
@@ -69,18 +71,18 @@ Produktions-Private-Cloud-Erfahrung · Open-Source-Foundation · Kein Hyperscale
 
 <!-- BLOCK 2: WHO -->
 
-## Wer Private-Cloud-Consulting braucht
+## Wer Private Cloud Consulting braucht
 
-Das Engagement passt, wenn:
+Das Projekt passt, wenn:
 
-- **VMware-Ausstieg durch Broadcom ausgelöst** — Re-Architektur auf einer neuen Foundation statt VCF-Subscription
-- **Souveränitäts-/Regulator-Druck** — Daten müssen in kundenkontrollierter Infrastruktur liegen
-- **Kosten-Trajektorie** — Public-Cloud-Rechnung übersteigt die Vorhersehbarkeit
-- **KI-Workload-Ökonomie** — dauerhaft ausgelastete Inferenz und Training, wo Hyperscaler-Ökonomie nicht passt
-- **Service-Provider-Modell** — Aufbau eines kundenorientierten Private-Cloud-Produkts
-- **Greenfield** — neue Infrastruktur mit Private Cloud als Architektur
+- **Broadcom einen VMware-Ausstieg ausgelöst hat** — Neuaufbau auf einem neuen Fundament statt einer VCF-Subscription
+- **Souveränitäts- oder Aufsichtsdruck besteht** — Daten müssen auf vom Kunden kontrollierter Infrastruktur liegen
+- **die Kosten aus dem Ruder laufen** — die Public-Cloud-Rechnung ist nicht mehr planbar
+- **die Wirtschaftlichkeit von KI-Workloads zählt** — dauerhafte Inferenz oder dauerhaftes Training, für das die Preismodelle der Hyperscaler nicht passen
+- **ein Service-Provider-Modell geplant ist** — Aufbau eines Private-Cloud-Produkts für Kunden
+- **Greenfield ansteht** — neue Infrastruktur mit Private Cloud als Architektur
 
-Wenn zwei oder mehr zutreffen, verzinst sich strukturiertes Private-Cloud-Consulting. Haben Sie einen Auslöser und ein kleines Bestand, kann ein leichteres Engagement (nur Architektur-Review) ausreichen.
+Treffen zwei oder mehr Punkte zu, zahlt sich strukturiertes Private Cloud Consulting aus. Gibt es nur einen Anlass und einen kleinen Bestand, kann eine schlankere Leistung (nur ein Architektur-Review) ausreichen.
 
 <!-- /BLOCK 2 -->
 
@@ -88,31 +90,27 @@ Wenn zwei oder mehr zutreffen, verzinst sich strukturiertes Private-Cloud-Consul
 
 <!-- BLOCK 3: WHAT WE COVER -->
 
-## Was wir in einem Private-Cloud-Engagement abdecken
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
+## Was wir in einem Private-Cloud-Projekt abdecken
 
 <div class="grid-2x2">
 
-**1. Architektur-Design**
-Compute-Layer (KubeVirt-basierte Virtualisierung, Container-Orchestrierung), Storage (LINSTOR/DRBD über Piraeus, SeaweedFS für Objektspeicher, oder ein bestehendes Ceph-Cluster über Ceph CSI), Networking (Cilium / NSX-Äquivalent), Identity, Observability, Backup/DR. Entscheidungen dokumentiert mit benannten Trade-offs.
+**1. Architekturdesign**
+Compute-Schicht (Virtualisierung auf Basis von KubeVirt, Container-Orchestrierung), Storage (LINSTOR/DRBD über Piraeus), Networking (Cilium als Entsprechung zu NSX), Identity, Observability, Backup/DR. Entscheidungen werden mit benannten Trade-offs dokumentiert.
 
-**2. Multi-Tenancy- und Operations-Modell**
-Tenant-CRD, per-Tenant-Quotas, RBAC, Audit. Für das Service-Provider-Modell: kundenorientiertes Portal und Billing-Integration.
+**2. Multi-Tenancy und Betriebsmodell**
+Tenant-CRD, Quotas pro Tenant, RBAC, Audit. Im Service-Provider-Modell zusätzlich Kundenportal und Anbindung an die Abrechnung.
 
 **3. Migration und Integration**
-Von VMware, OpenStack, Hyperscaler oder Hybrid — Migrations-Plan, Cutover-Sequenzierung, Integration mit verbleibenden Cloud-Workloads.
+Von VMware, OpenStack, einem Hyperscaler oder einer Hybridumgebung — Migrationsplan, Reihenfolge der Umstellung, Integration mit den verbleibenden Cloud-Workloads.
 
-**4. Operativer Handover**
-Runbooks, On-Call-Patterns, Capacity-Planning, Sicherheits- und Compliance-Posture. Knowledge-Transfer an Ihr Plattform-Team.
+**4. Übergabe in den Betrieb**
+Runbooks, Rufbereitschaft, Kapazitätsplanung, Sicherheits- und Compliance-Aufstellung. Wissenstransfer an Ihr Platform-Team.
 
 </div>
 
-<div class="arch-section__fig">
-<div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b></div>
-<div class="diagram__conn">vereint</div>
-<div class="diagram__node"><b>VMs und Container (KubeVirt)</b></div>
-<div class="diagram__conn">nutzt</div>
-<div class="diagram__node"><b>Cilium (eBPF) und LINSTOR/DRBD</b></div>
 </div>
 </div>
 
@@ -122,28 +120,22 @@ Runbooks, On-Call-Patterns, Capacity-Planning, Sicherheits- und Compliance-Postu
 
 <!-- BLOCK 4: COMMON FAILURES -->
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
-
-## Wo Private-Cloud-Projekte häufig scheitern
+## Woran Private-Cloud-Projekte häufig scheitern
 
 <div class="gap-cards-2">
 
-**Vendor-geführte „Private Cloud in a Box“**
-Der Vendor verkauft eine Turnkey-Private-Cloud-Appliance. Der Lock-in ist strukturell; die Roadmap des Vendors wird zu Ihrer Roadmap. Das Schlechteste aus beiden Welten: Hardware-Refresh-Kosten + Vendor-Lizenzierung.
+**„Private Cloud aus der Box“ vom Hersteller**
+Der Hersteller verkauft eine schlüsselfertige Private-Cloud-Appliance. Die Bindung ist strukturell; die Roadmap des Herstellers wird zu Ihrer Roadmap. Das Schlechteste aus beiden Welten: Kosten für den Hardwaretausch plus Herstellerlizenzen.
 
-**Cloud-Rebuild auf Commodity-Hardware**
-Das Team baut Private Cloud aus Open-Source-Komponenten ohne die operative Disziplin, die Hyperscaler ein Jahrzehnt lang engineert haben. Self-Service bricht; operative Altlasten akkumulieren.
+**Eigenbau auf Standardhardware**
+Das Team baut die Private Cloud aus Open-Source-Komponenten, ohne die Betriebsdisziplin, die Hyperscaler über ein Jahrzehnt entwickelt haben. Self-Service funktioniert nicht; technische Schulden im Betrieb wachsen.
 
-**Architektur für einen Auslöser optimiert**
-Für den VMware-Ausstieg gebaut, aber die KI-Workloads des nächsten Jahres nicht berücksichtigt. Für Souveränität gebaut, aber Kosten nicht bedacht. Für Kosten gebaut, aber Souveränität nicht adressiert. Spätere Re-Architektur ist teuer.
+**Architektur auf einen einzigen Anlass optimiert**
+Für den VMware-Ausstieg gebaut, aber die KI-Workloads des nächsten Jahres nicht bedacht. Für Souveränität gebaut, aber die Kosten nicht berücksichtigt. Für Kosten gebaut, aber die Souveränität außer Acht gelassen. Ein späterer Umbau ist teuer.
 
-**Unterinvestierte Platform-Team-Kapazität**
-Die Private Cloud ist gebaut; das Plattform-Team ist so groß wie das Team, das VMware betrieben hat. Operative Altlasten bauen sich auf; das Team brennt aus; die Private Cloud wird zum nächsten Notfall.
+**Zu wenig Kapazität im Platform-Team**
+Die Private Cloud steht; das Platform-Team ist aber so groß wie das Team, das früher VMware betrieben hat. Die Betriebsschulden wachsen, das Team brennt aus, und die Private Cloud wird zum nächsten Notfall.
 
-</div>
-
-</div>
 </div>
 
 <!-- /BLOCK 4 -->
@@ -152,13 +144,25 @@ Die Private Cloud ist gebaut; das Plattform-Team ist so groß wie das Team, das 
 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
-## Wie Ænix arbeitet
+## So arbeitet Ænix
 
-- **Architektur-Review (5-15 Tage)** — fokussiertes Engagement, Ziel-Architektur, Capacity-Modell.
-- **Implementations-Engagement (3-12 Monate)** — Ænix-Engineers integriert mit Ihrem Team, Aufbau der Foundation, Multi-Tenancy, Operations-Modell. Knowledge-Transfer durchgängig.
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Discovery-Gespräch</b><div class="diagram__chips"><span>Kostenlos</span><span>30 Min.</span></div></div>
+<div class="diagram__conn">definiert</div>
+<div class="diagram__node"><b>Readiness Assessment (14 oder 28 Tage)</b><div class="diagram__chips"><span>Zielarchitektur</span><span>Kapazitätsmodell</span></div></div>
+<div class="diagram__conn">steuert</div>
+<div class="diagram__node"><b>Umsetzung (3–12 Monate)</b><div class="diagram__chips"><span>Gemeinsamer Aufbau</span><span>Multi-Tenancy</span><span>Übergabe</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node diagram__node--brand"><b>Private Cloud auf Cozystack</b><div class="diagram__chips"><span>KubeVirt-VMs</span><span>Container</span><span>Eine Kubernetes-API</span></div></div>
+</div>
+</div>
+
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/) (14 oder 28 Tage)** — Festpreis, Zielarchitektur, Kapazitätsmodell.
+- **Umsetzungsprojekt (3–12 Monate)** — Ænix-Engineers arbeiten in Ihrem Team und bauen Fundament, Multi-Tenancy und Betriebsmodell auf. Wissenstransfer von Anfang an.
 - **Managed Private Cloud** — für Organisationen, die die Plattform brauchen, aber keine Betriebskapazität haben.
 
-Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+Für eine breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 <!-- /BLOCK 5 -->
 
@@ -168,10 +172,8 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 
 ## Warum gerade Ænix
 
-- **Wir betreiben Private Clouds in Produktion.** Cozystack ist in Produktion mit Service Providern und regulierten Unternehmen.
-- **Open-Source-Plattform-Foundation.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Die Plattform, die wir empfehlen, ist eine, die Sie besitzen — kein Vendor-Roadmap-Lock-in.
-- **Kein Hyperscaler-Bias.** Empfehlungen spiegeln technische Eignung wider, nicht Partnerschafts-Ökonomie.
-- **EU- + Zentralasien-Teams** — zeitzonen-freundlich, souveränitäts-abgestimmt.
+- **Keine Hyperscaler-Partnerschaft.** Bei einer Entscheidung für oder gegen die Private Cloud ist das der entscheidende Punkt: An unserer Marge ändert sich nichts, wenn die Antwort „bleiben Sie damit in der Public Cloud“ lautet — deshalb können wir sie auch geben.
+- **Wir betreiben das Ziel selbst.** [Cozystack](/de/produkte/cozystack/) läuft in Produktion bei Service Providern und regulierten Unternehmen; das Kapazitätsmodell und der Personalbedarf für den Betrieb in unseren Empfehlungen stammen aus Rechnungen, die wir selbst bezahlt haben.
 
 <!-- /BLOCK 6 -->
 
@@ -181,10 +183,10 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 
 | Wann | Was | Ergebnis |
 |---|---|---|
-| **Tag 0** | 30-min Discovery-Call (kostenlos) | Fit bestätigen |
-| **Phase 1: Architektur-Review (5-15 Tage)** | Fokussiertes Engagement | Ziel-Architektur, Capacity-Modell |
-| **Phase 2: Implementation (3-12 Monate)** | Integrierter Build | Produktive Private Cloud, Runbooks, Knowledge-Transfer |
-| **Phase 3: Betrieb (optional)** | Managed-Services oder in-house | Nachhaltige Private Cloud |
+| **Tag 0** | 30-minütiges Discovery-Gespräch (kostenlos) | Passung klären |
+| **Phase 1: Platform Readiness Assessment (14 oder 28 Tage)** | Fokussiertes Projekt | Zielarchitektur, Kapazitätsmodell |
+| **Phase 2: Umsetzung (3–12 Monate)** | Gemeinsamer Aufbau | Produktive Private Cloud, Runbooks, Wissenstransfer |
+| **Phase 3: Betrieb (optional)** | Managed Services oder Eigenbetrieb | Dauerhaft tragfähige Private Cloud |
 
 <!-- /BLOCK 7 -->
 
@@ -195,33 +197,12 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 {{< clients >}}
 
 {{< quote-carousel >}}
-Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Die Logos oben stehen für produktive Installationen der Ænix Public Cloud Platform. Namentliche Referenzen aus Projekten unter NDA nennen wir im Discovery-Gespräch.
 <!-- /BLOCK 8 -->
 
 ---
 
-<!-- BLOCK 9: PRICING -->
-
-<div class="pricing-cards-2">
-
-### Architektur-Review (5-15 Tage)
-**Auf Anfrage**
-
-### Implementation / Managed
-**Auf Anfrage**
-
-</div>
-
-<!-- /BLOCK 9 -->
-
----
-
 <!-- BLOCK 10: FAQ -->
-
-
-**Weitere Fragen?** Siehe den **[Private-Cloud-Architektur-Artikel (englisch)](/blog/2026/05/private-cloud-architecture-2026/)** oder **[sprechen Sie mit uns](#discovery)**.
-
-<!-- /BLOCK 10 -->
 
 ---
 
@@ -229,13 +210,13 @@ Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Fre
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-- **[Private Cloud Architecture 2026 (englisch)](/blog/2026/05/private-cloud-architecture-2026/)** — vollständiger Leitfaden
-- **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** — wenn Sie die Public Cloud verlassen
-- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Souveränitäts-Auslöser
-- **[Cozystack](/de/produkte/cozystack/)** — Open-Source-Plattform-Foundation
+- **[Private-Cloud-Architektur 2026](/de/blog/2026/05/private-cloud-architektur-2026/)** — vollständiger Leitfaden
+- **[Cloud-Repatriierung](/de/loesungen/cloud-repatriation/)** — wenn Sie die Public Cloud verlassen
+- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Anlass Souveränität
+- **[Cozystack](/de/produkte/cozystack/)** — Open-Source-Fundament der Plattform
 
 <!-- /BLOCK 11 -->
 
@@ -243,6 +224,6 @@ Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Fre
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix ist das Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Team hinter Cozystack — CNCF-Projekt, zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes), OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->

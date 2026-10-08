@@ -1,13 +1,13 @@
 ---
 title: "An internal data and AI platform, GPUs included"
-description: "One internal platform for data and AI/ML: GPU pools with time-slicing and per-tenant quotas, one scheduler for pods and VMs, usage metrics that feed billing. In rollout."
+description: "One internal platform for data and AI/ML: GPU pools with per-tenant quotas, one scheduler for pods and VMs, usage metrics that feed billing. In rollout."
 hero_subtitle: "GPU pools, quotas and one scheduler for pods and VMs"
 date: 2026-08-21
 lastmod: 2026-08-21
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/internal-data-and-ai-platform/"
-images: ["img/og/og-case-internal-data-and-ai-platform.png"]
+images: ["img/og/og-case-internal-data-and-ai-platform.jpg"]
 primary_keyword: "internal AI platform GPU"
 secondary_keywords:
   - "multi-tenant GPU scheduling"
@@ -24,7 +24,7 @@ faq:
   - q: "Why one platform for both data and AI workloads?"
     a: "Because they are the same infrastructure problem seen twice. Analytics, data lakes and marts, model training and model serving all want object storage, databases, scheduling, quotas and pipelines. Splitting them into two platforms means two operating models, two capacity plans and a copy of every dataset between them."
   - q: "How are GPUs shared between teams?"
-    a: "GPUs live in resource pools with time-slicing, and quotas are set per tenant and per project. Freed capacity is redistributed dynamically rather than sitting idle behind whoever booked it. Each team sees an isolated space, and the platform keeps an inventory of every card, where it is and what state it is in."
+    a: "GPUs live in resource pools, and quotas are set per tenant and per project. Freed capacity is redistributed dynamically rather than sitting idle behind whoever booked it. Each team sees an isolated space, and the platform keeps an inventory of every card, where it is and what state it is in."
   - q: "Do virtual machines and containers compete for the same GPUs?"
     a: "They share one scheduler. Pods and VMs are placed by the same planner with the same usage metrics behind them, which is also what makes chargeback and deep utilisation analytics possible — you cannot bill or analyse what two separate schedulers each think they own."
   - q: "Is this NVIDIA-only?"
@@ -41,12 +41,17 @@ faq:
   <span class="cs-tag">In rollout</span>
 </div>
 
-**One internal platform for two things a large organisation usually builds twice: data — analytics, lakes and marts, model training — and AI/ML services, from development through training to serving. Underneath sits AI-ready infrastructure: GPU resource pools with time-slicing and per-tenant quotas, a single scheduler placing both pods and virtual machines, and usage metrics detailed enough to charge teams and to see where capacity actually goes. The platform is in rollout: GPU support is live, the AI-services MVP is most of the way through its phase.**
+**One internal platform for two things a large organisation usually builds twice: data — analytics, lakes and marts, model training — and AI/ML services, from development through training to serving. Underneath sits AI-ready infrastructure: GPU resource pools with per-tenant quotas, a single scheduler placing both pods and virtual machines, and usage metrics detailed enough to charge teams and to see where capacity actually goes. The platform is in rollout: GPU support is live, the AI-services MVP is most of the way through its phase.**
 
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">One scheduler</div><div class="cs-stat__label">for pods and virtual machines, with usage metrics behind billing and analytics</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">Per tenant</div><div class="cs-stat__label">GPU pools, time-slicing and quotas per team and per project</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">Per tenant</div><div class="cs-stat__label">GPU pools and quotas per team and per project</div></div>
   <div class="cs-stat"><div class="cs-stat__num">Phase 2 · 70%</div><div class="cs-stat__label">AI-services MVP, in a two-month phase; GPU support already complete</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
 </div>
 
 ## About the project
@@ -67,7 +72,7 @@ The two are usually treated as separate programmes and then spend years copying 
 
 **AI-ready infrastructure: GPUs for both Kubernetes and VMs.**
 
-- **The GPU infrastructure layer** — GPU resource pools, time-slicing, quotas per tenant and per project.
+- **The GPU infrastructure layer** — GPU resource pools and quotas per tenant and per project.
 - **One scheduler** — a single planner for pods and virtual machines, with utilisation metrics that feed both chargeback and deep analytics.
 - **Data and pipelines** — S3-compatible storage, databases and model artefacts, with pipelines automated GitOps-style.
 
@@ -78,7 +83,7 @@ The two are usually treated as separate programmes and then spend years copying 
 - Lifecycle and resource management, autoscaling and on-demand provisioning.
 - Security and multi-tenancy, decommissioning and rolling upgrades.
 
-{{< placeholder-image width="1200" height="640" label="Internal data and AI platform: GPU pools with time-slicing and per-tenant quotas feed one scheduler placing both pods and VMs; above it, data services (S3 object storage, databases, model artefacts) and GitOps pipelines; the GPU lifecycle layer handles automated provisioning, passthrough to VM and Kubernetes, driver management, autoscaling, decommissioning and rolling upgrades; usage metrics flow to billing, quotas and inventory" >}}
+{{< case-diagram src="/img/case-studies/internal-data-and-ai-platform-en.webp" alt="Internal data and AI platform: GPU pools with per-tenant quotas feed one scheduler placing both pods and VMs; above it, data services (S3 object storage, databases, model artefacts) and GitOps pipelines; the GPU lifecycle layer handles automated provisioning, passthrough to VM and Kubernetes, driver management, autoscaling, decommissioning and rolling upgrades; usage metrics flow to billing, quotas and inventory" >}}
 
 ## What the platform already does
 
@@ -105,8 +110,17 @@ The two are usually treated as separate programmes and then spend years copying 
   <div class="card"><div class="card-body"><h3 class="card-title">A roadmap with a finished phase in it</h3><p class="card-description">GPU support is done and running; the AI-services layer is being built on top of it. Published in progress, not in retrospect.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
-*This case study describes an engagement in rollout and is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
+*This case study describes an engagement in rollout and is published in anonymized form: the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

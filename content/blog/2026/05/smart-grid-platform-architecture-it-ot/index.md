@@ -1,11 +1,12 @@
 ---
 title: "Smart grid platform architecture — IT/OT convergence, edge, and AI on customer-controlled infrastructure"
+seo_title: "Smart grid platform architecture: IT/OT, edge and AI"
 description: "A smart-grid architectural reference for energy operators: IT/OT boundaries that work, NIS2 controls, AI on grid-operational data, and legacy migration."
 date: "2026-05-26"
-cover_image: "/img/blog/covers/smart-grid-platform-architecture-it-ot.png"
+cover_image: "/img/blog/covers/smart-grid-platform-architecture-it-ot.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["NIS2", "AI/ML", "GPU", "Compliance"]
+topics: ["NIS2", "AI and ML", "GPU", "Compliance"]
 language: "en"
 companion_landing: "/industries/energy/"
 quiz:
@@ -41,6 +42,7 @@ quiz:
         - { text: "Cheaper per-CPU licensing terms", correct: false }
         - { text: "Vendor-roadmap risk dominates decade horizons", correct: true }
       explanation: "The long horizon argument: Apache 2.0 license + CNCF Project community governance fits decade-plus operational planning. Grid hardware refresh cycles are decade-scale, so vendor roadmap risk — the dominant failure mode over 10–20 years — is minimised because the community can outlive any single vendor."
+hreflang_de: /de/blog/2026/05/smart-grid-plattform-architektur-it-ot/
 ---
 
 
@@ -49,7 +51,7 @@ The energy sector's infrastructure-modernization conversation in 2026 sits at an
 ## Three pressures converging on energy infrastructure
 
 ### Pressure 1: NIS2 compliance with operational reality
-NIS2 Article 21 risk-management measures apply to energy operators (Annex I essential entity). Article 23 incident reporting (24-hour / 72-hour / 1-month timelines) requires telemetry tuned for security, not just performance. Article 28 supplier-chain transparency requires mapping ICT third parties to second hop minimum.
+NIS2 Article 21 risk-management measures apply to energy operators (Annex I sector; essential or important entity depending on size). Article 23 incident reporting (24-hour / 72-hour / 1-month timelines) requires telemetry tuned for security, not just performance. Article 21(2)(d) supply-chain security requires mapping ICT third parties to the second hop at minimum.
 
 For energy operators with legacy SCADA + DCS + GIS + energy-management systems integrated through years of one-off engineering, Article 21's "documented risk register per critical workload" is non-trivial.
 
@@ -124,13 +126,13 @@ Cozystack platforms federate across central + regional + substation tiers. Singl
 Documented air-gap install workflow. Suitable for OT zones that cannot have internet egress. Updates via Harbor mirror or controlled channels.
 
 ### 3. AI infrastructure native
-KubeVirt for legacy AI workloads, native Kubernetes for modern ML pipelines. VFIO passthrough or NVIDIA vGPU for VM-bound workloads, and HAMi fractional sharing (GPU memory and compute cores) for containers sharing GPUs across forecasting models. Validated on A100, H100, H200, L40S, Blackwell.
+KubeVirt for legacy AI workloads, native Kubernetes for modern ML pipelines. VFIO passthrough or NVIDIA vGPU for VM-bound workloads, and HAMi fractional sharing (GPU memory and compute cores) for containers sharing GPUs across forecasting models. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator.
 
 ### 4. Multi-tenant for cross-BU
 Tenant CRD model accommodates generation / transmission / distribution / retail BUs with separate isolation. For unbundled markets, this is non-optional.
 
 ### 5. Sovereign by architecture
-Open-source platform on customer-controlled hardware. Customer-controlled encryption keys. Audit-trail completeness in regulator-consumable formats. NIS2-aligned without bolt-on workarounds.
+Open-source platform on customer-controlled hardware. Customer-held encryption keys (volume encryption is opt-in per storage class). Audit-trail completeness in regulator-consumable formats. NIS2-aligned without bolt-on workarounds.
 
 ### 6. Long operational horizon
 Apache 2.0 license + CNCF Project community governance fits decade-plus grid operational planning. Vendor roadmap risk is minimized.
@@ -179,7 +181,7 @@ Migration sequencing:
 5. **Edge tier rollout** — substation-by-substation, slowest tier due to operational risk
 6. **Legacy decommission** — staged as cohorts complete
 
-Total elapsed: 18-36 months for a mid-size operator.
+For a mid-size operator, the multi-site platform follows the operator-scale pattern: a 3-6 month pilot on the central tier, then 9-18 months to full multi-site operation. The substation roll-out can run longer, paced by maintenance windows.
 
 ## Common pitfalls
 

@@ -1,13 +1,13 @@
 ---
 title: "A sovereign public cloud on bare metal"
-description: "A Swiss provider moved off a hypervisor stack to a full commercial public cloud on Cozystack — multi-region across three data centres, synchronous cross-DC replication, at-rest encryption, and a 20-hour incident closed with zero data loss."
+description: "A provider replaced a hypervisor stack with a commercial public cloud on Cozystack across three data centres, with synchronous replication and encryption."
 hero_subtitle: "A commercial public cloud on bare metal, multi-region"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/sovereign-public-cloud/"
-images: ["img/og/og-case-sovereign-public-cloud.png"]
+images: ["img/og/og-case-sovereign-public-cloud.jpg"]
 related_pages:
   - /products/public-cloud-platform/
   - /solutions/data-sovereignty/
@@ -29,6 +29,11 @@ related_pages:
   <div class="cs-stat"><div class="cs-stat__num">3 DCs</div><div class="cs-stat__label">synchronous storage replication across data centres, etcd over three</div></div>
   <div class="cs-stat"><div class="cs-stat__num">20 h → 0</div><div class="cs-stat__label">hours of incident — zero data lost</div></div>
   <div class="cs-stat"><div class="cs-stat__num">10+</div><div class="cs-stat__label">tenants in production; public site in three languages</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
 </div>
 
 ## About the project
@@ -56,7 +61,7 @@ The goal — a full-fledged commercial public cloud under its own brand: VMs, ma
 
 The engagement grew into ongoing support and co-development: the client's engineers became Cozystack maintainers.
 
-{{< placeholder-image width="1200" height="640" label="Sovereign boundary (Switzerland): compute cluster geo-distributed across three DCs with synchronous DRBD replication and etcd over three sites; a separate SeaweedFS object-storage cluster holds immutable backups; at-rest / in-transit encryption throughout" >}}
+{{< case-diagram src="/img/case-studies/sovereign-public-cloud-en.webp" alt="Sovereign boundary (Switzerland): compute cluster geo-distributed across three DCs with synchronous DRBD replication and etcd over three sites; a separate SeaweedFS object-storage cluster holds immutable backups; at-rest / in-transit encryption throughout" >}}
 
 ## Execution: new requirements and how we handled them
 
@@ -89,8 +94,17 @@ The engagement grew into ongoing support and co-development: the client's engine
   <div class="card"><div class="card-body"><h3 class="card-title">A mature enterprise set</h3><p class="card-description">At-rest/in-transit encryption, per-tenant SSO and network policies, Windows licensing, performance guarantees, instance-type billing.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the provider is described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
+*This case study is published in anonymized form: the provider is described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

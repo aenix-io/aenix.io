@@ -1,5 +1,6 @@
 ---
 title: "Build a private cloud — engineers who've shipped this in production"
+seo_title: "Build a private cloud with Ænix engineers"
 description: "End-to-end private cloud build on hardware you control: sizing, platform, storage, networking, multi-tenancy and handover so your own team operates it."
 related_pages:
   - /services/private-cloud-consulting
@@ -11,7 +12,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Building a private cloud means designing, deploying, and operating cloud-style infrastructure on hardware you control — covering platform, storage, networking, multi-tenancy, observability, and compliance as one coherent system rather than a one-off project. It suits organizations with a platform engineering function and a clear trigger such as a VMware exit, a sovereignty mandate, AI/GPU workloads, or runaway public-cloud costs. Aenix builds private clouds end-to-end on Cozystack, an open-source CNCF project it runs in production with service providers, banks, telecom, and AI operators. The stack uses KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, and LINSTOR/DRBD storage, with handover so the customer's own team operates the platform afterward.**
+  **Building a private cloud means designing, deploying, and operating cloud-style infrastructure on hardware you control — covering platform, storage, networking, multi-tenancy, observability, and compliance as one coherent system rather than a one-off project. It suits organizations with a platform engineering function and a clear trigger such as a VMware exit, a sovereignty mandate, AI/GPU workloads, or runaway public-cloud costs. Ænix builds private clouds end-to-end on Cozystack, an open-source CNCF project it runs in production with service providers, banks, telecom, and AI operators. The stack uses KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, and LINSTOR/DRBD storage, with handover so the customer's own team operates the platform afterward.**
 
 quick_facts:
   - label: "What it is"
@@ -19,24 +20,24 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Who it's for"
     value: "Organizations with (or building) a platform engineering function and a concrete trigger — VMware exit, sovereignty mandate, AI/GPU workloads, or public-cloud cost cliff."
   - label: "Engagement timeline"
-    value: "Free 30-minute discovery, 14-28 day assessment, then a 3-12 month build, with optional ongoing managed operations."
+    value: "Free 30-minute discovery, 14- or 28-day assessment, then a 3-12 month build, with optional ongoing managed operations."
   - label: "Technology stack"
     value: "Cozystack on Talos by default; KubeVirt for VMs and containers on one Kubernetes API; Cilium (eBPF) networking; LINSTOR/DRBD (Piraeus) storage; Tenant CRD multi-tenancy."
   - label: "Ownership"
-    value: "The platform is built on open source and operated by the customer's own team after knowledge transfer — the cloud is theirs, not Aenix's."
+    value: "The platform is built on open source and operated by the customer's own team after knowledge transfer — the cloud is theirs, not Ænix's."
 
 faq:
   - q: "What does a build-private-cloud engagement actually include?"
     a: "Hardware sizing and vendor selection, the platform layer (Cozystack on Talos or an existing Kubernetes extension), storage and backup architecture, networking, multi-tenancy via the Tenant CRD, an observability and operations setup, self-service golden paths, compliance work, and knowledge transfer so your team operates it."
-  - q: "How long does it take to build a private cloud with Aenix?"
-    a: "A free 30-minute discovery confirms fit, a 14-28 day assessment produces architecture, sizing, and a build plan, and the build itself runs 3-12 months depending on scope. Ongoing managed operations are available afterward if the customer prefers not to run it in-house."
-  - q: "Is the private cloud locked to Aenix?"
-    a: "No. It is built on Cozystack, an open-source CNCF project under Apache 2.0 with no per-CPU or per-core licensing. After knowledge transfer your own platform team operates the cloud. Aenix has no hyperscaler partnership economics shaping the architecture."
-  - q: "What technology does Aenix use to build a private cloud?"
+  - q: "How long does it take to build a private cloud with Ænix?"
+    a: "A free 30-minute discovery confirms fit, a 14- or 28-day assessment produces architecture, sizing, and a build plan, and the build itself runs 3-12 months depending on scope. Ongoing managed operations are available afterward if the customer prefers not to run it in-house."
+  - q: "Is the private cloud locked to Ænix?"
+    a: "No. It is built on Cozystack, an open-source CNCF project under Apache 2.0 with no per-CPU or per-core licensing. After knowledge transfer your own platform team operates the cloud. Ænix has no hyperscaler partnership economics shaping the architecture."
+  - q: "What technology does Ænix use to build a private cloud?"
     a: "Cozystack on Talos by default, with KubeVirt running virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, and LINSTOR/DRBD via Piraeus for storage. Multi-tenancy, RBAC, quotas, and audit are handled through the Tenant CRD."
   - q: "When does building a private cloud make sense versus staying on public cloud?"
     a: "It fits when you have or are building a platform engineering function, a specific trigger like a VMware exit or sovereignty mandate, sustained workloads or AI/GPU at scale where the economics favor dedicated infrastructure, and a team that can operate it after handover. The assessment phase clarifies fit before any build begins."
@@ -106,7 +107,7 @@ If you're not sure on any of these, the assessment phase clarifies before buildi
 | Phase | Duration | Output |
 |---|---|---|
 | Discovery | 30 min, free | Confirm fit |
-| Assessment | 14-28 days | Architecture, sizing, Phase 2 plan |
+| Assessment | 14 or 28 days | Architecture, sizing, Phase 2 plan |
 | Build | 3-12 months | Production private cloud |
 | Operate (optional) | Ongoing | Managed service or in-house |
 
@@ -134,5 +135,5 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF-Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
 

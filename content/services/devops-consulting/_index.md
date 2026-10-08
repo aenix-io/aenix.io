@@ -1,5 +1,6 @@
 ---
 title: "DevOps consulting — engineers who run platforms in production, not slide-deck consultants"
+seo_title: "DevOps consulting from engineers who run platforms"
 description: "DevOps consulting delivered by engineers, not analysts: CI/CD and GitOps, IaC, observability and SRE practice, with runbooks your team owns afterwards."
 related_pages:
   - /services/platform-engineering/
@@ -11,16 +12,16 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Aenix DevOps consulting is a hands-on engineering engagement, not a slide-deck advisory: senior engineers who build and operate platforms in production work alongside an internal team to install platform-level CI/CD and GitOps (Argo CD or Flux), infrastructure-as-code (Terraform, OpenTofu, Crossplane), observability (VictoriaMetrics and VictoriaLogs), and SRE practices, leaving written runbooks the customer owns. It fits organizations with working CI/CD but reactive ops, fragmented tooling, or external pressure such as a regulator, scale, or technical debt. Aenix is the team behind Cozystack, an Apache 2.0 CNCF project, so the practices installed are sustainable independently of Aenix and progress is measured in DORA metrics and SLO compliance rather than workshop output.**
+  **Ænix DevOps consulting is a hands-on engineering engagement, not a slide-deck advisory: senior engineers who build and operate platforms in production work alongside an internal team to install platform-level CI/CD and GitOps (Argo CD or Flux), infrastructure-as-code (Terraform, OpenTofu, Crossplane), observability (VictoriaMetrics and VictoriaLogs), and SRE practices, leaving written runbooks the customer owns. It fits organizations with working CI/CD but reactive ops, fragmented tooling, or external pressure such as a regulator, scale, or technical debt. Ænix is the team behind Cozystack, an Apache 2.0 CNCF project, so the practices installed are sustainable independently of Ænix and progress is measured in DORA metrics and SLO compliance rather than workshop output.**
 quick_facts:
   - label: "What it is"
     value: "A senior-engineer DevOps consulting engagement that installs production CI/CD, IaC, observability, and SRE practices and transfers ownership to the internal team"
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Engagement modes"
-    value: "DevOps maturity assessment (14-28 days), transformation (3-9 months), or managed DevOps-as-a-service with a documented exit path"
+    value: "DevOps maturity assessment (14 or 28 days), transformation (3-9 months), or managed DevOps-as-a-service with a documented exit path"
   - label: "Who it is for"
     value: "Service providers, regulated enterprises, AI/GPU operators, and telecom operators whose CI/CD works but ops is reactive or tooling is fragmented"
   - label: "Outcome measured by"
@@ -28,18 +29,18 @@ quick_facts:
   - label: "Tooling installed"
     value: "Argo CD or Flux GitOps, Terraform / OpenTofu / Crossplane IaC, VictoriaMetrics + VictoriaLogs observability"
 faq:
-  - q: "How is Aenix DevOps consulting different from Big-4 DevOps consulting?"
-    a: "Big-4 engagements are typically delivered by management consultants and shaped by partner-channel economics, often producing a transformation roadmap rather than working systems. Aenix engineers do the work themselves, calibrated against platforms they actually operate, with no hyperscaler or vendor partnerships influencing recommendations."
+  - q: "How is Ænix DevOps consulting different from Big-4 DevOps consulting?"
+    a: "Big-4 engagements are typically delivered by management consultants and shaped by partner-channel economics, often producing a transformation roadmap rather than working systems. Ænix engineers do the work themselves, calibrated against platforms they actually operate, with no hyperscaler or vendor partnerships influencing recommendations."
   - q: "Does the engagement cover SRE work as well as DevOps?"
-    a: "Yes. SRE practices such as SLOs, error budgets, incident response, blameless post-mortems, and capacity planning are part of the scope. Aenix does not draw a hard line between DevOps and SRE in its services."
+    a: "Yes. SRE practices such as SLOs, error budgets, incident response, blameless post-mortems, and capacity planning are part of the scope. Ænix does not draw a hard line between DevOps and SRE in its services."
   - q: "What happens if our team cannot operate what was built?"
-    a: "Three options are available: extend the engagement to grow internal capacity, move to an optional managed-services arrangement, or run a hybrid where Aenix operates critical systems while the internal team owns the rest. The decision is made during the assessment phase."
+    a: "Three options are available: extend the engagement to grow internal capacity, move to an optional managed-services arrangement, or run a hybrid where Ænix operates critical systems while the internal team owns the rest. The decision is made during the assessment phase."
   - q: "Will you work with our existing tools or force a rip-and-replace?"
-    a: "Usually Aenix extends what works and replaces only what does not, with named justification in the report. Aenix sells no licensed tooling and does not replace tools simply to sell new ones."
+    a: "Usually Ænix extends what works and replaces only what does not, with named justification in the report. Ænix sells no licensed tooling and does not replace tools simply to sell new ones."
   - q: "How long does an engagement take and how does it start?"
-    a: "Most engagements start with a 14-28 day DevOps maturity assessment, followed by a 3-9 month transformation phase, with an optional ongoing operate phase. It begins with a free 30-minute discovery call to confirm fit and scope."
+    a: "Most engagements start with a 14- or 28-day DevOps maturity assessment, followed by a 3-9 month transformation phase, with an optional ongoing operate phase. It begins with a free 30-minute discovery call to confirm fit and scope."
   - q: "Why is an open-source foundation relevant to DevOps consulting?"
-    a: "Cozystack is an Apache 2.0 CNCF project, so the CI/CD, IaC, and observability practices Aenix installs run on open standards and tooling with no per-core licensing. That means the resulting DevOps function is sustainable without continued dependence on Aenix."
+    a: "Cozystack is an Apache 2.0 CNCF project, so the CI/CD, IaC, and observability practices Ænix installs run on open standards and tooling with no per-core licensing. That means the resulting DevOps function is sustainable without continued dependence on Ænix."
 hreflang_de: /de/dienstleistungen/devops-consulting/
 ---
 
@@ -48,7 +49,7 @@ hreflang_de: /de/dienstleistungen/devops-consulting/
 
 **Most "DevOps consulting" engagements are sold by Big-4 firms and delivered by management consultants whose deepest production experience is reading Gartner reports. The deliverable is usually a transformation roadmap that sits on a shelf. We do the opposite: senior engineers who build and operate platforms in production, working alongside your team, with written runbooks your team owns afterwards.**
 
-> **Pairs with:** **[Developer self-service](/products/private-cloud-platform/)(/products/private-cloud-platform/)** when DevOps work scales into a full Internal Developer Platform. For technical scope on existing infrastructure: stand-alone consulting engagement.
+> **Pairs with:** **[Developer self-service](/products/private-cloud-platform/)** when DevOps work scales into a full Internal Developer Platform. For technical scope on existing infrastructure: stand-alone consulting engagement.
 
 Ænix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF Project running in production with service providers, banks, and AI operators. Our DevOps consulting engagements extend our engineers into yours — for assessment, transformation, or sustained operations.
 
@@ -156,7 +157,7 @@ Engagement ends, consultants leave, customer team can't operate what was built. 
 
 Three modes:
 
-- **DevOps maturity assessment (14-28 days)** — written assessment of current DevOps practices, target state, and remediation plan. Standalone deliverable. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+- **DevOps maturity assessment (14 or 28 days)** — written assessment of current DevOps practices, target state, and remediation plan. Standalone deliverable. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 - **DevOps transformation engagement (3-9 months)** — Ænix engineers integrated with your team, building CI/CD foundation, IaC discipline, observability stack, and operational practices. Knowledge transfer is structured.
 - **DevOps-as-a-service / managed engagement** — for organizations that need DevOps function but cannot build internal capacity. Ænix operates with documented exit path.
 
@@ -184,7 +185,7 @@ Most engagements start with assessment.
 | When | What | Output |
 |---|---|---|
 | **Day 0** | 30-min discovery call (free) | Confirm fit, identify scope |
-| **Phase 1: Assessment (14-28 days)** | DevOps maturity workstream within Platform Readiness Assessment | Written assessment, target state, remediation plan |
+| **Phase 1: Assessment (14 or 28 days)** | DevOps maturity workstream within Platform Readiness Assessment | Written assessment, target state, remediation plan |
 | **Phase 2: Transformation (3-9 months)** | Integrated engagement with your team | CI/CD foundation, IaC, observability, operational practices, runbooks |
 | **Phase 3: Operate (optional)** | Managed-services or fully in-house | Sustained DevOps function |
 
@@ -194,7 +195,7 @@ Most engagements start with assessment.
 
 <!-- BLOCK 8: PROOF -->
 
-## DevOps engagements we've run
+## Companies running platforms built with Ænix
 
 {{< clients >}}
 

@@ -20,7 +20,10 @@
   {{- if and (lt $done 2) (or (eq $n 3) (eq $n 6)) -}}
     {{- $de := or (eq $p.Params.language "de") (hasPrefix $p.RelPermalink "/de/") -}}
     {{- $soft := eq $done 0 -}}
-    {{- if $soft -}}
+    {{- $self := in (slice "/pricing/" "/de/preise/") $p.RelPermalink -}}
+    {{- if and $soft $self -}}
+      {{/* no "see pricing" link on the pricing page itself */}}
+    {{- else if $soft -}}
       {{- $u := cond $de "/de/preise/" "/pricing/" -}}
       {{- $t := cond $de "Vergleichen Sie noch?" "Still comparing?" -}}
       {{- $l := cond $de "Preise & Plattformen ansehen" "See pricing & platforms" -}}
@@ -34,4 +37,7 @@
     {{- $p.Scratch.Set "ctaInjected" (add $done 1) -}}
   {{- end -}}
 {{- end -}}
-<h{{ .Level }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</h{{ .Level }}>
+{{- /* Every page template prints the title as the page's H1, so a "# " in the
+       body becomes a second H1. Render it one level down. */ -}}
+{{- $lvl := cond (eq .Level 1) 2 .Level -}}
+<h{{ $lvl }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</h{{ $lvl }}>

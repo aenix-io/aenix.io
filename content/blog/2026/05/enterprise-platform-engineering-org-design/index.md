@@ -1,12 +1,14 @@
 ---
 title: "Enterprise platform engineering — org design, headcount, and the failure modes at 1,000+ engineers"
+seo_title: "Enterprise platform engineering: org design at scale"
 description: "Org design, headcount math, governance, and recurring failure modes for building a platform-engineering function at 1,000+-engineer organisations."
 date: "2026-05-11"
-cover_image: "/img/blog/covers/enterprise-platform-engineering-org-design.png"
+cover_image: "/img/blog/covers/enterprise-platform-engineering-org-design.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "Multi-tenancy", "DevOps"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/enterprise-platform-engineering-organisationsdesign/"
 companion_landing: "/services/enterprise-platform-engineering/"
 companion_label: "See enterprise platform engineering services →"
 quiz:
@@ -218,7 +220,7 @@ the platform substrate produces beautiful catalogs over operational
 chaos. Adoption stalls.
 
 Fix: Backstage as the user-facing layer after the platform
-substrate is real. Ænix's Developer Self-Service can be paired with Backstage
+substrate is real. Ænix Private Cloud Platform's developer self-service can be paired with Backstage
 where the customer prefers; Cozystack Dashboard also works.
 
 ### 3. Fragmentation without governance
@@ -276,7 +278,7 @@ initial setup.
 ### Workstream 3 — Cozystack-based platform substrate (where applicable)
 
 Foundational substrate built on Ænix Private Cloud Platform
-(for regulated organisations) or Developer Self-Service (for product-focused
+(for regulated organisations) or developer self-service on Private Cloud Platform (for product-focused
 organisations). Multi-region, multi-DC, audit-isolated environments,
 DORA / NIS2 alignment where applicable.
 
@@ -293,8 +295,9 @@ metrics.
 ### Workstream 5 — Capability transfer and operational handover
 
 Ænix engineers reduce direct involvement over time. Customer
-platform engineering function absorbs ownership. Ænix retainer
-continues for advisory + Tier-3 SLA escalation.
+platform engineering function absorbs ownership. Ænix support
+continues for advisory and escalation (Plus or Enterprise tier for
+24×7, see [/pricing/](/pricing/)).
 
 ## When this engagement fits
 
@@ -310,12 +313,12 @@ Strong fit:
 
 Marginal fit:
 
-- 500-1,000 engineers — may fit Developer Self-Service (lighter scope) rather
+- 500-1,000 engineers — may fit a lighter developer self-service scope rather
   than full enterprise platform engineering engagement
 
 Poor fit:
 
-- Smaller organisations — Developer Self-Service or Platform Engineering
+- Smaller organisations — a lighter developer self-service scope or Platform Engineering
   services are the right scope
 - Single-BU organisations regardless of engineering count — the
   governance overhead doesn't pay back
@@ -328,7 +331,7 @@ Poor fit:
   smaller-scope scope
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   the IDP-layer engagement
-- **[Developer Self-Service product page](/products/private-cloud-platform/)** —
+- **[Developer self-service solution page](/solutions/developer-self-service/)** —
   for product-engineering-focused organisations
 - **[Private Cloud Platform product page](/products/private-cloud-platform/)** —
   for regulated organisations
@@ -336,7 +339,7 @@ Poor fit:
   six production patterns
 - **[Platform engineering maturity model](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** —
   five-stage, eight-dimension maturity model
-- **[Developer Self-Service — developer velocity economics](/blog/2026/05/idp-edition-developer-velocity-economics/)** —
+- **[Developer self-service — developer velocity economics](/blog/2026/05/idp-edition-developer-velocity-economics/)** —
   the IDP economic case
 - **[Build private cloud — 90-day playbook](/blog/2026/05/build-private-cloud-90-day-playbook/)** —
   for the substrate-build workstream

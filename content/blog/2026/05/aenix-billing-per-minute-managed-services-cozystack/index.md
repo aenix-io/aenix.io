@@ -1,19 +1,21 @@
 ---
 title: "Ænix Billing — per-minute usage-based billing for Managed PostgreSQL, Redis, Kafka and ClickHouse on Cozystack"
-description: "Aenix Billing brings AWS-style per-minute, usage-based billing to managed Postgres, Redis, Kafka and ClickHouse on Cozystack via a Kubernetes-native API."
+seo_title: "Ænix Billing: per-minute billing for managed services"
+description: "Ænix Billing brings AWS-style per-minute, usage-based billing to managed Postgres, Redis, Kafka and ClickHouse on Cozystack via a Kubernetes-native API."
 slug: "aenix-billing-per-minute-managed-services-cozystack"
 date: "2026-05-13"
-cover_image: "/img/blog/covers/aenix-billing-per-minute-managed-services-cozystack.png"
+cover_image: "/img/blog/covers/aenix-billing-per-minute-managed-services-cozystack.jpg"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "Multi-tenancy", "Platform Engineering", "Billing"]
 language: "en"
 companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Public Cloud Platform →"
+hreflang_de: /de/blog/2026/05/aenix-billing-pay-per-minute-managed-services-cozystack/
 ---
 
 
-{{< placeholder-image width="1200" height="630" label="Ænix Billing — cover image (1200×630)" >}}
+![Ænix Billing — per-minute usage-based billing for Managed PostgreSQL, Redis, Kafka and ClickHouse on Cozystack](/img/blog/covers/aenix-billing-per-minute-managed-services-cozystack.jpg)
 
 **You ship a managed Postgres or ClickHouse cluster to a tenant in two minutes. Now you need to charge them — by the minute, broken down by CPU, memory and disk, reconcilable to the cent. AWS RDS does this. GCP does this. On your own metal? Until now: a custom Prometheus script, a monthly spreadsheet export, and a sales call to explain "why is the number this big". Ænix Billing closes that gap.**
 
@@ -89,7 +91,7 @@ For hosting providers running on bare metal — Hetzner, OVH, regional data cent
 
 ## Distribution
 
-Ænix Billing is a proprietary module, distributed as part of **Ænix Enterprise** alongside Cozystack. The Cozystack platform stays Apache-2.0 and CNCF-governed. The billing layer ships under a commercial license to Ænix customers.
+Ænix Billing is a proprietary Ænix module, delivered alongside Cozystack to customers with an Ænix subscription (for example [Ænix Public Cloud Platform](/products/public-cloud-platform/)). The Cozystack platform stays Apache-2.0 and CNCF-governed; the billing layer is not part of it.
 
 If you run a hosting business or a private cloud on Cozystack and want billing working out of the box, [book a discovery call](/contact/) — we'll talk scope, pricing, and rollout.
 
@@ -98,5 +100,5 @@ If you run a hosting business or a private cloud on Cozystack and want billing w
 - **Cozystack** — [cozystack.io](https://cozystack.io)
 - **GitHub** — [github.com/cozystack](https://github.com/cozystack)
 - **Telegram** — [t.me/cozystack](https://t.me/cozystack)
-- **CNCF Slack** — [#cozystack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (need an invite? [slack.kubernetes.io](https://slack.kubernetes.io))
+- **Kubernetes Slack** — [#cozystack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (need an invite? [slack.kubernetes.io](https://slack.kubernetes.io))
 - **Community meetings** — [calendar](https://cozystack.io/community/)

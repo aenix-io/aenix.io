@@ -1,7 +1,9 @@
 ---
 title: "Internal Developer Platform Beispiele — 6 architektonische Muster ohne Backstage-Lock-in"
-description: "- Internal Developer Platform — die Capability-Schicht (Compute, Storage, Networking, Identity, Observability, Deployment-Automatisierung) - Internal..."
+seo_title: "Internal Developer Platform: sechs Muster"
+description: "Sechs Architekturmuster für eine Internal Developer Platform aus der Praxis, der Unterschied zwischen Plattform und Portal und typische Fehler bei der Auswahl."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/internal-developer-platform-beispiele-ohne-backstage.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes", "Cozystack", "GitOps", "Multi-tenancy", "Platform Engineering"]
@@ -40,9 +42,10 @@ quiz:
         - { text: "Die Kapazität für Golden Paths verschwindet im Ticketbetrieb", correct: true }
         - { text: "Die Liefergeschwindigkeit der Produktteams steigt", correct: false }
       explanation: "Fallstrick 4: Plattformteams, die zugleich die Plattform bauen und die Rufbereitschaft für gemeinsame Dienste tragen, verbringen ihre Zeit mit Tickets. Die Kapazität für die Arbeit an den Golden Paths verschwindet, und die Funktion kommt zum Stillstand."
+hreflang_en: /blog/2026/05/internal-developer-platform-examples-without-backstage/
 ---
 
-Begleitung zur **[IDP-Page](/de/dienstleistungen/internal-developer-platform)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/)**.
 
 ## Plattform vs Portal — kritische Unterscheidung
 
@@ -74,5 +77,5 @@ Je nach Multi-Tenancy-Bedarf, Produkt-Team-Autonomie, Service-Erstellungsrate, K
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

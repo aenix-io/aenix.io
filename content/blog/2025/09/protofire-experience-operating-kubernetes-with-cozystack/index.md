@@ -1,12 +1,12 @@
 ---
 title: "Protofire Experience Operating Kubernetes with Cozystack"
-description: "In a recent infrastructure transition that spanned several months, our team explored alternative container orchestration platforms to…"
+description: "Protofire moved from nearly a hundred AWS accounts on ECS to two Kubernetes clusters on Cozystack, and expects a 7–10x reduction in infrastructure spend."
 date: "2025-09-10"
 author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Talos", "Financial Services", "CNCF", "Migration"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*ZaReZmQFCRYbv7yM1zoq-g.png"
+cover_image: "/img/blog/medium/protofire-experience-operating-kubernetes-with-cozystack/cover.png"
 source_url: "https://medium.com/@tym83/protofire-experience-operating-kubernetes-with-cozystack-1daa682945f5"
 quiz:
   title: "Test yourself: Protofire moves to Cozystack"
@@ -43,15 +43,13 @@ quiz:
       explanation: "They restructured observability tooling and adopted Loki for centralized log collection, complementing the existing metrics and Grafana dashboards already available through the platform."
 ---
 
----
 
-### [Protofire](https://www.linkedin.com/company/protofire-io/) Experience Operating Kubernetes with Cozystack
 
 In a recent infrastructure transition that spanned several months, our team explored alternative container orchestration platforms to simplify operations and optimize costs. At the time, our environment consisted of nearly a hundred AWS accounts running multiple ECS services, along with managed PostgreSQL, Redis, RabbitMQ, and ALBs.
 
-One of the goals was to consolidate our deployment architecture under Kubernetes while maintaining support for stateful services, without introducing significant operational complexity. After evaluating different options, we decided to adopt [Cozystack](http://cozystack.io), primarily due to its all-in-one approach and compatibility with bare-metal infrastructure.
+One of the goals was to consolidate our deployment architecture under Kubernetes while maintaining support for stateful services, without introducing significant operational complexity. After evaluating different options, we decided to adopt [Cozystack](https://cozystack.io/), primarily due to its all-in-one approach and compatibility with bare-metal infrastructure.
 
-![image](https://cdn-images-1.medium.com/max/800/1*ZaReZmQFCRYbv7yM1zoq-g.png)
+![Protofire running Kubernetes on Cozystack](/img/blog/medium/protofire-experience-operating-kubernetes-with-cozystack/cover.png)
 
 Cozystack is built on Talos Linux, which provides immutable and secure nodes, and includes a set of pre-packaged Helm-ready applications such as PostgreSQL, Redis, RabbitMQ, and Ingress-NGINX. These built-in components allowed us to accelerate the initial setup while maintaining flexibility for customization.
 
@@ -63,7 +61,7 @@ We also restructured our observability tooling during this process. We adopted L
 
 Cozystack’s recent joining CNCF Sandbox gave us additional reassurance regarding its long-term support and technical maturity. From our perspective, this migration has provided meaningful operational and financial benefits, and helped us simplify and standardize how we deliver and maintain services internally.
 
-*👉 Got a use case? Share it with our maintainers! We’ll showcase it to the community.*
+* Got a use case? Share it with our maintainers! We’ll showcase it to the community.*
 
 By [Timur Tukaev](https://medium.com/@tym83) on [September 10, 2025](https://medium.com/p/1daa682945f5).
 

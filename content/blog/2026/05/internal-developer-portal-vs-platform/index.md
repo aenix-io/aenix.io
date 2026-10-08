@@ -1,12 +1,14 @@
 ---
 title: "Internal developer portal vs internal developer platform — and Backstage's place in 2026"
+seo_title: "Internal developer portal vs platform in 2026"
 description: "Portal and platform are not the same thing. Where Backstage actually fits, what the alternatives are, and how to decide whether you need a portal at all."
 date: "2026-05-14"
-cover_image: "/img/blog/covers/internal-developer-portal-vs-platform.png"
+cover_image: "/img/blog/covers/internal-developer-portal-vs-platform.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes", "Platform Engineering", "Compliance", "Observability"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/internal-developer-portal-vs-plattform/"
 companion_landing: "/alternatives/backstage-alternative/"
 quiz:
   title: "Test yourself: portal vs platform (and Backstage)"
@@ -130,7 +132,7 @@ When those don't hold — the operational cost overshoots the value, and a light
 
 ## CNOE — the open-source platform-engineering reference
 
-The CNCF CNOE (Cloud Native Operational Excellence) project is worth mentioning. It's an opinionated reference architecture combining Backstage, Argo CD, Crossplane, External Secrets, and other CNCF tools into a coherent platform pattern. For organizations that want a "platform-in-a-box" using CNCF projects, CNOE is the structured starting point.
+The CNOE (Cloud Native Operational Excellence) industry initiative is worth mentioning. It's an opinionated reference architecture combining Backstage, Argo CD, Crossplane, External Secrets, and other CNCF tools into a coherent platform pattern. For organizations that want a "platform-in-a-box" using CNCF projects, CNOE is the structured starting point.
 
 CNOE is complementary to Cozystack: CNOE focuses on the developer portal + tooling layer; Cozystack focuses on the underlying multi-tenant Kubernetes-native platform with virtualization. Both can coexist.
 

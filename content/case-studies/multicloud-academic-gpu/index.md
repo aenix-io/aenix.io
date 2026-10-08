@@ -1,13 +1,14 @@
 ---
 title: "From public cloud to bare metal — and bursting compute on demand"
-description: "A European academic-computing SaaS moved off a public hyperscaler onto owned bare metal on Cozystack, kept a single Cluster API across bare metal, hyperscaler and a sovereign OpenStack cloud, and cut GPU cost ~5×."
+seo_title: "Public cloud to bare metal, with GPU bursting"
+description: "An academic-computing SaaS moved from a hyperscaler to owned bare metal on Cozystack, kept one Cluster API across three clouds and cut GPU cost about 5x."
 hero_subtitle: "Off hyperscaler onto bare metal, GPU cost cut ~5x"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/multicloud-academic-gpu/"
-images: ["img/og/og-case-multicloud-academic-gpu.png"]
+images: ["img/og/og-case-multicloud-academic-gpu.jpg"]
 related_pages:
   - /solutions/gpu-cloud-bursting/
   - /industries/universities/
@@ -28,6 +29,11 @@ related_pages:
   <div class="cs-stat"><div class="cs-stat__num">~11,000</div><div class="cs-stat__label">active users; classes of 100+ students</div></div>
   <div class="cs-stat"><div class="cs-stat__num">≈5×</div><div class="cs-stat__label">cheaper GPU on the sovereign cloud vs. the prior setup</div></div>
   <div class="cs-stat"><div class="cs-stat__num">3 → 1</div><div class="cs-stat__label">infrastructure types under one Cluster API</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
 </div>
 
 ## About the project
@@ -57,7 +63,7 @@ At the core — Cozystack on Talos Linux on owned hardware. A management cluster
 - **Storage.** External Ceph (CephFS RWX) stays the storage system; locally — LINSTOR/DRBD with volume encryption.
 - **Access & observability.** Keycloak (OIDC) instead of the cloud IdP; Cozystack's built-in monitoring (VictoriaMetrics/VictoriaLogs) alongside the client's own logging stack.
 
-{{< placeholder-image width="1200" height="640" label="Multi-cloud architecture: a single management cluster (Cozystack · Talos · Kamaji) orchestrates bare metal, a public hyperscaler and a sovereign OpenStack via one Cluster API; sites and external Ceph stitched by a WireGuard mesh" >}}
+{{< case-diagram src="/img/case-studies/multicloud-academic-gpu-en.webp" alt="Multi-cloud architecture: a single management cluster (Cozystack · Talos · Kamaji) orchestrates bare metal, a public hyperscaler and a sovereign OpenStack via one Cluster API; sites and external Ceph stitched by a WireGuard mesh" >}}
 
 ## Execution: new requirements and how we handled them
 
@@ -93,8 +99,17 @@ GPUs on the sovereign cloud cost roughly **5× less** than the previous hypersca
   <div class="card"><div class="card-body"><h3 class="card-title">Co-development-grade support</h3><p class="card-description">Fixes go upstream (IP-in-IP in Kilo, an issue filed in Talos), a working autoscaler built in a week, critical bugs closed fast.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the platform is described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
+*This case study is published in anonymized form: the platform is described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

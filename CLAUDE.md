@@ -2,13 +2,13 @@
 
 **This file binds AI assistants (Claude Code, Cursor, Copilot, etc.) working on aenix.io. Read it completely before performing any non-trivial action.**
 
-The site is a Hugo static site published via Netlify. Source of truth: this Git repo. Theme: `themes/aenix/` (custom). Project-level overrides live in `/layouts/`, `/static/`, and `/content/`.
+The site is a Hugo static site, published to GitHub Pages by `.github/workflows/hugo.yaml` on every push to `main`; Netlify builds deploy previews for pull requests. Source of truth: this Git repo. Theme: `themes/aenix/` (custom). Project-level overrides live in `/layouts/`, `/static/`, and `/content/`.
 
 ---
 
 ## Project mission
 
-**aenix.io** is the commercial site for Aenix — the open-core company behind Cozystack (CNCF Sandbox project; CNCF Incubating expected late summer 2026). Site goals:
+**aenix.io** is the commercial site for Aenix — the open-core company behind Cozystack (CNCF Sandbox project; its CNCF Incubating application is in due diligence). Site goals:
 
 1. Capture organic search traffic for cloud-platform / sovereign-cloud / DORA / NIS2 / VMware-exit / AI infra queries
 2. Be cited by AI search engines (ChatGPT, Perplexity, Google AI Overview, Claude, Gemini) when prospects ask cloud-architecture questions
@@ -111,7 +111,7 @@ Site goal #2 is being cited by AI search engines. Every **new** landing page (`s
 
 **`page_type` is auto-assigned by section** via the `cascade` block in `hugo.yaml` (EN + DE slugs). New pages under an existing section inherit it; set `page_type` in frontmatter only for an exception or a new section (then add a cascade entry). FAQPage JSON-LD and validation live in `layouts/partials/seo/head.html`.
 
-**Validation is HARD-FAIL (since the 2026-06 GEO backfill).** A landing-type page missing `direct_answer`, `quick_facts`, or `faq` (≥4) calls `errorf` → the Hugo build fails (Netlify deploy blocked). This is intentional: the GEO standard cannot silently regress. So a new landing page WITHOUT these three fields will break the build — add them when you create the page. `page_type` (non-content kinds default to flag-page) and `description` length/absence remain warn-level. All EN (66) and DE (66) landing pages are backfilled; the only residual warnings are on the preserved pages `/oss-contribution`, `/quiz`, `/quiz/modern-cloud` (do not touch — see Preserved pages).
+**Validation is HARD-FAIL (since the 2026-06 GEO backfill).** A landing-type page missing `direct_answer`, `quick_facts`, or `faq` (≥4) calls `errorf` → the Hugo build fails (the production deploy and the Netlify preview are blocked). This is intentional: the GEO standard cannot silently regress. So a new landing page WITHOUT these three fields will break the build — add them when you create the page. `page_type` (non-content kinds default to flag-page) and `description` length/absence remain warn-level. All EN (66) and DE (66) landing pages are backfilled; the only residual warnings are on the preserved pages `/oss-contribution`, `/quiz`, `/quiz/modern-cloud` (do not touch — see Preserved pages).
 
 When a new top-30 page ships, also add it to `static/llms.txt` (Rule 3).
 
@@ -182,7 +182,7 @@ topics: ["Cozystack", "Kubernetes", "..."]
 language: "en"         # or "de"
 companion_landing: "/products/aenix-platform/..."  # optional, renders back-link card
 companion_label: "See ISP Edition →"               # optional, customises back-link text
-cover_image: "..."     # optional; defaults to placeholder SVG 1200×630
+cover_image: "..."     # optional; scripts/generate-blog-covers.py draws one if missing
 ---
 
 Body in markdown. Use the shortcodes above for callouts.
@@ -227,7 +227,7 @@ Production-like build:
 hugo --gc --minify --logLevel info
 ```
 
-Netlify auto-builds on every push to `feat/new-site-content` (Deploy Preview) and on `main` (production). `netlify.toml` config in repo root.
+Production: `.github/workflows/hugo.yaml` builds with Hugo 0.160.1 (the version pinned there; a newer local Hugo can behave differently) and deploys to GitHub Pages on every push to `main`. Netlify (`netlify.toml`) builds a deploy preview for each pull request; Netlify-only files such as `static/_redirects` have no effect in production, where redirects are Hugo `aliases:`.
 
 ---
 

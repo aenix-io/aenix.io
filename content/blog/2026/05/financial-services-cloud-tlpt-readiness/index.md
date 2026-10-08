@@ -1,12 +1,14 @@
 ---
 title: "Financial-services cloud platforms — what TLPT readiness actually looks like in 2026"
+seo_title: "TLPT readiness for financial-services cloud platforms"
 description: "What TLPT readiness under DORA actually looks like in 2026 for platform engineers at banks, insurers, and payment institutions facing a real supervisor cycle."
 date: "2026-05-11"
-cover_image: "/img/blog/covers/financial-services-cloud-tlpt-readiness.png"
+cover_image: "/img/blog/covers/financial-services-cloud-tlpt-readiness.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Financial Services", "DORA", "Compliance", "Sovereignty", "Cozystack"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/finanzdienstleister-cloud-tlpt-readiness/"
 companion_landing: "/industries/financial-services/"
 companion_label: "See financial-services industry page →"
 quiz:
@@ -18,13 +20,13 @@ quiz:
         - { text: "Threat-Led Penetration Testing, run every three years", correct: true }
         - { text: "Transaction-Level Privacy Test, run annually with GDPR audit", correct: false }
       explanation: "TLPT is Threat-Led Penetration Testing, required every three years as a structured red-team exercise against live production by an external test provider, with the CSIRT/SOC treated as a real defender."
-    - q: "What does the article say about why the 24-hour DORA Article 23 early-warning window often turns out to be fictional in practice?"
+    - q: "What does the article say about why the 24-hour NIS2 Article 23 early-warning window often turns out to be fictional in practice?"
       options:
         - { text: "Supervisors rarely enforce the 24-hour clock in practice", correct: false }
         - { text: "Most banks have outsourced detection to MSSPs that miss it", correct: false }
         - { text: "Detection telemetry is tuned for performance, not security", correct: true }
-      explanation: "TLPT-readiness question 1 explains that if detection telemetry is tuned for performance and not security, the 24-hour window is fictional — most banks have rich performance telemetry and alert-fatigued security telemetry, so the signal-to-noise on Article 23 triggers is too low."
-    - q: "How does the Cozystack-based architecture address Article 28's concentration-risk substantive condition (not just procurement)?"
+      explanation: "TLPT-readiness question 1 explains that if detection telemetry is tuned for performance and not security, the 24-hour window is fictional — most banks have rich performance telemetry and alert-fatigued security telemetry, so the signal-to-noise on reportable-incident triggers is too low."
+    - q: "How does the Cozystack-based architecture address Article 29's concentration-risk substantive condition (not just procurement)?"
       options:
         - { text: "Workloads use platform abstractions that exist on multiple substrates", correct: true }
         - { text: "By contracting two competing hyperscalers simultaneously", correct: false }
@@ -36,12 +38,12 @@ quiz:
         - { text: "Full transitive closure of every upstream dependency", correct: false }
         - { text: "Second hop — the contracted vendor's own critical providers", correct: true }
       explanation: "Gap 4 states Article 30(2)(a) requires visibility to second hop — the contracted hyperscaler's data-centre operators, network providers, and shared platform services beneath."
-    - q: "In the engagement model, what does Aenix explicitly NOT do in Phase 4 (Managed retainer)?"
+    - q: "In Phase 4 of the engagement model, how do Ænix engineers get access to the bank's production cluster?"
       options:
-        - { text: "Hold kubectl access to the customer's production cluster", correct: true }
-        - { text: "Provide Tier-3 SLA support for the platform substrate", correct: false }
-        - { text: "Participate in TLPT preparation and post-mortems", correct: false }
-      explanation: "Phase 4 explicitly states: 'No kubectl access to customer production cluster — operates via GitOps PR review only. Critical for bank governance.'"
+        - { text: "Only if the bank grants it; GitOps PR review needs no access at all", correct: true }
+        - { text: "Through standing root access agreed at contract signature", correct: false }
+        - { text: "Through a shared administrator account owned by Ænix", correct: false }
+      explanation: "Phase 4 states that access is the bank's choice: advisory and GitOps PR review need no access to production, and remote access to clusters happens only with the bank's approval. That is critical for bank governance."
 ---
 
 
@@ -237,8 +239,8 @@ shape the work.
 Confirm regulatory scope (DORA + national overlays + sectoral rules).
 Confirm criticality classification of workloads. Sponsor and
 supervisor-engagement contacts on customer side. Engagement model
-(typical: Ænix runs advisory + Tier-3 SLA; customer runs production
-operations).
+(typical: Ænix provides advisory and escalation support; customer runs
+production operations).
 
 ### Phase 1 — Platform Readiness Assessment with DORA workstream
 
@@ -246,24 +248,26 @@ operations).
 review against DORA Article 6 and Articles 28-30 expectations. Output: 30-50
 page report with gap analysis, prioritised remediation, timing.
 
-### Phase 2 — Pilot deployment of Private Cloud Platform
+### Phase 2 — Pilot slice of Private Cloud Platform
 
-3-6 months. Defined slice of critical-function workloads migrated to
-Cozystack-based Private Cloud Platform. Supervisor evidence catalogue
+The first part of the build. A defined slice of critical-function
+workloads migrated to Ænix Private Cloud Platform. Supervisor evidence catalogue
 partially built. TLPT-readiness validated against the pilot scope.
 
 ### Phase 3 — Full Private Cloud Platform build
 
-12-30 months depending on workload scope, multi-DC structure, TLPT
-cycle. Production-grade deployment with full compliance documentation
+Pilot and full build together take 3-12 months, depending on workload
+scope and multi-DC structure; TLPT readiness then follows the bank's
+TLPT cycle. Production-grade deployment with full compliance documentation
 deliverables. Ænix participates in TLPT preparation; the test itself
 is run by accredited red-team providers.
 
-### Phase 4 — Managed retainer
+### Phase 4 — Support subscription
 
-Ænix advisory + Tier-3 under SLA. No kubectl access to customer
-production cluster — operates via GitOps PR review only. Critical for
-bank governance.
+Ænix advisory and escalation under a Plus or Enterprise support tier
+(see [/pricing/](/pricing/)). Access is the bank's choice: GitOps PR
+review needs no access to production, and remote access to clusters
+happens only with the bank's approval. Critical for bank governance.
 
 ## When this engagement model fits
 
@@ -298,8 +302,6 @@ Poor fit:
   the product for regulated enterprises
 - **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   architecture-level DORA walkthrough
-- **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
-  what demonstrable means in practice
 - **[Private Cloud Platform — DORA and NIS2 obligations mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
   product-level architectural detail
 - **[DORA compliance checklist resource](/resources/dora-compliance-checklist/)** —

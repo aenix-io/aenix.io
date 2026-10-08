@@ -17,6 +17,7 @@
     hero_primary     — {text, href} main CTA (lime)
     hero_secondary   — {text, href} quiet CTA
     speaker_photo    — assets path to the composited portrait
+    speaker_alt      — alt text for that portrait (defaults to Timur as host)
     translation      — list of {from, to} term pairs (optional signature strip)
     stats            — list of {number, label} pain stats (optional)
     inshort_title    — heading for the direct_answer/quick_facts section
@@ -24,9 +25,11 @@
 */}}
 {{- $isRU := eq (.Params.language | default "en") "ru" -}}
 {{- $isFR := eq (.Params.language | default "en") "fr" -}}
-{{- $registerLabel := cond $isRU "Зарегистрироваться" (cond $isFR "Je m'inscris" "Register") -}}
+{{- $isDE := or (eq (.Params.language | default "en") "de") (hasPrefix .RelPermalink "/de/") -}}
+{{- $registerLabel := cond $isRU "Зарегистрироваться" (cond $isFR "Je m'inscris" (cond $isDE "Jetzt anmelden" "Register")) -}}
 {{- $photo := .Params.speaker_photo | default "images/workshops/timur-tukaev.png" -}}
-{{- $portraitAlt := cond $isRU "Тимур Тукаев — ведущий воркшопа" (cond $isFR "Timur Tukaev, animateur de l'atelier" "Timur Tukaev — workshop host") -}}
+{{- $portraitAlt := cond $isRU "Тимур Тукаев — ведущий воркшопа" (cond $isFR "Timur Tukaev, animateur de l'atelier" (cond $isDE "Timur Tukaev – Leiter des Workshops" "Timur Tukaev — workshop host")) -}}
+{{- with .Params.speaker_alt }}{{ $portraitAlt = . }}{{ end -}}
 
 <section class="event-hero ws-hero">
   <div class="ws-hero__bg" aria-hidden="true">
@@ -129,7 +132,7 @@
         {{ with .Params.inshort_title }}<h2>{{ . }}</h2>{{ end }}
         {{ partial "seo/geo-intro.html" . }}
         <div class="ws-cta-center ws-cta-center--outro">
-          <a class="cta-primary cta-accent" href="#register">{{ with .Params.hero_primary }}{{ .text }}{{ else }}{{ $registerLabel }}{{ end }}</a>
+          {{ with .Params.hero_primary }}<a class="cta-primary cta-accent" href="{{ .href | default "#register" }}">{{ .text }}</a>{{ else }}<a class="cta-primary cta-accent" href="#register">{{ $registerLabel }}</a>{{ end }}
         </div>
       </div>
       {{ end }}

@@ -1,8 +1,9 @@
 ---
 title: "Production Kubernetes cluster setup — architecture decisions, sizing, and operations in 2026"
+seo_title: "Production Kubernetes cluster setup and architecture"
 description: "Ten architecture decisions behind a production Kubernetes cluster — distribution, tenancy, CNI, storage, GitOps, DR — and the readiness failures that recur."
 date: "2026-05-16"
-cover_image: "/img/blog/covers/kubernetes-cluster-setup-production-architecture.png"
+cover_image: "/img/blog/covers/kubernetes-cluster-setup-production-architecture.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Talos", "Sovereignty"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "F5 BIG-IP plus Istio service mesh", correct: false }
         - { text: "MetalLB plus Cilium for L2 and L7", correct: true }
       explanation: "Bare-metal deployments default to MetalLB (layer-2 load balancing) plus Cilium (layer-7). Service mesh (Istio/Linkerd) is for advanced traffic management on top."
+hreflang_de: /de/blog/2026/05/produktion-kubernetes-cluster-architektur/
 ---
 
 
@@ -208,7 +210,7 @@ Cluster is "owned" by everyone, operated by no one. Drift accumulates; nobody ca
 
 Before building or scaling, an architecture review is the cheapest insurance. The output is a written assessment of where you stand, where the gaps are, and what production-readiness looks like for your scale.
 
-Ænix runs Kubernetes architecture reviews as a focused 5-10 day engagement, or as part of broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+Ænix runs Kubernetes architecture reviews as part of the fixed-price **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**: 14 days for a focused review, 28 days for the full assessment.
 
 ## Want to dig deeper?
 

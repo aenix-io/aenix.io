@@ -5,6 +5,15 @@ theme: aenix
 enableRobotsTXT: true
 canonicalizeURLs: false
 
+# When a page last changed: an explicit `lastmod:` wins, otherwise the date of
+# the last commit that touched the file, otherwise the publication date. Feeds
+# BlogPosting dateModified, article:modified_time and <lastmod> in the sitemap,
+# which otherwise always repeated the publication date. CI checks out the full
+# history (fetch-depth: 0) for this.
+enableGitInfo: true
+frontmatter:
+  lastmod: ["lastmod", ":git", "date"]
+
 # Sitewide page_type assignment (GEO). Cascades into every landing page by
 # section so authors don't repeat it. Page-level `page_type` in frontmatter
 # overrides the cascade. EN + DE slugs both covered; non-matching globs are
@@ -38,18 +47,13 @@ cascade:
     skip_breadcrumb_jsonld: true
 
 params:
-  description: "Aenix builds turnkey cloud platforms on Cozystack (CNCF): Public Cloud Platform for organisations selling cloud, Private Cloud Platform for regulated organisations running their own, and AI Platform for GPU workloads."
+  description: "Ænix builds cloud platforms on Cozystack (CNCF): Public Cloud for hosting providers, Private Cloud for regulated enterprises, AI Platform for GPU workloads."
   author: Ænix
   email: info@aenix.io
 
-  # Top announcement bar (Apollo-style). Set enabled: false to remove it.
-  # Bump `id` whenever the message changes so previously-dismissed visitors see the new one.
-  announcement:
-    enabled: false
-    id: webinar-2026-08-19
-    text: "Live webinar Wed 19 Aug 2026 16:00 CEST (14:00 UTC): Turnkey Public Cloud: From Installation and Setup to Your First Customers"
-    buttonText: "Learn More"
-    url: "https://u.to/v3_mIg"
+  # Top announcement bar (Apollo-style). To show one, add an `announcement:` map
+  # with enabled / id / text / buttonText / url. Bump `id` whenever the message
+  # changes so previously-dismissed visitors see the new one.
   googleAnalytics: GT-NMCJ23L
   ahrefsAnalytics: GQGQZe4HnT/wYo45t5cUEw
   # gtmContainer: GTM-XXXXXXX  # uncomment + set when GTM container is provisioned
@@ -58,7 +62,7 @@ params:
   # for design hand-off previews (notes are visible source-of-record for designers).
   hide_design_notes: true
   social:
-    linkedin: https://www.linkedin.com/company/aenix/
+    linkedin: https://www.linkedin.com/company/aenix-io/
     telegram: https://t.me/cozystack
     facebook: https://www.facebook.com/aenix.io
     x: https://x.com/aenix_io
@@ -66,10 +70,14 @@ params:
   company:
     eu:
       name: AENIX s.r.o.
-      address: "Sladkovského 546/8273"
-      city: "Buštěhrad"
-      zip: "273 43"
+      # Registered office as entered in the Czech business register (ARES).
+      address: "U Trojice 2661/1e"
+      district: "České Budějovice 3"
+      city: "České Budějovice"
+      zip: "370 04"
       country: Czech Republic
+      country_code: CZ
+      registered: "2024-04-22"
       cin: "21493871"
       vat: CZ21493871
       databox: 2rvcmud
@@ -79,6 +87,7 @@ params:
       city: "Newark, County of New Castle"
       state: Delaware
       country: United States
+      country_code: US
       zip: "19713"
       registration: "10075938"
 
@@ -408,6 +417,22 @@ menus:
       url: /compliance/
       parent: resources
       weight: 7
+    - name: ISO 27001 certificate
+      url: /compliance/iso-27001/
+      parent: resources
+      weight: 8
+    - name: Webinars
+      url: /webinars/
+      parent: resources
+      weight: 9
+    - name: Certification
+      url: /certification/
+      parent: resources
+      weight: 10
+    - name: By role
+      url: /for/
+      parent: resources
+      weight: 11
 
     # ── Company ──
     - name: Company
@@ -438,6 +463,14 @@ menus:
       url: /partners/vmware-exit/
       parent: company
       weight: 6
+    - name: Workshops
+      url: /workshops/
+      parent: company
+      weight: 7
+    - name: Cozystack Tour 2026
+      url: /tour-2026/
+      parent: company
+      weight: 8
 
     # ── Contact (CTA) ──
     - name: Contact
@@ -737,7 +770,7 @@ menus:
       url: /de/ressourcen/
       identifier: resources-de
       weight: 60
-    - name: Lead-Magnets
+    - name: Checklisten & Leitfäden
       url: /de/ressourcen/
       parent: resources-de
       weight: 1
@@ -757,6 +790,14 @@ menus:
       url: /de/compliance/
       parent: resources-de
       weight: 5
+    - name: ISO-27001-Zertifikat
+      url: /de/compliance/iso-27001/
+      parent: resources-de
+      weight: 6
+    - name: Nach Rolle
+      url: /de/fuer/
+      parent: resources-de
+      weight: 7
     - name: Unternehmen
       url: /de/ueber-uns/
       identifier: company-de
@@ -839,7 +880,6 @@ menus:
 taxonomies:
   type: types
   topic: topics
-  author: authors
 
 permalinks:
   blog: /blog/:year/:month/:contentbasename/

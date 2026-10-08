@@ -1,13 +1,13 @@
 ---
 title: "8xH100 inference on your own bare metal"
-description: "A mobile photo/video app moved bare-metal GPU inference off a rented GPU cloud onto its own 8xH100 server on Cozystack — 2-3x GPU efficiency, ~2 months to production, KubeVirt passthrough."
+description: "A mobile photo and video app moved GPU inference off a rented GPU cloud onto its own 8xH100 server on Cozystack: 2-3x GPU efficiency, ~2 months to production."
 hero_subtitle: "8xH100 inference moved off rented GPU cloud onto owned bare metal"
 date: 2026-06-20
 lastmod: 2026-06-20
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/bare-metal-gpu-inference/"
-images: ["img/og/og-case-bare-metal-gpu-inference.png"]
+images: ["img/og/og-case-bare-metal-gpu-inference.jpg"]
 primary_keyword: "bare metal GPU inference"
 secondary_keywords:
   - "on-premise AI inference"
@@ -49,6 +49,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">2-3x</div><div class="cs-stat__label">GPU-efficiency gain moving off per-hour rental onto owned bare metal</div></div>
 </div>
 
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
+</div>
+
 ## About the project
 
 The client is a fast-growing developer of a mass-market mobile app for creative photo and video editing. Several of its headline features — background removal and replacement, beautification, visual effects — are powered by the company's own AI models rather than third-party APIs.
@@ -75,7 +80,7 @@ A single 8xH100 server, layered top to bottom, turns owned bare metal into a pri
 
 Inference runs as two complementary pipelines. Asynchronous: API gateway → RabbitMQ queue → GPU ML workers → webhook callback. Synchronous: HTTP inference endpoints autoscaled with KEDA on nginx-ingress request rate (RPS), using VictoriaMetrics as the metrics source.
 
-{{< placeholder-image width="1200" height="640" label="Single 8xH100 bare-metal node, layered: client ML workers (inference models, RabbitMQ queues, sync/async) on a nested tenant Kubernetes with GPUs passed through and the NVIDIA GPU Operator inside; isolated tenant (dedicated etcd, secrets, registry, monitoring) on Cozystack over k3s/generic Linux (LINSTOR, Cilium+KubeOVN, KubeVirt, vfio-pci passthrough, MetalLB); bare metal: 8x NVIDIA H100 80GB, NVLink, 2TB RAM" >}}
+{{< case-diagram src="/img/case-studies/bare-metal-gpu-inference-en.webp" alt="Single 8xH100 bare-metal node, layered: client ML workers (inference models, RabbitMQ queues, sync/async) on a nested tenant Kubernetes with GPUs passed through and the NVIDIA GPU Operator inside; isolated tenant (dedicated etcd, secrets, registry, monitoring) on Cozystack over k3s/generic Linux (LINSTOR, Cilium+KubeOVN, KubeVirt, vfio-pci passthrough, MetalLB); bare metal: 8x NVIDIA H100 80GB, NVLink, 2TB RAM" >}}
 
 ## Execution: new requirements and how we handled them
 
@@ -83,7 +88,7 @@ Inference runs as two complementary pipelines. Asynchronous: API gateway → Rab
 - **GPU passthrough of all eight H100s.** Every H100 is handed to the KubeVirt tenant VM via vfio-pci. The classic "nvidia driver vs vfio-pci" race at boot — where the host driver claims a card before vfio can — was solved with an initramfs `driver_override`, so the devices land in the VM deterministically.
 - **RWX storage for shared model weights.** Many worker pods need the same model weights concurrently. We provided shared read-write-many storage via a CSI wrapper plus NFS-Ganesha; the fix was contributed upstream to Cozystack.
 - **Traffic-based autoscaling.** Synchronous inference workers scale with live demand using KEDA driven by nginx-ingress RPS metrics from VictoriaMetrics. The metrics-path fix that made this reliable also went upstream.
-- **GPU density.** To pack more inference onto each card, we enabled GPU sharing via HAMi / HAMi fractional sharing, so several jobs can share one physical H100.
+- **GPU density.** To pack more inference onto each card, we enabled fractional GPU sharing with HAMi, so several jobs share one physical H100.
 
 ## Results and current state
 
@@ -95,7 +100,7 @@ Inference runs as two complementary pipelines. Asynchronous: API gateway → Rab
 ## What's next
 
 - Grow the GPU-server fleet beyond the first node.
-- GPU partitioning (HAMi / MIG) for higher inference density per card.
+- Higher inference density per card: further HAMi tuning now, MIG partitioning once it leaves the Cozystack roadmap.
 - A dedicated Harbor registry for heavy (~100GB) model images.
 - Expand self-service on top of the multi-tenancy model.
 
@@ -108,8 +113,17 @@ Inference runs as two complementary pipelines. Asynchronous: API gateway → Rab
   <div class="card"><div class="card-body"><h3 class="card-title">Engineering depth that compounds</h3><p class="card-description">RWX-storage and metrics fixes went upstream to Cozystack — the platform itself improved over the course of the project.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
+*This case study is published in anonymized form: the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

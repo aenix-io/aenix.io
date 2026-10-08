@@ -5,7 +5,12 @@ eyebrow: "Программа сертификации · первая ступе
 layout: "cert-page"
 language: "ru"
 url: "/certification/"
+page_type: "flag-page"
 ---
+
+<div lang="en" class="cert-en-summary" style="border:1px solid rgba(127,127,127,.35);border-radius:10px;padding:14px 16px;margin:0 0 24px">
+<p style="margin:0"><strong>In English.</strong> The Ænix Certification for Cozystack — Fundamentals (CCF) checks that an engineer understands how Cozystack is built and how to work with it. The exam is in English: 60 multiple-choice questions in 90 minutes, free of charge and currently in beta; the certificate is valid for 24 months. The programme pages, preparation materials and labs are in Russian today. To enrol a team or get exam access for your engineers, <a href="/contact/">contact us</a> with the number of engineers and their names in Latin script. For instructor-led training on the same stack, see the <a href="/kubernetes-deep-dive/">Kubernetes Deep Dive Course</a>.</p>
+</div>
 
 Сертификация подтверждает, что человек понимает, как устроен Cozystack и как в нём
 работать. Первая ступень называется **CCF — Fundamentals**, первая ступень программы **Ænix Certification for Cozystack**: она
@@ -29,7 +34,7 @@ url: "/certification/"
 <tr><td>Сертификат</td><td>действует 24 месяца, продлевается сдачей следующей ступени</td></tr>
 </table>
 
-⚠️ **Сейчас идёт бета.** Банк вопросов ещё пополняется, а проходной балл будет уточнён по
+**Сейчас идёт бета.** Банк вопросов ещё пополняется, а проходной балл будет уточнён по
 данным реальных попыток. На срок действия вашего сертификата это не повлияет: выданный в
 бете действует те же 24 месяца.
 

@@ -1,8 +1,9 @@
 ---
 title: "Cloud Readiness Assessment — what 14 days actually cover (2026 methodology)"
+seo_title: "Cloud readiness assessment: the 14-day methodology"
 description: "A 14-day platform readiness assessment run as four parallel workstreams: how the days sequence, what the report contains, and pitfalls we learned to avoid."
 date: "2026-05-04"
-cover_image: "/img/blog/covers/cloud-readiness-assessment-14-day-methodology.png"
+cover_image: "/img/blog/covers/cloud-readiness-assessment-14-day-methodology.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Nutanix", "Kubernetes", "Sovereignty", "Cloud Repatriation"]
@@ -48,6 +49,7 @@ quiz:
       explanation: "Strong fits include a regulator deadline (DORA Article 28, NIS2, sectoral audit), an upcoming board-level cost decision, a new platform engineering function being stood up, or an AI / data-residency project blocked at architecture review. The other options are explicitly listed as poor fits."
 aliases:
   - /blog/2026/05/vmware-migration-assessment-detailed/
+hreflang_de: /de/blog/2026/05/cloud-readiness-assessment-methodik/
 ---
 
 

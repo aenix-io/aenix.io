@@ -1,0 +1,17 @@
+{{- /*
+  locale-pairs.html — map of every page's RelPermalink to the counterparts it
+  declares (hreflang_en / hreflang_de / hreflang_ru). Call with partialCached:
+  it walks all pages once per build.
+
+  Used to show a language link or emit an hreflang pair only when the other
+  page exists and points back (a one-way hreflang_de, e.g. to a page that
+  pairs with a different EN page, is ignored).
+*/ -}}
+{{- $s := newScratch -}}
+{{- range site.Pages -}}
+  {{- $s.SetInMap "pairs" .RelPermalink (dict
+      "en" (.Params.hreflang_en | default "")
+      "de" (.Params.hreflang_de | default "")
+      "ru" (.Params.hreflang_ru | default "")) -}}
+{{- end -}}
+{{- return ($s.Get "pairs" | default dict) -}}

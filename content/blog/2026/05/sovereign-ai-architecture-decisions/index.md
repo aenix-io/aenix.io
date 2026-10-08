@@ -2,11 +2,12 @@
 title: "Seven decisions when designing sovereign AI architecture"
 description: "Seven architecture decisions behind a sovereign AI stack, how they interlock, and the combinations that recur in real deployments."
 date: "2026-05-27"
-cover_image: "/img/blog/covers/sovereign-ai-architecture-decisions.png"
+cover_image: "/img/blog/covers/sovereign-ai-architecture-decisions.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["DORA", "NIS2", "Sovereignty", "AI/ML", "Multi-tenancy", "Financial Services"]
+topics: ["DORA", "NIS2", "Sovereignty", "AI and ML", "Multi-tenancy", "Financial Services"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/sovereign-ai-architektur-entscheidungen/"
 companion_landing: "/solutions/sovereign-ai/"
 quiz:
   title: "Test yourself: seven sovereign-AI decisions"
@@ -99,6 +100,6 @@ No specific regulator + cost economics trigger + multi-tenant + customer-operate
 
 ## How to use the decision guide
 
-Walk through the flowchart. Note your answers. Architecture options narrow naturally.
+Answer the questions above in order and note your answers; the architecture options narrow naturally. The [sovereign AI decision guide](/resources/sovereign-ai-decision-guide/) walks through the same decisions in more depth.
 
 For specific engagement see **[Sovereign AI services](/solutions/sovereign-ai/)**.

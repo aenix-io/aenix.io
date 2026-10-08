@@ -1,11 +1,12 @@
 ---
 title: "Reverse cloud migration — a practical playbook for leaving public cloud in 2026"
+seo_title: "Reverse cloud migration: a playbook for leaving the cloud"
 description: "A five-step cloud repatriation playbook, the pitfalls that recur, when not to repatriate, and how long a realistic move actually takes."
 date: "2026-05-26"
-cover_image: "/img/blog/covers/reverse-cloud-migration-playbook.png"
+cover_image: "/img/blog/covers/reverse-cloud-migration-playbook.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["DORA", "NIS2", "Sovereignty", "Cloud Repatriation", "AI/ML", "GPU"]
+topics: ["DORA", "NIS2", "Sovereignty", "Cloud Repatriation", "AI and ML", "GPU"]
 language: "en"
 companion_landing: "/solutions/cloud-repatriation/"
 quiz:
@@ -29,7 +30,7 @@ quiz:
         - { text: "4–8 weeks", correct: false }
         - { text: "8–14 months", correct: true }
         - { text: "24–36 months", correct: false }
-      explanation: "For an org with ~100 VMs and a moderate cloud bill: 2–4 weeks assessment, 2–4 months destination platform build, 6–18 months workload migration in cohorts. Total elapsed: 8–14 months."
+      explanation: "For an org with ~100 VMs and a moderate cloud bill: a 14- or 28-day assessment, a destination platform build that overlaps with the first cohorts, and 6–18 months of workload migration in cohorts. Total elapsed: 8–14 months."
     - q: "Which of these is NOT on the article's list of when repatriation is the wrong answer?"
       options:
         - { text: "You have a small IT team running a handful of services", correct: false }
@@ -44,6 +45,7 @@ quiz:
         - { text: "Failing to negotiate exit-fee terms", correct: false }
         - { text: "Choosing the wrong cutover season", correct: false }
       explanation: "A repatriation measured purely on cost reduction tends to under-invest in the platform work that makes the cost reduction sustainable. Two years in, the team has saved money but lost velocity — and that triggers a partial reverse-repatriation back into the hyperscaler."
+hreflang_de: /de/blog/2026/05/reverse-cloud-migration-leitfaden/
 ---
 
 
@@ -216,8 +218,8 @@ The hybrid pattern that fits depends on the trigger that drove repatriation — 
 
 A typical repatriation, end-to-end:
 
-- **2-4 weeks:** assessment phase (Ænix Platform Readiness Assessment with cost-and-cloud-spend workstream emphasis).
-- **2-4 months:** destination platform build. Greenfield infrastructure, base services, observability, identity, IaC and GitOps tooling, runbooks.
+- **14 or 28 days:** assessment phase ([Platform Readiness Assessment](/services/platform-readiness-assessment/), fixed price, with cost-and-cloud-spend workstream emphasis).
+- **3-12 months, overlapping with the first cohorts:** destination platform build — greenfield infrastructure, base services, observability, identity, IaC and GitOps tooling, runbooks. The platform is usable for the first cohort well before the build is complete.
 - **6-18 months:** workload migration in cohorts. Earliest cohorts move quickly; later cohorts respect commitment ladders.
 - **Ongoing:** platform operation and continuous optimization. The post-repatriation platform is a long-term asset that compounds value.
 

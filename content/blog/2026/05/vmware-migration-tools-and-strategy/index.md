@@ -1,8 +1,9 @@
 ---
 title: "VMware migration tools and strategy in 2026 — what works, what fails"
+seo_title: "VMware migration tools and strategy for 2026"
 description: "Three VMware migration paths, the tooling for KubeVirt-based migration, where migrations stumble, and realistic cost ranges."
 date: "2026-05-29"
-cover_image: "/img/blog/covers/vmware-migration-tools-and-strategy.png"
+cover_image: "/img/blog/covers/vmware-migration-tools-and-strategy.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Nutanix", "OpenShift", "Kubernetes", "Cozystack", "KubeVirt"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "1–3 months of platform build", correct: true }
         - { text: "12 months of platform build", correct: false }
       explanation: "1-3 months destination-build before migration cohort 1. Most migrations fail when workloads move to a destination that's been engineered as a PoC, not as a production platform. Engineer the destination first."
+hreflang_de: /de/blog/2026/05/vmware-migration-tools-strategie/
 ---
 
 
@@ -96,8 +98,8 @@ Lower-level conversion tool. Operates on individual VM images; converts vSphere 
 ### Cozystack-specific migration tooling
 KubeVirt CDI + dedicated migration scripts that Ænix has built and reused across customer deployments. Covers VM image conversion, multi-tenant placement, network mapping into Cilium policies.
 
-**Strengths:** Ænix-validated for production migrations; Cozystack-tenant-aware.
-**Limits:** Ænix-engagement-specific (open-sourcing in roadmap).
+**Strengths:** used by Ænix in production migrations; Cozystack-tenant-aware.
+**Limits:** delivered as part of an Ænix engagement, not as a standalone open-source tool.
 
 ### Vendor / commercial tools
 - **Nutanix Move** — for VMware → Nutanix AHV migrations
@@ -167,9 +169,9 @@ Migration completes; platform team thinks they're done. Actually, post-migration
 
 For planning:
 
-- **Assessment:** 14-28 days, fixed-price.
-- **Destination platform foundation:** 1-3 months, depends on scale.
+- **Assessment:** [Platform Readiness Assessment](/services/platform-readiness-assessment/), fixed price, 14 days focused or 28 days full.
+- **Destination platform foundation:** live in weeks once hardware is ready; up to 3 months with integrations, depending on scale.
 - **Migration cohort labor:** 8-15 person-days per cohort of 10-50 VMs.
-- **Total elapsed:** 8-12 months for 100 VMs; 18-24 months for 1000 VMs.
+- **Total elapsed:** 7-10 months under 100 VMs, 10-16 months for 100-500 VMs, 16-25 months for 500-2,000 VMs, assessment through VMware decommission.
 
 Compared to ongoing VCF subscription: most customer engagements show net positive after Year 2 even accounting for migration cost.

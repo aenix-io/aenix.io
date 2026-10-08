@@ -1,12 +1,13 @@
 ---
 title: "Managed Kubernetes in open source platform Cozystack: why we’re doing this"
-description: "Managed Kubernetes Service is a Kubernetes API in your cloud, allowing your users to request services and utilize resources from your…"
+seo_title: "Managed Kubernetes in Cozystack: why we built it"
+description: "Why Cozystack ships a managed Kubernetes service: a Kubernetes API inside your own cloud that lets users request services and use resources on demand."
 date: "2024-08-23"
 author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Multi-tenancy", "Observability", "Terraform"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*2NqXHHzohclI0ZPo.png"
+cover_image: "/img/blog/medium/managed-kubernetes-in-open-source-platform-cozystack-why-were-doing-this/cover.png"
 source_url: "https://medium.com/@tym83/managed-kubernetes-in-open-source-platform-cozystack-why-were-doing-this-94d42c7c48da"
 quiz:
   title: "Test yourself: managed Kubernetes in Cozystack"
@@ -43,11 +44,9 @@ quiz:
       explanation: "The article opens with: have you noticed a decrease in traditional virtual-machine sales? Users want smarter services to deploy applications, manage infrastructure as code with tools like Terraform, and consume managed services as building blocks rather than handling manual VM and database configuration."
 ---
 
----
 
-### Managed Kubernetes in open source platform Cozystack: why we’re doing this
 
-![image](https://cdn-images-1.medium.com/max/800/0*2NqXHHzohclI0ZPo.png)
+![Managed Kubernetes in Cozystack](/img/blog/medium/managed-kubernetes-in-open-source-platform-cozystack-why-were-doing-this/cover.png)
 
 **Managed Kubernetes Service** is a Kubernetes API in your cloud, allowing your users to request services and utilize resources from your cloud. Kubernetes operates on a single-tenant basis, meaning a separate cluster is required for each user.
 
@@ -57,7 +56,7 @@ Have you noticed a decrease in traditional virtual machine sales? Users are now 
 
 Leading cloud providers have changed the way of providing infrastructure so the industry will never be the same again. Now, users expect a specific set of services from every modern cloud: Kubernetes, Simple Storage Services, Monitoring and Managed Databases, and so on.
 
-![image](https://cdn-images-1.medium.com/max/800/0*Y7h9hdzJb4-mTPIe.png)
+![Services users expect from a cloud provider, delivered through Kubernetes](/img/blog/medium/managed-kubernetes-in-open-source-platform-cozystack-why-were-doing-this/02.png)
 
 Kubernetes plays a key role here because it offers a convenient and unified way to consume cloud resources and running user workloads in any cloud. For the user, Kubernetes is the same everywhere. But not for the administrator. As Kubernetes is a popular service among cloud providers, many people know how to work with it. Fewer people know how to administer it on premises, and almost no one knows how to build a full-featured managed Kubernetes service.
 

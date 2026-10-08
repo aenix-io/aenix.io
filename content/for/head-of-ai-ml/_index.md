@@ -1,10 +1,11 @@
 ---
 title: "For Heads of AI/ML — GPU infrastructure you actually control"
-description: "Run training and inference on your own GPUs, in your jurisdiction, with no hyperscaler lock-in. A turnkey AI platform, or built with you by the team behind it."
+seo_title: "Sovereign AI and GPU platform for heads of AI/ML"
+description: "Run training and inference on your own GPUs, in your jurisdiction, with no hyperscaler lock-in. A turnkey AI platform, or one built with you."
 hero_subtitle: "GPU infrastructure in your jurisdiction, no hyperscaler lock-in"
 type: "page"
 language: "en"
-images: ["img/og/og-head-of-ai-ml.png"]
+images: ["img/og/og-head-of-ai-ml.jpg"]
 hreflang_de: /de/fuer/leiter-ai-ml/
 primary_keyword: "sovereign ai gpu platform for ml leaders"
 secondary_keywords: ["sovereign ai", "private gpu cloud", "ai inference platform"]
@@ -27,7 +28,7 @@ related_pages:
 </div>
 
 <div class="trust-badges">
-EU-based engineers · Your GPUs, your jurisdiction · No model-endpoint lock-in · Apache 2.0 platform
+Your GPUs, your jurisdiction · No model-endpoint lock-in · Apache 2.0
 </div>
 
 <!-- /BLOCK 1 -->
@@ -51,7 +52,7 @@ Give data scientists and product teams self-service GPU — for training and for
 
 ## Two ways Ænix helps you
 
-**1. Run a turnkey AI platform.** [Ænix AI Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with enterprise SLA.
+**1. Run a turnkey AI platform.** [Ænix AI Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with Ænix support. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs, whole GPUs to pods, and fractional sharing for pods via HAMi; MIG and time-slicing are on the roadmap.
 
 **2. Build your own, with our team.** Cozystack is the framework; **Ænix is your outsourced engineering team** for an [AI platform build](/services/ai-platform-build/) — GPU topology, scheduling, inference serving and [sovereign-AI](/solutions/sovereign-ai/) controls designed around your models and data.
 
@@ -63,10 +64,9 @@ Give data scientists and product teams self-service GPU — for training and for
 - **Who it's for:** Heads of AI/ML, MLOps leads, AI platform owners.
 - **Control:** your GPUs, your jurisdiction, your model choice — no hyperscaler endpoint dependency.
 - **License:** Apache 2.0 core (Cozystack) — no per-GPU platform tax.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence), accepted into the CNCF Kubernetes AI Conformance program in September 2026 ([details](/compliance/kubernetes-conformance/)).
 - **Common pitfall:** prototyping on a hyperscaler endpoint, then discovering the data class can't legally go there in production.
 
-[Source: [CNCF Landscape](https://landscape.cncf.io), [Cozystack docs](https://cozystack.io)]
 
 ---
 
@@ -74,7 +74,7 @@ Give data scientists and product teams self-service GPU — for training and for
 
 - **Sovereign by construction.** Sensitive data and models stay on your hardware, in your jurisdiction — not on a third-party endpoint.
 - **Multi-tenant GPU, not silos.** Share scarce GPUs across teams with quotas and isolation.
-- **Authors, not resellers.** The team behind Cozystack designs and supports the platform.
+- **Authors, not resellers.** The team that created Cozystack designs and supports the platform.
 
 ---
 
@@ -87,7 +87,7 @@ Yes — GPU scheduling for training plus one-click LLM/vLLM serving for inferenc
 No. Models and data stay on your GPUs in your jurisdiction; you choose open or self-hosted models, not a fixed vendor endpoint.
 
 **How do teams share scarce GPUs?**
-Multi-tenant scheduling with quotas and isolation, so teams self-serve without a dedicated cluster each.
+Multi-tenant scheduling with quotas and isolation, so teams self-serve without a dedicated cluster each. Fractional sharing for pods runs through HAMi; whole GPUs go to VMs by passthrough. GPU usage is measured per tenant, so you can charge teams back in your own billing system.
 
 **Build or buy?**
 The AI Platform for speed; the build-with engagement when GPU topology and serving need to fit your stack. The call scopes it.
@@ -108,7 +108,7 @@ Free, no prep. We look at your GPU footprint and model/data constraints and tell
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/for/head-of-ai-ml/ ; hreflang de → /de/fuer/leiter-ai-ml/, x-default EN.

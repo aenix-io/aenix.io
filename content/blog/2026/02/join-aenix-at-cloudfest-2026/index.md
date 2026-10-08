@@ -1,22 +1,20 @@
 ---
 title: "Join Ænix at CloudFest 2026"
-description: "We’re looking forward to meeting you at CloudFest 2026, booth # Z22."
+description: "Meet the Ænix team at CloudFest 2026, booth Z22: talk to us about building a cloud platform for hosting providers with Cozystack."
 date: "2026-02-27"
 author: "Timur Tukaev"
 type: "news"
 topics: ["Cozystack", "Hosting"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*bI_Zo21na7E1xiKxoAnCBg.png"
+cover_image: "/img/blog/medium/join-aenix-at-cloudfest-2026/cover.jpg"
 source_url: "https://medium.com/@tym83/join-%C3%A6nix-at-cloudfest-2026-26ca996d344c"
 ---
 
----
 
-### Join Ænix at CloudFest 2026
 
 We’re looking forward to meeting you at CloudFest 2026, booth **# Z22**.
 
-![image](https://cdn-images-1.medium.com/max/800/1*bI_Zo21na7E1xiKxoAnCBg.png)
+![Ænix at CloudFest 2026, booth Z22](/img/blog/medium/join-aenix-at-cloudfest-2026/cover.jpg)
 
 **Come by if you’d like to discuss:**
 • How Cozystack and Ænix open-source solutions help reduce infrastructure costs

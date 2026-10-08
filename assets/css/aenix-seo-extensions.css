@@ -5842,6 +5842,7 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 .ws-city--confirmed { border-color: rgba(1, 165, 255, 0.4); background: linear-gradient(180deg, rgba(1, 165, 255, 0.06), var(--ws-panel)); }
 .ws-city--confirmed .ws-city__icon { color: var(--ws-cyan); }
 .ws-city--completed { border-color: rgba(148, 163, 184, 0.35); opacity: 0.82; }
+.ws-city--completed:hover { border-color: rgba(148, 163, 184, 0.35); transform: none; box-shadow: none; }
 .ws-city--completed .ws-city__icon,
 .ws-city--completed .ws-city__cta { color: var(--aenix-text-muted); }
 .ws-city--pending .ws-city__date { color: var(--aenix-text-muted); }
@@ -6433,3 +6434,391 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   .distributor-spot { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.5rem; }
   .distributor-spot__logo { justify-self: start; padding: 0.75rem 1rem; min-width: 160px; }
 }
+
+/* Case-study architecture diagrams (shortcode case-diagram) */
+.case-diagram { margin: 2rem 0; }
+.case-diagram img { display: block; width: 100%; height: auto; border-radius: 14px; }
+
+/* ==========================================================================
+   TOUR 2026 — meet Timur on the road (/tour-2026/): booking cards,
+   itinerary by region, formats grid. Builds on the ws-* workshop scaffold.
+   ========================================================================== */
+.tour-book { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+.tour-book__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.75rem;
+  border: 1px solid rgba(1, 165, 255, 0.4);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(1, 165, 255, 0.08), var(--ws-panel));
+  text-decoration: none;
+  transition: border-color 0.2s var(--ease, ease), transform 0.2s var(--ease, ease), box-shadow 0.2s var(--ease, ease);
+}
+.tour-book__card:hover { border-color: var(--ws-blue); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); }
+.tour-book__region { font-size: 1.625rem; font-weight: 700; color: var(--aenix-text); }
+.tour-book__window { font-size: 1rem; font-weight: 600; color: var(--ws-cyan); }
+.tour-book__zones { font-size: 0.9375rem; line-height: 1.5; color: var(--aenix-text-muted); }
+.tour-book__cta {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  background-image: var(--ws-cta-bg);
+  box-shadow: var(--ws-cta-glow);
+  font-weight: 700;
+  color: #fff;
+}
+.tour-direct {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ws-border);
+  border-radius: var(--ws-radius);
+  background: var(--ws-panel);
+}
+.tour-direct__lead { margin: 0 0 0.875rem; color: var(--aenix-text-muted); line-height: 1.55; }
+.tour-direct__links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.tour-direct__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--ws-border-strong);
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--aenix-text);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.tour-direct__link:hover { border-color: var(--ws-blue); color: var(--ws-blue); }
+.tour-direct__link svg { color: var(--ws-blue); flex: none; }
+
+.tour-region { margin-top: 2.5rem; }
+/* The region head sticks under the site header while its cities scroll by, so the
+   booking button for that region stays at hand; the next region's head replaces it. */
+.tour-region__head {
+  position: sticky;
+  top: var(--tour-sticky-top, 84px);
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+  margin: 0 -1rem 1.25rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--ws-border);
+  border-radius: var(--ws-radius);
+  background: rgba(11, 15, 26, 0.86);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.tour-region__title { margin: 0; font-size: 1.5rem; font-weight: 700; color: var(--aenix-text); }
+.tour-region__window { margin: 0; font-family: var(--font-mono, monospace); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--aenix-text-muted); }
+.tour-region__book {
+  margin-left: auto;
+  padding: 0.6rem 1.15rem;
+  border-radius: 999px;
+  background-image: var(--ws-cta-bg);
+  box-shadow: var(--ws-cta-glow);
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.tour-region__book:hover { filter: brightness(1.08); color: #fff; }
+.tour-stops { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.875rem; }
+.tour-stop {
+  display: grid;
+  grid-template-columns: 13rem 1fr;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ws-border);
+  border-radius: var(--ws-radius);
+  background: var(--ws-panel);
+}
+.tour-stop__where { display: flex; flex-direction: column; gap: 0.2rem; }
+.tour-stop__dates { font-family: var(--font-mono, monospace); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.04em; color: var(--ws-cyan); }
+.tour-stop__city { font-size: 1.25rem; font-weight: 700; color: var(--aenix-text); }
+.tour-stop__country { font-size: 0.875rem; color: var(--aenix-text-muted); }
+.tour-stop__events { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.tour-event { display: grid; grid-template-columns: auto 1fr; gap: 0.15rem 0.75rem; align-items: baseline; }
+.tour-event__tag {
+  grid-row: span 3;
+  align-self: start;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--ws-border);
+  border-radius: 6px;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  min-width: 7.25rem;
+  text-align: center;
+  color: var(--aenix-text-muted);
+}
+.tour-event--conference .tour-event__tag { color: var(--ws-violet); border-color: rgba(167, 139, 250, 0.35); background: rgba(167, 139, 250, 0.1); }
+.tour-event--workshop .tour-event__tag { color: var(--ws-blue); border-color: rgba(1, 165, 255, 0.35); background: rgba(1, 165, 255, 0.1); }
+.tour-event--talk .tour-event__tag,
+.tour-event--community .tour-event__tag,
+.tour-event--podcast .tour-event__tag { color: var(--ws-cyan); border-color: rgba(145, 219, 235, 0.35); background: rgba(145, 219, 235, 0.08); }
+.tour-event--planned { opacity: 0.8; }
+.tour-event__when { font-size: 0.875rem; font-weight: 600; color: var(--aenix-text); }
+.tour-event__title { font-weight: 600; color: var(--aenix-text); text-decoration: none; }
+a.tour-event__title:hover { color: var(--ws-blue); text-decoration: underline; }
+.tour-event__venue { font-size: 0.875rem; color: var(--aenix-text-muted); }
+.tour-event--open { grid-template-columns: 1fr; padding-top: 0.75rem; border-top: 1px dashed var(--ws-border); }
+.tour-event--open .tour-event__when { color: var(--ws-cyan); }
+
+.tour-formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.tour-format {
+  padding: 1.5rem;
+  border: 1px solid var(--ws-border);
+  border-radius: var(--ws-radius);
+  background: var(--ws-panel);
+}
+.tour-format__who { display: block; margin-bottom: 0.5rem; font-family: var(--font-mono, monospace); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ws-blue); }
+.tour-format h3 { margin: 0 0 0.5rem; font-size: 1.125rem; font-weight: 700; line-height: 1.3; color: var(--aenix-text); }
+.tour-format p { margin: 0; font-size: 0.9375rem; line-height: 1.55; color: var(--aenix-text-muted); }
+.tour-hosts { display: flex; flex-wrap: wrap; gap: 0.625rem; margin-top: 1.5rem; padding: 0; list-style: none; }
+.tour-hosts li { padding: 0.45rem 0.9rem; border: 1px solid var(--ws-border-strong); border-radius: 999px; font-size: 0.9375rem; color: var(--aenix-text); }
+.tour-podcast {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1), rgba(1, 165, 255, 0.06));
+}
+.tour-podcast__badge { display: inline-block; margin-bottom: 0.75rem; padding: 0.2rem 0.65rem; border-radius: 999px; background: rgba(167, 139, 250, 0.18); font-family: var(--font-mono, monospace); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ws-violet); }
+.tour-podcast p { color: var(--aenix-text-muted); line-height: 1.6; }
+.tour-podcast ul { margin: 0; padding-left: 1.1rem; color: var(--aenix-text); line-height: 1.7; }
+
+@media (max-width: 900px) {
+  .tour-formats { grid-template-columns: repeat(2, 1fr); }
+  .tour-podcast { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .tour-book, .tour-formats { grid-template-columns: 1fr; }
+  .tour-stop { grid-template-columns: 1fr; gap: 0.75rem; padding: 1.1rem; }
+  .tour-region__head { margin: 0 0 1rem; }
+  .tour-region__window { display: none; }
+  .tour-event { grid-template-columns: 1fr; }
+  .tour-event__tag { grid-row: auto; justify-self: start; }
+}
+.tour-hosts__lead { margin: 2rem 0 0; }
+
+/* About the author, under a blog post (partials/blog/author-box.html). */
+.blog-author {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin: 2.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--aenix-bg-tint);
+  border: 1px solid rgba(1, 165, 255, 0.22);
+  border-radius: 10px;
+}
+.blog-author img.blog-author__photo { width: 72px; height: 72px; max-width: none; margin: 0; border-radius: 50%; object-fit: cover; flex: none; }
+.blog-author__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--aenix-text-muted);
+  margin-bottom: 0.25rem;
+}
+.blog-author__name { font-weight: 700; font-size: 1.0625rem; }
+.blog-author__role { font-weight: 400; color: var(--aenix-text-muted); }
+.blog-author__bio { margin: 0.5rem 0; }
+.blog-author__links { display: flex; gap: 1rem; flex-wrap: wrap; }
+.blog-author__links a { color: var(--aenix-primary); font-weight: 600; text-decoration: none; }
+.blog-author__links a:hover { color: var(--aenix-accent); }
+.blog-post-hero__author a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ============================================================
+   MOBILE OVERFLOW GUARD
+   A `1fr` grid track has an implicit min-width:auto, so one wide
+   table, code line or long button label stretched the whole
+   article column and the page scrolled sideways on phones.
+   Tracks are clamped with minmax(0, 1fr); wide content scrolls
+   inside its own box; long button labels wrap.
+   ============================================================ */
+.blog-post-layout { grid-template-columns: 56px minmax(0, 1fr); }
+@media (max-width: 800px) {
+  .blog-post-layout { grid-template-columns: minmax(0, 1fr); }
+}
+.blog-post-layout > *,
+.blog-post-content,
+.page-content { min-width: 0; }
+/* .page-content centres itself with margin:auto, which inside a grid cell
+   sizes it to its min-content width instead of the track; pin it to the track. */
+.blog-post-layout > .blog-post-content { width: 100%; }
+.blog-post-content pre,
+.page-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.blog-post-content img,
+.blog-post-content video,
+.blog-post-content iframe,
+.page-content img,
+.page-content video,
+.page-content iframe { max-width: 100%; }
+@media (max-width: 640px) {
+  .cta-primary,
+  .cta-secondary,
+  .trust-badge,
+  .btn {
+    white-space: normal;
+    max-width: 100%;
+    text-align: center;
+  }
+  .cta-row > * { max-width: 100%; }
+  .blog-post-share ul,
+  .blog-share { flex-wrap: wrap; }
+}
+/* Long German compounds, identifiers in inline code and bare URLs break
+   instead of pushing the page wider than the phone screen. */
+h1, h2, h3, h4,
+.page-content,
+.blog-post-content { overflow-wrap: break-word; }
+html[lang="de"] h1,
+html[lang="de"] h2,
+html[lang="de"] h3 { hyphens: auto; }
+.page-content :not(pre) > code,
+.blog-post-content :not(pre) > code,
+.page-content p > a,
+.page-content li > a,
+.blog-post-content p > a,
+.blog-post-content li > a { overflow-wrap: anywhere; }
+
+/* ============================================================
+   HEADER — skip link, language switch, narrow-desktop fit
+   ============================================================ */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--brand-secondary, #0a6ed1);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus { top: 12px; outline: 2px solid #fff; outline-offset: 2px; }
+
+.header-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.header-lang:hover { color: var(--brand-primary); }
+.header-lang:focus-visible { outline: 2px solid var(--brand-primary, #01a5ff); outline-offset: 2px; }
+.mobile-nav-item--lang .mobile-nav-link { color: var(--text-secondary); font-weight: 500; }
+
+/* The full navigation needs about 1,240 px in German and 1,110 px in
+   English. Between the burger breakpoint and 1,279 px the header used to
+   overflow and cut off the last dropdown. Tighten the spacing there; German
+   labels are longer, so German pages switch to the burger menu instead. */
+@media (min-width: 961px) and (max-width: 1279px) {
+  .site-header .nav-link { padding: 6px 7px; }
+  .site-header .nav-item--cta { margin-left: 4px; }
+  .site-header .nav-link--cta { padding: 7px 12px; }
+  .site-header .main-nav { gap: 4px; }
+  .site-header .github-link { display: none; }
+}
+@media (max-width: 1279px) {
+  html[lang="de"] .site-header .main-nav { display: none; }
+  html[lang="de"] .mobile-menu-toggle { display: flex; }
+}
+/* Dropdowns of the last top-level items open towards the left so they stay
+   inside the viewport. */
+.nav-list > .nav-item:last-child > .dropdown-menu,
+.nav-list > .nav-item:nth-last-child(2) > .dropdown-menu:not(.dropdown-menu--mega) {
+  left: auto;
+  right: 0;
+}
+
+/* ============================================================
+   FOOTER — columns that fit the viewport, legal entity line
+   Six link columns in a flex row with 4rem gaps needed ~1,200 px, so
+   the page scrolled sideways on 1,024–1,199 px screens.
+   ============================================================ */
+.footer-top { min-width: 0; }
+.footer-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 2rem 2.5rem;
+}
+@media (max-width: 1279px) {
+  .footer-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .footer-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+}
+.footer-nav-group a { overflow-wrap: anywhere; }
+.footer-legal {
+  flex-basis: 100%;
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+/* Wide dropdowns stay inside the viewport: grouped panels centre on their
+   menu item, the mega panel narrows below 1,366 px and anchors to its item's
+   left edge below 1,280 px. */
+.nav-item.has-dropdown .dropdown-menu--grouped:not(.dropdown-menu--mega) {
+  left: 50%;
+  translate: -50% 0;
+}
+@media (max-width: 1365px) {
+  .nav-item.has-dropdown .dropdown-menu--mega {
+    width: 620px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 1279px) {
+  .nav-item.has-dropdown .dropdown-menu--mega {
+    left: 0;
+    translate: 0 0;
+  }
+}
+
+/* ============================================================
+   SMALL UX FIXES (acceptance audit)
+   ============================================================ */
+.page-hero-trust--pills { display: flex; flex-wrap: wrap; }
+a.trust-pill { text-decoration: none; }
+a.trust-pill:hover { color: var(--aenix-primary, #01a5ff); border-color: rgba(1, 165, 255, 0.4); }
+/* The architecture diagram's labels shrink to ~6 px on phones; the copy and
+   the CTAs carry the hero there. */
+@media (max-width: 600px) {
+  .page-home .hero-split__visual { display: none; }
+}
+/* Tap targets: blog filter chips and carousel dots were 20 px and 8 px tall. */
+@media (max-width: 768px) {
+  .blog-chip { min-height: 32px; }
+}
+.quote-carousel__dot { position: relative; }
+.quote-carousel__dot::after { content: ""; position: absolute; inset: -8px; }
+/* Pipedrive form: reserve space while the third-party iframe loads and
+   always offer a plain fallback under it. */
+.pipedrive-form .pipedriveWebForms { min-height: 320px; }
+.pipedrive-form__fallback { margin: 0.75rem 0 0; font-size: 0.875rem; color: var(--aenix-text-muted); }
+.clients-caption { margin: 0.5rem 0 1.5rem; font-size: 0.8125rem; color: var(--aenix-text-muted); text-align: center; }

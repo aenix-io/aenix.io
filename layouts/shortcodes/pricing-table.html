@@ -16,7 +16,7 @@
 */ -}}
 {{- $d := site.Data.pricing -}}
 {{- $plans := $d.plans -}}
-{{- $money := dict -}}
+{{- $unit := $d.price_unit | default "/ month" -}}
 
 {{- define "cp-cell" -}}
   {{- /* ✔/✖ get their colour spans; everything else renders as text */ -}}
@@ -27,8 +27,11 @@
 
 <div class="cozy-pricing">
   <div class="cp-toggle" id="cpBillingToggle">
-    <button class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">Annual <span class="cp-discount">-20%</span></button>
-    <button class="cp-tbtn" data-mode="monthly" aria-pressed="false">Monthly</button>
+    {{- /* Annual = 10 months of the monthly price ("2 months free"); never a
+           percentage, which read as -20% while the prices give 16.7%. */}}
+    {{- $deToggle := or (eq .Page.Params.language "de") (hasPrefix .Page.RelPermalink "/de/") }}
+    <button class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $deToggle "Jährlich" "Annual" }} <span class="cp-discount">{{ cond $deToggle "2 Monate gratis" ($d.annual_label | default "2 months free") }}</span></button>
+    <button class="cp-tbtn" data-mode="monthly" aria-pressed="false">{{ cond $deToggle "Monatlich" "Monthly" }}</button>
   </div>
 
   <div class="cp-table-wrap">
@@ -43,7 +46,7 @@
             <div class="cp-price">
               <span class="cp-amount"
                     data-annual="${{ lang.FormatNumberCustom 0 .price_annual }}"
-                    data-monthly="${{ lang.FormatNumberCustom 0 .price_monthly }}">${{ lang.FormatNumberCustom 0 .price_annual }}</span><span> / month</span>
+                    data-monthly="${{ lang.FormatNumberCustom 0 .price_monthly }}">${{ lang.FormatNumberCustom 0 .price_annual }}</span><span> {{ $unit }}</span>
             </div>
             <div class="cp-billed">billed <span class="cp-billed-word">annually</span></div>
             {{- else }}
@@ -97,7 +100,7 @@
         <div class="cp-price">
           <span class="cp-amount"
                 data-annual="${{ lang.FormatNumberCustom 0 $p.price_annual }}"
-                data-monthly="${{ lang.FormatNumberCustom 0 $p.price_monthly }}">${{ lang.FormatNumberCustom 0 $p.price_annual }}</span><span> / month</span>
+                data-monthly="${{ lang.FormatNumberCustom 0 $p.price_monthly }}">${{ lang.FormatNumberCustom 0 $p.price_annual }}</span><span> {{ $unit }}</span>
         </div>
         <div class="cp-billed">billed <span class="cp-billed-word">annually</span></div>
         {{- else }}

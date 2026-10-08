@@ -1,13 +1,13 @@
 ---
 title: "Bare-Metal-Kubernetes für ein Messaging-API-SaaS"
-description: "Ein Messaging-API-SaaS vollzog eine Proxmox-Migration zu Kubernetes mit Cozystack — 25.000 Instanzen von 13 Hosts auf einen GitOps-Cluster, betrieben von einem Ein-Personen-Team."
+description: "Ein Messaging-API-SaaS wechselte mit Cozystack von Proxmox zu Kubernetes: 25.000 Instanzen von 13 Hosts auf einen GitOps-Cluster, betrieben von einem Engineer."
 hero_subtitle: "25.000 Workloads von 13 Proxmox-Hosts auf einen GitOps-Cluster"
 date: 2026-06-20
 lastmod: 2026-06-20
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/bare-metal-kubernetes-messaging-saas/"
-images: ["img/og/og-case-bare-metal-kubernetes-messaging-saas.png"]
+images: ["img/og/og-case-bare-metal-kubernetes-messaging-saas.jpg"]
 primary_keyword: "Proxmox Migration"
 secondary_keywords:
   - "Proxmox zu Kubernetes"
@@ -28,7 +28,7 @@ faq:
   - q: "Wie performen verwaltetes MongoDB, PostgreSQL und RabbitMQ auf Bare Metal?"
     a: "Alle drei laufen als verwaltete Cozystack-Dienste direkt auf Bare-Metal-Knoten mit Dual-NVMe und DRBD-repliziertem Block-Storage und liefern nahezu native Performance — ohne externes DBaaS und ohne Public Cloud. MongoDB läuft unter dem Percona-Operator, PostgreSQL als Primary/Replica-Paar unter seinem Operator und RabbitMQ als HA-Cluster per Ein-Klick-Bereitstellung. Zwischen den Datenbanken und den Disks liegt kein Hypervisor-Overhead."
   - q: "Gibt es bei dieser Plattform einen Vendor-Lock-in?"
-    a: "Nein. Cozystack ist Apache-2.0-Open-Source unter dem Dach der CNCF, und das Engagement lief ohne privaten Fork. Zwei Arbeitspakete aus diesem Projekt — eine erstklassige MongoDB-App und der RabbitMQ-v4-Chart — sind upstream in das öffentliche Projekt eingeflossen. Die Souveränität des Kunden fußt auf Code, den er einsehen und selbst betreiben kann, nicht auf einem proprietären Vertrag."
+    a: "Nein. Cozystack ist Apache-2.0-Open-Source unter dem Dach der CNCF, und das Projekt lief ohne privaten Fork. Zwei Arbeitspakete aus diesem Projekt — eine erstklassige MongoDB-App und der RabbitMQ-v4-Chart — sind upstream in das öffentliche Projekt eingeflossen. Die Souveränität des Kunden fußt auf Code, den er einsehen und selbst betreiben kann, nicht auf einem proprietären Vertrag."
   - q: "Proxmox oder Bare-Metal-Kubernetes — wann sollte ein SaaS wechseln?"
     a: "Wenn manuelle Hypervisor-Operationen das Wachstum zu deckeln beginnen. Einen Proxmox-Host hinzuzufügen war hier eine manuelle, cluster-gefährdende Fleißarbeit, und eine Flotte von 13 Hosts war zum Engpass für einen Dienst geworden, der täglich Hunderte Kunden onboardet. Bare-Metal-Kubernetes mit GitOps macht aus einem Knoten oder einer VM eine deklarative Git-Änderung — deshalb kann ein Ein-Personen-Infrastrukturteam heute rund 25.000 Instanzen betreiben. Proxmox bleibt für kleine, statische Flotten in Ordnung; der Wechsel zahlt sich aus, sobald das Provisioning ohne zusätzliche Operatoren skalieren muss."
 ---
@@ -47,6 +47,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">25.000+</div><div class="cs-stat__label">isolierte kundenspezifische Instanzen; täglich Hunderte onboarden</div></div>
   <div class="cs-stat"><div class="cs-stat__num">13 → 1</div><div class="cs-stat__label">Legacy-Proxmox-Hosts konsolidiert auf einen deklarativen Cozystack-Cluster</div></div>
   <div class="cs-stat"><div class="cs-stat__num">~1 Woche</div><div class="cs-stat__label">von Bare Metal bis zu den ersten Produktions-Workloads; eine VM ist jetzt eine Zeile in Git</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
 </div>
 
 ## Über das Projekt
@@ -73,7 +78,7 @@ Vor dem Projekt lief er auf einer Flotte von rund 13 Proxmox-Hypervisor-Hosts �
 - **Delivery-Pipeline** — ein verschachteltes verwaltetes Kubernetes („kube-in-kube“) für die API-Dienste, angetrieben von ArgoCD und einer GitLab-Image-Pipeline; Cozystack-Ingress plus cert-manager lösen das handgebaute nginx und die manuellen Zertifikatserneuerungen ab.
 - **Observability** — VictoriaMetrics + VictoriaLogs + Grafana von Tag eins an.
 
-{{< placeholder-image width="1200" height="640" label="Konsolidierungsarchitektur: 13 Proxmox-Hosts kollabieren auf einen 8-Knoten-Cozystack-Cluster auf Talos (3 Control-Plane HA-etcd + 5 Dual-NVMe-Worker); ~25.000 kundenspezifische Container laufen unverändert in KubeVirt-VMs im lokalen Subnetz; verwaltetes MongoDB / PostgreSQL / RabbitMQ auf LINSTOR/DRBD über ZFS; API-Dienste in einem verschachtelten Kubernetes, angetrieben von ArgoCD; SeaweedFS S3 für Medien und Backups" >}}
+{{< case-diagram src="/img/case-studies/bare-metal-kubernetes-messaging-saas-de.webp" alt="Konsolidierungsarchitektur: 13 Proxmox-Hosts kollabieren auf einen 8-Knoten-Cozystack-Cluster auf Talos (3 Control-Plane HA-etcd + 5 Dual-NVMe-Worker); ~25.000 kundenspezifische Container laufen unverändert in KubeVirt-VMs im lokalen Subnetz; verwaltetes MongoDB / PostgreSQL / RabbitMQ auf LINSTOR/DRBD über ZFS; API-Dienste in einem verschachtelten Kubernetes, angetrieben von ArgoCD; SeaweedFS S3 für Medien und Backups" >}}
 
 ## Umsetzung: drei Phasen
 
@@ -106,8 +111,17 @@ Vor dem Projekt lief er auf einer Flotte von rund 13 Proxmox-Hypervisor-Hosts �
   <div class="card"><div class="card-body"><h3 class="card-title">Open Source upstream beigetragen</h3><p class="card-description">MongoDB und der RabbitMQ-v4-Chart flossen in CNCF-Cozystack ein — Souveränität auf Code gestützt, nicht auf Vertrag.</p></div></div>
 </div>
 
+## Ein ähnliches Projekt besprechen
+
+Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+</div>
+
 ---
 
-*Diese Fallstudie ist anonymisiert veröffentlicht; eine Kundenreferenz unter NDA ist auf Anfrage verfügbar. Der Anbieter wird über sein Profil beschrieben, nicht namentlich. Für ein Referenzgespräch zu einer aktiven Opportunity [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie ist anonymisiert veröffentlicht; eine Kundenreferenz unter NDA ist auf Anfrage verfügbar. Der Anbieter wird über sein Profil beschrieben, nicht namentlich. Für ein Referenzgespräch zu einem konkreten Vorhaben [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

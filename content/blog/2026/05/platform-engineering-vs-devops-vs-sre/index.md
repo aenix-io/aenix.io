@@ -1,8 +1,9 @@
 ---
 title: "Platform engineering vs DevOps vs SRE — a 2026 terminology guide"
+seo_title: "Platform engineering vs DevOps vs SRE explained"
 description: "Where platform engineering, DevOps and SRE overlap and where they do not, what each actually builds, and the metrics that separate them."
 date: "2026-05-21"
-cover_image: "/img/blog/covers/platform-engineering-vs-devops-vs-sre.png"
+cover_image: "/img/blog/covers/platform-engineering-vs-devops-vs-sre.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["DevOps", "Platform Engineering", "Observability"]
@@ -45,6 +46,7 @@ quiz:
       explanation: "Both Argo CD and Flux are production-grade. The article notes Cozystack uses Flux as the default — Flux is closer to the upstream Kubernetes way; Argo CD has stronger UI ergonomics."
 aliases:
   - /blog/2026/05/platform-engineering-maturity-model-2026/
+hreflang_de: /de/blog/2026/05/platform-engineering-vs-devops-vs-sre/
 ---
 
 

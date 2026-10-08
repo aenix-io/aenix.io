@@ -1,7 +1,9 @@
 ---
 title: "Cloud-Kostenoptimierungs-Strategien 2026 — praktischer Leitfaden für DACH"
-description: "Begleitung zur Cloud-Kostenoptimierungs-Page."
+seo_title: "Cloud-Kostenoptimierung 2026: acht Strategien"
+description: "Acht Strategien gegen hohe Cloud-Kosten 2026: was Konfiguration allein einspart, wo Architektur-Entscheidungen nötig werden und wann sich Repatriation lohnt."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/cloud-kostenoptimierung-strategien-2026.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Cloud Repatriation", "Cost Optimization"]
@@ -41,9 +43,10 @@ quiz:
         - { text: "Pod-Right-Sizing, Autoscaler-Tuning, Spot-Nutzung, Konsolidierung", correct: true }
         - { text: "Den Wechsel von Kubernetes zu Docker Swarm", correct: false }
       explanation: "Kubernetes-spezifische Optimierung: Pod-Requests und -Limits an der historischen Auslastung ausrichten, Cluster-Autoscaler beziehungsweise Karpenter tunen, Spot- und Preemptible-Kapazität nutzen, Single-Team-Cluster konsolidieren und die Kosten mit OpenCost oder Kubecost auf Namespace- und Workload-Ebene sichtbar machen. Typische Einsparung: 20–50 Prozent des Kubernetes-Spends."
+hreflang_en: /blog/2026/05/cloud-cost-optimization-strategies-2026/
 ---
 
-Begleitung zur **[Cloud-Kostenoptimierungs-Page](/de/loesungen/cloud-kostenoptimierung)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**.
 
 ## Zwei Optimierungs-Ebenen
 
@@ -72,5 +75,5 @@ Nach 6-12 Monaten disziplinierter konfigurationeller Arbeit flacht die Einsparku
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

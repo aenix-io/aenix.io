@@ -1,10 +1,12 @@
 ---
 title: "NIS2-Anforderungen für Cloud-Infrastruktur — Checkliste für DACH-Unternehmen"
-description: "Begleitung zur NIS2-Compliance-Page."
+seo_title: "NIS2-Checkliste für die Cloud-Infrastruktur"
+description: "NIS2-Anforderungen an die Cloud-Infrastruktur: Risikomanagement-Maßnahmen nach Artikel 21, Meldefristen nach Artikel 23 und was die Architektur leisten muss."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/nis2-checkliste-cloud-architektur.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["NIS2", "Cozystack", "Compliance", "Backup & DR"]
+topics: ["NIS2", "Cozystack", "Compliance", "Backup and DR"]
 language: "de"
 companion_landing: "/de/loesungen/nis2-compliance/"
 quiz:
@@ -40,9 +42,10 @@ quiz:
         - { text: "Es ist für NIS2 nicht einschlägig, sondern rein technisch", correct: false }
         - { text: "Es deckt ausschließlich DORA-Anforderungen ab", correct: false }
       explanation: "Das Platform Readiness Assessment lässt sich mit NIS2-Schwerpunkt durchführen: eine strukturierte Architekturbewertung gegen die Anforderungen aus Artikel 21 und Artikel 23, bevor die Auditzyklen anlaufen."
+hreflang_en: /blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/
 ---
 
-Begleitung zur **[NIS2-Compliance-Page](/de/loesungen/nis2-compliance)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[NIS2](/de/loesungen/nis2-compliance/)**.
 
 ## Artikel 21 — Risikomanagement-Maßnahmen
 
@@ -81,5 +84,5 @@ Die Architektur muss Erkennung und Reporting innerhalb dieser Zeitfenster unters
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

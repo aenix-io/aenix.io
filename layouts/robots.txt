@@ -1,0 +1,32 @@
+{{- /* robots.txt. A template, not a file in static/: with enableRobotsTXT the
+       Hugo used in CI renders its built-in robots.txt over static/robots.txt,
+       and production served a bare "User-agent: *" without the rules below. */ -}}
+User-agent: *
+# /web0826/ itself is crawlable on purpose: it carries <meta name="robots"
+# content="noindex">, which a crawler can only see if it may fetch the page.
+Disallow: /downloads/web0826/
+
+# Live-demo SPAs ship a bundled mock documentation site (including ru/ and kz/
+# trees) for a fictional cloud portal. It is demo furniture, not product
+# documentation, and must not rank for aenix.io.
+Disallow: /demo-app/docs/
+Disallow: /idp-app/docs/
+
+# AI search and assistant crawlers are welcome: being cited by them is one of
+# the site's goals. Listed explicitly so that no default policy shuts them out.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Disallow: /downloads/web0826/
+Disallow: /demo-app/docs/
+Disallow: /idp-app/docs/
+
+Sitemap: {{ "sitemap.xml" | absURL }}

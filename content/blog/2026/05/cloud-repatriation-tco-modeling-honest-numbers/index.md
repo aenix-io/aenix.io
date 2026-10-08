@@ -1,12 +1,14 @@
 ---
 title: "Honest TCO modelling for cloud repatriation — what numbers to actually compare"
+seo_title: "Cloud repatriation TCO: which numbers to compare"
 description: "Why most cloud repatriation TCO models are wrong: the destination costs they miss, sensitivity analysis, and workload-level decisions that change the answer."
 date: "2026-05-05"
-cover_image: "/img/blog/covers/cloud-repatriation-tco-modeling-honest-numbers.png"
+cover_image: "/img/blog/covers/cloud-repatriation-tco-modeling-honest-numbers.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cloud Repatriation", "Financial Services", "Platform Engineering", "Backup and DR", "Observability"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/cloud-repatriation-tco-modell-ehrliche-zahlen/"
 companion_landing: "/solutions/cloud-repatriation/"
 quiz:
   title: "Test yourself: honest cloud repatriation TCO"
@@ -89,6 +91,6 @@ Repatriating top-10 workloads, leaving tail in cloud, often best.
 
 ## How to use the worksheet
 
-Fill in your numbers, walk through with finance partner + platform engineering. Identify top-10 repatriation candidates. Validate assumptions.
+Download the **[Cloud Repatriation TCO Worksheet](/resources/cloud-repatriation-tco-worksheet/)**. Fill in your numbers, walk through with finance partner + platform engineering. Identify top-10 repatriation candidates. Validate assumptions.
 
 For full engagement see **[Cloud repatriation services](/solutions/cloud-repatriation/)**.
