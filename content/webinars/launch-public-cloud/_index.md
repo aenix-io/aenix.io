@@ -2,6 +2,7 @@
 title: "Webinar: add Kubernetes, databases and GPU to your price list"
 description: "Recording of the 19 August 2026 webinar with Andrei Kvapil: how a hosting or cloud provider adds managed Kubernetes, databases, S3 and GPU to its catalog."
 language: "en"
+hreflang_de: "/de/webinare/public-cloud-starten/"
 layout: "event-landing"
 bodyClass: "webinar-landing"
 primary_keyword: "managed services for hosting providers"
