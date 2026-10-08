@@ -14,12 +14,12 @@ companion_label: "Details zur Private Cloud Platform ansehen →"
 quiz:
   title: "Wissens-Check: DORA-Architektur und Drittparteienrisiko"
   questions:
-    - q: "Welche Meldefristen nach DORA Artikel 23 muss die Detection-Telemetrie unterstützen?"
+    - q: "Welche Meldefristen nach NIS2 Artikel 23 muss die Detection-Telemetrie unterstützen?"
       options:
         - { text: "24-Stunden-Frühwarnung, 72-Stunden-Meldung, Abschlussbericht nach einem Monat", correct: true }
         - { text: "1-Stunden-Frühwarnung, 24-Stunden-Meldung, Abschlussbericht nach 7 Tagen", correct: false }
         - { text: "Keine festen Fristen — das Unternehmen legt sein eigenes SLO fest", correct: false }
-      explanation: "Die Erkennung muss innerhalb der Fristen nach Artikel 23 funktionieren: Frühwarnung binnen 24 Stunden, Meldung des Vorfalls binnen 72 Stunden und Abschlussbericht nach einem Monat."
+      explanation: "Die Erkennung muss innerhalb der Fristen nach NIS2 Artikel 23 funktionieren: Frühwarnung binnen 24 Stunden, Meldung des Vorfalls binnen 72 Stunden und Abschlussbericht nach einem Monat. Die DORA-Meldungen nach Artikel 19 folgen den in den Durchführungsstandards festgelegten Fristen; die Erkennung sollte auf die strengere der beiden Vorgaben ausgelegt sein."
     - q: "Warum entsteht durch SaaS-Anbieter für Observability laut Artikel ein Risiko nach DORA Artikel 28?"
       options:
         - { text: "Sie rechnen in USD ab und verletzen damit die Regeln zum Währungsrisiko in DORA", correct: false }
