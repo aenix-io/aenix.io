@@ -1,4 +1,10 @@
 {{ define "main" }}
+{{/* /styleguide/ holds sample data (placeholder badges, a sample quote). The
+     hugo.yaml cascade keeps it out of production builds; this guard covers a
+     page whose own `build:` front matter overrides that cascade. */}}
+{{ if and hugo.IsProduction (hasPrefix .RelPermalink "/styleguide/") }}
+<section class="section"><div class="container"><p>This page is not available.</p></div></section>
+{{ else }}
 {{/*
   Project-level override of theme's _default/list.html.
 
@@ -76,4 +82,5 @@
 </div>
 
 {{ partial "landing-cta.html" . }}
+{{ end }}
 {{ end }}

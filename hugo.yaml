@@ -45,6 +45,11 @@ cascade:
   # own BreadcrumbList JSON-LD; without this they ship two conflicting trails.
   - _target: { path: '/tco-calculator{,/**}' }
     skip_breadcrumb_jsonld: true
+  # /styleguide/ is a developer page with sample data (placeholder badges and a
+  # sample testimonial). It renders under `hugo server` (development) only and
+  # is not built at all in production.
+  - _target: { path: '/styleguide{,/**}', environment: production }
+    build: { render: never, list: never }
 
 params:
   description: "Ænix builds cloud platforms on Cozystack (CNCF): Public Cloud for hosting providers, Private Cloud for regulated enterprises, AI Platform for GPU workloads."
