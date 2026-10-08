@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "tutorial"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup and DR", "Observability"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/souveraene-cloud-aufbauen-eu-zentralasien/"
 companion_landing: "/services/sovereign-cloud-builder/"
 quiz:
   title: "Test yourself: building a sovereign cloud"
