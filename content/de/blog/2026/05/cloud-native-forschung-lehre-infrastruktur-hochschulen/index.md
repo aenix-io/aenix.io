@@ -168,7 +168,7 @@ Wer Forschungsinfrastruktur ohne Muster für Reproduzierbarkeit ab dem ersten Ta
 
 Ænix hat Cozystack-basierte Plattformen für Hochschulen und Forschungsinstitute in der EU und in Zentralasien gebaut. Die Besonderheiten der Zusammenarbeit:
 
-- **Vertraut mit öffentlicher Beschaffung** — RFI / RFP über die üblichen Kanäle in EU-Mitgliedstaaten und in Kasachstan
+- **Vertraut mit öffentlicher Beschaffung** — RFI / RFP über die üblichen Kanäle in der EU und in Zentralasien
 - **Kapazitätstransfer als Kernbestandteil** — die Wissensübergabe an die hochschuleigene IT ist ein ausdrückliches Ergebnis
 - **Schrittweise Zusammenarbeit**, wo sinnvoll abgestimmt auf Förderzyklen
 - **Konsortien mehrerer Einrichtungen** werden unterstützt

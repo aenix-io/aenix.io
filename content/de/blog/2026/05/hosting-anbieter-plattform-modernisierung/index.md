@@ -18,12 +18,12 @@ quiz:
         - { text: "Kundennähe, regionale Präsenz und Souveränitätsprofil", correct: true }
         - { text: "Niedrigere Latenz zu den großen LLM-Endpunkten", correct: false }
       explanation: "Hosting-Anbieter haben Kundenbeziehungen, regionale Präsenz, Preisflexibilität und ein glaubwürdiges Souveränitätsprofil — Vorteile, die Hyperscaler nicht leicht kopieren. Was fehlt, ist das Cloud-Produkt, um diese Vorteile in großem Maßstab zu monetarisieren."
-    - q: "Wie lange dauert das Vorhaben vom Projektstart bis zur allgemeinen Verfügbarkeit?"
+    - q: "Wie schnell ist die Plattform selbst nach Bereitstellung der Hardware live?"
       options:
-        - { text: "1–2 Monate", correct: false }
-        - { text: "9–18 Monate", correct: true }
+        - { text: "In wenigen Wochen, über den produktisierten Installer", correct: true }
+        - { text: "Erst nach 9–18 Monaten Eigenentwicklung", correct: false }
         - { text: "Mehr als fünf Jahre", correct: false }
-      explanation: "Sechs Schritte: Bewertung (4–6 Wochen), Cozystack-Pilot (2–3 Monate), Beta-Kundenkohorte, eingeschränkte Verfügbarkeit, allgemeine Verfügbarkeit und schließlich die Erweiterung um Spezialangebote. Gesamtdauer: 9–18 Monate."
+      explanation: "Nach dem Assessment (14 oder 28 Tage) ist die Plattform über den produktisierten Installer wenige Wochen nach Bereitstellung der Hardware live. Beta-Kohorte, eingeschränkte Verfügbarkeit und allgemeine Verfügbarkeit folgen in dem Tempo, das Vertrieb und Betrieb des Anbieters tragen."
     - q: "Wie groß ist das typische Betriebsteam eines mittelgroßen Hosting-Anbieters nach dem Start?"
       options:
         - { text: "Eine einzelne Person", correct: false }
@@ -63,19 +63,19 @@ Cozystack-basierte Modernisierung schließt diese Lücke.
 
 ## Migrations-Sequenz
 
-1. Bewertung (4-6 Wochen)
-2. Cozystack-Pilot (2-3 Monate)
+1. Platform Readiness Assessment (14 oder 28 Tage)
+2. Plattform live über den produktisierten Installer (wenige Wochen nach Bereitstellung der Hardware)
 3. Beta-Kunden-Kohorte (3-5 Kunden)
 4. Limited GA (10-50 Kunden)
 5. General Availability
 6. Spezialitäten-Erweiterung
 
-Gesamtzeit: 9-18 Monate von Projektstart zu GA.
+Die Plattform ist in Wochen betriebsbereit; wann die allgemeine Verfügbarkeit folgt, bestimmen Beta- und Limited-GA-Phase sowie Ihre Bereitschaft in Vertrieb und Betrieb.
 
 ## Wirtschaftlichkeit
 
 Mittelgroßer Hosting-Anbieter (1.000-10.000 Kunden):
-- Plattform-Investition: Ænix-Engagement + Cozystack-Build + WHMCS
+- Plattform-Investition: Ænix-Subskription + Cozystack-Aufbau + WHMCS-Integration (proprietäres Ænix-Modul)
 - Hardware: bestehende oder neue Compute, Storage, Netzwerk
 - Betriebsteam: 3-7 Engineers post-Launch
 - Kunden-Pricing: typisch 30-50% über Plattform-Rohkosten
@@ -84,5 +84,5 @@ Break-even: erste 50-100 zahlende Kunden.
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

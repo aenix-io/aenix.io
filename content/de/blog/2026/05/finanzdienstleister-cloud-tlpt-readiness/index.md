@@ -41,10 +41,10 @@ quiz:
       explanation: "Lücke 4 hält fest, dass Artikel 30(2)(a) Transparenz bis zur zweiten Stufe verlangt — also bis zu den Rechenzentrumsbetreibern, Netzwerkanbietern und gemeinsam genutzten Plattformdiensten unterhalb des beauftragten Hyperscalers."
     - q: "Was tut Aenix im Projektmodell in Phase 4 (Managed Retainer) ausdrücklich NICHT?"
       options:
-        - { text: "kubectl-Zugriff auf den Produktionscluster des Kunden halten", correct: true }
-        - { text: "Tier-3-SLA-Support für das Plattformsubstrat leisten", correct: false }
+        - { text: "Ohne Freigabe des Kunden auf den Produktionscluster zugreifen", correct: true }
+        - { text: "SLA-gestützten Support für die Plattform leisten", correct: false }
         - { text: "An der TLPT-Vorbereitung und den Post-Mortems mitwirken", correct: false }
-      explanation: "Phase 4 hält ausdrücklich fest: kein kubectl-Zugriff auf den Produktionscluster des Kunden — gearbeitet wird ausschließlich über GitOps-PR-Reviews. Entscheidend für die Governance einer Bank."
+      explanation: "Phase 4 hält ausdrücklich fest: Gearbeitet wird über GitOps-PR-Reviews; Fernzugriff auf den Produktionscluster gibt es nur mit Freigabe des Kunden. Entscheidend für die Governance einer Bank."
 ---
 
 
@@ -56,7 +56,7 @@ diese Dokumentation bei den meisten regulierten Unternehmen in
 ordentlichem Zustand.
 
 Um die zweite Hälfte — die Cloud-Architektur *nachweisbar*
-DORA-konform zu machen, wenn ein echter TLPT-Zyklus ansteht — war es
+an DORA auszurichten, wenn ein echter TLPT-Zyklus ansteht — war es
 stiller. Diese Stille bricht 2026 auf. TLPT-Übungen der Aufsicht
 erreichen inzwischen Architekturen, die beim Start von DORA als konform
 galten, aber nie unter realistischer Prüfung durch die Aufsicht
@@ -129,7 +129,7 @@ jede Identität ist eng begrenzt, und jeder Aufruf zwischen Diensten
 ist authentifiziert und autorisiert.
 
 Muster: SPIFFE/SPIRE für die Workload-Identität, External Secrets
-Operator mit dem HSM des Kunden als Backend, Pod Security Standards als
+Operator mit dem Schlüsselspeicher des Kunden als Backend, Pod Security Standards als
 durchgesetzte Policy. Das Ænix-Projekt umfasst die Integration; der IdP
 und die Mitarbeiteridentität des Kunden bleiben unter Kontrolle des
 Kunden.
@@ -258,8 +258,8 @@ Den regulatorischen Rahmen bestätigen (DORA plus nationale
 Zusatzregeln plus sektorale Vorschriften). Die
 Kritikalitätsklassifizierung der Workloads bestätigen. Sponsor und
 Ansprechpartner für die Kommunikation mit der Aufsicht auf Kundenseite.
-Projektmodell (typisch: Ænix übernimmt Beratung und Tier-3-SLA, der
-Kunde den Produktionsbetrieb).
+Projektmodell (typisch: Ænix übernimmt Beratung und Support unter SLA,
+der Kunde den Produktionsbetrieb).
 
 ### Phase 1 — Platform Readiness Assessment mit DORA-Arbeitspaket
 
@@ -277,17 +277,17 @@ aufgebaut. Die TLPT-Readiness wird für den Pilotumfang validiert.
 
 ### Phase 3 — Vollständiger Aufbau der Private Cloud Platform
 
-12–30 Monate, je nach Workload-Umfang, Multi-DC-Struktur und
-TLPT-Zyklus. Deployment in Produktionsqualität mit vollständiger
+3–12 Monate, je nach Workload-Umfang und Multi-DC-Struktur; der
+TLPT-Zyklus kann den Zeitpunkt der Abnahme zusätzlich bestimmen. Deployment in Produktionsqualität mit vollständiger
 Compliance-Dokumentation als Lieferergebnis. Ænix wirkt an der
 TLPT-Vorbereitung mit; den Test selbst führen akkreditierte
 Red-Team-Dienstleister durch.
 
 ### Phase 4 — Managed Retainer
 
-Ænix-Beratung plus Tier-3 unter SLA. Kein kubectl-Zugriff auf den
-Produktionscluster des Kunden — gearbeitet wird ausschließlich über
-GitOps-PR-Reviews. Entscheidend für die Governance einer Bank.
+Ænix-Beratung plus Support der Plus- oder Enterprise-Stufe unter SLA.
+Gearbeitet wird über GitOps-PR-Reviews; Fernzugriff auf den
+Produktionscluster gibt es nur mit Freigabe des Kunden. Entscheidend für die Governance einer Bank.
 
 ## Wann dieses Projektmodell passt
 

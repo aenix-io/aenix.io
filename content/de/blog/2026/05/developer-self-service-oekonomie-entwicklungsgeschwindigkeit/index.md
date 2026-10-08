@@ -223,7 +223,7 @@ Alternative. Der Preis: 12–24 Monate Bauzeit, bis die Plattform für
 Produktteams „produktionsreif“ ist, plus laufender Wartungsaufwand für
 die Plattformkomponenten.
 
-Developer Self-Service liefert das Plattformsubstrat in 3–6 Monaten,
+Developer Self-Service auf der Ænix Private Cloud Platform liefert das Plattformsubstrat in 3–6 Monaten,
 mit laufendem Support durch Ænix. Für Organisationen, die nicht für
 einen Aufbau über 12–24 Monate besetzt sind, entscheidet das darüber,
 ob Platform Engineering in diesem Jahr stattfindet oder 2028.
@@ -292,18 +292,18 @@ Schlechte Passung:
   empfohlene Golden Paths
 - **Pilot-Deployment** (3–6 Monate) — Cozystack-Plattform plus 3–5
   Golden Paths plus Onboarding von 2–3 Pilot-Produktteams
-- **Vollständiger Aufbau von Developer Self-Service** (6–18 Monate) —
+- **Vollständiger Aufbau von Developer Self-Service** (3–12 Monate je nach Umfang) —
   die Plattform wird auf die gesamte Engineering-Organisation
   ausgeweitet, alle geplanten Golden Paths sind ausgeliefert
-- **Managed Retainer** (optional, fortlaufend) — Ænix übernimmt Tier-3
-  für die Plattform unter SLA
+- **Managed Retainer** (optional, fortlaufend) — Support der Plus- oder
+  Enterprise-Stufe unter SLA (siehe [Preise](/de/preise/))
 
 Projektumfang: Projekt plus Managed Retainer, Angebot pro
 Ausschreibung (RFP).
 
 ## Weiterführende Inhalte
 
-- **[Landingpage Developer Self-Service](/de/produkte/private-cloud-platform/)** —
+- **[Ænix Private Cloud Platform mit Developer Self-Service](/de/produkte/private-cloud-platform/)** —
   Funktionsübersicht, produktspezifisches FAQ
 - **[Leistungen rund um die Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/)** —
   Details zum Projekt

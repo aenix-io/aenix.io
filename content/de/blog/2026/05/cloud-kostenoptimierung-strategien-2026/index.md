@@ -75,5 +75,5 @@ Nach 6-12 Monaten disziplinierter konfigurationeller Arbeit flacht die Einsparku
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

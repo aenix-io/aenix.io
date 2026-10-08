@@ -284,19 +284,20 @@ Engineering (sofern eigene Funktion) und zu den Produktteams.
 ## Die Zuverlässigkeits-Defaults von Cozystack
 
 Organisationen, die ein Ænix-Plattformprodukt betreiben, haben bei der
-SRE-Praxis einen Vorsprung, weil die Plattform mit SRE-konformen
+SRE-Praxis einen Vorsprung, weil die Plattform mit SRE-tauglichen
 Voreinstellungen ausgeliefert wird:
 
 - **Integrierte Observability** — VictoriaMetrics + VictoriaLogs sind
-  vorinstalliert, sicherheitsorientierte Alert-Regeln sind kuratiert
-- **SLO-Vorlagen** — SLO-Vorlagen pro Service für Managed-Datenbanken,
-  Message Queues und die Kubernetes Control Plane
-- **Hooks für Fehlerinjektion** — für kontrolliertes Chaos Engineering
-  in Produktion ohne unvertretbare Auswirkungen auf Kunden
-- **Audit-Trail über das Tenant CRD** — jede Änderung ist nachvollziehbar:
-  wer, was, wann und mit welchem Change-Ticket
-- **Getestete Backup- und Restore-Muster** — Velero plus PITR pro
-  Anwendung mit dokumentiertem RPO / RTO
+  vorinstalliert, mit Alert-Regeln für die Plattformkomponenten
+- **Deklarative Änderungshistorie** — Tenants und Services sind
+  Kubernetes-Ressourcen, verwaltet über GitOps; jede Änderung hat einen
+  Commit, einen Autor und ein Review
+- **Backup- und Restore-Muster** — Velero plus PITR pro Anwendung; RPO /
+  RTO werden im Engagement pro Service dokumentiert
+
+SLO-Definitionen und Werkzeuge für Fehlerinjektion (Chaos Engineering)
+sind keine Plattformfunktionen; sie werden im Engagement mit Ihnen
+entworfen.
 
 So kann sich das SRE-Engagement auf die organisationsspezifische Arbeit
 konzentrieren (Design der Funktion, an Geschäftsprioritäten

@@ -81,7 +81,7 @@ Red Hat kommerzielle Subscription. **Wann sinnvoll:** bestehende Red Hat / OpenS
 - **AWS Sovereign Cloud, Azure Sovereign, GCP** — Hyperscaler-souveräne Angebote
 - **Hetzner** (Deutschland) — Bare Metal + Cloud, beliebt in DACH
 - **OVHcloud** (Frankreich) — starke EU-souveräne Positionierung
-- **Ænix Public Cloud Platform** — im Einsatz bei regionalen Hosting-Anbietern; Engagements mit europäischen Tier-1-Banken sind bis Mitte 2027 NDA-geschützt. Regionales souveränes Cloud-Produkt.
+- **Regionale Anbieter mit der Ænix Public Cloud Platform** — Hosting-Anbieter, die ein souveränes Cloud-Produkt auf Basis von Cozystack verkaufen
 
 **Trade-off:** vom Anbieter verwalteter Komfort gegen direkte Kontrolle über die Hardware.
 
@@ -92,7 +92,7 @@ Red Hat kommerzielle Subscription. **Wann sinnvoll:** bestehende Red Hat / OpenS
 3. **OpenStack-Expertise + große Telco/Behörden-Skala?** → OpenStack bleibt valide
 4. **Bestehende Red Hat / OpenShift-Verpflichtungen?** → OpenShift Virtualization
 5. **SMB / single-tenant?** → Proxmox VE
-6. **Plattform nicht selbst betreiben wollen?** → Regionaler souveräner Cloud-Anbieter (Hetzner, OVHcloud, regulated enterprise customers (NDA-protected))
+6. **Plattform nicht selbst betreiben wollen?** → Regionaler souveräner Cloud-Anbieter (Hetzner, OVHcloud oder ein regionaler Anbieter mit der Ænix Public Cloud Platform)
 7. **KI/GPU im großen Maßstab, sustained utilization?** → Cozystack oder OpenShift auf dediziertem GPU
 8. **Souveränität + EU + niedriger operativer Footprint?** → Cozystack mit Ænix-Support
 
@@ -107,5 +107,5 @@ Wenn Cozystack zu Ihrer Situation passt — siehe unsere Seite **[Private Cloud]
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

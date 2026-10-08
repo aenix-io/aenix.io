@@ -29,7 +29,7 @@ quiz:
         - { text: "Etwa eine Woche", correct: false }
         - { text: "6–12 Monate", correct: true }
         - { text: "Mehr als fünf Jahre", correct: false }
-      explanation: "Ablauf: Discovery, Cozystack-Pilot, erste Kundenkohorte mit 5 bis 10 Kunden und vollständiger White-Label-Erfahrung, Aufbau der Betriebsabläufe für Supporteskalation und SLA-Steuerung, dann Skalierung. Gesamtdauer: 6–12 Monate."
+      explanation: "Ablauf: Assessment, Plattform-Start über den Installer und Pilot, erste Kundenkohorte mit 5 bis 10 Kunden und vollständiger White-Label-Erfahrung, Aufbau der Betriebsabläufe für Supporteskalation und SLA-Steuerung, dann Skalierung. Gesamtdauer: 6–12 Monate."
     - q: "Was kann der MSP am kundenorientierten Portal anpassen?"
       options:
         - { text: "Nur das Logo im Kopfbereich", correct: false }
@@ -49,10 +49,10 @@ Dieser Beitrag vertieft das Thema unserer Seite **[MSPs](/de/branchen/msp/)**.
 
 ## Architektur-Muster
 
-- Multi-Tier Tenant CRD (Ænix → MSP → MSP-Kunden)
+- Multi-Tier Tenant CRD (Root-Tenant → MSP → MSP-Kunden)
 - Pro-Tier-Isolation
 - Gebrandetes kundenorientiertes Portal
-- WHMCS-integriertes Billing
+- Abrechnung über die WHMCS-Integration (proprietäres Ænix-Modul)
 - Service-Katalog (MSP kuratiert)
 
 ## Reseller-Wirtschaftlichkeit
@@ -65,8 +65,8 @@ Mittelgroßer MSP (50-500 Kunden):
 
 ## Engagement-Sequenz
 
-1. Discovery (4 Wochen)
-2. Cozystack-Pilot (2-3 Monate)
+1. Platform Readiness Assessment (14 oder 28 Tage)
+2. Plattform live über den produktisierten Installer (wenige Wochen nach Bereitstellung der Hardware), danach Pilot
 3. Initiale Kunden-Kohorte (5-10 Kunden)
 4. Operations-Workflow
 5. Skalierung
@@ -75,5 +75,5 @@ Gesamtzeit: 6-12 Monate.
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

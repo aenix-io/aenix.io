@@ -102,6 +102,6 @@ Keine spezifische Aufsicht + Kostenwirtschaftlichkeit als Auslöser + mandantenf
 
 ## So nutzen Sie den Entscheidungsleitfaden
 
-Gehen Sie das Flussdiagramm Schritt für Schritt durch. Notieren Sie Ihre Antworten. Die Architekturoptionen grenzen sich dabei von selbst ein.
+Beantworten Sie die Fragen oben der Reihe nach und notieren Sie Ihre Antworten; die Architekturoptionen grenzen sich dabei von selbst ein. Der [Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/) geht dieselben Entscheidungen ausführlicher durch.
 
 Zur konkreten Zusammenarbeit siehe **[Sovereign AI](/de/loesungen/sovereign-ai/)**.

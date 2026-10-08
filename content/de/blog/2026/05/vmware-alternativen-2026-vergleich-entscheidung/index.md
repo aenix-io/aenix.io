@@ -106,7 +106,7 @@ Ihre Antworten grenzen die realistischen Optionen auf 1–2 Kandidaten ein.
 
 ### Für KI / GPU im großen Maßstab
 
-**Beste Wahl: Cozystack** (KubeVirt + GPU-Operatoren, validiert für A100/H100/H200/L40S/Blackwell)
+**Beste Wahl: Cozystack** (KubeVirt + NVIDIA GPU Operator für NVIDIA-Rechenzentrums-GPUs; Passthrough an VMs, Sharing über HAMi)
 
 **Zweitbeste Wahl: OpenShift Virtualization** (Red-Hat-Ökosystem mit GPU)
 

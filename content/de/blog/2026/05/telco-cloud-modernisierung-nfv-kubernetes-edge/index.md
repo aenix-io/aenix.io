@@ -33,18 +33,18 @@ quiz:
         - { text: "Mindestens 12 Nodes pro MEC-Standort", correct: false }
         - { text: "Nur Single-Node, ohne Föderation", correct: false }
       explanation: "Laut Artikel unterstützt Cozystack Edge-Deployments mit reduziertem Footprint; typisch sind Cluster mit rund 3 Nodes an Edge-Standorten, die unter demselben Betriebsmodell mit regionalen und zentralen Plattformen föderiert werden."
-    - q: "Warum passen AI-Workloads mit dauerhaft hoher Auslastung bei Telcos besser zur Cozystack AI Platform als zum Hyperscaler?"
+    - q: "Warum passen AI-Workloads mit dauerhaft hoher Auslastung bei Telcos besser zur Ænix AI Platform als zum Hyperscaler?"
       options:
         - { text: "Hyperscaler können überhaupt keine Inferenz ausführen", correct: false }
         - { text: "Dedizierte GPUs sind wirtschaftlicher als der Hyperscaler", correct: true }
         - { text: "Regulierer verbieten die GPU-Nutzung bei Hyperscalern", correct: false }
       explanation: "Der Artikel erklärt, dass AI-Muster bei Telcos (Verkehrsprognose, Anomalieerkennung, kundennahe AI) von dauerhaft hoher Auslastung geprägt sind — genau der Fall, in dem dedizierte GPUs wirtschaftlich besser abschneiden als der Hyperscaler."
-    - q: "Wie lange dauert ein typisches Modernisierungsprogramm eines Tier-1-Telcos insgesamt?"
+    - q: "Wie lange dauert die Cloud-Plattform mit mehreren Regionen selbst in einem Programm eines Tier-1-Telcos?"
       options:
-        - { text: "18–36+ Monate, in Phasen", correct: true }
-        - { text: "3–6 Monate, beschleunigt", correct: false }
-        - { text: "6–12 Monate, in Phasen", correct: false }
-      explanation: "Laut Artikel dauert die Modernisierung bei Tier-1-Telcos 18–36+ Monate, aufgeteilt in strategisches Engagement, IT-Cloud, AI/Data Lake, Edge und NFV-Modernisierung."
+        - { text: "3–6 Monate Pilot, dann 9–18 Monate bis zum vollen Multi-Region-Betrieb", correct: true }
+        - { text: "Wenige Tage, ohne Pilot", correct: false }
+        - { text: "Mindestens fünf Jahre bis zur ersten produktiven Nutzung", correct: false }
+      explanation: "Für die Plattform folgt der Artikel dem Muster im Betreibermaßstab: 3–6 Monate Pilot, dann 9–18 Monate bis zum vollen Multi-Region-Betrieb. Edge-Ausbau und NFV-Modernisierung laufen als längere parallele Stränge."
 ---
 
 Die Telco-Cloud-Diskussion des Jahres 2026 steht an einem
@@ -176,7 +176,7 @@ Eine Architektur auf Basis von Cozystack unterstützt das kommerziell:
 
 - **Kundenkontrollierte Schlüssel** — der Kunde des Telcos hält die
   Schlüssel, der Telco leistet den Betriebssupport
-- **Air-Gap-Option** — für Kunden mit Verteidigungsnähe oder
+- **Air-Gap-Option** — für Anwendungsfälle mit
   Verschlusssachen
 - **Open-Source-Fundament** — Exit-Fähigkeit ist eingebaut; der Telco
   bindet seine Kunden nicht an eine Herstellerbeziehung
@@ -232,34 +232,37 @@ der Hyperscaler. Die Ænix AI Platform passt dazu.
 
 ## Phasen einer Tier-1-Telco-Modernisierung
 
-Die Modernisierung bei einem Tier-1-Telco dauert 18–36+ Monate. Eine
-typische Aufteilung in Phasen:
+Die Cloud-Plattform folgt dem Muster im Betreibermaßstab: 3–6 Monate
+Pilot, danach 9–18 Monate bis zum vollen Multi-Region-Betrieb. Edge-Ausbau
+und NFV-Modernisierung laufen als längere parallele Stränge, getaktet durch
+den Standort-Rollout und die Lebenszyklen der Hersteller. Eine typische
+Aufteilung in Phasen:
 
-### Phase 0 — Strategisches Engagement (3–6 Monate)
+### Phase 0 — Strategisches Engagement (Beginn des Pilots)
 
 Architektur-Review über alle vier Umgebungen. Kommerzielle Abstimmung zur
 Produktlinie souveräne Cloud, zur sektoralen Positionierung und zur
 Reihenfolge der Modernisierung. Benennung von Sponsoren und Leitungen
 der Arbeitsstränge.
 
-### Phase 1 — Modernisierung der IT-Cloud (6–12 Monate)
+### Phase 1 — Modernisierung der IT-Cloud
 
-Eine Enterprise- bzw. Public Cloud Platform auf Basis von Cozystack wird
+Die Ænix Private Cloud Platform bzw. Public Cloud Platform wird
 bereitgestellt. Interne Workloads werden migriert. Das Kundenportal für
 das souveräne Cloud-Produkt geht live.
 
-### Phase 2 — AI / Data Lake (6–9 Monate, parallel)
+### Phase 2 — AI / Data Lake (parallel)
 
-Die Cozystack AI Platform wird bereitgestellt. Workloads der
+Die Ænix AI Platform wird bereitgestellt. Workloads der
 Netzanalytik wandern on-prem. Kundennahe AI-Services gehen live.
 
-### Phase 3 — Ausbau der Edge (6–18 Monate, fortlaufend)
+### Phase 3 — Ausbau der Edge (fortlaufend, getaktet durch den Standort-Rollout)
 
 Edge-Standorte werden an MEC-, Vermittlungsstellen- und
 Customer-Edge-Standorten aufgebaut. Identitäten und Observability sind
 übergreifend föderiert.
 
-### Phase 4 — NFV-Modernisierung (parallel, 12–30 Monate)
+### Phase 4 — NFV-Modernisierung (parallel, getaktet durch die Lebenszyklen der Hersteller)
 
 Replatforming herstellerzertifizierter VNFs, wo zulässig.
 Greenfield-Deployments neuer VNFs auf einer Architektur auf Basis von
@@ -282,8 +285,9 @@ Gute Passung:
 
 Bedingte Passung:
 
-- Kleinere Betreiber (regional, MVNO-artig) — passen eher zur Ænix
-  Private Cloud Platform als zur vollständigen Public Cloud Platform
+- Kleinere Betreiber (regional, MVNO-artig), die Cloud verkaufen — die
+  Ænix Public Cloud Platform im Providermaßstab zu den [veröffentlichten
+  Preisen](/de/preise/) statt eines vollständigen Betreiberprogramms
 - Betreiber mit umfangreicher, noch funktionierender OpenStack-basierter
   NFV-Investition — die Modernisierung kann warten, bis der Lebenszyklus
   des Herstellers sie erzwingt
@@ -293,7 +297,7 @@ Bedingte Passung:
 - **[Branchenseite Telco](/de/branchen/telco/)** — die kommerzielle
   Landingpage
 - **[Produktseite Public Cloud Platform](/de/produkte/public-cloud-platform/)** —
-  das typische Produkt für Engagements mit Tier-1-Telcos
+  das Produkt für Telcos, die Cloud-Services verkaufen
 - **[Sovereign-Cloud-Builder-Leistungen](/de/dienstleistungen/sovereign-cloud-builder/)** —
   für den Aufbau einer Produktlinie souveräne Cloud
 - **[Sovereign-AI-Leistungen](/de/loesungen/sovereign-ai/)** — für

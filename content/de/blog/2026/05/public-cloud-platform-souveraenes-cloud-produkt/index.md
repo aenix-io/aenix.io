@@ -1,8 +1,8 @@
 ---
-title: "Public Cloud Platform — was der Start eines souveränen Cloud-Produkts im großen Maßstab wirklich erfordert"
+title: "Public Cloud Platform im Betreibermaßstab — was der Start einer nationalen souveränen Cloud erfordert"
 seo_title: "Public Cloud Platform im Betreibermaßstab"
 slug: "public-cloud-platform-souveraenes-cloud-produkt"
-description: "Was ein mehrjähriger Aufbau einer souveränen Cloud im Millionen-Euro-Bereich für Telcos, Banken und Betreiber umfasst — Phasen, Risiken und Zusammenarbeit."
+description: "Was ein souveräner Cloud-Aufbau im Betreibermaßstab auf der Ænix Public Cloud Platform für Telcos, Banken und nationale Betreiber umfasst: Phasen, Zeitplan."
 date: "2026-05-25"
 cover_image: "/img/blog/covers/de/public-cloud-platform-souveraenes-cloud-produkt.jpg"
 author: "Aenix Team"
@@ -21,25 +21,25 @@ quiz:
         - { text: "Dieselben rund 20, nur in größerem Umfang", correct: false }
         - { text: "Über 100, um mit Hyperscalern gleichzuziehen", correct: false }
       explanation: "Laut Artikel stellt ein Aufbau im Providermaßstab rund 20 Managed Services bereit, während ein Aufbau im Betreibermaßstab typischerweise 30-50+ Services über Compute, Storage, Datenbanken, AI/GPU und weitere Bereiche anstrebt."
-    - q: "Welchen Umfang und welche Dauer hat ein Public-Cloud-Platform-Aufbau typischerweise?"
+    - q: "Welchen Zeitrahmen hat ein Public-Cloud-Platform-Programm im Betreibermaßstab mit mehreren Regionen typischerweise?"
       options:
-        - { text: "100.000-500.000 € über 6-12 Monate", correct: false }
-        - { text: "Feste Jahres-Subscription über 500.000 €", correct: false }
-        - { text: "Ein mehrjähriges Programm, in Phasen über 18-36 Monate", correct: true }
-      explanation: "Der Abschnitt zur Struktur der Zusammenarbeit beschreibt ein mehrjähriges Programm, das je Ausschreibung kalkuliert wird; der Aufbau verteilt sich in Phasen auf 18-36 Monate."
+        - { text: "Live in wenigen Tagen, ohne Pilot", correct: false }
+        - { text: "Feste Jahres-Subskription über 500.000 € ohne Phasen", correct: false }
+        - { text: "3–6 Monate Pilot, dann 9–18 Monate bis zum vollen Multi-Region-Betrieb", correct: true }
+      explanation: "Der Abschnitt zur Struktur der Zusammenarbeit beschreibt ein mehrjähriges Programm, kalkuliert je Ausschreibung: 3–6 Monate Pilot (Phasen 0–1), danach 9–18 Monate bis zum vollen Multi-Region-Betrieb (Phasen 2–4). Ein einzelner Anbieter im Providermaßstab ist deutlich schneller live — wenige Wochen nach Bereitstellung der Hardware."
     - q: "Warum sollte der Dialog mit der Aufsicht laut Artikel in Phase 0-1 und nicht erst in Phase 4 stattfinden?"
       options:
         - { text: "Aufsichtsbehörden verlangen eine Meldung vor Baubeginn", correct: false }
         - { text: "Phase 4 ist rechtlich zu spät für Lizenzen", correct: false }
         - { text: "Ein später Einstieg erzwingt einen Umbau der Architektur", correct: true }
       explanation: "Das Fehlermuster „Dialog mit der Aufsicht aufgeschoben“ erklärt: Projekte, die das Gespräch hinauszögern, bauen am Ende ihre Architektur um, um Erwartungen zu erfüllen, die sie von Anfang an hätten einplanen können."
-    - q: "Welches Käuferprofil passt laut Artikel SCHLECHT zur Public Cloud Platform?"
+    - q: "Welches Käuferprofil passt laut Artikel SCHLECHT zu einem Programm im Betreibermaßstab?"
       options:
         - { text: "Tier-1-Telcos, die eine souveräne Cloud starten", correct: false }
-        - { text: "Kleinere Hosting-Anbieter unter rund 50 Racks", correct: true }
+        - { text: "Kleinere Hosting-Anbieter (im Providermaßstab besser bedient)", correct: true }
         - { text: "Große Banken mit eigener Private Cloud", correct: false }
-      explanation: "Der Artikel nennt kleinere Hosting-Anbieter als schlechte Passung für ein Programm im Betreibermaßstab: Der Providermaßstab passt besser zu ihrer Wirtschaftlichkeit und ihrem Betriebsmodell."
-    - q: "Was geschieht in Phase 1 (Fundament) einer Public-Cloud-Platform-Zusammenarbeit?"
+      explanation: "Der Artikel nennt kleinere Hosting-Anbieter als schlechte Passung für ein Programm im Betreibermaßstab, nicht für das Produkt: Die Public Cloud Platform im Providermaßstab, zu den veröffentlichten Preisen, passt besser zu ihrer Wirtschaftlichkeit und ihrem Betriebsmodell."
+    - q: "Was geschieht in Phase 1 (Fundament) einer Zusammenarbeit im Betreibermaßstab?"
       options:
         - { text: "Hardware, erstes Rechenzentrum, Storage und Identity", correct: true }
         - { text: "Markteinführung und Start des Marketings", correct: false }
@@ -48,16 +48,20 @@ quiz:
 ---
 
 
-Das Gespräch über die Public Cloud Platform unterscheidet sich von
-jeder anderen Ænix-Zusammenarbeit. Die Frage lautet nicht „Sollen wir
-Cozystack einsetzen?“ — das ist bereits entschieden. Sie lautet: „Wir
-bringen ein Cloud-Produkt im nationalen Maßstab oder für
-Tier-1-Kunden auf den Markt; wie sieht die Partnerschaft mit Ænix
-über die 18-36 Monate aus, die es bis zum Launch braucht?“
+Die meisten Hosting-Anbieter betreiben die Ænix Public Cloud Platform im
+Providermaßstab: Der produktisierte Installer bringt die Plattform wenige
+Wochen nach Bereitstellung der Hardware live, die Preise folgen den
+veröffentlichten Support-Stufen. In diesem Beitrag geht es um das andere
+Ende — das Programm im Betreibermaßstab. Dort lautet die Frage nicht
+„Sollen wir Cozystack einsetzen?“ — das ist bereits entschieden. Sie
+lautet: „Wir bringen ein Cloud-Produkt im nationalen Maßstab oder für
+Tier-1-Kunden auf den Markt; wie sieht die Partnerschaft mit Ænix über
+3–6 Monate Pilot und die 9–18 Monate bis zum vollen Multi-Region-Betrieb
+aus?“
 
-## Wofür die Public Cloud Platform gebaut ist
+## Wer die Public Cloud Platform im Betreibermaßstab einsetzt
 
-Fünf Käuferprofile prägen die Projekte rund um die Public Cloud Platform:
+Fünf Käuferprofile prägen die Projekte im Betreibermaßstab:
 
 1. **Tier-1-Telcos / nationale Betreiber** — etablierte
    Telekommunikationsanbieter, die eine Public Cloud als Teil ihres
@@ -77,7 +81,7 @@ Fünf Käuferprofile prägen die Projekte rund um die Public Cloud Platform:
    skaliert werden muss.
 5. **Nationale AI/GPU-Betreiber** — dauerhafte Inference- und
    Trainingskapazität für Kunden aus bestimmten Sektoren (Banken,
-   Gesundheitswesen, öffentlicher Sektor, Verteidigung), in denen
+   Gesundheitswesen, öffentlicher Sektor), in denen
    AI-Souveränität eine Anforderung auf nationaler Ebene ist.
 
 Alle fünf teilen dieselbe betriebliche Realität: Active/Active über
@@ -86,13 +90,13 @@ Millionen-Euro-Bereich; kundenseitige SLAs, die sich an den
 Erwartungen der nationalen Aufsicht orientieren; und eine Partnerschaft
 mit Ænix, die Jahre dauert, nicht Monate.
 
-## Was die Public Cloud Platform enthält, das die anderen Produkte nicht haben
+## Was ein Aufbau im Betreibermaßstab zusätzlich umfasst
 
 ### Active/Active über mehrere Regionen und Rechenzentren
 
-Deployments in einem einzigen Rechenzentrum sind das Terrain der
-Public Cloud Platform oder der Private Cloud Platform. Die Public
-Cloud Platform geht vom ersten Tag an davon aus, dass der Kunde
+Deployments in einem einzigen Rechenzentrum bedient die Public Cloud
+Platform im Providermaßstab (oder die Private Cloud Platform für den
+internen Einsatz). Ein Aufbau im Betreibermaßstab geht vom ersten Tag an davon aus, dass der Kunde
 Active/Active über Regionen oder Rechenzentren hinweg braucht, mit
 einer rechenzentrumsübergreifenden Replikation, die auf die RTO/RPO-Ziele
 abgestimmt ist. Control Plane, Observability, Identity und
@@ -112,12 +116,13 @@ Ausbau des Katalogs.
 ### Betriebsteam im großen Maßstab
 
 10-30+ Engineers betreiben die Plattform, je nach Kundenzahl und SLA.
-Zur Public-Cloud-Platform-Zusammenarbeit gehören Rekrutierung und
+Zur Zusammenarbeit im Betreibermaßstab gehören Rekrutierung und
 Schulung des Betriebsteams als eigener, umfangreicher Arbeitsstrang —
 nicht nach dem Muster „Sie finden die Leute, wir schulen sie“, sondern:
 „Wir entwerfen die Organisationsstruktur gemeinsam mit Ihnen, sitzen
-in den Interviews mit, schulen praktisch und übernehmen in den ersten
-12-18 Monaten den Tier-3-Support, während Ihr Team Sicherheit gewinnt.“
+in den Interviews mit, schulen praktisch und leisten in den ersten
+12-18 Monaten Eskalations-Support (Plus- oder Enterprise-Stufe), während
+Ihr Team Sicherheit gewinnt.“
 
 ### Abstimmung mit Aufsicht und Souveränitätsvorgaben
 
@@ -129,16 +134,20 @@ Compliance-Nachweise ist Teil der Lieferung.
 
 ### Brand Engineering für die Kundenseite
 
-Über die Anpassung des Cozystack Dashboards hinaus umfasst die Public
-Cloud Platform echte Markenarbeit: ein Kundenportal, das wie ein
+Über die Anpassung des Cozystack Dashboards hinaus umfasst eine
+Zusammenarbeit im Betreibermaßstab echte Markenarbeit: ein Kundenportal, das wie ein
 erstklassiges Cloud-Produkt wirkt und nicht wie eine angepasste
 Cozystack-Instanz. UX-Abläufe, die darauf abgestimmt sind, wie die
 Kunden des Kunden über Bestellen, Konfigurieren und Bezahlen denken.
 Von Designern geführt, nicht vom Engineering.
 
-## Wie eine Zusammenarbeit über 18-36 Monate in Phasen verläuft
+## Wie eine Zusammenarbeit im Betreibermaßstab in Phasen verläuft
 
-### Phase 0 — Discovery und Aufbau der Partnerschaft (1-3 Monate)
+Die Phasen 0 und 1 bilden den Pilot und dauern zusammen 3–6 Monate. Die
+Phasen 2–4 dauern 9–18 Monate bis zum vollen Multi-Region-Betrieb und
+überlappen, soweit die Teams es erlauben.
+
+### Phase 0 — Discovery und Aufbau der Partnerschaft (Beginn des Pilots)
 
 Vor dem Engineering steht die Einigung über:
 - Strategische Ziele (welches Cloud-Produkt, welcher Kundenstamm,
@@ -153,7 +162,7 @@ Vor dem Engineering steht die Einigung über:
 Ergebnis: ein unterzeichneter Plan für die Zusammenarbeit mit
 benannten Verantwortlichen für jeden Arbeitsstrang auf beiden Seiten.
 
-### Phase 1 — Fundament (3-6 Monate)
+### Phase 1 — Fundament (restlicher Pilot)
 
 Beschaffung und Einbau der Hardware. Deployment der Talos/Cozystack-Plattform
 im ersten Rechenzentrum. Storage-Schicht (LINSTOR/DRBD im großen
@@ -164,7 +173,7 @@ souveräner IdP). Erster Observability-Stack.
 Endzustand: funktionierende Plattform, eine Region, nur interner
 Zugriff. Noch nicht bereit für Kunden.
 
-### Phase 2 — Fundament für mehrere Regionen (3-6 Monate)
+### Phase 2 — Fundament für mehrere Regionen
 
 Das zweite Rechenzentrum wird aufgebaut. Die rechenzentrumsübergreifende
 Replikation wird validiert. Föderierte Identity. Storage-Replikation
@@ -175,7 +184,7 @@ Compliance-Dokumentation entsteht.
 Endzustand: Plattform über mehrere Rechenzentren, interner Zugriff,
 RTO/RPO gegen die Zielwerte validiert.
 
-### Phase 3 — Ausbau des Servicekatalogs (4-12 Monate)
+### Phase 3 — Ausbau des Servicekatalogs
 
 Rollout Service für Service. Zuerst die grundlegenden Services
 (Compute, Storage, Basis-Networking, Managed PostgreSQL). Danach
@@ -186,7 +195,7 @@ Caches, Suche, Observability). Schließlich produktspezifische Services
 Jeder Service durchläuft: Deployment → interne Tests → Pilot mit
 befreundeten Kunden → Produktions-GA. Rollout in Kohorten, kein Big Bang.
 
-### Phase 4 — Kunden-Onboarding und eingeschränkte GA (3-6 Monate)
+### Phase 4 — Kunden-Onboarding und eingeschränkte GA
 
 Das Kundenportal geht live (mit Brand Engineering). Die
 Billing-Integration ist durchgängig validiert. Support-Runbooks sind
@@ -199,9 +208,9 @@ Billing- und Support-Abläufe haben sich bewährt.
 ### Phase 5 — General Availability und Skalierung (fortlaufend)
 
 Start am offenen Markt. Marketing und Vertrieb legen los. Das
-Betriebsteam wächst mit den Kunden. Der Tier-3-Retainer von Ænix läuft
-weiter, bis das Team des Kunden Tier-3 selbst übernehmen kann
-(typischerweise 12-24 Monate nach GA).
+Betriebsteam wächst mit den Kunden. Der Eskalations-Support von Ænix
+(Plus- oder Enterprise-Stufe) läuft weiter, bis das Team des Kunden ihn
+selbst übernehmen kann (typischerweise 12-24 Monate nach GA).
 
 Alle weiteren Phasen folgen der Roadmap: neue Services, neue Regionen,
 neue sektorspezifische SKUs.
@@ -215,7 +224,7 @@ Drei Fehlermuster, die wir in der Branche beobachtet haben:
 Eine vom Engineering getriebene Plattform mit einer UX auf
 Engineering-Niveau. Kunden klicken sich durch, finden sie funktional,
 aber wenig ansprechend, und melden sich stattdessen beim Hyperscaler
-an. Die Public-Cloud-Platform-Zusammenarbeit enthält ausdrücklich eine
+an. Eine Zusammenarbeit im Betreibermaßstab enthält ausdrücklich eine
 Designpartnerschaft, um genau das zu vermeiden.
 
 ### 2. Betriebsteam für den Go-live dimensioniert, nicht für das Volumen in 18 Monaten
@@ -235,7 +244,7 @@ ihre Architektur um, um Erwartungen zu erfüllen, die sie von Anfang an
 hätten einplanen können. Binden Sie die Aufsicht in Phase 0-1 ein,
 nicht in Phase 4.
 
-## Wann die Public Cloud Platform die richtige Antwort ist
+## Wann ein Programm im Betreibermaßstab die richtige Antwort ist
 
 Gute Passung:
 
@@ -243,25 +252,26 @@ Gute Passung:
   eine souveräne Cloud
 - Betriebliche Realität mit mehreren Regionen oder Rechenzentren
 - 5.000+ angestrebte Kunden oder ein strategischer Kundenstamm
-- Budgetrahmen im Millionen-Euro-Bereich über 18-36 Monate
+- Budgetrahmen im Millionen-Euro-Bereich über ein mehrjähriges Programm
 - Souveränität und Positionierung gegenüber der Aufsicht sind Kern des
   Nutzenversprechens
 - Sponsoring auf oberster Führungsebene (mindestens CIO oder CTO)
 
 Bedingte Passung:
 
-- Große Hosting-Anbieter oberhalb der Obergrenze der Public Cloud
-  Platform, aber unterhalb des Maßstabs eines Tier-1-Telcos — je nach
-  Wachstumsprofil passt die Public Cloud Platform oder eine erweiterte
-  Zusammenarbeit
+- Große Hosting-Anbieter unterhalb des Maßstabs eines Tier-1-Telcos —
+  je nach Wachstumsprofil passt die Public Cloud Platform im
+  Providermaßstab, Region für Region erweitert, oft besser als ein
+  vollständiges Betreiberprogramm
 - Auf AI/GPU fokussierte Betreiber, bei denen der AI-Workload dominiert
   — hier passt die Ænix AI Platform womöglich besser, ergänzt um
   ausgewählte Komponenten der Public Cloud Platform
 
 Schlechte Passung:
 
-- Kleinere Hosting-Anbieter — die Public Cloud Platform passt bei
-  Wirtschaftlichkeit und Betriebsmodell deutlich besser
+- Kleinere Hosting-Anbieter — die Public Cloud Platform im
+  Providermaßstab (zu den [veröffentlichten Preisen](/de/preise/)) passt
+  bei Wirtschaftlichkeit und Betriebsmodell deutlich besser
 - Regulierte Unternehmen, die Cloud konsumieren statt sie anzubieten —
   hier ist die Private Cloud Platform die richtige Antwort
 
@@ -269,12 +279,14 @@ Schlechte Passung:
 
 - **Discovery Call** (Führungsebene, 60-90 Min.) — Einschätzung der
   strategischen Passung
-- **Strategischer Plan für die Zusammenarbeit** (4-8 Wochen, Festpreis)
-  — Aufbau der Partnerschaft, Ergebnis ist ein unterzeichneter Plan
-- **Aufbau Phase 1-5** (18-36 Monate) — Aufbau in Phasen wie oben
-  beschrieben
-- **Managed Tier-3** (fortlaufend) — Retainer von Ænix, bis das Team
-  des Kunden übernehmen kann
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**
+  (Festpreis, 28 Tage vollständig) — Grundlage für den Aufbau der
+  Partnerschaft; Ergebnis ist ein unterzeichneter Plan
+- **Pilot** (Phasen 0–1, 3–6 Monate), danach **Phasen 2–4** (9–18 Monate
+  bis zum vollen Multi-Region-Betrieb)
+- **Support-Subskription** (fortlaufend) — Plus- oder Enterprise-Stufe
+  (siehe [Preise](/de/preise/)), bis das Team des Kunden die Eskalation
+  übernehmen kann
 
 Umfang der Zusammenarbeit: mehrjähriges Programm, kalkuliert je
 Ausschreibung.

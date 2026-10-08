@@ -97,7 +97,7 @@ Datenresidenz ist die Anforderung, dass spezifizierte Daten in einer definierten
 
 - Region-aligned Virtualisierung mit kontrollierter Replikation
 - Selbstgehostete Observability (VictoriaMetrics + VictoriaLogs)
-- Customer-controlled Schlüsselverwaltung (HSM)
+- Vom Kunden kontrollierte Schlüsselverwaltung (z. B. mit HSM)
 - Multi-Region-Mandantenfähigkeit mit expliziten Cross-Border-Kontrollen
 - Air-gapped oder restricted-egress Architektur
 
@@ -107,5 +107,5 @@ Strukturierte Bewertung → **[Platform Readiness Assessment](/de/dienstleistung
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

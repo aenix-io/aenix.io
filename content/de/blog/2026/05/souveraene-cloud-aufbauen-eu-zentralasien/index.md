@@ -25,20 +25,20 @@ quiz:
         - { text: "BSI C5 (deutscher Kriterienkatalog für Cloud-Sicherheit)", correct: false }
         - { text: "DORA (EU-Verordnung für den Finanzsektor)", correct: false }
         - { text: "SecNumCloud (Zertifizierung der ANSSI)", correct: true }
-      explanation: "SecNumCloud ist die strenge französische Souveränitätsanforderung. BSI C5 ist der deutsche Kriterienkatalog für Cloud-Sicherheit. EUCS ist das entstehende EU-weite Regelwerk."
-    - q: "Wie lange dauert der Aufbau eines souveränen Cloud-Produkts typischerweise bis zur allgemeinen Verfügbarkeit für den ersten Kunden?"
+      explanation: "SecNumCloud ist die strenge französische Souveränitätsanforderung. BSI C5 ist der deutsche Kriterienkatalog für Cloud-Sicherheit. EUCS ist das vorgeschlagene EU-weite Schema, dessen Annahme noch aussteht."
+    - q: "Welchen Zeitrahmen hat ein nationales souveränes Cloud-Programm mit mehreren Regionen typischerweise?"
       options:
-        - { text: "Drei bis sechs Wochen konzentrierter Arbeit", correct: false }
-        - { text: "Zwölf bis dreißig Monate ab Projektstart", correct: true }
+        - { text: "Eine Installation an einem einzigen Wochenende", correct: false }
+        - { text: "3–6 Monate Pilot, dann 9–18 Monate bis zum vollen Multi-Region-Betrieb, Zertifizierung parallel", correct: true }
         - { text: "Fünf bis zehn Jahre schrittweiser Ausbau", correct: false }
-      explanation: "Discovery und Assessment 4–8 Wochen; Architektur und Beschaffungsreife 2–4 Monate; Plattformaufbau in Phase 2 8–24 Monate einschließlich Zertifizierungsarbeit; Onboarding der Kunden fortlaufend. Insgesamt: 12–30 Monate."
+      explanation: "Nach einem Assessment von 14 oder 28 Tagen läuft ein nationales oder Betreiberprogramm mit 3–6 Monaten Pilot und danach 9–18 Monaten bis zum vollen Multi-Region-Betrieb. Die Zertifizierung läuft parallel und kann den Termin des ersten zertifizierten Dienstes verschieben. Ein einzelner Anbieter im Providermaßstab ist deutlich schneller live."
     - q: "Welche Eigenschaft wird NICHT als Unterstützung für Betreiber souveräner Clouds genannt?"
       options:
         - { text: "Verpflichtende Phone-Home-Telemetrie", correct: true }
         - { text: "Mandantenfähigkeit über das Tenant CRD", correct: false }
-        - { text: "Integration der WHMCS-Abrechnung", correct: false }
+        - { text: "Selbst betriebene Observability", correct: false }
         - { text: "Unterstützung für Air-Gap-Installationen", correct: false }
-      explanation: "Cozystack hat standardmäßig kein Phone-Home — Telemetrie ist Opt-in. Der Artikel nennt das ausdrücklich als souveränitätsfreundliche Eigenschaft. Tenant CRD, Cozystack Dashboard, WHMCS-Abrechnung, Air-Gap, VictoriaMetrics + VictoriaLogs und Cilium sind die genannten souveränitätsfreundlichen Features."
+      explanation: "Cozystack hat standardmäßig kein Phone-Home — Telemetrie ist Opt-in. Der Artikel nennt das ausdrücklich als souveränitätsfreundliche Eigenschaft. Tenant CRD, Cozystack Dashboard, Air-Gap, VictoriaMetrics + VictoriaLogs und Cilium sind die genannten souveränitätsfreundlichen Cozystack-Funktionen; die WHMCS-Abrechnung ist ein Ænix-Modul darüber."
     - q: "Worin besteht bei Muster 2 (verwaltete souveräne Cloud) der Kompromiss?"
       options:
         - { text: "Maximale Souveränität bei maximalem Betriebsaufwand", correct: false }
@@ -72,14 +72,14 @@ Ein „souveränes Cloud“-Produkt, das nicht alle diese Punkte substanziell er
 Jede Rechtsordnung hat ihr eigenes Regelwerk:
 
 ### EU
-- **EUCS (EU Cybersecurity Certification Scheme for Cloud Services)** — entstehendes EU-weites Regelwerk
+- **EUCS (EU Cybersecurity Certification Scheme for Cloud Services)** — vorgeschlagenes EU-weites Schema (Annahme ausstehend)
 - **SecNumCloud** (Frankreich) — strenge französische Souveränitätsanforderung
 - **BSI C5** (Deutschland) — deutscher Kriterienkatalog für Cloud-Sicherheit
 - **DORA** — speziell für Finanzdienstleistungen, gilt für Cloud-Provider, die Banken bedienen
-- **NIS2** — breitere Cybersicherheit, gilt für Cloud-Provider als wesentliche Einrichtungen
+- **NIS2** — breitere Cybersicherheit; Cloud-Anbieter gehören zu einem Sektor nach Anhang I (wesentliche oder wichtige Einrichtungen, je nach Größe)
 
 ### Zentralasien
-- **Kasachstan** — durch die Beschaffung vorgeschriebene Souveränität für Workloads des öffentlichen Sektors. Aktiver Markt für souveräne Clouds, darunter Markteinführungen souveräner Cloud-Produkte regionaler Telcos.
+- **Kasachstan** — durch die Beschaffung vorgeschriebene Souveränität für Workloads des öffentlichen Sektors.
 - **Weitere GUS-Staaten** — verschiedene nationale Regelwerke im Entstehen
 
 ### Andere Regionen
@@ -89,7 +89,7 @@ Jede Rechtsordnung hat ihr eigenes Regelwerk:
 ## Architekturmuster für die souveräne Cloud
 
 ### Muster 1: vollständig On-Premises betriebene souveräne Cloud
-Hardware des Kunden, vom Kunden betrieben, auf jeder Ebene vom Kunden kontrolliert. Maximale Souveränität bei maximalem Betriebsaufwand. Richtig für die sensibelsten Workloads (Verschlusssachen, Verteidigung, Kernbankensysteme).
+Hardware des Kunden, vom Kunden betrieben, auf jeder Ebene vom Kunden kontrolliert. Maximale Souveränität bei maximalem Betriebsaufwand. Richtig für die sensibelsten Workloads (Verschlusssachen, Kernbankensysteme).
 
 ### Muster 2: verwaltete souveräne Cloud
 Hardware des Cloud-Providers + souveräne Rechtsordnung + vom Kunden kontrollierte Schlüssel + transparente Lieferkette. Vereinfachter Betrieb bei substanzieller Souveränität. Richtig für die meisten regulierten Unternehmens-Workloads.
@@ -102,7 +102,7 @@ Die souveräne Cloud wird auf Edge-Standorte innerhalb der Rechtsordnung verteil
 
 ## Cozystack als Fundament der souveränen Cloud
 
-Cozystack ist Open Source (Apache 2.0), wird als CNCF-Projekt gesteuert (die Roadmap bestimmt die Community), unterstützt Air-Gap-Installationen, vom Kunden kontrollierte Schlüssel und einen vollständigen Audit-Trail.
+Cozystack ist Open Source (Apache 2.0), wird als CNCF-Projekt gesteuert (die Roadmap bestimmt die Community), unterstützt Air-Gap-Installationen, Volume-Verschlüsselung mit Schlüsseln beim Kunden (Opt-in) und Audit-Logs, die sich in Systeme des Kunden ausleiten lassen.
 
 Speziell für Betreiber souveräner Clouds:
 - Mandantenmodell mit dem Tenant CRD — für ein souveränes Cloud-Produkt für Endkunden
@@ -116,15 +116,14 @@ Speziell für Betreiber souveräner Clouds:
 
 Ein souveränes Cloud-Produkt aufzubauen dauert länger als eine nicht souveräne Cloud:
 
-- **Discovery + Assessment:** 4–8 Wochen
-- **Architektur und Beschaffungsreife:** 2–4 Monate
-- **Plattformaufbau in Phase 2:** 8–24 Monate einschließlich Zertifizierungsarbeit
+- **Discovery + Assessment:** kostenloses 30-minütiges Discovery-Gespräch, danach ein [Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/) zum Festpreis (14 oder 28 Tage)
+- **Einzelner Anbieter im Providermaßstab:** Plattform mit dem produktisierten Installer wenige Wochen nach Bereitstellung der Hardware live
+- **Nationales oder Betreiberprogramm:** 3–6 Monate Pilot, danach 9–18 Monate bis zum vollen Multi-Region-Betrieb
+- **Zertifizierung:** läuft parallel zum Aufbau; ihr Umfang kann den Termin des ersten zertifizierten Dienstes verschieben
 - **Onboarding der Kunden:** fortlaufend
-
-Insgesamt: 12–30 Monate vom Projektstart bis zur allgemeinen Verfügbarkeit für den ersten Kunden, je nach Umfang der Zertifizierung.
 
 ## Zusammenarbeit mit Ænix
 
-Ænix baut souveräne Cloud-Produkte von Anfang bis Ende. Teams in der EU und in Zentralasien. Open-Source-Fundament. Dokumentation, die für die Beschaffung bereit ist.
+Ænix baut souveräne Cloud-Produkte von Anfang bis Ende, mit einem Team von rund 20 Personen in der EU und in Zentralasien. Open-Source-Fundament. Dokumentation, die für die Beschaffung bereit ist.
 
-Details finden Sie auf der **[Seite zum Sovereign Cloud Builder](/de/dienstleistungen/sovereign-cloud-builder/)**.
+Details finden Sie auf der **[Seite zum Sovereign Cloud Builder](/de/dienstleistungen/sovereign-cloud-builder/)** und bei der **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**.

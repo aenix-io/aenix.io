@@ -79,5 +79,5 @@ Dieser Beitrag vertieft das Thema unserer Seite **[Kubernetes-Beratung](/de/dien
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

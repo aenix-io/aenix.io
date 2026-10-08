@@ -37,7 +37,7 @@ quiz:
         - { text: "Bei bestehenden Red-Hat-Verpflichtungen und auf Red Hat standardisierter Beschaffung", correct: true }
         - { text: "Beim Service-Provider-Modell mit vielen Kunden (White-Label-Weiterverkauf)", correct: false }
         - { text: "Bei Open-Source-First-Beschaffung und Souveränitätsvorgaben", correct: false }
-      explanation: "OpenShift liegt vorne bei bestehenden Red-Hat-Verpflichtungen, einer auf Red Hat standardisierten Unternehmensbeschaffung, dem integrierten Red-Hat-Ökosystem (Ansible/Satellite/IdM), kommerziellem Support mit SLAs und Compliance-Anforderungen, die das Supportmodell eines großen Herstellers verlangen."
+      explanation: "OpenShift liegt vorne bei bestehenden Red-Hat-Verpflichtungen, einer auf Red Hat standardisierten Unternehmensbeschaffung, dem integrierten Red-Hat-Ökosystem (Ansible/Satellite/IdM) und einer Beschaffung, die ausdrücklich einen Red-Hat-Vertrag verlangt."
     - q: "Welchen Zeitrahmen nennt der Artikel für die Migration eines mittelgroßen Deployments von OpenShift zu Cozystack?"
       options:
         - { text: "Tage (imagekompatibles Lift-and-Shift auf gemeinsamem KubeVirt)", correct: false }
@@ -78,7 +78,7 @@ Für Organisationen, deren Beschaffung auf Red Hat standardisiert ist, ist OpenS
 
 **OpenShift:** Beziehung zu Red Hat / IBM. Die Roadmap wird von den kommerziellen Entscheidungen von Red Hat bestimmt.
 
-**Cozystack:** Open Source unter Community-Governance (CNCF-Projekt). Ænix ist der größte Contributor, aber nicht der Eigentümer. Die Roadmap wird von der Community und den kommerziellen Anwendern geprägt.
+**Cozystack:** Open Source unter Community-Governance (CNCF-Projekt). Ænix hat Cozystack entwickelt und gehört zu den Maintainern, neben Maintainern aus anderen Unternehmen; das Projekt gehört Ænix nicht. Die Roadmap wird von der Community und den kommerziellen Anwendern geprägt.
 
 ### Integration ins Ökosystem
 
@@ -91,8 +91,7 @@ Für Organisationen, deren Beschaffung auf Red Hat standardisiert ist, ist OpenS
 - Bestehende Verpflichtungen gegenüber Red Hat / OpenShift
 - Unternehmensbeschaffung, die auf Red Hat standardisiert ist
 - Bedarf an einem integrierten Red-Hat-Ökosystem (Ansible Automation Platform usw.)
-- Wunsch nach kommerziellem Support mit etablierten SLAs
-- Compliance-Anforderungen, die das Supportmodell eines großen Herstellers verlangen
+- Beschaffung, die ausdrücklich einen Red-Hat-Vertrag verlangt
 
 ## Wann Cozystack vorne liegt
 
@@ -102,6 +101,9 @@ Für Organisationen, deren Beschaffung auf Red Hat standardisiert ist, ist OpenS
 - Kostensensibilität im großen Maßstab (keine Subscription pro Core)
 - Greenfield ohne bestehende Beziehung zu Red Hat
 - Bedarf an einem schlankeren betrieblichen Footprint als beim vollständigen OpenShift
+- SLA-gestützter Support direkt von den Maintainern: veröffentlichte Reaktionszeiten, rund um die Uhr in den Stufen Plus und Enterprise ([Preise](/de/preise/)); die AENIX s.r.o. ist nach [ISO/IEC 27001](/compliance/iso-27001/) zertifiziert
+- SLA-gestützter Support direkt von den Maintainern: veröffentlichte Reaktionszeiten, rund um die Uhr in den Stufen Plus und Enterprise ([Preise](/de/preise/)); die AENIX s.r.o. ist nach [ISO/IEC 27001](/compliance/iso-27001/) zertifiziert
+- SLA-gestützter Support direkt von den Maintainern: veröffentlichte Reaktionszeiten, rund um die Uhr in den Stufen Plus und Enterprise ([Preise](/de/preise/)); die AENIX s.r.o. ist nach [ISO/IEC 27001](/compliance/iso-27001/) zertifiziert
 
 ## Migration zwischen beiden
 

@@ -14,10 +14,10 @@ quiz:
   questions:
     - q: "In welchen NIS2-Anhang fällt der Sektor Verkehr?"
       options:
-        - { text: "Anhang II als wichtige Einrichtung", correct: false }
-        - { text: "Anhang I als wesentliche Einrichtung", correct: true }
+        - { text: "Anhang II, Unternehmen sind immer wichtige Einrichtungen", correct: false }
+        - { text: "Anhang I; wesentlich oder wichtig je nach Unternehmensgröße", correct: true }
         - { text: "Der Sektor liegt außerhalb des Geltungsbereichs", correct: false }
-      explanation: "Verkehr steht in NIS2 Anhang I als wesentliche Einrichtung. Die Risikomanagementmaßnahmen aus Artikel 21 und die Meldepflichten aus Artikel 23 gelten für die IT von Verkehrsunternehmen auf Schiene, Straße, Wasser und in der Luft."
+      explanation: "Verkehr ist in NIS2 ein Sektor nach Anhang I (Sektoren mit hoher Kritikalität). Ob ein Unternehmen wesentliche oder wichtige Einrichtung ist, hängt nach Artikel 3 von seiner Größe ab. Die Risikomanagementmaßnahmen aus Artikel 21 und die Meldepflichten aus Artikel 23 gelten für die IT von Verkehrsunternehmen auf Schiene, Straße, Wasser und in der Luft."
     - q: "Welche dreistufige Architektur beschreibt der Artikel?"
       options:
         - { text: "Zentrale Cloud, regionale Standorte und Edge in Depots und Terminals", correct: true }
@@ -49,7 +49,7 @@ Dieser Beitrag vertieft das Thema unserer Seite **[Transport und Logistik](/de/b
 
 ## Drei Druckpunkte
 
-1. NIS2 wesentliche Einrichtung (Anhang I)
+1. NIS2: Sektor nach Anhang I (wesentliche oder wichtige Einrichtung, je nach Größe)
 2. KI-Optimierung
 3. Edge-Compute-Dichte
 
@@ -61,10 +61,10 @@ Dieser Beitrag vertieft das Thema unserer Seite **[Transport und Logistik](/de/b
 
 ## NIS2-Architekturkontrollen für Transport
 
-Standard-Article-21+23-Mapping; transport-spezifisch:
+Übliche Zuordnung zu Artikel 21 und 23; dazu transportspezifisch:
 - Multi-modale Datensouveränität
 - Sub-Lieferanten-Transparenz (Logistikketten 5+ Ebenen)
-- BCP für kinetische Disruption
+- Notfallplanung für physische Störungen
 - Air-gap für sicherheitskritische OT
 
 ## KI-Use-Cases im Transport
@@ -77,5 +77,5 @@ Standard-Article-21+23-Mapping; transport-spezifisch:
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

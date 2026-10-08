@@ -27,24 +27,24 @@ quiz:
         - { text: "Sie unterstützen die DSGVO-Artikel 44-50 nicht", correct: false }
         - { text: "Der Anbieter behält Zugriff auf die Schlüssel", correct: true }
       explanation: "Der Artikel nennt genau diesen Punkt als häufigste Schwachstelle „souveräner“ Hyperscaler-Angebote: Der Anbieter behält operativen Zugriff auf die Schlüssel und verfehlt damit die inhaltliche Bedingung kundenkontrollierter Verschlüsselungsschlüssel."
-    - q: "Wie weit muss die Lieferkette nach den Artikel-28-ähnlichen Bestimmungen der wichtigsten Regelwerke dokumentiert sein?"
+    - q: "Wie weit muss die Lieferkette nach den Lieferketten-Bestimmungen der wichtigsten Regelwerke dokumentiert sein?"
       options:
         - { text: "Nur die erste Stufe ist erforderlich", correct: false }
         - { text: "Mindestens bis zur zweiten Stufe", correct: true }
         - { text: "Nach DSGVO ist keine Dokumentation nötig", correct: false }
-      explanation: "Der Beitrag erklärt, dass Artikel-28-ähnliche Bestimmungen eine Dokumentation der Lieferkette mindestens bis zur zweiten Stufe erwarten und dass die meisten souveränen Cloud-Konstrukte auf Hyperscaler-Basis bei der ersten Stufe (dem Hyperscaler selbst) enden."
+      explanation: "Der Beitrag erklärt, dass die Lieferketten-Bestimmungen (DORA Art. 28, NIS2 Art. 21 Abs. 2 lit. d und nationale Schemata) eine Dokumentation der Lieferkette mindestens bis zur zweiten Stufe erwarten und dass die meisten souveränen Cloud-Konstrukte auf Hyperscaler-Basis bei der ersten Stufe (dem Hyperscaler selbst) enden."
     - q: "Welche Gesellschaft ist laut Beitrag der EU-Vertragspartner von Aenix?"
       options:
         - { text: "AENIX INC (Delaware)", correct: false }
         - { text: "AENIX s.r.o. (Tschechien)", correct: true }
         - { text: "AENIX GmbH (Deutschland)", correct: false }
       explanation: "Laut Artikel ist die AENIX s.r.o. in Tschechien der Vertragspartner für die EU, die AENIX INC in Delaware der Vertragspartner für die USA."
-    - q: "Wie lange dauert ein Projekt für eine souveräne Cloud im öffentlichen Sektor typischerweise vom Start bis zur zertifizierten Produktion?"
+    - q: "Wie wirkt sich die Zertifizierung auf den Zeitplan einer souveränen Cloud im öffentlichen Sektor aus?"
       options:
-        - { text: "12-36 Monate insgesamt", correct: true }
-        - { text: "3-6 Monate im Schnellverfahren", correct: false }
-        - { text: "6-12 Monate mit gestaffeltem Rollout", correct: false }
-      explanation: "Der Beitrag nennt 12-36 Monate vom Projektstart bis zur zertifizierten Produktion — wegen des Zertifizierungsaufwands deutlich länger als in der Privatwirtschaft; danach folgt die jährliche Rezertifizierung, und der Wert der Zertifizierung wächst mit."
+        - { text: "Sie läuft 6–12 Monate parallel zum Aufbau; die zertifizierte Produktion folgt nach dem Go-live der Plattform", correct: true }
+        - { text: "Sie wird automatisch erteilt, sobald die Plattform läuft", correct: false }
+        - { text: "Workloads des öffentlichen Sektors brauchen keine Zertifizierung", correct: false }
+      explanation: "Der Beitrag beschreibt einen Zertifizierungszyklus von 6–12 Monaten parallel zum Aufbau der Plattform, gefolgt von jährlicher Rezertifizierung. Die zertifizierte Produktion kommt deshalb später als die Plattform selbst, die Zertifizierung trägt danach aber weiter."
 ---
 
 
@@ -62,12 +62,12 @@ oder mehr Regelwerke gleichzeitig abdecken.
 ### EU-Ebene
 
 - **EUCS (EU Cybersecurity Certification Scheme for Cloud Services)** —
-  das entstehende EU-weite Regelwerk, finalisiert 2025. Drei
+  vorgeschlagenes EU-weites Schema (Annahme ausstehend). Drei
   Vertrauensniveaus (Basic, Substantial, High). Das Niveau High
   verlangt inhaltliche Souveränitätskontrollen.
-- **NIS2** — gilt für die öffentliche Verwaltung als Kategorie
-  wesentlicher Einrichtungen (Anhang I). Pflichten aus Artikel 21 und
-  Artikel 23.
+- **NIS2** — die öffentliche Verwaltung ist ein Sektor nach Anhang I;
+  Einrichtungen der Zentralregierung sind wesentliche Einrichtungen
+  (Artikel 3). Pflichten aus Artikel 21 und Artikel 23.
 - **DSGVO** — Grundlage für personenbezogene Daten, Regeln für
   grenzüberschreitende Übermittlungen in den Artikeln 44-50.
 
@@ -91,8 +91,7 @@ Andere Mitgliedstaaten haben eigene Varianten.
 
 - **Kasachstan** — per Vergaberecht vorgeschriebene Souveränität für
   Workloads des öffentlichen Sektors über goszakup.gov.kz /
-  mitwork.kz / zakup.sk.kz. Aktiver Markt für souveräne Clouds,
-  darunter Produktstarts souveräner Clouds regionaler Telcos.
+  mitwork.kz / zakup.sk.kz.
 - **Singapur: IM8** — IT-Sicherheitsstandards der Regierung.
 - **Indien: MeitY** — Ministry of Electronics IT, einschließlich des
   STQC-Rahmens für gelistete Cloud-Anbieter (Empanelled CSP).
@@ -101,7 +100,7 @@ Andere Mitgliedstaaten haben eigene Varianten.
 
 ### Sektorale Zusatzanforderungen
 
-- Verteidigungsnahe Workloads (in den meisten Jurisdiktionen):
+- Eingestufte Workloads (in den meisten Jurisdiktionen):
   zusätzliche nationale Geheimschutzeinstufung
 - Gesundheitswesen: nationale Regeln zur Souveränität von
   Gesundheitsdaten
@@ -138,15 +137,15 @@ formalen Prüfungen der Vergaberichtlinien bestehen).
 
 ### 4. Transparenz der Lieferkette
 
-Artikel-28-ähnliche Bestimmungen der verschiedenen Regelwerke erwarten
+Die Lieferketten-Bestimmungen der Regelwerke (DORA Art. 28, NIS2
+Art. 21 Abs. 2 lit. d, nationale Schemata) erwarten
 eine Dokumentation der Lieferkette mindestens bis zur zweiten Stufe.
 Die meisten souveränen Cloud-Konstrukte auf Hyperscaler-Basis enden bei
 der ersten Stufe (dem Hyperscaler selbst).
 
 ### 5. Option für Air-Gap-Deployments
 
-Für die sensibelsten Workloads — eingestufte Daten, verteidigungsnahe
-Anwendungen, Gesundheitswesen mit strikter Residenz. Updates gelangen
+Für die sensibelsten Workloads — eingestufte Daten, Gesundheitswesen mit strikter Residenz. Updates gelangen
 über kontrollierte Kanäle in die Umgebung (Artefakt-Registry auf
 Kundenseite, manuelle Freigabe). Die meisten Souveränitätsregelwerke
 verlangen auf dem höchsten Niveau Air-Gap-Unterstützung als
@@ -183,10 +182,11 @@ erfüllt:
 - **Open-Source-Plattform** — Cozystack unter Apache 2.0, CNCF-Projekt,
   herstellerneutrales Fundament. Der Kunde kann die Plattform prüfen,
   verändern oder den Plattformanbieter austauschen.
-- **Kundenkontrollierte Schlüssel** — External Secrets Operator mit
-  dem HSM des Kunden als Backend; Ænix hält niemals Schlüssel.
-- **Air-Gap-Unterstützung** — dokumentiert für Anwendungsfälle mit
-  eingestuften Daten und verteidigungsnahen Anwendungen.
+- **Schlüssel beim Kunden** — die Volume-Verschlüsselung ist pro
+  Storage-Klasse wählbar (Opt-in), die Schlüsselverwaltung entwerfen wir
+  mit Ihnen; Ænix hält niemals Schlüssel.
+- **Air-Gap-Unterstützung** — dokumentierter Installationsablauf ohne
+  Internetverbindung für Anwendungsfälle mit eingestuften Daten.
 - **Selbst betriebene Observability** — VictoriaMetrics und
   VictoriaLogs innerhalb der Jurisdiktion; kein Residenzleck durch
   SaaS-Observability.
@@ -216,8 +216,8 @@ Ausschreibungen im öffentlichen Sektor legen in der Regel fest, welche
 Regelwerke erfüllt sein müssen (SecNumCloud High, BSI C5, EUCS
 Substantial usw.). Das Angebot muss die inhaltliche Erfüllung belegen,
 nicht nur die Absicht. Das Modell der Zusammenarbeit mit Ænix umfasst
-Unterstützung bei der Angebotserstellung, mit benannten Referenzen aus
-früheren Projekten im öffentlichen Sektor, soweit zulässig.
+Unterstützung bei der Angebotserstellung; Referenzen können unter NDA
+geteilt werden, soweit der Kunde zustimmt.
 
 ### Mehrjährige Rahmenverträge
 
@@ -231,7 +231,7 @@ passt sich den Anforderungen des Rahmenvertrags an.
 
 Mehrere Vorgaben im öffentlichen Sektor verlangen ausdrücklich eine
 souveräne Bereitstellung ohne Hyperscaler. Das Open-Core-Modell von
-Ænix — Hardware des Kunden, Schlüssel des Kunden, betriebliche
+Ænix — Hardware des Kunden, Schlüssel beim Kunden, wo Verschlüsselung aktiviert ist, betriebliche
 Kontrolle beim Kunden, optionaler Support durch Ænix — erfüllt diese
 Vorgaben strukturell statt über vertragliche Hilfskonstruktionen.
 
@@ -241,8 +241,8 @@ Vorgaben strukturell statt über vertragliche Hilfskonstruktionen.
 
 Die anwendbaren Regelwerke bestätigen. Das mit der höchsten Messlatte
 identifizieren (meist SecNumCloud High in Frankreich, BSI C5 in
-Deutschland, EUCS High EU-weit, die Souveränitätsvorgaben der
-kasachischen Vergabeportale in Kasachstan). Die Architektur gegen die
+Deutschland, EUCS High, wo EU-weite Anforderungen gelten, nationale
+Vergaberegeln andernorts). Die Architektur gegen die
 höchste Messlatte entwerfen und auf die übrigen abbilden.
 
 ### Phase 1 — Architektur und Angebotserstellung
@@ -256,7 +256,10 @@ Referenzarchitektur, beispielhafter Nachweiskatalog. Typische Dauer:
 
 Deployment über mehrere Rechenzentren, Air-Gap-Option bei Bedarf
 aktiviert, Integration einer souveränen Identity, audit-isolierte
-Umgebungen. 6-18 Monate.
+Umgebungen. Ein nationales Programm mit mehreren Regionen läuft mit
+3–6 Monaten Pilot und danach 9–18 Monaten bis zum vollen
+Multi-Region-Betrieb; eine Private Cloud für eine einzelne Behörde ist
+ein Aufbau von 3–12 Monaten nach einem Assessment von 14–28 Tagen.
 
 ### Phase 3 — Zertifizierungszyklus
 
@@ -269,29 +272,22 @@ Gesprächen mit dem Auditor teil. Typischer Zertifizierungszyklus:
 ### Phase 4 — Produktionsbetrieb
 
 Das Team des Kunden betreibt die Plattform mit Beratung durch Ænix und
-Tier-3-SLA. Jährlicher Rezertifizierungszyklus (bei den meisten
+einer Plus- oder Enterprise-Support-Stufe (siehe [Preise](/de/preise/)).
+Jährlicher Rezertifizierungszyklus (bei den meisten
 Regelwerken).
 
-Gesamtdauer: 12-36 Monate vom Projektstart bis zur zertifizierten
-Produktion. Deutlich länger als Projekte in der Privatwirtschaft, weil
-die Zertifizierung Aufwand verursacht — doch ihr Wert wächst mit: Ist
+Die zertifizierte Produktion kommt wegen des Zertifizierungszyklus später
+als in der Privatwirtschaft — doch der Wert der Zertifizierung wächst mit: Ist
 die Plattform einmal zertifiziert, behält sie die Zertifizierung durch
 die jährliche Rezertifizierung, statt sie für jedes Projekt neu zu
 erwerben.
 
 ## Die bestehende Position von Ænix im öffentlichen Sektor
 
-Wir arbeiten derzeit innerhalb etablierter Vergaberahmen des
-öffentlichen Sektors in der EU und in Zentralasien. Konkrete Projekte
-bleiben aufgrund der Vertraulichkeitsregeln im Vergabeverfahren
-vertraulich; benannte Fallstudien aus dem öffentlichen Sektor
-erscheinen in der Regel mit einer Verzögerung von 3-5 Jahren.
-
-Öffentlich sagen wir Folgendes: Ænix hat mehrjährige Projekte mit
-souveränen Cloud-Produkten, die auf den kasachischen Vergabeportalen
-gelistet sind, und mit regionalen Digitalisierungsprogrammen von
-EU-Mitgliedstaaten. Konkrete Referenzen nennen wir
-unter NDA im Discovery Call.
+Ænix schließt Verträge über die AENIX s.r.o. (EU) und die AENIX INC (USA)
+und arbeitet innerhalb der Vergaberahmen des öffentlichen Sektors.
+Konkrete Projekte sind vertraulich; Referenzen nennen wir unter NDA im
+Discovery Call.
 
 ## Wann dieses Modell der Zusammenarbeit passt
 
@@ -300,7 +296,7 @@ Gute Passung:
 - Nationale Initiativen für souveräne Clouds (öffentlich, als
   öffentlich-private Partnerschaft, Betreiber einer souveränen Cloud)
 - Regionale oder sektorale Cloud-Programme von EU-Mitgliedstaaten
-- Hosting verteidigungsnaher oder eingestufter Daten mit
+- Hosting eingestufter Daten mit
   Air-Gap-Anforderung
 - Souveräne Cloud im Gesundheitswesen auf nationaler oder regionaler
   Ebene
@@ -332,6 +328,6 @@ Schlechte Passung:
 - **[Sovereign Cloud Builder](/de/dienstleistungen/sovereign-cloud-builder/)** —
   die passende Form der Zusammenarbeit
 - **[Souveräne Cloud aufbauen — Playbook für die EU und Zentralasien](/de/blog/2026/05/souveraene-cloud-aufbauen-eu-zentralasien/)** —
-  Playbook für souveräne Clouds in der EU und in Kasachstan
+  Playbook für souveräne Clouds in der EU und in Zentralasien
 - **[Datenresidenz-Anforderungen 2026](/de/blog/2026/05/datenresidenz-anforderungen-2026/)** —
   Datenresidenz Schicht für Schicht

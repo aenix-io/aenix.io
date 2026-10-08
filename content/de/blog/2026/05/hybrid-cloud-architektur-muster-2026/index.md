@@ -82,5 +82,5 @@ KI-Training und Inferenz auf dediziertem GPU (Private Cloud); Rest des Geschäft
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

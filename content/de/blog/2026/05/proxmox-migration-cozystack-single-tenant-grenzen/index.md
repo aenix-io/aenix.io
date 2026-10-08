@@ -39,12 +39,12 @@ quiz:
         - { text: "Weil LXC System-Container sind, Kubernetes Anwendungscontainer nutzt", correct: true }
         - { text: "Weil LXC keine Live-Snapshots oder Replikation unterstützt", correct: false }
       explanation: "Proxmox-LXC sind System-Container (vollständiges OS-Image); Kubernetes-Container sind Anwendungscontainer (ein einzelner Prozess oder wenige). Workloads, die LXC als System-Container nutzen, wandern entweder in KubeVirt-VMs (1:1, aber schwergewichtiger) oder werden zu Kubernetes-nativen Anwendungen umgebaut."
-    - q: "Wann sollte ein Hosting-Anbieter laut Artikel bei Proxmox bleiben, statt zu migrieren?"
+    - q: "Wann sollte ein Hosting-Anbieter laut Artikel bei Proxmox bleiben, statt eine vollständige Migration durchzuführen?"
       options:
         - { text: "Bei stabilem Bestand unter rund 200 Kunden und überwiegend VM-Workloads", correct: true }
         - { text: "Wenn Kunden Managed PostgreSQL als Service verlangen", correct: false }
         - { text: "Wenn der Betreiber eine Active/Active-Topologie über mehrere Rechenzentren braucht", correct: false }
-      explanation: "Für Anbieter mit weniger als 200 Kunden, Mittelstands-IT mit unter 100 internen VMs, Lab- und Entwicklungsumgebungen sowie überwiegend VM-basierte Workloads bleibt Proxmox die bessere Antwort — die Cozystack Public Cloud Platform ist für diesen Rahmen überdimensioniert. Managed Services und Active/Active über mehrere Rechenzentren sind dagegen Treiber, die eine Migration rechtfertigen."
+      explanation: "Für Anbieter mit weniger als 200 Kunden, Mittelstands-IT mit unter 100 internen VMs, Lab- und Entwicklungsumgebungen sowie überwiegend VM-basierte Workloads bleibt Proxmox die bessere Antwort — ein vollständiges Migrationsprogramm ist für diesen Rahmen überdimensioniert; wer neue Services anbieten will, kann eine neue Produktlinie auf der Ænix Public Cloud Platform im Providermaßstab starten. Managed Services und Active/Active über mehrere Rechenzentren sind dagegen Treiber, die eine Migration rechtfertigen."
 ---
 
 
@@ -101,8 +101,9 @@ angeflanscht.
 ### 3. WHMCS oder eine vergleichbare Kundenverwaltung
 
 Proxmox hat eine WHMCS-Integration, doch der Servicekatalog jenseits von VMs
-bedeutet manuelle Integrationsarbeit. Die Cozystack Public Cloud Platform
-bringt eine WHMCS-Integration für den gesamten Servicekatalog mit.
+bedeutet manuelle Integrationsarbeit. Die Ænix Public Cloud Platform ergänzt
+eine WHMCS-Integration (ein proprietäres Ænix-Modul, nicht Teil des
+Open-Source-Projekts Cozystack), die den gesamten Servicekatalog abdeckt.
 
 ### 4. Active/Active über mehrere Rechenzentren
 
@@ -155,23 +156,25 @@ Zwei Bereiche erfordern ein Redesign statt einer 1:1-Abbildung:
 
 ## Migrationsphasen
 
-### Phase 0 — Assessment (2–4 Wochen)
+### Phase 0 — Assessment (14 oder 28 Tage)
 
 Bestandsaufnahme: Kundenzahl, genutzte kundenseitige Dienste, Anzahl der VMs,
 Betriebssystem-Mix, LXC-Nutzung, Storage-Klassen, Netzwerktopologie,
 Backup-Muster, Integration von WHMCS bzw. der Kundenverwaltung.
 
 Ehrlicher TCO-Vergleich: das heutige Proxmox mit kommerzieller Subscription
-und Betriebsteam gegenüber der Cozystack Public Cloud Platform mit
+und Betriebsteam gegenüber der Ænix Public Cloud Platform mit
 Hardwareerneuerung und Ænix-Support-Stufe. Bei Betreibern unter rund 300
 Kunden bleibt Proxmox dabei oft wettbewerbsfähig; oberhalb von etwa 500 gewinnt
 Cozystack in der Regel durch Servicekatalog und betriebliche Tiefe.
 
 Ergebnis: eine Go/No-Go-Entscheidung mit quantifizierter Begründung.
 
-### Phase 1 — Cozystack-Fundament (1–3 Monate)
+### Phase 1 — Cozystack-Fundament (wenige Wochen bis 3 Monate)
 
-Die Cozystack-Plattform wird auf neuer Hardware oder auf umgewidmeter
+Mit dem produktisierten Installer ist die Plattform wenige Wochen nach
+Bereitstellung der Hardware live; Katalog- und Markenarbeit füllen den Rest
+der Phase. Die Cozystack-Plattform wird auf neuer Hardware oder auf umgewidmeter
 Proxmox-Hardware bereitgestellt (handelsübliche x86-Server lassen sich leicht
 umziehen). Das Cilium-Networking wird konfiguriert, LINSTOR-Storage in den
 Betrieb überführt, die Identitätsintegration eingerichtet (typischerweise
@@ -220,8 +223,8 @@ archiviert.
 
 Für einen typischen mittelgroßen Hosting-Anbieter (300–1.000 Kunden):
 
-- Phase 0: 2–4 Wochen
-- Phase 1: 1–3 Monate
+- Phase 0: 14 oder 28 Tage
+- Phase 1: wenige Wochen bis 3 Monate
 - Phase 2: 1–3 Monate
 - Phase 3: 3–9 Monate
 - Phase 4: 1–3 Monate
@@ -268,9 +271,9 @@ Teil von Phase 0.
 ## Im Vergleich zu anderen Alternativen
 
 **Im Vergleich zum Eigenbau auf reinem KVM + libvirt + Kubernetes:**
-Dieselben Zielkonflikte wie bei jeder Open-Source-Eigenbauoption. Cozystack
-liefert in 3–6 Monaten, wofür ein Eigenbau 12–24 Monate braucht, bis er für den
-Multi-Tenant-Betrieb produktionsreif ist. Für Betreiber mit starker
+Dieselben Zielkonflikte wie bei jeder Open-Source-Eigenbauoption. Mit Cozystack
+ist eine mandantenfähige Plattform in wenigen Wochen bis wenigen Monaten
+produktiv; ein Eigenbau braucht 12–24 Monate, bis er dasselbe Niveau erreicht. Für Betreiber mit starker
 Platform-Engineering-Kapazität ist der Eigenbau eine glaubwürdige Alternative.
 
 **Im Vergleich zu VMware (nach Broadcom):** Eine Migration von Proxmox zu
@@ -307,19 +310,23 @@ Schlecht geeignet:
 
 - Mittelstands-IT (< 100 interne VMs) — Proxmox ist weiterhin besser
 - Lab- und Entwicklungsumgebungen — die Einfachheit von Proxmox gewinnt
-- Hosting-Anbieter mit weniger als 200 Kunden — wegen der Fixkostenstruktur
+- Hosting-Anbieter mit weniger als 200 Kunden — schlecht geeignet für ein
+  vollständiges Migrationsprogramm; stattdessen eine neue Produktlinie auf
+  der Ænix Public Cloud Platform im Providermaßstab erwägen
 
 ## Aufbau des Engagements
 
 - **Discovery Call** (30 Min., kostenlos)
-- **Migrations-Assessment** (2–4 Wochen, Festpreis) — Go/No-Go mit
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**
+  (Festpreis, 14 Tage fokussiert oder 28 Tage vollständig) — Go/No-Go mit
   TCO-Vergleich
 - **Pilot-Deployment** (1–3 Monate) — Cozystack wird aufgebaut, 5–20
   wohlgesonnene Kunden werden migriert
 - **Kohortenmigration** (3–12 Monate) — Kundenmigration in Kohorten
 - **Abschaltung von Proxmox** (1–3 Monate, parallel) — sobald Kohorten
   abgeschlossen sind
-- **Managed Retainer** (optional, laufend) — Ænix-Tier-3-SLA
+- **Support-Subskription** (laufend) — Plus- oder Enterprise-Stufe für
+  Abdeckung rund um die Uhr (siehe [Preise](/de/preise/))
 
 ## Tiefer einsteigen
 

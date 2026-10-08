@@ -314,8 +314,8 @@ Reihenfolge bringen. Gestaffelt ausrollen. Adoptionskennzahlen.
 
 Die Ænix-Engineers reduzieren ihre direkte Beteiligung schrittweise.
 Die Platform-Engineering-Funktion des Kunden übernimmt die
-Verantwortung. Der Ænix-Retainer läuft für Beratung und Tier-3-SLA-Eskalation
-weiter.
+Verantwortung. Der Ænix-Retainer läuft für Beratung und Eskalationen unter SLA
+(Plus- oder Enterprise-Support-Stufe) weiter.
 
 ## Wann dieses Projekt passt
 
