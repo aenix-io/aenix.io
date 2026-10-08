@@ -11,7 +11,7 @@ language: "de"
 hreflang_en: "/blog/2025/06/cozypkg-how-we-simplified-local-development-with-helm-and-flux/"
 ---
 
-Hallo! Ich bin Andrei Kvapil, CEO von Ænix und Entwickler von Cozystack, einer Open-Source-Plattform und einem Framework für den Aufbau von Cloud-Infrastruktur. In diesem Artikel zeige ich, wie wir Anwendungen nach Kubernetes ausliefern, erkläre, warum klassisches GitOps in der lokalen Entwicklung umständlich sein kann, und stelle vor, wie das neue Werkzeug [cozyhr](https://github.com/cozystack/cozyhr) diese Schwachstellen behebt. Der Artikel richtet sich an Engineers, die Helm und Flux bereits kennen.
+Hallo! Ich bin Andrei Kvapil, CEO von Ænix und Entwickler von Cozystack, einer Open-Source-Plattform und einem Framework für den Aufbau von Cloud-Infrastruktur. In diesem Artikel zeige ich, wie wir Anwendungen nach Kubernetes ausliefern, erkläre, warum klassisches GitOps in der lokalen Entwicklung umständlich sein kann, und stelle vor, wie das neue Werkzeug [cozyhr](https://github.com/cozystack/cozyhr) (veröffentlicht als cozypkg und im Dezember 2025 in cozyhr umbenannt) diese Schwachstellen behebt. Der Artikel richtet sich an Engineers, die Helm und Flux bereits kennen.
 
 ![Bild](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/cover.jpg)
 
@@ -136,7 +136,7 @@ Derzeit modularisieren wir Cozystack intensiv und wollen das Framework so erweit
 
 Mit `cozyhr` bündeln wir unsere Erfahrung bei der Beschleunigung der Entwicklung in einem einzigen Werkzeug und teilen unseren Ansatz mit der Community.
 
-Feedback und Pull Requests sind willkommen: [https://github.com/cozystack/cozyhr](https://github.com/cozystack/cozypkg)
+Feedback und Pull Requests sind willkommen: [https://github.com/cozystack/cozyhr](https://github.com/cozystack/cozyhr)
 
 *Viel Spaß beim Coden — und bleiben Sie cozy!*
 
