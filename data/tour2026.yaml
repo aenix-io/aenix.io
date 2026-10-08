@@ -7,137 +7,210 @@
 #
 # Booking links live under `calendars`; replace the URLs once the zcal
 # scheduling links exist.
+#
+# German pages (/de/tour-2026/) read the `<field>_de` sibling of a field when
+# it exists and fall back to the English value otherwise (addresses and
+# conference names need no `_de`). When you add or change an English value,
+# add or update its `_de` sibling too. `book_de` is the German label of a
+# calendar's booking link (English builds "Book a slot in <name>").
 
 calendars:
   - key: europe
     name: "Europe"
+    name_de: "Europa"
     window: "18 October – 7 November 2026"
+    window_de: "18. Oktober – 7. November 2026"
     zones: "Paris, Berlin, Warsaw, Copenhagen, Amsterdam, Milan, Madrid, London"
+    zones_de: "Paris, Berlin, Warschau, Kopenhagen, Amsterdam, Mailand, Madrid, London"
     url: "https://zcal.co/timurtukaev/europe-2026"
+    book_de: "Termin in Europa buchen"
   - key: usa
     name: "United States"
+    name_de: "USA"
     window: "7 November – 11 December 2026"
+    window_de: "7. November – 11. Dezember 2026"
     zones: "Salt Lake City, San Francisco, Seattle, Austin, Dallas, Washington DC, Boston, New York"
     url: "https://zcal.co/timurtukaev/usa-2026"
+    book_de: "Termin in den USA buchen"
 
 regions:
   - key: europe
     name: "Europe"
+    name_de: "Europa"
     stops:
       - city: "Paris"
         country: "France"
+        country_de: "Frankreich"
         dates: "18–20 Oct"
+        dates_de: "18.–20. Okt."
         tz: "CEST"
         events:
           - date: "Mon 19 Oct"
+            date_de: "Mo., 19. Okt."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "MyCowork, 54 rue Greneta, 75002 Paris"
             link: "/workshops/cozystack-tour-2026-europe/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
             status: confirmed
       - city: "Berlin"
         country: "Germany"
+        country_de: "Deutschland"
         dates: "20–23 Oct"
+        dates_de: "20.–23. Okt."
         tz: "CEST"
         events:
           - date: "Tue 20 – Thu 22 Oct"
+            date_de: "Di., 20. – Do., 22. Okt."
             time: "all day"
+            time_de: "ganztägig"
             kind: conference
             title: "NVIDIA GTC Berlin"
             venue: "STATION-Berlin, exhibit floor"
+            venue_de: "STATION-Berlin, Ausstellungsfläche"
             link: "https://www.nvidia.com/gtc/"
             status: confirmed
           - date: "Fri 23 Oct"
+            date_de: "Fr., 23. Okt."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Techspace Eiswerk, Köpenicker Straße 40-41, 10179 Berlin"
             link: "/workshops/cozystack-tour-2026-europe/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
             status: confirmed
       - city: "Warsaw"
+        city_de: "Warschau"
         country: "Poland"
+        country_de: "Polen"
         dates: "23–27 Oct"
+        dates_de: "23.–27. Okt."
         tz: "CET"
         events:
           - date: "Mon 26 Oct"
+            date_de: "Mo., 26. Okt."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Mindspace Koszyki, Koszykowa 61, 00-667 Warszawa"
             link: "/workshops/cozystack-tour-2026-europe/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
             status: confirmed
       - city: "Copenhagen"
+        city_de: "Kopenhagen"
         country: "Denmark"
+        country_de: "Dänemark"
         dates: "27–29 Oct"
+        dates_de: "27.–29. Okt."
         tz: "CET"
         events:
           - date: "Wed 28 Oct"
+            date_de: "Mi., 28. Okt."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Soho Network, Flæsketorvet 68, 1711 København V"
             link: "/workshops/cozystack-tour-2026-europe/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
             status: confirmed
       - city: "Amsterdam"
         country: "Netherlands"
+        country_de: "Niederlande"
         dates: "29–30 Oct"
+        dates_de: "29.–30. Okt."
         tz: "CET"
         events:
           - date: "Fri 30 Oct"
+            date_de: "Fr., 30. Okt."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Mindspace Dam, Nieuwezijds Voorburgwal 162, 1012 SJ Amsterdam"
             link: "/workshops/cozystack-tour-2026-europe/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
             status: confirmed
       - city: "Milan"
+        city_de: "Mailand"
         country: "Italy"
+        country_de: "Italien"
         dates: "30 Oct – 3 Nov"
+        dates_de: "30. Okt. – 3. Nov."
         tz: "CET"
         events:
           - date: "Mon 2 Nov"
+            date_de: "Mo., 2. Nov."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Flexworking Cerva, Via Cerva 20, 20122 Milano"
             link: "/workshops/cozystack-tour-2026-europe/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
             status: confirmed
       - city: "Madrid"
         country: "Spain"
+        country_de: "Spanien"
         dates: "3–5 Nov"
+        dates_de: "3.–5. Nov."
         tz: "CET"
         events:
           - date: "Wed 4 Nov"
+            date_de: "Mi., 4. Nov."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Impact Hub Madrid (Barceló), C/ Serrano Anguita 13"
             link: "/workshops/cozystack-tour-2026-europe/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
             status: confirmed
       - city: "London"
         country: "United Kingdom"
+        country_de: "Vereinigtes Königreich"
         dates: "5–7 Nov"
+        dates_de: "5.–7. Nov."
         tz: "GMT"
         events:
           - date: "Fri 6 Nov"
+            date_de: "Fr., 6. Nov."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Central London, venue to be confirmed"
+            venue_de: "Central London, Veranstaltungsort wird noch bestätigt"
             link: "/workshops/cozystack-tour-2026-europe/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
             status: confirmed
 
   - key: usa
     name: "United States"
+    name_de: "USA"
     stops:
       - city: "Salt Lake City"
         country: "Utah"
         dates: "7–13 Nov"
+        dates_de: "7.–13. Nov."
         tz: "MST"
         events:
           - date: "Mon 9 – Thu 12 Nov"
+            date_de: "Mo., 9. – Do., 12. Nov."
             time: "all day"
+            time_de: "ganztägig"
             kind: conference
             title: "KubeCon + CloudNativeCon North America"
             venue: "Salt Palace Convention Center"
@@ -145,91 +218,137 @@ regions:
             status: confirmed
       - city: "San Francisco Bay Area"
         country: "California"
+        country_de: "Kalifornien"
         dates: "13–18 Nov"
+        dates_de: "13.–18. Nov."
         tz: "PST"
         events:
           - date: "Mon 16 or Tue 17 Nov"
+            date_de: "Mo., 16. oder Di., 17. Nov."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "San Francisco, venue shared with registered attendees"
+            venue_de: "San Francisco, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
             status: confirmed
       - city: "Seattle"
         country: "Washington"
         dates: "18–20 Nov"
+        dates_de: "18.–20. Nov."
         tz: "PST"
         events:
           - date: "Thu 19 Nov"
+            date_de: "Do., 19. Nov."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Downtown Seattle, venue shared with registered attendees"
+            venue_de: "Downtown Seattle, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
             status: confirmed
       - city: "Austin"
         country: "Texas"
         dates: "20–24 Nov"
+        dates_de: "20.–24. Nov."
         tz: "CST"
         events:
           - date: "Mon 23 Nov"
+            date_de: "Mo., 23. Nov."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Downtown Austin, venue shared with registered attendees"
+            venue_de: "Downtown Austin, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
             status: confirmed
       - city: "Dallas"
         country: "Texas"
         dates: "24–29 Nov"
+        dates_de: "24.–29. Nov."
         tz: "CST"
         events:
           - date: "Tue 24 Nov"
+            date_de: "Di., 24. Nov."
             time: "evening"
+            time_de: "abends"
             kind: private
             title: "CTO dinner"
+            title_de: "CTO-Dinner"
             venue: "Invitation only"
+            venue_de: "Nur auf Einladung"
             status: confirmed
       - city: "Washington, DC"
         country: "DC and Northern Virginia"
+        country_de: "DC und Nord-Virginia"
         dates: "29 Nov – 8 Dec"
+        dates_de: "29. Nov. – 8. Dez."
         tz: "EST"
         events:
           - date: "Mon 30 Nov – Thu 3 Dec"
+            date_de: "Mo., 30. Nov. – Do., 3. Dez."
             time: "all day"
+            time_de: "ganztägig"
             kind: conference
             title: "NVIDIA GTC Washington, DC"
             venue: "Exhibit floor"
+            venue_de: "Ausstellungsfläche"
             link: "https://www.nvidia.com/gtc/"
             status: confirmed
           - date: "Fri 4 Dec"
+            date_de: "Fr., 4. Dez."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Downtown DC, venue shared with registered attendees"
+            venue_de: "Downtown DC, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
             status: confirmed
       - city: "Boston"
         country: "Massachusetts"
         dates: "8–9 Dec"
+        dates_de: "8.–9. Dez."
         tz: "EST"
         events:
           - date: "Wed 9 Dec"
+            date_de: "Mi., 9. Dez."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Venue shared with registered attendees"
+            venue_de: "Den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
             status: confirmed
       - city: "New York"
         country: "New York"
         dates: "9–11 Dec"
+        dates_de: "9.–11. Dez."
         tz: "EST"
         events:
           - date: "Thu 10 Dec"
+            date_de: "Do., 10. Dez."
             time: "10:00–14:00"
+            time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
+            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
             venue: "Midtown Manhattan, venue shared with registered attendees"
+            venue_de: "Midtown Manhattan, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
+            link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
             status: confirmed
