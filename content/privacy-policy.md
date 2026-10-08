@@ -3,6 +3,7 @@ title: "Privacy Policy"
 seo_title: "Privacy Policy — how Ænix handles personal data"
 description: "How AENIX s.r.o. collects and uses personal data on aenix.io: analytics, forms, cookies, processors, retention, transfers and your rights under the GDPR."
 layout: "single"
+page_type: "flag-page"
 url: "/privacy-policy/"
 ---
 
