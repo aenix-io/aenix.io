@@ -1,5 +1,6 @@
 ---
 title: "RWX-Volumes (ReadWriteMany) in Cozystack — nativer Shared Storage für Ihre Workloads"
+seo_title: "RWX-Volumes in Cozystack: nativer Shared Storage"
 description: "Seit Cozystack v1.0 gibt es ReadWriteMany-Volumes (RWX) von Haus aus: Mehrere Pods und VMs binden dasselbe Volume gleichzeitig ein, ohne externes NFS."
 slug: "rwx-readwritemany-volumes-cozystack-shared-storage"
 date: "2026-04-07"

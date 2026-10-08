@@ -1,5 +1,6 @@
 ---
 title: "Cozypkg: Wie wir die lokale Entwicklung mit Helm und Flux vereinfacht haben"
+seo_title: "Cozypkg: lokale Entwicklung mit Helm und Flux"
 description: "Andrei Kvapil zeigt, wie Cozystack Anwendungen mit Helm und Flux ausliefert, warum GitOps lokal hakt und wie das Werkzeug cozyhr diese Probleme löst."
 slug: "cozypkg-lokale-entwicklung-helm-flux"
 date: "2025-06-18"
@@ -143,7 +144,7 @@ Feedback und Pull Requests sind willkommen: [https://github.com/cozystack/cozyhr
 ## Werden Sie Teil der Cozystack-Community
 
 - [Telegram](https://t.me/cozystack)
-- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (im [Kubernetes Slack](https://communityinviter.com/apps/kubernetes/community))
+- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (im [Kubernetes Slack](https://slack.kubernetes.io/))
 - [Kalender der Community-Meetings](https://calendar.google.com/calendar?cid=ZTQzZDIxZTVjOWI0NWE5NWYyOGM1ZDY0OWMyY2IxZTFmNDMzZTJlNjUzYjU2ZGJiZGE3NGNhMzA2ZjBkMGY2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 ## Siehe auch

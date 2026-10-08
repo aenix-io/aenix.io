@@ -1,5 +1,6 @@
 ---
 title: "Wie wir in Cozystack einen dynamischen Kubernetes-API-Server für den API Aggregation Layer gebaut haben"
+seo_title: "Dynamischer Kubernetes-API-Server in Cozystack"
 description: "Andrei Kvapil zeigt, wie Cozystack einen eigenen Extension-API-Server über den API Aggregation Layer umsetzt, wann sich das lohnt und wann eher nicht."
 slug: "dynamischer-kubernetes-api-server-api-aggregation-layer-cozystack"
 date: "2024-12-12"
@@ -15,7 +16,7 @@ Hallo! Ich bin Andrei Kvapil, in Communitys rund um Kubernetes und Cloud-native-
 
 Kubernetes beeindruckt mich immer wieder mit seinen mächtigen Erweiterungsmöglichkeiten. Wahrscheinlich kennen Sie bereits das [Controller](https://kubernetes.io/docs/concepts/architecture/controller/)-Konzept und Frameworks wie [kubebuilder](https://book.kubebuilder.io/) und [operator-sdk](https://sdk.operatorframework.io/), mit denen man es umsetzt. Kurz gesagt erweitern Sie damit Ihren Kubernetes-Cluster, indem Sie Custom Resources (CRDs) definieren und zusätzliche Controller schreiben, die Ihre Geschäftslogik für das Reconciling und die Verwaltung dieser Ressourcen abbilden. Dieser Ansatz ist gut dokumentiert, und im Netz finden sich Unmengen an Material dazu, wie man eigene Operatoren entwickelt.
 
-![image](/img/blog/medium/how-we-built-a-dynamic-kubernetes-api-server-for-the-api-aggregation-layer-in-cozystack/cover.png)
+![Kubernetes API Aggregation Layer in Cozystack](/img/blog/medium/how-we-built-a-dynamic-kubernetes-api-server-for-the-api-aggregation-layer-in-cozystack/cover.png)
 
 Das ist jedoch nicht der einzige Weg, [die Kubernetes-API zu erweitern](https://kubernetes.io/docs/concepts/extend-kubernetes/#api-extensions). Für komplexere Szenarien, etwa imperative Logik, die Verwaltung von Subresources oder dynamisch erzeugte Antworten, bietet der *Aggregation Layer* der Kubernetes-API eine wirkungsvolle Alternative. Über den Aggregation Layer können Sie einen eigenen Extension-API-Server entwickeln und nahtlos in das übergreifende Kubernetes-API-Gefüge einbinden.
 

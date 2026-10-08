@@ -1,5 +1,6 @@
 ---
 title: "Die Evolution von Virtualisierungsplattformen: der Aufstieg der Managed Services und der Vorsprung lokaler Anbieter gegenüber Hyperscalern"
+seo_title: "Virtualisierung bis Managed Services: lokale Anbieter"
 description: "Andrei Kvapil zeichnet den Weg von physischen Servern über VMs und Container zu Managed Services nach und zeigt, wie lokale Anbieter gegen Hyperscaler bestehen."
 slug: "evolution-virtualisierungsplattformen-managed-services-lokale-anbieter"
 date: "2025-06-04"
@@ -13,7 +14,7 @@ hreflang_en: "/blog/2025/06/the-evolution-of-virtualization-platforms-the-rise-o
 
 Hallo zusammen! Ich bin Andrey Kvapil, CEO von Ænix und Entwickler von Cozystack, einer Open-Source-Plattform und einem Framework für den Aufbau von Cloud-Infrastruktur. In diesem Artikel möchte ich meine Sicht darauf teilen, wie moderne Cloud-Muster die Herangehensweise an Infrastruktur verändert haben, welche Rolle Service-Provider und Public Clouds in dieser Landschaft heute spielen und, vor allem, wie sich der Zweck der Virtualisierung im heutigen Infrastruktur-Stack grundlegend gewandelt hat.
 
-![image](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/cover.jpg)
+![Die Evolution von Virtualisierungsplattformen](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/cover.jpg)
 
 ## Die zentrale Herausforderung für lokale Service-Provider
 
@@ -23,7 +24,7 @@ Mit wachsender Größe potenzieren sich die Risiken. Mehr Komponenten bedeuten m
 
 In der heutigen, von der Cloud geprägten Welt liegt die Verantwortung für die Infrastruktur zunehmend bei Service-Providern. Unternehmen bevorzugen inzwischen schlüsselfertige Lösungen und verlagern ihren Fokus vom Low-Level-Betrieb auf ihre eigentlichen Prioritäten. Das treibt die Migration von IaaS (bei dem Kunden Betriebssystem, Middleware und Runtime selbst verwalten) zu PaaS, bei dem Anbieter nicht nur die Infrastruktur pflegen, sondern Managed Services (Datenbanken, Message Broker usw.) so selbstverständlich bereitstellen wie das Starten einer VM.
 
-![image](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/01.png)
+![Verantwortung für die Infrastruktur verlagert sich zu Service-Providern](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/01.png)
 
 Diese Verschiebungen haben den Zweck der Virtualisierung drastisch verändert. Virtuelle Maschinen verlieren gegenüber Managed Services an Boden: Kubernetes, Datenbanken, Caches, Queues und mehr. Das verschafft Cloud-Plattformen wie AWS, GCP und Azure einen strukturellen Vorteil gegenüber traditionellen Anbietern (vor allem lokalen, die keine vergleichbare Infrastruktur haben). Hyperscaler mit ihren riesigen F&E-Budgets und ganzen Heerscharen von Engineers haben längst ausgereifte PaaS-Angebote im Markt, während lokale Anbieter mit begrenzten Ressourcen oft bei einfachem IaaS festhängen und ständig hinterherlaufen.
 
@@ -118,7 +119,7 @@ Cozystack fungiert als Hypervisor und Cloud-Plattform der nächsten Generation u
 
 Als offenes CNCF-Projekt (die CNCF ist auch die Heimat von Kubernetes, Cilium, Flux usw.) hilft Cozystack Anbietern, digitale Souveränität zu verwirklichen, ihre Margen zu verbessern und Vendor-Lock-in zu beseitigen. Zugleich verkürzt es die Time-to-Market für profitable Cloud-Services, einschließlich GPU-gestützter KI-Workloads.
 
-![image](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/03.jpg)
+![Cozystack als offene Plattform für Service-Provider](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/03.jpg)
 
 ## Fazit
 
@@ -149,7 +150,7 @@ Werden Sie Teil unserer Community, entwickeln Sie Ihre eigenen Managed Services,
 ## Werden Sie Teil der Cozystack-Community
 
 - [Telegram](https://t.me/cozystack)
-- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (im [Kubernetes-Slack-Workspace](https://communityinviter.com/apps/kubernetes/community))
+- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (im [Kubernetes-Slack-Workspace](https://slack.kubernetes.io/))
 - [Kalender der Community Meetings](https://calendar.google.com/calendar?cid=ZTQzZDIxZTVjOWI0NWE5NWYyOGM1ZDY0OWMyY2IxZTFmNDMzZTJlNjUzYjU2ZGJiZGE3NGNhMzA2ZjBkMGY2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 Von [Andrei Kvapil](https://medium.com/@kvaps) am [4. Juni 2025](https://medium.com/p/0cb5db21a330).
