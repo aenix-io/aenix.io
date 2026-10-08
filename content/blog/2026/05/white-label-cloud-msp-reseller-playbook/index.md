@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Hosting", "Observability"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/white-label-cloud-playbook-msp-reseller/"
 companion_landing: "/services/white-label-cloud/"
 quiz:
   title: "Test yourself: white-label cloud for MSPs"

@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "AI/ML", "Multi-tenancy", "Financial Services"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/sovereign-ai-architektur-entscheidungen/"
 companion_landing: "/solutions/sovereign-ai/"
 quiz:
   title: "Test yourself: seven sovereign-AI decisions"

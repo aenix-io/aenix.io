@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Cozystack", "Sovereignty", "AI/ML", "Compliance"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/industrie-4-0-plattform-cloud-edge-fertigung/"
 companion_landing: "/industries/manufacturing/"
 quiz:
   title: "Test yourself: Industry 4.0 platform architecture"

@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Public Sector", "Sovereignty", "Compliance", "NIS2", "Cozystack"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/oeffentlicher-sektor-souveraene-cloud-vergabe/"
 companion_landing: "/industries/public-sector/"
 companion_label: "See public-sector industry page →"
 quiz:

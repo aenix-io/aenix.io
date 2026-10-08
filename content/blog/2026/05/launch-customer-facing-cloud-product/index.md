@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "announcement"
 topics: ["VMware", "Kubernetes", "Sovereignty", "AI/ML", "Multi-tenancy", "Hosting"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/cloud-produkt-starten-playbook-hosting-anbieter/"
 companion_landing: "/services/public-cloud-builder/"
 ---
 

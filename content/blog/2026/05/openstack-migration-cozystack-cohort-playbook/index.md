@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "tutorial"
 topics: ["OpenStack", "Cozystack", "Migration", "Multi-tenancy", "Kubernetes"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/openstack-migration-cozystack-kohorten-playbook/"
 companion_landing: "/migration/openstack/"
 companion_label: "See OpenStack migration hub →"
 quiz:

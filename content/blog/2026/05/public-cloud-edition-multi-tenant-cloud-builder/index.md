@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Sovereignty", "Cloud", "Platform Engineering"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/public-cloud-platform-souveraenes-cloud-produkt/"
 companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Public Cloud Platform product details →"
 quiz:

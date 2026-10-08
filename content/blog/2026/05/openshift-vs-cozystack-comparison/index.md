@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/openshift-vs-cozystack-vergleich-kubevirt/"
 companion_landing: "/alternatives/openshift-alternative/"
 quiz:
   title: "Test yourself: OpenShift Virtualization vs Cozystack"
