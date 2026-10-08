@@ -2,6 +2,7 @@
 title: "Webinar: add Kubernetes, databases and GPU to your price list"
 description: "A free live webinar with Andrei Kvapil, creator of Cozystack: how a working hosting or cloud provider widens the catalog — managed Kubernetes, databases, S3 and GPU — beside the platform they already run, keeping their billing and their panel."
 language: "en"
+hreflang_de: "/de/webinare/public-cloud-starten/"
 layout: "event-landing"
 bodyClass: "webinar-landing"
 primary_keyword: "managed services for hosting providers"
