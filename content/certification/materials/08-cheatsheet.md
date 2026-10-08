@@ -6,6 +6,7 @@ weight: 8
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/cheatsheet/"
+page_type: "flag-page"
 ---
 
 Последняя страница перед экзаменом. Читать её вместо уроков бесполезно — она не объясняет,

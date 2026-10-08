@@ -31,7 +31,7 @@ categories_lead: Every merged pull request by an Aenix engineer to any open sour
 categories:
 - label: Cozystack ecosystem
   value: 1,476
-  sub: 'PRs across cozystack/* repos — the main product: cozystack/cozystack, talm, website, cozyhr, boot-to-talos, and more.'
+  sub: 'PRs across cozystack/* repos — the Cozystack project: cozystack/cozystack, talm, website, cozyhr, boot-to-talos, and more.'
   val: $316,277
   hrs: ~5,904 hours · avg 4h/PR
   color: var(--brand-primary)

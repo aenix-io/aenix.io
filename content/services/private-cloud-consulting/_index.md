@@ -1,6 +1,7 @@
 ---
 title: "Private cloud consulting — engineers who design, deploy, and operate it in production"
-description: "Private cloud consulting for VMware exits, sovereignty mandates and repatriation. Architecture review in 5-15 days, then build. No hyperscaler bias."
+seo_title: "Private cloud consulting: design, deploy, operate"
+description: "Private cloud consulting for VMware exits, sovereignty mandates and repatriation. A 14- or 28-day assessment, then a 3-12 month build. No hyperscaler bias."
 related_pages:
   - /solutions/data-sovereignty/
   - /solutions/cloud-repatriation/
@@ -13,11 +14,11 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Private cloud consulting is an advisory and delivery service in which experienced platform engineers design, build, migrate to, and operate a private cloud running on infrastructure the customer controls. Aenix delivers it as the team behind Cozystack, an open-source CNCF project that runs virtual machines (via KubeVirt) and containers on one Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Engagements suit organizations leaving VMware after Broadcom changes, meeting sovereignty mandates, repatriating from hyperscalers, or sizing private infrastructure for AI workloads. Aenix covers architecture design, multi-tenancy and operations model, migration, and operational handover, recommending platforms on technical fit rather than partnership economics, with no per-CPU licensing and no vendor-roadmap lock-in.**
+  **Private cloud consulting is an advisory and delivery service in which experienced platform engineers design, build, migrate to, and operate a private cloud running on infrastructure the customer controls. Ænix delivers it as the team behind Cozystack, an open-source CNCF project that runs virtual machines (via KubeVirt) and containers on one Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Engagements suit organizations leaving VMware after Broadcom changes, meeting sovereignty mandates, repatriating from hyperscalers, or sizing private infrastructure for AI workloads. Ænix covers architecture design, multi-tenancy and operations model, migration, and operational handover, recommending platforms on technical fit rather than partnership economics, with no per-CPU licensing and no vendor-roadmap lock-in.**
 
 quick_facts:
   - label: "What it is"
-    value: "Advisory and delivery service where Aenix engineers design, build, migrate to, and operate a customer-controlled private cloud."
+    value: "Advisory and delivery service where Ænix engineers design, build, migrate to, and operate a customer-controlled private cloud."
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
@@ -25,7 +26,7 @@ quick_facts:
   - label: "Who it is for"
     value: "Organizations exiting VMware after Broadcom, under sovereignty mandates, repatriating from hyperscalers, building a service-provider cloud, or sizing private AI infrastructure."
   - label: "Engagement model"
-    value: "Architecture review (5-15 days), implementation (3-12 months), or managed private cloud; preceded by a free 30-minute discovery call."
+    value: "Platform Readiness Assessment (14 or 28 days), implementation (3-12 months), or managed private cloud; preceded by a free 30-minute discovery call."
   - label: "Platform foundation"
     value: "Cozystack: KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
   - label: "Vendor stance"
@@ -33,15 +34,15 @@ quick_facts:
 
 faq:
   - q: "Do we have to use Cozystack for the private cloud?"
-    a: "No. Cozystack is the open-source foundation Aenix recommends for multi-tenant and sovereign use cases, but engagements also extend OpenStack, OpenShift, and vendor-led platforms when those are the better technical fit. Recommendations reflect technical fit, not partnership economics."
+    a: "No. Cozystack is the open-source foundation Ænix recommends for multi-tenant and sovereign use cases, but engagements also extend OpenStack, OpenShift, and vendor-led platforms when those are the better technical fit. Recommendations reflect technical fit, not partnership economics."
   - q: "How does private cloud consulting differ from VMware migration consulting?"
     a: "VMware migration is one path that can lead to private cloud when the destination is private. A private cloud engagement covers all paths to a customer-controlled platform: VMware exit, OpenStack rebuild, hyperscaler repatriation, and greenfield builds."
   - q: "What does an engagement cover?"
     a: "Four areas: architecture design (compute via KubeVirt, LINSTOR (DRBD) storage, Cilium networking, identity, observability, backup/DR); multi-tenancy and operations model using the Tenant CRD, quotas, RBAC, and audit; migration and integration; and operational handover with runbooks and knowledge transfer to your platform team."
   - q: "How long does it take and how is it structured?"
-    a: "It starts with a free 30-minute discovery call, then an architecture review of 5-15 days producing a target architecture and capacity model, followed by an optional implementation engagement of 3-12 months with Aenix engineers integrated into your team, and optional managed operation afterward."
+    a: "It starts with a free 30-minute discovery call, then a fixed-price Platform Readiness Assessment of 14 or 28 days producing a target architecture and capacity model, followed by an optional implementation engagement of 3-12 months with Ænix engineers integrated into your team, and optional managed operation afterward."
   - q: "Is the private cloud platform vendor-locked or licensed per CPU?"
-    a: "No. The recommended foundation, Cozystack, is open source under Apache 2.0 with no per-CPU or per-core licensing, so the platform is one you own without vendor-roadmap lock-in. Aenix productizes it as the Ænix Platform and sells services on top, but the underlying project stays open."
+    a: "No. The recommended foundation, Cozystack, is open source under Apache 2.0 with no per-CPU or per-core licensing, so the platform is one you own without vendor-roadmap lock-in. Ænix builds three commercial platforms on it and sells services, but the underlying project stays open."
   - q: "Private cloud or hybrid cloud — which should we choose?"
     a: "Most modern deployments end up hybrid, with selected workloads on private infrastructure and others remaining in public cloud. Pure private cloud is a specific choice driven by sovereignty or cost economics. The engagement assesses which model fits your workloads, regulations, and budget."
 hreflang_de: /de/dienstleistungen/private-cloud-consulting/
@@ -149,7 +150,7 @@ Private cloud is built; platform team is the same size as the team that operated
 <div class="diagram">
 <div class="diagram__node"><b>Discovery call</b><div class="diagram__chips"><span>Free</span><span>30-min</span></div></div>
 <div class="diagram__conn">scopes</div>
-<div class="diagram__node"><b>Architecture review (5-15 days)</b><div class="diagram__chips"><span>Target architecture</span><span>Capacity model</span></div></div>
+<div class="diagram__node"><b>Readiness assessment (14 or 28 days)</b><div class="diagram__chips"><span>Target architecture</span><span>Capacity model</span></div></div>
 <div class="diagram__conn">guides</div>
 <div class="diagram__node"><b>Implementation (3-12 months)</b><div class="diagram__chips"><span>Integrated build</span><span>Multi-tenancy</span><span>Handover</span></div></div>
 <div class="diagram__conn">delivers</div>
@@ -157,7 +158,7 @@ Private cloud is built; platform team is the same size as the team that operated
 </div>
 </div>
 
-- **Architecture review (5-15 days)** — focused engagement, target architecture, capacity model.
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/) (14 or 28 days)** — fixed price, target architecture, capacity model.
 - **Implementation engagement (3-12 months)** — Ænix engineers integrated with your team, building the foundation, multi-tenancy, operations model. Knowledge transfer throughout.
 - **Managed private cloud** — for organizations needing the platform but lacking operating capacity.
 
@@ -183,7 +184,7 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 | When | What | Output |
 |---|---|---|
 | **Day 0** | 30-min discovery call (free) | Confirm fit |
-| **Phase 1: Architecture review (5-15 days)** | Focused engagement | Target architecture, capacity model |
+| **Phase 1: Platform Readiness Assessment (14 or 28 days)** | Focused engagement | Target architecture, capacity model |
 | **Phase 2: Implementation (3-12 months)** | Integrated build | Production private cloud, runbooks, knowledge transfer |
 | **Phase 3: Operate (optional)** | Managed-services or in-house | Sustained private cloud |
 

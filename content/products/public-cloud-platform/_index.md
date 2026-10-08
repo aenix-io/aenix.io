@@ -1,6 +1,6 @@
 ---
 title: "Ænix Public Cloud Platform — for everyone who sells cloud"
-description: "Aenix Public Cloud Platform: turnkey cloud platform for anyone selling cloud — hosting providers, MSPs, telcos, national operators. Billing, portal, multi-region."
+description: "Ænix Public Cloud Platform: turnkey cloud for hosting providers, MSPs and operators — billing, WHMCS, customer portal. From $1,250 per 10 nodes per month."
 type: "page"
 language: "en"
 quick_facts_style: "rows"
@@ -8,15 +8,15 @@ faq_style: "rows"
 primary_keyword: "public cloud platform"
 secondary_keywords: ["cloud platform for hosting providers", "openstack alternative for providers", "multi-tenant cloud platform", "whmcs cloud billing", "sovereign public cloud"]
 direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Aenix Public Cloud Platform console"
+direct_answer_image_alt: "Cozystack Dashboard customer console"
 images: ["img/og/public-cloud-platform.jpg"]
 hreflang_de: /de/produkte/public-cloud-platform/
 related_pages: ["/products/private-cloud-platform/", "/products/ai-platform/", "/products/whmcs-integration/", "/migration/vmware/", "/alternatives/openstack-alternative/"]
 direct_answer: |
-  **Aenix Public Cloud Platform is a turnkey, Kubernetes-native cloud platform for organizations that sell cloud capacity to someone else — hosting providers, MSPs and regional clouds at one end, telcos, national operators and banks running a commercial cloud at the other. It is the productized, supported distribution of Cozystack (Apache 2.0, a CNCF project created and maintained by Aenix), adding the commercial surfaces a cloud business needs: full billing back-end and front-end, WHMCS integration, a white-label customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage and GPU workloads. It runs multi-region and multi-hypervisor, so it extends an existing VMware or OpenStack estate rather than forcing a rip-and-replace. From $1,250/month; national multi-region programmes are quoted per RFP.**
+  **Ænix Public Cloud Platform is a turnkey, Kubernetes-native cloud platform for organizations that sell cloud capacity to someone else — hosting providers, MSPs and regional clouds at one end, telcos, national operators and banks running a commercial cloud at the other. It is the productized, supported distribution of Cozystack (Apache 2.0, a CNCF project that Ænix created and maintains with maintainers from other companies), adding the commercial surfaces a cloud business needs: full billing back-end and front-end, WHMCS integration, a brandable customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage and GPU workloads. It runs multi-region and multi-hypervisor, so it extends an existing VMware or OpenStack estate rather than forcing a rip-and-replace. A subscription starts at $1,250 per 10 physical nodes per month (Basic support tier plus the proprietary Ænix commercial modules); national multi-region programmes are quoted per RFP.**
 quick_facts:
   - label: "What it is"
-    value: "Turnkey, supported cloud-in-a-box for anyone selling cloud — built on Cozystack, with billing, payments and a white-label portal included."
+    value: "Turnkey, supported cloud-in-a-box for anyone selling cloud — built on Cozystack, with the Ænix billing system, WHMCS integration and a brandable customer portal."
   - label: "License"
     value: "Apache 2.0 core (no per-CPU / per-core licensing)"
   - label: "Status"
@@ -28,16 +28,16 @@ quick_facts:
   - label: "Architecture"
     value: "Kubernetes-native: KubeVirt (VMs and containers on one API), Cilium (eBPF) networking, LINSTOR/DRBD replicated block storage, SeaweedFS object storage, Tenant CRD multi-tenancy, Cozystack Dashboard, VictoriaMetrics and VictoriaLogs."
   - label: "Engagement"
-    value: "From $1,250/month at provider scale — weeks to live via the productized installer. Multi-region operator builds are quoted per RFP: 3-6 month pilot, then 9-18 months."
+    value: "From $1,250 per 10 nodes per month at provider scale; live in weeks once the hardware is ready, via the productized installer. Multi-region operator programmes are quoted per RFP: 3-6 month pilot, then 9-18 months."
 faq:
   - q: "How is this different from running open-source Cozystack ourselves?"
-    a: "Cozystack is the engine, and it stops where the cloud business begins. Public Cloud Platform adds the operator surface: billing back-end and front-end, payment integrations, WHMCS modules, a brandable customer portal, service-creation wizards, tenant lock and suspension, a productized installer, multi-region control plane, enterprise SLA and dedicated support. Building those yourself is years of engineering, and none of it differentiates you from another provider."
+    a: "Cozystack is the engine, and it stops where the cloud business begins. Public Cloud Platform adds the operator surface: billing back-end and front-end, payment integrations, WHMCS modules, a brandable customer portal, service-creation wizards, tenant lock and suspension, a productized installer, multi-region control plane, enterprise SLA and dedicated support. The billing system and WHMCS integration are proprietary Ænix modules; the rest of the platform stays open-source Cozystack. Building those surfaces yourself is years of engineering, and none of it differentiates you from another provider."
   - q: "How is it different from Ænix Private Cloud Platform?"
-    a: "Who consumes the capacity. Public Cloud Platform is for operators selling cloud to customers who are not them, so it carries billing, payments, resale and customer-facing portals. Private Cloud Platform is for organizations running cloud for their own business units, so it carries DORA / NIS2 architecture, customer-controlled keys and audit-ready logging instead. Same Cozystack foundation, same APIs — you can run both, and organizations that sell cloud and also run regulated internal workloads frequently do."
+    a: "Who consumes the capacity. Public Cloud Platform is for operators selling cloud to customers who are not them, so it carries billing, payments, resale and customer-facing portals. Private Cloud Platform is for organizations running cloud for their own business units, so it carries DORA- and NIS2-aligned architecture, encryption and audit logging designed for its regulator instead. Same Cozystack foundation, same APIs — you can run both, and organizations that sell cloud and also run regulated internal workloads frequently do."
   - q: "Can it coexist with our existing VMware or OpenStack estate?"
-    a: "Yes, and that is the normal path. The platform is multi-hypervisor: it orchestrates native KubeVirt VMs while integrating with existing VMware, OpenStack, OpenNebula and OpenShift footprints, so you consolidate one cohort at a time instead of running a big-bang migration. Ænix ships Forklift-based migration tooling in the platform and has done cohort-based VMware exits in production. Upstream Cozystack self-service VM import is still in review, so a self-run cluster deploys Forklift alongside it."
+    a: "Yes, and that is the normal path. The platform is multi-hypervisor: it orchestrates native KubeVirt VMs while integrating with existing VMware, OpenStack, OpenNebula and OpenShift footprints, so you consolidate one cohort at a time instead of running a big-bang migration. VMs move from VMware or OpenStack with built-in migration tooling, and Ænix has done cohort-based VMware exits in production."
   - q: "Do we need our own 24/7 operations team?"
-    a: "Not necessarily. Both customer-operated and Aenix-managed operating models are supported, and the hybrid one — you own the data plane, Aenix operates the control plane under SLA — is common in regulated deployments. At provider scale a typical team is three to seven engineers, against eight to fifteen for a comparable OpenStack estate."
+    a: "Not necessarily. Both customer-operated and Ænix-managed operating models are supported; in the hybrid one you own the data plane while Ænix operates the control plane under SLA. Our calculators model Cozystack operations in engineer-days per node: the hosting-provider calculator's default model comes to about 1.3 full-time engineers at 10 nodes and about 2.6 at 40 nodes, and the TCO model puts per-node operations effort for a self-managed OpenStack at about twice that of Cozystack. Round-the-clock on-call needs more people than that arithmetic, or the 24×7 coverage of the Plus tier."
   - q: "What does the multi-region pattern look like?"
     a: "Two to N+1 regions with tenant-scoped policy enforcement, customer-selectable region placement, and identity, network and storage policy federated at the platform layer. A provider that grows into multi-region does not replatform — it switches multi-region on and keeps its portal, its billing and its tenants."
   - q: "Can we add GPU or developer self-service later?"
@@ -51,7 +51,7 @@ aliases:
 
 **A modern alternative to OpenStack for everyone who sells cloud — from a regional hoster with forty nodes to a national operator with several data centres. Turnkey cloud-in-a-box: hosting panel, billing, customer portal, payments, support. Install, plug in users, start operating.**
 
-The live demo is the actual customer frontend — Cozystack Dashboard, running in your browser on demo data. No signup, no cluster.
+The live demo runs in your browser on demo data: the customer portal (marketplace, console, account, support) and, behind the Admin switch, the operator back-office with clients, verification, invoices and resource pricing. No signup, no cluster.
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
@@ -68,8 +68,8 @@ A regional hoster with forty nodes and a national operator with several data cen
 | Who | Hosting providers, MSPs, regional clouds, data centres | Telcos, national operators, banks running a commercial cloud, large public clouds |
 | Regions | One or a few sites | Multi-region control plane; workload placement and policy across regions |
 | Billing | WHMCS-integrated, Stripe and regional processors | Full billing back-end plus your own front-end, custom payment integrations |
-| Existing estate | Migrate off it | Federate with it — one control plane over VMware, OpenNebula and OpenShift while you migrate |
-| Onboarding | Productized installer, weeks to live | 3-6 month pilot, then 9-18 months to full multi-region |
+| Existing estate | Migrate off it | Run alongside it — a single portal and API over existing estates while you migrate |
+| Onboarding | Productized installer, live in weeks once hardware is ready | 3-6 month pilot, then 9-18 months to full multi-region |
 | Bought as | Published price list, from $1,250 / month per 10 nodes | Multi-year programme, quoted per RFP |
 
 The technology underneath is identical, which is the point: a provider that grows into the right-hand column does not replatform. It turns on multi-region and keeps its portal, its billing and its tenants.
@@ -86,7 +86,7 @@ A production-ready module with billing templates for the panel you already run. 
 
 ### Hosting panel and customer portal
 
-A branded admin dashboard for the operator, plus a customer-facing console (Cozystack Dashboard, customized to your brand) with self-service registration, profiles, team management and support ticketing.
+An admin back-office for the operator, plus a customer-facing console (Cozystack Dashboard with your branding; white-labeling is an open-source Cozystack feature, and support for configuring it is included from the Standard tier) with self-service registration, profiles, team management and support ticketing.
 
 ### Service-creation wizards
 
@@ -98,11 +98,11 @@ Tenant lifecycle controls built in — automatic suspension of overdue accounts,
 
 ### Multi-hypervisor control plane
 
-One control plane that orchestrates native KubeVirt VMs and integrates with existing VMware, OpenStack, OpenNebula and OpenShift infrastructure. Storage-class compatibility with shared SAN, S3-compatible and on-premise block storage; network integration with existing fabrics over BGP, OVN and Cilium.
+Orchestrates native KubeVirt VMs and runs alongside existing VMware, OpenStack, OpenNebula and OpenShift infrastructure during migration. Storage-class compatibility with shared SAN, S3-compatible and on-premise block storage; network integration with existing fabrics over BGP, OVN and Cilium.
 
 ### Multi-region
 
-Native multi-region orchestration: workload placement, identity, network and storage policy enforced across regions. The Tenant CRD scopes naturally to a region or across several.
+Native multi-region orchestration: workload placement, identity, network and storage policy enforced across regions. A tenant can live in one region or span several.
 
 ### Service catalogue beyond VMs
 
@@ -110,25 +110,25 @@ Managed PostgreSQL (CloudNativePG), MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ
 
 ### Migration tooling and expertise
 
-Modules and runbooks for migration from VMware, OpenStack, Virtuozzo and OpenNebula, including Forklift-based VM migration, which ships in the Ænix platform (upstream Cozystack self-service import is still in review, so a self-run Cozystack cluster deploys Forklift alongside it). Ænix delivers migration with experience from production engagements. [Migration guides →](/migration/)
+Built-in VM migration tooling and runbooks for moving off VMware, OpenStack, Virtuozzo and OpenNebula. Migration is guided by Ænix on the Plus tier and managed by Ænix on Enterprise; on the other tiers it is quoted as a service. [Migration guides →](/migration/)
 
-### Enterprise support
+### What the subscription includes
 
-24/7 support with a named technical account manager on higher tiers. Entry tier from $1,250/month.
+A subscription is a support tier plus the proprietary Ænix commercial modules (billing system and WHMCS integration), priced per 10 physical nodes per month: Basic $1,250, Standard $3,000, Plus $5,500 on annual billing, Enterprise custom. The same tiers are sold as [enterprise support for self-run Cozystack](/products/cozystack-enterprise-support/). Platform installation is included from Standard, 24×7 support from Plus. If the subscription ends, the open-source Cozystack platform keeps running on your hardware; the commercial modules and Ænix support stop. [Full tier comparison →](/pricing/#support)
 
 ## Why providers choose this over OpenStack
 
 | Dimension | OpenStack | Ænix Public Cloud Platform |
 |---|---|---|
 | Time to production | 6+ months typical | Weeks |
-| Operations team size | 8-15+ engineers | 3-7 engineers |
+| Per-node operations effort | About twice Cozystack's when self-managed ([TCO model](/tco-calculator/methodology/)) | The baseline in the same model |
 | Service catalogue | DIY beyond core compute / storage / network | Built-in: Kubernetes, databases, S3, GPU, cache, VPN |
-| Customer-facing portal | DIY | Cozystack Dashboard, branded, included |
+| Customer-facing portal | DIY | Cozystack Dashboard with your branding |
 | Billing | DIY integration | WHMCS-native, Stripe and regional providers |
-| Multi-tenancy | Project model — limited | Tenant CRD with quotas, RBAC and observability per tenant |
-| Migration from VMware | Heavy lift | Forklift-based tooling plus Ænix delivery |
-| Vendor support | Community plus add-ons | Ænix enterprise support from $1,250/month |
-| Upgrade cadence | Manual, risky | GitOps-managed, low-risk |
+| Multi-tenancy | Project model — limited | Tenants with quotas, RBAC and observability per tenant |
+| Migration from VMware | Heavy lift | Built-in migration tooling plus Ænix delivery |
+| Vendor support | Community plus add-ons | Ænix support tiers from $1,250 per 10 nodes per month |
+| Upgrade cadence | Manual | GitOps-managed platform releases |
 
 ### And versus the VPS control panels
 
@@ -138,7 +138,7 @@ Most small and mid-size providers are not running OpenStack at all. They run Vir
 |---|---|---|
 | Product catalogue | VPS, and variations on VPS | VMs plus managed Kubernetes, PostgreSQL, MariaDB, ClickHouse, Kafka, RabbitMQ, Valkey, S3, GPU |
 | Where the margin is | Reselling capacity, competing on price per vCPU | Managed services on the same hardware, priced per service |
-| Tenancy model | An account owning VMs | Tenant CRD — quotas, RBAC, network isolation, per-tenant observability and billing |
+| Tenancy model | An account owning VMs | Tenants with quotas, RBAC, network isolation, per-tenant observability and billing |
 | Kubernetes for customers | Not offered, or a separate product to operate | Native, with a managed control plane per tenant |
 | Upgrades | Panel upgrade and hypervisor upgrade, both manual | One GitOps-managed platform version |
 | Lock-in | Proprietary panel, per-VM licence | Apache 2.0 core; you can drop the commercial layer and stay on plain Cozystack |
@@ -150,7 +150,7 @@ The honest read: if VPS resale is your whole business and the margin satisfies y
 The three Ænix platforms are the same engine with different surfaces switched on, so they compose rather than compete. Nothing here is a separate installation.
 
 - **[AI Platform](/products/ai-platform/)** — multi-tenant GPU scheduling, fractional GPU sharing, model serving, vector databases. Providers sell this as GPU-as-a-Service on the hardware they already have.
-- **[Private Cloud Platform](/products/private-cloud-platform/)** — DORA / NIS2 architecture, customer-controlled keys, audit-ready logging. Relevant when you are a regulated entity yourself, or when you run internal workloads next to the ones you sell.
+- **[Private Cloud Platform](/products/private-cloud-platform/)** — DORA- and NIS2-aligned architecture, encryption and audit logging designed for your regulator. Relevant when you are a regulated entity yourself, or when you run internal workloads next to the ones you sell.
 
 A telco selling a sovereign cloud product while running its own regulated internal estate takes both, on one platform, under one operations team.
 
@@ -158,24 +158,23 @@ A telco selling a sovereign cloud product while running its own regulated intern
 
 | Buyer | Typical engagement |
 |---|---|
-| Hosting provider, MSP, regional cloud | Productized installer, live in weeks, from the price list |
+| Hosting provider, MSP, regional cloud | Productized installer, live in weeks once hardware is ready, from the price list |
 | Data centre adding cloud services | Migration from VMware or Virtuozzo, then service catalogue expansion |
 | Large public-cloud operator | New cloud product launch or multi-region scale-up |
-| Tier-1 bank operating a commercial cloud | DORA-aligned, sovereign, multi-region |
 | Large telco or national operator | Customer-facing sovereign cloud product, often regional plus edge |
 
 ## Production customers
 
-Regional hosting providers running Ænix Platform include **GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy**, delivering multi-tenant cloud products across the EU, DACH, Central Asia and other regions.
+Providers running Ænix Public Cloud Platform include **GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy**, delivering multi-tenant cloud products across the EU, DACH, Central Asia and other regions.
 
-Bank and telco deployments are NDA-protected until mid-2027. One commercial public cloud built on this platform is written up in detail: [a Swiss provider running three data centres with synchronous cross-DC replication and GPU in production](/case-studies/sovereign-public-cloud/).
+One commercial public cloud built on this platform is written up in detail: [a Swiss provider running three data centres with synchronous cross-DC replication and GPU in production](/case-studies/sovereign-public-cloud/).
 
 ## Engagement structure
 
 - **Discovery call** (30 minutes, free) — confirm fit
 - **Platform Readiness Assessment** (14 or 28 days, fixed price) — current-state and target architecture, migration roadmap, risk register
 - **Pilot** (3-6 months, operator scale) — one region, one tenant cohort, one product line
-- **Full build** — weeks at provider scale via the productized installer; 9-18 months for multi-region production with customer onboarding workflows and operations training
+- **Build** — live in weeks at provider scale once the hardware is ready, via the productized installer; 9-18 months to full multi-region production for operator-scale programmes
 - **Managed operations** (optional) — Ænix runs the control plane under SLA
 
 [Platform Readiness Assessment →](/services/platform-readiness-assessment/)
@@ -186,7 +185,7 @@ Tell us your scale, your current stack and what you sell today, and we will set 
 
 {{< pipedrive-form type="demo" >}}
 
-Prefer a shorter first step? [Book a discovery call](/contact/) instead.
+Prefer a shorter first step? [Book a discovery call](/contact/) instead, or model your margins in the [hosting-provider unit economics calculator](/isp-calculator/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

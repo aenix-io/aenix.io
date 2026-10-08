@@ -1,6 +1,6 @@
 ---
-title: "Ænix Private Cloud Platform"
-description: "Aenix Private Cloud Platform: private and hybrid sovereign cloud for regulated banks, insurance, public sector, telco and healthcare. DORA / NIS2-aligned."
+title: "Ænix Private Cloud Platform for regulated enterprises"
+description: "Ænix Private Cloud Platform: private and hybrid sovereign cloud for banks, insurers, public sector, telco and healthcare. DORA- and NIS2-aligned; per RFP."
 type: "page"
 language: "en"
 quick_facts_style: "rows"
@@ -8,15 +8,15 @@ faq_style: "rows"
 primary_keyword: "private cloud platform for regulated enterprises"
 secondary_keywords: ["sovereign cloud platform", "dora compliant cloud", "nis2 cloud platform", "internal developer platform", "vmware alternative enterprise"]
 direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Aenix Private Cloud Platform console"
+direct_answer_image_alt: "Cozystack Dashboard console"
 images: ["img/og/private-cloud-platform.jpg"]
 hreflang_de: /de/produkte/private-cloud-platform/
 related_pages: ["/products/public-cloud-platform/", "/products/ai-platform/", "/solutions/dora-compliance/", "/solutions/nis2-compliance/", "/migration/vmware/"]
 direct_answer: |
-  **Aenix Private Cloud Platform is a private and hybrid sovereign cloud for regulated organizations that run cloud for themselves rather than sell it — banks, insurance carriers, public administration, telco and healthcare operators. It runs on Cozystack, the CNCF project Aenix created and maintains, and gives one Kubernetes-native control plane that coexists with existing VMware, OpenNebula and OpenShift estates instead of forcing a rip-and-replace. It adds DORA and NIS2 architecture controls built in, customer-controlled encryption keys at every data layer, audit-ready immutable logging, multi-datacenter operations with tested failover, ISO 27001 and SOC 2 alignment support, and a developer self-service layer with GitLab CI/CD and Argo CD golden paths that ships with the platform rather than as a second product. Enterprise SLA, 24/7 support and engineering training are included. No per-CPU or per-core licensing.**
+  **Ænix Private Cloud Platform is a private and hybrid sovereign cloud for regulated organizations that run cloud for themselves rather than sell it — banks, insurance carriers, public administration, telco and healthcare operators. It runs on Cozystack, the CNCF project Ænix created and maintains with maintainers from other companies, and runs alongside existing VMware, OpenNebula and OpenShift estates while workloads move, instead of forcing a rip-and-replace. Ænix designs it for your regulator: DORA- and NIS2-aligned architecture, volume encryption where you need it, audit-log retention and archive set to your requirement, multi-site designs, and control evidence for your own ISO 27001 work. A developer self-service layer with GitLab CI/CD and Argo CD golden paths is part of the platform. It is quoted per RFP: a 14- or 28-day assessment, then a 3-12 month build depending on scope, with the support tier chosen during scoping. No per-CPU or per-core licensing.**
 quick_facts:
   - label: "What it is"
-    value: "Private and hybrid sovereign cloud for regulated enterprises, built on Cozystack, with one control plane that coexists with VMware, OpenNebula and OpenShift."
+    value: "Private and hybrid sovereign cloud for regulated enterprises, built on Cozystack, running alongside VMware, OpenNebula and OpenShift while you migrate."
   - label: "License"
     value: "Apache 2.0 core (no per-CPU / per-core licensing)"
   - label: "Status"
@@ -24,31 +24,33 @@ quick_facts:
   - label: "For"
     value: "Regulated enterprises — banks, insurance, public administration, telco, healthcare, regulated industrial and energy operators"
   - label: "Includes"
-    value: "DORA / NIS2 architecture controls, ISO 27001 and SOC 2 alignment support, customer-managed keys, audit-ready logging, multi-DC operations, air-gap deployment, and the developer self-service layer"
+    value: "DORA / NIS2-aligned architecture, opt-in volume encryption, configurable audit-log retention, multi-site designs, air-gapped deployment, control evidence for your ISO 27001 work, and the developer self-service layer"
   - label: "Engagement"
-    value: "Multi-year platform builds; 3-6 month pilot, 9-18 months to full multi-DC production"
+    value: "Free 30-minute discovery call, a 14- or 28-day Platform Readiness Assessment, then a 3-12 month build depending on scope. Quoted per RFP."
   - label: "Architecture"
-    value: "Kubernetes-native, multi-DC, KubeVirt VMs and containers on one API, Cilium (eBPF) networking, LINSTOR/DRBD replicated block storage, Tenant CRD multi-tenancy, customer-controlled keys"
+    value: "Kubernetes-native, multi-DC, KubeVirt VMs and containers on one API, Cilium (eBPF) networking, LINSTOR/DRBD replicated block storage, Tenant CRD multi-tenancy"
 faq:
   - q: "How is this different from running open-source Cozystack ourselves?"
-    a: "Cozystack provides the Kubernetes-native multi-tenant foundation. Private Cloud Platform adds built DORA and NIS2 architecture bundles, multi-DC operations runbooks, customer-managed encryption at every layer, an audit-ready logging stack, hybrid integration with VMware, OpenNebula and OpenShift, ISO 27001 and SOC 2 alignment support, enterprise SLA with 24/7 support, and engineering training. The engine is the same and stays Apache 2.0; what you buy is the regulated-operations layer and the people who have done it before."
+    a: "Cozystack provides the Kubernetes-native multi-tenant foundation. Private Cloud Platform adds the design and delivery work a regulator expects: DORA- and NIS2-aligned architecture, encryption, log retention and backup targets configured for your requirements, multi-site operations runbooks, coexistence with VMware, OpenNebula and OpenShift during migration, control evidence for your audits, an enterprise support tier and engineering training. The engine is the same and stays Apache 2.0; what you buy is the regulated-operations layer and the people who have done it before."
   - q: "How is it different from Ænix Public Cloud Platform?"
-    a: "Who consumes the capacity. Private Cloud Platform is for organizations running cloud for their own business units, so it carries compliance architecture, customer-controlled keys and audit-ready logging. Public Cloud Platform is for operators selling cloud to external customers, so it carries billing, payments and customer-facing portals instead. Same foundation and same APIs — and a telco or bank that does both runs both on one platform rather than two."
+    a: "Who consumes the capacity. Private Cloud Platform is for organizations running cloud for their own business units, so it carries compliance architecture, encryption and audit logging designed for its regulator. Public Cloud Platform is for operators selling cloud to external customers, so it carries billing, payments and customer-facing portals instead. Same foundation and same APIs — and a telco or bank that does both runs both on one platform rather than two."
   - q: "Can it coexist with our existing VMware estate?"
-    a: "Yes, and that is how these programmes normally run. The platform is built for coexistence: existing VMware Cloud Foundation, OpenStack, OpenNebula and OpenShift estates come under one Cozystack-based control plane while consolidation proceeds at the pace of the workloads. Forklift-based VM migration ships in the Ænix platform, so moving a cohort does not require a separate tool or a separate project; on a self-run Cozystack cluster you deploy Forklift alongside it, since upstream self-service import is still in review."
+    a: "Yes, and that is how these programmes normally run. The platform runs alongside existing VMware Cloud Foundation, OpenStack, OpenNebula and OpenShift estates while consolidation proceeds at the pace of the workloads. VMs move with built-in migration tooling, one cohort at a time."
   - q: "Does the developer self-service layer come separately?"
     a: "No. The internal developer platform layer — golden paths, GitLab CI/CD patterns, Argo CD GitOps, self-service APIs for environments, databases and clusters — is part of this platform rather than a separate product. Organizations that want only the regulated cloud simply leave it switched off; those that want self-service for their engineers switch it on without a second procurement."
   - q: "Can we add GPU and AI workloads?"
-    a: "Yes. AI Platform capability runs on the same substrate and inherits the same sovereignty controls: customer-controlled keys extend to model weights at rest, and GPU tenancy uses the same Tenant CRD boundary as the rest of the estate. Regulated organizations typically add it once the cloud foundation is in production, without changing the platform underneath."
+    a: "Yes. AI Platform capability runs on the same substrate: GPU tenancy uses the same tenant boundary as the rest of the estate, and the storage and logging choices made for the cloud apply to the AI workloads too. Regulated organizations typically add it once the cloud foundation is in production, without changing the platform underneath."
   - q: "What does air-gapped operation actually mean here?"
-    a: "No internet egress is required for the platform to run or to be updated: images and platform releases are mirrored into the perimeter, and the control plane has no dependency on a vendor-hosted service. Provider personnel access is logged and time-limited, and encryption keys stay with the customer, including for backups and observability data."
+    a: "No internet egress is required for the platform to run or to be updated: images and platform releases are mirrored into the perimeter, and the control plane has no dependency on a vendor-hosted service. Air-gapped installation is an open-source Cozystack workflow; Ænix support for it is included from the Plus tier. Ænix engineers work on your environment only with your approval."
+  - q: "Where are Ænix engineers located?"
+    a: "Ænix has about 20 people, in the EU and Central Asia. Contracts with EU customers are signed with AENIX s.r.o. in the Czech Republic. Who may access which environment, and from where, is agreed in the contract."
 aliases:
   - /products/aenix-platform/enterprise-edition/
   - /products/aenix-platform/idp-edition/
 ---
 
 
-**Private and hybrid sovereign cloud for regulated organizations that run cloud for themselves. Multi-DC by design, DORA / NIS2 architecture built, one control plane that connects to VMware, OpenNebula and OpenShift rather than replacing them — on hardware you control. Developer self-service and engineering training are part of the platform, not a second purchase.**
+**Private and hybrid sovereign cloud for regulated organizations that run cloud for themselves. Multi-site designs, DORA- and NIS2-aligned architecture, and coexistence with VMware, OpenNebula and OpenShift while you migrate — on hardware you control. Developer self-service and engineering training are part of the platform, not a second purchase.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -57,21 +59,23 @@ aliases:
 
 ## What's included
 
-### Multi-DC private and hybrid sovereign cloud
+### Multi-site private and hybrid sovereign cloud
 
-Designed for two-or-more datacenter deployments with active-warm or active-active failover. Tested DR + backup-restore cadence for regulator review. Hybrid pattern (on-prem + cloud) supported with one control plane.
+Stretched and multi-site designs across two or more data centres, with synchronous replication where the design calls for it — a Swiss provider runs one across [three data centres](/case-studies/sovereign-public-cloud/). There is no automated cross-site VM failover: site failover is a runbook that we design and rehearse with you, and backups go to storage outside the cluster they protect. See the [DORA evidence page](/compliance/dora/) for what the platform provides and what it does not.
 
-### One control plane connecting to VMware / OpenNebula / OpenShift
+### Coexistence with VMware / OpenNebula / OpenShift
 
-The platform is built for **coexistence**, not rip-and-replace. Existing VMware Cloud Foundation, OpenStack, OpenNebula, OpenShift estates can be brought under one Cozystack-based control plane while gradual consolidation happens at the workload pace.
+The platform is built for **coexistence**, not rip-and-replace. It runs next to existing VMware Cloud Foundation, OpenStack, OpenNebula and OpenShift estates while workloads move at their own pace; a financial group in Asia runs [one self-service portal over OpenNebula, VMware and Kubernetes](/case-studies/unified-cloud-portal-financial-group/).
 
 ### DORA architecture controls
 
-- Customer-controlled encryption keys at every data layer (Article 9)
-- Audit-ready logging via VictoriaLogs with immutable backend, sized for incident classification and reporting (Articles 17–19)
-- Multi-tenant Tenant CRD aligned with ICT asset and risk classification (Article 8)
-- Tested exit-readiness mechanics (Article 28(8))
-- Supplier transparency to the second hop, feeding the register of information (Article 28(3))
+- Volume encryption at rest (LINSTOR and LUKS, opt-in) for the storage classes that need it (Article 9)
+- Audit logging with retention set to your requirement — the default is 30 days — and shipping to an immutable store you control (Articles 17–19)
+- Tenant boundaries aligned with ICT asset and risk classification (Article 8)
+- An open-source exit path: the platform keeps running without Ænix (Article 28(8))
+- Supplier transparency for the register of information (Article 28(3))
+
+The [DORA evidence page](/compliance/dora/) maps each article to what Cozystack provides, what you configure, and what is not provided.
 
 <div class="cta-row">
   <a class="cta-secondary" href="/solutions/dora-compliance/">DORA compliance services →</a>
@@ -81,9 +85,8 @@ The platform is built for **coexistence**, not rip-and-replace. Existing VMware 
 ### NIS2 architecture controls
 
 - Article 21 cybersecurity risk-management measures across 10 control areas
-- Article 23 incident handling + reporting templates aligned to 24h / 72h / 1-month timelines
-- Article 12 coordinated vulnerability disclosure aligned
-- Tenant CRD with NetworkPolicy / Cilium for segmentation
+- Article 23 incident handling and reporting templates aligned to 24h / 72h / 1-month timelines
+- Tenant boundaries with NetworkPolicy / Cilium for segmentation
 
 <div class="cta-row">
   <a class="cta-secondary" href="/solutions/nis2-compliance/">NIS2 compliance services →</a>
@@ -92,27 +95,27 @@ The platform is built for **coexistence**, not rip-and-replace. Existing VMware 
 
 ### Sovereign deployment
 
-Customer-controlled hardware in customer-controlled jurisdiction. Air-gap operation supported (no internet egress required). Customer-managed encryption keys (BYOK / HYOK) with HSM integration. Provider personnel access logged and time-limited.
+Customer-controlled hardware in a customer-controlled jurisdiction. Air-gapped operation supported (no internet egress required). Ænix engineers work on your environment only with your approval.
 
-### Customer-managed encryption (data at rest + in transit)
+### Encryption
 
-Encryption keys held by the customer at every layer — primary store, replicas, backups, observability data, model weights at rest. Vendor-managed-only keys are explicitly avoided.
+Volume encryption at rest is opt-in per storage class, and backups can be encrypted and sent to storage you control. The key-management process — who holds keys, rotation, dual control — is designed with you during the build. The [GDPR evidence page](/compliance/gdpr/) describes the current mechanics and their limits.
 
-### VictoriaLogs audit-ready logging stack
+### Audit logging
 
-Immutable, exportable, regulator-compatible audit trail. Integration with customer SIEM. Long-tail retention meeting longest applicable regulatory requirement (often 5+ years).
+Audit logs in VictoriaLogs with configurable retention (default 30 days), exportable to your SIEM and to an immutable archive you control for the retention your regulator expects.
 
 ### Multi-tenant Tenant CRD
 
 Tenant CRD with quota / RBAC / observability per workload. Tenant boundary enforced at network, identity, storage, observability layers — not just namespace.
 
-### Education and training included
+### Education and training
 
-Engineering team training as part of the engagement. Ænix's Kubernetes Deep Dive Course covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux) included for customer engineers in Private Cloud Platform deployments.
+Engineering team training as part of the engagement, plus monthly training hours on every support tier. On Plus and Enterprise, one full [Kubernetes Deep Dive Course](/kubernetes-deep-dive/) per year is included, covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux).
 
-### Enterprise SLA and certification support
+### Enterprise SLA and audit support
 
-Tiered SLA aligned to regulator expectations, named technical account manager, defined escalation procedures. Architecture designed to support ISO 27001 and SOC 2 certification work; Ænix supplies the certification documentation and audit-readiness work.
+The support tier is chosen during scoping, from the same [tiers](/pricing/#support) as the price list: response times down to 1 hour on Enterprise, 24×7 from Plus, compliance audit support from Plus. The platform supplies control evidence for your own ISO 27001 or SOC 2 work; Ænix does not certify your organization. Ænix itself holds [ISO/IEC 27001:2022](/compliance/iso-27001/) for its own information security management. Ænix engineering teams are in the EU and Central Asia; EU contracts are signed with AENIX s.r.o.
 
 ---
 
@@ -132,7 +135,7 @@ The Tenant CRD that carries the compliance boundary is the same object that carr
 
 The three Ænix platforms are the same engine with different surfaces switched on, so they compose rather than compete. Nothing below is a separate installation or a second procurement.
 
-- **[AI Platform](/products/ai-platform/)** — GPU tenancy (H100, H200, A100, L40S, Blackwell), model serving and vector databases, inheriting the same sovereignty controls: customer-managed keys extend to model weights at rest, GPU workloads sit inside the same Tenant CRD boundary the regulator already reviewed.
+- **[AI Platform](/products/ai-platform/)** — GPU tenancy on NVIDIA data-centre GPUs, model serving and vector databases, inside the same tenant boundary the regulator already reviewed.
 - **[Public Cloud Platform](/products/public-cloud-platform/)** — billing, payments and customer-facing portals, for when the same organization also sells capacity externally. A telco running a regulated internal estate and a commercial sovereign cloud product runs both on one platform under one operations team.
 
 The practical consequence: choosing Private Cloud Platform now does not foreclose anything later. Adding GPU tenancy or a customer-facing commercial layer is a configuration decision on the platform you already run.
@@ -142,7 +145,7 @@ The practical consequence: choosing Private Cloud Platform now does not foreclos
 | Vs. | The trade |
 |---|---|
 | **Nutanix** | Nutanix sells an appliance-grade experience: HCI with Prism, one vendor for hardware and software, and an operations story that genuinely works out of the box. The costs are the licence per core, the hardware compatibility list, and an exit that gets harder each renewal — and quotes swing widely, so the same estate can price anywhere in a broad band. Ænix Private Cloud Platform runs on commodity hardware with no per-core licence, and Kubernetes is the API rather than a bolted-on add-on. [Five-year TCO with quote sensitivity](/tco-calculator/vs-nutanix/). |
-| **Azure Stack HCI / Azure Local** | The right answer if your target state is Azure and this is a landing zone for workloads that cannot leave the building yet: the Azure control plane, Azure billing, Azure identity, one operating model. It is also the opposite of sovereignty — the control plane is Microsoft's, the meter runs to Microsoft, and a jurisdiction question about the control plane has one answer. Private Cloud Platform puts the control plane inside your perimeter, including fully air-gapped, with customer-managed keys. |
+| **Azure Stack HCI / Azure Local** | The right answer if your target state is Azure and this is a landing zone for workloads that cannot leave the building yet: the Azure control plane, Azure billing, Azure identity, one operating model. It is also the opposite of sovereignty — the control plane is Microsoft's, the meter runs to Microsoft, and a jurisdiction question about the control plane has one answer. Private Cloud Platform puts the control plane inside your perimeter, including fully air-gapped, with encryption keys under your control. |
 | **VMware / VCF under Broadcom** | The migration everyone is currently modelling. See [Cozystack vs VMware](/compare/cozystack-vs-vmware/) and the [five-year TCO](/tco-calculator/vs-vmware/). |
 | **OpenShift** | A real ecosystem advantage in certified operators and images, against a per-core subscription and a heavier platform. [The honest version](/compare/cozystack-vs-openshift/). |
 
@@ -152,7 +155,7 @@ The practical consequence: choosing Private Cloud Platform now does not foreclos
 
 | Buyer | Typical engagement |
 |---|---|
-| Tier-1 / tier-2 European bank | DORA-aligned multi-DC sovereign cloud — multi-million-euro multi-year |
+| Bank or financial group | DORA-aligned private cloud with developer self-service ([bank case](/case-studies/private-cloud-in-a-bank/), [financial group case](/case-studies/unified-cloud-portal-financial-group/)) |
 | Insurance carrier | DORA scope + GDPR + sectoral; sovereignty for regulated workloads |
 | Large public administration | Sovereign cloud aligned with national procurement mandates |
 | Telco operator | NIS2 essential-entity compliance + customer-cloud product opportunity |
@@ -163,7 +166,7 @@ The practical consequence: choosing Private Cloud Platform now does not foreclos
 
 ## Pricing
 
-Multi-year platform build, quoted per RFP. Discovery call to scope.
+Quoted per RFP after a discovery call and a Platform Readiness Assessment. The [published support tiers](/pricing/#support) are for Public Cloud Platform and self-run Cozystack; a Private Cloud programme includes the tier chosen during scoping.
 
 [Discuss Private Cloud Platform →](/contact/?platform=private-cloud)
 
@@ -173,8 +176,7 @@ Multi-year platform build, quoted per RFP. Discovery call to scope.
 
 - **Discovery call** (30 min, free)
 - **Platform Readiness Assessment** (14 or 28 days, fixed price agreed up front) — DORA / NIS2 gap analysis + architecture roadmap
-- **Pilot engagement** (3-6 months) — defined slice (one workload class, one BU, one site)
-- **Full platform build** (9-18 months) — multi-DC production deployment, compliance certification support, operations team training
+- **Build** (3-12 months, depending on scope) — production deployment, often starting with a defined slice (one workload class, one business unit, one site), plus audit support and operations team training
 - **Managed operations** (optional, ongoing) — Ænix runs the platform under SLA
 
 [Platform Readiness Assessment →](/services/platform-readiness-assessment/)
@@ -183,7 +185,7 @@ Multi-year platform build, quoted per RFP. Discovery call to scope.
 
 ## Customer evidence
 
-Tier-1 / tier-2 European bank engagements are in production and NDA-protected; naming is permitted from mid-2027 as the NDAs expire. [Five deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact. Reference calls with existing customers can be arranged under NDA for an active opportunity.
+[Nine deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact — including [a private cloud inside a bank](/case-studies/private-cloud-in-a-bank/) and [one portal over OpenNebula, VMware and Kubernetes for a financial group](/case-studies/unified-cloud-portal-financial-group/). Reference calls with existing customers can be arranged under NDA for an active opportunity.
 
 ---
 
@@ -197,4 +199,4 @@ Prefer a shorter first step? [Book a discovery call](/contact/) instead.
 
 ---
 
-*Ænix Private Cloud Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating application in due diligence). Apache 2.0. Ænix is the open-core company.*
+*Ænix Private Cloud Platform is built on [Cozystack](https://cozystack.io) — a CNCF project Ænix created and maintains with maintainers from other companies (currently CNCF Sandbox; CNCF Incubating application in due diligence). Apache 2.0.*
