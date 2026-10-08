@@ -286,5 +286,5 @@ Ausschreibung.
   Details zur Zusammenarbeit
 - **[Sovereign Cloud Builder](/de/dienstleistungen/sovereign-cloud-builder/)** —
   für die Variante mit Schwerpunkt Souveränität
-- **[Build sovereign cloud — playbook for EU and Central Asia](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)** —
-  Architekturmuster für souveräne Clouds (englischsprachig)
+- **[Souveräne Cloud aufbauen — Playbook für die EU und Zentralasien](/de/blog/2026/05/souveraene-cloud-aufbauen-eu-zentralasien/)** —
+  Architekturmuster für souveräne Clouds

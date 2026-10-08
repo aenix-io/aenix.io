@@ -270,5 +270,5 @@ Abschaltung von CloudStack.
   das häufigste Zielprodukt bei CloudStack-Migrationen
 - **[Branchenseite Hosting-Anbieter](/de/branchen/hosting-anbieter/)** —
   Positionierung speziell für Hosting-Anbieter
-- **[Hosting provider platform modernization](/blog/2026/05/hosting-provider-platform-modernization/)** —
-  Artikel zu einem verwandten Modernisierungsmuster (auf Englisch)
+- **[Plattformmodernisierung für Hosting-Anbieter](/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/)** —
+  Artikel zu einem verwandten Modernisierungsmuster

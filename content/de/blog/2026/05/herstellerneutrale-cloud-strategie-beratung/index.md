@@ -301,7 +301,7 @@ zuerst die Strategie, dann das Assessment, dann die Umsetzung.
   die Angebotsseite
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** —
   das taktische Assessment
-- **[Cloud Readiness Assessment — 14-day methodology](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)** (Englisch) —
+- **[Cloud Readiness Assessment — Methodik für 14 Tage](/de/blog/2026/05/cloud-readiness-assessment-methodik/)** —
   Details zur Methodik des taktischen Assessments
 - **[Cloud Engineering 2026](/de/dienstleistungen/cloud-engineering/)** —
   die sieben Disziplinen des Cloud Engineering

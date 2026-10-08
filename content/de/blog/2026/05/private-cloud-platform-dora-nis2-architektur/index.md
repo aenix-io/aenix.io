@@ -323,5 +323,5 @@ mittelgroße regulierte Unternehmen mit engerem Umfang.
   Details zu NIS2-orientierten Projekten
 - **[DORA-Compliance-Checkliste](/de/ressourcen/dora-compliance-checkliste/)** —
   kostenlose Checkliste der Kontrollen zum Herunterladen
-- **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
-  ausführlicherer DORA-Durchgang auf Architekturebene (auf Englisch)
+- **[DORA-Compliance-Checkliste für Cloud-Infrastruktur](/de/blog/2026/05/dora-checkliste-cloud-architektur/)** —
+  ausführlicherer DORA-Durchgang auf Architekturebene

@@ -353,11 +353,11 @@ Schlechte Passung:
   für Organisationen mit Fokus auf Produkt-Engineering
 - **[Produktseite Private Cloud Platform](/de/produkte/private-cloud-platform/)** —
   für regulierte Organisationen
-- **[Internal developer platform — 6 patterns without Backstage lock-in](/blog/2026/05/internal-developer-platform-examples-without-backstage/)** —
-  sechs Muster aus der Produktion (auf Englisch)
-- **[Platform engineering maturity model](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** —
-  Reifegradmodell mit fünf Stufen und acht Dimensionen (auf Englisch)
+- **[Internal Developer Platform — 6 Muster ohne Backstage-Lock-in](/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/)** —
+  sechs Muster aus der Produktion
+- **[Reifegradmodell für Platform Engineering](/de/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** —
+  Reifegradmodell mit fünf Stufen und acht Dimensionen
 - **[Developer Self-Service — die Ökonomie der Entwicklungsgeschwindigkeit](/de/blog/2026/05/developer-self-service-oekonomie-entwicklungsgeschwindigkeit/)** —
   der wirtschaftliche Fall für die IDP
-- **[Build private cloud — 90-day playbook](/blog/2026/05/build-private-cloud-90-day-playbook/)** —
-  für das Arbeitspaket zum Aufbau des Substrats (auf Englisch)
+- **[Private Cloud aufbauen — 90-Tage-Playbook](/de/blog/2026/05/private-cloud-aufbauen-90-tage-playbook/)** —
+  für das Arbeitspaket zum Aufbau des Substrats

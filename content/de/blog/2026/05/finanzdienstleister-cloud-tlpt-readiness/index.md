@@ -320,8 +320,8 @@ Schlechte Passung:
   die DORA-Landingpage aus Sicht des Einkäufers
 - **[Produktseite Private Cloud Platform](/de/produkte/private-cloud-platform/)** —
   das Produkt für regulierte Unternehmen
-- **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
-  DORA-Durchgang auf Architekturebene (auf Englisch)
+- **[DORA-Compliance-Checkliste für Cloud-Infrastruktur](/de/blog/2026/05/dora-checkliste-cloud-architektur/)** —
+  DORA-Durchgang auf Architekturebene
 - **[Private Cloud Platform — DORA- und NIS2-Pflichten in der Architektur](/de/blog/2026/05/private-cloud-platform-dora-nis2-architektur/)** —
   architektonische Details auf Produktebene
 - **[DORA-Compliance-Checkliste](/de/ressourcen/dora-compliance-checkliste/)** —

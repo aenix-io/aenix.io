@@ -323,13 +323,13 @@ Schlecht geeignet:
 ## Tiefer einsteigen
 
 - **[Proxmox-Migrations-Hub](/de/migration/proxmox/)** — kommerzielle Landingpage
-- **[Vergleich Proxmox vs. VMware vs. Cozystack](/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/)** —
-  Entscheidungsmatrix (Englisch)
+- **[Vergleich Proxmox vs. VMware vs. Cozystack](/de/blog/2026/05/proxmox-vs-vmware-vs-cozystack/)** —
+  Entscheidungsmatrix
 - **[Proxmox-Alternative](/de/alternativen/proxmox-alternative/)** —
   kommerzielle Landingpage mit Fokus auf Alternativen
 - **[Branchenseite Hosting-Anbieter](/de/branchen/hosting-anbieter/)** —
   branchenspezifische Positionierung
-- **[Wirtschaftlichkeit der Public Cloud Platform für Hosting-Anbieter](/blog/2026/05/isp-edition-economics-hosting-providers/)** —
-  Unit Economics Schritt für Schritt (Englisch)
-- **[Plattformmodernisierung für Hosting-Anbieter](/blog/2026/05/hosting-provider-platform-modernization/)** —
-  Modernisierungsmuster (Englisch)
+- **[Wirtschaftlichkeit der Public Cloud Platform für Hosting-Anbieter](/de/blog/2026/05/public-cloud-platform-wirtschaftlichkeit-hosting-anbieter/)** —
+  Unit Economics Schritt für Schritt
+- **[Plattformmodernisierung für Hosting-Anbieter](/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/)** —
+  Modernisierungsmuster

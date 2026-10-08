@@ -310,7 +310,7 @@ Ausschreibung (RFP).
   breiterer Umfang
 - **[Lösungen für Developer Self-Service](/de/loesungen/developer-self-service/)** —
   die Landingpage aus Sicht des Einkäufers
-- **[Internal developer platform examples — 6 patterns](/blog/2026/05/internal-developer-platform-examples-without-backstage/)** —
-  die sechs IDP-Muster aus der Produktion (auf Englisch)
+- **[Internal Developer Platform Beispiele — 6 Muster](/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/)** —
+  die sechs IDP-Muster aus der Produktion
 - **[Internal Developer Portal vs. Plattform](/de/blog/2026/05/internal-developer-portal-vs-plattform/)** —
   der Platz von Backstage im Jahr 2026

@@ -330,8 +330,7 @@ Schlechte Passung:
   Anhang I)
 - **[Sovereign Cloud Builder](/de/dienstleistungen/sovereign-cloud-builder/)** —
   die passende Form der Zusammenarbeit
-- **[Build sovereign cloud — playbook for EU and Central Asia](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)** —
+- **[Souveräne Cloud aufbauen — Playbook für die EU und Zentralasien](/de/blog/2026/05/souveraene-cloud-aufbauen-eu-zentralasien/)** —
   Playbook für souveräne Clouds in der EU und in Kasachstan
-  (englischsprachig)
-- **[Data residency requirements in 2026](/blog/2026/05/data-residency-requirements-2026/)** —
-  Datenresidenz Schicht für Schicht (englischsprachig)
+- **[Datenresidenz-Anforderungen 2026](/de/blog/2026/05/datenresidenz-anforderungen-2026/)** —
+  Datenresidenz Schicht für Schicht
