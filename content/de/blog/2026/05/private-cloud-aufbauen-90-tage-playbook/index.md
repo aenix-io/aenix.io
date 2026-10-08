@@ -1,5 +1,6 @@
 ---
 title: "Die eigene Private Cloud aufbauen — ein 90-Tage-Playbook für den Ansatz unter Führung des Plattform-Teams"
+seo_title: "Private Cloud aufbauen: ein 90-Tage-Playbook"
 description: "Ein Plan von Tag 0 bis Tag 90 für den Aufbau einer Private Cloud: was jeden Monat entsteht, was Sie bewusst weglassen und wo Teams regelmäßig straucheln."
 slug: "private-cloud-aufbauen-90-tage-playbook"
 date: "2026-05-02"

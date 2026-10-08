@@ -1,5 +1,6 @@
 ---
 title: "Wirtschaftlichkeit der Public Cloud Platform — wann sich eine schlüsselfertige Cloud aus der Box für Hosting-Anbieter rechnet"
+seo_title: "Public Cloud Platform: Wirtschaftlichkeit für Hoster"
 description: "Unit Economics der Aenix Public Cloud Platform für Hosting-Anbieter: ARPU, Infrastrukturkosten pro Tenant, Kapazität des Plattformteams, Amortisation, Grenzen."
 slug: "public-cloud-platform-wirtschaftlichkeit-hosting-anbieter"
 date: "2026-05-15"

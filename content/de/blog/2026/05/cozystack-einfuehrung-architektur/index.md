@@ -1,6 +1,7 @@
 ---
 title: "Cozystack — was es ist, Architektur und 2026-Positionierung"
-description: "Begleitung zur Cozystack-Page."
+seo_title: "Cozystack: Architektur und Einordnung 2026"
+description: "Was Cozystack ist und warum es so gebaut ist: KubeVirt, Talos, LINSTOR, Cilium, Tenants und Flux, der Vergleich mit OpenStack und OpenShift und wann es passt."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/cozystack-einfuehrung-architektur.jpg"
 author: "Aenix Team"
@@ -45,7 +46,7 @@ quiz:
 hreflang_en: /blog/2026/05/cozystack-introduction-architecture/
 ---
 
-Begleitung zur **[Cozystack-Page](/de/produkte/cozystack)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Cozystack](/de/produkte/cozystack/)**.
 
 ## Architektonische Entscheidungen und warum
 

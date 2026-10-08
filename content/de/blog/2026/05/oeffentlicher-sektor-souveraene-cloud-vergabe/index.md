@@ -1,5 +1,6 @@
 ---
 title: "Souveräne Cloud im öffentlichen Sektor — vom Vergaberahmen zur laufenden Plattform"
+seo_title: "Souveräne Cloud im öffentlichen Sektor"
 slug: "oeffentlicher-sektor-souveraene-cloud-vergabe"
 description: "Wie Vergabeverantwortliche und IT-Leitungen im öffentlichen Sektor Souveränitätsvorgaben in eine laufende Cloud-Plattform übersetzen — Regelwerke und Phasen."
 date: "2026-05-25"

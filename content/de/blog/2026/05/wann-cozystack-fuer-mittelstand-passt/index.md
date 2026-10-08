@@ -1,6 +1,7 @@
 ---
 title: "Wann Cozystack für KMU und Mittelstand passt — und wann nicht"
-description: "Begleitung zur Mittelstand-Page."
+seo_title: "Wann Cozystack für den Mittelstand passt"
+description: "Ein ehrlicher Test für KMU und Mittelstand: unter welchen Bedingungen Cozystack passt, wann nicht, typische Einsatzbeispiele und wie die Zusammenarbeit abläuft."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/wann-cozystack-fuer-mittelstand-passt.jpg"
 author: "Aenix Team"
@@ -44,7 +45,7 @@ quiz:
 hreflang_en: /blog/2026/05/when-cozystack-fits-smb-and-mid-market/
 ---
 
-Begleitung zur **[Mittelstand-Page](/de/branchen/mittelstand)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[KMU und Mittelstand](/de/branchen/mittelstand/)**.
 
 ## Der ehrliche Test
 

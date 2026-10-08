@@ -1,5 +1,6 @@
 ---
 title: "Public Cloud Platform — was der Start eines souveränen Cloud-Produkts im großen Maßstab wirklich erfordert"
+seo_title: "Public Cloud Platform im Betreibermaßstab"
 slug: "public-cloud-platform-souveraenes-cloud-produkt"
 description: "Was ein mehrjähriger Aufbau einer souveränen Cloud im Millionen-Euro-Bereich für Telcos, Banken und Betreiber umfasst — Phasen, Risiken und Zusammenarbeit."
 date: "2026-05-25"

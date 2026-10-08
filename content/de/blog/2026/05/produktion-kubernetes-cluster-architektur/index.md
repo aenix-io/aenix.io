@@ -1,6 +1,7 @@
 ---
 title: "Produktions-Kubernetes-Cluster — Architekturentscheidungen, Sizing und Operations 2026"
-description: "Begleitung zur Kubernetes-Consulting-Page."
+seo_title: "Kubernetes in Produktion: Architektur und Betrieb"
+description: "Kubernetes-Cluster für die Produktion: zehn Architekturentscheidungen von Distribution bis Upgrades, bewährte Betriebspraktiken und die häufigsten Fehler."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/produktion-kubernetes-cluster-architektur.jpg"
 author: "Aenix Team"
@@ -44,7 +45,7 @@ quiz:
 hreflang_en: /blog/2026/05/kubernetes-cluster-setup-production-architecture/
 ---
 
-Begleitung zur **[Kubernetes-Consulting-Page](/de/dienstleistungen/kubernetes-consulting)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Kubernetes-Beratung](/de/dienstleistungen/kubernetes-consulting/)**.
 
 ## 10 Architekturentscheidungen, die zählen
 

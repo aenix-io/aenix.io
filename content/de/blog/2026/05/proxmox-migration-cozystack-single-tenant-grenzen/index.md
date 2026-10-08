@@ -1,5 +1,6 @@
 ---
 title: "Von Proxmox zu Cozystack — wenn Single-Tenant an seine Grenzen stößt"
+seo_title: "Von Proxmox zu Cozystack: Grenzen von Single-Tenant"
 description: "Wann wächst Proxmox VE über Single-Tenant hinaus? Leitfaden zur Migration von Proxmox zu Cozystack für MSPs und Teams an Grenzen bei Mandanten und Skalierung."
 slug: "proxmox-migration-cozystack-single-tenant-grenzen"
 date: "2026-05-23"

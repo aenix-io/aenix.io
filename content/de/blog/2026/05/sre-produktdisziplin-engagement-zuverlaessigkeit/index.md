@@ -1,5 +1,6 @@
 ---
 title: "SRE als Produktdisziplin — was ein SRE-Engagement tatsächlich verändert"
+seo_title: "SRE als Produktdisziplin: was ein Engagement ändert"
 description: "SRE in Produktteams einbetten, als zentrale Funktion aufbauen oder als Engagement einkaufen — was jedes Modell leistet und wie Sie den Erfolg messen."
 slug: "sre-produktdisziplin-engagement-zuverlaessigkeit"
 date: "2026-05-28"

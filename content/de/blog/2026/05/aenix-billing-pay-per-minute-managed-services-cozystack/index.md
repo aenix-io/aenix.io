@@ -1,5 +1,6 @@
 ---
 title: "Ænix Billing — minutengenaue Verbrauchsabrechnung für Managed PostgreSQL, Redis, Kafka und ClickHouse auf Cozystack"
+seo_title: "Ænix Billing: minutengenaue Abrechnung auf Cozystack"
 description: "Ænix Billing rechnet Managed Postgres, Redis, Kafka und ClickHouse auf Cozystack minutengenau nach CPU, Memory und Speicher ab — Kubernetes-native API."
 slug: "aenix-billing-pay-per-minute-managed-services-cozystack"
 date: "2026-05-13"

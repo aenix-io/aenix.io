@@ -1,5 +1,6 @@
 ---
 title: "Cloud-Plattformen für Finanzdienstleister — wie TLPT-Readiness 2026 tatsächlich aussieht"
+seo_title: "TLPT-Readiness unter DORA für Cloud-Plattformen"
 description: "Wie TLPT-Readiness unter DORA 2026 tatsächlich aussieht — für Platform Engineers bei Banken, Versicherern und Zahlungsinstituten vor einem echten Prüfzyklus."
 slug: "finanzdienstleister-cloud-tlpt-readiness"
 date: "2026-05-11"

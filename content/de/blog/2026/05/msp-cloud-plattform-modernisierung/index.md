@@ -1,6 +1,7 @@
 ---
 title: "MSP-Cloud-Plattform-Modernisierung — gebrandetes Cloud-Angebot"
-description: "- Multi-Tier Tenant CRD (Aenix → MSP → MSP-Kunden) - Pro-Tier-Isolation - Gebrandetes kundenorientiertes Portal - WHMCS-integriertes Billing -..."
+seo_title: "MSP-Cloud-Plattform: Cloud-Angebot unter eigener Marke"
+description: "Wie MSPs ein Cloud-Angebot unter eigener Marke aufbauen: mehrstufige Mandanten, eigenes Portal, Abrechnung, Reseller-Marge und der Ablauf des Projekts."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/msp-cloud-plattform-modernisierung.jpg"
 author: "Aenix Team"
@@ -44,7 +45,7 @@ quiz:
 hreflang_en: /blog/2026/05/msp-cloud-platform-modernization/
 ---
 
-Begleitung zur **[MSP-Page](/de/branchen/msp)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[MSPs](/de/branchen/msp/)**.
 
 ## Architektur-Muster
 

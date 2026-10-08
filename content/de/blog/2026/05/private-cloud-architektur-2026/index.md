@@ -1,5 +1,6 @@
 ---
 title: "Private-Cloud-Architektur 2026 — Design, Komponenten und Umsetzungsmuster"
+seo_title: "Private-Cloud-Architektur 2026: Design und Muster"
 description: "Private Cloud 2026: die Architekturschichten, drei bewährte Muster, Kapazitätsplanung und die Fehler, die in Design-Reviews immer wieder auftauchen."
 slug: "private-cloud-architektur-2026"
 date: "2026-05-22"

@@ -1,5 +1,6 @@
 ---
 title: "Ein Cloud-Produkt für Kunden starten — Playbook für Hosting-Anbieter, Telcos und regionale Betreiber"
+seo_title: "Cloud-Produkt starten: Playbook für Hosting-Anbieter"
 description: "Die sechs Schichten eines Cloud-Produkts für Endkunden, die Architekturentscheidungen einer Public Cloud und woran der Markteintritt kommerziell scheitert."
 slug: "cloud-produkt-starten-playbook-hosting-anbieter"
 date: "2026-05-17"

@@ -1,6 +1,7 @@
 ---
 title: "Cloud-Migrations-Strategie 2026 — Leitfaden für DACH-Unternehmen"
-description: "Begleitung zur Cloud-Migration-Hub-Page. Praktischer Leitfaden für die strategische Cloud-Migration im Jahr 2026 — welche Workloads wohin gehen, wie man es..."
+seo_title: "Cloud-Migrationsstrategie 2026 für DACH-Unternehmen"
+description: "Cloud-Migration 2026: welche Auslöser zählen, wie Sie Workloads klassifizieren und sinnvoll sequenzieren und an welchen Fehlern die meisten Projekte scheitern."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/cloud-migration-strategie.jpg"
 author: "Aenix Team"
@@ -43,7 +44,7 @@ quiz:
       explanation: "Der Reassess-Bucket existiert, weil einige Workloads erst einen PoC oder zusätzliche Instrumentierung brauchen, bevor eine glaubwürdige Entscheidung zwischen Migration und Verbleib möglich ist. Das ist kein Aufschub, sondern das ehrliche Eingeständnis einer Wissenslücke."
 ---
 
-**Begleitung zur [Cloud-Migration-Hub-Page](/de/migration/cloud). Praktischer Leitfaden für die strategische Cloud-Migration im Jahr 2026 — welche Workloads wohin gehen, wie man es umsetzt, wo die meisten Projekte scheitern.**
+**Praktischer Leitfaden für die strategische Cloud-Migration im Jahr 2026 — welche Workloads wohin gehen, wie man es umsetzt, wo die meisten Projekte scheitern.** Mehr dazu auf unserer Seite [Cloud-Migration](/de/migration/cloud/).
 
 Cloud-Migration im Jahr 2026 ist eine differenziertere Entscheidung als noch vor 5 Jahren. „Lift-and-shift in die Public Cloud“ ist nicht mehr automatisch die Antwort. Die strategische Frage ist: welche Workloads gehören wohin, und wie kommen sie dorthin.
 

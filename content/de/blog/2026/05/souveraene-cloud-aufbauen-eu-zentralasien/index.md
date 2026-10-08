@@ -1,5 +1,6 @@
 ---
 title: "Wie man eine souveräne Cloud aufbaut — Playbook für die EU und Zentralasien 2026"
+seo_title: "Souveräne Cloud aufbauen: EU und Zentralasien"
 description: "Was Souveränität in der Praxis bedeutet, welche Regelwerke sie definieren und welche Architekturmuster eine souveräne Cloud in EU und Zentralasien trägt."
 slug: "souveraene-cloud-aufbauen-eu-zentralasien"
 date: "2026-05-03"

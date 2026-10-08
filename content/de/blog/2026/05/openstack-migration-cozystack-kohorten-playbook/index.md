@@ -1,5 +1,6 @@
 ---
 title: "OpenStack-Migration — ein kohortenbasiertes Playbook für den Umstieg auf Cozystack 2026"
+seo_title: "OpenStack-Migration zu Cozystack in Kohorten"
 description: "Kohortenbasiertes Playbook für die Migration von produktivem OpenStack zu Cozystack: Komponenten-Mapping, Image-Konvertierung, Netzwerk, Übergabe und Zeitplan."
 slug: "openstack-migration-cozystack-kohorten-playbook"
 date: "2026-05-20"

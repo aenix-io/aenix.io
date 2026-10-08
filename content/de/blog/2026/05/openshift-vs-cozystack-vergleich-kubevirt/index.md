@@ -1,5 +1,6 @@
 ---
 title: "OpenShift vs Cozystack — Vergleich für Plattformentscheidungen auf Basis von KubeVirt"
+seo_title: "OpenShift vs. Cozystack: KubeVirt im Vergleich"
 description: "Zwei KubeVirt-basierte Plattformen im Vergleich: gemeinsame Grundlagen, echte Unterschiede, wann OpenShift vorne liegt und was eine Migration bedeutet."
 slug: "openshift-vs-cozystack-vergleich-kubevirt"
 date: "2026-05-19"

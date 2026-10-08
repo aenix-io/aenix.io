@@ -1,6 +1,7 @@
 ---
 title: "Private LLM Deployment — Praktischer Leitfaden für On-Premise-KI-Infrastruktur 2026"
-description: "Begleitung zur Souveränen KI-Page."
+seo_title: "Private LLM: Leitfaden für On-Premise-KI"
+description: "Private LLMs auf eigener Infrastruktur betreiben: drei typische Auslöser, die sechs Schichten eines Private-LLM-Stacks und die passenden Architekturmuster."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/private-llm-deployment-leitfaden.jpg"
 author: "Aenix Team"
@@ -45,7 +46,7 @@ quiz:
 hreflang_en: /blog/2026/05/private-llm-deployment-guide/
 ---
 
-Begleitung zur **[Souveränen KI-Page](/de/loesungen/sovereign-ai)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
 
 ## Drei Trigger-Profile für Private LLM
 

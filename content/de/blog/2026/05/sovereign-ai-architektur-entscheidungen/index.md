@@ -1,5 +1,6 @@
 ---
 title: "Sieben Entscheidungen beim Entwurf einer Sovereign-AI-Architektur"
+seo_title: "Sovereign AI: sieben Architekturentscheidungen"
 slug: "sovereign-ai-architektur-entscheidungen"
 description: "Sieben Architekturentscheidungen hinter einem souveränen AI-Stack, wie sie ineinandergreifen und welche Kombinationen in realen Deployments immer wiederkehren."
 date: "2026-05-27"

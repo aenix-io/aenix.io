@@ -1,5 +1,6 @@
 ---
 title: "Developer Self-Service — was Reibungsverluste in der Entwicklung kosten und was eine Internal Developer Platform tatsächlich einbringt"
+seo_title: "Developer Self-Service: was eine IDP einbringt"
 description: "Kosten der Wartezeit auf Umgebungen, Golden-Path-Abdeckung, Plattformteam-Größe und warum sich eine IDP ab 200 Engineers binnen 12 Monaten amortisiert."
 slug: "developer-self-service-oekonomie-entwicklungsgeschwindigkeit"
 date: "2026-05-13"

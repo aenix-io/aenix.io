@@ -1,5 +1,6 @@
 ---
 title: "AI Platform — wann sich Dauer-Inferenz auf eigenen GPUs gegenüber Hyperscalern rechnet"
+seo_title: "Eigene GPUs für Dauer-Inferenz: wann es sich rechnet"
 description: "GPU-Wirtschaftlichkeit für Dauer-Inferenz, mandantenfähiges GPU-Scheduling und ab wann sich eine eigene KI-Infrastruktur gegenüber Hyperscalern auszahlt."
 slug: "ai-platform-gpu-wirtschaftlichkeit-inferenz"
 date: "2026-05-01"

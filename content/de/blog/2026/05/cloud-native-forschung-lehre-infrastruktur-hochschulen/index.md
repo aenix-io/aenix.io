@@ -1,5 +1,6 @@
 ---
 title: "Cloud-native Infrastruktur für Forschung und Lehre — was Hochschulen 2026 wirklich brauchen"
+seo_title: "Cloud-native Infrastruktur für Hochschulen 2026"
 description: "Architekturmuster für Forschungs- und Lehrinfrastruktur an Hochschulen: die drei Aufgaben, GPU-Scheduling für Labore und die wiederkehrenden Fallstricke."
 slug: "cloud-native-forschung-lehre-infrastruktur-hochschulen"
 date: "2026-05-04"

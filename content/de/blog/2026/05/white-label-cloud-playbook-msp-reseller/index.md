@@ -1,5 +1,6 @@
 ---
 title: "White-Label-Cloud-Playbook — für MSPs und Reseller 2026"
+seo_title: "White-Label-Cloud: Playbook für MSPs und Reseller"
 description: "Architektur und Reseller-Ökonomie für den Start einer White-Label-Cloud unter eigener Marke — und wie das Engagement mit Ænix dafür aufgebaut ist."
 slug: "white-label-cloud-playbook-msp-reseller"
 date: "2026-05-31"

@@ -1,5 +1,6 @@
 ---
 title: "CloudStack-Migration zu Cozystack — der Modernisierungspfad für etablierte Service Provider"
+seo_title: "CloudStack-Migration zu Cozystack für Service Provider"
 description: "Wie Service Provider Apache CloudStack auf Cozystack als Kubernetes-natives Ziel modernisieren: Architektur-Mapping, Migrationsphasen und Abwägungen."
 slug: "cloudstack-migration-cozystack-modernisierung"
 date: "2026-05-06"

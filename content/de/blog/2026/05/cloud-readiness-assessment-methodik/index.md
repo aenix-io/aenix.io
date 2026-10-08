@@ -1,6 +1,7 @@
 ---
 title: "Cloud Readiness Assessment — was 14 Tage tatsächlich abdecken (Methodik 2026)"
-description: "Begleitung zur Platform-Readiness-Assessment-Page."
+seo_title: "Cloud Readiness Assessment: Methodik in 14 Tagen"
+description: "Was ein Platform Readiness Assessment in 14 Tagen abdeckt: vier parallele Workstreams, der Ablauf Tag für Tag und was der Abschlussbericht konkret enthält."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/cloud-readiness-assessment-methodik.jpg"
 author: "Aenix Team"
@@ -44,7 +45,7 @@ quiz:
 hreflang_en: /blog/2026/05/cloud-readiness-assessment-14-day-methodology/
 ---
 
-Begleitung zur **[Platform-Readiness-Assessment-Page](/de/dienstleistungen/platform-readiness-assessment)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 ## Vier parallele Workstreams in 14 Tagen
 

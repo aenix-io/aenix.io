@@ -1,5 +1,6 @@
 ---
 title: "Private Cloud Platform für die regulierte Cloud — DORA- und NIS2-Pflichten in der laufenden Architektur"
+seo_title: "DORA und NIS2 in der Private-Cloud-Architektur"
 description: "Wie sich IKT-Risiko- und Drittparteienpflichten aus DORA und die Maßnahmen nach NIS2 Artikel 21(2) auf eine belastbare Cloud-Architektur abbilden lassen."
 slug: "private-cloud-platform-dora-nis2-architektur"
 date: "2026-05-10"

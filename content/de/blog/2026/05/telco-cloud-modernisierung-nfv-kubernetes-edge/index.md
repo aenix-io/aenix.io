@@ -1,5 +1,6 @@
 ---
 title: "Telco-Cloud-Modernisierung 2026 — von Legacy-NFV zur Kubernetes-nativen Edge"
+seo_title: "Telco-Cloud: von Legacy-NFV zu Kubernetes"
 description: "Wie Tier-1- und Tier-2-Telcos Legacy-NFV-Umgebungen zu Kubernetes-nativen, souveränen Cloud-Plattformen modernisieren — ein Leitfaden für Architekten."
 slug: "telco-cloud-modernisierung-nfv-kubernetes-edge"
 date: "2026-05-28"

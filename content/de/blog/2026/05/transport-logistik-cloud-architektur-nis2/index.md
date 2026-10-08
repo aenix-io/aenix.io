@@ -1,6 +1,7 @@
 ---
 title: "Transport- und Logistik-Cloud-Architektur — NIS2, KI, Edge im Jahr 2026"
-description: "Begleitung zur Transport-Industry-Page."
+seo_title: "Transport und Logistik: Cloud-Architektur mit NIS2"
+description: "Cloud-Architektur für Transport und Logistik: NIS2-Pflichten, ein dreistufiges Muster von Edge bis Rechenzentrum, Kontrollen für den Sektor und KI-Anwendungen."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/transport-logistik-cloud-architektur-nis2.jpg"
 author: "Aenix Team"
@@ -44,7 +45,7 @@ quiz:
 hreflang_en: /blog/2026/05/transport-logistics-cloud-architecture-nis2/
 ---
 
-Begleitung zur **[Transport-Industry-Page](/de/branchen/transport-logistik)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Transport und Logistik](/de/branchen/transport-logistik/)**.
 
 ## Drei Druckpunkte
 
