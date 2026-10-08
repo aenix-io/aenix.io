@@ -7,11 +7,14 @@
     cities:
       - city: "Ташкент"
         country: "Узбекистан"
-        status: "pending"        # pending | confirmed
+        status: "pending"        # pending | confirmed | completed
         date: "Дата и время уточняются"
         venue: ""                # optional; shown when confirmed
         note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
         href: "#register"         # a card linking to #register also opens that city's form tab
+
+  A completed city renders as a plain card, not a link: its registration
+  form (on-site or a partner's) is closed, so there is nothing to click to.
 
   Status is conveyed by text (the date/venue wording) AND an icon AND border
   treatment — never by color alone.
@@ -26,7 +29,12 @@
   {{- $status := $c.status | default "pending" -}}
   {{- $href := $c.href | default "#register" -}}
   {{- $ext := or $c.external (hasPrefix $href "http") -}}
+  {{- $done := eq $status "completed" -}}
+  {{- if $done }}
+  <div class="ws-city ws-city--{{ $status }}">
+  {{- else }}
   <a class="ws-city ws-city--{{ $status }}{{ if $ext }} ws-city--external{{ end }}" href="{{ $href }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}{{ if hasPrefix $href "#register" }} data-ws-city="{{ $c.city | urlize }}"{{ end }}>
+  {{- end }}
     <span class="ws-city__country">{{ $c.country }}</span>
     <span class="ws-city__name">{{ $c.city }}</span>
     <span class="ws-city__meta">
@@ -43,8 +51,8 @@
     </span>
     {{- with $c.venue }}<span class="ws-city__venue">{{ . }}</span>{{ end -}}
     {{- with $c.note }}<span class="ws-city__note">{{ . }}</span>{{ end -}}
-    <span class="ws-city__cta">{{ if eq $status "completed" }}{{ $ctaDone }}{{ else }}{{ $cta }} <span aria-hidden="true">{{ if $ext }}↗{{ else }}→{{ end }}</span>{{ end }}</span>
-  </a>
+    <span class="ws-city__cta">{{ if $done }}{{ $ctaDone }}{{ else }}{{ $cta }} <span aria-hidden="true">{{ if $ext }}↗{{ else }}→{{ end }}</span>{{ end }}</span>
+  {{ if $done }}</div>{{ else }}</a>{{ end }}
   {{- end -}}
 </div>
 {{- end -}}
