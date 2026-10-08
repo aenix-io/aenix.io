@@ -29,9 +29,9 @@ quiz:
     - q: "Ab etwa welcher Zahl von Tenants rechnet sich die Public Cloud Platform laut Artikel wirtschaftlich?"
       options:
         - { text: "Ab etwa 100 bis 200 zahlenden Tenants", correct: false }
-        - { text: "Ab etwa 1.000 bis 2.000 zahlenden Tenants", correct: true }
+        - { text: "Ab etwa 1.000 bis 3.600 zahlenden Tenants", correct: true }
         - { text: "Ab etwa 10.000 oder mehr zahlenden Tenants", correct: false }
-      explanation: "Der Abschnitt zur Break-even-Rechnung ermittelt monatliche Fixkosten von 50–90 Tsd. €; bei 40–80 €/Monat Marge pro Tenant liegt der Break-even je nach ARPU-Mix bei etwa 1.000–2.000 zahlenden Tenants."
+      explanation: "Der Abschnitt zur Break-even-Rechnung ermittelt monatliche Fixkosten von 50–90 Tsd. €; bei 25–50 €/Monat Marge pro Tenant (40–80 € ARPU abzüglich 15–30 € direkter Infrastrukturkosten) liegt der Break-even je nach ARPU-Mix bei etwa 1.000–3.600 zahlenden Tenants."
     - q: "Welches Fehlermuster wird als das größte einzelne Fehlermuster bei Providern der Public Cloud Platform in der Pipeline genannt?"
       options:
         - { text: "Zu geringe Investitionen in das Kundenportal", correct: false }
@@ -165,14 +165,14 @@ Platform:
 
 **Fixkosten gesamt pro Monat: 50–90 Tsd. €.**
 
-Bei 40–80 €/Monat Marge pro Tenant (nach direkten Infrastrukturkosten)
-liegt der Break-even je nach ARPU-Mix und Gehaltsniveau bei **~1.000–2.000
-zahlenden Tenants**.
+Bei 25–50 €/Monat Marge pro Tenant (40–80 € ARPU nach 15–30 € direkten
+Infrastrukturkosten) liegt der Break-even je nach ARPU-Mix und Gehaltsniveau
+bei **~1.000–3.600 zahlenden Tenants**.
 
 Für Provider, die heute ~500 Kunden auf Legacy-Infrastruktur betreiben
 und den Wechsel prüfen, ist das entscheidend: Sie brauchen einen
-glaubwürdigen Weg, die Zahl der Tenants innerhalb von 18–24 Monaten zu
-verdoppeln, damit die Rechnung tatsächlich aufgeht. Ohne Wachstum ist
+glaubwürdigen Weg, die Zahl der Tenants innerhalb von 18–24 Monaten
+mindestens zu verdoppeln, damit die Rechnung tatsächlich aufgeht. Ohne Wachstum ist
 die Public Cloud Platform eine (moderate) Kostensenkung, aber keine
 Transformation.
 
