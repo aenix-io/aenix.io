@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "tutorial"
 topics: ["CloudStack", "Cozystack", "Migration", "Hosting", "Multi-tenancy"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/cloudstack-migration-cozystack-modernisierung/"
 companion_landing: "/migration/cloudstack/"
 companion_label: "See CloudStack migration hub →"
 quiz:
