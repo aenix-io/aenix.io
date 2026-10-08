@@ -67,7 +67,7 @@ Wir setzen die folgenden Dienstleister ein. Jeder von ihnen verarbeitet Daten in
 | Google Ireland Ltd. / Google LLC — **Google Analytics 4** | Besuchermessung, nur nach Einwilligung | Analysedaten, Cookie-Kennungen; IP-Adressen werden nicht gespeichert | EU und USA |
 | **Ahrefs** Pte. Ltd. — Ahrefs Analytics | Besuchermessung, nur nach Einwilligung | Aufgerufene Seiten, Referrer, Geräte- und Browsertyp | Singapur und weitere Länder |
 | **Pipedrive** OÜ — Webformulare und CRM | Stellt unsere Kontakt-, Demo-, Partner-, Kurs-, Workshop- und Download-Formulare bereit und speichert die Anfragen | Formularinhalte, Kampagnenparameter | EU, mit Unterauftragsverarbeitern in weiteren Ländern |
-| Google — **reCAPTCHA** | Schützt die Pipedrive-Formulare vor Spam | IP-Adresse, Browser- und Interaktionsdaten | USA |
+| Google — **reCAPTCHA** | Schützt die Pipedrive-Formulare vor Spam; wird zusammen mit einem Formular geladen, wenn Sie in dessen Nähe scrollen | IP-Adresse, Browser- und Interaktionsdaten | USA |
 | GitHub, Inc. — **GitHub Pages** | Hostet die Website | Server-Logs (IP-Adresse, Zeitpunkt, aufgerufene URL) | USA |
 | Google — **YouTube**-Einbettungen | Zeigt auf einigen Seiten Vortragsaufzeichnungen; YouTube wird geladen, wenn die Seite mit dem Video geöffnet wird | IP-Adresse, Geräte- und Browserdaten; YouTubes eigene Cookies, wenn Sie ein Video abspielen | USA |
 | zcal | Terminbuchung, wenn Sie über einen zcal-Link ein Gespräch oder ein Treffen während der Tour buchen | Name, E-Mail-Adresse, gewählter Termin, Nachricht | USA |

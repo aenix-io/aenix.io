@@ -103,11 +103,7 @@ related_pages:
     "priceCurrency": "USD"
   },
   "dateModified": "2026-08-22",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Ænix",
-    "url": "https://aenix.io/"
-  }
+  "publisher": { "@id": "https://aenix.io/#org" }
 }
 </script>
 <script type="application/ld+json">
@@ -134,13 +130,5 @@ related_pages:
       "item": "https://aenix.io/tco-calculator/vs-virtuozzo/"
     }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Ænix",
-  "url": "https://aenix.io/"
 }
 </script>

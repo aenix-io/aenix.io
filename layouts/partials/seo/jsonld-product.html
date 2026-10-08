@@ -24,12 +24,12 @@
   {{- $offers = $offers | append (dict
       "@type" "Offer"
       "name" (printf "%s support tier" .name)
-      "price" .price_annual
+      "price" (printf "%d" (int .price_annual))
       "priceCurrency" "USD"
       "url" ("/pricing/" | absURL)
       "priceSpecification" (dict
         "@type" "UnitPriceSpecification"
-        "price" .price_annual
+        "price" (printf "%d" (int .price_annual))
         "priceCurrency" "USD"
         "unitText" $unit)) -}}
   {{- end -}}
