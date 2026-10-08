@@ -29,7 +29,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "Is this an official VMware or Broadcom calculator?"
     a: "No. It is an independent estimator built by Aenix to compare VMware/VCF spend against an open Apache 2.0 platform. Enter your own renewal figures for an accurate result."
@@ -97,7 +97,7 @@ These are deliberately simple inputs so the output is defensible. A full TCO inc
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/resources/vmware-cost-calculator/ ; hreflang de → /de/ressourcen/vmware-kostenrechner/, x-default EN.

@@ -170,7 +170,7 @@ Eine Frage entscheidet es: Wer verbraucht die Kapazität? Unter allen dreien lie
 
 <div class="open-core-split__intro">
 
-Wir sind das Open-Core-Unternehmen hinter **Cozystack** — einem CNCF-Projekt, das wir entwickelt haben und pflegen. Derzeit CNCF Sandbox; CNCF Incubating wird für den Spätsommer 2026 erwartet. Apache 2.0.
+Wir sind das Open-Core-Unternehmen hinter **Cozystack** — einem CNCF-Projekt, das wir entwickelt haben und pflegen. Derzeit CNCF Sandbox; der Antrag auf CNCF Incubating befindet sich in der Due-Diligence-Prüfung. Apache 2.0.
 
 Die Ænix Platform ist die kommerzielle Produktisierung von Cozystack: Hosting-Panel, Nutzer-, Admin- und Support-Portale, geführte Assistenten für die Service-Erstellung, vollständiges Billing, Payment-Integrationen, WHMCS-Integration und Enterprise-SLA.
 

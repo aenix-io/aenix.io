@@ -21,7 +21,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Who it is for"
     value: "Organizations exiting VMware after Broadcom, under sovereignty mandates, repatriating from hyperscalers, building a service-provider cloud, or sizing private AI infrastructure."
   - label: "Engagement model"

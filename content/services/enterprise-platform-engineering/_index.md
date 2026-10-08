@@ -23,7 +23,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "How is enterprise platform engineering different from platform engineering for a single team?"
     a: "Scope. Single-team platform engineering optimizes for one or a few teams. Enterprise scope adds non-negotiable multi-tenancy, cross-business-unit isolation, governance, audit-readiness, and multi-cluster operations across regions and jurisdictions. For 1-3 teams, Aenix offers its standard platform engineering services instead."

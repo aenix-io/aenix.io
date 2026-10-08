@@ -62,7 +62,7 @@ Regulierte Workloads auf eine Infrastruktur bringen, bei der Souveränität eine
 - **Für wen:** CISOs, Leiter Compliance / Risk, DORA-/NIS2-Programmverantwortliche.
 - **Schlüsseldaten:** DORA in Kraft **17.01.2025**; NIS2 deckt **18 Sektoren** ab.
 - **Kontrolle:** kundenseitige Schlüssel; Cluster-Zugriff; Air-Gap möglich.
-- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026), Apache 2.0.
+- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0.
 - **Häufiger Fehler:** Produktivdaten in-Region, aber Observability/Backups verlassen unbemerkt den Perimeter.
 
 [Quelle: [EUR-Lex DORA](https://eur-lex.europa.eu/eli/reg/2022/2554/oj), [ENISA NIS2](https://www.enisa.europa.eu/)]
@@ -107,7 +107,7 @@ Kostenlos, ohne Vorbereitung. Wir grenzen den Scope auf die bindenden Aufsichtsv
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/ciso/ ; hreflang de self, en → /for/ciso/.

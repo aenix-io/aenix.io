@@ -15,7 +15,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
   - label: "Zielgruppe"
     value: "Finanzdienstleister, Gesundheitswesen, öffentlicher Sektor und KI-Plattform-Betreiber mit sensibler Datenklasse oder Air-gap-/Restricted-egress-Anforderung"
   - label: "Schlüsselfunktion"

@@ -61,7 +61,7 @@ Kosten und Datenort für die Workloads zurückholen, die nicht auf einen Hypersc
 - **Was es ist:** offene, Kubernetes-native Plattform für eigene oder gemietete Hardware (keine Pro-Core-Lizenz).
 - **Für wen:** CTOs und VPs Engineering bei Scale-ups, SaaS- und Produktunternehmen.
 - **Lizenz:** Apache 2.0.
-- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026).
+- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung).
 - **Häufiger Fehler:** Compute repatriieren, aber Daten, Backups und Observability beim Hyperscaler lassen — Ersparnis und Souveränität verpuffen.
 
 [Quelle: [CNCF Landscape](https://landscape.cncf.io)]
@@ -106,7 +106,7 @@ Kostenlos, ohne Vorbereitung. Wir prüfen die Ökonomie und sagen, ob schlüssel
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/cto/ ; hreflang de self, en → /for/cto/.

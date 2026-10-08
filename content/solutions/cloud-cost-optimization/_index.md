@@ -28,7 +28,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "Is this a FinOps engagement or a cost-optimization engagement?"
     a: "Both. Pure FinOps captures configurational savings — right-sizing, reservation tuning, waste elimination. The architecture-level decisions that separate structural from configurational savings require platform engineering. The Aenix engagement covers both layers in one program."

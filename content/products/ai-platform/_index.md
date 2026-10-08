@@ -20,7 +20,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "For"
     value: "AI-native organizations at scale, regulated AI deployments, GPU-heavy product companies, telcos and enterprises running internal AI platforms"
   - label: "GPU support"
@@ -174,4 +174,4 @@ Book a discovery call. Bring your AI workload profile (steady inference / traini
 
 ---
 
-*Ænix AI Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Ænix is the open-core company.*
+*Ænix AI Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating application in due diligence). Apache 2.0. Ænix is the open-core company.*

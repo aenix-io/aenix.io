@@ -15,7 +15,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Who it is for"
     value: "Hosting providers, ISPs, and regional clouds that have outgrown Proxmox's multi-tenancy and service-catalog limits"
   - label: "Engagement timeline"

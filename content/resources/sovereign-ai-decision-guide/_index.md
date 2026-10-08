@@ -21,7 +21,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "What is sovereign AI infrastructure?"
     a: "Sovereign AI infrastructure runs AI workloads (inference, fine-tuning, RAG) on infrastructure an organization controls - on-premises or in a chosen jurisdiction - rather than on a hyperscaler AI API. It keeps data, models, and encryption keys under the operator's control to meet regulatory, residency, and auditability requirements."

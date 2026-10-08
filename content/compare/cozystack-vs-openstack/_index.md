@@ -16,7 +16,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing) for both Cozystack and OpenStack"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Architecture"
     value: "Cozystack runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium (eBPF) networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy; OpenStack composes separate Nova, Neutron, Cinder, and Keystone services."
   - label: "Operational footprint"

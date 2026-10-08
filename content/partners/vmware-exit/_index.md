@@ -68,7 +68,7 @@ Either way, the per-core license your client pays VMware becomes margin and recu
 - **Who it's for:** Heads of Cloud, Cloud Practice Leads, Heads of Alliances at SIs / MSPs / resellers.
 - **Margin:** up to **40%** on license + support; plus your own managed-services revenue.
 - **License:** Apache 2.0 (Cozystack) — no per-core/per-socket cost in the stack.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** competing on price reselling a hyperscaler while owning none of the platform value or the renewal relationship.
 
 [Source: [Ænix Partner Program](/partners/); [Cozystack docs](https://cozystack.io)]
@@ -126,7 +126,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/partners/vmware-exit/ ; hreflang de → /de/partner/vmware-exit/, x-default EN.

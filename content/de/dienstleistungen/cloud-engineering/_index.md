@@ -25,7 +25,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
 faq:
   - q: "Was umfassen die Cloud Engineering Services von Aenix?"
     a: "Cloud-Architektur-Review und Ziel-Design (public, private, hybrid), Infrastructure-as-Code-Reife mit Terraform, OpenTofu, Pulumi oder Crossplane, Observability-Stack-Engineering, CI/CD- und GitOps-Reife, Kubernetes-Plattform-Entscheidungen, Network- und Identity-Engineering, FinOps-Integration sowie Compliance-Posture für DORA und NIS2."

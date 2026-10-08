@@ -16,7 +16,7 @@ quick_facts:
   - label: "Do they exclude each other?"
     value: "No. One engine, one control plane, one operations team — combining them is a configuration decision, not a second contract."
   - label: "Foundation"
-    value: "Cozystack — Apache 2.0, CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026). No per-CPU or per-core licensing."
+    value: "Cozystack — Apache 2.0, CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence). No per-CPU or per-core licensing."
   - label: "Entry price"
     value: "From $1,250/month at provider scale. Enterprise and multi-region operator programmes are quoted per RFP."
   - label: "Also available"
@@ -116,7 +116,7 @@ SLA-backed support with direct access to the maintainers, dedicated channels, up
 
 ## The engine underneath
 
-All of the above runs on **[Cozystack](/products/cozystack/)** — the open-source cloud platform Ænix created and maintains, and a CNCF project (Sandbox since February 2025; Incubating expected late summer 2026). Apache 2.0, no per-CPU or per-core fees.
+All of the above runs on **[Cozystack](/products/cozystack/)** — the open-source cloud platform Ænix created and maintains, and a CNCF project (Sandbox since February 2025; Incubating application in due diligence). Apache 2.0, no per-CPU or per-core fees.
 
 That matters commercially, not just philosophically: the engine is not ours to withdraw. If the commercial relationship ends you keep running the platform on the same hardware, and the exit path is documented rather than hypothetical.
 

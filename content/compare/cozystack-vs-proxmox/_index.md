@@ -13,7 +13,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing); Proxmox VE is AGPLv3"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Foundation"
     value: "Cozystack runs KubeVirt on Kubernetes (VMs and containers on one API); Proxmox VE pairs KVM and LXC"
   - label: "Best scale"
