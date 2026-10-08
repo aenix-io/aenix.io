@@ -6799,3 +6799,26 @@ html[lang="de"] h3 { hyphens: auto; }
     translate: 0 0;
   }
 }
+
+/* ============================================================
+   SMALL UX FIXES (acceptance audit)
+   ============================================================ */
+.page-hero-trust--pills { display: flex; flex-wrap: wrap; }
+a.trust-pill { text-decoration: none; }
+a.trust-pill:hover { color: var(--aenix-primary, #01a5ff); border-color: rgba(1, 165, 255, 0.4); }
+/* The architecture diagram's labels shrink to ~6 px on phones; the copy and
+   the CTAs carry the hero there. */
+@media (max-width: 600px) {
+  .page-home .hero-split__visual { display: none; }
+}
+/* Tap targets: blog filter chips and carousel dots were 20 px and 8 px tall. */
+@media (max-width: 768px) {
+  .blog-chip { min-height: 32px; }
+}
+.quote-carousel__dot { position: relative; }
+.quote-carousel__dot::after { content: ""; position: absolute; inset: -8px; }
+/* Pipedrive form: reserve space while the third-party iframe loads and
+   always offer a plain fallback under it. */
+.pipedrive-form .pipedriveWebForms { min-height: 320px; }
+.pipedrive-form__fallback { margin: 0.75rem 0 0; font-size: 0.875rem; color: var(--aenix-text-muted); }
+.clients-caption { margin: 0.5rem 0 1.5rem; font-size: 0.8125rem; color: var(--aenix-text-muted); text-align: center; }

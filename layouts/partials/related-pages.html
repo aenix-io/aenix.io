@@ -9,10 +9,15 @@
   {{- $lang := .Params.language | default "en" -}}
   {{- $heading := cond (eq $lang "de") "Verwandte Seiten" "Related pages" -}}
   {{- $cards := slice -}}
+  {{- $seen := slice $.RelPermalink -}}
   {{- range $rp -}}
     {{- $path := strings.TrimSuffix "/" . -}}
     {{- with site.GetPage $path -}}
-      {{- $cards = $cards | append . -}}
+      {{- /* the same page listed twice, or the page itself, shows once / not at all */ -}}
+      {{- if not (in $seen .RelPermalink) -}}
+        {{- $cards = $cards | append . -}}
+        {{- $seen = $seen | append .RelPermalink -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
   {{- if $cards -}}
