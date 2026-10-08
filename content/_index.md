@@ -1,13 +1,90 @@
 ---
-title: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering"
-description: "Aenix Platform — turnkey cloud-in-a-box on Cozystack (CNCF). Three platforms on one engine: sell cloud, run your own, or run AI on your own GPUs."
+title: "Cloud platforms for providers, enterprises and GPU clouds"
+description: "Ænix builds cloud platforms on Cozystack (CNCF): public cloud for hosting providers, private cloud to replace VMware, and GPU/AI clouds."
 language: "en"
-hero_h1: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering."
-hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-source Cozystack project we created and maintain (CNCF). Three platforms on one engine: for providers selling cloud, for regulated organisations running their own, and for teams running AI on their own GPUs."
+hero_h1: "Your own cloud — for hosting providers, enterprises leaving VMware, and GPU clouds."
+hero_subtitle: "Hosting and cloud providers launch a public cloud with billing and WHMCS. Enterprises replace VMware with a private cloud they control. GPU and AI clouds turn the GPUs they own into a multi-tenant service. All three run on Cozystack, the CNCF project Ænix created and co-maintains."
 hreflang_de: /de/
 ---
 
 <div class="band band--tint">
+
+## Pick your platform
+
+One question settles it: who consumes the capacity? The same Cozystack engine runs underneath all three, with a different commercial surface on top. They are not tiers, and picking one does not rule out the others.
+
+<div class="edition-selector" data-edition-tabs>
+
+<div class="edition-selector__tabs" role="tablist" aria-label="Platforms" aria-orientation="vertical">
+<button class="edition-tab" id="edition-tab-0" role="tab" aria-selected="true" aria-controls="edition-panel-0" type="button">You sell cloud</button>
+<button class="edition-tab" id="edition-tab-1" role="tab" aria-selected="false" aria-controls="edition-panel-1" type="button" tabindex="-1">You run your own</button>
+<button class="edition-tab" id="edition-tab-2" role="tab" aria-selected="false" aria-controls="edition-panel-2" type="button" tabindex="-1">You run AI on GPUs</button>
+<button class="edition-tab" id="edition-tab-3" role="tab" aria-selected="false" aria-controls="edition-panel-3" type="button" tabindex="-1">You self-host Cozystack</button>
+</div>
+
+<div class="edition-selector__panels">
+
+<div class="edition-panel" id="edition-panel-0" role="tabpanel" aria-labelledby="edition-tab-0">
+  <a href="/products/public-cloud-platform/" class="card card--edition">
+    <div class="card-body">
+      <div class="card-tag">Capacity goes to your customers</div>
+      <h3 class="card-title">Ænix Public Cloud Platform</h3>
+      <p class="card-description"><strong>You're a:</strong> hosting provider, MSP, regional cloud or data centre — or a telco, national operator or bank running a commercial cloud. Billing, payments, white-label portal, tenant isolation, multi-region when you need it.</p>
+      <p class="card-meta">From $1,250 / month per 10 nodes (Basic support tier); operator scale per RFP</p>
+      <span class="card-link">Explore →</span>
+    </div>
+  </a>
+</div>
+
+<div class="edition-panel" id="edition-panel-1" role="tabpanel" aria-labelledby="edition-tab-1">
+  <a href="/products/private-cloud-platform/" class="card card--edition">
+    <div class="card-body">
+      <div class="card-tag">Capacity goes to your own business units</div>
+      <h3 class="card-title">Ænix Private Cloud Platform</h3>
+      <p class="card-description"><strong>You're a:</strong> regulated enterprise — bank, insurer, public sector, energy, healthcare, telco. Replaces VMware with controls aligned to DORA and NIS2: volume encryption, configurable audit logging, air-gapped installs, multi-site designs. Developer self-service included, switched on when you want it.</p>
+      <p class="card-meta">Quoted per RFP</p>
+      <span class="card-link">Explore →</span>
+    </div>
+  </a>
+</div>
+
+<div class="edition-panel" id="edition-panel-2" role="tabpanel" aria-labelledby="edition-tab-2">
+  <a href="/products/ai-platform/" class="card card--edition">
+    <div class="card-body">
+      <div class="card-tag">Capacity goes to inference and training</div>
+      <h3 class="card-title">Ænix AI Platform</h3>
+      <p class="card-description"><strong>You're a:</strong> AI-native company, a regulated organisation keeping model weights in-house, or a provider selling GPU-as-a-Service. NVIDIA GPUs through the GPU Operator: passthrough to VMs, fractional sharing via HAMi, model serving and vector databases, with per-tenant usage measured for your billing.</p>
+      <p class="card-meta">Quoted per RFP</p>
+      <span class="card-link">Explore →</span>
+    </div>
+  </a>
+</div>
+
+<div class="edition-panel" id="edition-panel-3" role="tabpanel" aria-labelledby="edition-tab-3">
+  <a href="/products/cozystack-enterprise-support/" class="card card--edition card--neutral">
+    <div class="card-body">
+      <div class="card-tag">Open source, with us on call</div>
+      <h3 class="card-title">Cozystack + Ænix support</h3>
+      <p class="card-description"><strong>You're a:</strong> product team running on Hetzner, OVH or leased bare metal that wants the upstream project and the maintainers reachable — without the commercial portal and billing layer.</p>
+      <p class="card-meta">Apache 2.0 + retainer</p>
+      <span class="card-link">Enterprise support →</span>
+    </div>
+  </a>
+</div>
+
+</div>
+
+</div>
+
+<div style="width: min(1140px, calc(100vw - 3rem)); margin: 0 auto;">
+
+**They combine.** A provider adds GPU-as-a-Service on hardware it already runs. A bank adds the AI Platform inside the same tenancy boundary its auditor already reviewed. A telco sells a sovereign cloud product while running its regulated internal estate on the same engine. Adding a second surface is a configuration decision, not a second procurement. [How the platforms fit together →](/products/)
+
+</div>
+
+</div>
+
+<div class="band">
 
 ## What we replace
 
@@ -57,7 +134,7 @@ If you came here for one of these, start at the linked page.
     <div class="card-body">
       <div class="card-tag">DORA / NIS2</div>
       <h3 class="card-title">Compliance-driven cloud architecture</h3>
-      <p class="card-description">DORA in force since 2025-01-17. NIS2 transposed 2024-10-17. We rebuild your cloud architecture so it's defensible at supervisor cycle, not retrofitted in a panic.</p>
+      <p class="card-description">DORA applies since 17 January 2025. NIS2 had to be transposed into national law by 17 October 2024. We design your cloud architecture so it holds up at the next supervisory review instead of being retrofitted in a hurry.</p>
       <span class="card-link">DORA compliance →</span>
     </div>
   </a>
@@ -66,17 +143,17 @@ If you came here for one of these, start at the linked page.
     <div class="card-body">
       <div class="card-tag">Sovereign AI</div>
       <h3 class="card-title">Run AI on infrastructure you control</h3>
-      <p class="card-description">Replace OpenAI / Bedrock / Vertex API spend with sovereign inference and fine-tuning on your own GPUs. Customer-controlled keys, weights, and audit trail.</p>
+      <p class="card-description">Replace OpenAI / Bedrock / Vertex API spend with inference and fine-tuning on your own GPUs. Model weights, data and audit trail stay on infrastructure you control.</p>
       <span class="card-link">Sovereign AI →</span>
     </div>
   </a>
 
-  <a href="/services/build-private-cloud/" class="card card--replace card--neutral">
+  <a href="/products/public-cloud-platform/" class="card card--replace card--neutral">
     <div class="card-body">
       <div class="card-tag">Or — building from scratch</div>
-      <h3 class="card-title">Stand up a new cloud on bare metal</h3>
-      <p class="card-description">Greenfield cloud-build engagement on hardware you own or lease — Ænix engineers design, deploy, and operate the platform with you, on the open-source Cozystack foundation. For hosting providers, regional clouds, sovereign cloud builders, internal developer platforms.</p>
-      <span class="card-link">Build private cloud — service →</span>
+      <h3 class="card-title">Launch a public cloud on bare metal</h3>
+      <p class="card-description">For hosting providers, MSPs and regional clouds starting on hardware they own or lease: VMs, managed Kubernetes, databases and object storage for your customers, with billing, a white-label portal and WHMCS integration. Live in weeks once the hardware is ready.</p>
+      <span class="card-link">Ænix Public Cloud Platform →</span>
     </div>
   </a>
 
@@ -85,79 +162,6 @@ If you came here for one of these, start at the linked page.
 
 </div>
 
-
-</div>
-
-<div class="band">
-
-## Pick your platform
-
-One question settles it: who consumes the capacity? Same Cozystack engine underneath all three — different surface on top. They are not tiers, and picking one does not rule out the others.
-
-<div class="edition-selector" data-edition-tabs>
-
-<div class="edition-selector__tabs" role="tablist" aria-label="Platforms" aria-orientation="vertical">
-<button class="edition-tab" id="edition-tab-0" role="tab" aria-selected="true" aria-controls="edition-panel-0" type="button">You sell cloud</button>
-<button class="edition-tab" id="edition-tab-1" role="tab" aria-selected="false" aria-controls="edition-panel-1" type="button" tabindex="-1">You run your own</button>
-<button class="edition-tab" id="edition-tab-2" role="tab" aria-selected="false" aria-controls="edition-panel-2" type="button" tabindex="-1">You run AI on GPUs</button>
-<button class="edition-tab" id="edition-tab-3" role="tab" aria-selected="false" aria-controls="edition-panel-3" type="button" tabindex="-1">You self-host Cozystack</button>
-</div>
-
-<div class="edition-selector__panels">
-
-<div class="edition-panel" id="edition-panel-0" role="tabpanel" aria-labelledby="edition-tab-0">
-  <a href="/products/public-cloud-platform/" class="card card--edition">
-    <div class="card-body">
-      <div class="card-tag">Capacity goes to your customers</div>
-      <h3 class="card-title">Ænix Public Cloud Platform</h3>
-      <p class="card-description"><strong>You're a:</strong> hosting provider, MSP, regional cloud or data centre — or a telco, national operator or bank running a commercial cloud. Billing, payments, white-label portal, tenant isolation, multi-region when you need it.</p>
-      <p class="card-meta">From $1,250 / month; operator scale per RFP</p>
-      <span class="card-link">Explore →</span>
-    </div>
-  </a>
-</div>
-
-<div class="edition-panel" id="edition-panel-1" role="tabpanel" aria-labelledby="edition-tab-1">
-  <a href="/products/private-cloud-platform/" class="card card--edition">
-    <div class="card-body">
-      <div class="card-tag">Capacity goes to your own business units</div>
-      <h3 class="card-title">Ænix Private Cloud Platform</h3>
-      <p class="card-description"><strong>You're a:</strong> regulated enterprise — bank, insurer, public sector, energy, healthcare, telco. DORA- and NIS2-aligned controls, customer-held keys, audit-ready logging, air-gap, multi-DC. Developer self-service included, switched on when you want it.</p>
-      <p class="card-meta">Multi-year programme, per RFP</p>
-      <span class="card-link">Explore →</span>
-    </div>
-  </a>
-</div>
-
-<div class="edition-panel" id="edition-panel-2" role="tabpanel" aria-labelledby="edition-tab-2">
-  <a href="/products/ai-platform/" class="card card--edition">
-    <div class="card-body">
-      <div class="card-tag">Capacity goes to inference and training</div>
-      <h3 class="card-title">Ænix AI Platform</h3>
-      <p class="card-description"><strong>You're a:</strong> AI-native company, a regulated organisation keeping model weights in-house, or a provider selling GPU-as-a-Service. Multi-tenant GPU scheduling with fractional sharing, model serving, vector databases, keys you hold yourself.</p>
-      <p class="card-meta">3-6 months to a production inference fleet</p>
-      <span class="card-link">Explore →</span>
-    </div>
-  </a>
-</div>
-
-<div class="edition-panel" id="edition-panel-3" role="tabpanel" aria-labelledby="edition-tab-3">
-  <a href="/products/cozystack-enterprise-support/" class="card card--edition card--neutral">
-    <div class="card-body">
-      <div class="card-tag">Open source, with us on call</div>
-      <h3 class="card-title">Cozystack + Ænix support</h3>
-      <p class="card-description"><strong>You're a:</strong> product team running on Hetzner, OVH or leased bare metal that wants the upstream project and the maintainers reachable — without the commercial portal and billing layer.</p>
-      <p class="card-meta">Apache 2.0 + retainer</p>
-      <span class="card-link">Enterprise support →</span>
-    </div>
-  </a>
-</div>
-
-</div>
-
-</div>
-
-**They combine.** A provider adds GPU-as-a-Service on hardware it already runs. A bank takes AI Platform under the same key custody and tenancy boundary its auditor already accepted. A telco sells a sovereign cloud product while running its regulated internal estate — one platform, one team. Adding a second surface is a configuration decision, not a second procurement. [How the platforms fit together →](/products/)
 
 </div>
 
@@ -169,17 +173,19 @@ One question settles it: who consumes the capacity? Same Cozystack engine undern
 
 <div class="open-core-split__intro">
 
-We are the open-core company behind **Cozystack** — a CNCF project we created and maintain. Currently CNCF Sandbox; CNCF Incubating application in due diligence. Apache 2.0.
+Ænix created **Cozystack** and is one of its maintainers, alongside maintainers from other companies. Cozystack is a CNCF Sandbox project, its CNCF Incubation application is in due diligence, and it is licensed under Apache 2.0.
 
-Ænix Platform is the commercial productization of Cozystack: hosting panel, user / admin / support portals, service-creation wizards, full billing, payment integrations, WHMCS integration, enterprise SLA.
+The three Ænix platforms add the commercial layer on top: hosting panel, user, admin and support portals, service-creation wizards, billing and payment integrations, the WHMCS integration, and support with an SLA.
 
 What that buys you in practice:
 
 <div class="trust-panel" aria-label="Project credentials">
-<span class="trust-pill">CNCF Sandbox</span>
+<span class="trust-pill">CNCF Sandbox project</span>
+<span class="trust-pill">CNCF Certified Kubernetes</span>
+<span class="trust-pill">CNCF Kubernetes AI Conformance</span>
+<a class="trust-pill" href="/compliance/iso-27001/">ISO/IEC 27001:2022 — AENIX s.r.o.</a>
 <span class="trust-pill">Apache 2.0</span>
-<span class="trust-pill">Built on Cozystack</span>
-<span class="trust-pill">AENIX s.r.o. (CZ) · AENIX INC (DE, USA)</span>
+<span class="trust-pill">AENIX s.r.o. (Czech Republic) · AENIX INC (Delaware, USA)</span>
 </div>
 
 </div>
@@ -191,11 +197,11 @@ What that buys you in practice:
 </li>
 <li class="advantage-row">
 <svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 10s3-5.5 8-5.5S18 10 18 10s-3 5.5-8 5.5S2 10 2 10Z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
-<span><strong>Supplier transparency to the second hop</strong> — DORA-aligned subcontractor disclosure, with the upstream project being our own work.</span>
+<span><strong>Supplier transparency to the second hop</strong> — DORA-aligned subcontractor disclosure, with the upstream project open for your own review.</span>
 </li>
 <li class="advantage-row">
 <svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="6" cy="10" r="3.25" stroke="currentColor" stroke-width="1.5"/><path d="M9.25 10H17M14 10v3M17 10v2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-<span><strong>Customer-controlled keys at every layer</strong> — encryption keys for storage, secrets, audit logs are yours, not ours.</span>
+<span><strong>Runs where you decide</strong> — on your hardware, in your jurisdiction. Encryption, audit-log retention and backup targets are set to your policy.</span>
 </li>
 <li class="advantage-row">
 <svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/><path d="M2.5 10h15M10 2.5c2.5 2.5 2.5 12.5 0 15M10 2.5c-2.5 2.5-2.5 12.5 0 15" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -217,19 +223,19 @@ What that buys you in practice:
   <div class="engagement-step">
     <div class="engagement-step__number">1</div>
     <h3 class="engagement-step__title">Discovery call</h3>
-    <p class="engagement-step__body">30 minutes, no commitment. We confirm buyer profile, platform fit, regulatory context, and whether we should keep talking.</p>
+    <p class="engagement-step__body">30 minutes, free, no commitment. We confirm platform fit, regulatory context and scope, and whether we should keep talking.</p>
   </div>
 
   <div class="engagement-step">
     <div class="engagement-step__number">2</div>
     <h3 class="engagement-step__title">Platform Readiness Assessment</h3>
-    <p class="engagement-step__body">1–2 weeks, fixed-price. Architecture review, gap analysis, written deliverables. Output: a roadmap you can take to the board.</p>
+    <p class="engagement-step__body">14 days (focused) or 28 days (full), fixed price. Architecture review, gap analysis, written deliverables. Output: a roadmap you can take to the board.</p>
   </div>
 
   <div class="engagement-step">
     <div class="engagement-step__number">3</div>
-    <h3 class="engagement-step__title">Pilot, then full build</h3>
-    <p class="engagement-step__body">Pilot on a defined slice (3–6 months). Then production build (6–24 months depending on scope). Optional managed retainer post-deployment.</p>
+    <h3 class="engagement-step__title">Launch or build</h3>
+    <p class="engagement-step__body">Public Cloud Platform at provider scale: live in weeks once hardware is ready. Private Cloud Platform: a 3–12 month build, depending on scope. Multi-region national or operator programmes: a 3–6 month pilot, then 9–18 months to full multi-region. Optional managed operations afterwards.</p>
   </div>
 
 </div>
