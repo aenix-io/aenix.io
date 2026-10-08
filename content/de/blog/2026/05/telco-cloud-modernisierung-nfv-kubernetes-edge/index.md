@@ -174,8 +174,9 @@ bei den inhaltlichen Souveränitätskriterien nicht mithalten können.
 
 Eine Architektur auf Basis von Cozystack unterstützt das kommerziell:
 
-- **Kundenkontrollierte Schlüssel** — der Kunde des Telcos hält die
-  Schlüssel, der Telco leistet den Betriebssupport
+- **Verschlüsselung mit Passphrase beim Kunden** — optionale
+  Volume-Verschlüsselung im Ruhezustand (LINSTOR und LUKS); die Passphrase
+  verwaltet der Kunde des Telcos, der Telco leistet den Betriebssupport
 - **Air-Gap-Option** — für Anwendungsfälle mit
   Verschlusssachen
 - **Open-Source-Fundament** — Exit-Fähigkeit ist eingebaut; der Telco

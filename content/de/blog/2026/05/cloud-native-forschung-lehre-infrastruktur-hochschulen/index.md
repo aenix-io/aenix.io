@@ -73,7 +73,7 @@ Jede Variante hat Grenzen:
 
 Was modernes Research Computing zunehmend will: **einen gemeinsamen GPU-Pool mit starker Isolation, Self-Service für PIs, Verwaltung per IaC für Reproduzierbarkeit und, wo sinnvoll, Integration in nationale und europäische Forschungsinfrastruktur.**
 
-Eine Kubernetes-native Plattform wie Cozystack liefert genau das. KubeVirt bedient ältere, VM-basierte Forschungs-Workflows; native Container bedienen moderne ML-Pipelines. Der NVIDIA GPU Operator übergibt ganze GPUs an Workloads, und HAMi teilt eine einzelne GPU nach Speicher und Rechenkernen zwischen Laboren auf; VMs erhalten VFIO-Passthrough oder NVIDIA vGPU. Das Tenant CRD sorgt für Isolation pro Labor. Das Cozystack Dashboard gibt PIs Self-Service. Dieselbe Infrastruktur lässt sich für die größten Workloads mit EuroHPC verbinden (viele Hochschulen haben hybride Vereinbarungen).
+Eine Kubernetes-native Plattform wie Cozystack liefert genau das. KubeVirt bedient ältere, VM-basierte Forschungs-Workflows; native Container bedienen moderne ML-Pipelines. Der NVIDIA GPU Operator übergibt ganze GPUs an Workloads, und HAMi teilt eine einzelne GPU nach Speicher und Rechenkernen zwischen Laboren auf; VMs erhalten VFIO-Passthrough ganzer GPUs oder NVIDIA vGPU (erfordert Ihre NVIDIA-vGPU-Lizenz). Das Tenant CRD sorgt für Isolation pro Labor. Das Cozystack Dashboard gibt PIs Self-Service. Dieselbe Infrastruktur lässt sich für die größten Workloads mit EuroHPC verbinden (viele Hochschulen haben hybride Vereinbarungen).
 
 ### Aufgabe 2 — Infrastruktur für reproduzierbare Forschung
 
@@ -139,7 +139,7 @@ Die IT-Budgets von Hochschulen wachsen nicht mit dem Rechenbedarf. Eine Open-Sou
 Hochschulen planen in Jahrzehnten, nicht in Quartalen. Herstellergetriebene Plattformen, deren Roadmap und Preise sich mit Konzernentscheidungen ändern, sind für eine Planung über Jahrzehnte riskant. Von der Community gesteuerte Open-Source-Projekte sind in dieser Hinsicht berechenbarer.
 
 ### Souveränität für manche Forschung
-Medizinische Forschungsdaten, Verschlusssachen, Forschung mit Industriepartnern unter NDA — all das profitiert von Infrastruktur, die Daten unter der Kontrolle der Einrichtung hält. Die Air-Gap-Unterstützung von Cozystack, vom Kunden kontrollierte Schlüssel und der Betrieb On-Premises erfüllen diese Anforderungen.
+Medizinische Forschungsdaten, Verschlusssachen, Forschung mit Industriepartnern unter NDA — all das profitiert von Infrastruktur, die Daten unter der Kontrolle der Einrichtung hält. Die Air-Gap-Unterstützung von Cozystack, die optionale Volume-Verschlüsselung im Ruhezustand (LINSTOR und LUKS) mit einer Passphrase, die die Einrichtung verwaltet, und der Betrieb On-Premises erfüllen diese Anforderungen.
 
 ### Föderation mit nationaler und europäischer Infrastruktur
 EuroHPC für die größten Workloads. EOSC für die Föderation von Open Science. GÉANT für das europäische Forschungsnetz. Nationale Forschungsnetze. Cozystack-Plattformen lassen sich über Standard-Kubernetes-APIs mit all diesen verbinden.
@@ -172,6 +172,5 @@ Wer Forschungsinfrastruktur ohne Muster für Reproduzierbarkeit ab dem ersten Ta
 - **Kapazitätstransfer als Kernbestandteil** — die Wissensübergabe an die hochschuleigene IT ist ein ausdrückliches Ergebnis
 - **Schrittweise Zusammenarbeit**, wo sinnvoll abgestimmt auf Förderzyklen
 - **Konsortien mehrerer Einrichtungen** werden unterstützt
-- **Support-Stufen für die Wissenschaft** — vergünstigter kommerzieller Support für akademische Installationen
 
 Details finden Sie auf der **[Branchenseite für Hochschulen](/de/branchen/universitaeten/)**.

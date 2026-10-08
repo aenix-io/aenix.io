@@ -15,9 +15,9 @@ quiz:
     - q: "Welches Muster für Mandantenfähigkeit empfiehlt der Artikel MSPs?"
       options:
         - { text: "Ein gemeinsamer Namespace für alle Endkunden", correct: false }
-        - { text: "Mehrstufig verschachtelte Tenant CRDs: Aenix, MSP, Endkunde", correct: true }
+        - { text: "Mehrstufig verschachtelte Tenant CRDs: Ænix, MSP, Endkunde", correct: true }
         - { text: "Ein eigener Kubernetes-Cluster je Endkunde", correct: false }
-      explanation: "Mehrstufiges Tenant CRD: Aenix, dann der MSP, dann dessen Kunden. Isolation je Stufe in RBAC, Quotas, Observability-Umfang und Abrechnung. Genau diese Verschachtelung macht das Reseller-Modell sauber, weil keine Ebene ohne ausdrückliche Berechtigung in eine andere hineinsieht."
+      explanation: "Mehrstufiges Tenant CRD: Ænix, dann der MSP, dann dessen Kunden. Isolation je Stufe in RBAC, Quotas, Observability-Umfang und Abrechnung. Genau diese Verschachtelung macht das Reseller-Modell sauber, weil keine Ebene ohne ausdrückliche Berechtigung in eine andere hineinsieht."
     - q: "Wo liegt der Break-even für mittelgroße MSPs mit 50 bis 500 Kunden?"
       options:
         - { text: "Bei etwa fünf zahlenden Kunden", correct: false }

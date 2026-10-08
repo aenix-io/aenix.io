@@ -107,9 +107,10 @@ Eine typische mandantenfähige Inferenz-Flotte besteht aus einem Mix:
 - **Reine CPU-Nodes** für RAG-Retrieval, das Erzeugen von Embeddings und
   Preprocessing-Pipelines, die keine GPU brauchen
 
-Unterstützt werden NVIDIA-Rechenzentrums-GPUs über den NVIDIA GPU Operator
-(Passthrough an VMs, Sharing über HAMi); MIG-Partitionierung steht auf der
-Roadmap. NVLink für
+Unterstützt werden NVIDIA-Rechenzentrums-GPUs über den NVIDIA GPU Operator:
+Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre
+NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi; MIG und Time-Slicing
+stehen auf der Roadmap. NVLink für
 Training über mehrere GPUs, wo sinnvoll; 25–100 Gbit/s Ethernet reichen
 für die meisten Inferenz-Muster.
 
@@ -200,7 +201,8 @@ KI-Projekte hinter den Erwartungen zurück. Zum Betrieb gehören:
 
 AI Platform liefert VictoriaMetrics + VictoriaLogs mit KI-spezifischen
 Metriken von Haus aus (Tokens/Sek. pro Tenant, Latenz-Perzentile pro
-Modellversion, Kosten pro Token pro Tenant) sowie ein Dashboard für die
+Modellversion; die GPU-Nutzung wird pro Tenant gemessen, die Abrechnung
+erfolgt in Ihrem Billing-System, WHMCS oder ein eigenes) sowie ein Dashboard für die
 Kapazitätsplanung, das an die GPU-Dimensionierungstabellen gekoppelt ist.
 
 ## Typische Einsatzmuster
@@ -223,7 +225,8 @@ typische Flaggschiff-Installation von AI Platform.
 
 **Muster 4 — souveräne Air-Gapped-Installation.** Kein ausgehender
 Internetverkehr; Updates über kontrollierte Kanäle. Vom Kunden
-gestellte Hardware, vom Kunden kontrollierte Schlüssel,
+gestellte Hardware, optionale Volume-Verschlüsselung mit einer
+Passphrase, die Sie verwalten,
 SIEM für Audits auf Kundenseite. Am besten für: Verschlusssachen,
 Gesundheitswesen mit strengen Vorgaben zur
 Datenresidenz.

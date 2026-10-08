@@ -35,7 +35,7 @@ quiz:
         - { text: "Bei GPU-Betrieb im großen Maßstab mit mehreren Data-Science-Teams", correct: true }
         - { text: "Grundsätzlich nie, dafür sind Hyperscaler immer besser geeignet", correct: false }
         - { text: "Ausschließlich für das Training vollständig eigener Basismodelle", correct: false }
-      explanation: "KI und GPU im großen Maßstab sprechen für Cozystack: GPU-Zuteilung über mehrere Mandanten hinweg, VFIO-Passthrough oder vGPU für virtuelle Maschinen, HAMi für die anteilige GPU-Nutzung in Containern, validierte Hardware von H100 über H200 und L40S bis Blackwell sowie das Tenant CRD zur Trennung mehrerer Data-Science-Teams."
+      explanation: "KI und GPU im großen Maßstab sprechen für Cozystack: GPU-Zuteilung über mehrere Mandanten hinweg, Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi, NVIDIA-Rechenzentrums-GPUs über den NVIDIA GPU Operator sowie das Tenant CRD zur Trennung mehrerer Data-Science-Teams."
     - q: "Was entscheidet vor allem zwischen Proxmox und Cozystack?"
       options:
         - { text: "Größenordnung und Anwendungsfall", correct: true }

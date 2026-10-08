@@ -31,19 +31,19 @@ quiz:
         - { text: "Ein bis zwei Tage Selbststudium", correct: false }
         - { text: "Vier bis acht Wochen mit gezieltem Training", correct: true }
         - { text: "Mindestens zwölf Monate Einarbeitung im laufenden Betrieb", correct: false }
-      explanation: "Der Wechsel vom vCenter-zentrierten zum kubectl-zentrierten Betrieb ist eine echte Lernkurve. Die meisten Engineers arbeiten sich mit gezieltem Training in 4–8 Wochen ein. Aenix führt das Training als Teil der Professional Services durch."
+      explanation: "Der Wechsel vom vCenter-zentrierten zum kubectl-zentrierten Betrieb ist eine echte Lernkurve. Die meisten Engineers arbeiten sich mit gezieltem Training in 4–8 Wochen ein. Ænix führt das Training als Teil der Professional Services durch."
     - q: "Wie vergleicht der Artikel SRM mit Velero plus PITR pro Anwendung für geschäftskritisches DR?"
       options:
-        - { text: "Beides funktioniert; man tauscht Plug-and-Play gegen Transparenz", correct: true }
+        - { text: "SRM orchestriert das Failover; Velero liefert Backup und Wiederherstellung plus Runbooks", correct: true }
         - { text: "SRM ist die einzige praktikable Option für DR in der Produktion", correct: false }
         - { text: "Velero ist im großen Maßstab in Benchmarks schneller als SRM", correct: false }
-      explanation: "Beides funktioniert für geschäftskritisches DR. SRM ist eine ausgereifte, vom Hersteller verwaltete DR-Orchestrierung nach dem Plug-and-Play-Prinzip. Velero plus PITR pro Anwendung (PostgreSQL usw.) hat mehr bewegliche Teile, ist dafür aber transparenter und besser anpassbar."
-    - q: "Wie lange dauert laut Schätzung eine Migration von unter 100 VMs von VMware zu Cozystack?"
+      explanation: "SRM ist eine ausgereifte, vom Hersteller verwaltete DR-Orchestrierung mit automatisiertem Failover. Velero plus PITR pro Anwendung (PostgreSQL usw.) liefert Backup und Wiederherstellung plus geübte Runbooks; ein orchestriertes standortübergreifendes Failover wie bei SRM gibt es nicht. Dafür ist der Stack transparenter und besser anpassbar."
+    - q: "Wie lange dauert laut Schätzung die Migration eines Bestands von rund 100 VMs von VMware zu Cozystack?"
       options:
         - { text: "Rund zwei Wochen konzentrierter Cutover-Arbeit", correct: false }
         - { text: "Rund drei Jahre schrittweiser Migration", correct: false }
-        - { text: "Sieben bis zehn Monate insgesamt", correct: true }
-      explanation: "Eine Migration von unter 100 VMs von VMware zu Cozystack dauert insgesamt 7–10 Monate (Discovery, paralleles Deployment, Image-Migration in Kohorten, Netzwerk- und Storage-Cutover, DR-Cutover, Abschaltung). Umgebungen mit 100–500 VMs brauchen 10–16 Monate. Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
+        - { text: "Rund 8–12 Monate einschließlich Planung und Migrationswellen", correct: true }
+      explanation: "Ein Bestand von ~100 VMs braucht rund 8–12 Monate, ein Bestand von ~1.000 VMs 18–24 Monate, jeweils einschließlich Planung und Migrationswellen (Discovery, paralleles Deployment, Image-Migration in Kohorten, Netzwerk- und Storage-Cutover, DR-Cutover, Abschaltung). Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
 ---
 
 
@@ -101,11 +101,11 @@ Beide arbeiten mit Rolling Upgrades. Im Betrieb ähnlich im Geist, aber mit unte
 
 ### Backup / DR
 
-**VMware Site Recovery Manager:** ausgereifte DR-Orchestrierung. Im großen Maßstab erprobt.
+**VMware Site Recovery Manager:** ausgereifte DR-Orchestrierung mit automatisiertem Failover. Im großen Maßstab erprobt.
 
 **Cozystack Velero plus PITR pro Anwendung:** Velero übernimmt das Backup auf Cluster-Ebene; anwendungsspezifische Muster (PostgreSQL PITR usw.) kommen darüber. Mehr bewegliche Teile, mehr Flexibilität.
 
-Für geschäftskritisches DR funktioniert beides. Das Muster ist ein anderes — SRM ist eine vom Hersteller verwaltete Plug-and-Play-Lösung; der Velero-Stack ist transparenter und besser anpassbar.
+Das Muster ist ein anderes — SRM ist eine vom Hersteller verwaltete Plug-and-Play-Lösung mit orchestriertem Failover. Auf Cozystack heißt DR: Backup und Wiederherstellung mit Velero plus geübte Runbooks; ein orchestriertes standortübergreifendes Failover wie bei SRM gibt es nicht. Dafür ist der Velero-Stack transparenter und besser anpassbar.
 
 ## Migrationsmuster
 
@@ -116,10 +116,10 @@ Die Migration von VMware zu Cozystack in der Produktion:
 3. **Image-Migration** — KubeVirt CDI importiert VMDK- oder qcow2-Images. Bei Windows-VMs werden die VMware Tools vor dem ersten Start unter KubeVirt bereinigt.
 4. **Netzwerk-Cutover** — Abbildung der VLANs in Cilium; die Gleichwertigkeit der Policies wird gegen die NSX-Regeln validiert.
 5. **Storage-Cutover** — vSAN → LINSTOR (DRBD); Datenmigration während des Cutovers der jeweiligen Kohorte.
-6. **DR-Cutover** — Velero ersetzt SRM; wird pro Kohorte getestet.
+6. **DR-Cutover** — Backup und Wiederherstellung mit Velero plus Runbooks an Stelle der SRM-Pläne (kein orchestriertes Failover wie bei SRM); wird pro Kohorte getestet.
 7. **Abschaltung von VMware** — gestaffelt, sobald die Kohorten abgeschlossen sind.
 
-Typische Gesamtdauer vom Assessment bis zur Abschaltung: 7–10 Monate bei weniger als 100 VMs, 10–16 Monate bei 100–500 und 16–25 Monate bei 500–2000 VMs. Treiber ist selten die reine Kopiergeschwindigkeit — es sind die Regressionstests und die Parallelbetriebsfenster, denen die Verantwortlichen der Anwendungen zustimmen.
+Typische Gesamtdauer nach einem Platform Readiness Assessment von 14 oder 28 Tagen: rund 8–12 Monate für einen Bestand von ~100 VMs und 18–24 Monate für ~1.000 VMs, einschließlich Planung und Migrationswellen; Bestände dazwischen liegen je nach Abhängigkeiten zwischen diesen Werten. Treiber ist selten die reine Kopiergeschwindigkeit — es sind die Regressionstests und die Parallelbetriebsfenster, denen die Verantwortlichen der Anwendungen zustimmen.
 
 ## Wann der Vergleich zählt
 

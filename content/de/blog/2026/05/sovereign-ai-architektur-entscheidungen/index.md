@@ -25,7 +25,7 @@ quiz:
         - { text: "Proprietäres Closed-Weight-Modell über Hersteller-API", correct: false }
         - { text: "Eigenes, von Grund auf trainiertes Foundation Model", correct: false }
         - { text: "Open-Weight der 70B-Klasse auf eigenen H100/L40S", correct: true }
-      explanation: "Beispiel für Muster 1 in der regulierten Finanzbranche: DORA + Kontrollen nach Artikel 28 + mandantenfähiges Tenant CRD + kundenkontrollierte Schlüssel + von Aenix verwalteter Betrieb + Open-Weight-Modell der Klasse Llama 70B auf einer H100/L40S-Flotte."
+      explanation: "Beispiel für Muster 1 in der regulierten Finanzbranche: DORA + Kontrollen nach Artikel 28 + mandantenfähiges Tenant CRD + Volume-Verschlüsselung mit einer Passphrase, die Sie verwalten + von Ænix verwalteter Betrieb + Open-Weight-Modell der Klasse Llama 70B auf einer H100/L40S-Flotte."
     - q: "Welche Open-Weight-Modellfamilien nennt der Artikel als gängige Wahl 2026?"
       options:
         - { text: "Nur Varianten auf Basis von GPT-4", correct: false }
@@ -92,7 +92,7 @@ Die sieben Entscheidungen sind nicht unabhängig voneinander. Das Auslöserprofi
 ## Häufige Kombinationen
 
 **Muster 1: Regulierte Finanzbranche + dauerhafte Inference + mandantenfähig**
-DORA + Kontrollen nach Artikel 28 + mandantenfähiges Tenant CRD + kundenkontrollierte Schlüssel + von Ænix verwalteter Betrieb + Open-Weight-Modell (Klasse Llama 70B) auf einer H100/L40S-Flotte.
+DORA + Kontrollen nach Artikel 28 + mandantenfähiges Tenant CRD + Volume-Verschlüsselung mit einer Passphrase, die Sie verwalten + von Ænix verwalteter Betrieb + Open-Weight-Modell (Klasse Llama 70B) auf einer H100/L40S-Flotte.
 
 **Muster 2: Öffentlicher Sektor + Air-Gap + eingestufte Daten**
 Vorgabe einer souveränen Cloud + Air-Gap + Betrieb durch den Kunden + Open-Weight-Modell (Llama / Phi) auf Hardware des Kunden.

@@ -43,9 +43,9 @@ quiz:
     - q: "Wie lange dauert eine OpenStack-zu-Cozystack-Migration mittlerer Größe (50–500 Hosts) insgesamt?"
       options:
         - { text: "1–2 Wochen (schnelles Replatforming vor Ort)", correct: false }
-        - { text: "6–15 Monate, abhängig von Größe und Anzahl der Kohorten", correct: true }
+        - { text: "4–12 Monate; 12–18 Monate bei komplexen Provider-Netzwerken", correct: true }
         - { text: "Mehr als 5 Jahre (langer Parallelbetrieb beider Plattformen)", correct: false }
-      explanation: "Bei mittlerer Größe (50–500 Hosts): Assessment von 14–28 Tagen + 1–3 Monate Cozystack-Fundament + 4–12 Monate Migrationskohorten + Stilllegung von OpenStack. Insgesamt 6–15 Monate, je nach Größe."
+      explanation: "Bei mittlerer Größe (50–500 Hosts): Assessment von 14 oder 28 Tagen, Cozystack-Fundament, Migrationskohorten und Stilllegung von OpenStack. Insgesamt 4–12 Monate für ein mittelgroßes Deployment; 12–18 Monate bei komplexen Provider-Netzwerken oder OpenStack-APIs, die Mandanten direkt nutzen."
 ---
 
 
@@ -107,9 +107,9 @@ Die meisten OpenStack-Engineers empfinden das Betriebsmodell von Cozystack als e
 
 Für eine OpenStack-zu-Cozystack-Migration mittlerer Größe (50–500 Hosts):
 
-1. **Assessment (14–28 Tage)** — bestehendes OpenStack-Deployment, Klassifizierung der Workloads, Zielarchitektur für Cozystack.
-2. **Cozystack-Fundament (1–3 Monate)** — paralleles Deployment auf neuer oder umgewidmeter Hardware.
-3. **Migrationskohorten (4–12 Monate)** — die Workloads ziehen Kohorte für Kohorte um. Images werden über KVM→KubeVirt migriert.
+1. **Assessment (14 oder 28 Tage)** — bestehendes OpenStack-Deployment, Klassifizierung der Workloads, Zielarchitektur für Cozystack.
+2. **Cozystack-Fundament** — paralleles Deployment auf neuer oder umgewidmeter Hardware.
+3. **Migrationskohorten** — die Workloads ziehen Kohorte für Kohorte um. Images werden über KVM→KubeVirt migriert.
 4. **Stilllegung von OpenStack** — gestaffelt, sobald die Kohorten abgeschlossen sind.
 
-Gesamtdauer: 6–15 Monate, je nach Größe.
+Gesamtdauer: 4–12 Monate für ein mittelgroßes Deployment; 12–18 Monate bei komplexen Provider-Netzwerken oder OpenStack-APIs, die Mandanten direkt nutzen.
