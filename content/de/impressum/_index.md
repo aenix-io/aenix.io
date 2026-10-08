@@ -1,10 +1,11 @@
 ---
 title: "Impressum"
-description: "Anbieterkennzeichnung nach § 5 DDG: AENIX s.r.o., Sladkovského 546/8, 273 43 Buštěhrad, Tschechische Republik."
+seo_title: "Impressum — AENIX s.r.o., Tschechische Republik"
+description: "Anbieterkennzeichnung nach § 5 DDG: AENIX s.r.o., U Trojice 2661/1e, 370 04 České Budějovice, Tschechische Republik. IČO 21493871."
 page_type: "flag-page"
 language: "de"
 date: 2026-08-21
-lastmod: 2026-08-21
+lastmod: 2026-10-08
 sitemap:
   disable: false
 ---
@@ -13,8 +14,9 @@ sitemap:
 
 **AENIX s.r.o.**
 
-Sladkovského 546/8
-273 43 Buštěhrad
+U Trojice 2661/1e
+České Budějovice 3
+370 04 České Budějovice
 Tschechische Republik
 
 Rechtsform: společnost s ručením omezeným (Gesellschaft mit beschränkter Haftung nach tschechischem Recht)
@@ -31,20 +33,20 @@ Kontaktformular: [aenix.io/de/kontakt/](/de/kontakt/)
 
 ## Registereintrag
 
-Handelsregister: Registergericht des Stadtgerichts Prag
+Eingetragen im Handelsregister der Tschechischen Republik (obchodní rejstřík) seit 22. April 2024
 Identifikationsnummer (IČO): 21493871
 Datenbox-ID (datová schránka): 2rvcmud
 
 ## Umsatzsteuer-Identifikationsnummer
 
-Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: CZ21493871
+Umsatzsteuer-Identifikationsnummer (DIČ): CZ21493871
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
 Andrei Kvapil
 AENIX s.r.o.
-Sladkovského 546/8
-273 43 Buštěhrad
+U Trojice 2661/1e
+370 04 České Budějovice
 Tschechische Republik
 
 ## Konzernverbundenes Unternehmen
@@ -52,14 +54,14 @@ Tschechische Republik
 **AENIX INC**
 131 Continental Drive, Suite 301
 Newark, County of New Castle
-Delaware 19713, Vereinigte Staaten
+Delaware 19713, USA
 Registrierungsnummer: 10075938
 
 AENIX INC verantwortet Verträge und Beschaffung in den Vereinigten Staaten. Für Kunden im Europäischen Wirtschaftsraum ist AENIX s.r.o. der Vertragspartner.
 
-## EU-Streitschlichtung
+## Verbraucherstreitbeilegung
 
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr/). Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 ## Haftung für Inhalte und Links
 
