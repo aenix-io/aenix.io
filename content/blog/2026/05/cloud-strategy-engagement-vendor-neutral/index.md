@@ -189,7 +189,7 @@ triggers.
 
 ### Synthesis: the 18-36 month plan
 
-Three workstream outputs synthesised into a board-grade strategy
+Five workstream outputs synthesised into a board-grade strategy
 document. Executive summary (3-5 pages). Workstream detail (5-8 pages
 per workstream). Roadmap with milestones (2-3 pages). Implementation
 sequencing recommendations.
