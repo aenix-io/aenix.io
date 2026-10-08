@@ -503,7 +503,7 @@ Feedback und Pull Requests sind willkommen: [https://github.com/cozystack/cozypk
 - [Cozystack joins the CNCF Sandbox](https://t.me/aenix_io/192)
 - [Die Evolution von Virtualisierungsplattformen: der Aufstieg der Managed Services und der Vorsprung lokaler Anbieter gegenüber Hyperscalern](/de/blog/2025/06/evolution-virtualisierungsplattformen-managed-services-lokale-anbieter/)
 - [Cozystack became a Certified Kubernetes Platform](/blog/2025/06/cozystack-became-a-certified-kubernetes-platform/)
-- [Cozypkg: How We Simplified Local Development with Helm and Flux](/blog/2025/06/cozypkg-how-we-simplified-local-development-with-helm-and-flux/)
+- [Cozypkg: Wie wir die lokale Entwicklung mit Helm und Flux vereinfacht haben](/de/blog/2025/06/cozypkg-lokale-entwicklung-helm-flux/)
 
 Von [Andrei Kvapil](https://medium.com/@kvaps) am [9. Februar 2026](https://medium.com/p/3287e55938fe).
 

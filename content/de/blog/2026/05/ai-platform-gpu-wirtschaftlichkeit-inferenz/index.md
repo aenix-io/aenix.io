@@ -310,9 +310,9 @@ Umfang: Projekt plus Managed Retainer, Angebot je Ausschreibung.
   Einstiegsseite für Entscheider zum Thema Sovereign AI
 - **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)** —
   Details zur Zusammenarbeit
-- **[Private LLM deployment — practical guide](/blog/2026/05/private-llm-deployment-guide/)** (Englisch) —
+- **[Private LLM Deployment — praktischer Leitfaden](/de/blog/2026/05/private-llm-deployment-leitfaden/)** —
   Durchgang durch den Stack mit sechs Ebenen samt Hardware-Tabellen
-- **[Sovereign AI architecture decisions](/blog/2026/05/sovereign-ai-architecture-decisions/)** (Englisch) —
+- **[Entscheidungen für eine Sovereign-AI-Architektur](/de/blog/2026/05/sovereign-ai-architektur-entscheidungen/)** —
   die sieben Entscheidungen, die eine souveräne KI-Architektur prägen
 - **[Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/)** —
   Entscheidungs-Framework als PDF zum Herunterladen

@@ -20,13 +20,13 @@ quiz:
         - { text: "Threat-Led Penetration Testing, alle drei Jahre", correct: true }
         - { text: "Transaction-Level Privacy Test, jährlich zusammen mit dem DSGVO-Audit", correct: false }
       explanation: "TLPT steht für Threat-Led Penetration Testing. Es ist alle drei Jahre vorgeschrieben: eine strukturierte Red-Team-Übung gegen die laufende Produktion durch einen externen Testdienstleister, bei der das CSIRT/SOC als echter Verteidiger behandelt wird."
-    - q: "Warum erweist sich das 24-Stunden-Frühwarnfenster nach DORA Artikel 23 laut Artikel in der Praxis oft als Fiktion?"
+    - q: "Warum erweist sich das 24-Stunden-Frühwarnfenster nach NIS2 Artikel 23 laut Artikel in der Praxis oft als Fiktion?"
       options:
         - { text: "Die Aufsicht setzt die 24-Stunden-Frist in der Praxis selten durch", correct: false }
         - { text: "Die meisten Banken haben die Erkennung an MSSPs ausgelagert, die sie verpassen", correct: false }
         - { text: "Die Detection-Telemetrie ist auf Performance abgestimmt, nicht auf Sicherheit", correct: true }
-      explanation: "Die erste TLPT-Readiness-Frage erklärt: Ist die Detection-Telemetrie auf Performance und nicht auf Sicherheit abgestimmt, ist das 24-Stunden-Fenster eine Fiktion — die meisten Banken haben reichhaltige Performance-Telemetrie und eine von Alert Fatigue geplagte Sicherheitstelemetrie, sodass das Signal-Rausch-Verhältnis bei Auslösern nach Artikel 23 zu schlecht ist."
-    - q: "Wie adressiert die Cozystack-basierte Architektur die materielle Bedingung des Konzentrationsrisikos nach Artikel 28 (nicht nur die Beschaffung)?"
+      explanation: "Die erste TLPT-Readiness-Frage erklärt: Ist die Detection-Telemetrie auf Performance und nicht auf Sicherheit abgestimmt, ist das 24-Stunden-Fenster eine Fiktion — die meisten Banken haben reichhaltige Performance-Telemetrie und eine von Alert Fatigue geplagte Sicherheitstelemetrie, sodass das Signal-Rausch-Verhältnis bei Auslösern für meldepflichtige Vorfälle zu schlecht ist."
+    - q: "Wie adressiert die Cozystack-basierte Architektur die materielle Bedingung des Konzentrationsrisikos nach Artikel 29 (nicht nur die Beschaffung)?"
       options:
         - { text: "Workloads nutzen Plattformabstraktionen, die es auf mehreren Substraten gibt", correct: true }
         - { text: "Durch gleichzeitige Verträge mit zwei konkurrierenden Hyperscalern", correct: false }
@@ -320,10 +320,8 @@ Schlechte Passung:
   die DORA-Landingpage aus Sicht des Einkäufers
 - **[Produktseite Private Cloud Platform](/de/produkte/private-cloud-platform/)** —
   das Produkt für regulierte Unternehmen
-- **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
-  DORA-Durchgang auf Architekturebene (auf Englisch)
-- **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
-  was „nachweisbar“ in der Praxis bedeutet (auf Englisch)
+- **[DORA-Compliance-Checkliste für Cloud-Infrastruktur](/de/blog/2026/05/dora-checkliste-cloud-architektur/)** —
+  DORA-Durchgang auf Architekturebene
 - **[Private Cloud Platform — DORA- und NIS2-Pflichten in der Architektur](/de/blog/2026/05/private-cloud-platform-dora-nis2-architektur/)** —
   architektonische Details auf Produktebene
 - **[DORA-Compliance-Checkliste](/de/ressourcen/dora-compliance-checkliste/)** —

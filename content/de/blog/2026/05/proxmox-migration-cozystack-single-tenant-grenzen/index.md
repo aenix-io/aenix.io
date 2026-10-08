@@ -19,11 +19,11 @@ quiz:
         - { text: "Ab rund 300 Kunden (Audit und Quotas pro Tenant werden mühsam)", correct: true }
         - { text: "Ab rund 50 Kunden (Schwelle für Deployments in einem Rack)", correct: false }
         - { text: "Ab rund 5.000 Kunden (betriebliche Obergrenze im Hyperscale-Bereich)", correct: false }
-      explanation: "Ab rund 300 kundenseitigen Tenants wirkt das Modell aus Namespace und Berechtigungen von Proxmox (ohne harte Isolation) zu dünn; Audit-Trails pro Kunde, Isolationsgarantien und die Durchsetzung von Quotas werden zur betrieblichen Belastung."
+      explanation: "Ab rund 300 kundenseitigen Tenants wirkt das Modell aus Pools, Realms und Berechtigungen von Proxmox (ohne harte Isolation) zu dünn; Audit-Trails pro Kunde, Isolationsgarantien und die Durchsetzung von Quotas werden zur betrieblichen Belastung."
     - q: "Welche zwei Proxmox-Komponenten entsprechen in Cozystack KubeVirt bzw. Cilium?"
       options:
         - { text: "ZFS-Storage und Proxmox Backup Server (PBS)", correct: false }
-        - { text: "LXC-Container und pvecli (CLI-Verwaltungsebene)", correct: false }
+        - { text: "LXC-Container und pvesh (CLI-Verwaltungsebene)", correct: false }
         - { text: "KVM-Hypervisor und Linux SDN / Linux-Bridges", correct: true }
       explanation: "Laut der Tabelle zur Architekturabbildung: KVM-Hypervisor → KubeVirt (KVM-basiert) und Linux SDN / Bridges → Cilium (eBPF). LXC erfordert ein Redesign statt einer 1:1-Abbildung; PBS entspricht Velero + S3 + PITR."
     - q: "Welche realistische Gesamtdauer hat die Migration bei einem typischen Hosting-Anbieter mit 300–1.000 Kunden?"
@@ -85,7 +85,7 @@ folgenden Punkte zutreffen:
 
 ### 1. Die Kundenzahl wächst über rund 300
 
-Das Mandantenmodell von Proxmox (Namespace plus Berechtigungen, keine harte
+Das Mandantenmodell von Proxmox (Pools, Realms und Berechtigungen, keine harte
 Isolation) wirkt ab etwa 300 kundenseitigen Tenants zu dünn. Audit-Trails
 pro Kunde, Isolationsgarantien und die Durchsetzung von Quotas werden zur
 betrieblichen Belastung.
@@ -136,7 +136,7 @@ geben Servicekatalog und betriebliche Vorteile von Cozystack den Ausschlag.
 | **Proxmox-Web-UI** | Cozystack Dashboard |
 | **Proxmox Backup Server (PBS)** | Velero + S3-kompatibles Ziel + PITR pro Anwendung |
 | **PVE-Storage-Replikation** | LINSTOR-DRBD-Replikation |
-| **Proxmox API / pvecli** | Kubernetes API |
+| **Proxmox API / pvesh, qm, pct** | Kubernetes API |
 | **Datacenter / Pool / VM** | Tenant CRD + Namespace + KubeVirt-VM |
 | **Berechtigungsmodell (Rollen)** | Kubernetes RBAC + Geltungsbereich des Tenant CRD |
 
@@ -147,8 +147,8 @@ Zwei Bereiche erfordern ein Redesign statt einer 1:1-Abbildung:
   Anwendungscontainer (ein einzelner Prozess oder wenige). Workloads, die LXC
   im Sinne von System-Containern nutzen, wandern entweder in KubeVirt-VMs oder
   werden umgebaut.
-- **Mandantenmodell** — das Tenant-Modell von Proxmox (Namespace plus
-  Berechtigungen) gegenüber dem Tenant CRD von Cozystack (Kubernetes-nativ).
+- **Mandantenmodell** — das Tenant-Modell von Proxmox (Pools, Realms
+  und Berechtigungen) gegenüber dem Tenant CRD von Cozystack (Kubernetes-nativ).
   Die kundenseitige Isolation ist in Cozystack stärker; die betriebliche
   Abstraktion ist eine andere.
 
@@ -250,8 +250,8 @@ der Engagement-Arbeit.
 
 ### 3. Schulung des Betriebsteams
 
-Proxmox-Betreiber sind mit der Proxmox-Web-UI und dem imperativen Befehl
-`pvecli` vertraut. Cozystack setzt für produktive Änderungen GitOps voraus.
+Proxmox-Betreiber sind mit der Proxmox-Web-UI und den imperativen
+CLI-Werkzeugen `qm` / `pct` / `pvesh` vertraut. Cozystack setzt für produktive Änderungen GitOps voraus.
 Das Betriebsteam braucht 4–8 Wochen gezielte Schulung und anschließend
 3–6 Monate Praxis. Das Ænix-Engagement umfasst Schulungen; zugleich muss auch
 der Kunde in den Übergang investieren.
@@ -260,7 +260,7 @@ der Kunde in den Übergang investieren.
 
 Manche Kunden haben sich gerade wegen der ZFS-Funktionen auf dem Host für
 Proxmox entschieden (erweiterte Snapshots, über ZFS replizierte Backups).
-Cozystack nutzt LINSTOR oder Ceph; ZFS-spezifische Betriebsmuster lassen sich
+Cozystack liefert LINSTOR (DRBD) aus; ZFS-spezifische Betriebsmuster lassen sich
 nicht übertragen. Das Gespräch mit dem Kunden über funktionale Äquivalenz ist
 Teil von Phase 0.
 
@@ -323,13 +323,13 @@ Schlecht geeignet:
 ## Tiefer einsteigen
 
 - **[Proxmox-Migrations-Hub](/de/migration/proxmox/)** — kommerzielle Landingpage
-- **[Vergleich Proxmox vs. VMware vs. Cozystack](/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/)** —
-  Entscheidungsmatrix (Englisch)
+- **[Vergleich Proxmox vs. VMware vs. Cozystack](/de/blog/2026/05/proxmox-vs-vmware-vs-cozystack/)** —
+  Entscheidungsmatrix
 - **[Proxmox-Alternative](/de/alternativen/proxmox-alternative/)** —
   kommerzielle Landingpage mit Fokus auf Alternativen
 - **[Branchenseite Hosting-Anbieter](/de/branchen/hosting-anbieter/)** —
   branchenspezifische Positionierung
-- **[Wirtschaftlichkeit der Public Cloud Platform für Hosting-Anbieter](/blog/2026/05/isp-edition-economics-hosting-providers/)** —
-  Unit Economics Schritt für Schritt (Englisch)
-- **[Plattformmodernisierung für Hosting-Anbieter](/blog/2026/05/hosting-provider-platform-modernization/)** —
-  Modernisierungsmuster (Englisch)
+- **[Wirtschaftlichkeit der Public Cloud Platform für Hosting-Anbieter](/de/blog/2026/05/public-cloud-platform-wirtschaftlichkeit-hosting-anbieter/)** —
+  Unit Economics Schritt für Schritt
+- **[Plattformmodernisierung für Hosting-Anbieter](/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/)** —
+  Modernisierungsmuster

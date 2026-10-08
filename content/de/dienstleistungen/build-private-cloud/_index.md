@@ -51,7 +51,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/build-private-cloud-90-day-playbook/">Das 90-Tage-Playbook lesen (englisch) →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/private-cloud-aufbauen-90-tage-playbook/">Das 90-Tage-Playbook lesen →</a>
 </div>
 
 ---
@@ -141,7 +141,7 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Private Cloud aufbauen — 90-Tage-Playbook (englisch)](/blog/2026/05/build-private-cloud-90-day-playbook/)**
+- **[Private Cloud aufbauen — 90-Tage-Playbook](/de/blog/2026/05/private-cloud-aufbauen-90-tage-playbook/)**
 - **[Private-Cloud-Consulting](/de/dienstleistungen/private-cloud-consulting/)** — breiterer Scope
 - **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** — wenn Sie die Public Cloud verlassen
 - **[Cozystack](/de/produkte/cozystack/)**

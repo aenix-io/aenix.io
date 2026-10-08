@@ -336,9 +336,9 @@ Schlechte Passung:
 
 - **[SRE-Consulting-Leistungen](/de/dienstleistungen/sre-consulting/)** —
   die kommerzielle Landingpage
-- **[DevOps-Best-Practices für 2026](/blog/2026/05/devops-best-practices-2026/)** —
+- **[DevOps-Best-Practices für 2026](/de/blog/2026/05/devops-best-practices-2026/)** —
   die acht DevOps-Praktiken einschließlich SRE
-- **[Platform Engineering vs DevOps vs SRE](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** —
+- **[Platform Engineering vs DevOps vs SRE](/de/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** —
   Begriffe und Design der Funktion
 - **[Cloud-Engineering-Disziplinen](/de/dienstleistungen/cloud-engineering/)** —
   die sieben Disziplinen, die sich gegenseitig verstärken

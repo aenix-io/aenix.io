@@ -356,5 +356,3 @@ Schlechte Passung:
   kommerzielle Landingpage mit Fokus auf Alternativen
 - **[Produktseite Public Cloud Platform](/de/produkte/public-cloud-platform/)** —
   häufiges Zielprodukt für OpenStack-Migrationen von Hosting-Anbietern
-- **[Produktseite Public Cloud Platform](/de/produkte/public-cloud-platform/)** —
-  häufiges Zielprodukt für OpenStack-Migrationen von Tier-1-Telcos

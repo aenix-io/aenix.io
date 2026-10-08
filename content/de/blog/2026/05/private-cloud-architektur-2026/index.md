@@ -134,7 +134,7 @@ Eine moderne Private Cloud besteht aus sechs funktionalen Schichten:
 
 ### Muster 3: VMware Cloud Foundation (VCF) — Legacy
 
-**Was:** vSphere + vSAN + NSX + vCD + vRealize. Proprietär, im Subscription-Modell lizenziert.
+**Was:** vSphere + vSAN + NSX + vCD + Aria (früher vRealize). Proprietär, im Subscription-Modell lizenziert.
 
 **Am besten geeignet für:** Bestehende VMware-Umgebungen, die durch die Broadcom-Ökonomie noch nicht zum Ausstieg gezwungen wurden.
 

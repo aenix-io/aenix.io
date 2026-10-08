@@ -132,7 +132,7 @@ Trifft das nicht zu, übersteigen die Betriebskosten den Nutzen, und eine leicht
 
 ## CNOE — die Open-Source-Referenz für Platform Engineering
 
-Das CNCF-Projekt CNOE (Cloud Native Operational Excellence) verdient Erwähnung. Es ist eine Referenzarchitektur mit klaren Vorgaben, die Backstage, Argo CD, Crossplane, External Secrets und weitere CNCF-Tools zu einem stimmigen Plattformmuster verbindet. Für Organisationen, die eine „Plattform aus der Box“ aus CNCF-Projekten wollen, ist CNOE der strukturierte Ausgangspunkt.
+Die Brancheninitiative CNOE (Cloud Native Operational Excellence) verdient Erwähnung. Es ist eine Referenzarchitektur mit klaren Vorgaben, die Backstage, Argo CD, Crossplane, External Secrets und weitere CNCF-Tools zu einem stimmigen Plattformmuster verbindet. Für Organisationen, die eine „Plattform aus der Box“ aus CNCF-Projekten wollen, ist CNOE der strukturierte Ausgangspunkt.
 
 CNOE ergänzt Cozystack: CNOE konzentriert sich auf das Developer Portal und die Tooling-Ebene; Cozystack auf die darunterliegende mandantenfähige, Kubernetes-native Plattform mit Virtualisierung. Beide können nebeneinander bestehen.
 

@@ -30,7 +30,7 @@ quiz:
         - { text: "5–10 % über den Plattformkosten", correct: false }
         - { text: "500 % über den Plattformkosten", correct: false }
         - { text: "30–50 % über den Plattformkosten", correct: true }
-      explanation: "Typische Ökonomie: Kundenpreise 30–50 % über den reinen Plattformkosten. Die Marge deckt Support, Vertrieb und Betrieb des MSP. Realistisch ist der Break-even bei den ersten 50–100 Kunden."
+      explanation: "Typische Ökonomie: Kundenpreise 30–50 % über den reinen Plattformkosten. Die Marge deckt Support, Vertrieb und Betrieb des MSP. Realistisch ist der Break-even bei 30–50 zahlenden Kunden oder bei 50–100, wenn neben der Plattform eine eigene Rufbereitschaft finanziert wird."
     - q: "Was leistet die WHMCS-Integration?"
       options:
         - { text: "Abrechnung über das bestehende System des MSP", correct: true }

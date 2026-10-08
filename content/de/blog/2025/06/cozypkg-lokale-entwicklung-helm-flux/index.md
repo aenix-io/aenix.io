@@ -11,7 +11,7 @@ language: "de"
 hreflang_en: "/blog/2025/06/cozypkg-how-we-simplified-local-development-with-helm-and-flux/"
 ---
 
-Hallo! Ich bin Andrei Kvapil, CEO von Ænix und Entwickler von Cozystack, einer Open-Source-Plattform und einem Framework für den Aufbau von Cloud-Infrastruktur. In diesem Artikel zeige ich, wie wir Anwendungen nach Kubernetes ausliefern, erkläre, warum klassisches GitOps in der lokalen Entwicklung umständlich sein kann, und stelle vor, wie das neue Werkzeug [cozyhr](https://github.com/cozystack/cozyhr) diese Schwachstellen behebt. Der Artikel richtet sich an Engineers, die Helm und Flux bereits kennen.
+Hallo! Ich bin Andrei Kvapil, CEO von Ænix und Entwickler von Cozystack, einer Open-Source-Plattform und einem Framework für den Aufbau von Cloud-Infrastruktur. In diesem Artikel zeige ich, wie wir Anwendungen nach Kubernetes ausliefern, erkläre, warum klassisches GitOps in der lokalen Entwicklung umständlich sein kann, und stelle vor, wie das neue Werkzeug [cozyhr](https://github.com/cozystack/cozyhr) (veröffentlicht als cozypkg und im Dezember 2025 in cozyhr umbenannt) diese Schwachstellen behebt. Der Artikel richtet sich an Engineers, die Helm und Flux bereits kennen.
 
 ![Bild](/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/cover.jpg)
 
@@ -136,7 +136,7 @@ Derzeit modularisieren wir Cozystack intensiv und wollen das Framework so erweit
 
 Mit `cozyhr` bündeln wir unsere Erfahrung bei der Beschleunigung der Entwicklung in einem einzigen Werkzeug und teilen unseren Ansatz mit der Community.
 
-Feedback und Pull Requests sind willkommen: [https://github.com/cozystack/cozyhr](https://github.com/cozystack/cozypkg)
+Feedback und Pull Requests sind willkommen: [https://github.com/cozystack/cozyhr](https://github.com/cozystack/cozyhr)
 
 *Viel Spaß beim Coden — und bleiben Sie cozy!*
 
@@ -149,12 +149,12 @@ Feedback und Pull Requests sind willkommen: [https://github.com/cozystack/cozyhr
 ## Siehe auch
 
 - [How Cozystack Was Born: The Philosophy Behind Its Architecture](https://t.me/aenix_io/219)
-- [How we built a dynamic Kubernetes API Server for the API Aggregation Layer in Cozystack](/blog/2024/12/how-we-built-a-dynamic-kubernetes-api-server-for-the-api-aggregation-layer-in-cozystack/)
+- [Wie wir in Cozystack einen dynamischen Kubernetes-API-Server für den API Aggregation Layer gebaut haben](/de/blog/2024/12/dynamischer-kubernetes-api-server-api-aggregation-layer-cozystack/)
 - [DIY: Create Your Own Cloud with Kubernetes (3-part series)](https://blog.aenix.io/diy-create-your-own-cloud-with-kubernetes-part-1-7a692c37f0a8)
 - [Cozystack joins the CNCF Sandbox](https://t.me/aenix_io/192)
 - [Cozystack Recognized in CNCF’s CNAI Landscape!](/blog/2025/05/cozystack-recognized-in-cncfs-cnai-landscape/)
-- [A Simple Way to Install Talos Linux on Any Machine, with Any Provider](/blog/2025/04/a-simple-way-to-install-talos-linux-on-any-machine-with-any-provider/)
-- [The Evolution of Virtualization Platforms: The Rise of Managed Services and Local Providers’ Edge Against Hyperscalers](/blog/2025/06/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/)
+- [Talos Linux einfach installieren: auf jeder Maschine, bei jedem Anbieter](/de/blog/2025/04/talos-linux-installieren-beliebige-maschine-beliebiger-anbieter/)
+- [Die Evolution von Virtualisierungsplattformen: der Aufstieg der Managed Services und der Vorsprung lokaler Anbieter gegenüber Hyperscalern](/de/blog/2025/06/evolution-virtualisierungsplattformen-managed-services-lokale-anbieter/)
 
 ## Vorträge von Andrei Kvapil
 

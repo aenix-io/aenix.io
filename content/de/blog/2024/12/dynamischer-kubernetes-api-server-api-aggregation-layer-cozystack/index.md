@@ -52,7 +52,7 @@ Neben regulären Ressourcen kennt Kubernetes auch sogenannte Subresources.
 
 Subresources sind in Kubernetes zusätzliche Aktionen oder Operationen, die Sie über die Kubernetes-API auf primären Ressourcen (etwa Pods, Deployments, Services) ausführen können. Sie bieten Schnittstellen, um bestimmte Aspekte einer Ressource zu verwalten, ohne das gesamte Objekt anzufassen.
 
-Ein einfaches Beispiel ist `status`, das traditionell als eigene Subresource bereitgestellt wird und sich unabhängig vom übergeordneten Objekt ansprechen lässt. Das Feld `status` ist nicht dafür gedacht, geändert zu werden
+Ein einfaches Beispiel ist `status`, das traditionell als eigene Subresource bereitgestellt wird und sich unabhängig vom übergeordneten Objekt ansprechen lässt. Das Feld `status` ist nicht dafür gedacht, von Benutzern geändert zu werden; Controller aktualisieren es über diese Subresource.
 
 Neben `/status` haben Pods in Kubernetes aber auch Subresources wie `/exec`, `/portforward` und `/log`. Interessanterweise sind das keine der in Kubernetes üblichen deklarativen Ressourcen, sondern Endpunkte für imperative Operationen: Logs ansehen, Verbindungen proxyen, Befehle in einem laufenden Container ausführen und so weiter.
 
@@ -141,8 +141,6 @@ Auf unserer Plattform wird also alles als HelmRelease-Ressource konfiguriert. Da
 
 Das verbreitete RBAC-System von Kubernetes erlaubt es nicht, den Zugriff auf eine Liste von Ressourcen desselben Kinds anhand von Labels oder bestimmten Feldern in der Spec einzuschränken. Beim Anlegen einer Rolle können Sie den Zugriff innerhalb eines Kinds nur begrenzen, indem Sie in `resourceNames` konkrete Ressourcennamen angeben. Für Verben wie **get** oder **update** funktioniert das. Beim Verb **list** greift die Filterung über `resourceNames` jedoch nicht auf diese Weise. Sie können das Auflisten also nach Kind einschränken, nicht aber nach Namen.
 
-- Kubernetes besitzt eine spezielle API, die Benutzern Auskunft über ihre Berechtigungen gibt. Umgesetzt ist sie über die SelfSubjectAccessReview-API. Eine Besonderheit dieser Ressourcen: Sie lassen sich nicht mit den Verben **get** oder **list** ansehen. Man kann sie nur erstellen (mit dem Verb **create**) und erhält als Ausgabe die Information, worauf man in diesem Moment Zugriff hat.
-
 Deshalb haben wir beschlossen, neue Ressourcentypen einzuführen, die nach den verwendeten Helm-Charts benannt sind, und die Liste der verfügbaren Kinds in unserem Extension-API-Server zur Laufzeit dynamisch zu erzeugen. So können wir das Standard-RBAC-Modell von Kubernetes nutzen, um den Zugriff auf bestimmte Ressourcentypen zu steuern.
 
 ## Bedarf an einer öffentlichen API
@@ -179,13 +177,13 @@ In unserem Fall brauchen wir sie nicht, da alle Ressourcen direkt in der Kuberne
 
 Die etcd-Optionen lassen sich deaktivieren, indem man `RecommendedOptions.Etcd` den Wert nil übergibt:
 
-- [etcd-Optionen deaktivieren](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/cmd/server/start.go#L70)
+- [etcd-Optionen deaktivieren](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/cmd/server/start.go#L70)
 
 ## Einen gemeinsamen Ressourcen-Kind erzeugen
 
 Wir haben ihn Application genannt, und er sieht so aus:
 
-- [Typdefinition von Application](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/apis/apps/v1alpha1/types.go)
+- [Typdefinition von Application](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/apis/apps/v1alpha1/types.go)
 
 Das ist ein generischer Typ, der für jeden Anwendungstyp verwendet wird; seine Verarbeitungslogik ist für alle Charts gleich.
 
@@ -193,31 +191,31 @@ Das ist ein generischer Typ, der für jeden Anwendungstyp verwendet wird; seine 
 
 Da wir unseren Extension-API-Server über eine Konfigurationsdatei steuern wollen, haben wir die Konfigurationsstruktur in Go angelegt:
 
-- [Typdefinition der Konfiguration](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/config/config.go)
+- [Typdefinition der Konfiguration](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/config/config.go)
 
 Außerdem haben wir die Logik der Ressourcenregistrierung so angepasst, dass die von uns erzeugten Ressourcen im Scheme mit unterschiedlichen `Kind`-Werten registriert werden:
 
-- [Dynamische Registrierung von Ressourcen](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/apis/apps/v1alpha1/register.go#L63-L77)
+- [Dynamische Registrierung von Ressourcen](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/apis/apps/v1alpha1/register.go#L63-L77)
 
 Das Ergebnis ist eine Konfiguration, in der Sie alle möglichen Typen übergeben und festlegen können, worauf sie abgebildet werden:
 
-- [ConfigMap-Beispiel](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/packages/system/cozystack-api/templates/configmap.yaml)
+- [ConfigMap-Beispiel](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/packages/system/cozystack-api/templates/configmap.yaml)
 
 ## Eine eigene Registry implementieren
 
 Um den Zustand nicht in etcd zu speichern, sondern direkt in Kubernetes-HelmRelease-Ressourcen zu übersetzen (und umgekehrt), haben wir Konvertierungsfunktionen von Application nach HelmRelease und von HelmRelease nach Application geschrieben:
 
-- [Konvertierungsfunktionen](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go#L920-L991)
+- [Konvertierungsfunktionen](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go#L920-L991)
 
 Wir haben Logik implementiert, die Ressourcen nach Chart-Name, `sourceRef` und Präfix im HelmRelease-Namen filtert:
 
-- [Filterfunktionen](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go#L747-L784)
+- [Filterfunktionen](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go#L747-L784)
 
 Auf dieser Logik aufbauend haben wir dann die Methoden `Get()`, `Delete()`, `List()` und `Create()` implementiert.
 
 Das vollständige Beispiel finden Sie hier:
 
-- [Registry-Implementierung](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go)
+- [Registry-Implementierung](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go)
 
 Am Ende jeder Methode setzen wir den korrekten `Kind` und geben ein `unstructured.Unstructured{}`-Objekt zurück, damit Kubernetes das Objekt korrekt serialisiert. Andernfalls würde es die Objekte immer mit `kind: Application` serialisieren, was wir nicht wollen.
 
@@ -353,7 +351,7 @@ Mit unserer API wollen wir hier nicht stehen bleiben. Für die Zukunft planen wi
 
 Mit dem API Aggregation Layer konnten wir unser Problem schnell und effizient lösen: Er bietet einen flexiblen Mechanismus, um die Kubernetes-API um dynamisch registrierte Ressourcen zu erweitern und diese zur Laufzeit zu konvertieren. Im Ergebnis ist unsere Plattform dadurch noch flexibler und erweiterbarer geworden, ohne dass wir für jede neue Ressource Code schreiben müssen.
 
-Sie können die API selbst in der Open-Source-PaaS-Plattform Cozystack ausprobieren, ab [Version v0.18](https://github.com/aenix-io/cozystack/releases/tag/v0.18.0).
+Sie können die API selbst in der Open-Source-PaaS-Plattform Cozystack ausprobieren, ab [Version v0.18](https://github.com/cozystack/cozystack/releases/tag/v0.18.0).
 
 Von [Andrei Kvapil](https://medium.com/@kvaps) am [12. Dezember 2024](https://medium.com/p/15709a183c86).
 

@@ -37,12 +37,12 @@ quiz:
         - { text: "SRM ist die einzige praktikable Option für DR in der Produktion", correct: false }
         - { text: "Velero ist im großen Maßstab in Benchmarks schneller als SRM", correct: false }
       explanation: "Beides funktioniert für geschäftskritisches DR. SRM ist eine ausgereifte, vom Hersteller verwaltete DR-Orchestrierung nach dem Plug-and-Play-Prinzip. Velero plus PITR pro Anwendung (PostgreSQL usw.) hat mehr bewegliche Teile, ist dafür aber transparenter und besser anpassbar."
-    - q: "Wie lange dauert laut Schätzung eine typische Migration von 100 VMs von VMware zu Cozystack?"
+    - q: "Wie lange dauert laut Schätzung eine Migration von unter 100 VMs von VMware zu Cozystack?"
       options:
         - { text: "Rund zwei Wochen konzentrierter Cutover-Arbeit", correct: false }
         - { text: "Rund drei Jahre schrittweiser Migration", correct: false }
         - { text: "Sieben bis zehn Monate insgesamt", correct: true }
-      explanation: "Eine typische Migration von 100 VMs von VMware zu Cozystack dauert insgesamt 7–10 Monate (Discovery, paralleles Deployment, Image-Migration in Kohorten, Netzwerk- und Storage-Cutover, DR-Cutover, Abschaltung). Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
+      explanation: "Eine Migration von unter 100 VMs von VMware zu Cozystack dauert insgesamt 7–10 Monate (Discovery, paralleles Deployment, Image-Migration in Kohorten, Netzwerk- und Storage-Cutover, DR-Cutover, Abschaltung). Umgebungen mit 100–500 VMs brauchen 10–16 Monate. Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
 ---
 
 

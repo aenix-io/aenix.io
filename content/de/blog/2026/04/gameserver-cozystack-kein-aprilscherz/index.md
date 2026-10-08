@@ -17,7 +17,7 @@ quiz:
         - { text: "Mehr als 20", correct: true }
         - { text: "Etwa 5 zentrale Managed Services", correct: false }
         - { text: "Hunderte, einschließlich Community-Add-ons", correct: false }
-      explanation: "Über 20 Managed Services: Datenbanken (PostgreSQL, MariaDB, MongoDB), Message Queues (Kafka, RabbitMQ), Caching (Valkey — Cozystack hat den Managed-Redis-Dienst in v1.0 in Valkey umbenannt), S3-Storage, virtuelle Maschinen, Kubernetes-Cluster, Netzwerk, Load Balancer. Alles läuft auf der Hardware ohne zusätzliche Virtualisierungsschichten."
+      explanation: "Über 20 Managed Services: Datenbanken (PostgreSQL, MariaDB, MongoDB), Message Queues (Kafka, RabbitMQ), Caching (Redis), S3-Storage, virtuelle Maschinen, Kubernetes-Cluster, Netzwerk, Load Balancer. Alles läuft auf der Hardware ohne zusätzliche Virtualisierungsschichten."
     - q: "Warum sind Gameserver laut Artikel eine besonders anspruchsvolle Workload?"
       options:
         - { text: "Sie brauchen auf jedem Node ständig GPU-Beschleunigung", correct: false }
