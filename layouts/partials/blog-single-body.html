@@ -78,7 +78,7 @@
       {{- $btn := cond $tut (cond $de "Assessment anfragen" "Get readiness assessment") (cond $de "Discovery-Call buchen" "Book a call") -}}
       {{- $url := cond $tut (cond $de "/de/dienstleistungen/platform-readiness-assessment/" "/services/platform-readiness-assessment/") (cond $de "/de/kontakt/" "/contact/") -}}
       <aside class="blog-post-cta">
-        <h3 class="blog-post-cta__heading">{{ $heading }}</h3>
+        <h2 class="blog-post-cta__heading">{{ $heading }}</h2>
         <div class="cta-row"><a class="cta-primary" href="{{ $url }}">{{ $btn }}</a></div>
       </aside>
       {{- else if not $companion -}}
@@ -87,7 +87,7 @@
            block instead of the sales CTA; posts with companion_landing already
            carry their own card above. */}}
       <aside class="blog-post-cta blog-post-cta--support">
-        <h3 class="blog-post-cta__heading">{{ cond $de "Sie betreiben Cozystack selbst?" "Running Cozystack yourself?" }}</h3>
+        <h2 class="blog-post-cta__heading">{{ cond $de "Sie betreiben Cozystack selbst?" "Running Cozystack yourself?" }}</h2>
         <p class="blog-post-cta__text">{{ cond $de "Ænix bietet Enterprise-Support für selbst betriebene Cozystack-Cluster: Upgrades, Störungsbehebung und Architekturfragen mit festen Reaktionszeiten." "Ænix offers enterprise support for self-run Cozystack clusters: upgrades, incident help and architecture questions with defined response times." }}</p>
         <div class="cta-row">
           <a class="cta-primary" href="{{ cond $de "/de/produkte/cozystack-enterprise-support/" "/products/cozystack-enterprise-support/" }}">{{ cond $de "Support-Optionen ansehen" "See support options" }}</a>
