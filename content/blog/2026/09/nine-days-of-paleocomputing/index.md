@@ -7,8 +7,8 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "KubeVirt", "Kubernetes", "Open Source", "CHERI", "Retrocomputing"]
 language: "en"
-images:
-  - "blog/2026/09/nine-days-of-paleocomputing/oberon-boot-screen.png"
+series: "Paleocomputing"
+related_posts: ["/blog/2026/10/kubernetes-over-wirths-radio/"]
 ---
 
 

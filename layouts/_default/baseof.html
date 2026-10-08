@@ -30,7 +30,7 @@
   </script>
   {{- end }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} – Ænix{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Params.seo_title | default .Title }} – Ænix{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
   {{/* Open Graph / Twitter meta are emitted once by seo/head.html (partial invoked below) — do not duplicate here. */}}

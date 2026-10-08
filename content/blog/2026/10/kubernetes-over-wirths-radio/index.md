@@ -1,13 +1,42 @@
 ---
 title: "Paleocomputing, part 2: Kubernetes in Oberon, Wirth's radio instead of a network, a cluster in your browser, and what forgotten technology says about tomorrow's infrastructure"
 description: "Kube: a Kubernetes control plane in Oberon, on Niklaus Wirth's own machines talking over radio. Six browser labs, the design lessons, and how to run it."
+seo_title: "Kubernetes in Oberon over Wirth's radio: paleocomputing, part 2"
 date: "2026-10-08"
+lastmod: "2026-10-08"
+series: "Paleocomputing"
 cover_image: "/img/blog/covers/kubernetes-over-wirths-radio.jpg"
 author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Open Source", "Retrocomputing", "Distributed Systems"]
 language: "en"
 related_posts: ["/blog/2026/09/nine-days-of-paleocomputing/"]
+direct_answer: "**Kube is a Kubernetes control plane written in Niklaus Wirth's Oberon and running on Oberon machines, whose nodes talk over the nRF24L01+ radio network of Project Oberon instead of TCP/IP.** It keeps deployments, ReplicaSets and pods with level-triggered controllers, rolls out new versions one pod at a time, stores its state on disk, recovers from lost nodes and pauses evictions when the whole air goes down. Every message fits into 24 bytes and is signed with HalfSipHash. The whole cluster, about 1,400 lines of Oberon, runs in QEMU, in Cozystack as one catalog order, and in a browser tab with six self-checking labs. It is research into what the infrastructure of the past could have been and what it suggests for tomorrow's."
+quick_facts:
+  - label: "Language and system"
+    value: "Oberon-07 on Niklaus Wirth's RISC5 machine, Project Oberon 2013"
+  - label: "Size"
+    value: "About 1,400 lines; the control plane about 800"
+  - label: "Network"
+    value: "nRF24L01+ radio, one 32-byte frame per message, 24 bytes of data"
+  - label: "Protocol"
+    value: "Level-triggered heartbeats and assignments, HalfSipHash-2-4 signature, 16-bit replay counter"
+  - label: "Recovery"
+    value: "A lost node costs about 8 s; a 20 s outage of the air moves no pod"
+  - label: "Where it runs"
+    value: "Browser (WebAssembly), QEMU, KubeVirt, Cozystack (OberonKube)"
+quick_facts_source: "Measurements in impl/kube/README.md of github.com/tym83/paleocomputing"
+faq:
+  - q: "What is Kube?"
+    a: "A minimal Kubernetes control plane written in Oberon: deployments, ReplicaSets and pods with independent level-triggered controllers, a scheduler, rolling updates and a store on disk. Its nodes are Oberon machines that talk over radio."
+  - q: "Why radio instead of TCP/IP?"
+    a: "Wirth's machine has no Ethernet and no TCP/IP stack; its network, described in Project Oberon, is an nRF24L01+ radio. Accepting that limit led to a protocol where every message is one frame carrying the full state, so lost packets need no retransmission."
+  - q: "How does Kube differ from real Kubernetes?"
+    a: "It has no pod isolation, no API server or RBAC, no services, no persistent volumes and a single control plane machine, and it is tested up to eight nodes. It implements the idea of Kubernetes, not Kubernetes itself."
+  - q: "Can I try it without installing anything?"
+    a: "Yes. The cluster lab at tym83.github.io/paleocomputing/oberon/kube.html runs three Oberon machines in a browser tab, with six labs that check themselves from the air."
+  - q: "How do I run Kube in Cozystack?"
+    a: "Plug in the paleocomputing catalog with cozypkg and order an OberonKube: the catalog creates the air, the control plane and the nodes, and the cluster forms by itself from the machines' commands at start."
 primary_keyword: "Kubernetes control plane in Oberon"
 keywords: ["Kubernetes", "Oberon", "Niklaus Wirth", "Project Oberon", "RISC5", "paleocomputing", "level-triggered reconciliation", "nRF24L01+", "HalfSipHash", "KubeVirt", "Cozystack", "QEMU", "WebAssembly", "distributed systems", "retrocomputing"]
 quiz:
