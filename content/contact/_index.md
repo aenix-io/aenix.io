@@ -6,7 +6,7 @@ hero_subtitle: "Book a discovery call, ask a question, or explore a partnership"
 language: "en"
 faq:
   - q: "What happens after I send the form?"
-    a: "The form goes to our sales team, who reply by email to agree a time for the call — or you can skip that step and pick a slot in the calendar directly. Before the call you may get a short question about your current setup so the call can be specific."
+    a: "Your message goes to our sales team, who reply by email — usually within one business day. The form is for questions and requests; to book a call, pick a slot in the calendar instead."
   - q: "What should I prepare for the discovery call?"
     a: "One line on what you want to achieve (sell cloud, replace VMware, run GPUs, support for your Cozystack), a high-level picture of your current infrastructure, any regulatory context, and the platform or service you are evaluating. We do the rest."
   - q: "Is the discovery call confidential?"
@@ -40,7 +40,7 @@ hreflang_de: /de/kontakt/
 
 ## Book a call or send a message {#schedule-a-discovery-call}
 
-Two ways to book a free 30-minute discovery call:
+Book a free 30-minute discovery call in the calendar, or write to us through the form:
 
 <div class="contact-cta-row">
   <a class="contact-cta contact-cta--primary" href="https://zcal.co/i/s5C4-cO1" target="_blank" rel="noopener">
@@ -48,8 +48,8 @@ Two ways to book a free 30-minute discovery call:
     <span class="contact-cta__hint">Instant booking · 30 min</span>
   </a>
   <a class="contact-cta contact-cta--secondary" href="#discovery-form">
-    <span class="contact-cta__label">Or fill out the form below ↓</span>
-    <span class="contact-cta__hint">We reply by email to agree a time</span>
+    <span class="contact-cta__label">Or send us a message ↓</span>
+    <span class="contact-cta__hint">Questions and requests · we reply by email</span>
   </a>
 </div>
 
@@ -74,11 +74,12 @@ If you would like an in-depth architecture review instead, mention "architecture
 
 ## How to reach Ænix
 
-**To talk to Ænix, book a free 30-minute discovery call in the calendar or send the form on this page; for anything else, write to info@aenix.io. On the call we confirm which platform fits — Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform, or enterprise support for self-run Cozystack — and what the next step would be. Contracts for customers in the European Economic Area are signed with AENIX s.r.o., registered in České Budějovice, Czech Republic (IČO 21493871); US contracts with AENIX INC, Delaware, USA. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.**
+**To talk to Ænix, book a free 30-minute discovery call in the calendar or send us a message through the form on this page; for anything else, write to info@aenix.io. On the call we confirm which platform fits — Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform, or enterprise support for self-run Cozystack — and what the next step would be. Contracts for customers in the European Economic Area are signed with AENIX s.r.o., registered in České Budějovice, Czech Republic (IČO 21493871); US contracts with AENIX INC, Delaware, USA. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.**
 
 **Quick facts**
 
-- **Discovery call:** free, 30 minutes, booked in the calendar or through the form on this page
+- **Discovery call:** free, 30 minutes, booked in the calendar
+- **Message form:** on this page; we reply by email
 - **Email:** info@aenix.io (general, press); sales@aenix.io (partners)
 - **EU entity:** AENIX s.r.o., U Trojice 2661/1e, České Budějovice 3, 370 04 České Budějovice, Czech Republic; IČO 21493871, DIČ CZ21493871
 - **US entity:** AENIX INC, 131 Continental Drive, Suite 301, Newark, Delaware 19713, USA; registration number 10075938
@@ -91,7 +92,7 @@ If you would like an in-depth architecture review instead, mention "architecture
 
 | Inquiry | Best route |
 |---|---|
-| **Sales / discovery call** | The [calendar or the form](#schedule-a-discovery-call) above (30 min, no commitment) |
+| **Sales / discovery call** | The [calendar](#schedule-a-discovery-call) above (30 min, no commitment), or a message through the form |
 | **Pre-sales technical questions** | The form above; a solutions engineer replies |
 | **Partner Program** | [Partner Program](/partners/) application form, or email sales@aenix.io |
 | **Existing customer support** | The support channel set up at onboarding; response times per tier are on the [pricing page](/pricing/) |

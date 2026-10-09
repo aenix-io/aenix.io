@@ -190,9 +190,9 @@ Quoted per RFP after a discovery call and a Platform Readiness Assessment. The [
 
 ---
 
-## Book a review
+## Request an architecture review
 
-Tell us your regulatory context (DORA / NIS2 / sectoral), current architecture, and sovereignty requirements — we'll set up a focused architecture review with an Ænix engineer and confirm platform fit.
+Tell us your regulatory context (DORA / NIS2 / sectoral), current architecture, and sovereignty requirements — we reply by email and set up a focused architecture review with an Ænix engineer to confirm platform fit. To talk first, [book a 30-minute call in the calendar](https://zcal.co/i/s5C4-cO1).
 
 {{< pipedrive-form type="demo" >}}
 

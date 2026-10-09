@@ -176,7 +176,7 @@ Eine kommerzielle Public Cloud auf dieser Plattform ist ausführlich beschrieben
 
 ## Wie Sie starten
 
-Nennen Sie uns Ihre Größe, Ihren aktuellen Stack und was Sie heute verkaufen; wir vereinbaren ein fokussiertes Gespräch mit einem Ænix-Engineer, um die Eignung zu klären.
+Nennen Sie uns Ihre Größe, Ihren aktuellen Stack und was Sie heute verkaufen — wir antworten per E-Mail und vereinbaren ein fokussiertes Gespräch mit einem Ænix-Engineer, um die Eignung zu klären. Oder [buchen Sie direkt ein 30-minütiges Gespräch im Kalender](https://zcal.co/i/s5C4-cO1).
 
 {{< pipedrive-form type="demo" >}}
 
