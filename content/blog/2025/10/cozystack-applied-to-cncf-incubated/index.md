@@ -3,6 +3,7 @@ title: "Cozystack Applies for CNCF Incubation"
 description: "Cozystack has submitted its application to move from CNCF Sandbox to the Incubating level. Follow the application and support it on GitHub."
 date: "2025-10-08"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/10/cozystack-bewerbung-cncf-incubation/"
 type: "news"
 topics: ["Cozystack", "CNCF"]
 language: "en"
