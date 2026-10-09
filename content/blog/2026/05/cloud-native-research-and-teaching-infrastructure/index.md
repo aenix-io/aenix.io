@@ -4,7 +4,7 @@ seo_title: "Cloud-native research and teaching infrastructure"
 description: "Architecture patterns for university research and teaching infrastructure: the three missions, GPU scheduling for labs, and the pitfalls that recur."
 date: "2026-05-04"
 cover_image: "/img/blog/covers/cloud-native-research-and-teaching-infrastructure.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"

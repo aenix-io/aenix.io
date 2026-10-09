@@ -4,7 +4,7 @@ seo_title: "Datenresidenz 2026: Anforderungen an die Cloud"
 description: "Was Datenresidenz-Regeln 2026 tatsächlich verlangen, wo typische Cloud-Setups bei Prüfungen scheitern und welche Architektur Residenz auf jeder Schicht belegt."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/datenresidenz-anforderungen-2026.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup and DR", "Observability"]
 language: "de"

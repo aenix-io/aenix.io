@@ -4,7 +4,7 @@ seo_title: "AI Platform: when sustained inference beats cloud GPU"
 description: "GPU economics for sustained inference on the Ænix AI Platform: multi-tenant GPU scheduling, fractional sharing, and when dedicated AI infrastructure pays back."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/ai-ml-edition-sustained-gpu-economics.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["AI and ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
 language: "en"

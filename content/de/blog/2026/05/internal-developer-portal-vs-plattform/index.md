@@ -5,7 +5,7 @@ description: "Portal und Plattform sind nicht dasselbe. Wo Backstage wirklich pa
 slug: "internal-developer-portal-vs-plattform"
 date: "2026-05-14"
 cover_image: "/img/blog/covers/de/internal-developer-portal-vs-plattform.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Backstage", "Kubernetes", "Platform Engineering", "Compliance", "Observability"]
 language: "de"

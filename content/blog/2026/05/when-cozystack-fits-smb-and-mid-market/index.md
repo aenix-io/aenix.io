@@ -4,7 +4,7 @@ seo_title: "When Cozystack fits SMB and mid-market teams"
 description: "Most SMB organizations do not need Cozystack. An honest test for when they do, and what to run instead when they do not."
 date: "2026-05-30"
 cover_image: "/img/blog/covers/when-cozystack-fits-smb-and-mid-market.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "VMware", "Proxmox", "Kubernetes", "Cozystack", "Sovereignty"]
 language: "en"

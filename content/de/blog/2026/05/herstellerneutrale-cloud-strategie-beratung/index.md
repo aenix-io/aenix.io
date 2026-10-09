@@ -5,7 +5,7 @@ description: "Was eine herstellerneutrale Cloud-Strategieberatung tatsächlich l
 slug: "herstellerneutrale-cloud-strategie-beratung"
 date: "2026-05-06"
 cover_image: "/img/blog/covers/de/herstellerneutrale-cloud-strategie-beratung.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cloud", "Platform Engineering", "Sovereignty", "Compliance"]
 language: "de"

@@ -4,7 +4,7 @@ seo_title: "Hosting-Anbieter: vom VPS zum Cloud-Produkt"
 description: "Wie Hosting-Anbieter vom VPS-Geschäft zu einem eigenen Cloud-Produkt kommen: Zielarchitektur, Reihenfolge der Migration und die Wirtschaftlichkeit des Angebots."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/hosting-anbieter-plattform-modernisierung.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "GPU", "Multi-tenancy", "Hosting", "Migration"]
 language: "de"

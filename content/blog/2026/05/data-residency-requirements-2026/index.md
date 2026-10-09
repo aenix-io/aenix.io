@@ -4,7 +4,7 @@ seo_title: "Data residency requirements in 2026: a practical guide"
 description: "What data residency actually requires at control level, why most cloud setups fail on inspection, and the architectural patterns that hold up."
 date: "2026-05-08"
 cover_image: "/img/blog/covers/data-residency-requirements-2026.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "tutorial"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Compliance", "Backup and DR"]
 language: "en"

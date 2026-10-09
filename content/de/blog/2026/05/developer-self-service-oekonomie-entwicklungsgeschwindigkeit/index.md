@@ -5,7 +5,7 @@ description: "Kosten der Wartezeit auf Umgebungen, Golden-Path-Abdeckung, Plattf
 slug: "developer-self-service-oekonomie-entwicklungsgeschwindigkeit"
 date: "2026-05-13"
 cover_image: "/img/blog/covers/de/developer-self-service-oekonomie-entwicklungsgeschwindigkeit.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
 language: "de"

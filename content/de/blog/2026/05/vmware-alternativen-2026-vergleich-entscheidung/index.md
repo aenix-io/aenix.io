@@ -5,7 +5,7 @@ description: "Entscheidungsrahmen und Rangliste der ernstzunehmenden VMware-Alte
 slug: "vmware-alternativen-2026-vergleich-entscheidung"
 date: "2026-05-02"
 cover_image: "/img/blog/covers/de/vmware-alternativen-2026-vergleich-entscheidung.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "OpenStack", "OpenShift", "Kubernetes", "Cozystack", "Sovereignty"]
 language: "de"

@@ -4,7 +4,7 @@ seo_title: "Wann Cozystack für den Mittelstand passt"
 description: "Ein ehrlicher Test für KMU und Mittelstand: unter welchen Bedingungen Cozystack passt, wann nicht, typische Einsatzbeispiele und wie die Zusammenarbeit abläuft."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/wann-cozystack-fuer-mittelstand-passt.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "Proxmox", "Cozystack", "GPU", "Multi-tenancy"]
 language: "de"

@@ -5,7 +5,7 @@ description: "Zwei KubeVirt-basierte Plattformen im Vergleich: gemeinsame Grundl
 slug: "openshift-vs-cozystack-vergleich-kubevirt"
 date: "2026-05-19"
 cover_image: "/img/blog/covers/de/openshift-vs-cozystack-vergleich-kubevirt.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]
 language: "de"

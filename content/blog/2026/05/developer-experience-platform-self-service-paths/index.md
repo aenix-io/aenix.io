@@ -4,7 +4,7 @@ seo_title: "Developer experience platforms: self-service that works"
 description: "The ten golden paths most worth building, the five characteristics that make them work, and the architectural decisions that shape self-service."
 date: "2026-05-09"
 cover_image: "/img/blog/covers/developer-experience-platform-self-service-paths.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Backstage", "Kubernetes"]
 language: "en"

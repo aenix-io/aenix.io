@@ -4,7 +4,7 @@ seo_title: "Best VMware alternatives in 2026: decision framework"
 description: "A decision framework and ranked comparison of the credible VMware alternatives in 2026 — what each is, who it fits, and what migration costs."
 date: "2026-05-02"
 cover_image: "/img/blog/covers/best-vmware-alternatives-2026-detailed-comparison.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "OpenStack", "OpenShift", "Kubernetes", "Cozystack", "Sovereignty"]
 language: "en"

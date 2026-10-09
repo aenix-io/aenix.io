@@ -4,7 +4,7 @@ seo_title: "Smart grid platform architecture: IT/OT, edge and AI"
 description: "A smart-grid architectural reference for energy operators: IT/OT boundaries that work, NIS2 controls, AI on grid-operational data, and legacy migration."
 date: "2026-05-26"
 cover_image: "/img/blog/covers/smart-grid-platform-architecture-it-ot.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["NIS2", "AI and ML", "GPU", "Compliance"]
 language: "en"

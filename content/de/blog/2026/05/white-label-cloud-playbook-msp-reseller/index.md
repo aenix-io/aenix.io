@@ -5,7 +5,7 @@ description: "Architektur und Reseller-Ökonomie für den Start einer White-Labe
 slug: "white-label-cloud-playbook-msp-reseller"
 date: "2026-05-31"
 cover_image: "/img/blog/covers/de/white-label-cloud-playbook-msp-reseller.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Hosting", "Observability"]
 language: "de"

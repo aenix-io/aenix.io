@@ -4,7 +4,7 @@ seo_title: "Proxmox to Cozystack: when single-tenant outgrows itself"
 description: "When does Proxmox VE outgrow single-tenant? A Proxmox-to-Cozystack migration guide for MSPs and growing teams hitting multi-tenancy and scale limits."
 date: "2026-05-23"
 cover_image: "/img/blog/covers/proxmox-migration-when-cozystack-fits.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "tutorial"
 topics: ["Proxmox", "Cozystack", "Migration", "Multi-tenancy", "Hosting"]
 language: "en"

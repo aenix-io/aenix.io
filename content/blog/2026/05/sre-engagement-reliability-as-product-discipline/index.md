@@ -4,7 +4,7 @@ seo_title: "SRE as a product discipline: what an engagement changes"
 description: "Embed SRE in product teams, centralize it as a function, or buy an engagement — what each delivers and how to measure it."
 date: "2026-05-28"
 cover_image: "/img/blog/covers/sre-engagement-reliability-as-product-discipline.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DevOps", "Platform Engineering", "Observability", "Cozystack"]
 language: "en"

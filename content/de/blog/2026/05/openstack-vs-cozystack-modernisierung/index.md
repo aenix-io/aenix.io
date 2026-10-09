@@ -5,7 +5,7 @@ description: "Wo OpenStack weiterhin überzeugt, woher der betriebliche Druck ko
 slug: "openstack-vs-cozystack-modernisierung"
 date: "2026-05-21"
 cover_image: "/img/blog/covers/de/openstack-vs-cozystack-modernisierung.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["OpenStack", "Kubernetes", "Cozystack", "Sovereignty", "Migration"]
 language: "de"

@@ -5,7 +5,7 @@ description: "GPU-Wirtschaftlichkeit für Dauer-Inferenz, mandantenfähiges GPU-
 slug: "ai-platform-gpu-wirtschaftlichkeit-inferenz"
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/ai-platform-gpu-wirtschaftlichkeit-inferenz.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["AI and ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
 language: "de"

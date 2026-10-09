@@ -4,7 +4,7 @@ seo_title: "Nutanix vs Cozystack vs VMware in 2026"
 description: "Nutanix HCI with AHV, VMware after Broadcom, and Cozystack compared on architecture, where each wins, and the migration economics between them."
 date: "2026-05-19"
 cover_image: "/img/blog/covers/nutanix-vs-cozystack-vs-vmware.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Nutanix", "Kubernetes", "Cozystack", "KubeVirt", "Cilium"]
 language: "en"

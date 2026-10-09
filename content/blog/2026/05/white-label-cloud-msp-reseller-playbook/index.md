@@ -4,7 +4,7 @@ seo_title: "White-label cloud playbook for MSPs and resellers"
 description: "Architecture and reseller economics for launching a white-label cloud under your own brand, and how the engagement is structured."
 date: "2026-05-31"
 cover_image: "/img/blog/covers/white-label-cloud-msp-reseller-playbook.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Hosting", "Observability"]
 language: "en"

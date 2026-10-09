@@ -4,7 +4,7 @@ seo_title: "How to build a sovereign cloud in the EU and Central Asia"
 description: "What sovereignty actually means in practice, the frameworks that define it, and the architectural patterns for a sovereign cloud in the EU and Central Asia."
 date: "2026-05-03"
 cover_image: "/img/blog/covers/build-sovereign-cloud-eu-and-central-asia.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "tutorial"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup and DR", "Observability"]
 language: "en"

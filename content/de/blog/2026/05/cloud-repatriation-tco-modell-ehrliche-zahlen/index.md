@@ -5,7 +5,7 @@ description: "Warum die meisten TCO-Modelle zur Cloud Repatriation falsch sind: 
 slug: "cloud-repatriation-tco-modell-ehrliche-zahlen"
 date: "2026-05-05"
 cover_image: "/img/blog/covers/de/cloud-repatriation-tco-modell-ehrliche-zahlen.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cloud Repatriation", "Financial Services", "Platform Engineering", "Backup and DR", "Observability"]
 language: "de"

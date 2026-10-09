@@ -4,7 +4,7 @@ seo_title: "Launch a cloud product: playbook for hosting providers"
 description: "The six layers of a customer-facing cloud product, the architectural decisions specific to public cloud, and where launches stumble commercially."
 date: "2026-05-17"
 cover_image: "/img/blog/covers/launch-customer-facing-cloud-product.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Kubernetes", "Sovereignty", "AI and ML", "Multi-tenancy", "Hosting"]
 language: "en"

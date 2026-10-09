@@ -4,7 +4,7 @@ seo_title: "Telco cloud modernization: from NFV to Kubernetes edge"
 description: "How tier-1 and tier-2 telecom operators modernize legacy NFV environments into Kubernetes-native sovereign cloud platforms — a guide for architects."
 date: "2026-05-28"
 cover_image: "/img/blog/covers/telco-cloud-edge-nfv-modernization.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Telco", "Sovereignty", "Multi-tenancy", "Cozystack", "Cloud", "AI and ML"]
 language: "en"

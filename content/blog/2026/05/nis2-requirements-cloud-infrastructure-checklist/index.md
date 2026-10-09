@@ -4,7 +4,7 @@ seo_title: "NIS2 requirements for cloud infrastructure explained"
 description: "NIS2 Articles 21, 23, 28 and 12 mapped to concrete cloud architecture controls, with a working checklist and the architectural failures that recur."
 date: "2026-05-18"
 cover_image: "/img/blog/covers/nis2-requirements-cloud-infrastructure-checklist.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["NIS2", "Financial Services", "Compliance"]
 language: "en"

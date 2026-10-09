@@ -4,7 +4,7 @@ seo_title: "Private Cloud Platform: DORA and NIS2 architecture"
 description: "Mapping DORA ICT-risk and third-party obligations and the NIS2 Article 21(2) measures onto a defensible cloud architecture for regulated enterprises."
 date: "2026-05-10"
 cover_image: "/img/blog/covers/enterprise-edition-dora-cloud-architecture.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance", "Sovereignty", "Multi-tenancy", "Cozystack"]
 language: "en"

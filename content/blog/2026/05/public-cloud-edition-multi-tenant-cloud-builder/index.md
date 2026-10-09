@@ -4,7 +4,7 @@ seo_title: "Public Cloud Platform at operator scale"
 description: "What an operator-scale sovereign cloud build on Ænix Public Cloud Platform covers for telcos, banks and national operators: phases, timeline, team, pitfalls."
 date: "2026-05-25"
 cover_image: "/img/blog/covers/public-cloud-edition-multi-tenant-cloud-builder.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Sovereignty", "Cloud", "Platform Engineering"]
 language: "en"

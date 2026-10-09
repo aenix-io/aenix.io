@@ -4,7 +4,7 @@ seo_title: "Hybrid cloud architecture patterns for 2026"
 description: "Five hybrid cloud patterns that work in production, what makes them work, the failure modes to avoid, and when hybrid is the wrong answer."
 date: "2026-05-13"
 cover_image: "/img/blog/covers/hybrid-cloud-architecture-patterns-2026.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "tutorial"
 topics: ["AI and ML", "Observability"]
 language: "en"

@@ -4,7 +4,7 @@ seo_title: "MSP-Cloud-Plattform: Cloud-Angebot unter eigener Marke"
 description: "Wie MSPs ein Cloud-Angebot unter eigener Marke aufbauen: mehrstufige Mandanten, eigenes Portal, Abrechnung, Reseller-Marge und der Ablauf des Projekts."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/msp-cloud-plattform-modernisierung.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Hosting"]
 language: "de"

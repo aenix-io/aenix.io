@@ -4,7 +4,7 @@ seo_title: "Internal developer platform examples without Backstage"
 description: "Six internal developer platform patterns from production, the tools that show up across them, and how to pick one without defaulting to Backstage."
 date: "2026-05-14"
 cover_image: "/img/blog/covers/internal-developer-platform-examples-without-backstage.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "article"
 topics: ["Backstage", "Kubernetes", "KubeVirt", "Sovereignty", "Multi-tenancy", "Platform Engineering"]
 language: "en"

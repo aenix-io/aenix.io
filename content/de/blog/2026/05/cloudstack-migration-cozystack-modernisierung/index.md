@@ -5,7 +5,7 @@ description: "Wie Service Provider Apache CloudStack auf Cozystack als Kubernete
 slug: "cloudstack-migration-cozystack-modernisierung"
 date: "2026-05-06"
 cover_image: "/img/blog/covers/de/cloudstack-migration-cozystack-modernisierung.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "tutorial"
 topics: ["CloudStack", "Cozystack", "Migration", "Hosting", "Multi-tenancy"]
 language: "de"

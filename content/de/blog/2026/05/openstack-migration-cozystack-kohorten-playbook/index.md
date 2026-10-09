@@ -5,7 +5,7 @@ description: "Kohortenbasiertes Playbook für die Migration von produktivem Open
 slug: "openstack-migration-cozystack-kohorten-playbook"
 date: "2026-05-20"
 cover_image: "/img/blog/covers/de/openstack-migration-cozystack-kohorten-playbook.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "tutorial"
 topics: ["OpenStack", "Cozystack", "Migration", "Multi-tenancy", "Kubernetes"]
 language: "de"

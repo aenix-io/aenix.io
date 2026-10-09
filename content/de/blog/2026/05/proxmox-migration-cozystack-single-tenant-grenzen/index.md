@@ -5,7 +5,7 @@ description: "Wann wächst Proxmox VE über Single-Tenant hinaus? Leitfaden zur 
 slug: "proxmox-migration-cozystack-single-tenant-grenzen"
 date: "2026-05-23"
 cover_image: "/img/blog/covers/de/proxmox-migration-cozystack-single-tenant-grenzen.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "tutorial"
 topics: ["Proxmox", "Cozystack", "Migration", "Multi-tenancy", "Hosting"]
 language: "de"

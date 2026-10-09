@@ -4,7 +4,7 @@ seo_title: "Hosting provider modernization: VPS to cloud product"
 description: "Architectural starting point, migration sequencing, and unit economics for hosting providers modernizing onto a Kubernetes-native multi-tenant platform."
 date: "2026-05-12"
 cover_image: "/img/blog/covers/hosting-provider-platform-modernization.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"

@@ -4,7 +4,7 @@ seo_title: "Cloud Readiness Assessment: Methodik in 14 Tagen"
 description: "Was ein Platform Readiness Assessment in 14 Tagen abdeckt: vier parallele Workstreams, der Ablauf Tag für Tag und was der Abschlussbericht konkret enthält."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/cloud-readiness-assessment-methodik.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "NIS2", "Cozystack", "GitOps", "Cloud Repatriation", "Platform Engineering"]
 language: "de"

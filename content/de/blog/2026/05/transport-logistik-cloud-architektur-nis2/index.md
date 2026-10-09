@@ -4,7 +4,7 @@ seo_title: "Transport und Logistik: Cloud-Architektur mit NIS2"
 description: "Cloud-Architektur für Transport und Logistik: NIS2-Pflichten, ein dreistufiges Muster von Edge bis Rechenzentrum, Kontrollen für den Sektor und KI-Anwendungen."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/transport-logistik-cloud-architektur-nis2.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["NIS2", "Cozystack"]
 language: "de"

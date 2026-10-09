@@ -3,7 +3,7 @@ title: "Seven decisions when designing sovereign AI architecture"
 description: "Seven architecture decisions behind a sovereign AI stack, how they interlock, and the combinations that recur in real deployments."
 date: "2026-05-27"
 cover_image: "/img/blog/covers/sovereign-ai-architecture-decisions.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "AI and ML", "Multi-tenancy", "Financial Services"]
 language: "en"

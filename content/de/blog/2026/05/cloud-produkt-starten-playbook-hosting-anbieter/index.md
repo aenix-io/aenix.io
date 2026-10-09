@@ -5,7 +5,7 @@ description: "Die sechs Schichten eines Cloud-Produkts für Endkunden, die Archi
 slug: "cloud-produkt-starten-playbook-hosting-anbieter"
 date: "2026-05-17"
 cover_image: "/img/blog/covers/de/cloud-produkt-starten-playbook-hosting-anbieter.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "announcement"
 topics: ["VMware", "Kubernetes", "Sovereignty", "AI and ML", "Multi-tenancy", "Hosting"]
 language: "de"

@@ -4,7 +4,7 @@ seo_title: "Proxmox vs VMware vs Cozystack: a 2026 comparison"
 description: "Proxmox VE, VMware after Broadcom, and Cozystack compared by architecture and use case, with a feature matrix and the realistic migration paths."
 date: "2026-05-24"
 cover_image: "/img/blog/covers/proxmox-vs-vmware-vs-cozystack-comparison.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Proxmox", "Kubernetes", "Cozystack", "Sovereignty", "Multi-tenancy"]
 language: "en"

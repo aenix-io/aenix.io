@@ -5,7 +5,7 @@ description: "Industrie-4.0-Architektur 2026: Muster von der Edge bis zum Core, 
 slug: "industrie-4-0-plattform-cloud-edge-fertigung"
 date: "2026-05-17"
 cover_image: "/img/blog/covers/de/industrie-4-0-plattform-cloud-edge-fertigung.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["NIS2", "Cozystack", "Sovereignty", "AI and ML", "Compliance"]
 language: "de"

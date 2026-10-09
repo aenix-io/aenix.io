@@ -4,7 +4,7 @@ seo_title: "Private LLM deployment: on-premise AI infrastructure guide"
 description: "The six layers of a real private LLM deployment — hardware, platform, serving, model, application, operations — with the pitfalls at each one."
 date: "2026-05-23"
 cover_image: "/img/blog/covers/private-llm-deployment-guide.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "tutorial"
 topics: ["DORA", "Kubernetes", "Sovereignty", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"

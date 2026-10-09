@@ -5,7 +5,7 @@ slug: "sovereign-ai-architektur-entscheidungen"
 description: "Sieben Architekturentscheidungen hinter einem souveränen AI-Stack, wie sie ineinandergreifen und welche Kombinationen in realen Deployments immer wiederkehren."
 date: "2026-05-27"
 cover_image: "/img/blog/covers/de/sovereign-ai-architektur-entscheidungen.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "AI and ML", "Multi-tenancy", "Financial Services"]
 language: "de"

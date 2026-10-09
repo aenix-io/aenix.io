@@ -4,7 +4,7 @@ seo_title: "K-12 school district cloud infrastructure"
 description: "Why K-12 infrastructure differs from universities, when a district actually needs sovereign infrastructure, and the architecture pattern that fits."
 date: "2026-05-15"
 cover_image: "/img/blog/covers/k12-school-district-cloud-infrastructure.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI and ML", "Multi-tenancy", "Compliance"]
 language: "en"

@@ -5,7 +5,7 @@ description: "Cozystack und VMware Schicht für Schicht verglichen — Compute, 
 slug: "cozystack-vs-vmware-detailvergleich"
 date: "2026-05-07"
 cover_image: "/img/blog/covers/de/cozystack-vs-vmware-detailvergleich.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]
 language: "de"

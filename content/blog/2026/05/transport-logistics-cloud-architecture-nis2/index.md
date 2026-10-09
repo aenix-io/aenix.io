@@ -4,7 +4,7 @@ seo_title: "Transport and logistics cloud architecture under NIS2"
 description: "A three-tier architecture for transport and logistics, the NIS2 controls that apply to the sector, and where AI workloads fit."
 date: "2026-05-29"
 cover_image: "/img/blog/covers/transport-logistics-cloud-architecture-nis2.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["NIS2", "Cozystack", "Sovereignty", "AI and ML", "GPU"]
 language: "en"

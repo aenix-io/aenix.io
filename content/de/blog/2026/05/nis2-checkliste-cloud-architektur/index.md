@@ -4,7 +4,7 @@ seo_title: "NIS2-Checkliste für die Cloud-Infrastruktur"
 description: "NIS2-Anforderungen an die Cloud-Infrastruktur: Risikomanagement-Maßnahmen nach Artikel 21, Meldefristen nach Artikel 23 und was die Architektur leisten muss."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/nis2-checkliste-cloud-architektur.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["NIS2", "Cozystack", "Compliance", "Backup and DR"]
 language: "de"

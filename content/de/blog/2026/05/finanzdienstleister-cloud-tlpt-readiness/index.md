@@ -5,7 +5,7 @@ description: "Wie TLPT-Readiness unter DORA 2026 tatsächlich aussieht — für 
 slug: "finanzdienstleister-cloud-tlpt-readiness"
 date: "2026-05-11"
 cover_image: "/img/blog/covers/de/finanzdienstleister-cloud-tlpt-readiness.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Financial Services", "DORA", "Compliance", "Sovereignty", "Cozystack"]
 language: "de"

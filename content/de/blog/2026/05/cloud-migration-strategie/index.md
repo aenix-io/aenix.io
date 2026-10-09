@@ -4,7 +4,7 @@ seo_title: "Cloud-Migrationsstrategie 2026 für DACH-Unternehmen"
 description: "Cloud-Migration 2026: welche Auslöser zählen, wie Sie Workloads klassifizieren und sinnvoll sequenzieren und an welchen Fehlern die meisten Projekte scheitern."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/cloud-migration-strategie.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "NIS2", "VMware", "Cozystack", "GPU", "Migration"]
 language: "de"

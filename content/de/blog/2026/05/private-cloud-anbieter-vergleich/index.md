@@ -4,7 +4,7 @@ seo_title: "Private-Cloud-Anbieter im Vergleich 2026"
 description: "Private-Cloud-Plattformen 2026 im Überblick: Open Source und kommerziell, souveräne Regionen und regionale Anbieter, Auswahlkriterien und Migrationspfade."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/private-cloud-anbieter-vergleich.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Cozystack", "KubeVirt"]
 language: "de"

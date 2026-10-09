@@ -5,7 +5,7 @@ description: "Nutanix HCI mit AHV, VMware nach Broadcom und Cozystack im Verglei
 slug: "nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform"
 date: "2026-05-19"
 cover_image: "/img/blog/covers/de/nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Nutanix", "Kubernetes", "Cozystack", "KubeVirt", "Cilium"]
 language: "de"

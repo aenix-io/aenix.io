@@ -4,7 +4,7 @@ seo_title: "Reverse Cloud Migration: Leitfaden für 2026"
 description: "Reverse Cloud Migration 2026: warum Repatriation selten alles oder nichts ist, ein Playbook in fünf Schritten und die Fehler, die Ausstiegsprojekte verzögern."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/reverse-cloud-migration-leitfaden.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "Cloud Repatriation", "Migration"]
 language: "de"

@@ -4,7 +4,7 @@ seo_title: "VMware migration tools and strategy for 2026"
 description: "Three VMware migration paths, the tooling for KubeVirt-based migration, where migrations stumble, and realistic cost ranges."
 date: "2026-05-29"
 cover_image: "/img/blog/covers/vmware-migration-tools-and-strategy.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Nutanix", "OpenShift", "Kubernetes", "Cozystack", "KubeVirt"]
 language: "en"

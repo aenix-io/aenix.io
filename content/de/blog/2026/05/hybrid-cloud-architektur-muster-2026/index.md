@@ -4,7 +4,7 @@ seo_title: "Hybrid-Cloud-Architektur: fünf Muster für 2026"
 description: "Fünf Hybrid-Cloud-Muster, die 2026 funktionieren, drei Architekturprinzipien dahinter und die Fälle, in denen Hybrid die falsche Antwort ist."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/hybrid-cloud-architektur-muster-2026.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "GPU", "Financial Services"]
 language: "de"

@@ -4,7 +4,7 @@ seo_title: "Proxmox vs. VMware vs. Cozystack im Vergleich"
 description: "Proxmox VE, VMware nach Broadcom und Cozystack im Vergleich: Ausrichtung, Stärken und Grenzen jeder Plattform und wie Sie die passende Wahl treffen."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/proxmox-vs-vmware-vs-cozystack.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Proxmox", "Kubernetes", "Cozystack", "KubeVirt", "Cilium"]
 language: "de"

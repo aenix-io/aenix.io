@@ -4,7 +4,7 @@ seo_title: "VMware-Ablösung nach Broadcom: Leitfaden"
 description: "VMware-Ablösung nach Broadcom: warum Teams jetzt wechseln, wie sich VMware auf Cozystack abbildet und wie eine Migration in sechs Phasen abläuft."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/vmware-ablosung-nach-broadcom.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "NIS2", "VMware", "Kubernetes", "Cozystack", "KubeVirt"]
 language: "de"

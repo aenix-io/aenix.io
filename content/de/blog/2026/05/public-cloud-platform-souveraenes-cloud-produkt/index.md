@@ -5,7 +5,7 @@ slug: "public-cloud-platform-souveraenes-cloud-produkt"
 description: "Was ein souveräner Cloud-Aufbau im Betreibermaßstab auf der Ænix Public Cloud Platform für Telcos, Banken und nationale Betreiber umfasst: Phasen, Zeitplan."
 date: "2026-05-25"
 cover_image: "/img/blog/covers/de/public-cloud-platform-souveraenes-cloud-produkt.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Sovereignty", "Cloud", "Platform Engineering"]
 language: "de"

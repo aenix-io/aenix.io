@@ -5,7 +5,7 @@ description: "Die zehn Golden Paths, die sich am meisten lohnen, die fünf Merkm
 slug: "developer-experience-plattform-self-service-pfade"
 date: "2026-05-09"
 cover_image: "/img/blog/covers/de/developer-experience-plattform-self-service-pfade.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Backstage", "Kubernetes"]
 language: "de"

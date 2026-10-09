@@ -4,7 +4,7 @@ seo_title: "Cloud-Infrastruktur für Schulträger"
 description: "Cloud-Infrastruktur für Schulträger: warum Schulen andere Anforderungen haben als Hochschulen, passende Architekturmuster und die häufigsten Fehler."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/k12-schultraeger-cloud-infrastruktur.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Multi-tenancy"]
 language: "de"
