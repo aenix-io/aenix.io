@@ -1,5 +1,6 @@
 ---
 title: "Join Ænix at CloudFest 2026"
+seo_title: "Join Ænix at CloudFest 2026 — booth Z22"
 description: "Meet the Ænix team at CloudFest 2026, booth Z22: talk to us about building a cloud platform for hosting providers with Cozystack."
 date: "2026-02-27"
 author: "Timur Tukaev"

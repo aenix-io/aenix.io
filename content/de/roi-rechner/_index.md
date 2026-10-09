@@ -70,7 +70,7 @@ Die Migrationskosten sind ein Richtwert aus dem Rechner (8.000 USD + 140 USD pro
 
 ## Unit Economics für Hosting-Anbieter
 
-Wenn Sie Managed Cloud an Ihre eigenen Kunden verkaufen, modelliert unser vollständiger **[Unit-Economics-Rechner für Anbieter (englisch)](/isp-calculator/)** die monatliche Ergebnisrechnung — Infrastruktur-Footprint, Service-Portfolio (Managed Kubernetes, VMs, Datenbanken, GPU, Object Storage), Auslastung, Personal und Amortisation — mit Unterstützung mehrerer Währungen und PDF-Bericht per Klick.
+Wenn Sie Managed Cloud an Ihre eigenen Kunden verkaufen, modelliert unser vollständiger **[Unit-Economics-Rechner für Anbieter (englisch)](/de/hosting-anbieter-rechner/)** die monatliche Ergebnisrechnung — Infrastruktur-Footprint, Service-Portfolio (Managed Kubernetes, VMs, Datenbanken, GPU, Object Storage), Auslastung, Personal und Amortisation — mit Unterstützung mehrerer Währungen und PDF-Bericht per Klick.
 
 <div class="cta-row">
   <a class="cta-primary" href="/isp-calculator/">Rechner öffnen (englisch) →</a>

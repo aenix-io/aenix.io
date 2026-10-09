@@ -135,8 +135,8 @@ Werden Sie Teil unserer Community, entwickeln Sie Ihre eigenen Managed Services,
 
 - [DIY: Create Your Own Cloud with Kubernetes](https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-1/)
 - [How we built a dynamic Kubernetes API Server for the API Aggregation Layer in Cozystack](https://kubernetes.io/blog/2024/11/21/dynamic-kubernetes-api-server-for-cozystack/)
-- [Cozystack Becomes a CNCF Sandbox Project](/blog/2025/03/cozystack-becomes-a-cncf-sandbox-project/)
-- [Cozystack Recognized in CNCF’s CNAI Landscape](/blog/2025/05/cozystack-recognized-in-cncfs-cnai-landscape/)
+- [Cozystack Becomes a CNCF Sandbox Project](/de/blog/2025/03/cozystack-wird-cncf-sandbox-projekt/)
+- [Cozystack Recognized in CNCF’s CNAI Landscape](/de/blog/2025/05/cozystack-cncf-cloud-native-ai-landscape/)
 
 **Videos**
 

@@ -131,7 +131,7 @@ Sie nutzen kein WHMCS oder ein anderes System? Wir unterstützen Hoster und Clou
 - **Integrieren** — Cozystack und Billing mit anderen Control Panels.
 - **Paketieren und ergänzen** — die konkreten Anwendungen und Dienste, die Ihre Kunden nachfragen.
 
-Modellieren Sie das Geschäft im **[Rechner für die Unit Economics von Hosting-Anbietern](/isp-calculator/)** (Englisch), sehen Sie sich die **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** an und lesen Sie die anonymisierte **[Fallstudie zur souveränen Public Cloud](/de/case-studies/sovereign-public-cloud/)**.
+Modellieren Sie das Geschäft im **[Rechner für die Unit Economics von Hosting-Anbietern](/de/hosting-anbieter-rechner/)** (Englisch), sehen Sie sich die **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** an und lesen Sie die anonymisierte **[Fallstudie zur souveränen Public Cloud](/de/case-studies/sovereign-public-cloud/)**.
 
 ---
 

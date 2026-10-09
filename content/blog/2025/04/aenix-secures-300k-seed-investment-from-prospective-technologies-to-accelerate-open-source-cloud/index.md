@@ -39,7 +39,7 @@ For more information about Ænix and Cozystack, visit [https://aenix.io](https:/
 
 ## About Ænix
 
-Ænix builds open-source PaaS solutions that enable companies and service providers to deploy sovereign cloud infrastructure. Cozystack, maintained by Ænix, simplifies running VMs, containers, databases, and AI workloads while ensuring compliance and security.
+Ænix builds open-source PaaS solutions that enable companies and service providers to deploy sovereign cloud infrastructure. Cozystack, created and co-maintained by Ænix, simplifies running VMs, containers, databases, and AI workloads while ensuring compliance and security.
 
 ## About Prospective Technologies
 

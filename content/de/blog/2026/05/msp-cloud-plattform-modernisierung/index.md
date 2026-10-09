@@ -112,7 +112,7 @@ Bei Provider-Größe ist die Plattform anschließend über den produktisierten I
 
 ## Die Wirtschaftlichkeit in einem Absatz
 
-Es gibt keine Lizenz pro CPU oder pro Core: Cozystack steht unter Apache 2.0, und Ænix verkauft eine Subscription je 10 Nodes und Monat — Basic 1.250 $, Standard 3.000 $, Plus 5.500 $ bei jährlicher Abrechnung, Enterprise auf individuelle Anfrage. Für ein gebrandetes Kundenprodukt sollten Sie mit Standard oder höher planen. MSPs, die zusätzlich Ænix-Subscriptions und Support weiterverkaufen, können dem [Partnerprogramm](/de/partner/) beitreten und bis zu 40 % Marge erzielen. Den Rest modelliert der [Rechner für die Unit Economics von Hosting-Anbietern](/isp-calculator/), und das [White-Label-Playbook](/de/blog/2026/05/white-label-cloud-playbook-msp-reseller/) geht auf die Reseller-Preisgestaltung ein.
+Es gibt keine Lizenz pro CPU oder pro Core: Cozystack steht unter Apache 2.0, und Ænix verkauft eine Subscription je 10 Nodes und Monat — Basic 1.250 $, Standard 3.000 $, Plus 5.500 $ bei jährlicher Abrechnung, Enterprise auf individuelle Anfrage. Für ein gebrandetes Kundenprodukt sollten Sie mit Standard oder höher planen. MSPs, die zusätzlich Ænix-Subscriptions und Support weiterverkaufen, können dem [Partnerprogramm](/de/partner/) beitreten und bis zu 40 % Marge erzielen. Den Rest modelliert der [Rechner für die Unit Economics von Hosting-Anbietern](/de/hosting-anbieter-rechner/), und das [White-Label-Playbook](/de/blog/2026/05/white-label-cloud-playbook-msp-reseller/) geht auf die Reseller-Preisgestaltung ein.
 
 ## Wann das nicht passt
 

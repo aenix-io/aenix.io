@@ -170,7 +170,7 @@ Platform:
 
 Die Tabelle rechnet mit einem vollständigen eigenen Team für Produkt,
 Plattform und Kundensupport. Der reine Plattformbetrieb ist kleiner: Der
-[ISP-Rechner](/isp-calculator/) setzt dafür etwa 1,3 Vollzeit-Engineers
+[ISP-Rechner](/de/hosting-anbieter-rechner/) setzt dafür etwa 1,3 Vollzeit-Engineers
 bei 10 Nodes und etwa 2,6 bei 40 Nodes an.
 
 Bei 25–50 €/Monat Marge pro Tenant (40–80 € ARPU nach 15–30 € direkten
@@ -178,7 +178,7 @@ Infrastrukturkosten) liegt der Break-even je nach ARPU-Mix und Gehaltsniveau
 bei **etwa 1.200–4.000 zahlenden Tenants**. Das ist der Fall eines
 vollständigen Programms mit eigenem Team; ein Start mit 10 Nodes in der
 Basic-Stufe und vorhandenem Personal erreicht den Break-even deutlich
-früher — rechnen Sie Ihre eigenen Zahlen im [ISP-Rechner](/isp-calculator/) durch.
+früher — rechnen Sie Ihre eigenen Zahlen im [ISP-Rechner](/de/hosting-anbieter-rechner/) durch.
 
 Für Provider, die heute ~500 Kunden auf Legacy-Infrastruktur betreiben
 und den Wechsel prüfen, ist das entscheidend: Sie brauchen einen
