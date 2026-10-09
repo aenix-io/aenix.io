@@ -3,6 +3,7 @@ title: "Cozystack v0.41.0: Managed MongoDB"
 description: "Cozystack v0.41.0 adds MongoDB as a managed application next to PostgreSQL, MySQL and Redis, plus improvements, fixes and dependency updates."
 date: "2026-01-23"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/01/cozystack-v0-41-managed-mongodb/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Observability", "etcd"]
 language: "en"
