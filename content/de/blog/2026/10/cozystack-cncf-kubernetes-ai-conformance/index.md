@@ -28,7 +28,7 @@ faq:
   - q: "Ist das dasselbe wie eine Certified-Kubernetes-Distribution?"
     a: "Nein, es baut darauf auf. Certified Kubernetes prüft, ob sich die API wie Kubernetes verhält; AI Conformance prüft, ob die Plattform darüber hinaus die Fähigkeiten bietet, die KI- und ML-Workloads brauchen. Cozystack hat beides."
   - q: "Heißt das, dass jede GPU und jedes KI-Framework unterstützt wird?"
-    a: "Nein. Bestätigt wird ein bestimmter Satz von Plattformfähigkeiten. Die GPU-Unterstützung der Ænix AI Platform ist auf ihrer Produktseite beschrieben: Passthrough an VMs, NVIDIA vGPU mit Ihrer NVIDIA-Lizenz und Sharing über HAMi; MIG und Time-Slicing stehen auf der Roadmap."
+    a: "Nein. Bestätigt wird ein bestimmter Satz von Plattformfähigkeiten. In Tenant-Kubernetes-Clustern stellt der NVIDIA GPU Operator auf Karten, die MIG unterstützen, MIG-Partitionen bereit, und HAMi ermöglicht Sharing per Time-Slicing; virtuelle Maschinen erhalten ganze GPUs über Passthrough oder NVIDIA vGPU mit Ihrer NVIDIA-Lizenz. Die Details stehen auf der Seite der Ænix AI Platform."
   - q: "Wer hat die Einreichung vorgenommen?"
     a: "Ænix-Ingenieure haben die Einreichung für das Projekt Cozystack vorbereitet, das Ænix ins Leben gerufen hat und gemeinsam mit Maintainern aus anderen Unternehmen betreut."
 ---
@@ -39,17 +39,17 @@ Auf der Liste für v1.35 stehen unter anderem GKE, EKS, AKS, OpenShift, RKE2, Ra
 
 ## Was das Programm prüft
 
-Die normale Kubernetes-Konformität beantwortet die Frage, ob sich ein Cluster wie Kubernetes verhält. AI Conformance stellt eine engere, praktischere Frage: Lassen sich Training und Inferenz darauf betreiben, ohne dass Sie die fehlenden Teile selbst zusammensetzen müssen? Die zwölf Anforderungen decken den Zugriff auf Beschleuniger ab, das Routing von Inferenz-Traffic, die Frage, ob ein verteilter Job ganz oder gar nicht eingeplant werden kann, ob Operatoren für Frameworks wie Ray mit ihren Webhooks und Custom Resources funktionieren und ob die Metriken der Beschleuniger im Monitoring-Stack ankommen.
+Die normale Kubernetes-Konformität beantwortet die Frage, ob sich ein Cluster wie Kubernetes verhält. AI Conformance stellt eine engere, praktischere Frage: Lassen sich Training und Inferenz darauf betreiben, ohne dass Sie die fehlenden Teile selbst zusammensetzen müssen? Die zwölf Anforderungen decken ab, wie Beschleuniger bereitgestellt, geteilt und mit den passenden Treibern versorgt werden, wie Inferenz-Traffic geroutet wird, ob ein verteilter Job ganz oder gar nicht eingeplant werden kann, ob Node Pools mit GPUs mit dem Bedarf skalieren, ob Operatoren für Frameworks wie Ray mit ihren Webhooks und Custom Resources funktionieren und ob die Metriken von Beschleunigern und Workloads im Monitoring-Stack ankommen.
 
 Neun der Anforderungen erfüllt Cozystack bereits durch seine Standardkonfiguration. Die übrigen drei haben wir nachgewiesen, indem wir sie auf einem Tenant-Cluster mit Kubernetes v1.35.6 ausgeführt haben:
 
 - **Inferenz-Traffic.** Über die Gateway API mit Cilium schickte eine gewichtete 80/20-Aufteilung zwischen zwei Modellversionen 26 von 30 Anfragen an die erste und 4 an die zweite; header-basiertes Routing leitete Anfragen an die im Header genannte Version.
-- **Gang Scheduling.** Mit Kueue wurde ein Job, der zwei Pods brauchte, vollständig zugelassen; ein Job, der vier brauchte, blieb auf einem Cluster ohne Platz für vier bei null Pods, statt zur Hälfte zu starten und die GPUs zu blockieren.
+- **Gang Scheduling.** Mit Kueue und einer Queue-Quota von zwei CPUs wurde ein Job aus zwei Pods vollständig zugelassen; ein Job aus vier Pods, der nicht in die Quota passte, blieb bei null Pods, statt die Hälfte davon zu starten und die Ressourcen zu blockieren.
 - **Operatoren.** Der Controller und die Webhooks von Kueue sowie KubeRay brachten einen Ray-Cluster in den Zustand „ready“.
 
 ## Was wir als Einschränkungen festgehalten haben
 
-Einreichungen für die Konformität sind öffentlich, und wir haben unsere ehrlich gehalten. Zwei Punkte sind darin so festgehalten, wie sie sind. Die Standardinstallation von KubeRay bringt keine eigenen Webhooks mit; der Webhook-Teil der Operator-Anforderung stützt sich daher auf Kueue, dessen Mutating Webhook Batch-Jobs anhält, bis sie zugelassen sind. Und Dynamic Resource Allocation wird von der API bereitgestellt, es ist aber kein DRA-Treiber installiert, sodass Device Classes und Resource Slices leer sind; der GPU-Teil von NVIDIAs eigenem DRA-Treiber ist selbst noch als nicht unterstützt gekennzeichnet und standardmäßig deaktiviert.
+Einreichungen für die Konformität sind öffentlich, und wir haben unsere ehrlich gehalten. Zwei Punkte sind darin so festgehalten, wie sie sind. Die Standardinstallation von KubeRay bringt keine eigenen Webhooks mit; der Webhook-Teil der Operator-Anforderung stützt sich daher auf Kueue, dessen Mutating Webhook Batch-Jobs anhält, bis sie zugelassen sind. Und Dynamic Resource Allocation wird von der API bereitgestellt, es ist aber kein DRA-Treiber installiert, sodass Device Classes und Resource Slices leer bleiben, bis ein Treiber hinzugefügt wird.
 
 Die vollständigen Nachweise, Anforderung für Anforderung, finden Sie auf [cozystack.io](https://cozystack.io/compliance/ai-conformance/), unseren Überblick über die Konformitätsergebnisse von Cozystack auf der [Seite zur Kubernetes-Konformität](/de/compliance/kubernetes-conformance/).
 
