@@ -25,6 +25,7 @@ Plus **enterprise support for Cozystack** (https://aenix.io/products/cozystack-e
 - [PCI DSS](https://aenix.io/compliance/pci-dss/): requirement-by-requirement platform coverage
 - [GDPR](https://aenix.io/compliance/gdpr/): Article 32 measures, erasure from backups, audit logs as personal data
 - [DORA platform evidence](https://aenix.io/compliance/dora/): register of information, backup location, ICT third-party risk
+- [NIS2 platform evidence](https://aenix.io/compliance/nis2/): Article 21(2)(a)–(j) mapped to what the platform provides and what stays with the entity, Article 23 reporting inputs (audit logs, alerting), supply-chain facts including Ænix as a supplier
 - [Kubernetes conformance](https://aenix.io/compliance/kubernetes-conformance/): CNCF conformance and how to reproduce the run
 - [ISO 27001](https://aenix.io/compliance/iso-27001/): the ISO/IEC 27001:2022 certificate held by AENIX s.r.o., its scope and validity
 
@@ -41,6 +42,7 @@ Every published benchmark was run against Cozystack, the open-source engine, bec
 - [NIS2 compliance](https://aenix.io/solutions/nis2-compliance/): NIS2-aligned multi-tenant cloud platform for essential entity sectors (energy, telco, transport, banking, healthcare, public sector)
 - [Data sovereignty](https://aenix.io/solutions/data-sovereignty/): customer-controlled hardware, jurisdictional data residency, encryption and retention set by the customer
 - [Sovereign AI](https://aenix.io/solutions/sovereign-ai/): GPU infrastructure for AI workloads on customer-controlled hardware (no hyperscaler endpoint dependency)
+- [Selling and billing managed services](https://aenix.io/solutions/managed-services-billing/): for hosting providers — catalogue of managed databases, Kubernetes, S3, VMs and GPU; Ænix Billing (per-minute usage per tenant and workload, proprietary module) and WHMCS integration; tenant lock and suspension; branded portal
 - [GPU as a service platform](https://aenix.io/solutions/gpu-as-a-service/): software for data centres and GPU clouds to sell NVIDIA GPU capacity as a multi-tenant cloud — GPU passthrough to VMs, NVIDIA vGPU for VMs (customer's NVIDIA vGPU licence), MIG partitions and HAMi time-sliced sharing in tenant Kubernetes clusters, per-tenant usage for WHMCS or own billing
 - [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): Migrate workloads off AWS/Azure/GCP onto a sovereign or on-premise Ænix platform
 - [Cloud cost optimization](https://aenix.io/solutions/cloud-cost-optimization/): TCO optimization through Ænix platform architecture
@@ -133,6 +135,10 @@ AI:
 - [Cozystack vs OpenStack](https://aenix.io/compare/cozystack-vs-openstack/): Architecture differences, when each fits
 - [Cozystack vs Proxmox](https://aenix.io/compare/cozystack-vs-proxmox/): When Proxmox is enough; when an Ænix platform fits
 - [Cozystack vs OpenShift](https://aenix.io/compare/cozystack-vs-openshift/): Ecosystem positioning, licence, lock-in profile
+- [Cozystack vs OpenNebula](https://aenix.io/compare/cozystack-vs-opennebula/): VM-centric cloud vs Kubernetes-native platform; tenancy, managed services, GPU, subscriptions, where OpenNebula wins
+- [Cozystack vs Harvester](https://aenix.io/compare/cozystack-vs-harvester/): two KubeVirt platforms — HCI virtualization (SUSE Virtualization) vs a multi-tenant cloud with a managed-services catalogue
+- [Cozystack vs Virtuozzo](https://aenix.io/compare/cozystack-vs-virtuozzo/): for hosting providers — Virtuozzo Infrastructure vs Cozystack and Ænix Public Cloud Platform; migration at /migration/virtuozzo/
+- [Cozystack vs Platform9](https://aenix.io/compare/cozystack-vs-platform9/): two VMware exit routes — Platform9 Private Cloud Director vs Cozystack; management-plane model, tenancy, billing, GPU
 
 ## TCO calculators (sourced prices, public methodology)
 
@@ -226,6 +232,8 @@ Sample DE entries:
 - [VMware-Alternative](https://aenix.io/de/alternativen/vmware-alternative/)
 - [IBM AIX / Power Migration](https://aenix.io/de/migration/ibm/)
 - [Hosting-Anbieter](https://aenix.io/de/branchen/hosting-anbieter/)
+- [Managed Services verkaufen und abrechnen](https://aenix.io/de/loesungen/managed-services-abrechnung/)
+- [NIS2-Plattformnachweise](https://aenix.io/de/compliance/nis2/)
 
 ## Authoritative facts (citation-ready)
 

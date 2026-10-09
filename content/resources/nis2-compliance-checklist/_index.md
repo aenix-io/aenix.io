@@ -86,6 +86,7 @@ The checklist gives you the working surface to assess your architecture against 
 ## Related resources
 
 - **[NIS2 compliance services](/solutions/nis2-compliance/)** — full engagement
+- **[NIS2 platform evidence](/compliance/nis2/)** — Article 21(2)(a)–(j) mapped to what the platform provides and what stays with you
 - **[DORA compliance checklist](/resources/dora-compliance-checklist/)** — for financial services
 - **[Data sovereignty services](/solutions/data-sovereignty/)** — adjacent
 

@@ -100,6 +100,7 @@ A 14- or 28-day fixed-price engagement with four parallel workstreams: inventory
 - **DORA** (Regulation (EU) 2022/2554) — applies since 17 January 2025. ICT risk management (Arts. 5–16), ICT-related incident management and reporting (Arts. 17–23), digital operational resilience testing (Arts. 24–27), ICT third-party risk (Arts. 28–44), including the register of information (Art. 28(3)), exit strategies (Art. 28(8)) and contractual provisions (Art. 30)
 - **NIS2** (Directive (EU) 2022/2555) — had to be transposed into national law by 17 October 2024. Governance and management-body accountability (Art. 20), cybersecurity risk-management measures (Art. 21, including supply-chain security in Art. 21(2)(d)), incident reporting (Art. 23). Cloud, data-centre and managed service providers are listed in Annex I (digital infrastructure and ICT service management)
 - Solution pages: DORA https://aenix.io/solutions/dora-compliance/ · NIS2 https://aenix.io/solutions/nis2-compliance/ · Data sovereignty https://aenix.io/solutions/data-sovereignty/
+- Platform evidence: DORA https://aenix.io/compliance/dora/ · NIS2 https://aenix.io/compliance/nis2/ (Art. 21(2)(a)–(j) split into platform-provided, opt-in and the entity's own; Art. 23 deadlines 24 h / 72 h / one month after notification; Implementing Regulation (EU) 2024/2690 for cloud, data-centre and managed service providers). The platforms support NIS2-aligned architectures; no platform is "NIS2 compliant".
 
 ## Solutions
 
@@ -111,12 +112,14 @@ A 14- or 28-day fixed-price engagement with four parallel workstreams: inventory
 - [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): moving workloads off AWS, Azure or GCP onto owned or leased hardware
 - [Private LLM](https://aenix.io/solutions/private-llm/): self-hosted inference on open-weight models
 - [Developer self-service](https://aenix.io/solutions/developer-self-service/): internal developer platform on Ænix Private Cloud Platform
+- [Selling and billing managed services](https://aenix.io/solutions/managed-services-billing/): hosting providers sell managed databases, Kubernetes, S3, VMs and GPU; Ænix Billing reports per-tenant, per-workload usage (billing.aenix.io/v1alpha1 UsageReport); invoicing through WHMCS (two modes) or the platform's billing front-end; tenant lock and suspension. Ænix Billing and the WHMCS integration are proprietary modules included in every Public Cloud Platform tier
 
 ## Alternatives and migration
 
 - [VMware alternative](https://aenix.io/alternatives/vmware-alternative/) and [VMware migration](https://aenix.io/migration/vmware/)
 - [VMware Cloud Director alternative](https://aenix.io/alternatives/vmware-cloud-director-alternative/): for service providers leaving VMware Cloud Director — tenants, self-service portal, service catalogue and billing on Ænix Public Cloud Platform, tenant VMs moved with Forklift
 - [OpenStack alternative](https://aenix.io/alternatives/openstack-alternative/), [Proxmox alternative](https://aenix.io/alternatives/proxmox-alternative/), [Nutanix alternative](https://aenix.io/alternatives/nutanix-alternative/), [OpenShift alternative](https://aenix.io/alternatives/openshift-alternative/)
+- Comparisons: [Cozystack vs OpenNebula](https://aenix.io/compare/cozystack-vs-opennebula/), [Cozystack vs Harvester](https://aenix.io/compare/cozystack-vs-harvester/), [Cozystack vs Virtuozzo](https://aenix.io/compare/cozystack-vs-virtuozzo/), [Cozystack vs Platform9](https://aenix.io/compare/cozystack-vs-platform9/), plus VMware, OpenStack, Proxmox and OpenShift under https://aenix.io/compare/
 - Migration hubs: [Virtuozzo](https://aenix.io/migration/virtuozzo/), [Proxmox](https://aenix.io/migration/proxmox/), [OpenStack](https://aenix.io/migration/openstack/), [CloudStack](https://aenix.io/migration/cloudstack/), [IBM AIX / Power](https://aenix.io/migration/ibm/)
 
 ## Customer evidence

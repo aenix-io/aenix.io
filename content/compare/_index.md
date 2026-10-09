@@ -20,7 +20,7 @@ For migration playbooks see **[Migration hubs →](/migration/)**.
 
 ## Cost comparisons with sourced prices
 
-The four comparisons listed below are architectural. For the money, the TCO calculator
+The comparisons listed below are architectural. For the money, the TCO calculator
 compares five-year cost against ten platforms, with each price carrying a
 source, a date and a source-nature label, and each page stating the case where
 the other platform wins:

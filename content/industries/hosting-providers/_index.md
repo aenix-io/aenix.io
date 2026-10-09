@@ -118,6 +118,7 @@ Production references: regional hosting providers running Ænix Public Cloud Pla
 - **[White-label cloud](/services/white-label-cloud/)** — branded for resellers
 - **[Hosting provider platform modernization article](/blog/2026/05/hosting-provider-platform-modernization/)**
 - **[Virtuozzo migration](/migration/virtuozzo/)** — moving a Virtuozzo estate
+- **[Selling and billing managed services](/solutions/managed-services-billing/)** — catalogue, Ænix Billing, WHMCS, tenant suspension; compare with [Virtuozzo](/compare/cozystack-vs-virtuozzo/), [OpenNebula](/compare/cozystack-vs-opennebula/), [Harvester](/compare/cozystack-vs-harvester/) and [Platform9](/compare/cozystack-vs-platform9/)
 - **[Hosting-provider calculator](/isp-calculator/)** — unit economics
 - **[Launch your public cloud webinar](/webinars/launch-public-cloud/)**
 

@@ -19,7 +19,7 @@ Migrations-Playbooks finden Sie unter **[Migrations-Hubs →](/de/migration/)**.
 
 ## Kostenvergleiche mit belegten Preisen
 
-Die vier unten aufgeführten Vergleiche sind architektonisch. Für die Kosten
+Die unten aufgeführten Vergleiche sind architektonisch. Für die Kosten
 vergleicht der TCO-Rechner die Fünfjahreskosten mit zehn Plattformen; jeder
 Preis trägt Quelle, Datum und Art der Quelle, und jede Seite nennt den Fall,
 in dem die andere Plattform die bessere Wahl ist:

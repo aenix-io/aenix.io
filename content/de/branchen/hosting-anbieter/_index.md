@@ -124,6 +124,7 @@ Produktive Referenzen: regionale Hosting-Anbieter, die die Ænix Public Cloud Pl
 - **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)** — unter eigener Marke für Reseller
 - **[Artikel: Modernisierung der Plattform für Hosting-Anbieter](/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/)**
 - **[Virtuozzo-Migration](/de/migration/virtuozzo/)** — einen Virtuozzo-Bestand umziehen
+- **[Managed Services verkaufen und abrechnen](/de/loesungen/managed-services-abrechnung/)** — Katalog, Ænix Billing, WHMCS, Tenant-Suspendierung; Vergleiche mit [Virtuozzo](/de/vergleichen/cozystack-vs-virtuozzo/), [OpenNebula](/de/vergleichen/cozystack-vs-opennebula/), [Harvester](/de/vergleichen/cozystack-vs-harvester/) und [Platform9](/de/vergleichen/cozystack-vs-platform9/)
 - **[Rechner für Hosting-Anbieter](/isp-calculator/)** — Unit Economics
 - **[Webinar „Launch your public cloud“](/webinars/launch-public-cloud/)**
 

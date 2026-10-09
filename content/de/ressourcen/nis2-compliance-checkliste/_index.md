@@ -79,6 +79,7 @@ Mit der Checkliste bewerten Sie Ihre Architektur anhand der NIS2-Anforderungen. 
 ## Verwandte Ressourcen
 
 - **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — das vollständige Projekt
+- **[NIS2-Plattformnachweise](/de/compliance/nis2/)** — Art. 21 Abs. 2 Buchst. a–j: was die Plattform liefert und was bei Ihnen bleibt
 - **[DORA-Compliance-Checkliste](/de/ressourcen/dora-compliance-checkliste/)** — für Finanzdienstleister
 - **[Data Sovereignty](/de/loesungen/data-sovereignty/)** — verwandtes Thema
 

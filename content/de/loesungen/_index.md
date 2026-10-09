@@ -42,6 +42,7 @@ hreflang_en: /solutions/
 
 ### Auslöser aus dem Engineering
 
+- **[Managed Services verkaufen und abrechnen](/de/loesungen/managed-services-abrechnung/)** — für Hosting-Anbieter: ein Katalog aus Managed Datenbanken, Kubernetes, S3, VMs und GPU, minutengenaue Nutzungsabrechnung über Ænix Billing und WHMCS, Tenant-Suspendierung. Passt zu: Public Cloud Platform.
 - **[Developer Self-Service](/de/loesungen/developer-self-service/)** — Golden Paths, die Umgebungen, Datenbanken und Services ohne Ticket bereitstellen. Passt zu: der Developer-Self-Service-Schicht der Private Cloud Platform. Kostenloses [Platform Engineering Maturity Assessment](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 </div>

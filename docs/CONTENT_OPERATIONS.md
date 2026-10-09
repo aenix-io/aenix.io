@@ -126,6 +126,7 @@ When translating EN paths to DE paths, use this map:
 | `case-studies` | `case-studies` |
 | `enterprise-support` | `enterprise-support` |
 | `kubernetes-deep-dive` | `kubernetes-deep-dive` |
+| `compliance` | `compliance` |
 
 Specific child-slug renames (where the DE keyword differs from EN slug):
 
@@ -149,6 +150,7 @@ Specific child-slug renames (where the DE keyword differs from EN slug):
 | `vmware-migration-checklist` | `vmware-migrations-checkliste` |
 | `sovereign-ai-decision-guide` | `sovereign-ai-architektur-leitfaden` |
 | `vmware-alternatives` | `vmware-alternativen` |
+| `managed-services-billing` | `managed-services-abrechnung` |
 
 All other child slugs map 1:1 (e.g., `dora-compliance` stays `dora-compliance`, `nis2-compliance` stays `nis2-compliance` because the German uses the English term).
 
