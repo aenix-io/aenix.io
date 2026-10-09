@@ -3,6 +3,7 @@ title: "Protofire Experience Operating Kubernetes with Cozystack"
 description: "Protofire moved from nearly a hundred AWS accounts on ECS to two Kubernetes clusters on Cozystack, and expects a 7–10x reduction in infrastructure spend."
 date: "2025-09-10"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/09/protofire-erfahrung-kubernetes-betrieb-cozystack/"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Talos", "Financial Services", "CNCF", "Migration"]
 language: "en"
