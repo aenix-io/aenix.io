@@ -6,6 +6,7 @@ slug: "cozystack-cncf-kubernetes-ai-conformance"
 date: "2026-10-09"
 cover_image: "/img/blog/covers/cozystack-cncf-kubernetes-ai-conformance.jpg"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/10/cozystack-cncf-kubernetes-ai-conformance/"
 type: "announcement"
 topics: ["Cozystack", "CNCF", "AI and ML", "GPU", "Kubernetes"]
 language: "en"

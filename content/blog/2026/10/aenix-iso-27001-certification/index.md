@@ -6,6 +6,7 @@ slug: "aenix-iso-27001-certification"
 date: "2026-10-09"
 cover_image: "/img/blog/covers/aenix-iso-27001-certification.jpg"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/10/aenix-iso-27001-zertifizierung/"
 type: "announcement"
 topics: ["Compliance", "Financial Services", "DORA", "NIS2", "Sovereignty"]
 language: "en"
