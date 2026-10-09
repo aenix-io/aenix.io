@@ -158,6 +158,21 @@
        Keep the path lists in sync with the markup (a page that uses ws-*,
        wm-*, wb-*, event-*, tour-*, blog-* or quiz-* classes must match). */ -}}
 {{- $rp := .RelPermalink -}}
+{{- /* Template sheets, right after the global one and before the event/blog
+       sheets. Rules were assigned by measuring which pages they match on;
+       a page outside these conditions must not render home, landing,
+       company or OSS-report markup. */ -}}
+{{- $layout := string (or .Params.layout .Layout "") -}}
+{{- $sheets := slice -}}
+{{- if or .IsHome (eq $layout "locale-home") }}{{ $sheets = $sheets | append "home" }}{{ end -}}
+{{- if in (slice "product" "solution-landing" "services-landing" "industry-landing" "compare" "alternative" "migration-hub" "lead-magnet") (string .Params.page_type) }}{{ $sheets = $sheets | append "landing" }}{{ end -}}
+{{- range slice "/about/" "/de/ueber-uns/" "/contact/" "/de/kontakt/" "/conferences/" "/de/konferenzen/" "/partners/" "/de/partner/" -}}
+  {{- if hasPrefix $rp . }}{{ $sheets = $sheets | append "company" }}{{ end -}}
+{{- end -}}
+{{- if eq $layout "oss-contribution" }}{{ $sheets = $sheets | append "oss" }}{{ end -}}
+{{- range $sheets }}
+{{ with resources.Get (printf "css/aenix-%s.css" .) | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+{{- end }}
 {{- $events := in (slice "event-landing" "webinar-materials") (string (or .Params.layout .Layout "")) -}}
 {{- range slice "/workshops/" "/ru/workshops/" "/de/workshops/" "/fr/" "/webinars/" "/tour-2026/" "/web0826/" -}}
   {{- if hasPrefix $rp . }}{{ $events = true }}{{ end -}}
