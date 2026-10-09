@@ -95,7 +95,7 @@
 </table>
 
 <div class="callout">
-  <p>Mixed-hardware fleets are common. L40S for steady inference plus H100 for fine-tuning bursts is a frequent pattern. On Cozystack, NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU (with your NVIDIA vGPU licence) and sharing via HAMi. MIG and time-slicing are on the roadmap.</p>
+  <p>Mixed-hardware fleets are common. L40S for steady inference plus H100 for fine-tuning bursts is a frequent pattern. On Cozystack, NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: whole GPUs or NVIDIA vGPU (with your NVIDIA vGPU licence) for VMs, and MIG partitions or time-sliced sharing via HAMi for containers in tenant Kubernetes clusters.</p>
 </div>
 
 <h3 class="subsec">Decision 5 — Multi-tenancy</h3>

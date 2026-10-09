@@ -10,7 +10,7 @@ There are **three platforms**, chosen by who consumes the capacity — and they 
 
 - **Public Cloud Platform** — anyone selling cloud capacity: hosting providers, MSPs, regional clouds and data centres at the small end (published price list, from $1,250/month per 10 nodes); telcos, national operators and banks running a commercial cloud at operator scale (multi-region, quoted per RFP)
 - **Private Cloud Platform** — organizations running cloud for their own users under a regulator: banks, insurance, public administration, telco, healthcare, energy (quoted per RFP)
-- **AI Platform** — NVIDIA GPUs through the GPU Operator (passthrough to VMs, NVIDIA vGPU for VMs with the customer's NVIDIA vGPU licence, fractional sharing via HAMi; MIG and time-slicing on the roadmap), model serving, vector databases, per-tenant GPU usage for billing — for teams running inference and fine-tuning on their own GPUs and for GPU clouds (quoted per RFP)
+- **AI Platform** — NVIDIA GPUs through the GPU Operator (passthrough to VMs, NVIDIA vGPU for VMs with the customer's NVIDIA vGPU licence, MIG partitions and time-sliced sharing via HAMi in tenant Kubernetes clusters), model serving, vector databases, per-tenant GPU usage for billing — for teams running inference and fine-tuning on their own GPUs and for GPU clouds (quoted per RFP)
 
 Combining them is a configuration decision on one control plane, not a second procurement — an AI platform inside a Private Cloud tenancy boundary, or GPU-as-a-Service sold through the Public Cloud billing surface, are ordinary configurations rather than separate installations. Developer self-service (golden paths, GitLab and Argo CD automation, self-service APIs) is part of Ænix Private Cloud Platform rather than a separate product.
 
@@ -41,7 +41,7 @@ Every published benchmark was run against Cozystack, the open-source engine, bec
 - [NIS2 compliance](https://aenix.io/solutions/nis2-compliance/): NIS2-aligned multi-tenant cloud platform for essential entity sectors (energy, telco, transport, banking, healthcare, public sector)
 - [Data sovereignty](https://aenix.io/solutions/data-sovereignty/): customer-controlled hardware, jurisdictional data residency, encryption and retention set by the customer
 - [Sovereign AI](https://aenix.io/solutions/sovereign-ai/): GPU infrastructure for AI workloads on customer-controlled hardware (no hyperscaler endpoint dependency)
-- [GPU as a service platform](https://aenix.io/solutions/gpu-as-a-service/): software for data centres and GPU clouds to sell NVIDIA GPU capacity as a multi-tenant cloud — GPU passthrough to VMs, NVIDIA vGPU for VMs (customer's NVIDIA vGPU licence), HAMi sharing (MIG on the roadmap), per-tenant usage for WHMCS or own billing
+- [GPU as a service platform](https://aenix.io/solutions/gpu-as-a-service/): software for data centres and GPU clouds to sell NVIDIA GPU capacity as a multi-tenant cloud — GPU passthrough to VMs, NVIDIA vGPU for VMs (customer's NVIDIA vGPU licence), MIG partitions and HAMi time-sliced sharing in tenant Kubernetes clusters, per-tenant usage for WHMCS or own billing
 - [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): Migrate workloads off AWS/Azure/GCP onto a sovereign or on-premise Ænix platform
 - [Cloud cost optimization](https://aenix.io/solutions/cloud-cost-optimization/): TCO optimization through Ænix platform architecture
 - [Hybrid cloud platform](https://aenix.io/solutions/hybrid-cloud-platform/): A single Ænix platform spanning on-premise and cloud

@@ -97,7 +97,7 @@
 
 <ul class="cps">
   <li><b>GPU inventory</b> — vGPU vs passthrough, GPU model (A100 / H100 / L40S / Blackwell), per-card workload assignment. Note vendor-locked features (e.g., MIG profiles).</li>
-  <li><b>vGPU to KubeVirt vGPU mapping</b> — Confirm the destination supports the GPU class and slicing model needed. Validate driver versions. On Cozystack: passthrough to VMs, NVIDIA vGPU (with your NVIDIA vGPU licence) and sharing via HAMi; MIG and time-slicing are on the roadmap.</li>
+  <li><b>vGPU to KubeVirt vGPU mapping</b> — Confirm the destination supports the GPU class and slicing model needed. Validate driver versions. On Cozystack: passthrough or NVIDIA vGPU (with your NVIDIA vGPU licence) for VMs; MIG partitions and time-sliced sharing via HAMi for containers in tenant Kubernetes clusters.</li>
   <li><b>AI workload architectural fit</b> — Inference vs fine-tuning vs training; multi-tenant isolation requirements; sovereignty constraints on model weights and training data.</li>
 </ul>
 

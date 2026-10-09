@@ -55,7 +55,7 @@ What Ænix sells is a **subscription** — support, proprietary commercial modul
 ## GPUs and AI
 
 - NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough of whole GPUs to VMs, NVIDIA vGPU for VMs (shipping since Cozystack 1.5; requires the customer's NVIDIA vGPU licence), and fractional sharing via HAMi
-- MIG partitioning and time-slicing are on the roadmap, not shipped
+- In tenant Kubernetes clusters, the GPU Operator exposes MIG partitions of MIG-capable cards as schedulable resources, and HAMi provides time-sliced sharing with oversubscription; both are available as addons
 - GPU usage is measured per tenant; charging happens in the provider's billing system (WHMCS or its own)
 - NVIDIA partner validation of the GPU Operator stack was submitted in October 2026 and is pending; there is no NVIDIA validation badge yet
 - Other accelerators: PCI passthrough to VMs only
@@ -107,7 +107,7 @@ A 14- or 28-day fixed-price engagement with four parallel workstreams: inventory
 - [NIS2 compliance](https://aenix.io/solutions/nis2-compliance/): platform architecture aligned with NIS2 for essential and important entities
 - [Data sovereignty](https://aenix.io/solutions/data-sovereignty/): your hardware, your jurisdiction, your data flows
 - [Sovereign AI](https://aenix.io/solutions/sovereign-ai/): AI on GPUs you control, without hyperscaler endpoint dependency
-- [GPU as a service platform](https://aenix.io/solutions/gpu-as-a-service/): software for data centres and GPU clouds to sell NVIDIA GPU capacity as a multi-tenant cloud — GPU passthrough to VMs, NVIDIA vGPU for VMs (customer's NVIDIA vGPU licence), HAMi sharing (MIG on the roadmap), per-tenant usage for WHMCS or own billing
+- [GPU as a service platform](https://aenix.io/solutions/gpu-as-a-service/): software for data centres and GPU clouds to sell NVIDIA GPU capacity as a multi-tenant cloud — GPU passthrough to VMs, NVIDIA vGPU for VMs (customer's NVIDIA vGPU licence), MIG partitions and HAMi time-sliced sharing in tenant Kubernetes clusters, per-tenant usage for WHMCS or own billing
 - [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): moving workloads off AWS, Azure or GCP onto owned or leased hardware
 - [Private LLM](https://aenix.io/solutions/private-llm/): self-hosted inference on open-weight models
 - [Developer self-service](https://aenix.io/solutions/developer-self-service/): internal developer platform on Ænix Private Cloud Platform
