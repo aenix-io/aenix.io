@@ -56,7 +56,7 @@ The Digital Operational Resilience Act (DORA) has been in force since 17 January
 
 Most coverage of DORA so far has concentrated on policy and procedural requirements: incident reporting timelines, governance, risk management process. That work matters, and your CISO and legal team have been doing it for two years.
 
-This article is for the people on the other side of that conversation — the platform engineers, cloud architects, and infrastructure leads who now have to translate DORA's expectations into running systems. Specifically: what does DORA require of your *cloud infrastructure*, what does a DORA-compliant cloud architecture actually look like, and where do current public-cloud setups typically fall short?
+This article is for the people on the other side of that conversation — the platform engineers, cloud architects, and infrastructure leads who now have to translate DORA's expectations into running systems. Specifically: what does DORA require of your *cloud infrastructure*, what does a DORA-compliant cloud architecture actually look like, and where do current public-cloud setups typically fall short? <!-- content-rules: allow compliant-claim -->
 
 ## What DORA is, very briefly
 
@@ -95,6 +95,7 @@ Then Article 29, and the related RTS, target **concentration risk** specifically
 
 For most banks and insurers operating in 2026, that wording maps directly onto a familiar question: *we run our critical workloads in one hyperscaler region — does that satisfy DORA?* The honest answer is "depends" — but the work to demonstrate it didn't exist before DORA, and is non-trivial.
 
+<!-- content-rules: allow compliant-claim (the regulated entity's architecture, not a platform claim) -->
 ## What "DORA-compliant cloud infrastructure" actually means
 
 There is no DORA certification stamp. DORA defines obligations that must be satisfied; how a financial entity demonstrates that satisfaction is open, subject to ESAs' supervisory expectations and the entity's own risk profile.

@@ -103,7 +103,7 @@ Precision here is worth more than reassurance, because an assessor will test eve
 | "The platform is PCI DSS certified" | No platform is. A Qualified Security Assessor certifies a scoped cardholder data environment. The platform supplies the technical controls the assessment leans on. |
 | "The platform is GDPR compliant" | Compliance belongs to the controller. The platform supplies Article 32 measures and makes them demonstrable. |
 | "The platform is CIS certified" | The CIS Benchmark awards no verdict. It is a list of controls, and compliance is a judgment about a specific cluster. |
-| "The platform is DORA compliant" | DORA binds financial entities, not platforms. The platform is part of the ICT estate those entities manage. |
+| "The platform is DORA compliant" | DORA binds financial entities, not platforms. The platform is part of the ICT estate those entities manage. <!-- content-rules: allow compliant-claim --> |
 
 ---
 

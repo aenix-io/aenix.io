@@ -34,7 +34,7 @@ quick_facts:
   - label: "Nicht geliefert"
     value: "Governance, Risikoanalyse, Einstufung und Meldung von Vorfällen, Schulung und Personalsicherheit sowie automatisches standortübergreifendes VM-Failover."
 faq:
-  - q: "Ist die Ænix-Plattform NIS2-konform?"
+  - q: "Ist die Ænix-Plattform NIS2-konform?"  # content-rules: allow compliant-claim
     a: "Die Frage passt nicht auf eine Plattform. NIS2 verpflichtet wesentliche und wichtige Einrichtungen und macht deren Leitungsorgane nach Art. 20 verantwortlich. Eine Plattform ist Teil der Netz- und Informationssysteme, die diese Einrichtungen absichern. Die Ænix-Plattformen liefern technische Maßnahmen zu mehreren Buchstaben von Art. 21 Abs. 2 und machen sie nachweisbar. Ein NIS2-Zertifikat für Plattformen gibt es nicht, und Ænix beansprucht keines."
   - q: "Welche Maßnahmen aus Art. 21 Abs. 2 deckt die Plattform tatsächlich ab?"
     a: "Am meisten trägt sie zu b) Bewältigung von Sicherheitsvorfällen, c) Aufrechterhaltung des Betriebs, e) Sicherheit bei Wartung und Umgang mit Schwachstellen, h) Kryptografie, i) Zugriffskontrolle und j) Multi-Faktor-Authentifizierung bei. Zu a) Risikoanalyse und f) Bewertung der Wirksamkeit liefert sie Nachweise, aber nicht die Substanz. Die Buchstaben d) Lieferkette und g) Cyberhygiene und Schulungen sind überwiegend organisatorisch. Die Tabelle auf dieser Seite zeigt die Aufteilung Punkt für Punkt."

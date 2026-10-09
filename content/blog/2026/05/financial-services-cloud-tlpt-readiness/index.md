@@ -54,7 +54,7 @@ CISO teams. By the time DORA went into force on 17 January 2025,
 most regulated entities had that documentation in reasonable shape.
 
 The second half — making the cloud architecture *demonstrably*
-DORA-compliant when a real TLPT cycle hits — has been quieter. That
+DORA-compliant when a real TLPT cycle hits — has been quieter. That <!-- content-rules: allow compliant-claim -->
 silence is starting to break in 2026. Supervisor TLPT exercises are
 reaching architectures that were assumed compliant when DORA went
 live but had never been tested under realistic regulator scrutiny.
