@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.35: external apps and dedicated S3"
 description: "Cozystack v0.35 adds external application sources for its modular architecture, dedicated S3 clusters with monitoring and Hetzner RobotLB support."
 date: "2025-08-21"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/08/cozystack-v0-35-externe-anwendungen-s3-cluster/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
