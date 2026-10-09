@@ -84,6 +84,7 @@ The alternative framing — publishing these as results for a proprietary produc
 - **[GDPR](/compliance/gdpr/)** — the Article 32 technical measures the platform supplies, where personal data physically sits, and the parts of the right to erasure that infrastructure cannot settle.
 - **[CIS Kubernetes Benchmark](/compliance/cis-benchmark/)** — the full kube-bench run: 54 pass, 24 fail, 53 warn, with every failure sorted into a real deviation, a control met another way, or a check that does not apply on an immutable node.
 - **[DORA](/compliance/dora/)** — the platform-side evidence for resilience, backup and restore, incident records and the ICT third-party risk chapter, where self-hosted open source changes the answer.
+- **[NIS2](/compliance/nis2/)** — Article 21(2)(a)–(j) mapped to what the platform provides and what stays with you, the records Article 23 reporting draws on, and supply-chain facts including Ænix as a supplier.
 - **[Kubernetes conformance](/compliance/kubernetes-conformance/)** — CNCF conformance results for both shapes the platform is used in: self-hosted tenant clusters passing in full across five Kubernetes releases, two of them listed in the CNCF's own record, and a hosted platform listed there as well; plus Cozystack's acceptance into the CNCF Kubernetes AI Conformance program (September 2026). What a listing covers, and what it does not, is spelled out.
 
 </div>
@@ -111,7 +112,7 @@ Precision here is worth more than reassurance, because an assessor will test eve
 The pages above are evidence. If what you need is the programme around it — a gap analysis, a control-level map of what you can demonstrate today, a remediation plan — those live under solutions:
 
 - **[DORA compliance](/solutions/dora-compliance/)** — fixed-price readiness engagement for financial entities and the ICT third parties serving them: ICT third-party risk, concentration risk, exit-feasibility, resilience testing. Free [DORA compliance checklist](/resources/dora-compliance-checklist/).
-- **[NIS2 compliance](/solutions/nis2-compliance/)** — the equivalent for essential and important entities under NIS2. Free [NIS2 compliance checklist](/resources/nis2-compliance-checklist/). There is no separate NIS2 evidence page yet; the Article 21 measures overlap with the controls on the DORA, GDPR and CIS pages above.
+- **[NIS2 compliance](/solutions/nis2-compliance/)** — the equivalent for essential and important entities under NIS2. Free [NIS2 compliance checklist](/resources/nis2-compliance-checklist/). The platform-side evidence is on the [NIS2 page](/compliance/nis2/) above.
 - **[Data sovereignty](/solutions/data-sovereignty/)** — customer-controlled hardware, jurisdictional residency, and opt-in volume encryption designed with you.
 
 The split is deliberate: the solution pages answer "what does the regulation require of us and where are we short", these pages answer "what does the infrastructure actually do, and how was that measured".

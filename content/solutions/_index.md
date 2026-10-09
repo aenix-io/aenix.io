@@ -43,6 +43,7 @@ hreflang_de: /de/loesungen/
 
 ### Engineering triggers
 
+- **[Selling and billing managed services](/solutions/managed-services-billing/)** — for hosting providers: a catalogue of managed databases, Kubernetes, S3, VMs and GPU, per-minute usage billing through Ænix Billing and WHMCS, tenant suspension. Pairs with: Public Cloud Platform.
 - **[Developer self-service](/solutions/developer-self-service/)** — golden paths that provision environments, databases and services without tickets. Pairs with: the developer self-service layer of Private Cloud Platform. Free [Platform Engineering Maturity Assessment](/resources/platform-engineering-maturity-assessment/).
 
 </div>

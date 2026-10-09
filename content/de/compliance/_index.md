@@ -84,6 +84,7 @@ Die Alternative — dieselben Zahlen als Ergebnisse eines proprietären Produkts
 - **[DSGVO](/de/compliance/dsgvo/)** — die technischen Maßnahmen nach Art. 32, wo personenbezogene Daten physisch liegen, und die Teile des Löschanspruchs, die Infrastruktur nicht klären kann.
 - **[CIS Kubernetes Benchmark](/de/compliance/cis-benchmark/)** — der vollständige kube-bench-Lauf: 54 bestanden, 24 fehlgeschlagen, 53 Warnungen, mit jedem Fehlschlag eingeordnet als echte Abweichung, anders erfüllte Kontrolle oder nicht anwendbare Prüfung.
 - **[DORA](/de/compliance/dora/)** — der plattformseitige Nachweis zu Resilienz, Backup und Wiederherstellung, Vorfallsaufzeichnungen und dem Kapitel zum IKT-Drittparteienrisiko, wo selbst betriebene Open Source die Antwort verändert.
+- **[NIS2](/de/compliance/nis2/)** — Art. 21 Abs. 2 Buchst. a–j abgebildet auf das, was die Plattform liefert und was bei Ihnen bleibt, die Aufzeichnungen für Meldungen nach Art. 23 und Fakten zur Lieferkette, einschließlich Ænix als Lieferant.
 - **[Kubernetes-Konformität](/de/compliance/kubernetes-conformance/)** — CNCF-Konformitätsergebnisse für beide Betriebsformen: selbst betriebene Tenant-Cluster, die über fünf Kubernetes-Releases vollständig bestehen (zwei dieser Releases sind im Register der CNCF selbst gelistet), und eine gehostete Plattform, die dort ebenfalls gelistet ist; dazu die Aufnahme von Cozystack in das CNCF-Programm Kubernetes AI Conformance (September 2026). Was ein Eintrag abdeckt und was nicht, ist ausdrücklich beschrieben.
 
 </div>
@@ -111,7 +112,7 @@ Präzision ist hier mehr wert als Beruhigung, weil ein Prüfer jeden Satz nachfa
 Die Seiten oben sind Nachweise. Wenn Sie das Programm darum herum brauchen — Gap-Analyse, eine Kontroll-Landkarte dessen, was Sie heute nachweisen können, einen Remediationsplan —, liegt das unter Lösungen:
 
 - **[DORA-Compliance](/de/loesungen/dora-compliance/)** — Readiness-Engagement zum Festpreis für Finanzunternehmen und die sie beliefernden IKT-Drittanbieter: IKT-Drittparteienrisiko, Konzentrationsrisiko, Exit-Bereitschaft, Resilienztests. Kostenlose [DORA-Compliance-Checkliste](/de/ressourcen/dora-compliance-checkliste/).
-- **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — das Gegenstück für wesentliche und wichtige Einrichtungen unter NIS2. Kostenlose [NIS2-Compliance-Checkliste](/de/ressourcen/nis2-compliance-checkliste/). Eine eigene NIS2-Nachweisseite gibt es noch nicht; die Maßnahmen nach Art. 21 überschneiden sich mit den Kontrollen auf den DORA-, DSGVO- und CIS-Seiten oben.
+- **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — das Gegenstück für wesentliche und wichtige Einrichtungen unter NIS2. Kostenlose [NIS2-Compliance-Checkliste](/de/ressourcen/nis2-compliance-checkliste/). Die plattformseitigen Nachweise stehen auf der [NIS2-Seite](/de/compliance/nis2/) oben.
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — kundenkontrollierte Hardware, jurisdiktionsgebundene Datenhaltung und optionale Volume-Verschlüsselung, die wir gemeinsam mit Ihnen auslegen.
 
 Die Trennung ist gewollt: Die Lösungsseiten beantworten „was verlangt die Regulierung von uns und wo stehen wir kurz“, diese Seiten beantworten „was tut die Infrastruktur tatsächlich, und wie wurde das gemessen“.
