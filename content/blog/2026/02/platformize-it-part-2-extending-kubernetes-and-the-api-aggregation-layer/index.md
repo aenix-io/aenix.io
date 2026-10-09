@@ -4,6 +4,7 @@ seo_title: "Platformize It, part 2: the API Aggregation Layer"
 description: "Part 2 of Platformize It: how to extend Kubernetes with the API Aggregation Layer to serve managed applications through one API and UI."
 date: "2026-02-26"
 author: "Andrei Kvapil"
+hreflang_de: "/de/blog/2026/02/platformize-it-teil-2-kubernetes-erweitern-api-aggregation-layer/"
 type: "tutorial"
 topics: ["DevOps", "Kubernetes", "Open Source", "Platform Engineering", "Cloud"]
 language: "en"
