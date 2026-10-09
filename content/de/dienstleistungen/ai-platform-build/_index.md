@@ -12,7 +12,7 @@ hreflang_en: /services/ai-platform-build/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Ein AI Platform Build ist ein End-to-End-Projekt, in dem Ænix dedizierte GPU-Infrastruktur für Organisationen mit dauerhaften KI-Workloads entwirft und betreibt — 24/7-Inferenz, Fine-Tuning und Training —, bei denen gemietete Hyperscaler-GPU-Kapazität auf Dauer zu teuer wird. Er richtet sich an KI-Startups, GPU-Betreiber, forschungsintensive Organisationen, Telcos und Unternehmen mit regulierten Daten, die nicht an externe Modellanbieter gehen dürfen. Ænix liefert die Plattform auf Cozystack, einem CNCF-Projekt unter Apache 2.0, das in das CNCF-Programm Kubernetes AI Conformance aufgenommen wurde und VM- und Container-GPU-Workloads über KubeVirt auf einer Kubernetes-API betreibt. NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Das Serving läuft über vLLM oder Triton.**
+  **Ein AI Platform Build ist ein End-to-End-Projekt, in dem Ænix dedizierte GPU-Infrastruktur für Organisationen mit dauerhaften KI-Workloads entwirft und betreibt — 24/7-Inferenz, Fine-Tuning und Training —, bei denen gemietete Hyperscaler-GPU-Kapazität auf Dauer zu teuer wird. Er richtet sich an KI-Startups, GPU-Betreiber, forschungsintensive Organisationen, Telcos und Unternehmen mit regulierten Daten, die nicht an externe Modellanbieter gehen dürfen. Ænix liefert die Plattform auf Cozystack, einem CNCF-Projekt unter Apache 2.0, das in das CNCF-Programm Kubernetes AI Conformance aufgenommen wurde und VM- und Container-GPU-Workloads über KubeVirt auf einer Kubernetes-API betreibt. NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), in Tenant-Kubernetes-Clustern MIG-Partitionen und Time-Slicing über HAMi. Das Serving läuft über vLLM oder Triton.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein End-to-End-Projekt, um dedizierte GPU-Infrastruktur für dauerhafte KI-Inferenz, Fine-Tuning und Training zu entwerfen, aufzubauen und optional zu betreiben."
@@ -21,7 +21,7 @@ quick_facts:
   - label: "Plattformbasis"
     value: "Cozystack — VM- und Container-GPU-Workloads über KubeVirt auf einer Kubernetes-API, Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Mandantenfähigkeit über das Tenant-CRD."
   - label: "GPUs"
-    value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Serving über vLLM und Triton."
+    value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz); für Container MIG-Partitionen und Time-Slicing über HAMi. Serving über vLLM und Triton."
   - label: "Zeitplan"
     value: "Discovery-Gespräch, Assessment über 14 oder 28 Tage mit Workload-Eignung und GPU-Sizing, danach 3–12 Monate Aufbau je nach Umfang; optional Managed Operations."
   - label: "Lizenz"

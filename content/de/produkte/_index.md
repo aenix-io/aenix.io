@@ -90,7 +90,7 @@ Angebot per RFP: 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach
 
 **Für Teams, die KI auf eigener Hardware betreiben** — KI-native Organisationen mit großem Volumen, regulierte KI-Deployments, GPU-intensive Produktunternehmen und Anbieter, die GPU-as-a-Service verkaufen.
 
-Mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken, Object Storage und Service-APIs, auf Wunsch als Air-Gap-Deployment. NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) und fraktionierte Freigabe über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Cozystack ist in das Programm CNCF Kubernetes AI Conformance aufgenommen.
+Mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken, Object Storage und Service-APIs, auf Wunsch als Air-Gap-Deployment. NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz); in Tenant-Kubernetes-Clustern kommen MIG-Partitionen auf MIG-fähigen Karten und Time-Slicing über HAMi hinzu. Cozystack ist in das Programm CNCF Kubernetes AI Conformance aufgenommen.
 
 Angebot per RFP: 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach Umfang.
 

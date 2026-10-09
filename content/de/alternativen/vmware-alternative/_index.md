@@ -45,7 +45,7 @@ faq:
   - q: "Was kostet es im Vergleich zu VMware?"
     a: "Cozystack ist kostenlos und Open Source. Regulierte Unternehmen, die aus VCF aussteigen, gehen über die Ænix Private Cloud Platform, die nach einem Platform Readiness Assessment per RFP angeboten wird. Service-Provider auf der Ænix Public Cloud Platform und Teams, die Cozystack selbst betreiben, buchen Support-Stufen ab 1.250 USD pro 10 Nodes und Monat (Basic), dann Standard 3.000 USD, Plus 5.500 USD und Enterprise individuell. Migrationsleistungen werden separat angeboten. VMware-VCF-Preise werden individuell angeboten und nicht veröffentlicht."
   - q: "Unterstützt Cozystack GPUs für AI- und VDI-Workloads?"
-    a: "Ja, mit klar benannter Grenze. Ganze GPUs lassen sich per Passthrough an VMs durchreichen, NVIDIA vGPU steht für VMs zur Verfügung, sofern Sie eine NVIDIA-vGPU-Lizenz besitzen, und Container-Workloads werden über den NVIDIA GPU Operator eingeplant und teilen sich eine Karte per HAMi. MIG und Time-Slicing stehen auf der Roadmap und sind noch nicht verfügbar; ein GPU-Produkt für einander nicht vertrauende Tenants sollte daher noch nicht darauf geplant werden."
+    a: "Ja. Ganze GPUs lassen sich per Passthrough an VMs durchreichen, NVIDIA vGPU steht für VMs zur Verfügung, sofern Sie eine NVIDIA-vGPU-Lizenz besitzen, und Container-Workloads werden über den NVIDIA GPU Operator eingeplant und teilen sich eine Karte per Time-Slicing mit HAMi. Auf MIG-fähigen Karten stellt der Operator außerdem MIG-Partitionen bereit, sodass Tenants, die sich eine Karte teilen, auf Hardware-Ebene getrennt sind."
 ---
 
 <!-- BLOCK 1: HERO -->
@@ -128,7 +128,7 @@ KubeVirt, Cilium, LINSTOR und Flux liefern als Community-Projekte schneller, als
 - **Tenant-Kubernetes** — jeder Tenant erhält seinen eigenen, echten Kubernetes-Cluster
 - **Managed-Datenbanken** — PostgreSQL, MariaDB, Valkey, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB
 - **S3-kompatibler Object Storage** — für Backups, AI-Trainingsdaten und Anwendungen
-- **GPU as a Service** — NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough oder NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), anteilige Nutzung für Pods über HAMi; MIG und Time-Slicing auf der Roadmap
+- **GPU as a Service** — NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough oder NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), MIG-Partitionen oder Time-Slicing über HAMi für Pods
 - **Mandantenfähige Control Plane** — Tenant-CRD, verschachtelte Tenants, Quotas pro Tenant
 - **Observability** — VictoriaMetrics + VictoriaLogs + Grafana, enthalten
 - **Backup und DR** — Velero in S3 außerhalb des Clusters, PITR pro Datenbank, DRBD-Replikation; VM-Wiederherstellung als dokumentiertes Runbook

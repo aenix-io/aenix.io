@@ -109,8 +109,8 @@ Eine typische mandantenfähige Inferenz-Flotte besteht aus einem Mix:
 
 Unterstützt werden NVIDIA-Rechenzentrums-GPUs über den NVIDIA GPU Operator:
 Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre
-NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi; MIG und Time-Slicing
-stehen auf der Roadmap. NVLink für
+NVIDIA-vGPU-Lizenz); in Tenant-Kubernetes-Clustern kommen MIG-Partitionen
+und Time-Slicing über HAMi hinzu. NVLink für
 Training über mehrere GPUs, wo sinnvoll; 25–100 Gbit/s Ethernet reichen
 für die meisten Inferenz-Muster.
 

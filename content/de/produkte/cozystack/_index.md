@@ -78,7 +78,7 @@ PostgreSQL (CloudNativePG), MariaDB, MongoDB, ClickHouse, Valkey, OpenSearch, Ka
 S3-kompatibler Storage auf Basis von SeaweedFS für Backups, Anwendungen und AI-Trainingsdaten.
 
 **GPU as a Service**
-NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi; MIG und Time-Slicing stehen auf der Roadmap.
+NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz). In Tenant-Kubernetes-Clustern stellt der GPU Operator MIG-Partitionen MIG-fähiger Karten als einplanbare Ressourcen bereit, und HAMi teilt Karten per Time-Slicing mit Überbuchung.
 
 **Cilium-Networking**
 eBPF-nativ, Network Policies, MetalLB, BGP. Ersetzt Funktionen, die bei VMware NSX bereitstellt.
