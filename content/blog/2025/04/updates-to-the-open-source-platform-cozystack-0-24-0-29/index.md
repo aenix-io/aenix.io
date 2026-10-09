@@ -4,6 +4,7 @@ seo_title: "Cozystack 0.24–0.29: PXE provisioning and VM IPs"
 description: "Six Cozystack releases in six weeks: PXE machine provisioning, RTT monitoring between data centres, dedicated IP addresses for VMs and more."
 date: "2025-04-10"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/04/cozystack-0-24-0-29-pxe-provisionierung-rtt-monitoring-ip-adressen-vms/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"

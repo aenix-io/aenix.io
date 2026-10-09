@@ -4,6 +4,7 @@ seo_title: "Cozystack 1.2: OpenSearch and VPC peering"
 description: "The Cozystack 1.2 release line is now available. v1.2.0 was published on March 27, 2026, and v1.2.1 followed on March 31, 2026."
 date: "2026-04-03"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/04/cozystack-1-2-opensearch-vpc-peering-tenant-scheduling/"
 type: "announcement"
 topics: ["Cozystack", "LINSTOR", "Multi-tenancy", "Observability"]
 language: "en"

@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.17: Windows VMs and VM image upload"
 description: "This update mainly focuses on enhancing the platform’s virtualization features, while also introducing several other improvements."
 date: "2024-10-24"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/10/cozystack-v0-17-windows-vms-image-upload-s3-weboberflaeche/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"

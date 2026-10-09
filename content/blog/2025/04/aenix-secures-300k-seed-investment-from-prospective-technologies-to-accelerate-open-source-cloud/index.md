@@ -5,6 +5,7 @@ description: "Ænix, the company that created the open-source Cozystack platform
 date: "2025-04-11"
 cover_image: "/img/blog/medium/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud/01.jpg"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/04/aenix-seed-investment-300k-prospective-technologies-open-source-cloud/"
 type: "announcement"
 topics: ["Cozystack", "Sovereignty", "AI and ML", "Financial Services", "CNCF", "Compliance"]
 language: "en"

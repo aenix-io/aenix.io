@@ -3,6 +3,7 @@ title: "Deploy Cozystack on any Kubernetes with Ansible"
 description: "Install Cozystack on an existing Kubernetes cluster with the ansible-cozystack collection, for teams that cannot run the full stack on Talos Linux."
 date: "2026-03-04"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/03/cozystack-ansible-beliebiges-kubernetes/"
 type: "tutorial"
 topics: ["DevOps", "Open Source", "Ansible", "Kubernetes", "Platform Engineering", "Cozystack"]
 language: "en"

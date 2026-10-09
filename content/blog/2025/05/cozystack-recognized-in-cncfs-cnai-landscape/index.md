@@ -4,6 +4,7 @@ seo_title: "Cozystack joins the CNCF Cloud Native AI Landscape"
 description: "The Cloud Native Computing Foundation has added Cozystack to its Cloud Native AI (CNAI) Landscape as a platform for running AI workloads on Kubernetes."
 date: "2025-05-21"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/05/cozystack-cncf-cloud-native-ai-landscape/"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "AI and ML", "GPU", "CNCF", "Platform Engineering"]
 language: "en"

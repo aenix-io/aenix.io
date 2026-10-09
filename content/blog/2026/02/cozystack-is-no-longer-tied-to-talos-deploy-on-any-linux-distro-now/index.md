@@ -4,6 +4,7 @@ seo_title: "Cozystack now runs on any Linux distribution"
 description: "Cozystack can now be installed on an existing Kubernetes cluster on any Linux distribution. When to choose Generic Kubernetes over Talos, and how to try it."
 date: "2026-02-23"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/02/cozystack-ohne-talos-beliebige-linux-distribution/"
 type: "tutorial"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
