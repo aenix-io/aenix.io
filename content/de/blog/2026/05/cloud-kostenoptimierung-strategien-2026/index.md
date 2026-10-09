@@ -52,7 +52,7 @@ Dieser Beitrag vertieft das Thema unserer Seite **[Cloud-Kostenoptimierung](/de/
 
 **Konfigurationelle Optimierung** — alles was ohne Architektur-Änderung gemacht werden kann (Right-Sizing, Reservation-Tuning, Waste-Eliminierung). Typische Einsparungen: 15-25%.
 
-**Architekturelle Optimierung** — alles was Architektur-Änderung erfordert (Repatriation, Managed-Service-Ersatz, Hyperscaler-Diversifizierung). Hochvariabel; 30-60% auf Workloads die wechseln.
+**Architekturelle Optimierung** — alles was Architektur-Änderung erfordert (Repatriation, Managed-Service-Ersatz, Hyperscaler-Diversifizierung). Sehr unterschiedlich — von gar nichts, wenn ein Workload bleiben sollte, bis zu großen Einsparungen bei dauerhaften Workloads mit klarem Repatriation-Fall. Pro Workload durchrechnen statt Faustregel.
 
 ## 8 Strategien
 

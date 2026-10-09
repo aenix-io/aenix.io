@@ -58,7 +58,7 @@ Before any specific strategy, the organizing distinction:
 
 **Configurational optimization** is everything that can be done without changing the architecture. Right-sizing instances, tuning reservations, eliminating waste, optimizing storage tiers, fixing egress patterns. The scope is "use what you have, better." Returns: typically 15-25% savings on a moderately-managed estate, 30%+ on a poorly managed one.
 
-**Architectural optimization** is everything that requires changing the architecture. Repatriating workloads, replacing managed services with self-managed equivalents, restructuring data flows, switching providers, moving to open-source platforms. The scope is "change what you run on." Returns: highly variable; 30-60% on workloads that move; substantial cases for 0% (don't move) or 70%+ (mismanaged spend with strong repatriation case).
+**Architectural optimization** is everything that requires changing the architecture. Repatriating workloads, replacing managed services with self-managed equivalents, restructuring data flows, switching providers, moving to open-source platforms. The scope is "change what you run on." Returns: highly variable — from nothing, when a workload should stay where it is, to large savings on steady workloads with a strong repatriation case. Model it per workload rather than trusting a rule of thumb.
 
 A real cost program does configurational first, captures those savings, then evaluates whether architectural moves are warranted. Skipping configurational is leaving money on the table. Skipping architectural means the optimization stops at a structural ceiling.
 

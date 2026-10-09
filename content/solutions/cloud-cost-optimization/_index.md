@@ -26,7 +26,7 @@ quick_facts:
   - label: "Vendor neutrality"
     value: "Ænix holds no hyperscaler partnership; recommendations are not shaped by partnership economics"
   - label: "Typical savings range"
-    value: "15-25% addressable from cost leaks before any architectural change; 30-60% better unit economics when sustained workloads move to customer-controlled hardware"
+    value: "15-25% addressable from cost leaks before any architectural change; materially better unit economics when sustained workloads move to customer-controlled hardware — model your own numbers in the TCO calculator"
   - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
@@ -154,7 +154,7 @@ The honest engagement names which of these apply to your situation, and tells yo
 <div class="diagram__conn">fix in-cloud or move</div>
 <div class="diagram__node"><b>Optimized estate</b><div class="diagram__chips"><span>Tuned commitments</span><span>Repatriation candidates</span></div></div>
 <div class="diagram__conn">typically cuts</div>
-<div class="diagram__node"><b>Predictable spend</b><div class="diagram__chips"><span>30-60% better unit economics</span><span>Infrastructure you control</span></div></div>
+<div class="diagram__node"><b>Predictable spend</b><div class="diagram__chips"><span>Better unit economics for steady workloads</span><span>Infrastructure you control</span></div></div>
 </div>
 </div>
 

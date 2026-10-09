@@ -61,7 +61,7 @@ Three independent pressures hit the same architectures at the same time:
 
 **AI and inference economics.** GenAI training and inference at scale have egress, GPU-pricing, and data-residency profiles that hyperscalers were not designed to optimize. Some workloads make sense in hyperscaler GPU; many do not.
 
-The combination has shifted repatriation from "what some hipsters do" to a normal part of cloud strategy. Done well, it produces 30-60% cost reduction on the workloads that move, plus regulator-aligned architecture. Done badly, it produces an under-engineered on-prem environment that combines the worst of both worlds.
+The combination has shifted repatriation from "what some hipsters do" to a normal part of cloud strategy. Done well, it lowers the cost of the workloads that move and gives a regulator-aligned architecture. Done badly, it produces an under-engineered on-prem environment that combines the worst of both worlds.
 
 ## Repatriation isn't all-or-nothing
 
@@ -101,7 +101,7 @@ A honest TCO model captures all of these and compares them to a realistic destin
 - Platform-engineering capacity needed to operate the destination
 - Software licences where applicable
 
-The honest model usually shows on-prem economics 30-60% better for steady-state workloads, and 0-20% worse for highly elastic workloads. The interesting question is which workloads are which.
+An honest model usually shows on-prem economics ahead for steady-state workloads and behind for highly elastic ones. The interesting question is which workloads are which.
 
 **Deliverable:** TCO model in a spreadsheet your CFO can audit. Public-cloud-current-state vs. destination-target-state, sensitive to occupancy assumptions.
 

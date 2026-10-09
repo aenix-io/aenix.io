@@ -27,7 +27,7 @@ quick_facts:
   - label: "Herstellerneutralität"
     value: "Ænix hat keine Hyperscaler-Partnerschaft; Empfehlungen werden nicht von Partnerschaftsökonomie geprägt"
   - label: "Typische Einsparungen"
-    value: "15–25 % adressierbar aus Kostenlecks vor jeder architektonischen Änderung; 30–60 % bessere Stückkosten, wenn dauerhafte Workloads auf Hardware unter Kundenkontrolle umziehen"
+    value: "15–25 % adressierbar aus Kostenlecks vor jeder architektonischen Änderung; deutlich bessere Stückkosten, wenn dauerhafte Workloads auf Hardware unter Kundenkontrolle umziehen — rechnen Sie Ihre eigenen Zahlen im TCO-Rechner durch"
   - label: "Lizenz"
     value: "Apache 2.0 (keine Lizenzkosten pro CPU/Core)"
   - label: "Status"
@@ -154,7 +154,7 @@ Ein ehrliches Projekt benennt, welche dieser Punkte auf Ihre Situation zutreffen
 <div class="diagram__conn">in der Cloud beheben oder verlagern</div>
 <div class="diagram__node"><b>Optimierte Landschaft</b><div class="diagram__chips"><span>Nachjustierte Commitments</span><span>Repatriation-Kandidaten</span></div></div>
 <div class="diagram__conn">ergibt typischerweise</div>
-<div class="diagram__node"><b>Planbare Ausgaben</b><div class="diagram__chips"><span>30–60 % bessere Stückkosten</span><span>Infrastruktur unter Ihrer Kontrolle</span></div></div>
+<div class="diagram__node"><b>Planbare Ausgaben</b><div class="diagram__chips"><span>Bessere Stückkosten für dauerhafte Workloads</span><span>Infrastruktur unter Ihrer Kontrolle</span></div></div>
 </div>
 </div>
 

@@ -99,7 +99,7 @@ Treffen mindestens drei dieser Punkte zu, verdient Repatriation eine strukturier
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></span>
 **1. Planbare Kosten für dauerhafte Workloads**
-Die Hyperscaler-Ökonomie belohnt Elastizität. Für Workloads, die rund um die Uhr bei planbarer Auslastung laufen, sind die Stückkosten On-Premises oder in der Private Cloud regelmäßig 30–60 % besser — sobald Egress, ungenutzte Ressourcen und untergenutzte Commitments ehrlich eingerechnet werden.
+Die Hyperscaler-Ökonomie belohnt Elastizität. Für Workloads, die rund um die Uhr bei planbarer Auslastung laufen, sind die Stückkosten On-Premises oder in der Private Cloud oft deutlich besser — sobald Egress, ungenutzte Ressourcen und untergenutzte Commitments ehrlich eingerechnet werden. Wie viel besser, hängt von Ihren Workloads ab; der [TCO-Rechner](/tco-calculator/) hilft beim Durchrechnen.
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
 **2. Regulatorischer Druck und Souveränität**
