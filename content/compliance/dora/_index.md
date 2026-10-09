@@ -32,7 +32,7 @@ quick_facts:
   - label: "Certification"
     value: "None exists. DORA defines obligations for financial entities; there is no DORA certificate for a platform, and Ænix does not claim one."
 faq:
-  - q: "Is the Ænix platform DORA compliant?"
+  - q: "Is the Ænix platform DORA compliant?"  # content-rules: allow compliant-claim
     a: "The question does not apply to a platform. Financial entities are subject to DORA; platforms are part of the ICT estate those entities manage. What the Ænix platforms contribute is replication, live migration, backup and restore, observability, audit logging and an architecture with no vendor dependency to unwind. There is no DORA certification mark to hold, for us or for anyone."
   - q: "Does running on our own hardware remove ICT third-party risk?"
     a: "Self-hosting removes the platform vendor from the critical path — often the largest single component of that risk. Hardware suppliers, datacenter operators and any integrator you contract remain third parties and belong in the register of information. If you buy support, hosting or operations from Ænix, Ænix is one of them."

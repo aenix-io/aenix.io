@@ -1,0 +1,162 @@
+# Pages that may exist in one language only.
+#
+# Read by scripts/check-content-rules.py (rule: locale-parity). Every English
+# page or blog post needs a German counterpart (`hreflang_de` here,
+# `hreflang_en` back on the German page) unless an entry below matches it.
+# The same applies to German pages without an English original.
+#
+# Each entry has ONE matcher and a reason:
+#   path:      glob on the repo-relative file path ("dir/**" matches everything below dir)
+#   page_type: the page's page_type (front matter, or the /for/ cascade)
+#   robots:    substring of the page's `robots:` front matter
+#   reason:    why this page has no counterpart (required)
+#
+# Do not add new pages here to skip translation: new pages ship EN + DE in the
+# same PR. When you translate a "legacy" page, delete its entry: the checker
+# fails on exact-path entries whose file is gone or that now has a counterpart.
+
+# --- Kinds of pages that are single-language by design ---------------------
+
+- page_type: flag-page
+  reason: "Redirect, flag, thank-you and synced calculator pages; not standalone content."
+- page_type: error-page
+  reason: "Error page."
+- robots: noindex
+  reason: "Not indexed, so it has no search counterpart to pair with."
+
+- path: "content/tour-2026/**"
+  reason: "Event page; German event pages were deliberately removed."
+- path: "content/workshops/**"
+  reason: "Event pages; German event pages were deliberately removed."
+- path: "content/workshop/**"
+  reason: "Workshop lab environment for event attendees."
+- path: "content/webinars/**"
+  reason: "Event pages; German event pages were deliberately removed."
+- path: "content/web0826/**"
+  reason: "Webinar materials page for attendees (event)."
+- path: "content/certification/**"
+  reason: "Certification section is paired EN <-> RU (hreflang_ru), not German."
+- path: "content/ru/**"
+  reason: "Russian locale; not part of the EN <-> DE pairing."
+- path: "content/fr/**"
+  reason: "French locale (event pages); not part of the EN <-> DE pairing."
+- path: "content/styleguide/**"
+  reason: "Developer page, not built in production."
+- path: "content/l/**"
+  reason: "Short-link redirect namespace, never rendered."
+- path: "content/go/**"
+  reason: "Link registry tool for the team."
+- path: "content/demo/**"
+  reason: "Demo app shell."
+- path: "content/idp/**"
+  reason: "IDP demo app shell."
+- path: "content/quiz/**"
+  reason: "Preserved standalone quiz (CLAUDE.md, Preserved pages)."
+- path: "content/oss-contribution.md"
+  reason: "Preserved page maintained by hand (CLAUDE.md, Preserved pages)."
+
+# --- German-only pages -------------------------------------------------------
+
+- path: "content/de/impressum/_index.md"
+  reason: "German legal notice (Impressum), required for the German site only."
+- path: "content/de/blog/2026/05/cloud-migration-strategie/index.md"
+  reason: "Written for the DACH audience in German; there is no English original."
+
+# --- Legacy: English pages without a German version yet ----------------------
+# Baseline of 2026-10-09. Translate when touched, then delete the entry.
+# Regenerate the list with: python3 scripts/check-content-rules.py --print-legacy-baseline
+
+- path: "content/blog/2024/08/cozystack-v0-11/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/08/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/08/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/08/managed-kubernetes-in-open-source-platform-cozystack-why-were-doing-this/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/08/migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-and-new-cosi-driver-for-seaweedfs/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/09/cozystack-has-officially-been-included-in-the-cncf-landscape/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/09/issue-with-configuring-registry-mirroring-in-harbor/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/09/recent-changes-in-the-cozystack-open-source-platform-opencost-log-collection-system-bridge/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/10/cozystack-on-hacktoberfest-become-a-part-of-the-global-it-event/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/10/the-open-source-platform-cozystack-version-0-16-0/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/10/whats-new-in-cozystack-v0-17/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/11/cozystack-v0-18/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/12/cozystack-v0-20-release-terraform-keycloak-and-stability-security-improvements/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/12/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2024/12/kubectl-node-shell-plugin-updated-to-v1110/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/01/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/03/cozystack-becomes-a-cncf-sandbox-project/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/04/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/04/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/04/updates-to-the-open-source-platform-cozystack-0-24-0-29/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/05/cozystack-recognized-in-cncfs-cnai-landscape/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/06/cozystack-became-a-certified-kubernetes-platform/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/07/cozystack-v0-31-0-33/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/08/cozystack-v0-34/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/08/cozystack-v0-35/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/08/invitation-to-cozysummit-virtual-december-3/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/09/cncf-webinar-one-api-to-rule-them-all-building-a-unified-platform-with-kubernetes-aggregation/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/09/new-cncf-webinar-building-your-own-cloud-platform-with-open-source/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/09/protofire-experience-operating-kubernetes-with-cozystack/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/10/cozystack-applied-to-cncf-incubated/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/10/cozystack-v0-36/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/10/cozysummit-lineup-is-out/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/11/cozystack-v0-37-brand-new-ui/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2025/12/cozystack-v0-38-vpc-networking-vm-console-faster-api/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/01/cozystack-v0-40-enhanced-storage-platform-architecture/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/01/cozystack-v0-41-0-managed-mongodb/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/02/amazing-news-invitation-to-cozysummit-virtual-may-26/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/02/cozystack-is-no-longer-tied-to-talos-deploy-on-any-linux-distro-now/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/02/join-aenix-at-cloudfest-2026/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/02/platformize-it-part-2-extending-kubernetes-and-the-api-aggregation-layer/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/03/cozystack-aenix-at-kubecon-europe/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/03/deploy-cozystack-on-any-kubernetes-with-ansible/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/04/cozystack-1-2-opensearch-vpc-peering-and-smarter-tenant-scheduling/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/04/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/04/cozystack-have-launched-a-new-oss-health-section-on-a-website/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/blog/2026/04/cozysummit-virtual-2026-the-program-is-set-and-it-looks-amazing/index.md"
+  reason: "legacy — translate when touched"
+- path: "content/isp-calculator/_index.md"
+  reason: "legacy — translate when touched"

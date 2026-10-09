@@ -13,10 +13,30 @@ on:
       - 'static/llms.txt'
       - 'static/llms-full.txt'
       - 'scripts/validate-frontmatter.sh'
+      - 'scripts/check-content-rules.py'
+      - 'data/**'
+      - 'layouts/**'
+      - 'themes/aenix/layouts/**'
+      - 'hugo.yaml'
+      - '.github/workflows/seo-validation.yml'
   push:
     branches: [main]
 
 jobs:
+  content-rules:
+    name: Content rules (locale parity, authors, wording, quizzes)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The PR-scoped warnings diff against the base branch.
+          fetch-depth: 0
+
+      # Errors fail the job; warnings (EN/DE drift, title and description
+      # length on changed files) appear as annotations on the PR diff.
+      - name: Check content rules
+        run: python3 scripts/check-content-rules.py
+
   validate-frontmatter:
     name: Validate page frontmatter
     runs-on: ubuntu-latest

@@ -7,7 +7,7 @@ hero_cta: {secondary_text: "Open the developer-platform demo", secondary_url: "/
 quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "private cloud platform for regulated enterprises"
-secondary_keywords: ["sovereign cloud platform", "dora compliant cloud", "nis2 cloud platform", "internal developer platform", "vmware alternative enterprise"]
+secondary_keywords: ["sovereign cloud platform", "dora compliant cloud", "nis2 cloud platform", "internal developer platform", "vmware alternative enterprise"]  # content-rules: allow compliant-claim
 direct_answer_image: "/images/screens/private-cloud-idp-apps.jpg"
 direct_answer_image_alt: "Developer self-service in Ænix Private Cloud Platform: the application catalog with running apps, environments and deploy history"
 images: ["img/og/private-cloud-platform.jpg"]

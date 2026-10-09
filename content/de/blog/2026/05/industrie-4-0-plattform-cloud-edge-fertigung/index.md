@@ -21,7 +21,7 @@ faq:
     a: "Der Standort-Cluster läuft weiter. Seine Workloads arbeiten aus lokalem Storage, der innerhalb des Standorts repliziert wird, und die Steuerung hing ohnehin nie von der Plattform ab. Replikation nach oben, zentrale Dashboards und standortübergreifende Aggregation pausieren; gepufferte Daten fließen ab, sobald die Verbindung zurück ist."
   - q: "Wie werden GPUs für die visuelle Qualitätsprüfung genutzt?"
     a: "NVIDIA-Rechenzentrums-GPUs werden über den NVIDIA GPU Operator unterstützt. In Tenant-Kubernetes-Clustern teilen sich mehrere Prüfmodelle eine Karte über MIG-Partitionen auf MIG-fähigen Karten oder über Time-Slicing mit HAMi. Virtuelle Maschinen erhalten ganze GPUs per Passthrough oder NVIDIA vGPU mit Ihrer eigenen NVIDIA-vGPU-Lizenz."
-  - q: "Macht die Plattform einen Hersteller NIS2-konform?"
+  - q: "Macht die Plattform einen Hersteller NIS2-konform?"  # content-rules: allow compliant-claim
     a: "Das leistet keine Plattform allein. Die Herstellung kritischer Produkte steht in Anhang II der NIS2-Richtlinie, und die Pflichten bleiben beim Hersteller. Die Plattform ist darauf ausgelegt, die Maßnahmen nach Artikel 21 zu unterstützen: Tenant-Isolation, Netzwerksegmentierung, optionale Volume-Verschlüsselung, Audit-Logs mit konfigurierbarer Aufbewahrung und Air-Gap-Installation."
 quiz:
   title: "Wissens-Check: Architektur einer Industrie-4.0-Plattform"
@@ -54,7 +54,7 @@ quiz:
       explanation: "In Tenant-Kubernetes-Clustern stellt der NVIDIA GPU Operator MIG-Partitionen bereit, HAMi liefert Time-Slicing. Virtuelle Maschinen erhalten ganze GPUs per Passthrough oder NVIDIA vGPU mit der eigenen NVIDIA-vGPU-Lizenz des Kunden."
     - q: "Wie beschreibt der Artikel die Rolle der Plattform bei NIS2 für Hersteller kritischer Produkte?"
       options:
-        - { text: "Die Plattform zertifiziert den Hersteller als NIS2-konform", correct: false }
+        - { text: "Die Plattform zertifiziert den Hersteller als NIS2-konform", correct: false }  # content-rules: allow compliant-claim
         - { text: "NIS2 gilt für die Fertigung überhaupt nicht", correct: false }
         - { text: "Darauf ausgelegt, die Maßnahmen nach Artikel 21 zu unterstützen; die Pflichten bleiben beim Hersteller", correct: true }
       explanation: "Die Herstellung kritischer Produkte steht in Anhang II (wichtige Einrichtungen). Die Plattform liefert architektonische Kontrollen — Isolation, Segmentierung, optionale Verschlüsselung, Audit-Logs mit konfigurierbarer Aufbewahrung, Air-Gap —, Pflichten und Nachweise bleiben aber beim Hersteller."

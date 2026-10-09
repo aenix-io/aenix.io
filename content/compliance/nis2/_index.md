@@ -34,7 +34,7 @@ quick_facts:
   - label: "Not provided"
     value: "Governance, risk analysis, incident classification and notification, training and HR security — and automated cross-site VM failover."
 faq:
-  - q: "Is the Ænix platform NIS2 compliant?"
+  - q: "Is the Ænix platform NIS2 compliant?"  # content-rules: allow compliant-claim
     a: "The question does not apply to a platform. NIS2 places obligations on essential and important entities and makes their management bodies accountable under Article 20. A platform is part of the network and information systems those entities secure. What the Ænix platforms do is supply technical measures for several Article 21(2) points and make them demonstrable. There is no NIS2 certificate for a platform, and Ænix does not claim one."
   - q: "Which Article 21(2) measures does the platform actually cover?"
     a: "It contributes most to (b) incident handling, (c) business continuity, (e) secure maintenance and vulnerability handling, (h) cryptography, (i) access control and (j) multi-factor authentication. It contributes evidence, but not the substance, to (a) risk analysis and (f) effectiveness assessment. Points (d) supply chain and (g) cyber hygiene and training are mostly organisational. The table on this page gives the split point by point."

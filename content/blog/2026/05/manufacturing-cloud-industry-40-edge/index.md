@@ -20,7 +20,7 @@ faq:
     a: "The site cluster keeps running. Its workloads serve from local storage replicated inside the site, and control never depended on the platform. Replication upward, central dashboards and cross-site aggregation pause, and buffered data drains when the link returns."
   - q: "How are GPUs used for visual quality inspection?"
     a: "NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator. In tenant Kubernetes clusters, MIG partitions on MIG-capable cards or time-sliced sharing via HAMi let several inspection models share a card. Virtual machines take whole GPUs by passthrough, or NVIDIA vGPU with your own NVIDIA vGPU licence."
-  - q: "Does the platform make a manufacturer NIS2-compliant?"
+  - q: "Does the platform make a manufacturer NIS2-compliant?"  # content-rules: allow compliant-claim
     a: "No platform does that on its own. Manufacturing of critical products is listed in NIS2 Annex II, and the obligations stay with the manufacturer. The platform is built to support the Article 21 measures with tenant isolation, network segmentation, opt-in volume encryption, audit logs with configurable retention and air-gapped installation."
 quiz:
   title: "Test yourself: Industry 4.0 platform architecture"
@@ -53,7 +53,7 @@ quiz:
       explanation: "In tenant Kubernetes clusters, the NVIDIA GPU Operator exposes MIG partitions and HAMi provides time-sliced sharing. Virtual machines take whole GPUs by passthrough, or NVIDIA vGPU with the customer's own NVIDIA vGPU licence."
     - q: "How does the article describe the platform's role in NIS2 for manufacturers of critical products?"
       options:
-        - { text: "The platform certifies the manufacturer as NIS2-compliant", correct: false }
+        - { text: "The platform certifies the manufacturer as NIS2-compliant", correct: false }  # content-rules: allow compliant-claim
         - { text: "NIS2 does not apply to manufacturing at all", correct: false }
         - { text: "Built to support the Article 21 measures; the obligations stay with the manufacturer", correct: true }
       explanation: "Manufacturing of critical products is listed in Annex II (important entities). The platform supplies architectural controls — isolation, segmentation, opt-in encryption, audit logs with configurable retention, air-gap — but the obligations and the evidence remain the manufacturer's."
