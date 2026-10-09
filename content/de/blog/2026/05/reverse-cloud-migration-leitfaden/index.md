@@ -49,10 +49,11 @@ Dieser Beitrag vertieft das Thema unserer Seite **[Cloud Repatriation](/de/loesu
 
 ## Repatriation ist nicht alles-oder-nichts
 
-Typischer repatriierter Bestand:
-- 30-50% on-prem oder Private Cloud (steady-state, reguliert, teuer, latenz-kritisch)
-- 30-50% bleibt in Public Cloud (elastisch, hyperscaler-proprietär, latenzempfindlich)
-- 10-20% in Übergang
+Ein typischer repatriierter Bestand teilt sich in drei Gruppen:
+
+- On-Premises oder Private Cloud (dauerhaft laufend, reguliert, teuer, latenzkritisch)
+- Verbleib in der Public Cloud (elastisch, an proprietäre Hyperscaler-Dienste gebunden, latenzempfindlich)
+- Im Übergang (in Migration, im PoC oder in erneuter Bewertung)
 
 ## Fünf-Schritte-Playbook
 

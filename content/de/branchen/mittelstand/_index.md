@@ -12,7 +12,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/smb-mid-market/
 direct_answer: |
-  **Für KMU und kleineren Mittelstand — unter etwa 100 Mitarbeitenden, ein einzelner Tenant, einfache Infrastruktur — ist Cozystack meist Over-Engineering, und Ænix sagt das offen. Cozystack ist für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder gebaut, die KubeVirt-VMs und Container auf einer Kubernetes-API, Cilium-eBPF-Networking, LINSTOR-Storage und Isolation über Tenant-CRDs brauchen. Die meisten Ænix-Projekte laufen mit Service Providern und Organisationen, die ein eigenes Plattform-Team betreiben. Im KMU-Umfeld und im Mittelstand ist ein Fit die Ausnahme — ausgelöst durch regulierte Daten, Souveränitätsanforderungen oder Multi-Tenant-SaaS, nicht durch allgemeinen Bedarf an einer Cloud-Plattform. Ænix bietet einen kostenlosen 15-minütigen Fit-Check und ein Platform Readiness Assessment zum Festpreis (14 Tage) und empfiehlt einfachere Optionen wie Proxmox VE oder Managed Services der Hyperscaler, wenn Cozystack nicht passt.**
+  **Für KMU und kleineren Mittelstand — unter etwa 100 Mitarbeitenden, ein einzelner Tenant, einfache Infrastruktur — ist Cozystack meist Over-Engineering, und Ænix sagt das offen. Cozystack ist für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder gebaut, die KubeVirt-VMs und Container auf einer Kubernetes-API, Cilium-eBPF-Networking, LINSTOR-Storage und Isolation über Tenant-CRDs brauchen. Die meisten Ænix-Projekte laufen mit Service Providern und Organisationen, die ein eigenes Plattform-Team betreiben. Im KMU-Umfeld und im Mittelstand ist ein Fit die Ausnahme — ausgelöst durch regulierte Daten, Souveränitätsanforderungen oder Multi-Tenant-SaaS, nicht durch allgemeinen Bedarf an einer Cloud-Plattform. Ænix bietet ein kostenloses 30-minütiges Erstgespräch und ein Platform Readiness Assessment zum Festpreis (14 oder 28 Tage) und empfiehlt einfachere Optionen wie Proxmox VE oder Managed Services der Hyperscaler, wenn Cozystack nicht passt.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine ehrliche Einordnung, wann Cozystack und Ænix für KMU und Mittelstand sinnvoll sind und wann eine einfachere Plattform die richtige Wahl ist."
@@ -25,7 +25,7 @@ quick_facts:
   - label: "Bezugsweg für KMU"
     value: "Typischerweise über einen Ænix-Partner (regionaler MSP oder Hosting-Anbieter), der die Ænix Public Cloud Platform betreibt; eine direkte Zusammenarbeit mit Ænix passt im KMU-Maßstab selten."
   - label: "Erster Schritt"
-    value: "Kostenloser 15-minütiger Fit-Check, danach optional ein Platform Readiness Assessment zum Festpreis (14 Tage) vor jeder Umsetzung."
+    value: "Kostenloses 30-minütiges Erstgespräch, danach optional ein Platform Readiness Assessment zum Festpreis (14 oder 28 Tage) vor jeder Umsetzung."
 faq:
   - q: "Passt Cozystack für ein kleines Unternehmen?"
     a: "Meist nicht. Für KMU mit einem Team, einem einzelnen Tenant, unter etwa 50 Hosts und ohne Platform-Engineering-Funktion ist Cozystack Over-Engineering. Einfachere Optionen wie Proxmox VE, Managed Services der Hyperscaler oder Anbieter wie Hetzner und OVHcloud passen in der Regel besser."
@@ -37,8 +37,8 @@ faq:
     a: "Die Support-Stufen für selbst betriebenes Cozystack und für Abonnements der Ænix Public Cloud Platform sind Basic (1.250 USD), Standard (3.000 USD) und Plus (5.500 USD) pro 10 Nodes und Monat bei jährlicher Abrechnung; Enterprise wird individuell angeboten — siehe Preisseite. Die Ænix Private Cloud Platform wird per RFP angeboten. Cozystack selbst ist Open Source unter Apache 2.0 und ohne Lizenzkosten."
   - q: "Warum rät Ænix KMU von Cozystack ab?"
     a: "Cozystack ist Open Source, und Ænix verkauft Abonnements und Services, keine Lizenzen. Etwas zu bauen, das ein Kunde nicht braucht, würde Vertrauen zerstören. Von Anfang an ehrlich zu sein und nur passende Projekte anzunehmen, schützt den Kunden und den Ruf von Ænix."
-  - q: "Was umfasst der kostenlose Fit-Check?"
-    a: "Ein 15-minütiges Gespräch ohne Verkaufsdruck, in dem Ænix ehrlich einschätzt, ob Cozystack zu Ihrer Situation passt. Wenn nicht, erhalten Sie eine Empfehlung für eine einfachere Alternative; wenn ja, ist der nächste Schritt optional ein Platform Readiness Assessment zum Festpreis (14 Tage)."
+  - q: "Was umfasst das kostenlose Erstgespräch?"
+    a: "Ein 30-minütiges Gespräch ohne Verkaufsdruck, in dem Ænix ehrlich einschätzt, ob Cozystack zu Ihrer Situation passt. Wenn nicht, erhalten Sie eine Empfehlung für eine einfachere Alternative; wenn ja, ist der nächste Schritt optional ein Platform Readiness Assessment zum Festpreis über 14 oder 28 Tage."
 ---
 
 **Cozystack ist gezielt für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder gebaut. Für KMU und kleineren Mittelstand (unter ~100 Mitarbeitende, ein einzelner Tenant, einfache Infrastruktur) ist Cozystack Over-Engineering. Die ehrliche Antwort zählt mehr als das Verkaufsargument.**
@@ -58,7 +58,7 @@ faq:
 </div>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Fit-Check vereinbaren →</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch vereinbaren →</a>
 </div>
 
 ---
@@ -101,7 +101,7 @@ In diesen Fällen klärt ein Discovery-Gespräch, ob Cozystack passt oder ob etw
 
 ## Was wir KMU und Mittelstand anbieten
 
-- **15-minütiger Fit-Check** — kostenlos, ehrlich, ohne Verkaufsdruck. Wir sagen Ihnen, ob Cozystack passt oder nicht.
+- **30-minütiges Erstgespräch** — kostenlos, ehrlich, ohne Verkaufsdruck. Wir sagen Ihnen, ob Cozystack passt oder nicht.
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 Tage fokussiert oder 28 Tage vollständig, Festpreis) — für Organisationen, die vor einer Entscheidung eine strukturierte Bewertung wünschen.
 - **Umsetzung in Phase 2** — nur wenn das Assessment bestätigt, dass Cozystack passt.
 

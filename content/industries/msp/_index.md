@@ -25,7 +25,7 @@ faq:
   - q: "What is an MSP cloud platform?"
     a: "It is a cloud platform an MSP runs under its own brand to deliver compute, storage, and managed services to its customers. Ænix delivers it on Cozystack, so the MSP owns the customer relationship, billing, and margin rather than reselling a hyperscaler."
   - q: "How does white-label work with Cozystack?"
-    a: "White-labelling is an open-source Cozystack feature: the Cozystack Dashboard self-service console is customizable — colors, logo, and domain — so customers see the MSP's brand. Ænix support for white-label configuration starts at the Standard tier. The nested Tenant CRD provides a multi-tier hierarchy from the top-level tenant down to each MSP-customer tenant."
+    a: "White-labelling is an open-source Cozystack feature: the Cozystack Dashboard self-service console carries the MSP's logo, titles, footer and favicon, and the sign-in pages show the MSP's name, so customers see the MSP's brand. Branding is set once for the whole platform; each tenant can publish its services on its own domain. Ænix support for white-label configuration starts at the Standard tier. The nested Tenant CRD provides a multi-tier hierarchy from the top-level tenant down to each MSP-customer tenant."
   - q: "Is there per-core or per-CPU licensing?"
     a: "No. Cozystack is open source under Apache 2.0, so there is no per-CPU or per-core licensing. MSPs pay for an Ænix subscription (support tiers) and services rather than capacity-based platform licences, which protects margin as customer workloads scale."
   - q: "How does billing integrate for MSPs?"
@@ -73,7 +73,7 @@ For full engagement see **[white-label cloud services](/services/white-label-clo
 
 An MSP reselling a hyperscaler owns the invoice and nothing else: the customer's account, quotas and support path all live in a console the MSP does not control, and the margin is whatever the partner tier allows.
 
-Cozystack's Tenant CRD nests, so the hierarchy is the product. A top-level tenant contains the MSP tenant, which contains a tenant per MSP customer, each with its own quotas, isolation, observability scope and audit trail. The Cozystack Dashboard is branded per level — colours, logo, domain — and the Ænix WHMCS integration bills from the MSP's existing customer-management system, so the customer never sees a second vendor. Because the platform is Apache 2.0 with no per-CPU fee, the margin does not compress as customer workloads grow, and the MSP decides which services in the catalog to expose rather than inheriting someone else's.
+Cozystack's Tenant CRD nests, so the hierarchy is the product. A top-level tenant contains the MSP tenant, which contains a tenant per MSP customer, each with its own quotas, isolation, observability scope and audit trail. The Cozystack Dashboard carries the MSP's brand across the platform, each customer tenant can publish its services on its own domain, and the Ænix WHMCS integration bills from the MSP's existing customer-management system, so the customer never sees a second vendor. Because the platform is Apache 2.0 with no per-CPU fee, the margin does not compress as customer workloads grow, and the MSP decides which services in the catalog to expose rather than inheriting someone else's.
 
 </div>
 </div>

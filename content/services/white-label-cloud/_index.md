@@ -1,13 +1,13 @@
 ---
 title: "White label cloud — branded cloud product for MSPs and resellers"
 seo_title: "White-label cloud for MSPs and resellers"
-description: "Branded cloud for MSPs and resellers on Cozystack: nested tenancy, a Cozystack Dashboard in your colours, WHMCS billing and a catalog you curate."
+description: "Branded cloud for MSPs and resellers on Cozystack: nested tenancy, a Cozystack Dashboard under your brand, WHMCS billing and a catalog you curate."
 related_pages: ["/services/public-cloud-builder/", "/products/public-cloud-platform/", "/partners/", "/products/cozystack/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **White-label cloud is a branded cloud product that a Managed Service Provider (MSP), hosting reseller, or system integrator sells under its own identity while running on infrastructure built and operated for it. Ænix builds these end-to-end on Cozystack, the open-source CNCF platform that runs virtual machines and containers on one Kubernetes API. A typical engagement delivers a multi-tenant platform with a nested Tenant CRD reseller-customer hierarchy, a customer-facing portal (Cozystack Dashboard) branded per reseller, WHMCS-integrated billing, and a service catalog of VMs, Kubernetes, managed databases, S3, and GPU. It suits MSPs, hosting resellers, integrators, and regulated-vertical consultancies that want hyperscaler-competitive economics without per-CPU software licensing or vendor lock-in.**
+  **White-label cloud is a branded cloud product that a Managed Service Provider (MSP), hosting reseller, or system integrator sells under its own identity while running on infrastructure built and operated for it. Ænix builds these end-to-end on Cozystack, the open-source CNCF platform that runs virtual machines and containers on one Kubernetes API. A typical engagement delivers a multi-tenant platform with a nested Tenant CRD reseller-customer hierarchy, a customer-facing portal (Cozystack Dashboard) carrying the provider's brand, WHMCS-integrated billing, and a service catalog of VMs, Kubernetes, managed databases, S3, and GPU. It suits MSPs, hosting resellers, integrators, and regulated-vertical consultancies that want hyperscaler-competitive economics without per-CPU software licensing or vendor lock-in.**
 
 quick_facts:
   - label: "What it is"
@@ -27,7 +27,7 @@ quick_facts:
 
 faq:
   - q: "What does a white-label cloud engagement with Ænix include?"
-    a: "A multi-tenant Cozystack platform with a reseller-customer hierarchy, a Cozystack Dashboard branded per reseller, WHMCS-integrated billing, a service catalog (VMs, Kubernetes, managed databases, S3, GPU), a reseller / sub-reseller model, and an operations workflow covering support, SLA management, and per-tenant observability."
+    a: "A multi-tenant Cozystack platform with a reseller-customer hierarchy, a Cozystack Dashboard with your logo, titles and favicon (branding is set once for the whole platform), WHMCS-integrated billing, a service catalog (VMs, Kubernetes, managed databases, S3, GPU), a reseller / sub-reseller model, and an operations workflow covering support, SLA management, and per-tenant observability."
   - q: "How long does it take to launch?"
     a: "After a discovery call and a 14- or 28-day readiness assessment, the platform is live in weeks once the hardware is ready, through the productized installer. Branding, billing and the operations workflow are set up alongside it, and an optional managed-services phase can cover the ramp-up."
   - q: "Can I run a multi-tier reseller model?"
@@ -79,7 +79,7 @@ hreflang_de: /de/dienstleistungen/white-label-cloud/
 </div>
 
 - **Multi-tenant Cozystack platform** with reseller-customer hierarchy (nested Tenant CRD)
-- **Branded customer-facing portal** — Cozystack Dashboard customizable per reseller
+- **Branded customer-facing portal** — Cozystack Dashboard with your logo, titles, footer and favicon, plus your name on the sign-in pages; branding applies platform-wide, and each tenant can publish its services on its own domain
 - **WHMCS-integrated billing** — production-ready, two integration modes
 - **Service catalog** — VMs, K8s, managed databases, S3, GPU
 - **Reseller / sub-reseller model** — for multi-tier partner channels

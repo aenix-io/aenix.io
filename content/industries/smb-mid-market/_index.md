@@ -54,7 +54,7 @@ hreflang_de: /de/branchen/mittelstand/
 </div>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Fit-check call →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call →</a>
 </div>
 
 ---

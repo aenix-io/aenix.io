@@ -33,7 +33,7 @@ quick_facts:
     value: "Cozystack — KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy"
 faq:
   - q: "Is cloud repatriation the same as going fully on-prem?"
-    a: "No. Repatriation usually means moving a subset of workloads — typically 30-60%, the steady-state, regulated, or expensive ones — to private cloud, hybrid, or on-prem, while elastic and latency-sensitive workloads stay in public cloud. Treating it as all-or-nothing usually destroys the economic case."
+    a: "No. Repatriation usually means moving a subset of workloads — the steady-state, regulated, or expensive ones — to private cloud, hybrid, or on-prem, while elastic and latency-sensitive workloads stay in public cloud. Treating it as all-or-nothing usually destroys the economic case."
   - q: "How long does a cloud repatriation take?"
     a: "The Ænix assessment is 14 or 28 days at a fixed price. The move itself depends on estate size: a 100-VM estate typically completes in 8-12 months, a 1,000-VM estate in 18-24 months, depending on dependencies. The economic case typically clarifies after 9-12 months as cloud commitments lapse."
   - q: "Will Ænix just recommend Cozystack at the end?"
@@ -142,7 +142,7 @@ Workloads get moved to "an on-prem cluster" without a real platform underneath. 
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></span>
 **The exit is full-scope when selective is the right answer**
-Most repatriations are not all-or-nothing. The right outcome is usually 30-60% of workloads on-prem (the steady-state, regulated, or expensive ones), 40-70% staying in public cloud (the elastic, latency-sensitive, or hyperscaler-only ones). Treating repatriation as a binary decision destroys the economic case.
+Most repatriations are not all-or-nothing. The right outcome is usually a subset of workloads on-prem (the steady-state, regulated, or expensive ones), with the rest staying in public cloud (the elastic, latency-sensitive, or hyperscaler-only ones). Treating repatriation as a binary decision destroys the economic case.
 
 </div>
 

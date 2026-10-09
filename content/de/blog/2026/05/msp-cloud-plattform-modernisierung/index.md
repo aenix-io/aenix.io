@@ -84,7 +84,7 @@ Tenants lassen sich verschachteln. Der MSP hat einen eigenen Tenant, darin liegt
 
 Der Katalog der Managed Services wird kuratiert. Der MSP entscheidet, was er anbietet. Kann er PostgreSQL mit echter Betriebserfahrung absichern, Kafka aber nicht, bietet er PostgreSQL an und blendet Kafka aus. Der Katalog sollte dem entsprechen, was der MSP um drei Uhr nachts unterstützen kann, nicht allem, was die Plattform technisch ausführen könnte.
 
-Das kundenseitige Portal ist das Cozystack Dashboard in den Farben, mit dem Logo und unter der Domain des MSP. White-Labeling ist eine Open-Source-Funktion von Cozystack. Die Abrechnung läuft über die [WHMCS-Integration](/de/produkte/whmcs-integration/), ein proprietäres Ænix-Modul, das in der Subscription enthalten ist — entweder mit WHMCS als kundenseitigem Frontend oder mit dem Dashboard als Frontend und WHMCS als Abrechnungs-Backend. Säumige Konten lassen sich direkt aus der Plattform sperren, ohne Ticket an das Engineering.
+Das kundenseitige Portal ist das Cozystack Dashboard mit Logo, Titeln und Favicon des MSP, einmal für die gesamte Plattform gebrandet, und jeder Kunden-Tenant kann seine Services unter einer eigenen Domain veröffentlichen. White-Labeling ist eine Open-Source-Funktion von Cozystack. Die Abrechnung läuft über die [WHMCS-Integration](/de/produkte/whmcs-integration/), ein proprietäres Ænix-Modul, das in der Subscription enthalten ist — entweder mit WHMCS als kundenseitigem Frontend oder mit dem Dashboard als Frontend und WHMCS als Abrechnungs-Backend. Säumige Konten lassen sich direkt aus der Plattform sperren, ohne Ticket an das Engineering.
 
 ## Bestehende Kundenumgebungen überführen
 
