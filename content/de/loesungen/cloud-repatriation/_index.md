@@ -34,7 +34,7 @@ quick_facts:
     value: "Cozystack — KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage, Mandantenfähigkeit über die Tenant-CRD"
 faq:
   - q: "Ist Cloud Repatriation dasselbe wie der vollständige Umzug On-Premises?"
-    a: "Nein. Repatriation bedeutet meist, einen Teil der Workloads zu verlagern — typischerweise 30–60 %, nämlich die dauerhaften, regulierten oder teuren — in Private Cloud, Hybrid oder On-Premises, während elastische und latenzkritische Workloads in der Public Cloud bleiben. Wer es als Alles-oder-nichts-Entscheidung behandelt, zerstört in der Regel den wirtschaftlichen Business Case."
+    a: "Nein. Repatriation bedeutet meist, einen Teil der Workloads zu verlagern — die dauerhaften, regulierten oder teuren — in Private Cloud, Hybrid oder On-Premises, während elastische und latenzkritische Workloads in der Public Cloud bleiben. Wer es als Alles-oder-nichts-Entscheidung behandelt, zerstört in der Regel den wirtschaftlichen Business Case."
   - q: "Wie lange dauert eine Cloud Repatriation?"
     a: "Das Ænix-Assessment dauert 14 oder 28 Tage zum Festpreis. Der Umzug selbst hängt von der Größe der Landschaft ab: Ein Bestand mit 100 VMs ist typischerweise in 8–12 Monaten migriert, einer mit 1.000 VMs in 18–24 Monaten, je nach Abhängigkeiten. Die Wirtschaftlichkeit zeigt sich typischerweise nach 9–12 Monaten, wenn Cloud-Commitments auslaufen."
   - q: "Empfiehlt Ænix am Ende einfach Cozystack?"
@@ -142,7 +142,7 @@ Workloads landen auf „einem On-Prem-Cluster“, ohne echte Plattform darunter.
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></span>
 **Der Ausstieg ist vollständig, wo selektiv richtig wäre**
-Die meisten Repatriationen sind keine Alles-oder-nichts-Entscheidung. Das richtige Ergebnis sind meist 30–60 % der Workloads On-Premises (die dauerhaften, regulierten oder teuren) und 40–70 % in der Public Cloud (die elastischen, latenzkritischen oder nur beim Hyperscaler verfügbaren). Wer Repatriation als binäre Entscheidung behandelt, zerstört den wirtschaftlichen Business Case.
+Die meisten Repatriationen sind keine Alles-oder-nichts-Entscheidung. Das richtige Ergebnis ist meist ein Teil der Workloads On-Premises (die dauerhaften, regulierten oder teuren), während der Rest in der Public Cloud bleibt (die elastischen, latenzkritischen oder nur beim Hyperscaler verfügbaren). Wer Repatriation als binäre Entscheidung behandelt, zerstört den wirtschaftlichen Business Case.
 
 </div>
 

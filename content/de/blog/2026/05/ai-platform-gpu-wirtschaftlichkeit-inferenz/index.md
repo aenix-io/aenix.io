@@ -33,12 +33,12 @@ quiz:
         - { text: "Den Speicherbedarf des KV-Cache bei der Batch-Größe im Betrieb nicht einzurechnen", correct: true }
         - { text: "Bei Modellparallelität über mehrere GPUs auf NVLink zu verzichten", correct: false }
       explanation: "Fallstrick 3 nennt als häufigsten Fehler bei der Erstdimensionierung, den Speicher für den KV-Cache nicht einzurechnen — ein Modell, das nach Parameterzahl „passt“, passt bei der Batch-Größe im Betrieb womöglich nicht."
-    - q: "Um wie viel günstiger sind eigene GPUs laut Artikel bei kundenseitiger Inferenz rund um die Uhr ab dem zweiten Jahr?"
+    - q: "Zu welchem Schluss kommt der Artikel für eigene GPUs bei kundenseitiger Inferenz rund um die Uhr?"
       options:
         - { text: "Etwa gleichauf mit Hyperscalern, der Break-even kommt erst im fünften Jahr", correct: false }
         - { text: "Sofort 10-mal günstiger, profitabel ab dem ersten Betriebsmonat", correct: false }
-        - { text: "30–60 % günstiger ab dem zweiten Jahr, Hardware-Erneuerung eingerechnet", correct: true }
-      explanation: "Der Abschnitt zum Break-even kommt zu dem Schluss, dass eigene GPUs bei kundenseitiger Inferenz rund um die Uhr (Millionen Tokens pro Tag) ab dem zweiten Jahr typischerweise 30–60 % günstiger sind."
+        - { text: "Ab dem zweiten Jahr günstiger, Erneuerung und Betrieb eingerechnet; wie viel, hängt von Auslastung und GPU-Klasse ab", correct: true }
+      explanation: "Der Abschnitt zum Break-even kommt zu dem Schluss, dass eigene GPUs bei kundenseitiger Inferenz rund um die Uhr (Millionen Tokens pro Tag) ab dem zweiten Jahr typischerweise günstiger sind, Hardware-Erneuerung und Betriebsaufwand eingerechnet; wie viel günstiger, hängt von Auslastung und GPU-Klasse ab."
     - q: "Warum gilt das Muster „SaaS-Endpunkt, vermarktet als private LLM“ als Fallstrick?"
       options:
         - { text: "Die Daten verlassen weiterhin den Perimeter des Kunden, was regulierte Workloads nicht erfüllt", correct: true }
@@ -85,8 +85,10 @@ Bei dedizierten GPU-Instanzen hängt der Break-even von der GPU-Klasse ab:
 
 Bei kundenseitiger Inferenz rund um die Uhr (Millionen Tokens pro Tag,
 gleichmäßiges Lastprofil) sind eigene GPUs ab dem zweiten Jahr
-typischerweise **30–60 % günstiger**, Hardware-Erneuerung und
-Betriebsaufwand eingerechnet.
+typischerweise **günstiger**, Hardware-Erneuerung und Betriebsaufwand
+eingerechnet. Wie viel günstiger, hängt von Auslastung und GPU-Klasse
+ab, wie die Break-even-Werte oben zeigen; rechnen Sie es vor einer
+Entscheidung mit Ihrem eigenen Lastprofil durch.
 
 Für gelegentliches Experimentieren gewinnt weiterhin der Hyperscaler —
 und das sagen wir auch, wenn die Eignungsprüfung ein solches

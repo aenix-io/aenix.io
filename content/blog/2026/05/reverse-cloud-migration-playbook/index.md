@@ -67,11 +67,11 @@ The combination has shifted repatriation from "what some hipsters do" to a norma
 
 The single most common mistake at the strategy level is treating repatriation as a binary decision. It almost never is.
 
-A typical repatriated estate, after a year of work, looks like:
+A typical repatriated estate, after a year of work, splits into three groups:
 
-- **30-50% on-prem or private cloud** — steady-state workloads, regulated workloads, expensive workloads, latency-critical workloads
-- **30-50% remaining in public cloud** — elastic / spike workloads, hyperscaler-proprietary services with no realistic alternative, latency-sensitive customer-facing workloads where hyperscaler edge is decisive, very small workloads where the operational cost of repatriation exceeds the savings
-- **10-20% in transition** — workloads being moved, in PoC, or under reassessment
+- **On-prem or private cloud** — steady-state workloads, regulated workloads, expensive workloads, latency-critical workloads
+- **Remaining in public cloud** — elastic / spike workloads, hyperscaler-proprietary services with no realistic alternative, latency-sensitive customer-facing workloads where hyperscaler edge is decisive, very small workloads where the operational cost of repatriation exceeds the savings
+- **In transition** — workloads being moved, in PoC, or under reassessment
 
 The workstream that classifies workloads — repatriate now / repatriate later / keep in cloud — is the most consequential single deliverable of a repatriation engagement.
 

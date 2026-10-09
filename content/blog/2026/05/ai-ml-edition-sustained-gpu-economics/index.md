@@ -32,12 +32,12 @@ quiz:
         - { text: "Not accounting for KV cache memory at operational batch size", correct: true }
         - { text: "Skipping NVLink between GPUs in multi-GPU model parallelism", correct: false }
       explanation: "Pitfall 3 says the most common initial-sizing mistake is not accounting for KV cache memory — a model that 'fits' by parameter count may not fit at the operational batch size."
-    - q: "For sustained 24/7 customer-facing inference, how much cheaper is owning the GPUs after Year 2 according to the article?"
+    - q: "For sustained 24/7 customer-facing inference, what does the article conclude about owning the GPUs?"
       options:
         - { text: "Roughly break-even with hyperscalers, crossing over only at Year 5", correct: false }
         - { text: "10× cheaper instantly, profitable from the first month of operation", correct: false }
-        - { text: "30-60% cheaper after Year 2, with hardware refresh accounted for", correct: true }
-      explanation: "The crossover section concludes that for sustained 24/7 customer-facing inference (millions of tokens per day), owning the GPUs is typically 30-60% cheaper after Year 2."
+        - { text: "Cheaper from Year 2, with refresh and operations counted; the margin depends on utilisation and GPU class", correct: true }
+      explanation: "The crossover section concludes that for sustained 24/7 customer-facing inference (millions of tokens per day), owning the GPUs typically comes out cheaper from Year 2 once hardware refresh and operational overhead are counted; how much cheaper depends on utilisation and GPU class."
     - q: "Why is the 'SaaS endpoint marketed as private LLM' pattern called a pitfall?"
       options:
         - { text: "Data still leaves the customer perimeter, failing regulated workloads", correct: true }
@@ -83,9 +83,10 @@ For dedicated GPU instances, the crossover varies by class:
   stronger.
 
 For sustained 24/7 customer-facing inference (millions of tokens per
-day, steady load profile), owning the GPUs is typically **30-60%
-cheaper after Year 2**, accounting for hardware refresh and operational
-overhead.
+day, steady load profile), owning the GPUs typically comes out **cheaper from Year 2**,
+accounting for hardware refresh and operational overhead. How much
+cheaper depends on utilisation and GPU class, as the crossover figures
+above show; model it on your own load profile before committing.
 
 For sporadic experimentation, hyperscaler still wins — and we say so
 when fit assessment finds the workload profile.
