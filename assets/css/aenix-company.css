@@ -1,0 +1,71 @@
+/* Company pages: about, contact, conferences, partners (EN and DE).
+   Loaded only on those pages (layouts/partials/seo/head.html), right after
+   aenix-seo-extensions.css. Rules here were moved out of the global sheets
+   (theme main.css first, then aenix-seo-extensions.css, in source order):
+   each matches elements only on these pages, and no later global rule of
+   equal specificity sets the same property on the same elements, so the
+   cascade is unchanged. */
+
+.contact-cta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+.contact-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+.contact-cta--primary:hover {
+  background: #0861C9;
+}
+.contact-cta--secondary:hover {
+  border-color: var(--aenix-primary);
+}
+.contact-cta__label {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.contact-cta__hint {
+  font-size: 0.8125rem;
+  opacity: 0.85;
+}
+@media (max-width: 720px) {
+  .contact-cta-row {
+    grid-template-columns: 1fr;
+  }
+}
+.distributor-spot {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 0 2.5rem;
+  padding: 1.75rem 2rem;
+  border: 1px solid rgba(1, 165, 255, 0.35);
+  border-radius: 14px;
+  background: linear-gradient(120deg, rgba(1, 165, 255, 0.08), rgba(102, 27, 225, 0.06));
+}
+/* The client logo assets are light-on-transparent, the same ones the
+   clients strip puts straight on the dark background — a white plate
+   behind them washes the wordmark out. */
+.distributor-spot__logo { display: flex; align-items: center; }
+.distributor-spot__logo a { display: flex; opacity: 0.85; transition: opacity 0.15s ease; }
+.distributor-spot__logo a:hover { opacity: 1; }
+.distributor-spot__badge {
+  margin: 0 0 0.4rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4796EA;
+}
+.distributor-spot__name { margin: 0 0 0.6rem; font-size: 1.375rem; font-weight: 700; letter-spacing: -0.01em; }
+.distributor-spot__text { margin: 0 0 0.6rem; font-size: 1rem; line-height: 1.65; }
+.distributor-spot__meta { margin: 0; font-size: 0.9375rem; color: var(--aenix-text-muted); }
+@media (max-width: 720px) {
+  .distributor-spot { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.5rem; }
+  .distributor-spot__logo { justify-self: start; padding: 0.75rem 1rem; min-width: 160px; }
+}
+.enquiry-topic { max-width: 640px; margin: 1rem auto 0; text-align: left; padding: .75rem 1rem; border-left: 3px solid var(--brand-primary); background: rgba(1,165,255,.08); border-radius: 4px; font-size: .95rem; color: var(--text-primary); }
