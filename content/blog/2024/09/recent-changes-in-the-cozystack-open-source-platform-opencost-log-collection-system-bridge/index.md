@@ -6,6 +6,7 @@ date: "2024-09-26"
 aliases:
   - "/blog/2025/02/recent-changes-in-the-cozystack-open-source-platform-opencost-log-collection-system-bridge/"
 author: "Andrei Kvapil"
+hreflang_de: "/de/blog/2024/09/cozystack-v0-12-bis-v0-15-opencost-logs-bridge-binding/"
 type: "news"
 topics: ["Kubernetes", "Platform Engineering", "DevOps", "Open Source", "Cozystack"]
 language: "en"
