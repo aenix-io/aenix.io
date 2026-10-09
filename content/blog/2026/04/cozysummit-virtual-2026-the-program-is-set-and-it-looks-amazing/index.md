@@ -3,6 +3,7 @@ title: "CozySummit Virtual 2026: The Program Is Set"
 description: "The full talk lineup for CozySummit Virtual 2026 is published: sessions from Cozystack maintainers and adopters on building clouds with Kubernetes."
 date: "2026-04-06"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/04/cozysummit-virtual-2026-programm/"
 type: "news"
 topics: ["Open Source", "Platform Engineering", "CNCF", "DevOps", "Kubernetes"]
 language: "en"
