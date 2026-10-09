@@ -26,10 +26,11 @@ Permalink pattern: `/blog/:year/:month/:slug/` (configured in `hugo.yaml` → `p
 title: "Your post title — under 70 chars for tweet width"
 description: "150-160 character description used for OG, Twitter card, and SERP snippet"
 date: 2026-05-11
-author: "Aenix Team"          # or named author: "Timur Tukaev" / "Andrei Kvapil"
+author: "Timur Tukaev"        # or "Andrei Kvapil"; never "Aenix Team" (CLAUDE.md, Content rules)
 type: "article"                # one of: article / tutorial / news / announcement / case-study / opinion
 topics: ["Cozystack", "Kubernetes", "DORA"]   # 1-6 topics
 language: "en"                 # or "de"
+hreflang_de: "/de/blog/YYYY/MM/<german-slug>/"  # German version in the same PR: docs/GERMAN_TRANSLATION.md
 ---
 
 Body in markdown. Use `##` for sections, `###` for subsections. H1 comes from frontmatter — don't write `# Heading` in body.

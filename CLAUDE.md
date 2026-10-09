@@ -117,6 +117,27 @@ When a new top-30 page ships, also add it to `static/llms.txt` (Rule 3).
 
 ---
 
+## Content rules (enforced by CI)
+
+`scripts/check-content-rules.py` runs on every pull request (job "Content rules" in `.github/workflows/seo-validation.yml`). Errors fail the PR; warnings show up as annotations on the diff. Run it before you push:
+
+```bash
+python3 scripts/check-content-rules.py                  # whole site + warnings for files changed vs origin/main
+python3 scripts/check-content-rules.py --base origin/x  # compare against another branch
+```
+
+1. **EN + DE in the same PR.** Every new page or blog post ships in English and German together, linked both ways: `hreflang_de` on the English page, `hreflang_en` on the German one, each pointing at the other's URL. Single-language kinds (events, certification EN↔RU, ru/fr pages, flag/redirect/thank-you/noindex pages, app shells, quizzes) and the pages that were not translated yet are listed with a reason in `data/locale-parity-exceptions.yaml`; do not add new pages there to skip translation. When you translate a "legacy" page, delete its entry. German style, slugs and front matter: **`docs/GERMAN_TRANSLATION.md`**. Changing one side of a pair without the other triggers a "EN changed, DE not — sync?" warning.
+2. **Authors.** Every blog post has `author:` from `data/authors.yaml`, the same in EN and DE; "Aenix Team" is not allowed.
+   - **Timur Tukaev** — the paleocomputing series, "the inevitable future of Kubernetes", all news, business and SEO materials, release announcements.
+   - **Andrei Kvapil** — deep technical articles.
+3. **Canonical facts.** Pages follow **`docs/CANONICAL_FACTS.md`** (company and legal data, product names, certifications and conformance, GPU facts, commercial terms with `data/pricing.yaml` as the single source, timelines, wording). Ruled-out phrases fail CI ("NVIDIA-validated", "team behind Cozystack", "DORA/NIS2 compliant", "−20%" for annual billing, "CNCF Slack", the old address, …). For a legitimate use — a deliberately wrong quiz answer, an FAQ question answered "no" — mark the line: `<!-- content-rules: allow <rule-id> -->` in Markdown, `# content-rules: allow <rule-id>` at the end of a front-matter line.
+4. **Quizzes.** Every question has exactly one `correct: true`.
+5. **Warnings on changed files:** title (or `seo_title`) outside 30–65 characters, description outside 70–160.
+
+For a new post or page, the project skill `.claude/skills/new-content/` walks through the whole flow.
+
+---
+
 ## Content type taxonomy
 
 Blog post `type:` frontmatter values (Hugo taxonomy `types`):
@@ -175,10 +196,11 @@ Minimum frontmatter:
 title: "Your post title"
 description: "150-160 character description for OG and search results"
 date: 2026-05-11
-author: "Aenix Team"  # or "Timur Tukaev" / "Andrei Kvapil" / name
+author: "Timur Tukaev"  # or "Andrei Kvapil"; see "Content rules" above
 type: "article"        # article / tutorial / news / announcement / case-study / opinion
 topics: ["Cozystack", "Kubernetes", "..."]
 language: "en"         # or "de"
+hreflang_de: "/de/blog/YYYY/MM/<german-slug>/"     # the German version ships in the same PR
 companion_landing: "/products/aenix-platform/..."  # optional, renders back-link card
 companion_label: "See ISP Edition →"               # optional, customises back-link text
 cover_image: "..."     # optional; scripts/generate-blog-covers.py draws one if missing
