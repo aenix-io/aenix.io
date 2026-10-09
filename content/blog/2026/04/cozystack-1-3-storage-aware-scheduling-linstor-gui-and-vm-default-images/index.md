@@ -4,6 +4,7 @@ seo_title: "Cozystack 1.3: storage-aware scheduling, LINSTOR GUI"
 description: "Cozystack v1.3.0 is now available. The release also rolls up every fix shipped in the v1.2.1 → v1.2.4 patch line."
 date: "2026-04-27"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/04/cozystack-1-3-storage-aware-scheduling-linstor-gui-vm-standard-images/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR", "GPU"]
 language: "en"
