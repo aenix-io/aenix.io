@@ -3,6 +3,7 @@ title: "Cozystack Becomes a CNCF Sandbox Project"
 description: "On 28 February 2025 the CNCF Technical Oversight Committee accepted Cozystack as a CNCF Sandbox project. What Cozystack is and what Sandbox means."
 date: "2025-03-13"
 author: "Andrei Kvapil"
+hreflang_de: "/de/blog/2025/03/cozystack-wird-cncf-sandbox-projekt/"
 type: "announcement"
 topics: ["Kubernetes", "Open Source", "CNCF", "Platform Engineering", "DevOps", "Cozystack"]
 language: "en"
