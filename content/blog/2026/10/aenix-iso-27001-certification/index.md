@@ -36,7 +36,7 @@ Customers in banking, insurance and the public sector ask the same question earl
 
 The certificate, number SIC.MS.008.ISO/IEC27001.5719, was issued on 27 February 2026. Its scope, as written on it, is software development, IT consulting, hosting, data services and web portals — in practice, the work AENIX s.r.o. does for customers, from developing Cozystack and the Ænix platforms to running consulting engagements.
 
-Behind it is the management system the auditors looked at. The CEO approved it on 17 February 2026, and it is not a binder on a shelf. It sets out how we assess and treat risk, how information is classified, how access is granted and reviewed, how incidents are handled, how documented information is controlled and how the system audits itself. Each of these has its own policy or procedure, and each policy comes with measurable objectives that the next audit checks.
+Behind it is the management system the auditors looked at, approved by the CEO on 17 February 2026. It sets out how we assess and treat risk, how information assets are managed and classified, how users are identified and access is granted, how incidents are handled, how documented information is controlled and how the system is audited internally. Each of these has its own policy or procedure, and the system sets measurable objectives with the actions planned to reach them.
 
 The certificate is valid through 26 February 2027 and is renewed through an annual surveillance audit; the next one is scheduled for 27 January 2027, within a three-year cycle that runs to February 2029.
 
