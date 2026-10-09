@@ -36,7 +36,7 @@ Unsere Charts teilen wir in drei Kategorien ein:
 Mit ihnen werden alle anderen Charts installiert, getestet und konfiguriert.
 Das zentrale Chart `platform` enthält die Flux-Einstellungen und wird jede Minute abgeglichen, sodass es sich an Änderungen im Cluster anpasst.
 - [System-Charts](https://github.com/cozystack/cozystack/tree/main/packages/system) sind Komponenten, die nur einmal pro Cluster installiert werden: CSI, CNI, KubeVirt, verschiedene Operatoren, Cluster API und so weiter.
-- [Apps-Charts](https://github.com/cozystack/cozystack/tree/main/packages/apps) sind Charts auf Tenant-Ebene, die Endnutzer in ihren eigenen Namespaces installieren. Sie geben in `values.yaml` nur die unbedingt nötigen Parameter frei und nutzen die [Cozystack API](/blog/2024/11/cozystack-v0-18/), um höherstufige Kubernetes-Ressourcen anzulegen. Diese erzeugen ihrerseits niedrigstufige Custom Resources (CRs) für Kubernetes-Operatoren, die schließlich die eigentlichen Anwendungen starten und verwalten.
+- [Apps-Charts](https://github.com/cozystack/cozystack/tree/main/packages/apps) sind Charts auf Tenant-Ebene, die Endnutzer in ihren eigenen Namespaces installieren. Sie geben in `values.yaml` nur die unbedingt nötigen Parameter frei und nutzen die [Cozystack API](/de/blog/2024/11/cozystack-v0-18-oeffentlicher-api-server-metriken-logs-tenant-cluster/), um höherstufige Kubernetes-Ressourcen anzulegen. Diese erzeugen ihrerseits niedrigstufige Custom Resources (CRs) für Kubernetes-Operatoren, die schließlich die eigentlichen Anwendungen starten und verwalten.
 
 Mit diesem Schema haben wir einen einfachen und einheitlichen Weg, nahezu jede Anwendung zu beschreiben. Er eignet sich sowohl für die Cluster-Konfiguration als auch für den Bau unserer eigenen Kubernetes-Distribution.
 
@@ -153,7 +153,7 @@ Feedback und Pull Requests sind willkommen: [https://github.com/cozystack/cozyhr
 - [Wie wir in Cozystack einen dynamischen Kubernetes-API-Server für den API Aggregation Layer gebaut haben](/de/blog/2024/12/dynamischer-kubernetes-api-server-api-aggregation-layer-cozystack/)
 - [DIY: Create Your Own Cloud with Kubernetes (3-part series)](https://blog.aenix.io/diy-create-your-own-cloud-with-kubernetes-part-1-7a692c37f0a8)
 - [Cozystack joins the CNCF Sandbox](https://t.me/aenix_io/192)
-- [Cozystack Recognized in CNCF’s CNAI Landscape!](/blog/2025/05/cozystack-recognized-in-cncfs-cnai-landscape/)
+- [Cozystack Recognized in CNCF’s CNAI Landscape!](/de/blog/2025/05/cozystack-cncf-cloud-native-ai-landscape/)
 - [Talos Linux einfach installieren: auf jeder Maschine, bei jedem Anbieter](/de/blog/2025/04/talos-linux-installieren-beliebige-maschine-beliebiger-anbieter/)
 - [Die Evolution von Virtualisierungsplattformen: der Aufstieg der Managed Services und der Vorsprung lokaler Anbieter gegenüber Hyperscalern](/de/blog/2025/06/evolution-virtualisierungsplattformen-managed-services-lokale-anbieter/)
 

@@ -164,7 +164,7 @@ Hosting-Anbieter und regionale Clouds betreiben die Ænix Public Cloud Platform 
 
 Wenn VPS-Weiterverkauf Ihr ganzes Geschäft ist und Ihnen die Marge genügt, ist ein VPS-Panel mit angebauter Abrechnung günstiger und einfacher. Behalten Sie es. Diese Plattform rechnet sich, wenn Sie auf derselben Hardware Managed Services, Kubernetes und GPU verkaufen wollen, ohne jeden Service und seine Abrechnung selbst zu bauen.
 
-Rechnen Sie zuerst im [Rechner für Hosting-Anbieter](/isp-calculator/) nach. Das aufgezeichnete Webinar [Add Kubernetes, databases and GPU to your price list](/webinars/launch-public-cloud/) (Englisch) zeigt Katalog, Abrechnung und Migrationsweg. Sie ziehen erst von einem anderen Stack um? Siehe die [Virtuozzo-Migration](/de/migration/virtuozzo/) und die [Vergleiche](/de/vergleichen/).
+Rechnen Sie zuerst im [Rechner für Hosting-Anbieter](/de/hosting-anbieter-rechner/) nach. Das aufgezeichnete Webinar [Add Kubernetes, databases and GPU to your price list](/webinars/launch-public-cloud/) (Englisch) zeigt Katalog, Abrechnung und Migrationsweg. Sie ziehen erst von einem anderen Stack um? Siehe die [Virtuozzo-Migration](/de/migration/virtuozzo/) und die [Vergleiche](/de/vergleichen/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

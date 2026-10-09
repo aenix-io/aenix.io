@@ -56,7 +56,7 @@ faq:
 
 **Sehen Sie sich das Kundenportal selbst an.** Die Live-Demo zeigt das Kundenportal und das Operator-Backoffice der Ænix Public Cloud Platform (wechseln Sie zu Admin, um Kunden, Rechnungen und Preise zu sehen). Sie läuft vollständig in Ihrem Browser mit Demodaten — ohne Anmeldung, ohne Cluster, ohne Einrichtung.
 
-**Rechnen Sie zuerst das Geschäftsmodell durch.** Der [Rechner für die Unit Economics von Hosting-Anbietern](/isp-calculator/) schätzt Umsatz und Amortisation, und das [Webinar „Launch your public cloud“](/webinars/launch-public-cloud/) zeigt einen Provider-Launch Schritt für Schritt. Verantwortliche für Cloud-Produkte beginnen am besten mit dem [Leitfaden für Cloud-Leitungen](/de/fuer/leiter-cloud/).
+**Rechnen Sie zuerst das Geschäftsmodell durch.** Der [Rechner für die Unit Economics von Hosting-Anbietern](/de/hosting-anbieter-rechner/) schätzt Umsatz und Amortisation, und das [Webinar „Launch your public cloud“](/webinars/launch-public-cloud/) zeigt einen Provider-Launch Schritt für Schritt. Verantwortliche für Cloud-Produkte beginnen am besten mit dem [Leitfaden für Cloud-Leitungen](/de/fuer/leiter-cloud/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
@@ -125,7 +125,7 @@ Produktive Referenzen: regionale Hosting-Anbieter, die die Ænix Public Cloud Pl
 - **[Artikel: Modernisierung der Plattform für Hosting-Anbieter](/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/)**
 - **[Virtuozzo-Migration](/de/migration/virtuozzo/)** — einen Virtuozzo-Bestand umziehen
 - **[Managed Services verkaufen und abrechnen](/de/loesungen/managed-services-abrechnung/)** — Katalog, Ænix Billing, WHMCS, Tenant-Suspendierung; Vergleiche mit [Virtuozzo](/de/vergleichen/cozystack-vs-virtuozzo/), [OpenNebula](/de/vergleichen/cozystack-vs-opennebula/), [Harvester](/de/vergleichen/cozystack-vs-harvester/) und [Platform9](/de/vergleichen/cozystack-vs-platform9/)
-- **[Rechner für Hosting-Anbieter](/isp-calculator/)** — Unit Economics
+- **[Rechner für Hosting-Anbieter](/de/hosting-anbieter-rechner/)** — Unit Economics
 - **[Webinar „Launch your public cloud“](/webinars/launch-public-cloud/)**
 
 ---

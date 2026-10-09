@@ -106,7 +106,7 @@ Das letzte Stück sind Sperrung und Suspendierung von Tenants. Überfällige Kon
 
 Der Betrieb verändert sich stärker, als die meisten Anbieter erwarten. Ein VPS-Team patcht Hypervisoren und beantwortet Tickets. Ein Plattformteam betreibt eine einzige, per GitOps verwaltete Plattformversion, probt Upgrades auf Staging, bevor sie in Produktion gehen, und beobachtet Metriken und Logs pro Tenant statt einzelner Hosts. Audit-Logs haben eine konfigurierbare Aufbewahrungsdauer und lassen sich in den eigenen unveränderlichen Speicher des Kunden ausleiten, wenn ein regulierter Tenant das verlangt.
 
-Der [Hosting-Anbieter-Rechner](/isp-calculator/) modelliert den Plattformbetrieb in Engineer-Tagen pro Node. Sein Standardmodell kommt auf etwa 1,3 Vollzeit-Engineers bei 10 Nodes und etwa 2,6 bei 40. Eine Rufbereitschaft rund um die Uhr braucht mehr Personal, als diese Rechnung ergibt — oder die 24×7-Abdeckung der Supportstufe Plus. Der Kundensupport für Cloud-Kunden ist eigenes Personal und wächst mit der Zahl der Kunden, nicht mit der Zahl der Nodes.
+Der [Hosting-Anbieter-Rechner](/de/hosting-anbieter-rechner/) modelliert den Plattformbetrieb in Engineer-Tagen pro Node. Sein Standardmodell kommt auf etwa 1,3 Vollzeit-Engineers bei 10 Nodes und etwa 2,6 bei 40. Eine Rufbereitschaft rund um die Uhr braucht mehr Personal, als diese Rechnung ergibt — oder die 24×7-Abdeckung der Supportstufe Plus. Der Kundensupport für Cloud-Kunden ist eigenes Personal und wächst mit der Zahl der Kunden, nicht mit der Zahl der Nodes.
 
 Die ausführlich beschriebene [Fallstudie zur souveränen Public Cloud](/de/case-studies/sovereign-public-cloud/) zeigt, wie diese Reife in der Praxis aussieht: Ein Anbieter betreibt eine kommerzielle Public Cloud über drei Rechenzentren und hat seinen Prozess darauf aufgebaut, Kunden vor Änderungen zu informieren, Upgrades auf Staging zu proben und fertige Runbooks für die Storage-Wiederherstellung und Plattform-Upgrades bereitzuhalten.
 
@@ -132,6 +132,6 @@ Wenn der VPS-Wiederverkauf Ihr gesamtes Geschäft ist und Sie mit seiner Marge z
 
 ## Wie es weitergeht
 
-Beginnen Sie mit der Seite für [Hosting-Anbieter](/de/branchen/hosting-anbieter/) und der [Live-Demo](/demo/), die das Kundenportal und das Back-Office des Betreibers mit Demodaten zeigt. Rechnen Sie Ihre Zahlen im [Hosting-Anbieter-Rechner](/isp-calculator/) durch, prüfen Sie die Subskriptionsstufen unter [Preise](/de/preise/), und wenn Sie Unterstützung beim Aufbau selbst wünschen, sehen Sie sich den Service [Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/) an.
+Beginnen Sie mit der Seite für [Hosting-Anbieter](/de/branchen/hosting-anbieter/) und der [Live-Demo](/demo/), die das Kundenportal und das Back-Office des Betreibers mit Demodaten zeigt. Rechnen Sie Ihre Zahlen im [Hosting-Anbieter-Rechner](/de/hosting-anbieter-rechner/) durch, prüfen Sie die Subskriptionsstufen unter [Preise](/de/preise/), und wenn Sie Unterstützung beim Aufbau selbst wünschen, sehen Sie sich den Service [Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/) an.
 
 *Ænix hat Cozystack geschaffen (ein CNCF-Sandbox-Projekt; der Antrag auf Incubation befindet sich in der Due Diligence) und betreut es gemeinsam mit Maintainern anderer Unternehmen.*

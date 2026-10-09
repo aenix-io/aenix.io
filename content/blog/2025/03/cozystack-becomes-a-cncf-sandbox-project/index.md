@@ -21,7 +21,7 @@ Cozystack is an open-source platform that enables the creation of a bare metal c
 
 Service and hosting providers, banks, SaaS solution vendors, medtech, fintech, AI/ML services, and other companies use Cozystack to offer customers managed services, managed Kubernetes, and databases that run directly on hardware, ensuring maximum performance and service stability. Additionally, Cozystack can be used to build geo-distributed clusters.
 
-The platform is developed and maintained by [Ænix](https://aenix.io/). The core developer and creator of Cozystack is Andrey Kvapil, known in the engineering community by the nickname “kvaps.” He is an active contributor to Linstor, KubeVirt, Kamaji, Kubernetes, Cilium, and others.
+The platform was created by [Ænix](https://aenix.io/), which co-maintains it. The core developer and creator of Cozystack is Andrey Kvapil, known in the engineering community by the nickname “kvaps.” He is an active contributor to Linstor, KubeVirt, Kamaji, Kubernetes, Cilium, and others.
 
 ## What is CNCF Sandbox, and What Does It Mean for Users?
 

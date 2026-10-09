@@ -122,7 +122,7 @@ Halten Sie diese Aufteilung in Ihren eigenen Kundenverträgen fest. Ihr SLA gege
 
 Ihre Kosten sind die Subskription (veröffentlicht pro 10 Nodes und Monat), Hardware oder gemietetes Bare Metal, Colocation, Bandbreite und die Menschen, die den Service betreiben und mit Kunden sprechen. Ihr Umsatz ist, was Sie pro Service berechnen, und die Marge liegt in Managed Services statt in reiner vCPU, wo Sie mit den Listenpreisen der Hyperscaler konkurrieren würden.
 
-Statt eines Faustwerts für den Aufschlag, der nicht zu Ihrer Kostenbasis passen würde, rechnen Sie mit Ihren eigenen Zahlen im [Rechner für die Unit Economics von Hosting-Anbietern](/isp-calculator/). Der [Artikel zur Wirtschaftlichkeit der Public Cloud Platform](/de/blog/2026/05/public-cloud-platform-wirtschaftlichkeit-hosting-anbieter/) geht Kosten pro Tenant, Break-even und typische Fehlerbilder im Detail durch.
+Statt eines Faustwerts für den Aufschlag, der nicht zu Ihrer Kostenbasis passen würde, rechnen Sie mit Ihren eigenen Zahlen im [Rechner für die Unit Economics von Hosting-Anbietern](/de/hosting-anbieter-rechner/). Der [Artikel zur Wirtschaftlichkeit der Public Cloud Platform](/de/blog/2026/05/public-cloud-platform-wirtschaftlichkeit-hosting-anbieter/) geht Kosten pro Tenant, Break-even und typische Fehlerbilder im Detail durch.
 
 ## Wann das nicht passt
 

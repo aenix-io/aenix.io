@@ -1,5 +1,6 @@
 ---
 title: "Cozystack v0.37: Brand New UI"
+seo_title: "Cozystack v0.37: a brand-new user interface"
 description: "Cozystack v0.37 replaces the dashboard with a new UI built on the openapi-ui project, generated from the platform API. What changed for users."
 date: "2025-11-04"
 author: "Timur Tukaev"

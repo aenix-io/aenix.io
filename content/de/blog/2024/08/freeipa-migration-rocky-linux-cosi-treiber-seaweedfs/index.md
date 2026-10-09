@@ -52,7 +52,7 @@ Hallo zusammen! Wir freuen uns, Ihnen unsere neuesten Neuigkeiten vorzustellen.
 
 **Erstens haben wir einen neuen Artikel veröffentlicht**, in dem es um das Update einer veralteten FreeIPA-Installation in einem großen Unternehmen geht. Diese FreeIPA-Instanz lief in einem LXC-Container auf CentOS 7 und funktionierte seit mehreren Monaten nicht mehr. Unser Gründer Andrei Kvapil hat das Problem wie ein Ninja gelöst.
 
-Details: [FreeIPA tips and tricks: migrating FreeIPA from CentOS 7 LXC to Rocky Linux](/blog/2024/08/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/) (auf Englisch)
+Details: [FreeIPA tips and tricks: migrating FreeIPA from CentOS 7 LXC to Rocky Linux](/de/blog/2024/08/freeipa-migration-centos-7-lxc-rocky-linux-zertifikate/)
 
 **Zweitens stellen wir Ihnen gern den neuen COSI-Treiber für SeaweedFS vor**. [COSI](https://github.com/kubernetes-sigs/container-object-storage-interface) ist ein einheitliches Container Object Storage Interface für Kubernetes. Es führt [neue Ressourcen](https://github.com/seaweedfs/seaweedfs-cosi-driver/tree/main/examples) wie BucketClaim, Bucket und BucketAccess ein, mit denen sich S3-Buckets deklarativ bereitstellen und Zugriffe verwalten lassen, nach demselben Prinzip wie bei PVCs.
 

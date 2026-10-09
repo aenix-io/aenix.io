@@ -233,7 +233,7 @@ Drei Rechner, jeder mit eigenem Modell und eigenen Quellen. Jeder exportiert ein
 
 - **[Platform-TCO-Rechner](/tco-calculator/)** (englisch) — Fünf-Jahres-TCO im Vergleich zu zehn On-Prem-Plattformen: VMware, Nutanix, OpenShift, Proxmox, OpenStack, CloudStack, OpenNebula, Harvester, Rancher und Virtuozzo. Software, einmalige Migration und Personal, mit Break-even-Punkt.
 - **[Cloud-Repatriation-Rechner](/de/cloud-rechner/)** — Ihre Rechnung bei AWS, Azure oder GCP im Vergleich zum selben Workload auf eigener oder gemieteter Hardware.
-- **[Unit Economics für Hosting-Anbieter](/isp-calculator/)** (englisch) — monatliche GuV, wenn Sie Managed Services weiterverkaufen: Umsatz, Herstellungskosten, Personal, Amortisation.
+- **[Unit Economics für Hosting-Anbieter](/de/hosting-anbieter-rechner/)** (englisch) — monatliche GuV, wenn Sie Managed Services weiterverkaufen: Umsatz, Herstellungskosten, Personal, Amortisation.
 
 <div class="cta-row">
   <a class="cta-primary" href="/tco-calculator/">TCO-Rechner öffnen →</a>
