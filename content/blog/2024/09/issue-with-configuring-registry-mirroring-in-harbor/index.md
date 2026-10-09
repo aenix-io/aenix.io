@@ -3,6 +3,7 @@ title: "Issue with Configuring Registry Mirroring in Harbor"
 description: "Harbor proxies docker.io, ghcr.io and other registries only as separate projects, which breaks Docker registry mirrors. How we worked around it."
 date: "2024-09-10"
 author: "Andrei Kvapil"
+hreflang_de: "/de/blog/2024/09/registry-mirroring-harbor-konfigurieren/"
 type: "article"
 topics: ["DevOps", "Kubernetes"]
 language: "en"
