@@ -108,7 +108,7 @@ NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough t
 VictoriaMetrics + VictoriaLogs included — low-overhead, sovereignty-friendly. Optional Grafana on top.
 
 **8. Backup and DR**
-Velero + S3 + per-database PITR for managed services. Backups should go to object storage outside the cluster they protect. There is no automated cross-site VM failover; multi-site designs are engineering work.
+Velero + S3 + per-database PITR for managed services. Backups should go to object storage outside the cluster they protect. There is no automated cross-site VM failover; multi-site designs are engineering work. Within a site, VMs move by live migration when a node is drained for maintenance. After an unplanned node loss they restart on healthy nodes once the failed node is fenced, a single operator action or an external fencing mechanism, because Cozystack ships no automatic fencing; worker nodes of tenant Kubernetes clusters are replaced automatically.
 
 **9. Self-service portal and billing**
 Cozystack Dashboard for service provisioning. Operators that bill tenants add the [WHMCS integration](/products/whmcs-integration/), a proprietary Ænix module that is not part of open-source Cozystack.
