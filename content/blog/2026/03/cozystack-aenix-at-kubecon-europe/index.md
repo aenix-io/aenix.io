@@ -4,6 +4,7 @@ seo_title: "Cozystack and Ænix at KubeCon Europe 2026"
 description: "Meet Cozystack and Ænix at KubeCon Europe in Amsterdam: CNCF Project Pavilion, kiosk P-18A, Wednesday 25 March, 10:00–13:30."
 date: "2026-03-11"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/03/cozystack-aenix-kubecon-europe/"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "CNCF"]
 language: "en"
