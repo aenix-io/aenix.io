@@ -181,11 +181,11 @@ One commercial public cloud built on this platform is written up in detail: [a S
 
 ## How to start
 
-Tell us your scale, your current stack and what you sell today, and we will set up a focused call with an Ænix engineer to confirm fit.
+Tell us your scale, your current stack and what you sell today — we reply by email and set up a focused call with an Ænix engineer to confirm fit. Or [book a 30-minute call in the calendar](https://zcal.co/i/s5C4-cO1) right away.
 
 {{< pipedrive-form type="demo" >}}
 
-Prefer a shorter first step? [Book a discovery call](/contact/) instead, or model your margins in the [hosting-provider unit economics calculator](/isp-calculator/). The recorded webinar [Add Kubernetes, databases and GPU to your price list](/webinars/launch-public-cloud/) walks through the catalogue, billing and migration path.
+Prefer to start with numbers? Model your margins in the [hosting-provider unit economics calculator](/isp-calculator/). The recorded webinar [Add Kubernetes, databases and GPU to your price list](/webinars/launch-public-cloud/) walks through the catalogue, billing and migration path.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

@@ -188,9 +188,9 @@ Die Ænix Private Cloud Platform wird nach einem Discovery-Gespräch und einem P
 
 ---
 
-## Architektur-Review vereinbaren
+## Architektur-Review anfragen
 
-Schildern Sie uns Ihren regulatorischen Rahmen (DORA, NIS2, sektorale Vorgaben), Ihre aktuelle Architektur und Ihre Anforderungen an Souveränität. Wir richten ein fokussiertes Architektur-Review mit einem Ænix-Engineer ein und klären, ob die Plattform zu Ihnen passt.
+Schildern Sie uns Ihren regulatorischen Rahmen (DORA, NIS2, sektorale Vorgaben), Ihre aktuelle Architektur und Ihre Anforderungen an Souveränität. Wir antworten per E-Mail und richten ein fokussiertes Architektur-Review mit einem Ænix-Engineer ein, um zu klären, ob die Plattform zu Ihnen passt. Lieber zuerst sprechen? [Buchen Sie ein 30-minütiges Gespräch im Kalender](https://zcal.co/i/s5C4-cO1).
 
 {{< pipedrive-form type="demo" >}}
 
