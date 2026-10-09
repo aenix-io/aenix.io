@@ -3,6 +3,7 @@ title: "Cozystack v0.37: Brand New UI"
 description: "Cozystack v0.37 replaces the dashboard with a new UI built on the openapi-ui project, generated from the platform API. What changed for users."
 date: "2025-11-04"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/11/cozystack-v0-37-neue-oberflaeche/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Multi-tenancy", "CNCF"]
 language: "en"
