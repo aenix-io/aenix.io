@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.34: Kubernetes versions and snapshots"
 description: "Cozystack v0.34: tenants choose their Kubernetes version and take PVC snapshots, VMs run Windows and RouterOS, and VPA now autoscales itself."
 date: "2025-08-04"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/08/cozystack-v0-34-kubernetes-versionen-pvc-snapshots-windows-routeros/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
