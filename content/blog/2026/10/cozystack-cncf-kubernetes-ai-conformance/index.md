@@ -1,7 +1,7 @@
 ---
 title: "Cozystack joins the CNCF Kubernetes AI Conformance program"
 seo_title: "Cozystack joins CNCF Kubernetes AI Conformance"
-description: "Cozystack v1.6.1 was accepted into the CNCF Kubernetes AI Conformance program for Kubernetes v1.35, with all 12 requirements implemented. What was tested and what it means."
+description: "Cozystack v1.6.1 was accepted into CNCF Kubernetes AI Conformance for Kubernetes v1.35 with all 12 requirements met. What was tested and what it means."
 slug: "cozystack-cncf-kubernetes-ai-conformance"
 date: "2026-10-09"
 cover_image: "/img/blog/covers/cozystack-cncf-kubernetes-ai-conformance.jpg"
