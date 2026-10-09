@@ -153,10 +153,6 @@ Logo-strip placeholder grid. Replaced with real logos when permission lands.
 {{< placeholder-logos count="6" label="Customer logos (NDA-protected until mid-2027)" >}}
 ```
 
-### `{{< placeholder-form type="..." resource="..." >}}`
-
-**Note:** for live Pipedrive forms use `{{< pipedrive-form >}}` instead. `placeholder-form` is a design-preview-only shortcode that renders a mock Pipedrive form for visualising what the live form will look like. Still used on legacy / design-preview pages.
-
 ---
 
 ## Landing-page-specific shortcodes
