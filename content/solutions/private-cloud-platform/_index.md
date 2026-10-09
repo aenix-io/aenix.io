@@ -8,8 +8,8 @@ related_pages: ["/products/private-cloud-platform/", "/services/private-cloud-co
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
-direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Cozystack private-cloud console — self-service marketplace"
+direct_answer_image: "/images/screens/private-cloud-idp-apps.jpg"
+direct_answer_image_alt: "Developer self-service in Ænix Private Cloud Platform: the application catalog with running apps, environments and deploy history"
 direct_answer: |
   **A private cloud platform is the software layer that turns hardware an organization owns or controls into self-service cloud: compute, storage, networking, multi-tenancy, managed data services and a provisioning surface, all governed by the organization itself rather than by a hyperscaler. It is what replaces a VMware Cloud Foundation stack for teams that want the cloud operating model without the cloud landlord. The open-source, Kubernetes-native option in this category is Cozystack — a CNCF Sandbox project under Apache 2.0, with no per-CPU or per-core licensing, combining KubeVirt virtualization for VMs and containers, Cilium (eBPF) networking, LINSTOR/DRBD replicated storage, a Tenant CRD multi-tenant control plane, managed databases, SeaweedFS S3 object storage and NVIDIA GPUs on bare metal. Ænix created Cozystack and co-maintains it with maintainers from other companies; Ænix Private Cloud Platform is the supported build for regulated organisations, quoted per RFP.**
 quick_facts:

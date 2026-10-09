@@ -8,8 +8,8 @@ quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "private cloud plattform für regulierte unternehmen"
 secondary_keywords: ["souveräne cloud plattform", "dora cloud", "nis2 cloud plattform", "internal developer platform", "vmware alternative enterprise"]
-direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Konsole des Cozystack Dashboard"
+direct_answer_image: "/images/screens/private-cloud-idp-apps.jpg"
+direct_answer_image_alt: "Developer Self-Service in der Ænix Private Cloud Platform: Anwendungskatalog mit laufenden Apps, Umgebungen und Deploy-Historie"
 images: ["img/og/private-cloud-platform.jpg"]
 related_pages: ["/de/produkte/public-cloud-platform/", "/de/produkte/ai-platform/", "/de/loesungen/dora-compliance/", "/de/loesungen/nis2-compliance/", "/de/migration/vmware/"]
 direct_answer: |
