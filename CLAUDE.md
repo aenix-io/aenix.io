@@ -138,7 +138,6 @@ Blog post `topics:` frontmatter values are open taxonomy. Current top topics: Co
 
 **Forms:**
 - `{{< pipedrive-form type="discovery" >}}` — discovery / demo / partner / course / lead-magnet
-- `{{< placeholder-form ... >}}` — design preview only (no live form behind it)
 
 **Pull-out content:**
 - `{{< factoid number="92%" label="..." source="..." >}}` — big-number callout

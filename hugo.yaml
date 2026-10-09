@@ -56,9 +56,6 @@ params:
   author: Ænix
   email: info@aenix.io
 
-  # Top announcement bar (Apollo-style). To show one, add an `announcement:` map
-  # with enabled / id / text / buttonText / url. Bump `id` whenever the message
-  # changes so previously-dismissed visitors see the new one.
   googleAnalytics: GT-NMCJ23L
   ahrefsAnalytics: GQGQZe4HnT/wYo45t5cUEw
   # gtmContainer: GTM-XXXXXXX  # uncomment + set when GTM container is provisioned
