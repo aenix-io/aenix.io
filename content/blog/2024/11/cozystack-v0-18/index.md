@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.18: public API server and tenant logs"
 description: "Cozystack v0.18 adds its own Kubernetes API server for granular user access, metrics and log collection from tenant clusters, and Talos Linux v1.8.2."
 date: "2024-11-07"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/11/cozystack-v0-18-oeffentlicher-api-server-metriken-logs-tenant-cluster/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "Multi-tenancy", "Observability"]
 language: "en"
