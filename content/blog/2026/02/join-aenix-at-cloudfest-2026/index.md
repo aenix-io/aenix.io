@@ -3,6 +3,7 @@ title: "Join Ænix at CloudFest 2026"
 description: "Meet the Ænix team at CloudFest 2026, booth Z22: talk to us about building a cloud platform for hosting providers with Cozystack."
 date: "2026-02-27"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/02/aenix-cloudfest-2026/"
 type: "news"
 topics: ["Cozystack", "Hosting"]
 language: "en"
