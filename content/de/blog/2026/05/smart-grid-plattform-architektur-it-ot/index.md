@@ -4,7 +4,7 @@ seo_title: "Smart-Grid-Plattform: IT/OT-Architektur"
 description: "Plattformarchitektur für Smart Grids: drei Ebenen von Edge bis Core, IT/OT-Konvergenz mit klaren Grenzen, NIS2-Kontrollen und KI auf Netzbetriebsdaten."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/smart-grid-plattform-architektur-it-ot.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["NIS2", "Cozystack", "Compliance"]
 language: "de"

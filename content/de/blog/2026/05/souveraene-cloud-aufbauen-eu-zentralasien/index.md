@@ -5,7 +5,7 @@ description: "Was Souveränität in der Praxis bedeutet, welche Regelwerke sie d
 slug: "souveraene-cloud-aufbauen-eu-zentralasien"
 date: "2026-05-03"
 cover_image: "/img/blog/covers/de/souveraene-cloud-aufbauen-eu-zentralasien.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "tutorial"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup and DR", "Observability"]
 language: "de"

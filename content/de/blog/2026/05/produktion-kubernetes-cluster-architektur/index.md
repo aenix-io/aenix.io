@@ -4,7 +4,7 @@ seo_title: "Kubernetes in Produktion: Architektur und Betrieb"
 description: "Kubernetes-Cluster für die Produktion: zehn Architekturentscheidungen von Distribution bis Upgrades, bewährte Betriebspraktiken und die häufigsten Fehler."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/produktion-kubernetes-cluster-architektur.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "Cilium", "LINSTOR", "GitOps"]
 language: "de"

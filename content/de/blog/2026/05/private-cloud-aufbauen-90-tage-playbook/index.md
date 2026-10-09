@@ -5,7 +5,7 @@ description: "Ein Plan von Tag 0 bis Tag 90 für den Aufbau einer Private Cloud:
 slug: "private-cloud-aufbauen-90-tage-playbook"
 date: "2026-05-02"
 cover_image: "/img/blog/covers/de/private-cloud-aufbauen-90-tage-playbook.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "article"
 topics: ["DORA", "NIS2", "VMware", "Cozystack", "Cilium", "Talos"]
 language: "de"

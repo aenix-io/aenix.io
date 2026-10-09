@@ -4,7 +4,7 @@ seo_title: "Cozystack vs VMware: a deep dive for platform engineers"
 description: "Cozystack against VMware layer by layer — compute, storage, network, multi-tenancy — with the operational implications and migration patterns for each."
 date: "2026-05-07"
 cover_image: "/img/blog/covers/cozystack-vs-vmware-deep-dive.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]
 language: "en"

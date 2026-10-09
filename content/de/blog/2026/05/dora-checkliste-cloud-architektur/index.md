@@ -4,7 +4,7 @@ seo_title: "DORA-Checkliste für die Cloud-Architektur"
 description: "DORA-Checkliste für Cloud-Architekten: Geltungsbereich, Portabilität, Konzentrationsrisiko, operative Resilienz, Aufsichtszugang und die häufigsten Lücken."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/dora-checkliste-cloud-architektur.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "Compliance", "Backup and DR", "Observability"]
 language: "de"

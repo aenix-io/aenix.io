@@ -3,7 +3,7 @@ title: "Private cloud providers and platforms — a 2026 comparison"
 description: "Open-source platforms, commercial stacks, sovereign hyperscaler regions and regional providers compared — plus the migration paths between them."
 date: "2026-05-22"
 cover_image: "/img/blog/covers/private-cloud-providers-comparison.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Kubernetes", "Cozystack"]
 language: "en"

@@ -4,7 +4,7 @@ seo_title: "Vendor-neutral cloud strategy: how the engagement works"
 description: "What a vendor-neutral cloud strategy engagement actually delivers, and how it differs from Big-4 cloud advisory and hyperscaler-aligned consultancies."
 date: "2026-05-06"
 cover_image: "/img/blog/covers/cloud-strategy-engagement-vendor-neutral.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cloud", "Platform Engineering", "Sovereignty", "Compliance"]
 language: "en"

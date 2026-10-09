@@ -5,7 +5,7 @@ description: "Wie Tier-1- und Tier-2-Telcos Legacy-NFV-Umgebungen zu Kubernetes-
 slug: "telco-cloud-modernisierung-nfv-kubernetes-edge"
 date: "2026-05-28"
 cover_image: "/img/blog/covers/de/telco-cloud-modernisierung-nfv-kubernetes-edge.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Telco", "Sovereignty", "Multi-tenancy", "Cozystack", "Cloud", "AI and ML"]
 language: "de"

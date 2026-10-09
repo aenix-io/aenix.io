@@ -5,7 +5,7 @@ description: "Organisationsdesign, Personalrechnung, Governance und wiederkehren
 slug: "enterprise-platform-engineering-organisationsdesign"
 date: "2026-05-11"
 cover_image: "/img/blog/covers/de/enterprise-platform-engineering-organisationsdesign.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "Multi-tenancy", "DevOps"]
 language: "de"

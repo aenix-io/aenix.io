@@ -4,7 +4,7 @@ seo_title: "OpenStack to Kubernetes migration: cohort sequencing"
 description: "Cohort-based playbook for migrating production OpenStack to Cozystack: component mapping, image conversion, networking redesign, handover, and timeline."
 date: "2026-05-20"
 cover_image: "/img/blog/covers/openstack-migration-cozystack-cohort-playbook.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "tutorial"
 topics: ["OpenStack", "Cozystack", "Migration", "Multi-tenancy", "Kubernetes"]
 language: "en"

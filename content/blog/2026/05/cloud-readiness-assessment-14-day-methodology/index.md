@@ -4,7 +4,7 @@ seo_title: "Cloud readiness assessment: the 14-day methodology"
 description: "A 14-day platform readiness assessment run as four parallel workstreams: how the days sequence, what the report contains, and pitfalls we learned to avoid."
 date: "2026-05-04"
 cover_image: "/img/blog/covers/cloud-readiness-assessment-14-day-methodology.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "NIS2", "Nutanix", "Kubernetes", "Sovereignty", "Cloud Repatriation"]
 language: "en"

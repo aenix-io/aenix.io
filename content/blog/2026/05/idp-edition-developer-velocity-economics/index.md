@@ -4,7 +4,7 @@ seo_title: "Developer self-service: what an IDP actually pays back"
 description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP that pays back inside 12 months at 200+ engineers."
 date: "2026-05-13"
 cover_image: "/img/blog/covers/idp-edition-developer-velocity-economics.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
 language: "en"

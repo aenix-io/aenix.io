@@ -4,7 +4,7 @@ seo_title: "Internal developer portal vs platform in 2026"
 description: "Portal and platform are not the same thing. Where Backstage actually fits, what the alternatives are, and how to decide whether you need a portal at all."
 date: "2026-05-14"
 cover_image: "/img/blog/covers/internal-developer-portal-vs-platform.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Backstage", "Kubernetes", "Platform Engineering", "Compliance", "Observability"]
 language: "en"

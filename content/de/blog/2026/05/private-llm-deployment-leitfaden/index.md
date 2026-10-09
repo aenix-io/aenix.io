@@ -4,7 +4,7 @@ seo_title: "Private LLM: Leitfaden für On-Premise-KI"
 description: "Private LLMs auf eigener Infrastruktur betreiben: drei typische Auslöser, die sechs Schichten eines Private-LLM-Stacks und die passenden Architekturmuster."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/private-llm-deployment-leitfaden.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR", "Sovereignty"]
 language: "de"

@@ -4,7 +4,7 @@ seo_title: "Cloud-Kostenoptimierung 2026: acht Strategien"
 description: "Acht Strategien gegen hohe Cloud-Kosten 2026: was Konfiguration allein einspart, wo Architektur-Entscheidungen nötig werden und wann sich Repatriation lohnt."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/cloud-kostenoptimierung-strategien-2026.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Cloud Repatriation", "Cost Optimization"]
 language: "de"

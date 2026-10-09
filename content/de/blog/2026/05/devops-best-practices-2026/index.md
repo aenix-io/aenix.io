@@ -4,7 +4,7 @@ seo_title: "DevOps Best Practices 2026: acht Disziplinen"
 description: "Acht DevOps-Disziplinen für 2026 – von Everything-as-Code bis Observability –, wie Teams ihren Reifegrad steigern und wann externe Unterstützung sinnvoll ist."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/devops-best-practices-2026.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "Migration", "DevOps", "Platform Engineering", "Cost Optimization", "Observability"]
 language: "de"

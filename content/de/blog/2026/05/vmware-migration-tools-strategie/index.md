@@ -4,7 +4,7 @@ seo_title: "VMware-Migration: Tools und Strategie 2026"
 description: "VMware-Migration 2026: drei Migrationspfade mit ihren Werkzeugen, eine Strategie für die Reihenfolge der Workloads und typische Stellen, an denen sie scheitern."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/vmware-migration-tools-strategie.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["VMware", "Cozystack", "KubeVirt", "Migration"]
 language: "de"

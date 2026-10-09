@@ -4,7 +4,7 @@ seo_title: "Reverse cloud migration: a playbook for leaving the cloud"
 description: "A five-step cloud repatriation playbook, the pitfalls that recur, when not to repatriate, and how long a realistic move actually takes."
 date: "2026-05-26"
 cover_image: "/img/blog/covers/reverse-cloud-migration-playbook.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "Cloud Repatriation", "AI and ML", "GPU"]
 language: "en"

@@ -5,7 +5,7 @@ slug: "oeffentlicher-sektor-souveraene-cloud-vergabe"
 description: "Wie Vergabeverantwortliche und IT-Leitungen im öffentlichen Sektor Souveränitätsvorgaben in eine laufende Cloud-Plattform übersetzen — Regelwerke und Phasen."
 date: "2026-05-25"
 cover_image: "/img/blog/covers/de/oeffentlicher-sektor-souveraene-cloud-vergabe.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Public Sector", "Sovereignty", "Compliance", "NIS2", "Cozystack"]
 language: "de"

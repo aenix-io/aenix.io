@@ -4,7 +4,7 @@ seo_title: "Cozystack explained: architecture and fit in 2026"
 description: "What Cozystack is technically, the architectural choices behind it, how it compares to OpenStack and OpenShift, and when it is the wrong answer."
 date: "2026-05-07"
 cover_image: "/img/blog/covers/cozystack-introduction-architecture.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "article"
 topics: ["OpenStack", "OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Talos"]
 language: "en"

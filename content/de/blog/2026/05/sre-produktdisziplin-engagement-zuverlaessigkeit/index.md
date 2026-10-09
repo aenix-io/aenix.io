@@ -5,7 +5,7 @@ description: "SRE in Produktteams einbetten, als zentrale Funktion aufbauen oder
 slug: "sre-produktdisziplin-engagement-zuverlaessigkeit"
 date: "2026-05-28"
 cover_image: "/img/blog/covers/de/sre-produktdisziplin-engagement-zuverlaessigkeit.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DevOps", "Platform Engineering", "Observability", "Cozystack"]
 language: "de"

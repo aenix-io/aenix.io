@@ -4,7 +4,7 @@ seo_title: "TLPT readiness for financial-services cloud platforms"
 description: "What TLPT readiness under DORA actually looks like in 2026 for platform engineers at banks, insurers, and payment institutions facing a real supervisor cycle."
 date: "2026-05-11"
 cover_image: "/img/blog/covers/financial-services-cloud-tlpt-readiness.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Financial Services", "DORA", "Compliance", "Sovereignty", "Cozystack"]
 language: "en"

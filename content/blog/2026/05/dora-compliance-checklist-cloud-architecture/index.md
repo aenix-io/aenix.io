@@ -4,7 +4,7 @@ seo_title: "DORA ICT risk requirements for cloud infrastructure"
 description: "A working DORA checklist for cloud architecture: what Articles 21 and 28 require, where current setups fall short, and how to assess where you stand."
 date: "2026-05-10"
 cover_image: "/img/blog/covers/dora-compliance-checklist-cloud-architecture.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance"]
 language: "en"

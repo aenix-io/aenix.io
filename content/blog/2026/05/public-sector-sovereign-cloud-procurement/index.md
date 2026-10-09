@@ -4,7 +4,7 @@ seo_title: "Public-sector sovereign cloud: procurement to platform"
 description: "How public-sector procurement leads and IT directors turn sovereignty mandates (EUCS, SecNumCloud, BSI C5, NIS2) into a running, auditable cloud platform."
 date: "2026-05-25"
 cover_image: "/img/blog/covers/public-sector-sovereign-cloud-procurement.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Public Sector", "Sovereignty", "Compliance", "NIS2", "Cozystack"]
 language: "en"

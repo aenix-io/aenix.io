@@ -5,7 +5,7 @@ description: "Unit Economics der Ænix Public Cloud Platform für Hosting-Anbiet
 slug: "public-cloud-platform-wirtschaftlichkeit-hosting-anbieter"
 date: "2026-05-15"
 cover_image: "/img/blog/covers/de/public-cloud-platform-wirtschaftlichkeit-hosting-anbieter.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]
 language: "de"

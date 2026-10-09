@@ -5,7 +5,7 @@ description: "Architekturmuster für Forschungs- und Lehrinfrastruktur an Hochsc
 slug: "cloud-native-forschung-lehre-infrastruktur-hochschulen"
 date: "2026-05-04"
 cover_image: "/img/blog/covers/de/cloud-native-forschung-lehre-infrastruktur-hochschulen.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "AI and ML", "GPU", "Multi-tenancy"]
 language: "de"

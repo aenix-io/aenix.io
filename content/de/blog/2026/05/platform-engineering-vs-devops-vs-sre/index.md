@@ -4,7 +4,7 @@ seo_title: "Platform Engineering, DevOps und SRE erklärt"
 description: "Platform Engineering, DevOps und SRE abgegrenzt: drei Definitionen, wo sich die Funktionen überschneiden, wo nicht und was ein Plattformteam tatsächlich baut."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/platform-engineering-vs-devops-vs-sre.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "DevOps", "Platform Engineering", "Compliance", "Observability"]
 language: "de"

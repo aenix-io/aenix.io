@@ -4,7 +4,7 @@ seo_title: "Public Cloud Platform economics for hosting providers"
 description: "Unit economics of Ænix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
 date: "2026-05-15"
 cover_image: "/img/blog/covers/isp-edition-economics-hosting-providers.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]
 language: "en"

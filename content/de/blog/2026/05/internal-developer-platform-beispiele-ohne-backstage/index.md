@@ -4,7 +4,7 @@ seo_title: "Internal Developer Platform: sechs Muster"
 description: "Sechs Architekturmuster für eine Internal Developer Platform aus der Praxis, der Unterschied zwischen Plattform und Portal und typische Fehler bei der Auswahl."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/internal-developer-platform-beispiele-ohne-backstage.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "article"
 topics: ["Backstage", "Kubernetes", "Cozystack", "GitOps", "Multi-tenancy", "Platform Engineering"]
 language: "de"

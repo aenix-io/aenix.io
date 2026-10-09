@@ -5,7 +5,7 @@ description: "Wie sich IKT-Risiko- und Drittparteienpflichten aus DORA und die M
 slug: "private-cloud-platform-dora-nis2-architektur"
 date: "2026-05-10"
 cover_image: "/img/blog/covers/de/private-cloud-platform-dora-nis2-architektur.jpg"
-author: "Aenix Team"
+author: "Timur Tukaev"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance", "Sovereignty", "Multi-tenancy", "Cozystack"]
 language: "de"

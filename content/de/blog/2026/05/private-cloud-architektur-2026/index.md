@@ -5,7 +5,7 @@ description: "Private Cloud 2026: die Architekturschichten, drei bewährte Muste
 slug: "private-cloud-architektur-2026"
 date: "2026-05-22"
 cover_image: "/img/blog/covers/de/private-cloud-architektur-2026.jpg"
-author: "Aenix Team"
+author: "Andrei Kvapil"
 type: "article"
 topics: ["OpenStack", "Kubernetes", "KubeVirt", "Sovereignty", "Multi-tenancy", "Financial Services"]
 language: "de"
