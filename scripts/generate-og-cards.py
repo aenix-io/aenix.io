@@ -147,10 +147,15 @@ def make(fn, eyebrow, title, out=None):
     return out
 
 
+DEFAULT_SRC = os.path.join(ROOT, "scripts", "og-src", "aenix-social-banner.png")
+
+
 def make_default():
-    """Site-wide fallback: the front page title on the platform scene."""
-    return make("aenix-social-card", "Ænix Platform",
-                "Run your own cloud — sell cloud, run your own, or run AI on your own GPUs", DEFAULT_CARD)
+    """Site-wide fallback and front-page card: the brand banner (designed, not
+    generated). Converted from the 1200x630 PNG source to an optimized JPG."""
+    from PIL import Image
+    Image.open(DEFAULT_SRC).convert("RGB").save(DEFAULT_CARD, quality=86, optimize=True, progressive=True)
+    return DEFAULT_CARD
 
 
 # --- per-page cards ------------------------------------------------------------------------------
@@ -228,6 +233,8 @@ def page_jobs(public):
         rel = "/" + os.path.relpath(root, public).replace(os.sep, "/") + "/"
         rel = "/" if rel == "/./" else rel
         if not (og.endswith(default_url) or "/img/og/pages/" in og):
+            continue
+        if rel == "/":  # the front page uses the brand banner (the site default)
             continue
         parts = rel.strip("/").split("/")
         lang = "de" if parts[0] == "de" else "en"
