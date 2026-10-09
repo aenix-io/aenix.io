@@ -115,7 +115,7 @@ The post-Broadcom virtualization market has three main options this article comp
 | **Multi-tenancy** | Namespace + permissions | vCloud Director | Tenant CRD |
 | **Managed databases** | Manual / community | Limited | First-class (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, OpenSearch, etc.) |
 | **S3 object storage** | Manual | Limited | First-class |
-| **GPU** | Passthrough | vGPU under Horizon | Passthrough of whole GPUs or NVIDIA vGPU (requires your NVIDIA vGPU licence) for VMs; HAMi fractional sharing for containers; MIG and time-slicing on the roadmap |
+| **GPU** | Passthrough | vGPU under Horizon | Passthrough of whole GPUs or NVIDIA vGPU (requires your NVIDIA vGPU licence) for VMs; MIG partitions and HAMi time-sliced sharing for containers |
 | **Self-service** | Web UI for ops | vCD | Cozystack Dashboard |
 | **Backup/DR** | PBS | SRM | Velero + PG PITR |
 | **Best scale** | <50 hosts | Enterprise | Multi-tenant scale |

@@ -54,7 +54,7 @@ faq:
   - q: "We only want an internal platform, not a commercial cloud. Is it still useful?"
     a: "Yes. An internal GPU platform is the same stack as a commercial AI cloud, minus the second meter. Everything on sharing, tenancy and inference applies directly to an internal build."
   - q: "Do we need NVIDIA GPUs?"
-    a: "The live demos ran on NVIDIA — the GPU Operator, vGPU and Dynamo. MIG partitioning is on the Cozystack roadmap. The state of AMD and other accelerators was covered in the Q&A."
+    a: "The live demos ran on NVIDIA — the GPU Operator, vGPU and Dynamo. MIG partitioning is available too: in tenant Kubernetes clusters the GPU Operator exposes MIG partitions on cards that support it. The state of AMD and other accelerators was covered in the Q&A."
   - q: "Can you really meter inference per token on an open stack?"
     a: "Yes, and the session showed it live: an AI gateway in front of the model issues API keys, counts input and output tokens, and returns a 429 (over quota) when a budget runs out. Andrei named the open components used."
   - q: "Do you cover multi-node training and the GPU interconnect?"
@@ -134,7 +134,7 @@ final_cta:
 
 <div class="ws-wrap">
 <div class="cs-stats">
-  <div class="cs-stat"><div class="cs-stat__num">3 ways</div><div class="cs-stat__label">to allocate one card — passthrough, vGPU, fractional (HAMi); MIG on the roadmap</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">4 ways</div><div class="cs-stat__label">to allocate one card — passthrough, vGPU, MIG partitions, time-sliced sharing (HAMi)</div></div>
   <div class="cs-stat"><div class="cs-stat__num">1 GPU → many tenants</div><div class="cs-stat__label">vGPU and fractional sharing on supported cards</div></div>
   <div class="cs-stat"><div class="cs-stat__num">€0</div><div class="cs-stat__label">per-core hypervisor licensing — Apache 2.0, CNCF Sandbox project</div></div>
 </div>
@@ -180,7 +180,7 @@ final_cta:
 <li class="wb-cover__item">
 <span class="wb-cover__num">02</span>
 <span class="wb-cover__icon">{{< ws-icon name="layers" >}}</span>
-<p class="wb-cover__text"><strong>Ways to allocate a GPU.</strong> One whole card (passthrough) or a share of it — vGPU and fractional (HAMi) — side by side, with MIG partitioning on the roadmap, with the utilization graph that turns idle silicon into money.</p>
+<p class="wb-cover__text"><strong>Ways to allocate a GPU.</strong> One whole card (passthrough) or a share of it — vGPU and fractional (HAMi) — side by side, with the utilization graph that turns idle silicon into money.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">03</span>

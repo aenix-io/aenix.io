@@ -47,7 +47,7 @@ faq:
   - q: "What does it cost compared to VMware?"
     a: "Cozystack is free and open source. Regulated enterprises exiting VCF go through Ænix Private Cloud Platform, which is quoted per RFP after a Platform Readiness Assessment. Service providers on Ænix Public Cloud Platform and teams running Cozystack themselves buy support tiers from $1,250 per 10 nodes per month (Basic), then Standard $3,000, Plus $5,500 and Enterprise custom. Migration services are quoted separately. VMware VCF pricing is quote-driven and non-public."
   - q: "Does Cozystack support GPUs for AI and VDI workloads?"
-    a: "Yes, with the boundary stated plainly. Whole GPUs can be passed through to VMs, NVIDIA vGPU is available for VMs (requires your NVIDIA vGPU licence), and container workloads schedule through the NVIDIA GPU Operator with HAMi to share a card. MIG and time-slicing are on the roadmap rather than shipping, so an untrusted-tenant GPU product should not be planned around it yet."
+    a: "Yes. Whole GPUs can be passed through to VMs, NVIDIA vGPU is available for VMs (requires your NVIDIA vGPU licence), and container workloads schedule through the NVIDIA GPU Operator with HAMi to time-share a card. On MIG-capable cards the operator also exposes MIG partitions, so tenants that share a card can be separated in hardware."
 hreflang_de: /de/alternativen/vmware-alternative/
 ---
 
@@ -131,7 +131,7 @@ KubeVirt, Cilium, LINSTOR, and Flux ship faster as community projects than Broad
 - **Tenant Kubernetes** — every tenant gets their own real K8s cluster
 - **Managed databases** — PostgreSQL, MariaDB, Valkey, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB
 - **S3-compatible object storage** — for backups, AI training data, applications
-- **GPU as a service** — NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough of whole GPUs or NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), fractional sharing for pods via HAMi; MIG and time-slicing on the roadmap
+- **GPU as a service** — NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough of whole GPUs or NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), MIG partitions or time-sliced sharing via HAMi for pods
 - **Multi-tenant control plane** — Tenant CRD, nested tenants, per-tenant quotas
 - **Observability** — VictoriaMetrics + VictoriaLogs + Grafana, included
 - **Backup & DR** — Velero to S3 outside the cluster, per-database PITR, DRBD replication; VM recovery as a documented runbook

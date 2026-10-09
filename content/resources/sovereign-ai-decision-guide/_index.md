@@ -36,7 +36,7 @@ faq:
   - q: "How does the guide relate to Ænix AI Platform?"
     a: "The guide outputs an architecture pattern that maps directly to the deployment scope of Ænix AI Platform - turnkey AI infrastructure with multi-tenant GPU scheduling and blueprints for inference, fine-tuning, and RAG, built on Cozystack with sovereignty controls."
   - q: "How does Cozystack enable multi-tenant sovereign AI?"
-    a: "Cozystack runs VMs and containers on one Kubernetes API via KubeVirt, uses Cilium (eBPF) for networking and LINSTOR/DRBD for storage, and isolates teams through a Tenant CRD. This supports namespace-per-team, cluster-per-tenant, and multi-tenant GPU scheduling under Apache 2.0 with no per-core licensing. GPUs are shared through the NVIDIA GPU Operator: whole-GPU passthrough to VMs and fractional sharing for pods via HAMi; MIG and time-slicing are on the roadmap."
+    a: "Cozystack runs VMs and containers on one Kubernetes API via KubeVirt, uses Cilium (eBPF) for networking and LINSTOR/DRBD for storage, and isolates teams through a Tenant CRD. This supports namespace-per-team, cluster-per-tenant, and multi-tenant GPU scheduling under Apache 2.0 with no per-core licensing. GPUs are allocated through the NVIDIA GPU Operator: whole-GPU passthrough or NVIDIA vGPU (with the customer's NVIDIA vGPU licence) for VMs, and MIG partitions or time-sliced sharing via HAMi for pods in tenant Kubernetes clusters."
   - q: "How much does the decision guide cost?"
     a: "The decision guide is a free PDF download. Ænix AI Platform, the infrastructure it maps to, is quoted per RFP after an assessment, because GPU estate, models and operating model vary widely."
 ---

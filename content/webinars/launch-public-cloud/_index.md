@@ -62,7 +62,7 @@ faq:
   - q: "We wrote our own control panel. Do we throw it away?"
     a: "No. The platform exposes a REST API and its own panel is optional. Andrei covered both patterns: keeping your panel as the customer-facing surface, or white-labelling ours."
   - q: "Can we sell GPU from the same platform?"
-    a: "Yes. Whole-card passthrough, plus NVIDIA vGPU (requires your NVIDIA vGPU licence) and fractional sharing (HAMi) on supported cards, so one card can serve more than one tenant; MIG is on the roadmap. Andrei covered what each mode gives you and what you can put in a customer contract."
+    a: "Yes. Whole-card passthrough, plus NVIDIA vGPU (requires your NVIDIA vGPU licence) and fractional sharing (HAMi) on supported cards, so one card can serve more than one tenant; tenant Kubernetes clusters on MIG-capable cards can also use MIG partitions. Andrei covered what each mode gives you and what you can put in a customer contract."
   - q: "How many engineers does it take to run?"
     a: "Fewer than OpenStack. The platform is one coherent Kubernetes-native stack rather than a dozen services you integrate yourself, and upgrades are a release rather than a project."
   - q: "What does a pilot involve?"
