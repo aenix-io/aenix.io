@@ -69,7 +69,8 @@
 .toc__n{color:var(--cmut);font-variant-numeric:tabular-nums;min-width:2.2em}
 .toc__t{font-weight:600;text-decoration:none;color:var(--cink)}
 .toc__d{color:var(--cmut);font-size:.93rem;margin-top:3px}
-@media print{.lnav,.cert__btn,header,footer{display:none}.lesson{max-width:none}
+@media print{.lnav,.cert__btn,header,footer,.site-header,.site-footer,#aenix-consent-root,#mobile-menu,.mobile-menu-toggle,.lang-switch{display:none!important}
+  .lesson{max-width:none}
   .lesson h2{page-break-after:avoid}figure{page-break-inside:avoid}}
 
 /* Исключения из меры: сетки, таблицы и врезки живут по своей ширине. */
@@ -113,3 +114,46 @@
 }
 .lesson pre{overflow-x:auto;max-width:100%}
 .lesson code{overflow-wrap:anywhere}
+
+/* The all-in-one page (/certification/materials/all/) doubles as the source of the
+   downloadable PDF, see scripts/build-ccf-pdf.py. The cover exists only on paper. */
+.pcover{display:none}
+.lesson__title{margin-top:60px}
+@media print{
+  .cert--all .pscreen{display:none}
+  .cert--all .container{max-width:none;padding:0}
+  .cert h1,.cert h2,.cert h3,.cert h4,.cert strong,.cert td,.cert th,.cert li,.cert p{color:var(--cink)}
+  .cert .cert__lead,.cert figcaption{color:var(--cmut)}
+  .cert a{color:var(--cacc)}
+  .cert th{background:#f1f5f9}
+  .cert td,.cert th{border-color:var(--cline)}
+  .cert .pcover{display:flex;flex-direction:column;height:259mm;break-after:page}
+  .cert .pcover__logo{width:44mm;height:auto;margin:0 0 30mm}
+  .cert .pcover__eyebrow{font-size:10.5pt;letter-spacing:.08em;text-transform:uppercase;color:var(--cmut);margin:0 0 4mm}
+  .cert .pcover__title{font-size:30pt;line-height:1.15;font-weight:700;color:var(--cink);margin:0 0 6mm;max-width:none}
+  .cert .pcover__lead{font-size:13pt;line-height:1.5;color:var(--cmut);margin:0 0 16mm;max-width:none}
+  .cert .pcover__toc{list-style:none;padding:0;margin:0;border-top:1px solid var(--cline);max-width:none}
+  .cert .pcover__toc li{display:flex;gap:6mm;padding:3mm 0;border-bottom:1px solid var(--cline);
+    font-size:12pt;line-height:1.4;color:var(--cink);margin:0}
+  .cert .pcover__toc span{color:var(--cacc);font-weight:700;min-width:6mm}
+  .cert .pcover__meta{margin-top:auto;font-size:9.5pt;line-height:1.6;color:var(--cmut);max-width:none}
+  .lesson__title{break-before:page;page-break-before:always;margin-top:0;font-size:22pt;line-height:1.2}
+  /* Long tables and exam boxes may run onto the next page; keeping them whole
+     left half-empty pages. Rows and list items still stay in one piece. */
+  .cert--all .exam-box,.cert--all table{break-inside:auto;page-break-inside:auto}
+  .cert--all li{break-inside:avoid}
+  .cert--all .lesson h2{margin-top:1.7em}
+  .cert--all .exam-box{-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  /* Identifiers in table cells wrap at word boundaries only: "apiVersio/n" is unreadable. */
+  .lesson td code,.lesson th code{overflow-wrap:normal;word-break:keep-all;white-space:nowrap}
+  .lesson__title + .cert__lead{font-size:12pt;margin-bottom:8mm}
+  .lesson .highlight{break-inside:avoid;margin-bottom:1.35em}
+  .lesson .highlight pre,.lesson pre.chroma{background:#0f172a!important;color:#e2e8f0!important}
+  .lesson code,.lesson pre,.lesson [style*="monospace"]{font-family:'JetBrains Mono',Menlo,ui-monospace,monospace!important}
+  .lesson :not(pre)>code{font-size:.88em}
+  .lesson pre{font-size:8.6pt;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere;
+    overflow:visible;border-radius:6px;padding:10px 12px}
+  .lesson figure svg{max-height:200mm}
+}
+@page{@bottom-center{content:counter(page);font:9pt sans-serif;color:#64748b}}
+@page:first{@bottom-center{content:none}}

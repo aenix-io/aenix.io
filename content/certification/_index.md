@@ -21,7 +21,7 @@ and more serious levels come after it.
 We'll lay it all out upfront, so you decide with your eyes open rather than find out halfway through.
 
 <table class="cert__facts">
-<tr><td>Preparation</td><td>about 30 hours for a course of eight modules. Labs are separate, roughly six or seven evenings</td></tr>
+<tr><td>Preparation</td><td>seven lessons and a cheat sheet, about an hour and a half of reading — one evening. New to Kubernetes: about ten hours on its basics first. Labs are separate, roughly six or seven evenings</td></tr>
 <tr><td>Exam</td><td>60 multiple-choice questions, 90 minutes</td></tr>
 <tr><td>Exam language</td><td>English. If it is not your native language, ask for an extra 30 minutes — this is a standard request, not a favor</td></tr>
 <tr><td>Price</td><td>free</td></tr>
@@ -51,20 +51,20 @@ done these things.
 
 That's a normal way into the program, and your route looks like this.
 
-1. **A bridge from virtualization.** How what you know about vSphere maps onto the platform: where
-   the analogy holds and where it misleads.
-2. **Kubernetes fundamentals.** A separate module, about ten hours. Without it the rest will be hard going.
-3. **Modules one through seven.** Architecture, tenants, the managed applications catalog, virtualization, networking,
-   observability.
-4. **Labs.** This is where everything you've read becomes hands-on for the first time.
-5. **The exam.**
+1. **Kubernetes fundamentals.** About ten hours with the official Kubernetes documentation. Without it the
+   rest will be hard going; the last lesson then recaps the terms the exam asks about.
+2. **Lessons one through seven, then the cheat sheet.** Architecture, tenants, the managed applications catalog,
+   virtual machines, networking, observability and backups, how it all works. The virtual machines lesson is
+   your bridge from vSphere: where the analogy holds and where it misleads.
+3. **Labs.** This is where everything you've read becomes hands-on for the first time.
+4. **The exam.**
 
 ## If you don't pass
 
 The second attempt comes a week later. It is not a punishment and it costs nothing.
 
 Between attempts you will see which topics you fell short on — not as scores, but in words: “below
-expected”, “at expected”, “above”. That is enough to work out which two modules
+expected”, “at expected”, “above”. That is enough to work out which two lessons
 to reread.
 
 If the exam broke off through our fault — connectivity, a service error, anything on our side —

@@ -9,7 +9,7 @@ hreflang_ru: "/ru/certification/practice/"
 page_type: "flag-page"
 ---
 
-The questions come from the course modules — from the self-check blocks at the end of each
+The questions come from the lessons — from the self-check blocks at the end of each
 lesson. If you have read the materials, you have already seen them along with the answers.
 
 So, to be honest: **this set does not predict your exam result.** It checks that you

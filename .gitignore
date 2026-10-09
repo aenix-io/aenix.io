@@ -16,3 +16,6 @@ PIPEDRIVE_DE_CORE_FORMS_PROMPT.md
 PIPEDRIVE_DE_SINGLE_OPTION_FIELDS_PROMPT.md
 package-lock.json
 tools/lead-magnets/*.full
+
+# Virtualenv for scripts/build-ccf-pdf.py
+.venv-pdf/

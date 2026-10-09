@@ -26,7 +26,7 @@ page_type: "flag-page"
 <figure>
 <svg viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Цикл сверки">
   <circle cx="280" cy="90" r="66" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5 5"/>
-  <rect x="196" y="8" width="168" height="38" rx="7" fill="#dbeafe" stroke="#2563eb"/>
+  <rect x="176" y="8" width="208" height="38" rx="7" fill="#dbeafe" stroke="#2563eb"/>
   <text x="280" y="32" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#1e3a8a">1. Прочитать, как должно быть</text>
   <rect x="368" y="70" width="170" height="38" rx="7" fill="#e0e7ff" stroke="#4f46e5"/>
   <text x="453" y="94" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#312e81">2. Посмотреть, как есть</text>
