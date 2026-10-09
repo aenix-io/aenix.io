@@ -3,6 +3,7 @@ title: "The CozySummit 2025 Virtual Lineup Is Out"
 description: "The schedule for CozySummit 2025 Virtual is published: an online conference for Cozystack developers and users, hosted together with the CNCF."
 date: "2025-10-14"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/10/cozysummit-2025-virtual-programm/"
 type: "news"
 topics: ["Proxmox", "Cozystack", "CNCF", "Storage"]
 language: "en"

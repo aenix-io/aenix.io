@@ -4,6 +4,7 @@ seo_title: "CozySummit Virtual on December 3: invitation"
 description: "Join us on December 3 for CozySummit Virtual, the first conference for CozyStack developers and users."
 date: "2025-08-14"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/08/einladung-cozysummit-virtual-3-dezember/"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "AI and ML", "CNCF"]
 language: "en"

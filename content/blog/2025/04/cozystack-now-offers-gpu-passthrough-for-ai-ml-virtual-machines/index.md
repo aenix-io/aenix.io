@@ -4,6 +4,7 @@ seo_title: "Cozystack adds GPU passthrough for AI/ML VMs"
 description: "Cozystack now passes GPUs directly through to KubeVirt virtual machines, so tenants can run AI, machine learning and other GPU workloads in their VMs."
 date: "2025-04-18"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/04/cozystack-gpu-passthrough-ai-ml-vms/"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
