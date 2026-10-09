@@ -5,6 +5,7 @@ date: 2026-07-01
 lastmod: 2026-08-21
 page_type: "page"
 language: "en"
+hreflang_de: "/de/hosting-anbieter-rechner/"
 layout: calculator-app
 calculator_app: /isp-calculator-app/
 bodyClass: calc-app-page

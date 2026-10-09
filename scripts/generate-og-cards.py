@@ -76,6 +76,7 @@ CARDS = [
     ("og-cloud-calculator", "REPATRIATION CALCULATOR", "Your cloud bill vs your own hardware"),
     ("og-isp-calculator", "UNIT ECONOMICS", "What a node earns, not what it costs"),
     # DE
+    ("og-isp-calculator-de", "UNIT ECONOMICS · HOSTING", "Was ein Node einbringt, nicht was er kostet"),
     ("og-fuer-de", "NACH ROLLE", "Ihr Einstieg zu Aenix"),
     ("og-leiter-infrastruktur-de", "FÜR INFRASTRUKTURLEITER", "VMware ablösen, zu Ihren Bedingungen"),
     ("og-leiter-platform-engineering-de", "FÜR PLATFORM ENGINEERING", "Eine IDP ohne Lock-in"),
