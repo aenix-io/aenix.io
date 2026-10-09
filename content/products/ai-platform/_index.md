@@ -11,8 +11,8 @@ hreflang_de: /de/produkte/ai-platform/
 related_pages: ["/products/private-cloud-platform/", "/products/public-cloud-platform/", "/solutions/sovereign-ai/", "/solutions/private-llm/", "/case-studies/bare-metal-gpu-inference/"]
 quick_facts_style: "rows"
 faq_style: "rows"
-direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Cozystack Dashboard service marketplace"
+direct_answer_image: "/images/screens/ai-platform-ai-gateway.jpg"
+direct_answer_image_alt: "Ænix AI Platform: the AI Gateway with an OpenAI-compatible API key, available models and usage against a budget"
 direct_answer: |
   **Ænix AI Platform is self-hosted AI infrastructure for organizations that run inference, fine-tuning and RAG on their own GPUs instead of hyperscaler AI APIs. It is the third Ænix platform, alongside Public Cloud and Private Cloud, and runs on the same Cozystack engine (Apache 2.0, a CNCF project accepted into the CNCF Kubernetes AI Conformance program in September 2026). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator, with passthrough of whole GPUs or NVIDIA vGPU (requires your NVIDIA vGPU licence) for virtual machines, and MIG partitions or time-sliced sharing via HAMi in tenant Kubernetes clusters. Around that sit multi-tenant GPU quotas, model serving (vLLM-compatible), vector databases, object storage and air-gapped deployment. Ænix delivers it as a project quoted per RFP — a 14- or 28-day assessment, then a 3-12 month build depending on scope — with an optional managed retainer.**
 quick_facts:

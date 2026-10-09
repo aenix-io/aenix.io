@@ -6,8 +6,8 @@ language: "de"
 hreflang_en: /products/public-cloud-platform/
 quick_facts_style: "rows"
 faq_style: "rows"
-direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Kundenkonsole im Cozystack Dashboard"
+direct_answer_image: "/images/screens/public-cloud-marketplace.jpg"
+direct_answer_image_alt: "Kundenportal der Ænix Public Cloud Platform: Marktplatz mit VMs, Kubernetes, S3, AI Gateway und VMware-Cloud-Director-Mandanten"
 related_pages: ["/de/produkte/private-cloud-platform/", "/de/produkte/ai-platform/", "/de/produkte/whmcs-integration/", "/de/migration/vmware/", "/de/alternativen/openstack-alternative/"]
 direct_answer: |
   **Die Ænix Public Cloud Platform ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für Organisationen, die Cloud-Kapazität an andere verkaufen — Hosting-Anbieter, MSPs und regionale Clouds am einen Ende, Telekommunikationsbetreiber, nationale Betreiber und Banken mit einer kommerziellen Cloud am anderen. Sie ist die produktisierte, unterstützte Distribution von Cozystack (Apache 2.0, ein CNCF-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt) und ergänzt die kommerziellen Oberflächen, die ein Cloud-Geschäft braucht: vollständiges Billing in Back-End und Front-End, WHMCS-Integration, ein Kundenportal im eigenen Branding, Zahlungsabwicklung, automatische Sperrung und Suspendierung von Tenants sowie Assistenten zum Anlegen von VMs, Kubernetes-Clustern, Managed Databases, S3-Storage und GPU-Workloads. Sie läuft über mehrere Regionen hinweg und neben einem bestehenden VMware- oder OpenStack-Bestand, sodass Sie schrittweise migrieren, statt alles auf einmal auszutauschen. Ein Abonnement beginnt bei 1.250 USD pro 10 physische Nodes und Monat (Support-Stufe Basic plus die proprietären kommerziellen Ænix-Module); nationale Multi-Region-Programme werden per RFP angeboten.**

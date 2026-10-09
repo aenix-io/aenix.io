@@ -7,8 +7,8 @@ quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "public cloud platform"
 secondary_keywords: ["cloud platform for hosting providers", "openstack alternative for providers", "multi-tenant cloud platform", "whmcs cloud billing", "sovereign public cloud"]
-direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Cozystack Dashboard customer console"
+direct_answer_image: "/images/screens/public-cloud-marketplace.jpg"
+direct_answer_image_alt: "Ænix Public Cloud Platform customer portal: the service marketplace with VMs, Kubernetes, S3, AI Gateway and VMware Cloud Director tenants"
 images: ["img/og/public-cloud-platform.jpg"]
 hreflang_de: /de/produkte/public-cloud-platform/
 related_pages: ["/products/private-cloud-platform/", "/products/ai-platform/", "/products/whmcs-integration/", "/migration/vmware/", "/alternatives/openstack-alternative/"]
