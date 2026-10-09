@@ -69,7 +69,7 @@ Virtuozzo renamed its products in 2026. The IaaS is now **Virtuozzo Infrastructu
 | **Managed databases and brokers** | Not part of the IaaS product | PostgreSQL, MariaDB, Valkey, ClickHouse, Kafka, RabbitMQ, NATS, MongoDB, OpenSearch, Qdrant |
 | **Load balancing** | Load Balancer as a Service | Services of type LoadBalancer, Cilium with BGP or L2 announcements |
 | **Backup** | Backup Gateway for Acronis Cyber Protect; Backup and Restore as a Service | Velero with encrypted backups to S3-compatible storage |
-| **VM high availability** | Automatic evacuation of VMs from a failed node, on by default | Live migration for planned maintenance; no automated VM failover after unplanned node loss |
+| **VM high availability** | Automatic evacuation of VMs from a failed node, on by default | Live migration for planned maintenance; after unplanned node loss, VMs restart only once the node is fenced |
 | **GPU** | GPU passthrough and vGPU for VMs | VMs: PCI passthrough or NVIDIA vGPU (your NVIDIA licence). Tenant Kubernetes: MIG partitions via the GPU Operator, HAMi time-slicing |
 | **Billing** | CloudBlue connector documented by Virtuozzo; third-party WHMCS modules | Ænix Billing and WHMCS integration (proprietary Ænix modules, in every Public Cloud Platform tier) |
 
@@ -121,7 +121,7 @@ Cozystack has no licence fee. Ænix sells a subscription — support plus the pr
 
 ## Where Virtuozzo is genuinely better
 
-- **VM high availability out of the box.** When a compute node fails, Virtuozzo Infrastructure evacuates its running VMs to healthy nodes and starts them, and this is enabled by default when the compute cluster is created. <!-- source: https://docs.virtuozzo.com/virtuozzo_infrastructure_7_3_admins_guide/configuring-virtual-machine-ha.html --> Cozystack has live migration for planned maintenance and node health handling, but no automated VM failover after unplanned node loss; building one is configuration and rehearsal work.
+- **VM high availability out of the box.** When a compute node fails, Virtuozzo Infrastructure evacuates its running VMs to healthy nodes and starts them, and this is enabled by default when the compute cluster is created. <!-- source: https://docs.virtuozzo.com/virtuozzo_infrastructure_7_3_admins_guide/configuring-virtual-machine-ha.html --> Cozystack has live migration for planned maintenance, but no automatic VM restart after unplanned node loss, because it ships no fencing. Its VMs stay down until the failed node is fenced: an operator marks it out of service or removes it, or an external fencing mechanism does. KubeVirt then restarts them on healthy nodes, and VMs on replicated LINSTOR/DRBD storage come back with their data. Worker nodes of tenant Kubernetes clusters are replaced automatically.
 - **One storage product for every protocol.** File, iSCSI block and S3 from one hyperconverged layer, supported by one vendor, with Acronis backup storage built in. Cozystack assembles the same from LINSTOR, SeaweedFS and Velero.
 - **No Kubernetes skills required to run it.** A team that knows VMs and OpenStack concepts can operate Virtuozzo Infrastructure. Cozystack asks your operators to be comfortable with Kubernetes.
 - **CloudBlue.** If your commerce already runs on CloudBlue, Virtuozzo has a documented connector; Ænix's modules target WHMCS and your own billing.

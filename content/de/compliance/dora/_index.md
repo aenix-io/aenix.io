@@ -26,7 +26,7 @@ quick_facts:
   - label: "Gelieferte Resilienz"
     value: "LINSTOR-replizierter Speicher, wo die StorageClass es verlangt, Live-Migration, abgeglichener deklarierter Zustand, standortübergreifend gestreckte Cluster."
   - label: "Nicht geliefert"
-    value: "Automatisches VM-Failover nach ungeplantem Knotenausfall. Knoten-Health-Handling und Restart-Policies existieren; sie zu einem Failover-Verfahren zu kombinieren ist Konfigurations- und Probearbeit."
+    value: "Automatischer VM-Neustart nach ungeplantem Knotenausfall. Fencing wird nicht mitgeliefert: Sobald ein Operator den ausgefallenen Knoten als außer Betrieb markiert (oder ein externer Fencing-Mechanismus das übernimmt), startet KubeVirt dessen VMs auf gesunden Knoten neu; Worker-Knoten von Tenant-Kubernetes-Clustern werden automatisch ersetzt."
   - label: "Backups"
     value: "Velero mit Verschlüsselung ab Werk — der Standard-Bucket liegt jedoch im Cluster, den er schützt — schwer vereinbar mit der Trennung, die Art. 12 Abs. 3 erwartet."
   - label: "Zertifizierung"
@@ -101,7 +101,7 @@ DORA erwartet, dass IKT-Systeme Störungen standhalten und sich davon erholen �
 
 **Standortübergreifend gestreckte Cluster.** Multi-Rechenzentrums-Topologien sind eine normale Betriebsform und keine Exotik — relevant, wenn Ihre Resilienzanforderungen geografische Trennung benennen.
 
-Seien Sie präzise darin, was **nicht** geliefert wird. Es gibt kein automatisches Failover virtueller Maschinen nach ungeplantem Knotenausfall, wie es ein dediziertes HA-Produkt bietet. Knoten-Health-Handling und Restart-Policies existieren und lassen sich zu einem Failover-Verfahren kombinieren, aber das ist Konfigurations- und Probearbeit, kein Schalter. Wie das üblicherweise ausgebaut wird, steht unter [Disaster Recovery](/de/loesungen/disaster-recovery/).
+Seien Sie präzise darin, was **nicht** geliefert wird. Es gibt keinen automatischen Neustart virtueller Maschinen nach ungeplantem Knotenausfall, wie ihn ein dediziertes HA-Produkt bietet, denn die Plattform liefert kein Fencing mit. Virtuelle Maschinen sind zwar auf Dauerbetrieb gesetzt, doch solange die alte Instanz auf dem toten Knoten hängt, startet KubeVirt keine zweite Kopie. Ein einziger Fencing-Schritt löst die Blockade: Ein Operator markiert den ausgefallenen Knoten als außer Betrieb oder entfernt ihn, oder ein externer Fencing-Mechanismus erledigt das. Danach startet KubeVirt die virtuellen Maschinen auf gesunden Knoten neu, und Maschinen mit Disks auf repliziertem LINSTOR/DRBD-Speicher kommen mit ihren Daten zurück. Geplante Wartung ist ein anderer Fall: Beim Drain eines Knotens wandern seine virtuellen Maschinen per Live-Migration ohne Ausfallzeit weiter. Worker-Knoten von Tenant-Kubernetes-Clustern werden automatisch ersetzt: Ein Health Check ist standardmäßig aktiv, und fehlerhafte Worker werden gelöscht und neu erzeugt, solange mindestens die Hälfte einer Node-Gruppe gesund bleibt. Den Fencing-Schritt zu einem automatisierten Verfahren auszubauen ist Konfigurations- und Probearbeit, kein Schalter. Wie das üblicherweise ausgebaut wird, steht unter [Disaster Recovery](/de/loesungen/disaster-recovery/).
 
 ---
 

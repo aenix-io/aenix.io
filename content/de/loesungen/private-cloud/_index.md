@@ -110,7 +110,7 @@ NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt
 VictoriaMetrics und VictoriaLogs sind enthalten — ressourcenschonend und souveränitätsfreundlich. Grafana optional obendrauf.
 
 **8. Backup und DR**
-Velero, S3 und Point-in-Time-Recovery pro Datenbank für die verwalteten Dienste. Backups sollten in Object Storage außerhalb des Clusters landen, den sie schützen. Ein automatisches standortübergreifendes VM-Failover gibt es nicht; Multi-Site-Designs sind Engineering-Leistung.
+Velero, S3 und Point-in-Time-Recovery pro Datenbank für die verwalteten Dienste. Backups sollten in Object Storage außerhalb des Clusters landen, den sie schützen. Ein automatisches standortübergreifendes VM-Failover gibt es nicht; Multi-Site-Designs sind Engineering-Leistung. Innerhalb eines Standorts wandern VMs per Live-Migration weiter, wenn ein Knoten für die Wartung geleert wird. Nach einem ungeplanten Knotenausfall starten sie auf gesunden Knoten neu, sobald der ausgefallene Knoten abgeschottet ist (Fencing) — durch einen einzelnen Operator-Eingriff oder einen externen Fencing-Mechanismus, denn Cozystack liefert kein automatisches Fencing mit; Worker-Knoten von Tenant-Kubernetes-Clustern werden automatisch ersetzt.
 
 **9. Self-Service-Portal und Abrechnung**
 Cozystack Dashboard für die Bereitstellung von Diensten. Betreiber, die ihren Tenants Leistungen in Rechnung stellen, ergänzen die [WHMCS-Integration](/de/produkte/whmcs-integration/), ein proprietäres Ænix-Modul, das nicht Teil des Open-Source-Projekts Cozystack ist.

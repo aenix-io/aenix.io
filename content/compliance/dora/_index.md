@@ -26,7 +26,7 @@ quick_facts:
   - label: "Resilience provided"
     value: "LINSTOR replicated storage where the StorageClass asks for it, live migration, reconciled declared state, stretched multi-site clusters."
   - label: "Not provided"
-    value: "Automated VM failover after unplanned node loss. Node health handling and restart policies exist; combining them into a failover procedure is configuration and rehearsal work."
+    value: "Automatic VM restart after unplanned node loss. No fencing ships with the platform: once an operator marks the failed node out of service (or an external fencing mechanism does), KubeVirt restarts its VMs on healthy nodes; tenant Kubernetes worker nodes are replaced automatically."
   - label: "Backups"
     value: "Velero with encryption by default — but the default bucket lives inside the cluster it protects, which is hard to reconcile with the segregation Article 12(3) expects."
   - label: "Certification"
@@ -101,7 +101,7 @@ DORA expects ICT systems to withstand and recover from disruption, and to be tes
 
 **Stretched clusters across locations.** Multi-datacenter topologies are a normal deployment shape rather than an exotic one, which matters when your resilience requirements name geographic separation.
 
-Be precise about what is **not** provided. There is no automated virtual machine failover after unplanned node loss of the kind a dedicated HA product gives you. Node health handling and restart policies exist and can be combined into a failover procedure, but that is configuration and rehearsal work, not a switch. See [disaster recovery](/solutions/disaster-recovery/) for how that is usually built out.
+Be precise about what is **not** provided. There is no automatic virtual machine restart after unplanned node loss of the kind a dedicated HA product gives you, because the platform ships no fencing. Virtual machines are set to keep running, but while the old instance is stuck on the dead node, KubeVirt will not start a second copy. One fencing step unblocks them: an operator marks the failed node out of service or removes it, or an external fencing mechanism does it. KubeVirt then restarts the virtual machines on healthy nodes, and those with disks on replicated LINSTOR/DRBD storage come back with their data. Planned maintenance is different: draining a node live-migrates its virtual machines without downtime. Worker nodes of tenant Kubernetes clusters are replaced automatically: a health check is on by default, and unhealthy workers are deleted and recreated while at least half of a node group stays healthy. Turning the fencing step into an automated procedure is configuration and rehearsal work, not a switch. See [disaster recovery](/solutions/disaster-recovery/) for how that is usually built out.
 
 ---
 

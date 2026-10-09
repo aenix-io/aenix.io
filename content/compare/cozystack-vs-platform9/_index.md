@@ -34,7 +34,7 @@ faq:
   - q: "Can I run Platform9 without a vendor-hosted control plane?"
     a: "Yes. Besides the SaaS model, Platform9 offers a self-hosted management plane installed and upgraded with its airctl tool, including an air-gapped installation, and a free Community Edition that Platform9 states is not for production. Note that Platform9's service-provider programme page describes the Platform9-run control plane. Cozystack has only one model: the whole platform runs on your hardware."
   - q: "Which platform has better VM high availability?"
-    a: "Platform9, today. Private Cloud Director ships VM HA that restarts VMs on healthy hosts after a host failure, Dynamic Resource Rebalancing that live-migrates VMs to even out load, and stretched clusters across two sites. Cozystack offers live migration and replicated storage, but no automated VM failover after unplanned node loss; building that is configuration and rehearsal work."
+    a: "Platform9, today. Private Cloud Director ships VM HA that restarts VMs on healthy hosts after a host failure, Dynamic Resource Rebalancing that live-migrates VMs to even out load, and stretched clusters across two sites. Cozystack offers live migration and replicated storage, but VMs do not restart on their own after unplanned node loss: Cozystack ships no fencing, so an operator first marks the failed node out of service (or an external fencing mechanism does), and only then does KubeVirt restart the VMs on healthy nodes."
   - q: "What can a provider sell on each platform besides VMs?"
     a: "Platform9 documents Kubernetes clusters, Load Balancer as a Service and DNS as a Service, plus integrations with existing firewall and VPN components. Cozystack's catalogue adds managed PostgreSQL, MariaDB, Valkey, ClickHouse, Kafka, RabbitMQ, NATS and other services, S3-compatible object storage and GPU workloads, each provisioned per tenant. Ænix Public Cloud Platform adds billing and WHMCS integration on top."
   - q: "How do GPUs compare?"
@@ -73,7 +73,7 @@ Cozystack is an open-source platform for building clouds, a CNCF Sandbox project
 | **APIs** | OpenStack-compatible APIs, `pcdctl`, Terraform provider | Kubernetes API and CRDs |
 | **Management plane** | SaaS (Platform9-run) or self-hosted, air-gap documented | Self-hosted only |
 | **Multi-tenancy** | Domains, regions, tenants, users and groups; quotas; Keystone-based identity | Nested Tenant resources with quotas, RBAC, network isolation |
-| **VM availability** | VM HA, Dynamic Resource Rebalancing, stretched clusters across two sites | Live migration, replicated storage; no automated VM failover |
+| **VM availability** | VM HA, Dynamic Resource Rebalancing, stretched clusters across two sites | Live migration, replicated storage; VMs restart after a node loss only once the node is fenced |
 | **Kubernetes** | Clusters with control planes hosted in the management plane | Tenant Kubernetes clusters with a managed control plane per tenant |
 | **Managed services** | LBaaS, DNSaaS; firewall and VPN through existing components | PostgreSQL, MariaDB, Valkey, ClickHouse, Kafka, RabbitMQ, NATS and more; S3 |
 | **GPU** | Passthrough and NVIDIA vGPU for VMs | Passthrough or NVIDIA vGPU for VMs; MIG partitions and HAMi sharing in tenant Kubernetes clusters |
@@ -125,7 +125,7 @@ Platform9 does not publish a price list for Private Cloud Director; its pricing 
 ## Where Platform9 is genuinely better
 
 - **A familiar console for vSphere administrators.** VM HA, Dynamic Resource Rebalancing, cloning, snapshots and affinity rules, presented the way a virtualization team expects. Cozystack asks that team to learn Kubernetes.
-- **Automated VM failover.** VM HA restarts VMs on healthy hosts after a host failure, and stretched clusters recover VMs on the peer site. Cozystack has nothing equivalent built in.
+- **Automated VM failover.** VM HA restarts VMs on healthy hosts after a host failure, and stretched clusters recover VMs on the peer site. Cozystack has nothing equivalent built in. It ships no fencing, so after an unplanned node loss its VMs stay down until an operator marks the node out of service or removes it, or an external fencing mechanism does; KubeVirt then restarts them on healthy nodes, and VMs on replicated LINSTOR/DRBD storage come back with their data. Worker nodes of tenant Kubernetes clusters, by contrast, are replaced automatically. There is no automated failover of VMs to another site.
 - **A hosted management plane, if you want one.** Platform9 runs and upgrades it for you. Cozystack always leaves that work with you or your support contract.
 - **In-place conversion of vSphere clusters.** vJailbreak converts hosts in rolling fashion, without a second set of servers.
 - **Enterprise storage reuse as a design point.** Private Cloud Director is built to keep your existing storage arrays and server hardware. <!-- source: https://docs.platform9.com/private-cloud-director/introduction/readme --> Cozystack's default is LINSTOR replicated storage on the nodes' own disks, with other storage classes as an integration task.
