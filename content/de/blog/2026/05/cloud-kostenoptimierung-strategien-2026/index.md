@@ -18,7 +18,7 @@ quiz:
         - { text: "Konfigurative Ebene und architektonische Ebene", correct: true }
         - { text: "Werkzeugebene und Kulturebene", correct: false }
         - { text: "Rechenlast-Ebene und Speicher-Ebene", correct: false }
-      explanation: "Konfigurative Optimierung arbeitet ohne Architekturänderung (Right-Sizing, Reservierungs-Tuning, Beseitigung von Verschwendung) und bringt typischerweise 15–25 Prozent. Architektonische Optimierung ändert, worauf Sie laufen (Repatriierung, Ersatz von Managed Services, Anbieterwechsel), und bringt 30–60 Prozent auf den Workloads, die tatsächlich umziehen."
+      explanation: "Konfigurative Optimierung arbeitet ohne Architekturänderung (Right-Sizing, Reservierungs-Tuning, Beseitigung von Verschwendung) und bringt typischerweise 15–25 Prozent. Architektonische Optimierung ändert, worauf Sie laufen (Repatriierung, Ersatz von Managed Services, Anbieterwechsel), und wird erst bewertet, wenn die konfigurativen Einsparungen realisiert sind."
     - q: "Wie viele Strategien zur Kostenoptimierung beschreibt der Artikel?"
       options:
         - { text: "Drei", correct: false }
