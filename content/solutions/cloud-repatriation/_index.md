@@ -99,7 +99,7 @@ If your situation matches at least three of those, repatriation deserves a struc
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></span>
 **1. Predictable cost on steady-state workloads**
-Hyperscaler economics favor elasticity. For workloads that run 24/7 at predictable utilization, the unit economics on-prem or in private cloud are routinely 30-60% better once egress, idle resources, and underutilized commitments are counted honestly.
+Hyperscaler economics favor elasticity. For workloads that run 24/7 at predictable utilization, the unit economics on-prem or in private cloud are often clearly better once egress, idle resources, and underutilized commitments are counted honestly — how much better depends on your workloads, which the [TCO calculator](/tco-calculator/) lets you model.
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
 **2. Regulatory and sovereignty pressure**
