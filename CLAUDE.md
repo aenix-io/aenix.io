@@ -92,7 +92,7 @@ The site itself is bilingual (EN + DE in `/content/` and `/content/de/`), but gi
 
 ### Rule 8 — Never claim AI authorship in PRs or commits
 
-`Co-Authored-By: Claude` line is acceptable in commit messages. Do not add `🤖 Generated with Claude Code` headers to PR descriptions, commit messages, or content.
+Every commit carries exactly one trailer `Assisted-by: LLM` followed by `Signed-off-by` (`git commit -s`). Never add `Co-Authored-By: Claude`, model or vendor names, `Claude-Session` lines, or `🤖 Generated with Claude Code` headers — not in commits, PR descriptions, issues, comments, code or content.
 
 ### Rule 9 — Cannibalization-safe pairs
 
@@ -275,7 +275,7 @@ If you're a future Claude / GPT / Cursor agent picking this up:
 5. **Check `_archive_legacy/`** before adding anything that might have a predecessor.
 6. **Don't push to `main`** — work on `feat/new-site-content` or feature branches off it.
 7. **Don't invent customer logos / quotes.** Leave the `{{LOGOS}}` / `{{QUOTE_X}}` placeholders until permission lands.
-8. **Don't claim AI authorship** in PR descriptions or commit titles. `Co-Authored-By: Claude` line in commit body is fine.
+8. **Don't claim AI authorship** anywhere. Commits end with the single trailer `Assisted-by: LLM` before `Signed-off-by`; no `Co-Authored-By: Claude`, no model or tool names.
 
 ---
 
