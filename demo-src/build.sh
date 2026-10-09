@@ -33,6 +33,67 @@ else
 fi
 git clone --depth 1 --branch "$REF" "$CLONE_URL" "$SRC"
 
+echo "==> patching Ænix branding (logo, favicon, title, sign-in mock-ups)"
+# Upstream's demo identity is an "Ænix Platform" stacked-cube mark. The page on
+# aenix.io uses the site's own Ænix wordmark and favicon instead, so a rebuild
+# stays on-brand. The portal reads its brand from public/env.js (BRAND_*), the
+# static sign-in mock-ups under public/auth carry their own logo and title.
+python3 - "$SRC" "$SITE" <<'PY'
+import base64, json, re, shutil, sys
+from pathlib import Path
+src, site = Path(sys.argv[1]), Path(sys.argv[2])
+pub = src / "apps/portal/public"
+
+def must_sub(pattern, repl, text, where, flags=0):
+    new, n = re.subn(pattern, lambda _m: repl, text, count=1, flags=flags)
+    if n != 1:
+        sys.exit(f"branding patch: {pattern!r} not found in {where}")
+    return new
+
+# Ænix wordmark (blue, for the white header) followed by the product name in
+# the page font. Inline SVG, so the <text> inherits the app's Inter.
+logo = (site / "static/images/logo-full-blue.svg").read_text()
+inner = re.search(r"<svg[^>]*>(.*)</svg>", logo, re.S).group(1).strip()
+mark = (
+    '<svg width="548" height="84" viewBox="22 108 548 84" fill="none" '
+    'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ænix Platform">'
+    f"{inner}"
+    '<text x="296" y="186" font-family="Inter, system-ui, sans-serif" '
+    'font-size="56" font-weight="600" fill="#334155">Platform</text></svg>'
+)
+
+env = pub / "env.js"
+js = env.read_text()
+for key, val in (("BRAND_NAME", "Ænix Platform"), ("BRAND_TITLE", "Ænix Platform — demo"),
+                 ("BRAND_LOGO_SVG", mark)):
+    js = must_sub(rf"^(\s*){key}: .*,$", f"  {key}: {json.dumps(val, ensure_ascii=False)},", js, env, re.M)
+env.write_text(js)
+
+for name in ("favicon.svg", "favicon.png", "apple-touch-icon.png"):
+    shutil.copy(site / "static" / name, pub / name)
+icons = ('<link rel="icon" type="image/svg+xml" href="/favicon.svg" />\n'
+         '    <link rel="icon" type="image/png" href="/favicon.png" />\n'
+         '    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />')
+index = src / "apps/portal/index.html"
+html = index.read_text()
+html = must_sub(r'<link rel="icon" href="/favicon\.ico".*?<link rel="apple-touch-icon"[^>]*>', icons, html, index, re.S)
+index.write_text(html)
+
+# The saved Keycloak pages carry a <base href> into the original host, so a
+# relative icon path would miss: the favicon is inlined as a data: URI.
+fav = base64.b64encode((site / "static/favicon.svg").read_bytes()).decode()
+auth_icons = f'<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{fav}">'
+for page in sorted((pub / "auth").glob("*.html")):
+    html = page.read_text()
+    html = must_sub(r"<title>[^<]*</title>", "<title>Sign in — Ænix Platform demo</title>", html, page)
+    html = re.sub(r'<link rel="icon"[^>]*>', "", html)
+    html = html.replace("</title>", "</title>" + auth_icons, 1)
+    html = must_sub(r'<svg class="h-8 w-auto" width="268".*?</svg>',
+                    mark.replace("<svg ", '<svg class="h-8 w-auto" ', 1), html, page, re.S)
+    page.write_text(html)
+print("branded")
+PY
+
 echo "==> installing + building portal with the back-office (base /demo-app/)"
 ( cd "$SRC"
   corepack enable >/dev/null 2>&1 || true
