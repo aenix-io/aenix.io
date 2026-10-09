@@ -1,6 +1,6 @@
 ---
 title: "CCF exam materials"
-description: "Seven lessons — exactly what the exam asks about, and nothing beyond it. Read in an evening, reinforced by the labs."
+description: "Seven lessons and a cheat sheet — exactly what the exam asks about, and nothing beyond it. One evening to read, reinforced by the labs."
 eyebrow: "Ænix Certification for Cozystack · preparation"
 layout: "cert-materials"
 language: "en"
@@ -20,19 +20,20 @@ The order is not accidental: the first two topics make up almost half of the exa
 The other five weigh ten percent each, and you cannot skip them — six questions
 are enough to fall short of the threshold.
 
-**How long it takes.** About forty minutes for all seven lessons if you read them straight through. Plus the labs,
-if you want hands-on practice — but the exam does not require them.
+**How long it takes.** About an hour and a half for all seven lessons and the cheat sheet if you read them
+straight through — one evening. Plus the labs, if you want hands-on practice — but the exam does not require them.
 
 **Is this enough to pass.** The materials cover what is asked: we checked
 them against the set of practice questions, and the answer to nine out of ten is right there in the lessons.
 The rest are rare details that are quicker to look up in the documentation via the links at the end of
 each lesson than to memorize in advance.
 
-**Download it all.** A [print-friendly page with all lessons](/certification/materials/all/) — the same
-seven lessons and the same layout, which you can save as PDF from the browser and read offline. There is also
-[a ready-made PDF of the Russian edition](/certification/ccf-materials.pdf).
+**Download it all.** [A PDF with all the lessons](/certification/ccf-materials.pdf) — the same seven lessons
+and cheat sheet, the same layout, readable offline. Prefer the browser? The
+[print-friendly page with all lessons](/certification/materials/all/) prints to the same file.
 
-A Russian version of these materials is at [/ru/certification/materials/](/ru/certification/materials/).
+A Russian version of these materials is at [/ru/certification/materials/](/ru/certification/materials/), with
+[its own PDF](/ru/certification/ccf-materials.pdf).
 
 **Kubernetes fundamentals** are covered briefly in the last lesson: the exam asks about terms but does not
 require you to be able to administer a cluster. If you have never dealt with it, start with

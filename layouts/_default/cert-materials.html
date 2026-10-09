@@ -27,8 +27,10 @@
       </div>
       {{ end }}
     </div>
-    <p style="margin-top:34px">
-      <a class="cert__btn" href="{{ $base }}materials/all/">{{ cond $ru "Одной страницей — для печати и PDF" "All on one page — for printing and PDF" }}</a>
+    <p style="margin-top:34px;display:flex;flex-wrap:wrap;gap:12px">
+      {{/* Each edition links its own PDF; scripts/build-ccf-pdf.py regenerates both. */}}
+      <a class="cert__btn" href="{{ $base }}ccf-materials.pdf" download>{{ cond $ru "Скачать PDF" "Download PDF" }}</a>
+      <a class="cert__btn cert__btn--ghost" href="{{ $base }}materials/all/">{{ cond $ru "Одной страницей — для печати" "All on one page — for printing" }}</a>
     </p>
   </div>
 </article>
