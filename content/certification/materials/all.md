@@ -1,6 +1,6 @@
 ---
 title: "CCF exam materials — complete"
-description: "All seven lessons on one page. For reading straight through and for saving as PDF: printing from the browser produces a ready-made file."
+description: "All seven lessons and the cheat sheet on one page. For reading straight through and for saving as PDF: printing from the browser produces a ready-made file."
 layout: "cert-all"
 weight: 99
 language: "en"

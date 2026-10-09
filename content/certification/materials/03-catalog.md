@@ -41,21 +41,21 @@ This is worth understanding once, so you never have to come back to it.
 
 <figure>
 <svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How an order turns into a running service">
-  <rect x="10" y="70" width="130" height="56" rx="8" fill="#dbeafe" stroke="#2563eb"/>
-  <text x="75" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#1e3a8a">Your order</text>
-  <text x="75" y="110" text-anchor="middle" font-family="monospace" font-size="11" fill="#1e40af">kind: Postgres</text>
-  <path d="M145 98 L185 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
-  <rect x="190" y="70" width="130" height="56" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
-  <text x="255" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#312e81">HelmRelease</text>
-  <text x="255" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">Flux deploys the chart</text>
-  <path d="M325 98 L365 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
-  <rect x="370" y="70" width="130" height="56" rx="8" fill="#f1f5f9" stroke="#64748b"/>
-  <text x="435" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Operator</text>
-  <text x="435" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">from the chart, runs the DB</text>
-  <path d="M505 98 L545 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
-  <rect x="550" y="70" width="100" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
-  <text x="600" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#14532d">Pods</text>
-  <text x="600" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#166534">database is up</text>
+  <rect x="5" y="70" width="150" height="56" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="80" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#1e3a8a">Your order</text>
+  <text x="80" y="110" text-anchor="middle" font-family="monospace" font-size="11" fill="#1e40af">kind: Postgres</text>
+  <path d="M158 98 L182 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="185" y="70" width="150" height="56" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
+  <text x="260" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#312e81">HelmRelease</text>
+  <text x="260" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">Flux deploys the chart</text>
+  <path d="M338 98 L362 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="365" y="70" width="150" height="56" rx="8" fill="#f1f5f9" stroke="#64748b"/>
+  <text x="440" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Operator</text>
+  <text x="440" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">from the chart, runs the DB</text>
+  <path d="M518 98 L542 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="545" y="70" width="100" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="595" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#14532d">Pods</text>
+  <text x="595" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#166534">database is up</text>
   <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
     <path d="M0 0 L8 4 L0 8 z" fill="#64748b"/></marker></defs>
 </svg>
