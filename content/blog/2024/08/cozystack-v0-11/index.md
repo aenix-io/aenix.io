@@ -5,6 +5,7 @@ description: "The Cozystack v0.11 release is now available for download, install
 date: "2024-08-15"
 cover_image: "/img/blog/medium/cozystack-v0-11/01.jpg"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/08/cozystack-v0-11-s3-buckets-tenant-isolation/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Cilium", "Talos", "LINSTOR", "Multi-tenancy"]
 language: "en"

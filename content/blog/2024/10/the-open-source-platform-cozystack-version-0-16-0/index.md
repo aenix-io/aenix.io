@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.16: alerting with Telegram notifications"
 description: "Cozystack v0.16.0 adds an alert system based on the open-source tool Alerta, with notifications to Telegram, plus a set of other platform improvements."
 date: "2024-10-03"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/10/cozystack-v0-16-alerting-telegram/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "GitOps", "Observability"]
 language: "en"

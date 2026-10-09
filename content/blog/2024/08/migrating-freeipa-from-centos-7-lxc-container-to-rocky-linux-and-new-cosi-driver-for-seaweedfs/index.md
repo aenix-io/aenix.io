@@ -5,6 +5,7 @@ description: "Two updates from Ænix: a write-up on moving FreeIPA from a CentOS
 date: "2024-08-01"
 cover_image: "/img/blog/covers/migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-and-new-cosi-driver-for-seaweedfs.jpg"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/08/freeipa-migration-rocky-linux-cosi-treiber-seaweedfs/"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Migration", "Storage", "FreeIPA"]
 language: "en"

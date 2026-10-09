@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.31–0.33: air gap, backups and AI"
 description: "Cozystack v0.31 to v0.33 bring air-gapped installs, a new backup system, AI workloads in Kubernetes, ARM support, NFS and cozypkg as a Helm replacement."
 date: "2025-07-09"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/07/cozystack-v0-31-0-33-air-gap-backups-ki/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"

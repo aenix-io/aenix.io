@@ -4,6 +4,7 @@ seo_title: "Cozystack joins Hacktoberfest 2024"
 description: "Cozystack takes part in Hacktoberfest 2024. Pick an issue in the Cozystack GitHub repository, send a pull request and ask the maintainers for help."
 date: "2024-10-04"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/10/cozystack-hacktoberfest-2024/"
 type: "news"
 topics: ["Cozystack", "Open Source"]
 language: "en"

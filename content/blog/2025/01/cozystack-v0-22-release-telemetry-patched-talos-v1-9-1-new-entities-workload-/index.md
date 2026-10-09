@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.22: telemetry and WorkloadMonitor"
 description: "Cozystack v0.22 adds Workload and WorkloadMonitor to show service health in the dashboard, opt-in telemetry, a patched Talos v1.9.1 and component updates."
 date: "2025-01-17"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/01/cozystack-v0-22-telemetrie-talos-workloadmonitor/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "Observability", "Storage", "etcd"]
 language: "en"

@@ -4,6 +4,7 @@ seo_title: "Managed Kubernetes in Cozystack: why we built it"
 description: "Why Cozystack ships a managed Kubernetes service: a Kubernetes API inside your own cloud that lets users request services and use resources on demand."
 date: "2024-08-23"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/08/managed-kubernetes-cozystack-warum/"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Multi-tenancy", "Observability", "Terraform"]
 language: "en"
