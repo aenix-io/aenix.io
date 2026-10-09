@@ -4,6 +4,7 @@ seo_title: "Cozystack is now in the CNCF Landscape"
 description: "Cozystack is now listed in the CNCF Landscape in the Platform and Certified Kubernetes – Installer categories. What that means and what is new."
 date: "2024-09-25"
 author: "Andrei Kvapil"
+hreflang_de: "/de/blog/2024/09/cozystack-cncf-landscape/"
 type: "news"
 topics: ["Kubernetes", "Platform Engineering", "DevOps", "Open Source", "Cloud", "Cozystack"]
 language: "en"

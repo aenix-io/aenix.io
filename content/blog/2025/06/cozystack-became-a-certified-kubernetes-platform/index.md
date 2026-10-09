@@ -3,6 +3,7 @@ title: "Cozystack became a CNCF Certified Kubernetes distribution"
 description: "Cozystack is now a CNCF Certified Kubernetes distribution. Thanks to the community and to our friends at Hidora."
 date: "2025-06-06"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/06/cozystack-cncf-certified-kubernetes-distribution/"
 type: "announcement"
 topics: ["Kubernetes", "DevOps", "Open Source", "CNCF", "Platform Engineering", "Cozystack"]
 language: "en"

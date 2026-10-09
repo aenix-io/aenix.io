@@ -4,6 +4,7 @@ seo_title: "CNCF webinar: one API with Kubernetes aggregation"
 description: "CNCF webinar with Andrei Kvapil, Ænix CEO and Cozystack maintainer: building a unified platform API with the Kubernetes API Aggregation Layer."
 date: "2025-09-03"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/09/cncf-webinar-einheitliche-plattform-api-kubernetes-aggregation/"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "CNCF", "Platform Engineering", "Observability", "etcd"]
 language: "en"

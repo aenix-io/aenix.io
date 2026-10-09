@@ -5,6 +5,7 @@ description: "kubectl-node-shell v1.11.0 opens a shell on any cluster node throu
 date: "2024-12-02"
 cover_image: "/img/blog/covers/kubectl-node-shell-plugin-updated-to-v1110.jpg"
 author: "Andrei Kvapil"
+hreflang_de: "/de/blog/2024/12/kubectl-node-shell-v1-11-0/"
 type: "announcement"
 topics: ["Kubernetes", "DevOps", "Open Source", "Cloud"]
 language: "en"

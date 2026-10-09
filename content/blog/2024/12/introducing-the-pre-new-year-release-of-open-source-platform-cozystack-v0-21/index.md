@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.21: new user dashboard and Talos"
 description: "Cozystack v0.21 moves the dashboard onto the Cozystack API instead of FluxCD resources, so users get granular access, and updates Talos Linux."
 date: "2024-12-28"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/12/cozystack-v0-21-neues-dashboard-talos-linux/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Multi-tenancy", "Observability"]
 language: "en"

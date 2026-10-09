@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.38: VPC networking and VM console"
 description: "Cozystack v0.38 adds Virtual Private Cloud networking for tenant applications, a VNC console for virtual machines, additional repositories and a faster API."
 date: "2025-12-17"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/12/cozystack-v0-38-vpc-vm-konsole-schnellere-api/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Multi-tenancy"]
 language: "en"
