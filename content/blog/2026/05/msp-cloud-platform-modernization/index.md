@@ -84,7 +84,7 @@ Tenants nest. The MSP has its own tenant, inside it there is a tenant per custom
 
 The managed services catalog is curated. The MSP decides what to expose. If it can back PostgreSQL with real operational expertise but not Kafka, it exposes PostgreSQL and hides Kafka. The catalog should match what the MSP can support at three in the morning, not everything the platform can technically run.
 
-The customer-facing portal is the Cozystack Dashboard in the MSP's colours, logo and domain. White-labelling is an open-source Cozystack feature. Billing runs through the [WHMCS integration](/products/whmcs-integration/), a proprietary Ænix module included in the subscription, either with WHMCS as the customer-facing front or with the Dashboard in front and WHMCS as the billing back-end. Overdue accounts can be suspended from the platform without an engineering ticket.
+The customer-facing portal is the Cozystack Dashboard with the MSP's logo, titles and favicon, branded once for the whole platform, and each customer tenant can publish its services on its own domain. White-labelling is an open-source Cozystack feature. Billing runs through the [WHMCS integration](/products/whmcs-integration/), a proprietary Ænix module included in the subscription, either with WHMCS as the customer-facing front or with the Dashboard in front and WHMCS as the billing back-end. Overdue accounts can be suspended from the platform without an engineering ticket.
 
 ## Bringing existing customer estates across
 

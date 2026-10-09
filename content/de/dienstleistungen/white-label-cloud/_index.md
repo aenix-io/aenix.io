@@ -1,7 +1,7 @@
 ---
 title: "White-Label Cloud — ein Cloud-Produkt unter eigener Marke für MSPs und Reseller"
 seo_title: "White-Label Cloud für MSPs und Reseller"
-description: "Cloud unter eigener Marke für MSPs und Reseller auf Cozystack: verschachtelte Mandanten, Dashboard in Ihren Farben, WHMCS-Abrechnung und eigener Katalog."
+description: "Cloud unter eigener Marke für MSPs und Reseller auf Cozystack: verschachtelte Mandanten, Dashboard unter Ihrer Marke, WHMCS-Abrechnung und eigener Katalog."
 related_pages:
   - /de/dienstleistungen/public-cloud-builder/
   - /de/produkte/public-cloud-platform/
@@ -12,7 +12,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/white-label-cloud/
 direct_answer: |
-  **Eine White-Label Cloud ist ein Cloud-Produkt, das ein Managed Service Provider (MSP), ein Hosting-Reseller oder ein Systemintegrator unter eigener Marke verkauft, während es auf Infrastruktur läuft, die für ihn aufgebaut und betrieben wird. Ænix baut solche Clouds durchgängig auf Cozystack, der Open-Source-CNCF-Plattform, die virtuelle Maschinen und Container auf einer Kubernetes-API betreibt. Ein typisches Projekt liefert eine mandantenfähige Plattform mit einer Reseller-Kunden-Hierarchie über verschachtelte Tenant-CRDs, ein Kundenportal (Cozystack Dashboard) im Branding des jeweiligen Resellers, eine in WHMCS integrierte Abrechnung und einen Servicekatalog aus VMs, Kubernetes, Managed-Datenbanken, S3 und GPU. Das passt zu MSPs, Hosting-Resellern, Integratoren und Beratungen in regulierten Branchen, die mit Hyperscalern wirtschaftlich mithalten wollen — ohne Softwarelizenzen pro CPU und ohne Herstellerbindung.**
+  **Eine White-Label Cloud ist ein Cloud-Produkt, das ein Managed Service Provider (MSP), ein Hosting-Reseller oder ein Systemintegrator unter eigener Marke verkauft, während es auf Infrastruktur läuft, die für ihn aufgebaut und betrieben wird. Ænix baut solche Clouds durchgängig auf Cozystack, der Open-Source-CNCF-Plattform, die virtuelle Maschinen und Container auf einer Kubernetes-API betreibt. Ein typisches Projekt liefert eine mandantenfähige Plattform mit einer Reseller-Kunden-Hierarchie über verschachtelte Tenant-CRDs, ein Kundenportal (Cozystack Dashboard) mit der Marke des Anbieters, eine in WHMCS integrierte Abrechnung und einen Servicekatalog aus VMs, Kubernetes, Managed-Datenbanken, S3 und GPU. Das passt zu MSPs, Hosting-Resellern, Integratoren und Beratungen in regulierten Branchen, die mit Hyperscalern wirtschaftlich mithalten wollen — ohne Softwarelizenzen pro CPU und ohne Herstellerbindung.**
 
 quick_facts:
   - label: "Was es ist"
@@ -32,7 +32,7 @@ quick_facts:
 
 faq:
   - q: "Was umfasst ein White-Label-Cloud-Projekt mit Ænix?"
-    a: "Eine mandantenfähige Cozystack-Plattform mit Reseller-Kunden-Hierarchie, ein Cozystack Dashboard im Branding des jeweiligen Resellers, eine in WHMCS integrierte Abrechnung, einen Servicekatalog (VMs, Kubernetes, Managed-Datenbanken, S3, GPU), ein Reseller- und Sub-Reseller-Modell sowie Betriebsabläufe für Support, SLA-Management und Observability pro Tenant."
+    a: "Eine mandantenfähige Cozystack-Plattform mit Reseller-Kunden-Hierarchie, ein Cozystack Dashboard mit Ihrem Logo, Ihren Titeln und Ihrem Favicon (das Branding gilt einheitlich für die gesamte Plattform), eine in WHMCS integrierte Abrechnung, einen Servicekatalog (VMs, Kubernetes, Managed-Datenbanken, S3, GPU), ein Reseller- und Sub-Reseller-Modell sowie Betriebsabläufe für Support, SLA-Management und Observability pro Tenant."
   - q: "Wie lange dauert der Start?"
     a: "Nach einem Discovery-Gespräch und einem Readiness Assessment über 14 oder 28 Tage ist die Plattform über den produktisierten Installer innerhalb weniger Wochen live, sobald die Hardware bereitsteht. Branding, Abrechnung und Betriebsabläufe werden parallel eingerichtet, und eine optionale Managed-Services-Phase kann die Anlaufzeit abdecken."
   - q: "Kann ich ein mehrstufiges Reseller-Modell betreiben?"
@@ -83,7 +83,7 @@ faq:
 </div>
 
 - **Mandantenfähige Cozystack-Plattform** mit Reseller-Kunden-Hierarchie (verschachtelte Tenant-CRDs)
-- **Kundenportal im eigenen Branding** — Cozystack Dashboard, pro Reseller anpassbar
+- **Kundenportal im eigenen Branding** — Cozystack Dashboard mit Ihrem Logo, Ihren Titeln, Ihrer Fußzeile und Ihrem Favicon, dazu Ihr Name auf den Anmeldeseiten; das Branding gilt plattformweit, und jeder Tenant kann seine Services unter einer eigenen Domain veröffentlichen
 - **In WHMCS integrierte Abrechnung** — produktionsreif, zwei Betriebsarten
 - **Servicekatalog** — VMs, K8s, Managed-Datenbanken, S3, GPU
 - **Reseller- und Sub-Reseller-Modell** — für mehrstufige Partnerkanäle
