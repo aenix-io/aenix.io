@@ -34,9 +34,10 @@ fi
 git clone --depth 1 --branch "$REF" "$CLONE_URL" "$SRC"
 
 echo "==> patching Ænix branding (logo, favicon, title, sign-in mock-ups)"
-# Upstream's demo identity is an "Ænix Platform" stacked-cube mark. The page on
-# aenix.io uses the site's own Ænix wordmark and favicon instead, so a rebuild
-# stays on-brand. The portal reads its brand from public/env.js (BRAND_*), the
+# The portal demo is the Ænix Public Cloud Platform console. Upstream's demo
+# identity is the retired "Ænix Platform" umbrella name with a stacked-cube
+# mark; the page on aenix.io uses the product name and the site's own Ænix
+# wordmark and favicon instead, so a rebuild stays on-brand. The portal reads its brand from public/env.js (BRAND_*), the
 # static sign-in mock-ups under public/auth carry their own logo and title.
 python3 - "$SRC" "$SITE" <<'PY'
 import base64, json, re, shutil, sys
@@ -50,21 +51,23 @@ def must_sub(pattern, repl, text, where, flags=0):
         sys.exit(f"branding patch: {pattern!r} not found in {where}")
     return new
 
-# Ænix wordmark (blue, for the white header) followed by the product name in
-# the page font. Inline SVG, so the <text> inherits the app's Inter.
+PRODUCT = "Ænix Public Cloud Platform"
+
+# Ænix wordmark (blue, for the white header) followed by a "Public Cloud"
+# label. Inline SVG with no font-family, so the <text> inherits the page font.
 logo = (site / "static/images/logo-full-blue.svg").read_text()
 inner = re.search(r"<svg[^>]*>(.*)</svg>", logo, re.S).group(1).strip()
 mark = (
-    '<svg width="548" height="84" viewBox="22 108 548 84" fill="none" '
-    'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ænix Platform">'
+    '<svg width="600" height="84" viewBox="22 108 600 84" fill="none" '
+    f'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{PRODUCT}">'
     f"{inner}"
-    '<text x="296" y="186" font-family="Inter, system-ui, sans-serif" '
-    'font-size="56" font-weight="600" fill="#334155">Platform</text></svg>'
+    '<text x="294" y="186" font-size="52" font-weight="600" fill="#334155">'
+    "Public Cloud</text></svg>"
 )
 
 env = pub / "env.js"
 js = env.read_text()
-for key, val in (("BRAND_NAME", "Ænix Platform"), ("BRAND_TITLE", "Ænix Platform — demo"),
+for key, val in (("BRAND_NAME", PRODUCT), ("BRAND_TITLE", f"{PRODUCT} — demo"),
                  ("BRAND_LOGO_SVG", mark)):
     js = must_sub(rf"^(\s*){key}: .*,$", f"  {key}: {json.dumps(val, ensure_ascii=False)},", js, env, re.M)
 env.write_text(js)
@@ -85,12 +88,28 @@ fav = base64.b64encode((site / "static/favicon.svg").read_bytes()).decode()
 auth_icons = f'<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{fav}">'
 for page in sorted((pub / "auth").glob("*.html")):
     html = page.read_text()
-    html = must_sub(r"<title>[^<]*</title>", "<title>Sign in — Ænix Platform demo</title>", html, page)
+    html = must_sub(r"<title>[^<]*</title>", f"<title>Sign in — {PRODUCT} demo</title>", html, page)
     html = re.sub(r'<link rel="icon"[^>]*>', "", html)
     html = html.replace("</title>", "</title>" + auth_icons, 1)
     html = must_sub(r'<svg class="h-8 w-auto" width="268".*?</svg>',
                     mark.replace("<svg ", '<svg class="h-8 w-auto" ', 1), html, page, re.S)
+    html = must_sub(r"Ænix Platform ©", f"{PRODUCT} ©", html, page)
     page.write_text(html)
+
+# The header caps a custom logo at 140px on phones; the wider mark with its
+# label needs a little more (it still fits next to the 390px top-bar icons).
+header = src / "packages/ui/src/components/layout/Header.tsx"
+tsx = header.read_text()
+tsx = must_sub(r"flex h-6 max-w-\[140px\] items-center overflow-hidden",
+               "flex h-6 max-w-[200px] items-center overflow-hidden", tsx, header)
+header.write_text(tsx)
+
+# Mock data still names the retired umbrella product: the Keycloak client in
+# the session list and the payee on demo invoices.
+kc = src / "apps/portal/src/demo/keycloak.ts"
+kc.write_text(kc.read_text().replace('dashboard: "Ænix Platform"', f'dashboard: "{PRODUCT}"'))
+acc = src / "apps/portal/src/demo/seed/accounting.ts"
+acc.write_text(acc.read_text().replace('"Ænix Platform Demo LLC"', '"Ænix Demo LLC"'))
 print("branded")
 PY
 
