@@ -3,6 +3,7 @@ title: "Cozystack Launches an OSS Health Section on Its Website"
 description: "We have launched a new OSS health section on the Cozystack website, with project stats refreshed automatically every month."
 date: "2026-04-08"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/04/cozystack-oss-health-bereich-website/"
 type: "announcement"
 topics: ["Open Source", "DevOps", "Kubernetes", "CNCF", "Platform Engineering", "Cozystack"]
 language: "en"

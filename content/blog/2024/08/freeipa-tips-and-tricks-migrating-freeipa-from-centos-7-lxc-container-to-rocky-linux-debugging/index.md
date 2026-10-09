@@ -5,6 +5,7 @@ description: "How we revived a broken FreeIPA in a CentOS 7 LXC container on Pro
 date: "2024-08-01"
 cover_image: "/img/blog/medium/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/01.jpg"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/08/freeipa-migration-centos-7-lxc-rocky-linux-zertifikate/"
 type: "article"
 topics: ["Proxmox", "Cozystack", "Migration", "Backup and DR", "FreeIPA"]
 language: "en"

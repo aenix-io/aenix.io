@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.20: Terraform, Keycloak and stability"
 description: "This release focuses on enhancing stability while addressing a significant number of bugs and introducing new features."
 date: "2024-12-12"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/12/cozystack-v0-20-terraform-keycloak-stabilitaet-sicherheit/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Multi-tenancy", "Observability", "Terraform"]
 language: "en"

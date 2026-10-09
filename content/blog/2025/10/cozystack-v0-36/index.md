@@ -4,6 +4,7 @@ seo_title: "Cozystack v0.36: S3 encryption and Kube-OVN health"
 description: "The new version of Cozystack focuses on the stability, observability, and flexible configuration of managed applications."
 date: "2025-10-01"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2025/10/cozystack-v0-36-s3-verschluesselung-kube-ovn/"
 type: "announcement"
 topics: ["Cozystack", "Talos", "Multi-tenancy", "Observability", "Storage"]
 language: "en"

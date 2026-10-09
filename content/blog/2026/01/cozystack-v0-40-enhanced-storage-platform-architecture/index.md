@@ -3,6 +3,7 @@ title: "Cozystack v0.40 — Enhanced Storage & Platform Architecture"
 description: "Cozystack v0.40 adds a LINSTOR scheduler for storage-aware pod placement, SeaweedFS traffic locality, valuesFrom configuration and LINSTOR auto-diskful."
 date: "2026-01-19"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/01/cozystack-v0-40-storage-plattformarchitektur/"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "LINSTOR", "Observability", "Storage", "etcd"]
 language: "en"
