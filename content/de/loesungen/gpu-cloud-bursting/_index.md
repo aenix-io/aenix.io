@@ -112,7 +112,7 @@ Das Muster setzt sich aus Standardbausteinen von Kubernetes zusammen, die wir du
 
 - **Cluster Autoscaler** erkennt GPU-Pods, die sich nicht einplanen lassen, und stellt Nodes auf dem passenden Ziel bereit — Bare Metal, Hyperscaler oder souveräne Cloud — über die [Cluster API](https://cluster-api.sigs.k8s.io/), den deklarativen Kubernetes-Standard für den Lebenszyklus von Clustern und Maschinen. Ist die Warteschlange abgearbeitet, werden die Nodes wieder entfernt.
 - **Cilium und ein WireGuard-Mesh (Kilo)** liefern das CNI und ein verschlüsseltes Overlay über Clouds hinweg. Frisch autoskalierte Nodes melden sich selbst im Mesh an und erreichen gemeinsamen Storage ohne manuelle Schritte — das [Kubernetes-Netzwerkmodell](https://kubernetes.io/docs/concepts/services-networking/) behandelt sie, als wären sie lokal.
-- **NVIDIA GPU Operator** übernimmt Treiberinstallation und Geräteerkennung auf jedem Node, und HAMi ergänzt anteiliges Sharing, sodass eine Karte mehrere Pods bedient. MIG und Time-Slicing stehen auf der Roadmap.
+- **NVIDIA GPU Operator** übernimmt Treiberinstallation und Geräteerkennung auf jedem Node, und HAMi ergänzt Time-Slicing, sodass eine Karte mehrere Pods bedient; auf MIG-fähigen Karten stellt der Operator zudem MIG-Partitionen als einplanbare Ressourcen bereit.
 - **Talos Linux und Kamaji** bilden die Basis: ein unveränderliches, per API verwaltetes Betriebssystem für die Nodes und Hosted Control Planes für Tenant-Cluster, sodass jeder Tenant von vornherein isoliert ist.
 
 Es sind dieselben offenen, an der [CNCF](https://www.cncf.io/) ausgerichteten Bausteine, auf die sich das Cloud-Native-Ökosystem verständigt hat — keine proprietäre Orchestrierungsschicht, kein Control-Plane-Aufschlag pro GPU.

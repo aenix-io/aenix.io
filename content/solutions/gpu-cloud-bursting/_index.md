@@ -112,7 +112,7 @@ The pattern is standard Kubernetes primitives, assembled and operated end-to-end
 
 - **Cluster Autoscaler** watches for GPU pods that cannot be scheduled and provisions nodes on the right target — bare metal, hyperscaler or sovereign cloud — through the [Cluster API](https://cluster-api.sigs.k8s.io/), Kubernetes' declarative standard for lifecycle-managing clusters and machines. When the queue drains, the nodes are removed.
 - **Cilium plus a WireGuard mesh (Kilo)** provide the CNI and an encrypted overlay that spans clouds. Freshly autoscaled nodes advertise themselves into the mesh and reach shared storage with no manual steps — the [Kubernetes networking model](https://kubernetes.io/docs/concepts/services-networking/) treats them as if they were local.
-- **NVIDIA GPU Operator** handles driver installation and device discovery on each node, and HAMi adds fractional sharing so one card serves several pods. MIG and time-slicing are on the roadmap.
+- **NVIDIA GPU Operator** handles driver installation and device discovery on each node, and HAMi adds time-sliced sharing so one card serves several pods; on MIG-capable cards the operator can also expose MIG partitions as schedulable resources.
 - **Talos Linux and Kamaji** form the base: an immutable, API-managed OS for the nodes and hosted control planes for tenant clusters, so each tenant is isolated by design.
 
 This is the same class of open, [CNCF](https://www.cncf.io/)-aligned building blocks the cloud-native ecosystem standardizes on — no proprietary orchestration layer, no per-GPU control-plane tax.

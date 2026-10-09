@@ -100,7 +100,7 @@ Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway 
 ## Wie es weitergeht
 
 - Ausbau der GPU-Server-Flotte über den ersten Knoten hinaus.
-- Höhere Inferenzdichte pro Karte: jetzt weiteres HAMi-Tuning, MIG-Partitionierung, sobald sie die Cozystack-Roadmap verlässt.
+- Höhere Inferenzdichte pro Karte: weiteres HAMi-Tuning sowie MIG-Partitionen über den GPU Operator, wo ein Workload Isolation auf Hardware-Ebene braucht.
 - Eine dedizierte Harbor-Registry für schwere (~100 GB) Modell-Images.
 - Ausbau des Self-Service auf Basis des Mandantenfähigkeits-Modells.
 

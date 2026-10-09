@@ -40,7 +40,7 @@ faq:
   - q: "Welche Lizenzen gelten?"
     a: "Cozystack steht unter Apache 2.0, ohne Lizenzkosten pro CPU oder Core. Proxmox VE steht unter AGPLv3. Beide sind Open Source."
   - q: "Unterstützt Cozystack GPUs besser als Proxmox VE?"
-    a: "Es geht weiter, aber man sollte genau sagen, wie weit. Proxmox VE bietet GPU-Passthrough, eine Karte an einen Gast. Cozystack plant GPUs über den NVIDIA GPU Operator ein und teilt eine Karte per HAMi zwischen Container-Workloads; für VMs stehen Passthrough oder NVIDIA vGPU (sofern Sie eine NVIDIA-vGPU-Lizenz besitzen) zur Verfügung. MIG und Time-Slicing stehen auf der Roadmap und sind heute nicht verfügbar — planen Sie also noch kein GPU-Produkt für einander nicht vertrauende Tenants darauf."
+    a: "Es geht weiter, aber man sollte genau sagen, wie weit. Proxmox VE bietet GPU-Passthrough, eine Karte an einen Gast. Cozystack plant GPUs über den NVIDIA GPU Operator ein und teilt eine Karte per HAMi zwischen Container-Workloads; für VMs stehen Passthrough oder NVIDIA vGPU (sofern Sie eine NVIDIA-vGPU-Lizenz besitzen) zur Verfügung. Auf MIG-fähigen Karten stellt der GPU Operator zudem MIG-Partitionen für Tenant-Kubernetes-Cluster bereit; Tenants, die sich eine Karte teilen, sind damit auf Hardware-Ebene getrennt."
   - q: "Was bietet Ænix zusätzlich zu Cozystack?"
     a: "Ænix hat Cozystack entwickelt und bietet darauf aufbauend Support und Services. Die Ænix Public Cloud Platform ist ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen — mit Hosting-Panel, Billing und Kundenportal; die Support-Stufen beginnen bei 1.250 USD pro 10 Nodes und Monat (Basic, jährliche Abrechnung)."
 ---

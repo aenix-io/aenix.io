@@ -13,12 +13,12 @@ faq_style: "rows"
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Service-Katalog im Cozystack Dashboard"
 direct_answer: |
-  **Die Ænix AI Platform ist selbst gehostete KI-Infrastruktur für Organisationen, die Inferenz, Fine-Tuning und RAG auf eigenen GPUs betreiben statt über KI-APIs der Hyperscaler. Sie ist die dritte Ænix-Plattform neben Public Cloud und Private Cloud und läuft auf derselben Engine Cozystack (Apache 2.0, ein CNCF-Projekt, seit September 2026 im Programm CNCF Kubernetes AI Conformance). NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Dazu kommen GPU-Quotas pro Mandant, Model Serving (vLLM-kompatibel), Vektordatenbanken, Object Storage und Air-Gap-Deployment. Ænix liefert die Plattform als Projekt per RFP — 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach Umfang — mit optionalem Managed-Retainer.**
+  **Die Ænix AI Platform ist selbst gehostete KI-Infrastruktur für Organisationen, die Inferenz, Fine-Tuning und RAG auf eigenen GPUs betreiben statt über KI-APIs der Hyperscaler. Sie ist die dritte Ænix-Plattform neben Public Cloud und Private Cloud und läuft auf derselben Engine Cozystack (Apache 2.0, ein CNCF-Projekt, seit September 2026 im Programm CNCF Kubernetes AI Conformance). NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough ganzer GPUs oder NVIDIA vGPU (erfordert Ihre NVIDIA-vGPU-Lizenz) für VMs, in Tenant-Kubernetes-Clustern MIG-Partitionen oder Time-Slicing über HAMi. Dazu kommen GPU-Quotas pro Mandant, Model Serving (vLLM-kompatibel), Vektordatenbanken, Object Storage und Air-Gap-Deployment. Ænix liefert die Plattform als Projekt per RFP — 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach Umfang — mit optionalem Managed-Retainer.**
 quick_facts:
   - label: "Was es ist"
     value: "Selbst gehostete, mandantenfähige KI-Infrastruktur für Inferenz, Fine-Tuning und RAG auf GPUs unter Ihrer Kontrolle. Die dritte Ænix-Plattform, auf derselben Engine wie Public Cloud und Private Cloud."
   - label: "GPUs"
-    value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), anteilige Nutzung über HAMi. MIG und Time-Slicing: Roadmap. Andere Beschleuniger: nur PCI-Passthrough an VMs."
+    value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough oder NVIDIA vGPU (erfordert Ihre NVIDIA-vGPU-Lizenz) für VMs; MIG-Partitionen und Time-Slicing über HAMi in Tenant-Kubernetes-Clustern. Andere Beschleuniger: nur PCI-Passthrough an VMs."
   - label: "CNCF-Programme und NVIDIA"
     value: "Cozystack ist seit September 2026 im Programm CNCF Kubernetes AI Conformance; CNCF Certified Kubernetes Distribution. Die Partner-Validierung des GPU-Operator-Stacks bei NVIDIA wurde im Oktober 2026 eingereicht und steht noch aus."
   - label: "Lizenz"
@@ -35,7 +35,7 @@ faq:
   - q: "Welche GPUs werden unterstützt?"
     a: "NVIDIA-GPUs für Rechenzentren, über den NVIDIA GPU Operator: eine ganze GPU per Passthrough an eine virtuelle Maschine, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) oder eine GPU, die sich Container über HAMi teilen. Zu unseren veröffentlichten Deployments gehört ein Inferenz-Server mit 8×H100. Eine Liste validierter Modelle veröffentlichen wir nicht; die Partner-Validierung des GPU-Operator-Stacks bei NVIDIA wurde im Oktober 2026 eingereicht und steht noch aus. Andere Beschleuniger lassen sich als PCI-Geräte an VMs durchreichen, ohne Automatisierung über einen Operator."
   - q: "Unterstützen Sie MIG oder Time-Slicing?"
-    a: "Heute nicht als ausgelieferte Plattformfunktion; beides steht auf der Roadmap. Eine Karte wird zwischen Mandanten mit HAMi geteilt, das pro Workload Grenzen für Speicher und Rechenleistung setzt. Planen Sie Ihre Anforderungen an die Isolation entsprechend."
+    a: "Ja, beides, in Tenant-Kubernetes-Clustern. Der NVIDIA GPU Operator stellt MIG-Partitionen MIG-fähiger Karten wie A100 und H100 als einplanbare Ressourcen bereit, und HAMi teilt eine Karte per Time-Slicing, mit Grenzen für Speicher und Rechenleistung pro Workload und mit Überbuchung. Virtuelle Maschinen erhalten ganze GPUs per Passthrough oder NVIDIA vGPU mit Ihrer NVIDIA-vGPU-Lizenz. Wählen Sie nach der Isolation, die ein Workload braucht: MIG-Partitionen sind in Hardware getrennt, HAMi-Anteile nicht."
   - q: "Was ist CNCF Kubernetes AI Conformance?"
     a: "Ein CNCF-Programm, das prüft, ob eine Kubernetes-Plattform die Fähigkeiten unterstützt, auf die KI-Workloads angewiesen sind. Cozystack wurde im September 2026 aufgenommen und steht damit in derselben Liste wie andere Kubernetes-Plattformen mit AI Conformance, die KI-Teams vergleichen."
   - q: "Wie wird die GPU-Nutzung abgerechnet?"
@@ -70,9 +70,8 @@ NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator:
 | Ganze GPU für eine virtuelle Maschine | PCI-Passthrough in eine KubeVirt-VM | Verfügbar |
 | Ganze GPU für einen Container | Device Plugin des NVIDIA GPU Operator | Verfügbar |
 | NVIDIA vGPU für eine virtuelle Maschine | NVIDIA vGPU in einer KubeVirt-VM; erfordert Ihre NVIDIA-vGPU-Lizenz | Verfügbar (seit Cozystack 1.5) |
-| Anteilige GPU, geteilt zwischen Containern | HAMi, mit Grenzen für Speicher und Rechenleistung pro Workload | Verfügbar (optional aktivierbar) |
-| MIG-Partitionen | — | Roadmap |
-| Time-Slicing | — | Roadmap |
+| MIG-Partitionen (Tenant-Kubernetes, GPU Operator) | Hardware-Partitionen einer MIG-fähigen Karte als einplanbare Ressourcen | Verfügbar (Add-on) |
+| Time-Slicing (Tenant-Kubernetes, HAMi) | Container teilen sich eine Karte, mit Grenzen für Speicher und Rechenleistung pro Workload und Überbuchung | Verfügbar (Add-on) |
 
 GPU-Quotas, RBAC und Observability pro Mandant. Die GPU-Nutzung wird pro Tenant erfasst; abgerechnet wird in Ihrem Billing-System.
 

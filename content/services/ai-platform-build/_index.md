@@ -16,7 +16,7 @@ quick_facts:
   - label: "Platform foundation"
     value: "Cozystack — VM and container GPU workloads on one Kubernetes API via KubeVirt, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
   - label: "GPUs"
-    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), sharing via HAMi; MIG and time-slicing on the roadmap. Serving on vLLM and Triton."
+    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence); MIG partitions and time-sliced sharing via HAMi for containers. Serving on vLLM and Triton."
   - label: "Engagement timeline"
     value: "Discovery call, a 14- or 28-day assessment with workload fit and GPU sizing, then a 3-12 month build depending on scope; optional managed operations."
   - label: "Licence"

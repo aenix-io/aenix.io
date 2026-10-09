@@ -95,7 +95,7 @@
 </table>
 
 <div class="callout">
-  <p>Gemischte Hardware-Flotten sind üblich. L40S für kontinuierliche Inferenz plus H100 für Fine-Tuning-Spitzen ist ein häufiges Muster. In Cozystack werden NVIDIA-Rechenzentrums-GPUs über den NVIDIA GPU Operator unterstützt: Passthrough an VMs, NVIDIA vGPU (mit Ihrer NVIDIA-vGPU-Lizenz) und Sharing über HAMi. MIG und Time-Slicing stehen auf der Roadmap.</p>
+  <p>Gemischte Hardware-Flotten sind üblich. L40S für kontinuierliche Inferenz plus H100 für Fine-Tuning-Spitzen ist ein häufiges Muster. In Cozystack werden NVIDIA-Rechenzentrums-GPUs über den NVIDIA GPU Operator unterstützt: ganze GPUs oder NVIDIA vGPU (mit Ihrer NVIDIA-vGPU-Lizenz) für VMs sowie MIG-Partitionen oder Time-Slicing über HAMi für Container in Tenant-Kubernetes-Clustern.</p>
 </div>
 
 <h3 class="subsec">Entscheidung 5 — Mandantenfähigkeit</h3>

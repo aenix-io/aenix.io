@@ -58,7 +58,7 @@ A single Kubernetes-based platform that runs on bare metal and provides:
 - Multi-tenant control plane via Tenant CRD
 - Managed database, queue, cache services
 - S3-compatible object storage
-- GPU as a service (passthrough of whole GPUs or NVIDIA vGPU for VMs, where vGPU requires your NVIDIA vGPU licence; HAMi fractional sharing for containers in tenant Kubernetes clusters; MIG and time-slicing on the roadmap)
+- GPU as a service (passthrough of whole GPUs or NVIDIA vGPU for VMs, where vGPU requires your NVIDIA vGPU licence; MIG partitions on MIG-capable cards and HAMi time-sliced sharing for containers in tenant Kubernetes clusters)
 - Self-service portal (Cozystack Dashboard)
 - Observability (VictoriaMetrics + VictoriaLogs)
 - Backup and DR (Velero + per-app PITR)

@@ -66,7 +66,7 @@ For the wider market, see **[Best VMware alternatives 2026 — market comparison
 | **Multi-tenancy** | vCloud Director | Tenant CRD |
 | **Service catalog** | vRealize / Aria | Service catalogue in the Cozystack Dashboard |
 | **Backup/DR** | Site Recovery Manager (orchestrated failover) | Velero + S3 + PostgreSQL PITR + recovery runbook (no orchestrated failover) |
-| **GPU for VMs** | NVIDIA vGPU on vSphere | Passthrough or NVIDIA vGPU on KubeVirt (your NVIDIA vGPU licence; MIG on the roadmap) |
+| **GPU for VMs** | NVIDIA vGPU on vSphere | Passthrough or NVIDIA vGPU on KubeVirt (your NVIDIA vGPU licence) |
 | **Air-gap** | Supported (extra licensing) | Supported (no extra cost) |
 | **Ops model** | Broadcom support plus a large partner and ISV channel | Ænix support through your GitOps repository and, with your approval, remote access to your clusters |
 

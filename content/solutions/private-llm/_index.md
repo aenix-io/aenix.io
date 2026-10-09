@@ -47,7 +47,7 @@ faq:
   - q: "How does RAG work on a private LLM platform?"
     a: "Retrieval-augmented generation indexes your own documents into a vector database — Qdrant on this platform — and retrieves the most relevant passages at query time to ground the model's answer. It runs next to the GPU inference workloads inside the same boundary, so both the source documents and the generated answers stay private."
   - q: "Can I fine-tune models on my own data?"
-    a: "Yes. Because the GPUs and the data are inside the same platform, you can fine-tune or adapt open-weight models on proprietary data without that data leaving your infrastructure. The AI Platform provides GPU scheduling and fractional sharing (HAMi) for both inference and fine-tuning workloads; MIG and time-slicing are on the roadmap."
+    a: "Yes. Because the GPUs and the data are inside the same platform, you can fine-tune or adapt open-weight models on proprietary data without that data leaving your infrastructure. The AI Platform provides GPU scheduling, MIG partitions on MIG-capable cards and time-sliced sharing (HAMi) for both inference and fine-tuning workloads."
   - q: "How is a private LLM different from sovereign AI?"
     a: "They are related but not the same head term. Private LLM names the concrete workload — a self-hosted model on your GPUs. Sovereign AI is the broader strategy of keeping AI compute, data, and governance within a jurisdiction you control. A private LLM is usually one component of a sovereign-AI programme; see the sovereign AI page for the wider picture."
   - q: "What does an Ænix private-LLM engagement include?"

@@ -15,7 +15,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Sovereign AI infrastructure runs GenAI, inference, fine-tuning, and RAG on hardware the customer owns or controls, in the customer's chosen jurisdiction, under the customer's governance — with model weights, prompts, completions, and embeddings never leaving the perimeter. It is built for regulated organizations (financial services, healthcare, public sector) and AI/GPU operators whose data class, regulator, or inference economics make hyperscaler AI services unviable. Ænix designs, builds, and operates these platforms on Cozystack, an Apache 2.0 CNCF Sandbox project accepted into the CNCF Kubernetes AI Conformance program in September 2026, which combines KubeVirt VMs and Kubernetes inference workloads on one API and supports NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and fractional sharing for pods via HAMi. MIG and time-slicing are on the roadmap. Ænix has no model-provider bias and recommends the open-weight model — Llama, Mistral, Qwen, DeepSeek, Phi — that fits the data class and economics.**
+  **Sovereign AI infrastructure runs GenAI, inference, fine-tuning, and RAG on hardware the customer owns or controls, in the customer's chosen jurisdiction, under the customer's governance — with model weights, prompts, completions, and embeddings never leaving the perimeter. It is built for regulated organizations (financial services, healthcare, public sector) and AI/GPU operators whose data class, regulator, or inference economics make hyperscaler AI services unviable. Ænix designs, builds, and operates these platforms on Cozystack, an Apache 2.0 CNCF Sandbox project accepted into the CNCF Kubernetes AI Conformance program in September 2026, which combines KubeVirt VMs and Kubernetes inference workloads on one API and supports NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and MIG partitions or HAMi time-sliced sharing for pods in tenant Kubernetes clusters. Ænix has no model-provider bias and recommends the open-weight model — Llama, Mistral, Qwen, DeepSeek, Phi — that fits the data class and economics.**
 quick_facts:
   - label: "What it is"
     value: "AI inference, fine-tuning, and RAG running on customer-controlled hardware, in the customer's jurisdiction, under the customer's governance, with data never leaving the perimeter"
@@ -28,7 +28,7 @@ quick_facts:
   - label: "Platform"
     value: "Cozystack — KubeVirt for VMs and Kubernetes for inference on one API; CNCF Kubernetes AI Conformance (accepted September 2026)"
   - label: "GPUs"
-    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and fractional sharing for pods via HAMi. MIG and time-slicing are on the roadmap. Model-to-hardware fit is established during the assessment."
+    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and either MIG partitions (on MIG-capable cards) or time-sliced sharing via HAMi for pods. Model-to-hardware fit is established during the assessment."
   - label: "Engagement"
     value: "14- or 28-day fixed-price Platform Readiness Assessment, then an Ænix-delivered build (typically 3-12 months depending on scope); quoted per RFP; air-gapped deployment supported"
 faq:
@@ -39,7 +39,7 @@ faq:
   - q: "Does sovereign AI cover training, or only inference?"
     a: "Both. Inference is the more common entry point; most regulated organizations start there and add fine-tuning of open-weight models later. Full pre-training of frontier models is rare in this segment."
   - q: "Which GPUs does the platform support?"
-    a: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and fractional sharing for pods via HAMi. MIG and time-slicing are on the roadmap. Other accelerators (AMD, Intel) can be passed through to VMs as PCI devices; operator automation is NVIDIA-only today. There is no published list of validated GPU models; specific model-to-hardware fit is established during the assessment."
+    a: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and two ways to share one card between pods in tenant Kubernetes clusters: MIG partitions on MIG-capable cards and time-sliced sharing via HAMi. Other accelerators (AMD, Intel) can be passed through to VMs as PCI devices; operator automation is NVIDIA-only today. There is no published list of validated GPU models; specific model-to-hardware fit is established during the assessment."
   - q: "Can the platform run air-gapped?"
     a: "Yes. Cozystack has a documented air-gapped installation workflow, used where a regulator or security policy forbids outbound connectivity — for example in public-sector and critical-infrastructure environments."
   - q: "Does Ænix have a model-provider bias?"
@@ -175,7 +175,7 @@ The assessment phase produces:
 
 The implementation phase delivers:
 
-- **Cozystack-based AI platform** with KubeVirt for VMs and Kubernetes for inference workloads. GPU allocation modes: whole-GPU passthrough or NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs or HAMi fractional sharing for pods. MIG and time-slicing are on the roadmap.
+- **Cozystack-based AI platform** with KubeVirt for VMs and Kubernetes for inference workloads. GPU allocation modes: whole-GPU passthrough or NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs, MIG partitions or HAMi time-sliced sharing for pods.
 - **Model serving** — vLLM, Triton, or alternatives matched to model architecture.
 - **GPU usage measured per tenant** — charging or chargeback happens in your billing system.
 - **Self-service for data-science teams** — provisioning paths, observability, audit trails.

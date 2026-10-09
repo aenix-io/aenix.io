@@ -52,7 +52,7 @@ Give data scientists and product teams self-service GPU — for training and for
 
 ## Two ways Ænix helps you
 
-**1. Run a turnkey AI platform.** [Ænix AI Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with Ænix support. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough of whole GPUs to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods, and fractional sharing for pods via HAMi; MIG and time-slicing are on the roadmap.
+**1. Run a turnkey AI platform.** [Ænix AI Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with Ænix support. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough of whole GPUs to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs or MIG partitions to pods, and time-sliced sharing for pods via HAMi.
 
 **2. Build your own, with our team.** Cozystack is the framework; **Ænix is your outsourced engineering team** for an [AI platform build](/services/ai-platform-build/) — GPU topology, scheduling, inference serving and [sovereign-AI](/solutions/sovereign-ai/) controls designed around your models and data.
 

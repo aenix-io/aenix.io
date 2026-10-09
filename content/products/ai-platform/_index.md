@@ -14,12 +14,12 @@ faq_style: "rows"
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Cozystack Dashboard service marketplace"
 direct_answer: |
-  **Ænix AI Platform is self-hosted AI infrastructure for organizations that run inference, fine-tuning and RAG on their own GPUs instead of hyperscaler AI APIs. It is the third Ænix platform, alongside Public Cloud and Private Cloud, and runs on the same Cozystack engine (Apache 2.0, a CNCF project accepted into the CNCF Kubernetes AI Conformance program in September 2026). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator, with passthrough of whole GPUs to virtual machines, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence) and fractional sharing via HAMi; MIG and time-slicing are on the roadmap. Around that sit multi-tenant GPU quotas, model serving (vLLM-compatible), vector databases, object storage and air-gapped deployment. Ænix delivers it as a project quoted per RFP — a 14- or 28-day assessment, then a 3-12 month build depending on scope — with an optional managed retainer.**
+  **Ænix AI Platform is self-hosted AI infrastructure for organizations that run inference, fine-tuning and RAG on their own GPUs instead of hyperscaler AI APIs. It is the third Ænix platform, alongside Public Cloud and Private Cloud, and runs on the same Cozystack engine (Apache 2.0, a CNCF project accepted into the CNCF Kubernetes AI Conformance program in September 2026). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator, with passthrough of whole GPUs or NVIDIA vGPU (requires your NVIDIA vGPU licence) for virtual machines, and MIG partitions or time-sliced sharing via HAMi in tenant Kubernetes clusters. Around that sit multi-tenant GPU quotas, model serving (vLLM-compatible), vector databases, object storage and air-gapped deployment. Ænix delivers it as a project quoted per RFP — a 14- or 28-day assessment, then a 3-12 month build depending on scope — with an optional managed retainer.**
 quick_facts:
   - label: "What it is"
     value: "Self-hosted, multi-tenant AI infrastructure for inference, fine-tuning and RAG on GPUs you control. The third Ænix platform, on the same engine as Public Cloud and Private Cloud."
   - label: "GPUs"
-    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), sharing via HAMi. MIG and time-slicing: roadmap. Other accelerators: PCI passthrough to VMs only."
+    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough or NVIDIA vGPU (requires your NVIDIA vGPU licence) for VMs; MIG partitions and time-sliced sharing via HAMi in tenant Kubernetes clusters. Other accelerators: PCI passthrough to VMs only."
   - label: "Conformance"
     value: "Cozystack accepted into the CNCF Kubernetes AI Conformance program (September 2026); CNCF Certified Kubernetes distribution. NVIDIA partner validation of the GPU Operator stack submitted in October 2026, pending."
   - label: "Licence"
@@ -36,7 +36,7 @@ faq:
   - q: "Which GPUs are supported?"
     a: "NVIDIA data-centre GPUs, through the NVIDIA GPU Operator: a whole GPU passed through to a virtual machine, NVIDIA vGPU for virtual machines (requires your NVIDIA vGPU licence), or a GPU shared between containers with HAMi. Our published deployments include an 8×H100 inference server. We do not publish a validated-model list; NVIDIA partner validation of the GPU Operator stack was submitted in October 2026 and is pending. Other accelerators can be passed through to VMs as PCI devices, without operator automation."
   - q: "Do you support MIG or time-slicing?"
-    a: "Not as shipped platform features today; both are on the roadmap. Sharing a card between tenants is done with HAMi, which sets memory and compute limits per workload. Size isolation requirements accordingly."
+    a: "Yes, both, in tenant Kubernetes clusters. The NVIDIA GPU Operator exposes MIG partitions of MIG-capable cards such as A100 and H100 as schedulable resources, and HAMi provides time-sliced sharing with memory and compute limits per workload and oversubscription. Virtual machines take whole GPUs by passthrough, or NVIDIA vGPU with your NVIDIA vGPU licence. Choose by the isolation a workload needs: MIG partitions are separated in hardware, HAMi shares are not."
   - q: "What is the CNCF Kubernetes AI Conformance?"
     a: "A CNCF programme that checks whether a Kubernetes platform supports the capabilities AI workloads rely on. Cozystack was accepted into it in September 2026, so it sits in the same list as other conformant Kubernetes platforms that AI teams compare."
   - q: "How is GPU usage billed?"
@@ -71,9 +71,8 @@ NVIDIA data-centre GPUs through the NVIDIA GPU Operator:
 | Whole GPU to a virtual machine | PCI passthrough into a KubeVirt VM | Shipping |
 | NVIDIA vGPU for VMs | Mediated vGPU devices in KubeVirt VMs; requires your NVIDIA vGPU licence | Shipping since Cozystack 1.5 |
 | Whole GPU to a container | NVIDIA GPU Operator device plugin | Shipping |
-| Fractional GPU shared between containers | HAMi, with memory and compute limits per workload | Shipping (opt-in) |
-| MIG partitions | — | Roadmap |
-| Time-slicing | — | Roadmap |
+| MIG partitions (tenant Kubernetes, GPU Operator) | Hardware partitions of a MIG-capable card, exposed as schedulable resources | Shipping (addon) |
+| Time-sliced sharing (tenant Kubernetes, HAMi) | Containers share one card, with memory and compute limits per workload and oversubscription | Shipping (addon) |
 
 Per-tenant GPU quotas, RBAC and observability. GPU usage is measured per tenant; charging happens in your billing system.
 

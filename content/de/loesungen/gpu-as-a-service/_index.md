@@ -24,14 +24,14 @@ service:
   areaServed: ["EU", "DACH", "MENA", "Central Asia"]
   audience: "GPU cloud providers and data centres"
 direct_answer: |
-  **Eine GPU-as-a-Service-Plattform ist die Softwareschicht, die aus einem Bestand an GPU-Servern eine Cloud macht, die Sie verkaufen können: Tenants, Bestellung im Self-Service, Isolation zwischen Kunden, Nutzungsdaten für die Abrechnung und die Dienste, die Kunden neben der GPU erwarten. Ænix baut das für Rechenzentren und neue GPU-Clouds, die ihren eigenen NVIDIA-Bestand betreiben. Grundlage ist Cozystack, ein CNCF-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt; geliefert wird es als Ænix Public Cloud Platform, ergänzt um die Ænix AI Platform für die KI-Dienste darüber. GPUs werden per Passthrough an Tenant-VMs durchgereicht oder mit HAMi zwischen Containern geteilt; MIG-Partitionierung steht auf der Roadmap. Tenants erhalten GPU-VMs, Kubernetes-Cluster mit GPU-Nodes, verwaltete Datenbanken und S3 aus einem Portal in Ihrer Marke, und die Nutzung pro Tenant fließt in WHMCS oder Ihr eigenes Billing-System.**
+  **Eine GPU-as-a-Service-Plattform ist die Softwareschicht, die aus einem Bestand an GPU-Servern eine Cloud macht, die Sie verkaufen können: Tenants, Bestellung im Self-Service, Isolation zwischen Kunden, Nutzungsdaten für die Abrechnung und die Dienste, die Kunden neben der GPU erwarten. Ænix baut das für Rechenzentren und neue GPU-Clouds, die ihren eigenen NVIDIA-Bestand betreiben. Grundlage ist Cozystack, ein CNCF-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt; geliefert wird es als Ænix Public Cloud Platform, ergänzt um die Ænix AI Platform für die KI-Dienste darüber. GPUs werden per Passthrough an Tenant-VMs durchgereicht oder in Tenant-Kubernetes-Clustern zwischen Containern geteilt — als MIG-Partitionen oder per Time-Slicing mit HAMi. Tenants erhalten GPU-VMs, Kubernetes-Cluster mit GPU-Nodes, verwaltete Datenbanken und S3 aus einem Portal in Ihrer Marke, und die Nutzung pro Tenant fließt in WHMCS oder Ihr eigenes Billing-System.**
 quick_facts:
   - label: "Was es ist"
     value: "Software, um eine mandantenfähige GPU-Cloud auf eigenen NVIDIA-Servern zu betreiben und zu verkaufen: Tenants, Portal, GPU-VMs und Kubernetes, verwaltete Dienste, Nutzungsdaten für die Abrechnung."
   - label: "Für wen"
     value: "Rechenzentren und neue GPU-Clouds (Neoclouds), die GPU-Kapazität an eigene Kunden verkaufen."
   - label: "GPU-Modi"
-    value: "Ganze GPUs per Passthrough an Tenant-VMs; NVIDIA vGPU für VMs, sofern Sie die NVIDIA-vGPU-Lizenz besitzen; anteiliges Sharing zwischen Containern mit HAMi. MIG und Time-Slicing stehen auf der Roadmap."
+    value: "Ganze GPUs per Passthrough an Tenant-VMs; NVIDIA vGPU für VMs, sofern Sie die NVIDIA-vGPU-Lizenz besitzen; in Tenant-Kubernetes-Clustern MIG-Partitionen auf MIG-fähigen Karten und Time-Slicing zwischen Containern mit HAMi."
   - label: "Kubernetes für KI"
     value: "Cozystack ist eine CNCF Certified Kubernetes Distribution und wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen."
   - label: "NVIDIA-Stack"
@@ -45,7 +45,7 @@ faq:
   - q: "Was ist eine GPU-as-a-Service-Plattform?"
     a: "Sie ist die Schicht zwischen Ihren GPU-Servern und Ihren Kunden. Sie legt isolierte Tenants an, lässt Kunden GPU-VMs oder Kubernetes-Cluster mit GPUs selbst bestellen, hält ihre Workloads voneinander getrennt, erfasst, wie viel jeder Tenant verbraucht hat, und übergibt diese Nutzung an Ihre Abrechnung. Ohne sie kann ein Rechenzentrum Server vermieten; mit ihr kann es eine Cloud betreiben."
   - q: "Wie werden GPUs zwischen Tenants aufgeteilt?"
-    a: "Heute gibt es drei Wege. Eine ganze GPU oder mehrere lassen sich per Passthrough an die virtuelle Maschine eines Tenants durchreichen, sodass dieser Tenant die Karte für sich allein hat. Mit NVIDIA vGPU wird eine Karte in vGPU-Profile für mehrere VMs aufgeteilt; das erfordert Ihre NVIDIA-vGPU-Lizenz. Innerhalb von Kubernetes erlaubt HAMi mehreren Containern, sich eine physische GPU mit Grenzen für Speicher und Rechenleistung zu teilen. MIG-Partitionierung und Time-Slicing stehen auf der Roadmap; ein Produkt, das nicht vertrauenswürdigen Tenants harte Partitionen einer Karte verspricht, sollte also noch nicht darauf aufbauen."
+    a: "Heute gibt es vier Wege. Eine ganze GPU oder mehrere lassen sich per Passthrough an die virtuelle Maschine eines Tenants durchreichen, sodass dieser Tenant die Karte für sich allein hat. Mit NVIDIA vGPU wird eine Karte in vGPU-Profile für mehrere VMs aufgeteilt; das erfordert Ihre NVIDIA-vGPU-Lizenz. Innerhalb von Tenant-Kubernetes-Clustern stellt der GPU Operator MIG-Partitionen MIG-fähiger Karten als einplanbare Ressourcen bereit, auf Hardware-Ebene getrennt, und HAMi erlaubt mehreren Containern, sich eine physische GPU per Time-Slicing mit Grenzen für Speicher und Rechenleistung und mit Überbuchung zu teilen. HAMi-Anteile sind nicht in Hardware getrennt; ein Produkt, das nicht vertrauenswürdigen Tenants harte Partitionen einer Karte verspricht, sollte daher auf MIG, vGPU oder ganze Karten setzen."
   - q: "Können wir die GPU-Nutzung über WHMCS abrechnen?"
     a: "Ja. Die Plattform erfasst die Nutzung pro Tenant, und die Ænix-WHMCS-Integration, ein proprietäres Ænix-Modul, übergibt Bereitstellung und Nutzung an WHMCS, wo Sie Preise festlegen und Rechnungen stellen. Anbieter mit eigenem Billing-System übernehmen dieselben Nutzungsdaten direkt aus der Plattform. Den Preis pro GPU-Stunde legen Sie selbst fest."
   - q: "Ist der NVIDIA-Stack von NVIDIA validiert?"
@@ -110,9 +110,8 @@ Jeder Modus bietet ein anderes Maß an Isolation — wählen Sie ihn daher pro P
 | **Ganze GPU an eine VM** | Eine oder mehrere GPUs per Passthrough (VFIO) an die KubeVirt-VM eines Tenants | Der Tenant hat die Karte für sich allein | Verfügbar |
 | **NVIDIA vGPU an eine VM** | Eine Karte, aufgeteilt in vGPU-Profile für mehrere VMs | Eigene vGPU pro VM; erfordert Ihre NVIDIA-vGPU-Lizenz | Verfügbar |
 | **GPU-Nodes im Tenant-Kubernetes** | Kubernetes-Node-Gruppen mit GPUs, Treiber verwaltet vom NVIDIA GPU Operator | Pro Tenant-Cluster | Verfügbar |
-| **Anteiliges Sharing in Kubernetes** | HAMi lässt mehrere Container eine GPU mit Grenzen für Speicher und Rechenleistung teilen | Geteilte Karte; Grenzen für die Rechenleistung erfordern Container-Images mit glibc älter als 2.34 | Verfügbar (optional) |
-| **MIG-Partitionen** | Hardware-Partitionen einer Karte | Auf Hardware-Ebene | Roadmap |
-| **Time-Slicing** | Container nutzen eine Karte abwechselnd | Keine zwischen Workloads | Roadmap |
+| **MIG-Partitionen in Kubernetes (GPU Operator)** | Hardware-Partitionen einer MIG-fähigen Karte, im Tenant-Cluster als einplanbare Ressourcen | Auf Hardware-Ebene | Verfügbar (Add-on) |
+| **Time-Slicing in Kubernetes (HAMi)** | Mehrere Container nutzen eine GPU abwechselnd, mit Grenzen für Speicher und Rechenleistung und Überbuchung | Geteilte Karte; Grenzen für die Rechenleistung erfordern Container-Images mit glibc älter als 2.34 | Verfügbar (Add-on) |
 
 Unterstützt werden NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator. Ænix hat den GPU-Operator-Stack im Oktober 2026 zur Partner-Validierung bei NVIDIA eingereicht; die Prüfung steht noch aus. Für andere Beschleuniger ist PCI-Passthrough an VMs der unterstützte Weg.
 

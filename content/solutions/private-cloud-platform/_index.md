@@ -102,7 +102,7 @@ Tenant CRD model with nested tenants, per-tenant quotas, RBAC, audit. Suitable f
 PostgreSQL (CloudNativePG), MariaDB, MongoDB, ClickHouse, Valkey, OpenSearch, Kafka, NATS, RabbitMQ and Qdrant — provisioned as first-class platform services, not bolted-on Helm charts.
 
 **6. GPUs**
-NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and fractional sharing for pods via HAMi. MIG and time-slicing are on the roadmap.
+NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, MIG partitions on MIG-capable cards, and time-sliced sharing for pods via HAMi.
 
 **7. Observability**
 VictoriaMetrics + VictoriaLogs included — low-overhead, sovereignty-friendly. Optional Grafana on top.

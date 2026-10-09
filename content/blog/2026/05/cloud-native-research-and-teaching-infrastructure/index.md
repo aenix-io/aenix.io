@@ -72,7 +72,7 @@ Each has limits:
 
 What modern research computing increasingly wants: **shared GPU pool with strong isolation, self-service for PIs, IaC-managed for reproducibility, integrated with national/European research infrastructure where applicable.**
 
-A Kubernetes-native platform like Cozystack delivers this. KubeVirt handles legacy VM-based research workflows; native containers handle modern ML pipelines. The NVIDIA GPU Operator hands whole GPUs to workloads and HAMi shares a single GPU across labs by memory and compute cores; VMs get passthrough of whole GPUs or NVIDIA vGPU (which requires your NVIDIA vGPU licence); MIG and time-slicing are on the roadmap. Tenant CRD provides per-lab isolation. The Cozystack Dashboard gives PIs self-service. The same infrastructure can integrate with EuroHPC for largest workloads (many universities have hybrid arrangements).
+A Kubernetes-native platform like Cozystack delivers this. KubeVirt handles legacy VM-based research workflows; native containers handle modern ML pipelines. The NVIDIA GPU Operator hands whole GPUs to workloads and HAMi shares a single GPU across labs by memory and compute cores; VMs get passthrough of whole GPUs or NVIDIA vGPU (which requires your NVIDIA vGPU licence); on cards that support MIG, the GPU Operator can also split one GPU into hardware partitions for a lab's Kubernetes cluster. Tenant CRD provides per-lab isolation. The Cozystack Dashboard gives PIs self-service. The same infrastructure can integrate with EuroHPC for largest workloads (many universities have hybrid arrangements).
 
 ### Mission 2 — reproducible research infrastructure
 

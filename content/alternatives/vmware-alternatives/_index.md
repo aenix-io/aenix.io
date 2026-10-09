@@ -82,7 +82,7 @@ The alternatives below cover the realistic options.
 
 **Why pick:** Open source (Apache 2.0), no vendor lock-in. Multi-tenancy structural. Single platform for VMs + containers + databases + S3 + GPU. Light operational footprint relative to OpenStack.
 
-**Watch out for:** We build it, so weigh this section hardest. Cozystack is younger and its community is a fraction of OpenStack's or Red Hat's. There is no certified-hardware list and no certified-ISV programme, so qualification is yours. Ironic-class bare-metal provisioning has no equivalent. MIG and time-slicing for GPUs are on the roadmap, not shipping. And it asks the team to understand Kubernetes before it understands the platform.
+**Watch out for:** We build it, so weigh this section hardest. Cozystack is younger and its community is a fraction of OpenStack's or Red Hat's. There is no certified-hardware list and no certified-ISV programme, so qualification is yours. Ironic-class bare-metal provisioning has no equivalent. And it asks the team to understand Kubernetes before it understands the platform.
 
 **[Cozystack as a VMware alternative](/alternatives/vmware-alternative/)** · **[cozystack.io](https://cozystack.io/)**
 
@@ -169,7 +169,7 @@ The alternatives below cover the realistic options.
 | **Foundation** | KubeVirt | AHV (KVM) | KubeVirt | KVM/LXC | KVM | KVM | Hyper-V |
 | **Multi-tenancy** | Tenant CRD (nested) | Projects + RBAC | Namespaces + Projects | Pools + ACLs | Keystone | Limited | Arc RBAC |
 | **Managed DBs** | First-class | NDB (ex-Era) | Available | Manual | Trove (optional) | No | Azure Arc-tied |
-| **GPU** | Passthrough/vGPU for VMs; GPU Operator + HAMi sharing (MIG, time-slicing roadmap) | vGPU | vGPU + MIG | Passthrough | vGPU + passthrough | Limited | vGPU |
+| **GPU** | Passthrough/vGPU for VMs; GPU Operator MIG partitions + HAMi time-slicing for pods | vGPU | vGPU + MIG | Passthrough | vGPU + passthrough | Limited | vGPU |
 | **Air-gap** | Yes | Yes | Yes | Yes | Yes | Limited | Yes |
 | **Best scale** | Multi-tenant | Mid-large | Mid-large | <50 hosts | Telco-large | ROBO/edge | Medium-large |
 

@@ -31,7 +31,7 @@ quick_facts:
     value: "Phased engagement aligned to grant cycles, starting with a fixed-price 14- or 28-day Platform Readiness Assessment, and explicit capacity transfer to in-house academic IT."
 faq:
   - q: "Can Cozystack provide GPU access for AI/ML research labs?"
-    a: "Yes. GPUs are exposed through the NVIDIA GPU Operator, with HAMi providing fractional sharing so several labs can share a card instead of queueing for a whole one. Whole GPUs can also be passed through to VMs, or split between VMs with NVIDIA vGPU (requires your NVIDIA vGPU licence); MIG and time-slicing are on the roadmap. Labs self-provision GPU environments under per-lab quotas via the Tenant CRD, without ticket queues."
+    a: "Yes. GPUs are exposed through the NVIDIA GPU Operator, with HAMi providing fractional sharing so several labs can share a card instead of queueing for a whole one. Whole GPUs can also be passed through to VMs, or split between VMs with NVIDIA vGPU (requires your NVIDIA vGPU licence). On MIG-capable cards, the GPU Operator can also carve one card into hardware-separated MIG partitions for a lab's cluster. Labs self-provision GPU environments under per-lab quotas via the Tenant CRD, without ticket queues."
   - q: "How does Cozystack isolate departments, labs, and student cohorts?"
     a: "Through the Tenant CRD multi-tenancy model. Each department, lab, or student cohort gets its own tenant with quotas, RBAC, and audit trails. Cohort sandboxes support per-student quotas and automatic cleanup, so teaching and research workloads stay isolated on shared hardware."
   - q: "Does Cozystack support sensitive research data?"
@@ -77,7 +77,7 @@ Modern research increasingly demands GPU clusters, large-scale data processing, 
 </div>
 
 Cozystack delivers:
-- **GPU clusters** for NVIDIA data-centre GPUs via the NVIDIA GPU Operator, with HAMi fractional sharing so several labs share a card rather than queue for a whole one, whole-GPU passthrough to VMs and NVIDIA vGPU for VMs with your NVIDIA vGPU licence (MIG and time-slicing are on the roadmap)
+- **GPU clusters** for NVIDIA data-centre GPUs via the NVIDIA GPU Operator, with HAMi fractional sharing so several labs share a card rather than queue for a whole one, whole-GPU passthrough to VMs and NVIDIA vGPU for VMs with your NVIDIA vGPU licence; tenant clusters on MIG-capable cards can also use MIG partitions
 - **Multi-tenant per-lab isolation** — Tenant CRD model with per-lab quotas, RBAC, audit trails
 - **VM and container side-by-side** — accommodates legacy research workflows alongside modern containerized pipelines
 - **Self-service for principal investigators** — labs can provision their own environments without ticket queues

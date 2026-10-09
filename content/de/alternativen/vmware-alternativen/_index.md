@@ -87,7 +87,7 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 
 **Warum wählen:** Open Source (Apache 2.0), kein Vendor-Lock-in. Strukturelle Mandantenfähigkeit. Eine Plattform für VMs, Container, Datenbanken, S3 und GPU. Geringer Betriebsaufwand im Vergleich zu OpenStack.
 
-**Worauf achten:** Wir entwickeln es mit — gewichten Sie diesen Abschnitt daher am stärksten. Cozystack ist jünger, und seine Community ist nur ein Bruchteil der von OpenStack oder Red Hat. Es gibt keine zertifizierte Hardwareliste und kein ISV-Zertifizierungsprogramm; die Qualifizierung liegt bei Ihnen. Für Bare-Metal-Bereitstellung nach Art von Ironic gibt es kein Gegenstück. MIG und Time-Slicing für GPUs stehen auf der Roadmap und sind noch nicht verfügbar. Und das Team muss Kubernetes verstehen, bevor es die Plattform versteht.
+**Worauf achten:** Wir entwickeln es mit — gewichten Sie diesen Abschnitt daher am stärksten. Cozystack ist jünger, und seine Community ist nur ein Bruchteil der von OpenStack oder Red Hat. Es gibt keine zertifizierte Hardwareliste und kein ISV-Zertifizierungsprogramm; die Qualifizierung liegt bei Ihnen. Für Bare-Metal-Bereitstellung nach Art von Ironic gibt es kein Gegenstück. Und das Team muss Kubernetes verstehen, bevor es die Plattform versteht.
 
 **[Cozystack als VMware-Alternative](/de/alternativen/vmware-alternative/)** · **[cozystack.io](https://cozystack.io/)**
 
@@ -174,7 +174,7 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 | **Basis** | KubeVirt | AHV (KVM) | KubeVirt | KVM/LXC | KVM | KVM | Hyper-V |
 | **Mandantenfähigkeit** | Tenant-CRD (verschachtelt) | Projects + RBAC | Namespaces + Projects | Pools + ACLs | Keystone | Eingeschränkt | Arc-RBAC |
 | **Managed-Datenbanken** | Vollwertig integriert | NDB (ehem. Era) | Verfügbar | Manuell | Trove (optional) | Nein | An Azure Arc gebunden |
-| **GPU** | Passthrough/vGPU für VMs; GPU Operator + anteilige Nutzung über HAMi (MIG, Time-Slicing auf der Roadmap) | vGPU | vGPU + MIG | Passthrough | vGPU + Passthrough | Eingeschränkt | vGPU |
+| **GPU** | Passthrough/vGPU für VMs; GPU Operator mit MIG-Partitionen + Time-Slicing über HAMi für Pods | vGPU | vGPU + MIG | Passthrough | vGPU + Passthrough | Eingeschränkt | vGPU |
 | **Air-Gap** | Ja | Ja | Ja | Ja | Ja | Eingeschränkt | Ja |
 | **Passende Größenordnung** | Mandantenfähig | Mittel bis groß | Mittel bis groß | < 50 Hosts | Telco-Größe | Außenstellen/Edge | Mittel bis groß |
 

@@ -23,14 +23,14 @@ service:
   areaServed: ["EU", "DACH", "MENA", "Central Asia"]
   audience: "GPU cloud providers and data centres"
 direct_answer: |
-  **A GPU as a service platform is the software layer that turns a fleet of GPU servers into a cloud you can sell: tenants, self-service ordering, isolation between customers, usage data for billing, and the services customers expect next to the GPU. Ænix builds this for data centres and new GPU clouds running their own NVIDIA estate. It runs on Cozystack, a CNCF project Ænix created and co-maintains, delivered as Ænix Public Cloud Platform with Ænix AI Platform for the AI services on top. GPUs are passed through to tenant VMs or shared between containers with HAMi; MIG partitioning is on the roadmap. Tenants get GPU VMs, Kubernetes clusters with GPU nodes, managed databases and S3 from a branded portal, and per-tenant usage feeds WHMCS or your own billing system.**
+  **A GPU as a service platform is the software layer that turns a fleet of GPU servers into a cloud you can sell: tenants, self-service ordering, isolation between customers, usage data for billing, and the services customers expect next to the GPU. Ænix builds this for data centres and new GPU clouds running their own NVIDIA estate. It runs on Cozystack, a CNCF project Ænix created and co-maintains, delivered as Ænix Public Cloud Platform with Ænix AI Platform for the AI services on top. GPUs are passed through to tenant VMs, or shared between containers in tenant Kubernetes clusters as MIG partitions or time-sliced with HAMi. Tenants get GPU VMs, Kubernetes clusters with GPU nodes, managed databases and S3 from a branded portal, and per-tenant usage feeds WHMCS or your own billing system.**
 quick_facts:
   - label: "What it is"
     value: "Software to run and sell a multi-tenant GPU cloud on your own NVIDIA servers: tenants, portal, GPU VMs and Kubernetes, managed services, usage data for billing."
   - label: "Who it is for"
     value: "Data centres and new GPU clouds (neoclouds) selling GPU capacity to their own customers."
   - label: "GPU modes"
-    value: "Whole GPUs passed through to tenant VMs; NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence); fractional sharing between containers with HAMi. MIG and time-slicing are on the roadmap."
+    value: "Whole GPUs passed through to tenant VMs; NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence); in tenant Kubernetes clusters, MIG partitions on MIG-capable cards and time-sliced sharing between containers with HAMi."
   - label: "Kubernetes for AI"
     value: "Cozystack is a CNCF Certified Kubernetes distribution and was accepted into the CNCF Kubernetes AI Conformance program in September 2026."
   - label: "NVIDIA stack"
@@ -44,7 +44,7 @@ faq:
   - q: "What is a GPU as a service platform?"
     a: "It is the layer between your GPU servers and your customers. It creates isolated tenants, lets customers order GPU VMs or Kubernetes clusters with GPUs themselves, keeps their workloads apart, records how much each tenant used, and hands that usage to your billing. Without it, a data centre can rent out servers; with it, it can run a cloud."
   - q: "How are GPUs shared between tenants?"
-    a: "Three ways ship today. A whole GPU, or several, can be passed through to one tenant's virtual machine, so that tenant has the card to itself. NVIDIA vGPU splits a card into profiles for several VMs (requires your NVIDIA vGPU licence). Inside Kubernetes, HAMi lets several containers share one physical GPU with memory and compute limits. MIG partitioning and time-slicing are on the roadmap, so a product that promises hard partitions of one card to untrusted tenants should not be planned around them yet."
+    a: "Four ways ship today. A whole GPU, or several, can be passed through to one tenant's virtual machine, so that tenant has the card to itself. NVIDIA vGPU splits a card into profiles for several VMs (requires your NVIDIA vGPU licence). Inside tenant Kubernetes clusters, the GPU Operator exposes MIG partitions of MIG-capable cards as schedulable resources, separated at hardware level, and HAMi lets several containers time-share one physical GPU with memory and compute limits and oversubscription. HAMi shares are not separated in hardware, so a product that promises hard partitions of one card to untrusted tenants should use MIG, vGPU or whole cards."
   - q: "Can we bill GPU usage through WHMCS?"
     a: "Yes. The platform measures usage per tenant, and the Ænix WHMCS integration, a proprietary Ænix module, passes provisioning and usage to WHMCS, where you set prices and invoice. Providers with their own billing system take the same usage data from the platform instead. The price per GPU-hour is yours to set."
   - q: "Is the NVIDIA stack validated by NVIDIA?"
@@ -109,9 +109,8 @@ Each mode has a different level of isolation, so choose it per product rather th
 | **Whole GPU to a VM** | One or more GPUs passed through (VFIO) to a tenant's KubeVirt virtual machine | The tenant has the card to itself | Shipping |
 | **NVIDIA vGPU to a VM** | A card split into vGPU profiles for several VMs | A separate vGPU per VM; requires your NVIDIA vGPU licence | Shipping |
 | **GPU nodes in tenant Kubernetes** | Kubernetes node groups with GPUs, driver managed by the NVIDIA GPU Operator | Per tenant cluster | Shipping |
-| **Fractional sharing in Kubernetes** | HAMi lets several containers share one GPU with memory and compute limits | Shared card; compute limits need container images with glibc older than 2.34 | Shipping (opt-in) |
-| **MIG partitions** | Hardware partitions of one card | Hardware-level | Roadmap |
-| **Time-slicing** | Containers take turns on one card | None between workloads | Roadmap |
+| **MIG partitions in Kubernetes (GPU Operator)** | Hardware partitions of a MIG-capable card, exposed to tenant clusters as schedulable resources | Hardware-level | Shipping (addon) |
+| **Time-sliced sharing in Kubernetes (HAMi)** | Several containers take turns on one GPU, with memory and compute limits and oversubscription | Shared card; compute limits need container images with glibc older than 2.34 | Shipping (addon) |
 
 GPU support covers NVIDIA data-centre GPUs through the NVIDIA GPU Operator. Ænix submitted the GPU Operator stack for NVIDIA partner validation in October 2026; the review is pending. For other accelerators, PCI passthrough to VMs is the supported path.
 

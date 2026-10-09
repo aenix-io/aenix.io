@@ -107,7 +107,7 @@ Cozystack is a single platform you install on bare metal. Once it's up, you have
 - **Tenant Kubernetes clusters** for customers who want containers — every tenant gets their own K8s, isolated.
 - **Managed databases** — PostgreSQL, MariaDB, MongoDB, Redis, Valkey, RabbitMQ, Kafka, NATS, ClickHouse, OpenSearch, Qdrant, FoundationDB — exposed as cloud services your tenants self-provision.
 - **S3-compatible object storage** — for backups, application data, and AI training sets.
-- **GPU as a service** — for VMs (passthrough of whole GPUs, or NVIDIA vGPU, which requires your NVIDIA vGPU licence) and for Kubernetes pods (whole-GPU through the NVIDIA GPU Operator, fractional sharing through HAMi). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator; MIG and time-slicing are on the roadmap.
+- **GPU as a service** — for VMs (passthrough of whole GPUs, or NVIDIA vGPU, which requires your NVIDIA vGPU licence) and for Kubernetes pods (whole-GPU through the NVIDIA GPU Operator, fractional sharing through HAMi). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator, which also exposes MIG partitions to pods on MIG-capable cards.
 - **Multi-tenant control plane** — `Tenant` Kubernetes CRD, nested tenants, per-tenant quotas and presets.
 - **Observability built in** — VictoriaMetrics + VictoriaLogs, open source and included.
 - **Backup and DR** — Velero + S3 + per-database point-in-time recovery for managed services.
@@ -200,7 +200,7 @@ Cozystack was built for service providers first. The same model works for any or
 | **Service catalog** | vRealize Automation / Aria | ApplicationDefinition + Cozystack Dashboard |
 | **Backup / DR** | Site Recovery Manager (SRM) | Velero + S3 + PostgreSQL PITR with rehearsed runbooks; no SRM-style orchestrated failover |
 | **GPU for VMs** | NVIDIA vGPU under Horizon | NVIDIA vGPU + KubeVirt (requires your NVIDIA vGPU licence); passthrough of whole GPUs |
-| **GPU for containers** | Tanzu (limited) | Whole-GPU via NVIDIA GPU Operator; fractional sharing (GPU memory + cores) via HAMi — Kubernetes-native |
+| **GPU for containers** | Tanzu (limited) | Whole-GPU or MIG partitions via NVIDIA GPU Operator; time-sliced sharing (GPU memory + cores) via HAMi — Kubernetes-native |
 | **Observability** | vRealize / Aria (licensed separately) | VictoriaMetrics + VictoriaLogs (OSS, included) |
 | **Ops model** | Vendor support requires environment access | Your choice: advisory + runbooks + GitOps PR review with no cluster access, or remote access with your approval |
 | **Sovereignty** | Closed source, US vendor | Open source, hosted on your hardware, EU contracting entity (AENIX s.r.o.) |

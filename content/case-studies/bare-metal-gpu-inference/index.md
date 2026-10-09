@@ -100,7 +100,7 @@ Inference runs as two complementary pipelines. Asynchronous: API gateway → Rab
 ## What's next
 
 - Grow the GPU-server fleet beyond the first node.
-- Higher inference density per card: further HAMi tuning now, MIG partitioning once it leaves the Cozystack roadmap.
+- Higher inference density per card: further HAMi tuning, and MIG partitions through the GPU Operator where a workload needs hardware isolation.
 - A dedicated Harbor registry for heavy (~100GB) model images.
 - Expand self-service on top of the multi-tenancy model.
 
