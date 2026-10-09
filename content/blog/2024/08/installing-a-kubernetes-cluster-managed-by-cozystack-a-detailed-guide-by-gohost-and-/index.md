@@ -4,6 +4,7 @@ seo_title: "Installing a Cozystack cluster: a GoHost.kz guide"
 description: "A step-by-step guide from GoHost.kz: cluster topology, booting Talos Linux, talos-bootstrap, installing Cozystack and configuring the disk subsystem."
 date: "2024-08-16"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2024/08/kubernetes-cluster-cozystack-installieren-anleitung-gohost/"
 type: "tutorial"
 topics: ["Proxmox", "Kubernetes", "Cozystack", "Talos", "Hosting", "etcd"]
 language: "en"
