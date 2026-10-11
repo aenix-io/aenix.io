@@ -31,13 +31,13 @@ This series began with a simple thought experiment: what if we treated Kubernete
 The engineering behind it is still fairly raw, and I would be genuinely glad if people who like the idea itself joined the project and helped turn it into something technically far more serious.
 
 {{< spoiler title="Why I am doing this" >}}
-kuberoot is not my first experiment with what Kubernetes could be, and it is probably worth explaining where it came from, because from the outside the earlier experiments looked more like jokes. Some of the ideas also came from the [first episode](https://youtu.be/UgbClcTdYK0) of the Kubernetes Community Podcast, a Russian-language show I co-host, which asked what Kubernetes would look like if it were designed today, and I owe a lot to my sharp-eyed co-hosts.
+kuberoot is not my first experiment with what Kubernetes could be, and it is probably worth explaining where it came from, because from the outside the earlier experiments looked more like jokes.
 
 First came [Sheeternetes](https://github.com/sncfoundation/sheeternetes), a container orchestrator that keeps its state in a Google Sheets tab instead of etcd and runs its reconciliation loop in Apps Script instead of a conventional controller. We then load-tested it, wrote an operator for it, built a container registry that lives in spreadsheet cells, federated two clusters through a shared sheet, and in the end moved the entire kube-scheduler into a single spreadsheet formula. Then came [Tatarnetes](https://github.com/tatar-ncf/tatarnetes), a fork of Kubernetes, Talos and the Kubernetes Dashboard that speaks Tatar. And then [paleocomputing](https://aenix.io/blog/2026/09/nine-days-of-paleocomputing/), where we ran Kubernetes on Project Oberon, on top of RISC5, the processor Niklaus Wirth designed for his own operating system.
 
 They looked like jokes, and they were meant to be fun, but for me each one was a way of finding the line where the Kubernetes contract ends and the implementation begins: what is essential to it, and what is an accident of one particular codebase. If an orchestrator keeps working after its datastore has been replaced with a spreadsheet and its scheduler with a formula, then the essence of Kubernetes is not etcd or the scheduler's code, but the resource model and the reconciliation loop. kuberoot grew out of those experiments. This time the question was not how far you can stray from Kubernetes as we know it, but what you can build if you take it seriously as a kernel.
 
-I also want to thank my colleagues at Ænix and the engineers at Flant. Talking with them and watching them work is where the ideas in this article took shape.
+I also want to thank my colleagues at Ænix. Talking with them and watching them work is where the ideas in this article took shape.
 
 {{< /spoiler >}}
 
