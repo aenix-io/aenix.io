@@ -76,7 +76,8 @@ h1,h2,h3,p{margin:0}
 .badge--build{background:var(--accent)}
 .badge--run{background:var(--signal);color:var(--inverse)}
 .badge--scale{background:var(--violet)}
-.badge--open{background:var(--surface)}
+/* Figma's OPEN badge is navy-layer, which vanishes on the navy talk cards: lift it and outline it. */
+.badge--open{background:var(--elevated);box-shadow:inset 0 0 0 1px var(--border)}
 
 /* ── Header ────────────────────────────────────────────────────────── */
 .hdr{position:sticky;top:0;z-index:50;background:var(--black)}
@@ -103,7 +104,9 @@ h1,h2,h3,p{margin:0}
 }
 
 /* ── Key visual (Minimal Horizon: one cropped gradient arc, nothing else) */
-.kv{position:absolute;pointer-events:none}
+/* overflow:visible lets the arc keep curving past its viewBox (e.g. down the tall CFP submit band);
+   each section clips it with overflow:hidden. */
+.kv{position:absolute;pointer-events:none;overflow:visible}
 /* At >=1440 the landscape KV scales with the viewport so the arc always exits at the screen edge;
    below 1440 it stays at design size, shifted right so it clears the text. Per-page offsets live in each viewBox. */
 .kv--land{width:max(1440px,100%);height:auto;left:min(0px,calc((100% - 1440px) / 4))}
