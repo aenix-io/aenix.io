@@ -10,7 +10,7 @@
 # and may leave the modules unused. Private Cloud Platform and AI Platform are
 # quoted per RFP and are not priced from this table.
 #
-# Annual billing = 10 months of the monthly price ("2 months free"):
+# Annual billing = 10 months of the monthly price:
 # price_annual * 12 == price_monthly * 10. Keep that true if you change a price.
 #
 # Feature rows describe SUPPORT SCOPE, not software entitlement. White-labeling,
@@ -18,8 +18,7 @@
 # features available to everyone; the tier decides whether Ænix supports them.
 # Only the "Ænix commercial modules" rows are proprietary Ænix software.
 
-# Toggle label and the unit printed next to every price.
-annual_label: "2 months free"
+# Unit printed next to every price.
 price_unit: "/ month per 10 nodes"
 
 plans:
@@ -156,7 +155,6 @@ notes:
 # German rendering (/de/preise/). `t` maps every English section title, row
 # label and cell value to German; anything missing falls back to English.
 de:
-  annual_label: "2 Monate gratis"
   price_unit: "/ Monat pro 10 Nodes"
   plans:
     basic:

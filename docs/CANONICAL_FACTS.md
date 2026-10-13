@@ -66,7 +66,7 @@ Align product pages with the compliance evidence pages.
 
 - Support tiers are priced per 10 nodes per month as in `data/pricing.yaml`. Every tier includes the commercial modules it lists (billing, WHMCS integration). The price list is the Ænix Public Cloud Platform subscription; a team running self-run Cozystack buys the same subscription and may simply not use the commercial modules. Never say self-run support "comes without" the commercial layer.
 - Private Cloud Platform and AI Platform are quoted per RFP; their pages must not quote the Public Cloud list price as their price.
-- Annual billing: price equals 10 months of monthly ("2 months free"); never "−20%". **[CI]**
+- Annual billing: the list prices are the annual-billing prices; monthly prices are in `data/pricing.yaml`. Never market annual billing as "months free" or "−20%". **[CI]**
 - Out-of-scope work: hourly rate as in `data/pricing.yaml`. No "pay-per-incident". **[CI]**
 - Features and support hours per tier: only what `data/pricing.yaml` says. If it is internally inconsistent, fix the wording there, not the numbers.
 - Remote access: "remote access to your clusters with your approval" — never "SSH" (Talos has no SSH).

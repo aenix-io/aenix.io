@@ -70,7 +70,7 @@
 <div class="cozy-pricing" id="support" data-billed-annual="{{ $wAnnual }}" data-billed-monthly="{{ $wMonthly }}">
   <div class="cp-controls">
     <div class="cp-toggle" id="cpBillingToggle" role="group">
-      <button type="button" class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $de "Jährlich" "Annual" }} <span class="cp-discount">{{ cond $de $d.de.annual_label ($d.annual_label | default "2 months free") }}</span></button>
+      <button type="button" class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $de "Jährlich" "Annual" }}</button>
       <button type="button" class="cp-tbtn" data-mode="monthly" aria-pressed="false">{{ cond $de "Monatlich" "Monthly" }}</button>
     </div>
     <div class="cp-plan-switch" id="cpPlanSwitch" role="tablist" hidden>
