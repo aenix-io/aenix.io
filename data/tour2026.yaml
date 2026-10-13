@@ -337,17 +337,6 @@ regions:
         dates_de: "9.–11. Dez."
         tz: "EST"
         events:
-          - date: "Wed 9 Dec"
-            date_de: "Mi., 9. Dez."
-            time: "10:00–14:00"
-            time_de: "10:00–14:00 Uhr"
-            kind: workshop
-            title: "Cozystack workshop: replace VMware, then run AI and GPUs"
-            title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "135 Madison Ave, New York"
-            link: "/workshops/cozystack-tour-2026-usa/#register-new-york-9-dec"
-            link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: confirmed
           - date: "Thu 10 Dec"
             date_de: "Do., 10. Dez."
             time: "10:00–14:00"
@@ -355,7 +344,8 @@ regions:
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
             title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "135 Madison Ave, New York"
-            link: "/workshops/cozystack-tour-2026-usa/#register-new-york-10-dec"
+            venue: "Midtown Manhattan, venue shared with registered attendees"
+            venue_de: "Midtown Manhattan, den genauen Ort erfahren angemeldete Teilnehmende"
+            link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: confirmed
+            status: planned

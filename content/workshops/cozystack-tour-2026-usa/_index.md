@@ -1,6 +1,6 @@
 ---
 title: "Cozystack Tour 2026 USA: VMware migration workshop"
-description: "Free hands-on VMware migration workshop: move a real VM to an open platform and see it run AI and GPUs. Five U.S. cities, seven sessions, Nov–Dec 2026."
+description: "Free hands-on VMware migration workshop: move a real VM to an open platform and see it run AI and GPUs. Five U.S. cities, six sessions, Nov–Dec 2026."
 language: "en"
 # The German version was withdrawn; its URL redirects here.
 aliases: ["/de/workshops/cozystack-tour-2026-usa/"]
@@ -10,7 +10,7 @@ primary_keyword: "vmware migration workshop usa"
 secondary_keywords: ["vmware alternative usa", "vmware exit training", "open source virtualization workshop", "cozystack training", "gpu ai platform workshop", "sovereign cloud usa"]
 images: ["img/og/og-workshop-usa-en.png"]
 hide_child_cards: true
-hero_eyebrow: "United States · November–December 2026 · five cities, seven sessions"
+hero_eyebrow: "United States · November–December 2026 · five cities, six sessions"
 hero_title: "Build your own cloud: replace VMware — then run AI and GPUs on it"
 hero_tagline: "One day, mostly at the keyboard. You migrate a real virtual machine off VMware with your own hands, in a live environment — and you see how the very same platform serves AI and GPUs. You leave with a working migration plan — and see how the cloud you just built also becomes your AI/GPU platform, on hardware you own."
 hero_chips:
@@ -124,40 +124,28 @@ cities:
     form: "https://webforms.pipedrive.com/f/63w1tcVosco1x1H2Qr5mRsNe4aB1ODAUWGK5z2RdeT4B1qvNd6c74mtd8MTl5XNjfZ"
     href: "#register"
   - city: "New York"
-    slug: "new-york-9-dec"
     country: "United States"
-    status: "confirmed"
-    date: "Wed, 9 Dec 2026, 10:00–14:00 EST"
-    date_iso: "2026-12-09T10:00:00-05:00"
-    end_iso: "2026-12-09T14:00:00-05:00"
-    country_code: "US"
-    venue: "135 Madison Ave, Room 11B, New York"
-    form: "https://webforms.pipedrive.com/f/64HTdDC6aWdgBXfuCLKcSCSMJfpWNlotYXcZN6OBugFfxBrxk9D5esgw7M4RxcqTar"
-    href: "#register"
-  - city: "New York"
-    slug: "new-york-10-dec"
-    country: "United States"
-    status: "confirmed"
+    status: "pending"
     date: "Thu, 10 Dec 2026, 10:00–14:00 EST"
     date_iso: "2026-12-10T10:00:00-05:00"
     end_iso: "2026-12-10T14:00:00-05:00"
     country_code: "US"
-    venue: "135 Madison Ave, Room 11B, New York"
+    venue: "Date set, venue to be announced — registered attendees hear first"
     form: "https://webforms.pipedrive.com/f/64HTdDC6aWdgBXfuCLKcSCSMJfpWNlotYXcZN6OBugFfxBrxk9D5esgw7M4RxcqTar"
     href: "#register"
 final_cta:
   heading: "Replace VMware — and run AI/GPU on the same cloud"
-  text: "Five U.S. cities, seven sessions, November to December 2026. Pick yours and register — in person or online. Attendance is free; seats are limited."
+  text: "Five U.S. cities, six sessions, November to December 2026. Pick yours and register — in person or online. Attendance is free; seats are limited."
   button: "Register for your city"
   href: "#register"
 direct_answer: |
-  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. In late 2026 it runs in five U.S. cities, seven sessions — San Francisco (16 and 17 November), Seattle, Austin, Washington, DC, and New York (9 and 10 December). In one day, you migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform hosted by the CNCF — with your own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. Then a short live demo shows the same platform running AI and GPUs, so a VMware replacement doubles as an AI/GPU platform on infrastructure you own. The workshop is led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. You can attend in person or online, and afterwards every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam. Attendance is free with registration; seats are limited.**
+  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. In late 2026 it runs in five U.S. cities, six sessions — San Francisco (16 and 17 November), Seattle, Austin, Washington, DC, and New York. In one day, you migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform hosted by the CNCF — with your own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. Then a short live demo shows the same platform running AI and GPUs, so a VMware replacement doubles as an AI/GPU platform on infrastructure you own. The workshop is led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. You can attend in person or online, and afterwards every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam. Attendance is free with registration; seats are limited.**
 
 quick_facts:
   - label: "Format"
     value: "An in-person or online workshop, about four hours: roughly three hours of hands-on practice, plus a short AI/GPU live demo and open conversation"
   - label: "Cities"
-    value: "Five U.S. cities, seven sessions: San Francisco (16 and 17 Nov), Seattle, Austin, Washington, DC, New York (9 and 10 Dec) — November–December 2026"
+    value: "Five U.S. cities, six sessions: San Francisco (16 and 17 Nov), Seattle, Austin, Washington, DC, New York — November–December 2026"
   - label: "Price"
     value: "Free with registration; seats are limited"
   - label: "Language"

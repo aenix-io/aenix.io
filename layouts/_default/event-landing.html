@@ -41,7 +41,7 @@
       <div class="ws-hero__content">
         {{ partial "lang-switch.html" . }}
         {{ if gt (len (.Params.cities | default slice)) 1 }}
-        <p class="event-hero__eyebrow ws-hero__eyebrow ws-hero__cities">{{ range $i, $c := .Params.cities }}{{ if $i }}<span class="ws-hero__cities-sep" aria-hidden="true">·</span>{{ end }}<a class="ws-hero__city" href="#cities">{{ $c.city }}</a>{{ end }}</p>
+        <p class="event-hero__eyebrow ws-hero__eyebrow ws-hero__cities">{{ $names := slice }}{{ range .Params.cities }}{{ if not (in $names .city) }}{{ $names = $names | append .city }}{{ end }}{{ end }}{{ range $i, $n := $names }}{{ if $i }}<span class="ws-hero__cities-sep" aria-hidden="true">·</span>{{ end }}<a class="ws-hero__city" href="#cities">{{ $n }}</a>{{ end }}</p>
         {{ else }}{{ with .Params.hero_eyebrow }}<p class="event-hero__eyebrow ws-hero__eyebrow">{{ . }}</p>{{ end }}{{ end }}
         {{ if .Params.hero_title }}
         <h1 class="event-hero__title event-hero__title--text ws-hero__title">{{ .Params.hero_title }}</h1>
