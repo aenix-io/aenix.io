@@ -34,7 +34,7 @@
   {{- if $done }}
   <div class="ws-city ws-city--{{ $status }}">
   {{- else }}
-  <a class="ws-city ws-city--{{ $status }}{{ if $ext }} ws-city--external{{ end }}" href="{{ $href }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}{{ if hasPrefix $href "#register" }} data-ws-city="{{ $c.city | urlize }}"{{ end }}>
+  <a class="ws-city ws-city--{{ $status }}{{ if $ext }} ws-city--external{{ end }}" href="{{ $href }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}{{ if hasPrefix $href "#register" }} data-ws-city="{{ $c.slug | default ($c.city | urlize) }}"{{ end }}>
   {{- end }}
     <span class="ws-city__country">{{ $c.country }}</span>
     <span class="ws-city__name">{{ $c.city }}</span>

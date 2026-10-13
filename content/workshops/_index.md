@@ -9,7 +9,7 @@ aliases: ["/de/workshops/"]
 hreflang_ru: "/ru/workshops/"
 ---
 
-**Ænix workshops are hands-on by design: live clusters, personal tenants, roughly 70% of the time in a terminal. The next wave is published: the [Cozystack Tour 2026 Europe](/workshops/cozystack-tour-2026-europe/) runs in eight cities from 19 October to 6 November 2026, and the [Cozystack Tour 2026 USA](/workshops/cozystack-tour-2026-usa/) in six cities in November–December 2026. Attendance is free with registration. The August 2026 tour ran in Almaty, Bishkek, Astana and Tashkent.**
+**Ænix workshops are hands-on by design: live clusters, personal tenants, roughly 70% of the time in a terminal. The next wave is published: the [Cozystack Tour 2026 Europe](/workshops/cozystack-tour-2026-europe/) runs in eight cities from 19 October to 6 November 2026, and the [Cozystack Tour 2026 USA](/workshops/cozystack-tour-2026-usa/) in five cities, seven sessions, in November–December 2026. Attendance is free with registration. The August 2026 tour ran in Almaty, Bishkek, Astana and Tashkent.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/workshops/cozystack-tour-2026-europe/#register">Register in Europe</a>
