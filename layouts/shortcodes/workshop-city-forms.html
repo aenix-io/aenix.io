@@ -18,6 +18,7 @@
     - city:  "Paris"
     - date:  "Mon, 19 Oct 2026, 10:00–14:00 CEST"
     - form:  "https://webforms.pipedrive.com/f/..."   # per-city Pipedrive URL
+    - slug:  "new-york-9-dec"   # optional; needed when a city has two sessions
 
   Empty `form` → a graceful "registration opens shortly" panel, so the page
   ships before the Pipedrive forms exist and lights up as URLs are filled in.
@@ -32,7 +33,7 @@
   {{- if gt (len $items) 1 }}
   <div class="ws-cityforms__tabs" role="tablist" aria-label="{{ if $isDE }}Stadt auswählen{{ else }}Choose your city{{ end }}">
     {{- range $i, $c := $items -}}
-    {{- $slug := $c.city | urlize -}}
+    {{- $slug := $c.slug | default ($c.city | urlize) -}}
     <button class="ws-cityforms__tab{{ if eq $i 0 }} is-active{{ end }}"
             role="tab" type="button"
             id="reg-tab-{{ $slug }}"
@@ -48,7 +49,7 @@
   {{- end }}
 
   {{- range $i, $c := $items -}}
-  {{- $slug := $c.city | urlize -}}
+  {{- $slug := $c.slug | default ($c.city | urlize) -}}
   {{- $utm := printf "?utm_source=aenix&utm_medium=landing&utm_campaign=cozystack-tour-2026-%s&utm_content=%s" $region $slug -}}
   <div class="ws-cityforms__panel{{ if eq $i 0 }} is-active{{ end }}"
        {{ if gt (len $items) 1 }}role="tabpanel"{{ end }}

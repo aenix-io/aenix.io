@@ -21,7 +21,7 @@ hero_secondary: { text: "See where I'll be", href: "#schedule" }
 speaker_photo: "images/workshops/timur-tukaev.png"
 inshort_title: "In short"
 quick_facts_style: "rows"
-direct_answer: "**Between 18 October and 11 December 2026, Timur Tukaev — Cozystack maintainer and co-founder of Ænix — travels through eight European and eight US cities: Paris, Berlin, Warsaw, Copenhagen, Amsterdam, Milan, Madrid, London, Salt Lake City, the San Francisco Bay Area, Seattle, Austin, Dallas, Washington DC, Boston and New York. The fixed points are NVIDIA GTC in Berlin and Washington DC, KubeCon + CloudNativeCon North America, and a free hands-on Cozystack workshop in most cities. The rest of the time is open: you can book a meeting from 7:00 to 22:00 local time through two calendars — one for Europe, one for the US — or write directly by email or Telegram to arrange a talk, an in-house workshop, a university lecture, a community meetup or a podcast recording.**"
+direct_answer: "**Between 18 October and 11 December 2026, Timur Tukaev — Cozystack maintainer and co-founder of Ænix — travels through eight European and eight US cities: Paris, Berlin, Warsaw, Copenhagen, Amsterdam, Milan, Madrid, London, Salt Lake City, the San Francisco Bay Area, Seattle, Austin, Dallas, Washington DC, Boston and New York. The fixed points are NVIDIA GTC in Berlin and Washington DC, KubeCon + CloudNativeCon North America, and 14 free hands-on Cozystack workshops — eight in Europe and six in the US. The rest of the time is open: you can book a meeting from 7:00 to 22:00 local time through two calendars — one for Europe, one for the US — or write directly by email or Telegram to arrange a talk, an in-house workshop, a university lecture, a community meetup or a podcast recording.**"
 quick_facts:
   - label: "Dates"
     value: "18 October – 11 December 2026"
@@ -66,7 +66,7 @@ final_cta:
 <section class="ws-section" id="schedule" aria-labelledby="tour-schedule-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="tour-schedule-h">Where I'll be</h2>
-<p class="ws-lead">The fixed points so far are conferences and our free hands-on workshops; stops marked "planned" have a date but no venue yet. University lectures, community meetups and podcast recordings will appear here as they are confirmed — and everything not listed is open for meetings.</p>
+<p class="ws-lead">The fixed points so far are conferences and our 14 free hands-on workshops — eight in Europe, six in the US; a stop marked "planned" has a date but no venue yet. University lectures, community meetups and podcast recordings will appear here as they are confirmed — and everything not listed is open for meetings.</p>
 {{< tour-schedule >}}
 </div>
 </section>
