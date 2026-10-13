@@ -18,8 +18,6 @@
 # features available to everyone; the tier decides whether Ænix supports them.
 # Only the "Ænix commercial modules" rows are proprietary Ænix software.
 
-# Unit printed next to every price.
-price_unit: "/ month per 10 nodes"
 
 plans:
   - id: basic
@@ -155,7 +153,6 @@ notes:
 # German rendering (/de/preise/). `t` maps every English section title, row
 # label and cell value to German; anything missing falls back to English.
 de:
-  price_unit: "/ Monat pro 10 Nodes"
   plans:
     basic:
       who: "Kleine Anbieter, Startups und interne Teams mit begrenzten Workloads"

@@ -8,8 +8,8 @@
   truth, and a second copy would drift.
 
   This script does two things:
-  - swaps each price between the data-annual / data-monthly figures already in
-    the markup, and the "billed …" label;
+  - swaps every element carrying data-annual / data-monthly (the price and the
+    "billed …" line) between the two texts already in the markup;
   - on phones, turns the stack of tier cards into a tier switcher that shows
     one card at a time (without JS every card stays visible).
 */
@@ -19,12 +19,9 @@
 
   const billing = root.querySelector('#cpBillingToggle');
   const setMode = (mode) => {
-    root.querySelectorAll('.cp-amount').forEach((el) => {
-      const next = el.dataset[mode];
-      if (next) el.textContent = next;
+    root.querySelectorAll('[data-annual][data-monthly]').forEach((el) => {
+      el.textContent = el.dataset[mode];
     });
-    const word = mode === 'annual' ? root.dataset.billedAnnual : root.dataset.billedMonthly;
-    root.querySelectorAll('.cp-billed').forEach((el) => { el.textContent = word; });
     billing.querySelectorAll('.cp-tbtn').forEach((b) => {
       const active = b.dataset.mode === mode;
       b.classList.toggle('cp-active', active);

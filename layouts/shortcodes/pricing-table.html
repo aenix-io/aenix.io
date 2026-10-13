@@ -17,26 +17,25 @@
 {{- $plans := $d.plans -}}
 {{- $de := or (eq .Page.Params.language "de") (hasPrefix .Page.RelPermalink "/de/") -}}
 {{- $t := cond $de $d.de.t dict -}}
-{{- $unit := cond $de $d.de.price_unit ($d.price_unit | default "/ month") -}}
+{{- $perMonth := cond $de "/ Monat" "/ month" -}}
+{{- $perNodes := cond $de "pro 10 physische Nodes" "per 10 physical nodes" -}}
 {{- $notes := cond $de $d.de.notes $d.notes -}}
 {{- $contact := cond $de "/de/kontakt/" "/contact/" -}}
-{{- $wAnnual := cond $de "jährliche Abrechnung" "billed annually" -}}
-{{- $wMonthly := cond $de "monatliche Abrechnung" "billed monthly" -}}
+{{- $wAnnual := cond $de "jährlich abgerechnet" "billed annually" -}}
+{{- $wMonthly := cond $de "monatlich abgerechnet" "billed monthly" -}}
 {{- $quote := cond $de "Angebot anfordern" "Request quote" -}}
 
 {{- /* price strings: "$1,250" in EN, "1.250 USD" in DE */ -}}
 {{- $fmt := dict -}}
 {{- range $plans -}}
   {{- if .price_annual -}}
-    {{- $a := "" }}{{ $m := "" -}}
-    {{- if $de -}}
-      {{- $a = printf "%s USD" (lang.FormatNumberCustom 0 .price_annual "- , .") -}}
-      {{- $m = printf "%s USD" (lang.FormatNumberCustom 0 .price_monthly "- , .") -}}
-    {{- else -}}
-      {{- $a = printf "$%s" (lang.FormatNumberCustom 0 .price_annual) -}}
-      {{- $m = printf "$%s" (lang.FormatNumberCustom 0 .price_monthly) -}}
+    {{- $nums := slice .price_annual .price_monthly (mul .price_annual 12) -}}
+    {{- $txt := slice -}}
+    {{- range $nums -}}
+      {{- if $de }}{{ $txt = $txt | append (printf "%s USD" (lang.FormatNumberCustom 0 . "- , .")) -}}
+      {{- else }}{{ $txt = $txt | append (printf "$%s" (lang.FormatNumberCustom 0 .)) }}{{ end -}}
     {{- end -}}
-    {{- $fmt = merge $fmt (dict .id (dict "a" $a "m" $m)) -}}
+    {{- $fmt = merge $fmt (dict .id (dict "a" (index $txt 0) "m" (index $txt 1) "y" (index $txt 2))) -}}
   {{- end -}}
 {{- end -}}
 
@@ -67,7 +66,7 @@
   {{- end -}}
 {{- end -}}
 
-<div class="cozy-pricing" id="support" data-billed-annual="{{ $wAnnual }}" data-billed-monthly="{{ $wMonthly }}">
+<div class="cozy-pricing" id="support">
   <div class="cp-controls">
     <div class="cp-toggle" id="cpBillingToggle" role="group">
       <button type="button" class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $de "Jährlich" "Annual" }}</button>
@@ -88,13 +87,14 @@
       </colgroup>
       <thead>
         <tr>
-          <th scope="col"><span class="cp-unit">{{ $unit }}</span></th>
+          <th scope="col"></th>
           {{- range $plans }}
           <th scope="col">
             <div class="cp-plan">{{ .name }}</div>
             {{- with index $fmt .id }}
-            <div class="cp-price"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span></div>
-            <div class="cp-billed">{{ $wAnnual }}</div>
+            <div class="cp-price"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-per">{{ $perMonth }}</span></div>
+            <div class="cp-nodes">{{ $perNodes }}</div>
+            <div class="cp-billed" data-annual="{{ .y }} {{ $wAnnual }}" data-monthly="{{ $wMonthly }}">{{ .y }} {{ $wAnnual }}</div>
             {{- else }}
             <a href="{{ $contact }}" class="cp-request-btn">{{ $quote }}</a>
             {{- end }}
@@ -125,8 +125,9 @@
       <div class="cp-chead">
         <div class="cp-plan">{{ $p.name }}</div>
         {{- with index $fmt $p.id }}
-        <div class="cp-price"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-unit">{{ $unit }}</span></div>
-        <div class="cp-billed">{{ $wAnnual }}</div>
+        <div class="cp-price"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-per">{{ $perMonth }}</span></div>
+        <div class="cp-nodes">{{ $perNodes }}</div>
+        <div class="cp-billed" data-annual="{{ .y }} {{ $wAnnual }}" data-monthly="{{ $wMonthly }}">{{ .y }} {{ $wAnnual }}</div>
         {{- else }}
         <a href="{{ $contact }}" class="cp-request-btn">{{ $quote }}</a>
         {{- end }}
