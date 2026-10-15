@@ -194,11 +194,10 @@ regions:
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
             title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "Central London, venue to be confirmed"
-            venue_de: "Central London, Veranstaltungsort wird noch bestätigt"
+            venue: "eOffice London Soho HQ, 1 Richmond Mews, London W1D 3DA"
             link: "/workshops/cozystack-tour-2026-europe/#register"
             link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
-            status: planned
+            status: confirmed
 
   - key: usa
     name: "United States"
