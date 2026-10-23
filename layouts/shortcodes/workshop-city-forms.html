@@ -64,7 +64,7 @@
     <div class="ws-cityforms__head">
       <span class="ws-cityforms__city">{{ $c.city }}</span>
       <span class="ws-cityforms__date">{{ $c.date }}</span>
-      {{- if $venueKnown }}<span class="ws-cityforms__venue">{{ $venue }}</span>{{ end }}
+      {{- if $venueKnown }}<span class="ws-cityforms__venue">{{ $venue }}{{ with $c.map }} · <a href="{{ . }}" target="_blank" rel="noopener">Google Maps</a>{{ end }}</span>{{ end }}
     </div>
     {{- with $c.form -}}
     <div class="ws-cityforms__embed">
