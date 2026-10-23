@@ -1,90 +1,118 @@
 {{- /*
   pricing-table.html — the four support tiers with the annual/monthly toggle.
 
-  Rendered SERVER-SIDE from data/pricing.yaml. This used to be an empty
-  <table id="cpPricingTable"></table> that /js/pricing-table.js filled in at
-  runtime, which meant the only published price list on the site — tier names,
-  the $3,000 and $5,500 rows, the whole SLA matrix — existed nowhere in the
-  HTML. Google, AI search engines, and any client with JS off saw an empty
-  table on the page we most want quoted back to buyers.
+  Rendered SERVER-SIDE from data/pricing.yaml, so the prices and the SLA matrix
+  are in the HTML for Google, AI search engines and no-JS clients. EN and DE
+  render from the same data: the `de` block translates labels and values, and
+  anything untranslated falls back to English.
 
-  /js/pricing-table.js is now progressive enhancement only: both prices ship in
-  the markup (data-annual / data-monthly) and the script just swaps which one is
-  visible. With JS off the table renders complete at annual pricing.
+  Desktop: one fixed-layout table that always fits its container (no
+  horizontal scroll). Phones: one card per tier behind a tier switcher; with
+  JS off every card is shown in a stack. /js/pricing-table.js only swaps the
+  visible price and the visible card.
 
   Usage: {{< pricing-table >}}
 */ -}}
 {{- $d := site.Data.pricing -}}
 {{- $plans := $d.plans -}}
-{{- $unit := $d.price_unit | default "/ month" -}}
+{{- $de := or (eq .Page.Params.language "de") (hasPrefix .Page.RelPermalink "/de/") -}}
+{{- $t := cond $de $d.de.t dict -}}
+{{- $perMonth := cond $de "/ Monat" "/ month" -}}
+{{- $perNodes := cond $de "pro 10 physische Nodes" "per 10 physical nodes" -}}
+{{- $notes := cond $de $d.de.notes $d.notes -}}
+{{- $contact := cond $de "/de/kontakt/" "/contact/" -}}
+{{- $wAnnual := cond $de "jährlich abgerechnet" "billed annually" -}}
+{{- $wMonthly := cond $de "monatlich abgerechnet" "billed monthly" -}}
+{{- $quote := cond $de "Angebot anfordern" "Request quote" -}}
+
+{{- /* price strings: "$1,250" in EN, "1.250 USD" in DE */ -}}
+{{- $fmt := dict -}}
+{{- range $plans -}}
+  {{- if .price_annual -}}
+    {{- $nums := slice .price_annual .price_monthly (mul .price_annual 12) -}}
+    {{- $txt := slice -}}
+    {{- range $nums -}}
+      {{- if $de }}{{ $txt = $txt | append (printf "%s USD" (lang.FormatNumberCustom 0 . "- , .")) -}}
+      {{- else }}{{ $txt = $txt | append (printf "$%s" (lang.FormatNumberCustom 0 .)) }}{{ end -}}
+    {{- end -}}
+    {{- $fmt = merge $fmt (dict .id (dict "a" (index $txt 0) "m" (index $txt 1) "y" (index $txt 2))) -}}
+  {{- end -}}
+{{- end -}}
 
 {{- define "cp-cell" -}}
-  {{- /* ✔/✖ get their colour spans; everything else renders as text */ -}}
-  {{- if eq . "✔" }}<span class="cp-ok">✔</span>
-  {{- else if eq . "✖" }}<span class="cp-no">✖</span>
+  {{- if eq . "✔" }}<span class="cp-ok" aria-label="yes">✔</span>
+  {{- else if eq . "✖" }}<span class="cp-no" aria-label="no">✖</span>
   {{- else }}{{ . }}{{ end -}}
 {{- end -}}
 
-<div class="cozy-pricing">
-  <div class="cp-toggle" id="cpBillingToggle">
-    {{- /* Annual = 10 months of the monthly price ("2 months free"); never a
-           percentage, which read as -20% while the prices give 16.7%. */}}
-    {{- $deToggle := or (eq .Page.Params.language "de") (hasPrefix .Page.RelPermalink "/de/") }}
-    <button class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $deToggle "Jährlich" "Annual" }} <span class="cp-discount">{{ cond $deToggle "2 Monate gratis" ($d.annual_label | default "2 months free") }}</span></button>
-    <button class="cp-tbtn" data-mode="monthly" aria-pressed="false">{{ cond $deToggle "Monatlich" "Monthly" }}</button>
+{{- /* resolve every row once: label + one value per plan, translated */ -}}
+{{- $rows := slice -}}
+{{- range $sec := $d.sections -}}
+  {{- $rows = $rows | append (dict "section" (index $t $sec.title | default $sec.title) "long" $sec.long) -}}
+  {{- range $it := $sec.items -}}
+    {{- $vals := slice -}}
+    {{- range $p := $plans -}}
+      {{- $v := "" -}}
+      {{- if $it.from -}}
+        {{- $v = index $p $it.from -}}
+        {{- if $de }}{{ $v = index (index $d.de.plans $p.id) $it.from | default $v }}{{ end -}}
+      {{- else -}}
+        {{- $v = index $it.v $p.id -}}
+        {{- $v = index $t $v | default $v -}}
+      {{- end -}}
+      {{- $vals = $vals | append $v -}}
+    {{- end -}}
+    {{- $rows = $rows | append (dict "k" (index $t $it.k | default $it.k) "vals" $vals "long" $sec.long) -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="cozy-pricing" id="support">
+  <div class="cp-controls">
+    <div class="cp-toggle" id="cpBillingToggle" role="group">
+      <button type="button" class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $de "Jährlich" "Annual" }}</button>
+      <button type="button" class="cp-tbtn" data-mode="monthly" aria-pressed="false">{{ cond $de "Monatlich" "Monthly" }}</button>
+    </div>
+    <div class="cp-plan-switch" id="cpPlanSwitch" role="tablist" hidden>
+      {{- range $i, $p := $plans }}
+      <button type="button" role="tab" class="cp-pbtn{{ if eq $i 1 }} cp-active{{ end }}" data-plan="{{ $p.id }}" aria-selected="{{ if eq $i 1 }}true{{ else }}false{{ end }}">{{ $p.name }}</button>
+      {{- end }}
+    </div>
   </div>
 
   <div class="cp-table-wrap">
     <table id="cpPricingTable">
+      <colgroup>
+        <col class="cp-col-k">
+        {{- range $plans }}<col>{{ end }}
+      </colgroup>
       <thead>
         <tr>
-          <th></th>
+          <th scope="col"></th>
           {{- range $plans }}
-          <th>
+          <th scope="col">
             <div class="cp-plan">{{ .name }}</div>
-            {{- if .price_annual }}
-            <div class="cp-price">
-              <span class="cp-amount"
-                    data-annual="${{ lang.FormatNumberCustom 0 .price_annual }}"
-                    data-monthly="${{ lang.FormatNumberCustom 0 .price_monthly }}">${{ lang.FormatNumberCustom 0 .price_annual }}</span><span> {{ $unit }}</span>
-            </div>
-            <div class="cp-billed">billed <span class="cp-billed-word">annually</span></div>
+            {{- with index $fmt .id }}
+            <div class="cp-price"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-per">{{ $perMonth }}</span></div>
+            <div class="cp-nodes">{{ $perNodes }}</div>
+            <div class="cp-billed" data-annual="{{ .y }} {{ $wAnnual }}" data-monthly="{{ $wMonthly }}">{{ .y }} {{ $wAnnual }}</div>
             {{- else }}
-            <a href="{{ .contact_url }}" target="_blank" rel="noopener" class="cp-request-btn">Request quote</a>
+            <a href="{{ $contact }}" class="cp-request-btn">{{ $quote }}</a>
             {{- end }}
           </th>
           {{- end }}
         </tr>
       </thead>
       <tbody>
-        {{- range $sec := $d.sections }}
-        <tr class="cp-section-row"><td colspan="{{ add (len $plans) 1 }}">{{ $sec.title }}</td></tr>
-        {{- $alt := true }}
-        {{- range $it := $sec.items }}
-          {{- /* Resolve this row's four values, either from a per-plan field
-                 (Information rows) or from the row's own `v` map. */ -}}
-          {{- $vals := slice -}}
-          {{- range $p := $plans -}}
-            {{- if $it.from -}}
-              {{- $vals = $vals | append (index $p $it.from) -}}
-            {{- else -}}
-              {{- $vals = $vals | append (index $it.v $p.id) -}}
-            {{- end -}}
-          {{- end -}}
-          {{- $nonEmpty := slice -}}
-          {{- range $vals }}{{ if ne (trim (string .) " ") "" }}{{ $nonEmpty = $nonEmpty | append . }}{{ end }}{{ end -}}
-        <tr{{ if $alt }} class="cp-alt"{{ end }}>
-          <td>{{ $it.k }}</td>
-          {{- if eq (len $nonEmpty) 1 }}
-          {{- /* single value spans the row, e.g. "Extra Consultation Rate" */}}
-          <td colspan="{{ len $plans }}" style="text-align:center;font-weight:600;">{{ index $nonEmpty 0 }}</td>
-          {{- else }}
-            {{- range $vals }}
+        {{- range $r := $rows }}
+        {{- if $r.section }}
+        <tr class="cp-section-row"><th scope="rowgroup" colspan="{{ add (len $plans) 1 }}">{{ $r.section }}</th></tr>
+        {{- else }}
+        <tr{{ if $r.long }} class="cp-long"{{ end }}>
+          <th scope="row">{{ $r.k }}</th>
+          {{- range $r.vals }}
           <td>{{- template "cp-cell" . -}}</td>
-            {{- end }}
           {{- end }}
         </tr>
-        {{- $alt = not $alt }}
         {{- end }}
         {{- end }}
       </tbody>
@@ -92,31 +120,35 @@
   </div>
 
   <div class="cp-cards" id="cpPricingCards">
-    {{- range $p := $plans }}
-    <div class="cp-card">
+    {{- range $i, $p := $plans }}
+    <section class="cp-card{{ if eq $i 1 }} cp-card--active{{ end }}" data-plan="{{ $p.id }}" aria-label="{{ $p.name }}">
       <div class="cp-chead">
         <div class="cp-plan">{{ $p.name }}</div>
-        {{- if $p.price_annual }}
-        <div class="cp-price">
-          <span class="cp-amount"
-                data-annual="${{ lang.FormatNumberCustom 0 $p.price_annual }}"
-                data-monthly="${{ lang.FormatNumberCustom 0 $p.price_monthly }}">${{ lang.FormatNumberCustom 0 $p.price_annual }}</span><span> {{ $unit }}</span>
-        </div>
-        <div class="cp-billed">billed <span class="cp-billed-word">annually</span></div>
+        {{- with index $fmt $p.id }}
+        <div class="cp-price"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-per">{{ $perMonth }}</span></div>
+        <div class="cp-nodes">{{ $perNodes }}</div>
+        <div class="cp-billed" data-annual="{{ .y }} {{ $wAnnual }}" data-monthly="{{ $wMonthly }}">{{ .y }} {{ $wAnnual }}</div>
         {{- else }}
-        <a href="{{ $p.contact_url }}" target="_blank" rel="noopener" class="cp-request-btn">Request quote</a>
+        <a href="{{ $contact }}" class="cp-request-btn">{{ $quote }}</a>
         {{- end }}
       </div>
-      {{- range $sec := $d.sections }}
-      <div class="cp-section">{{ $sec.title }}</div>
-        {{- range $it := $sec.items }}
-      <div class="cp-row{{ if $sec.long }} cp-long{{ end }}">
-        <div class="cp-k">{{ $it.k }}</div>
-        <div class="cp-v">{{- if $it.from }}{{ index $p $it.from }}{{ else }}{{ template "cp-cell" (index $it.v $p.id) }}{{ end -}}</div>
+      {{- range $r := $rows }}
+      {{- if $r.section }}
+      <div class="cp-section">{{ $r.section }}</div>
+      {{- else }}
+      <div class="cp-row{{ if $r.long }} cp-long{{ end }}">
+        <div class="cp-k">{{ $r.k }}</div>
+        <div class="cp-v">{{ template "cp-cell" (index $r.vals $i) }}</div>
       </div>
-        {{- end }}
       {{- end }}
-    </div>
+      {{- end }}
+    </section>
     {{- end }}
   </div>
+
+  {{- with $notes }}
+  <div class="cp-notes">
+    {{- range . }}<p>{{ . }}</p>{{ end }}
+  </div>
+  {{- end }}
 </div>

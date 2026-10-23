@@ -1,26 +1,24 @@
-{{/* Project override of the theme pricing layout: hero CTA, and the closing
-     button reads "Book a call" like every other CTA instead of "CONTACT US". */}}
+{{/* Pricing page (EN /pricing/, DE /de/preise/): a short hero and the tier
+     table, nothing else. The table comes from the {{< pricing-table >}}
+     shortcode in the page body, data from data/pricing.yaml. */}}
 {{ define "head" }}
 <link rel="stylesheet" href="/css/pricing-table.css">
 {{ end }}
 
 {{ define "main" }}
-<section class="page-hero">
+<section class="page-hero page-hero--compact">
   <div class="page-hero-bg">
     <div class="page-hero-grid"></div>
     <div class="page-hero-glow"></div>
   </div>
   <div class="container">
-    <h1 class="page-hero-title">{{ .Title }}</h1>
-    {{ with .Params.hero_subtitle }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
-    {{ partial "hero-cta.html" . }}
+    {{ partial "lang-switch.html" . }}
+    <h1 class="page-hero-title">{{ .Params.hero_title | default .Title }}</h1>
   </div>
 </section>
 
 <div class="container">
   <div class="page-content" style="max-width:100%">
-    {{/* The page body owns the narrative and decides where the tier table sits
-         — it is emitted by the {{< pricing-table >}} shortcode. */}}
     {{ .Content }}
 
     {{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") }}

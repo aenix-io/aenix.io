@@ -31,7 +31,7 @@ faq:
   - q: "Do we need to buy an Ænix platform to get support?"
     a: "No build or migration. You buy the same subscription as Public Cloud Platform customers, from the same price list, and keep running the Cozystack you installed; the commercial modules included in every tier can simply stay unused. Cozystack is Apache 2.0 and a CNCF project; running it without buying anything from Ænix is a legitimate choice, and the subscription puts the maintainers on call when you want them."
   - q: "How much does it cost?"
-    a: "The published tiers per 10 physical nodes per month on annual billing: Basic $1,250, Standard $3,000, Plus $5,500, and a custom Enterprise tier. Monthly billing costs 20% more; annual billing works out as two months free. Work outside the tier's scope is billed at $150 per hour. The full comparison is on the pricing page."
+    a: "The published tiers per 10 physical nodes per month on annual billing: Basic $1,250, Standard $3,000, Plus $5,500, and a custom Enterprise tier. Monthly billing costs 20% more. Work outside the tier's scope is billed at $150 per hour. The full comparison is on the pricing page."
   - q: "What does the response SLA cover?"
     a: "Response, not resolution. An emergency — a production system down or unresponsive with no workaround — gets an engineer within the tier's window: 8 hours on Basic, 4 hours on Standard and Plus, 1 hour on Enterprise. Standard requests are answered within 2 business days on Basic and Standard, 8 hours on Plus and 4 hours on Enterprise."
   - q: "Are upgrades included?"

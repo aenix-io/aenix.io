@@ -1,217 +1,246 @@
-/* Pricing table — dark theme, matching main.css tokens */
+/* Pricing table — dark theme, matching main.css tokens.
+   Desktop: a fixed-layout table that always fits its container, no horizontal
+   scroll; type and padding scale with the viewport. Phones (≤720px): one tier
+   card at a time behind a tier switcher. */
+
+.page-hero--compact { padding-bottom: 8px; }
+
 .cozy-pricing {
   font-family: 'Inter', -apple-system, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 8px 0 24px;
   color: var(--text-primary);
 }
 
-/* Billing toggle */
-.cozy-pricing .cp-toggle {
+/* ---------- controls ---------- */
+.cozy-pricing .cp-controls {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto 28px;
+}
+.cozy-pricing .cp-toggle,
+.cozy-pricing .cp-plan-switch {
+  display: flex;
   background: rgba(255,255,255,0.04);
   border: 1px solid var(--border-default);
   border-radius: 999px;
-  width: fit-content;
-  margin: 0 auto 32px;
   padding: 4px;
+  width: fit-content;
 }
-.cozy-pricing .cp-tbtn {
-  border: none;
-  padding: 10px 28px;
+.cozy-pricing .cp-plan-switch { display: none; }
+.cozy-pricing .cp-tbtn,
+.cozy-pricing .cp-pbtn {
+  border: 1px solid transparent;
+  padding: 10px 26px;
   border-radius: 999px;
+  font: inherit;
   font-weight: 600;
   font-size: 15px;
   color: var(--text-secondary);
   background: transparent;
   cursor: pointer;
+  white-space: nowrap;
   transition: 0.25s var(--ease);
 }
-.cozy-pricing .cp-tbtn:hover { color: var(--text-primary); }
-.cozy-pricing .cp-tbtn.cp-active {
+.cozy-pricing .cp-tbtn:hover,
+.cozy-pricing .cp-pbtn:hover { color: var(--text-primary); }
+.cozy-pricing .cp-tbtn.cp-active,
+.cozy-pricing .cp-pbtn.cp-active {
   background: linear-gradient(160deg, #1a8fe6 0%, var(--brand-secondary, #0971EB) 45%, #0756b8 100%);
   color: #fff;
-  border: 1px solid rgba(1,165,255,0.15);
-  box-shadow:
-    0 1px 2px rgba(0,0,0,0.4),
-    0 4px 12px rgba(1,165,255,0.12),
-    inset 0 1px 0 rgba(255,255,255,0.1);
-}
-.cozy-pricing .cp-discount {
-  font-size: 12px;
-  color: #0B0F1A;
-  background: #D4F6B2;
-  border-radius: 6px;
-  padding: 2px 6px;
-  margin-left: 8px;
-  font-weight: 700;
-  display: inline-block;
+  border-color: rgba(1,165,255,0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(1,165,255,0.12), inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
-/* Desktop table */
+/* ---------- desktop table ---------- */
 .cozy-pricing .cp-table-wrap {
-  /* overflow-x auto was breaking sticky <thead> by creating a scroll container;
-     the table fits within the 1200px container at all desktop widths we target */
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-default);
   background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  position: relative;
+  /* no overflow here: a scroll container would break the sticky header */
 }
 .cozy-pricing table {
   width: 100%;
+  table-layout: fixed;
+  display: table;
+  overflow: visible; /* the global .page-content table rule sets overflow:auto,
+                        which makes the table a scroll container and breaks
+                        the sticky header */
   border-collapse: separate !important;
   border-spacing: 0;
-  min-width: 940px;
   margin: 0;
+  font-size: clamp(12.5px, 0.55vw + 7.5px, 15px);
 }
-.cozy-pricing th, .cozy-pricing td {
-  padding: 14px 18px;
+.cozy-pricing col.cp-col-k { width: 25%; }
+.cozy-pricing th,
+.cozy-pricing td {
+  padding: clamp(9px, 0.9vw, 14px) clamp(8px, 1.1vw, 18px);
   text-align: center;
   vertical-align: middle;
   border: none;
   background: transparent;
-  line-height: 1.45;
+  line-height: 1.4;
   color: var(--text-secondary);
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 .cozy-pricing thead th {
-  /* Solid fill so the sticky row doesn't show body content bleeding through */
   background: #0F1525;
-  color: var(--brand-primary);
-  font-size: 14px;
-  font-weight: 700;
   border-bottom: 1px solid var(--border-default);
-  /* Stick just below the site header (height 60px in scrolled state, z:100) */
-  position: sticky; top: 60px; z-index: 90;
-  padding: 20px 18px;
-  box-shadow: 0 1px 0 var(--border-default);
+  position: sticky;
+  top: 60px; /* below the scrolled site header */
+  z-index: 5;
+  padding-top: clamp(14px, 1.4vw, 22px);
+  padding-bottom: clamp(14px, 1.4vw, 22px);
+  vertical-align: top;
 }
 .cozy-pricing thead th:first-child {
-  background: #0F1525;
-  /* Corner cell must stay above the body-sticky first column */
-  z-index: 91;
+  border-top-left-radius: var(--radius-lg);
+  text-align: left;
+  vertical-align: bottom;
 }
-.cozy-pricing td:first-child, .cozy-pricing th:first-child {
+.cozy-pricing thead th:last-child { border-top-right-radius: var(--radius-lg); }
+.cozy-pricing tbody th[scope="row"] {
   text-align: left;
   font-weight: 500;
   color: var(--text-primary);
-  white-space: nowrap;
-  padding-left: 28px;
-  position: sticky; left: 0; z-index: 2;
-  background: #0B0F1A;
+  padding-left: clamp(12px, 1.6vw, 26px);
 }
-.cozy-pricing tbody tr td:first-child {
-  background: #0B0F1A;
-}
-.cozy-pricing tbody tr td {
-  border-top: 1px solid rgba(255,255,255,0.04);
-}
-.cozy-pricing .cp-section-row td {
-  background: transparent !important;
+.cozy-pricing tbody tr > * { border-top: 1px solid rgba(255,255,255,0.05); }
+.cozy-pricing tbody tr:hover > * { background: rgba(1,165,255,0.035); }
+.cozy-pricing .cp-section-row th {
+  text-align: left;
   font-weight: 700;
   color: var(--brand-primary);
-  font-size: 13px;
-  text-align: left;
-  padding-top: 28px;
-  padding-bottom: 10px;
-  padding-left: 18px;
-  position: static;
+  font-size: 0.82em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
+  padding-top: clamp(18px, 2vw, 28px);
+  padding-bottom: 8px;
+  padding-left: clamp(12px, 1.6vw, 26px);
   border-top: none;
 }
-.cozy-pricing tbody tr.cp-alt td { background: rgba(255,255,255,0.015); }
-.cozy-pricing tbody tr.cp-alt td:first-child { background: #0d121e; }
-.cozy-pricing tbody tr:hover td { background: rgba(1,165,255,0.03); }
-.cozy-pricing tbody tr:hover td:first-child { background: #111827; }
+.cozy-pricing .cp-section-row:hover > * { background: transparent; }
+.cozy-pricing tr.cp-long td {
+  font-size: 0.92em;
+  vertical-align: top;
+  text-align: left;
+}
 
-/* UI atoms */
+/* ---------- atoms ---------- */
 .cozy-pricing .cp-plan {
-  font-size: 17px;
+  font-size: 1.15em;
   font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: 0.01em;
 }
 .cozy-pricing .cp-price {
-  font-size: 22px;
+  font-size: clamp(18px, 1.3vw + 6px, 26px);
   font-weight: 700;
   color: var(--text-primary);
   margin-top: 6px;
-  white-space: nowrap;
+  line-height: 1.15;
 }
-.cozy-pricing .cp-price span {
-  font-size: 13px;
+.cozy-pricing .cp-per {
+  font-size: 0.55em;
   font-weight: 500;
   color: var(--text-secondary);
-  margin-left: 4px;
+  white-space: nowrap;
+}
+.cozy-pricing .cp-nodes {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-top: 4px;
 }
 .cozy-pricing .cp-billed {
-  color: var(--text-muted, var(--text-secondary));
+  color: var(--text-secondary);
   font-size: 12px;
   font-weight: 400;
-  margin-top: 4px;
-  opacity: 0.7;
+  margin-top: 2px;
+  opacity: 0.8;
 }
-.cozy-pricing .cp-ok {
-  color: #D4F6B2;
-  font-weight: 700;
-  font-size: 16px;
-}
-.cozy-pricing .cp-no {
-  color: rgba(255,255,255,0.2);
-  font-size: 16px;
-}
-
-/* Request quote button */
+.cozy-pricing .cp-ok { color: #D4F6B2; font-weight: 700; font-size: 1.05em; }
+.cozy-pricing .cp-no { color: rgba(255,255,255,0.22); font-size: 1.05em; }
 .cozy-pricing .cp-request-btn {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 20px;
-  white-space: nowrap;
+  padding: 8px 14px;
+  max-width: 100%;
   background: linear-gradient(160deg, #1a8fe6 0%, var(--brand-secondary, #0971EB) 45%, #0756b8 100%);
   color: #fff !important;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
+  line-height: 1.3;
   border: 1px solid rgba(1,165,255,0.15);
   border-radius: 8px;
   text-decoration: none !important;
   transition: all 0.35s var(--ease);
-  box-shadow:
-    0 1px 2px rgba(0,0,0,0.4),
-    0 4px 12px rgba(1,165,255,0.12),
-    inset 0 1px 0 rgba(255,255,255,0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(1,165,255,0.12), inset 0 1px 0 rgba(255,255,255,0.1);
 }
-.cozy-pricing .cp-request-btn:hover {
-  background: linear-gradient(160deg, #2196f3 0%, #0a7de8 45%, var(--brand-secondary, #0971EB) 100%);
-  transform: translateY(-1px);
-  box-shadow:
-    0 1px 2px rgba(0,0,0,0.4),
-    0 6px 24px rgba(1,165,255,0.2),
-    inset 0 1px 0 rgba(255,255,255,0.12);
-}
+.cozy-pricing .cp-request-btn:hover { transform: translateY(-1px); }
 
-/* Mobile cards */
+.cozy-pricing .cp-notes {
+  margin-top: 18px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  opacity: 0.8;
+}
+.cozy-pricing .cp-notes p { margin: 0 0 4px; }
+
+/* ---------- phones ---------- */
 .cozy-pricing .cp-cards { display: none; }
+
 @media (max-width: 720px) {
   .cozy-pricing .cp-table-wrap { display: none; }
   .cozy-pricing .cp-cards { display: grid; gap: 16px; }
+
+  /* tier switcher + billing toggle stay reachable while scrolling a card */
+  .cozy-pricing .cp-controls {
+    position: sticky;
+    top: 60px;
+    z-index: 5;
+    margin: 0 -16px 16px;
+    padding: 10px 16px;
+    background: rgba(11,15,26,0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    gap: 8px;
+  }
+  .cozy-pricing .cp-plan-switch:not([hidden]) { display: flex; }
+  .cozy-pricing .cp-toggle,
+  .cozy-pricing .cp-plan-switch { width: 100%; }
+  .cozy-pricing .cp-tbtn,
+  .cozy-pricing .cp-pbtn {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 44px;
+    padding: 8px 6px;
+    font-size: 14px;
+  }
+  
+  /* with JS: one card at a time; without JS: all cards stacked */
+  .cozy-pricing.cp-js .cp-card { display: none; }
+  .cozy-pricing.cp-js .cp-card.cp-card--active { display: block; }
+
   .cozy-pricing .cp-card {
     border: 1px solid var(--border-default);
     border-radius: var(--radius-lg);
-    padding: 22px;
+    padding: 20px 18px;
     background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
-    overflow: hidden;
   }
   .cozy-pricing .cp-chead {
     border-bottom: 1px solid var(--border-default);
-    padding-bottom: 12px;
-    margin-bottom: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 4px;
   }
+  .cozy-pricing .cp-chead .cp-plan { font-size: 20px; }
+  .cozy-pricing .cp-chead .cp-price { font-size: 28px; }
   .cozy-pricing .cp-section {
-    margin-top: 18px;
+    margin-top: 20px;
     font-weight: 700;
     color: var(--brand-primary);
     font-size: 12px;
@@ -221,46 +250,21 @@
   .cozy-pricing .cp-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 0;
+    align-items: baseline;
+    gap: 16px;
+    padding: 11px 0;
     border-top: 1px solid rgba(255,255,255,0.06);
-  }
-  .cozy-pricing .cp-row:first-of-type { border-top: none; }
-  .cozy-pricing .cp-k {
-    flex: 1 1 auto;
-    padding-right: 12px;
-    color: var(--text-secondary);
     font-size: 14px;
   }
+  .cozy-pricing .cp-section + .cp-row { border-top: none; }
+  .cozy-pricing .cp-k { flex: 1 1 55%; color: var(--text-secondary); }
   .cozy-pricing .cp-v {
-    flex: 0 0 auto;
+    flex: 0 1 45%;
     text-align: right;
-    white-space: nowrap;
     color: var(--text-primary);
+    overflow-wrap: break-word;
   }
-  .cozy-pricing .cp-row.cp-long {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-  }
-  .cozy-pricing .cp-row.cp-long .cp-k {
-    padding-right: 0;
-    font-weight: 700;
-    color: var(--text-primary);
-  }
-  .cozy-pricing .cp-row.cp-long .cp-v {
-    text-align: left;
-    white-space: normal;
-    word-break: break-word;
-    hyphens: auto;
-    color: var(--text-secondary);
-  }
-}
-
-/* Narrow desktops: the container is narrower than the 940px minimum, so the
-   table pushed the page sideways between the card breakpoint and ~1,010px. */
-@media (max-width: 1100px) {
-  .cozy-pricing table { min-width: 0; }
-  .cozy-pricing th, .cozy-pricing td { padding: 12px 10px; }
+  .cozy-pricing .cp-row.cp-long { flex-direction: column; gap: 4px; }
+  .cozy-pricing .cp-row.cp-long .cp-k { font-weight: 700; color: var(--text-primary); }
+  .cozy-pricing .cp-row.cp-long .cp-v { text-align: left; color: var(--text-secondary); }
 }
