@@ -225,18 +225,18 @@ regions:
         dates_de: "13.–18. Nov."
         tz: "PST"
         events:
-          - date: "Mon 16 or Tue 17 Nov"
-            date_de: "Mo., 16. oder Di., 17. Nov."
+          - date: "Tue 17 Nov"
+            date_de: "Di., 17. Nov."
             time: "10:00–14:00"
             time_de: "10:00–14:00 Uhr"
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
             title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "San Francisco, venue shared with registered attendees"
-            venue_de: "San Francisco, den genauen Ort erfahren angemeldete Teilnehmende"
+            venue: "WeWork, Boardroom 22A, 44 Montgomery St, San Francisco, CA"
+            map: "https://www.google.com/maps/search/44+Montgomery+St,+San+Francisco,+CA"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: planned
+            status: confirmed
       - city: "Seattle"
         country: "Washington"
         dates: "18–20 Nov"
@@ -250,11 +250,11 @@ regions:
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
             title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "Downtown Seattle, venue shared with registered attendees"
-            venue_de: "Downtown Seattle, den genauen Ort erfahren angemeldete Teilnehmende"
+            venue: "WeWork, Video Boardroom 22F (22nd floor), 1201 3rd Ave, Seattle, WA"
+            map: "https://www.google.com/maps/search/1201+3rd+Ave,+Seattle,+WA"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: planned
+            status: confirmed
       - city: "Austin"
         country: "Texas"
         dates: "20–24 Nov"
@@ -268,11 +268,11 @@ regions:
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
             title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "Downtown Austin, venue shared with registered attendees"
-            venue_de: "Downtown Austin, den genauen Ort erfahren angemeldete Teilnehmende"
+            venue: "WeWork, Boardroom 14E, 600 Congress Ave, Austin, TX"
+            map: "https://www.google.com/maps/search/600+Congress+Ave,+Austin,+TX"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: planned
+            status: confirmed
       - city: "Dallas"
         country: "Texas"
         dates: "24–29 Nov"
@@ -313,11 +313,11 @@ regions:
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
             title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "Downtown DC, venue shared with registered attendees"
-            venue_de: "Downtown DC, den genauen Ort erfahren angemeldete Teilnehmende"
+            venue: "WeWork, Room 5E, 1701 Rhode Island Ave, Washington, DC"
+            map: "https://www.google.com/maps/search/1701+Rhode+Island+Ave,+Washington,+DC"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: planned
+            status: confirmed
       - city: "Boston"
         country: "Massachusetts"
         dates: "8–9 Dec"
@@ -331,11 +331,11 @@ regions:
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
             title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "Venue shared with registered attendees"
-            venue_de: "Den genauen Ort erfahren angemeldete Teilnehmende"
+            venue: "WeWork, Room 15A, 33 Arch St, Boston, MA"
+            map: "https://www.google.com/maps/search/33+Arch+St,+Boston,+MA"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: planned
+            status: confirmed
       - city: "New York"
         country: "New York"
         dates: "9–11 Dec"
@@ -349,8 +349,8 @@ regions:
             kind: workshop
             title: "Cozystack workshop: replace VMware, then run AI and GPUs"
             title_de: "Cozystack-Workshop: VMware ersetzen, dann KI und GPUs betreiben"
-            venue: "Midtown Manhattan, venue shared with registered attendees"
-            venue_de: "Midtown Manhattan, den genauen Ort erfahren angemeldete Teilnehmende"
+            venue: "WeWork, Room 11B, 135 Madison Ave, New York, NY"
+            map: "https://www.google.com/maps/search/135+Madison+Ave,+New+York,+NY"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: planned
+            status: confirmed

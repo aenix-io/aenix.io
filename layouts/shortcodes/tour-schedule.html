@@ -65,7 +65,8 @@
           {{- else }}
           <span class="tour-event__title">{{ $title }}</span>
           {{- end }}
-          {{- with partial "i18n/field.html" (dict "item" . "key" "venue" "de" $de) }}<span class="tour-event__venue">{{ . }}</span>{{ end }}
+          {{- $map := .map }}
+          {{- with partial "i18n/field.html" (dict "item" . "key" "venue" "de" $de) }}<span class="tour-event__venue">{{ . }}{{ with $map }} · <a href="{{ . }}" target="_blank" rel="noopener">Google Maps</a>{{ end }}</span>{{ end }}
         </li>
         {{- end }}
         <li class="tour-event tour-event--open">
