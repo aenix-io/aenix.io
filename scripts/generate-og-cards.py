@@ -277,13 +277,14 @@ def generate_pages():
 
 # Hand-written HTML pages under static/ that people share as links. Their card
 # is rendered like any other page and the tags are written into the file.
+# AenixCon (/con) is not here: its cards come from generate-con-og.py in the
+# event's own identity, and its og:image tags are set by hand.
 STATIC_PAGES = [  # (path under static/, pill, card title)
     ("links/cozystack", "Cozystack", "Cozystack — Free and open-source platform for building clouds"),
     ("links/andrei.kvapil", "Ænix", "Andrei Kvapil — Chief Executive Officer at Ænix"),
     ("links/timur.tukaev", "Ænix", "Timur Tukaev — Chief Operating Officer at Ænix"),
     ("links/cloudfest2026", "CloudFest 2026", "Meet Ænix at CloudFest 2026 — Booth Z22, live demos and architecture discussions"),
     ("links/cloudfest2026/americas", "CloudFest Americas 2026", "Ænix at CloudFest Americas 2026 — Book a meeting with our team"),
-    ("con", "AenixCon 2026", "AenixCon 2026 — The open cloud-native conference, December 10–11, online"),
 ]
 SITE = "https://aenix.io"
 
