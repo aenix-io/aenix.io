@@ -1,26 +1,27 @@
 #!/usr/bin/env python3
-"""Social preview (OG) images, 1200x630, in the style of the blog covers.
+"""Social preview (OG) images, 1200x630, in the brand card template.
 
-Two kinds of image:
+Three kinds of image:
 
+* The site-wide fallback static/img/aenix-social-card.jpg, which is also the
+  front page's card (DEFAULT below).
 * Named cards (CARDS below) for landing pages that set `images:` in their front
-  matter, plus the site-wide fallback static/img/aenix-social-card.jpg.
-* One card per page that has neither `images:` nor `cover_image:`, written to
+  matter.
+* One card per page that has no `images:`, written to
   static/img/og/pages/<key>.jpg, where <key> is the page's path with "/"
-  replaced by "--" ("home" for the front page). layouts/partials/seo/head.html
-  picks that file up by the same key, so no front matter has to change.
+  replaced by "--". layouts/partials/seo/og-image.html picks that file up by
+  the same key, so no front matter has to change. Blog posts get one too: their
+  `cover_image:` stays the cover on the site, the card is only what social
+  networks and messengers show for the link.
 
-Drawing is shared with scripts/generate-blog-covers.py: the same isometric
-scenes, palette, Inter font and Cozystack / Aenix marks.
+Drawing lives in scripts/lib/og_card.py, shared with generate-workshop-og.py.
 
 Run: python3 scripts/generate-og-cards.py            # named cards + default + every page
      python3 scripts/generate-og-cards.py --cards    # named cards and the default only
      python3 scripts/generate-og-cards.py --pages    # per-page cards only (builds the site with hugo)
      python3 scripts/generate-og-cards.py --static   # the shareable static pages only
 """
-import hashlib
 import html as H
-import importlib.util
 import os
 import re
 import shutil
@@ -34,10 +35,15 @@ OUT = os.path.join(ROOT, "static", "img", "og")
 PAGES_OUT = os.path.join(OUT, "pages")
 DEFAULT_CARD = os.path.join(ROOT, "static", "img", "aenix-social-card.jpg")
 
-sys.dont_write_bytecode = True  # importing the covers script must not leave __pycache__ in scripts/
-_spec = importlib.util.spec_from_file_location("covers", os.path.join(os.path.dirname(__file__), "generate-blog-covers.py"))
-covers = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(covers)
+sys.dont_write_bytecode = True  # imports must not leave __pycache__ in scripts/
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "lib"))
+import og_card  # noqa: E402  the brand card template
+
+CHROME = None  # resolved once in main()
+
+# The front page and site-wide fallback card: the hero line of the front page.
+DEFAULT = ("Turnkey cloud platform on Cozystack (CNCF)",
+           "Sell cloud, run your own, or run AI on your own GPUs")
 
 # (filename, eyebrow, title)
 CARDS = [
@@ -117,49 +123,24 @@ CARDS = [
 ]
 
 
-SMALL = {"of", "for", "and", "on", "to", "the", "in", "vs", "a", "an", "by", "&", "und", "für", "von", "mit", "zu", "im", "der", "die", "das"}
-ACRONYMS = {"AI", "ML", "KI", "GPU", "TCO", "IDP", "SI", "MSP", "MSPS", "CTO", "CTOS", "CISO", "CISOS", "VPS", "DORA", "NIS2",
-            "IBM", "AIX", "ROI", "API", "EU", "OSS", "CNCF", "IT", "OT", "SRE", "LLM", "VM", "VMS", "VCF", "VVF", "ISP", "SAAS"}
-
-
-def pill_case(text):
-    """'FOR CTOs & VPs OF ENGINEERING' -> 'For CTOs & VPs of Engineering'."""
-    out = []
-    for i, w in enumerate(text.split()):
-        core = re.sub(r"[^\w]", "", w)
-        if any(c.islower() for c in w) or core.upper() in ACRONYMS or not core:
-            out.append(w)
-        elif i and w.lower() in SMALL:
-            out.append(w.lower())
-        else:
-            out.append(w[:1] + w[1:].lower())
-    return " ".join(out)
-
-
-def seed_of(name):
-    return int(hashlib.sha1(name.encode()).hexdigest()[:8], 16)
+def lang_of(name):
+    return "de" if name.endswith("-de") or name.startswith("de--") else "en"
 
 
 def make(fn, eyebrow, title, out=None):
     out = out or os.path.join(OUT, fn + ".jpg")
-    motif = covers.motif_for(fn, title + " " + eyebrow)
-    covers.render(title, pill_case(eyebrow), motif, out, seed_of(fn), seed_of(fn) % 4)
-    return out
-
-
-DEFAULT_SRC = os.path.join(ROOT, "scripts", "og-src", "aenix-social-banner.png")
+    lang = lang_of(fn)
+    return og_card.render(out, title, eyebrow, og_card.default_footer(lang), lang=lang, chrome=CHROME)
 
 
 def make_default():
-    """Site-wide fallback and front-page card: the brand banner (designed, not
-    generated). Converted from the 1200x630 PNG source to an optimized JPG."""
-    from PIL import Image
-    Image.open(DEFAULT_SRC).convert("RGB").save(DEFAULT_CARD, quality=86, optimize=True, progressive=True)
-    return DEFAULT_CARD
+    """Site-wide fallback and front-page card."""
+    eyebrow, title = DEFAULT
+    return og_card.render(DEFAULT_CARD, title, eyebrow, chrome=CHROME)
 
 
 # --- per-page cards ------------------------------------------------------------------------------
-SECTIONS = {  # first path segment -> (EN label, DE label, motif)
+SECTIONS = {  # first path segment -> (EN label, DE label, motif of the old isometric cards, unused)
     "services": ("Services", "Dienstleistungen", None), "dienstleistungen": ("Services", "Dienstleistungen", None),
     "solutions": ("Solutions", "Lösungen", None), "loesungen": ("Solutions", "Lösungen", None),
     "industries": ("Industries", "Branchen", None), "branchen": ("Industries", "Branchen", None),
@@ -199,15 +180,25 @@ def _meta(html_text, prop):
     return H.unescape(m.group(1)) if m else ""
 
 
-def _split(title, desc):
-    """Title and a short second line: the title's own subtitle, else the first sentence of the description."""
-    head, sub = covers.split_title(title)
-    if sub or not desc:
+FOOTER_MAX = 64  # longer subtitles do not fit the footer line
+
+
+def split_title(title):
+    """'Title — subtitle' / 'Title: subtitle' -> (title, subtitle) when the head can stand alone."""
+    for sep in (" — ", ": "):
+        if sep in title:
+            head, sub = title.split(sep, 1)
+            if len(head) >= 12:
+                return head.strip(), sub.strip()
+    return title, ""
+
+
+def _split(title, lang="en"):
+    """Card title and footer: a short subtitle moves to the footer, a long one stays in the title."""
+    head, sub = split_title(title)
+    if sub and len(sub) <= FOOTER_MAX:
         return head, sub
-    desc = re.split(r"(?<=[.!?])\s", desc.strip(), maxsplit=1)[0]
-    if len(desc) > 120:
-        desc = desc[:120].rsplit(" ", 1)[0].rstrip(",;:—-") + "…"
-    return title, desc
+    return title, og_card.default_footer(lang)
 
 
 def build_site():
@@ -232,28 +223,27 @@ def page_jobs(public):
         og = _meta(text, "og:image")
         rel = "/" + os.path.relpath(root, public).replace(os.sep, "/") + "/"
         rel = "/" if rel == "/./" else rel
-        if not (og.endswith(default_url) or "/img/og/pages/" in og):
+        is_post = 'property="og:type" content="article"' in text  # its og:image may still be the cover
+        if not (og.endswith(default_url) or "/img/og/pages/" in og or is_post):
             continue
-        if rel == "/":  # the front page uses the brand banner (the site default)
+        if rel == "/":  # the front page uses the site default card
             continue
         parts = rel.strip("/").split("/")
         lang = "de" if parts[0] == "de" else "en"
         section = parts[1] if lang == "de" and len(parts) > 1 else parts[0]
-        en_label, de_label, motif = SECTIONS.get(section, ("Ænix Platform", "Ænix Platform", None))
+        en_label, de_label, _motif = SECTIONS.get(section, ("Ænix Platform", "Ænix Platform", None))
         label = de_label if lang == "de" else en_label
         title = _meta(text, "og:title") or "Ænix"
         if section == "topics" and len(parts) > 1:
             title = f"{title} — articles, guides and news"
-        head, sub = _split(title, _meta(text, "og:description"))
-        pill = label if label.startswith("Ænix") else "Ænix · " + label
-        jobs.append((page_key(rel), pill, head, sub, motif))
+        head, footer = _split(title, lang)
+        jobs.append((page_key(rel), label, head, footer, lang))
     return jobs
 
 
 def render_page(job):
-    key, pill, title, sub, motif = job
-    out = os.path.join(PAGES_OUT, key + ".jpg")
-    covers.render(title, pill, motif or covers.motif_for(key, title), out, seed_of(key), seed_of(key) % 4, sub=sub)
+    key, eyebrow, title, footer, lang = job
+    og_card.render(os.path.join(PAGES_OUT, key + ".jpg"), title, eyebrow, footer, lang=lang, chrome=CHROME)
     return key
 
 
@@ -293,8 +283,8 @@ def generate_static_pages():
     os.makedirs(PAGES_OUT, exist_ok=True)
     for path, pill, title in STATIC_PAGES:
         key = page_key(path)
-        out = os.path.join(PAGES_OUT, key + ".jpg")
-        covers.render(title, pill, covers.motif_for(key, title), out, seed_of(key), seed_of(key) % 4)
+        head, footer = _split(title)
+        og_card.render(os.path.join(PAGES_OUT, key + ".jpg"), head, pill, footer, chrome=CHROME)
         html_path = os.path.join(ROOT, "static", path, "index.html")
         text = open(html_path, encoding="utf-8").read()
         text = re.sub(r'\n?<meta (?:property|name)="(?:og:image(?::width|:height)?|og:url|twitter:card|twitter:image)" content="[^"]*">', "", text)
@@ -316,6 +306,8 @@ def generate_static_pages():
 
 
 def main():
+    global CHROME
+    CHROME = og_card.find_chrome()
     args = sys.argv[1:]
     if "--static" in args:
         return generate_static_pages()

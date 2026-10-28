@@ -34,7 +34,7 @@
     "@type": "WebPage",
     "@id": "{{ .Permalink }}"
   },
-  "image": "{{ partial "seo/og-image.html" . | absURL }}",
+  "image": "{{ with .Params.cover_image }}{{ strings.TrimPrefix "/" . | absURL }}{{ else }}{{ partial "seo/og-image.html" . | absURL }}{{ end }}",
   "articleSection": {{ $section }},
   {{- with .Params.series }}
   "isPartOf": { "@type": "CreativeWorkSeries", "name": {{ . }} },
