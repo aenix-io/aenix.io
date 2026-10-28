@@ -1248,6 +1248,10 @@ summary:focus-visible,
   line-height: 1.65;
 }
 .seo-direct-answer p { margin: 0; }
+/* A direct_answer split into several paragraphs (long ones read as one bold
+   wall otherwise) needs the inter-paragraph gap the rule above zeroes out. */
+.seo-direct-answer p + p,
+.answer-clamp__body > p + p { margin-top: 0.9rem; }
 /* Source marks the whole paragraph bold (citation emphasis);
    render it as calm lead text instead of a bold wall. */
 .seo-direct-answer strong {
@@ -1337,9 +1341,10 @@ summary:focus-visible,
 .page-content .faq-item summary h3,
 .faq-item summary h3 {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.45;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.011em;
   color: var(--aenix-text);
 }
 .faq-item summary:hover h3 { color: var(--aenix-primary); }
