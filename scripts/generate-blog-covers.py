@@ -485,9 +485,8 @@ def html(title, eyebrow, motif, seed=0, variant=0, source="legacy", sub=None, ke
     eyebrow = H_.escape(eyebrow)
     pal = PALETTES[seed % len(PALETTES)]
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>
-@font-face {{ font-family: Inter; font-weight: 700; src: url(file://{fonts}/inter-700-latin.woff2); }}
-@font-face {{ font-family: Inter; font-weight: 500; src: url(file://{fonts}/inter-500-latin.woff2); }}
-@font-face {{ font-family: 'JetBrains Mono'; font-weight: 700; src: url(file://{fonts}/jetbrains-mono-700-latin.woff2), url(file://{fonts}/jetbrains-mono-400-latin.woff2); }}
+@font-face {{ font-family: Inter; font-weight: 100 900; src: url(file://{fonts}/inter-var-latin.woff2); }}
+@font-face {{ font-family: 'JetBrains Mono'; font-weight: 100 800; src: url(file://{fonts}/jetbrains-mono-var-latin.woff2); }}
 html,body {{ margin:0; width:{W}px; height:{H}px; overflow:hidden; background:#04082a; }}
 .c {{ position:relative; width:{W}px; height:{H}px; font-family:Inter, sans-serif; color:#fff;
   background:
