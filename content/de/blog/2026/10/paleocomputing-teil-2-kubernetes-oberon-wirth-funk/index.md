@@ -12,7 +12,7 @@ type: "article"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Open Source", "Retrocomputing", "Distributed Systems"]
 language: "de"
 hreflang_en: "/blog/2026/10/kubernetes-over-wirths-radio/"
-related_posts: ["/de/blog/2026/09/paleocomputing-teil-1-wirth-oberon-qemu-kubevirt/"]
+related_posts: ["/de/blog/2026/09/paleocomputing-teil-1-wirth-oberon-qemu-kubevirt/", "/de/blog/2026/10/paleocomputing-teil-3-zwei-adas-pentagon-programmiersprachen/"]
 direct_answer: "**Kube ist eine Kubernetes Control Plane, geschrieben in Niklaus Wirths Oberon und lauffähig auf Oberon-Maschinen, deren Nodes statt über TCP/IP über das nRF24L01+-Funknetz aus Project Oberon kommunizieren.** Sie verwaltet Deployments, ReplicaSets und Pods mit level-triggered Controllern, rollt neue Versionen Pod für Pod aus, speichert ihren Zustand auf der Festplatte, erholt sich vom Ausfall einzelner Nodes und setzt Evictions aus, wenn der gesamte Funkverkehr wegbricht. Jede Nachricht passt in 24 Bytes und ist mit HalfSipHash signiert. Der ganze Cluster, rund 1.400 Zeilen Oberon, läuft in QEMU, in Cozystack als eine einzige Katalogbestellung und in einem Browser-Tab mit sechs Labs, die sich selbst prüfen. Es ist eine Forschungsarbeit darüber, was die Infrastruktur der Vergangenheit hätte sein können und was sie über die von morgen aussagt."
 quick_facts:
   - label: "Sprache und System"
