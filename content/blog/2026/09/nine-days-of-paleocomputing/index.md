@@ -10,7 +10,7 @@ type: "article"
 topics: ["Cozystack", "KubeVirt", "Kubernetes", "Open Source", "CHERI", "Retrocomputing"]
 language: "en"
 series: "Paleocomputing"
-related_posts: ["/blog/2026/10/kubernetes-over-wirths-radio/"]
+related_posts: ["/blog/2026/10/kubernetes-over-wirths-radio/", "/blog/2026/10/two-adas-red-and-green/"]
 ---
 
 

@@ -1003,3 +1003,16 @@ def _(s, rng):
     # The air between them.
     s.airwave(plane, n1); s.airwave(plane, n2); s.airwave(n1, n2)
     s.chip(0.2, 5.0, 0, 1.8, "RISC5")
+
+
+@scene("two-adas-red-and-green")
+def _(s, rng):
+    # The two finalists' manuals, and the scales of the 1979 vote: GREEN won.
+    s.document(-0.2, 3.0, 0.3, 2.0, 2.6, "text", "RED")
+    s.document(0.6, 5.8, 0.2, 2.0, 2.6, "text", "GREEN")
+    s.balance(3.6, 2.8, 0, "Red", "Green", tilt=10)
+    # A process pair running the control plane, with the Kubernetes wheel.
+    s.server(4.6, -0.6, 0, w=1.8, d=1.8, units=3)
+    s.server(6.4, 1.6, 0, w=1.8, d=1.8, units=3)
+    s.kube(5.5, 0.3, 2.4, 0.6)
+    s.chip(4.6, 4.8, 0, 1.6, "1979")
