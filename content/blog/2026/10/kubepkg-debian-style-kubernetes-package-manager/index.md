@@ -356,6 +356,8 @@ The operator issues and renews the webhook's certificate itself. That is on purp
 
 Plenty of clusters never see the internet at all: government, banks, industrial sites, sovereign clouds. For these air-gapped environments kubepkg builds a bundle, a single file holding the signed repository index, the charts of the selected packages and all their dependencies, and every image those packages run.
 
+This isn't a new problem, and there are tools for it already. [Hauler](https://hauler.dev) carries images, charts and files across the gap and serves them on the other side, but what to install and how is left to you. [Zarf](https://zarf.dev) is closer in spirit, but it brings its own package format and its own way of deploying. A kubepkg bundle is a slice of a signed repository: inside the gap it is checked against the index, and from then on packages install the same way they do everywhere else, with dependencies, revisions and rollback.
+
 What follows is a real run on a test cluster. The kubepkg operator in it is cut off from the outside world by a Cilium network policy and can see only the cluster itself, and a mirror registry and a web server for the index run inside the cluster. The bundle is built on a connected machine from the public repository:
 
 ```
