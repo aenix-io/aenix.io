@@ -30,5 +30,5 @@
 <h1 class="sr-only">{{ .Title }}</h1>
 {{ partial "demo-chrome.html" . }}
 <iframe class="idp-demo" src="/idp-app/" title="Developer self-service live demo (Ænix Private Cloud Platform)" allow="clipboard-read; clipboard-write"></iframe>
-<div class="idp-demo__hint">Interactive demo of developer self-service in Ænix Private Cloud Platform — application catalog, topology and the visual template builder — running in your browser on mock data. Customer-facing cloud console: <a href="/demo/">try that demo</a>. <a class="demo-cta" href="/contact/" data-cta="demo">Book a 30-minute guided walkthrough →</a></div>
+<div class="idp-demo__hint demo-hint" id="idp-demo-hint">Interactive demo of developer self-service in Ænix Private Cloud Platform — application catalog, topology and the visual template builder — running in your browser on mock data. Customer-facing cloud console: <a href="/demo/">try that demo</a>. <a class="demo-cta" href="/contact/" data-cta="demo">Book a 30-minute guided walkthrough →</a><button type="button" class="demo-hint__close" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg></button></div>
 {{ end }}

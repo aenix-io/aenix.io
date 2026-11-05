@@ -1,8 +1,9 @@
 {{/*
   Shared chrome for the full-screen live demo pages (/demo/, /idp/):
 
-  a tab hanging from the bottom edge of the site header that collapses the
-  header, so the embedded app gets the whole viewport, and brings it back.
+  - a tab hanging from the bottom edge of the site header that collapses the
+    header, so the embedded app gets the whole viewport, and brings it back;
+  - a close button for the hint bar under the demo.
 
   Include it inside the page's #content, before the iframe. The tab sits in
   its own row, exactly as tall as the tab, instead of hanging over the app:
@@ -11,7 +12,12 @@
   takes the colour of the app's top edge, so the tab still reads as hanging
   from the header, in the app's light and dark themes alike.
 
-  The header always starts expanded.
+  The hint bar needs class `demo-hint`, an id, and a `.demo-hint__close`
+  button.
+
+  The header always starts expanded. A closed hint stays closed for the rest
+  of the browser session (sessionStorage), then comes back: it carries the
+  walkthrough CTA, so it should not disappear for good.
 */}}
 <style>
   /* Sticky would pin the header to the top edge even when it is pulled up by
@@ -38,6 +44,18 @@
   .demo-header-toggle svg { width: 14px; height: 14px; transition: transform var(--duration) var(--ease); }
   .demo-header-toggle[aria-expanded="false"] svg { transform: rotate(180deg); }
 
+  .demo-hint { position: relative; padding-right: 2.75rem !important; }
+  .demo-hint[hidden] { display: none; }
+  .demo-hint__close {
+    position: absolute; top: 50%; right: .5rem; transform: translateY(-50%);
+    display: flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; margin: 0; padding: 0;
+    border: 0; border-radius: var(--radius-sm); background: transparent; color: inherit;
+    cursor: pointer; transition: background-color var(--duration) var(--ease), color var(--duration) var(--ease);
+  }
+  .demo-hint__close:hover { background: rgba(15, 23, 42, .06); color: #0f172a; }
+  .demo-hint__close:focus-visible { outline: 2px solid var(--brand-primary); outline-offset: 1px; }
+  .demo-hint__close svg { width: 14px; height: 14px; }
 
   @media (prefers-reduced-motion: reduce) {
     .site-header, .demo-header-toggle, .demo-header-toggle svg { transition: none; }
@@ -113,7 +131,22 @@
       }
     };
 
-    var init = initStrip;
+    var initHint = function () {
+      document.querySelectorAll(".demo-hint[id]").forEach(function (hint) {
+        var key = "demo-hint-closed:" + hint.id;
+        try { if (sessionStorage.getItem(key)) hint.hidden = true; } catch (e) {}
+        var close = hint.querySelector(".demo-hint__close");
+        if (!close) return;
+        close.addEventListener("click", function () {
+          hint.hidden = true;
+          try { sessionStorage.setItem(key, "1"); } catch (e) {}
+          // Focus would otherwise fall back to <body>.
+          var frame = document.querySelector("#content iframe");
+          if (frame) frame.focus();
+        });
+      });
+    };
+    var init = function () { initStrip(); initHint(); };
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
   })();
 </script>
