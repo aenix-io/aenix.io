@@ -12,6 +12,7 @@
     hero_eyebrow     — small mono line above the title (the cities line)
     hero_title       — plain-text headline (falls back to a from→to arrow title)
     hero_from/to     — the two halves of the arrow title (fallback only)
+    hero_subtitle    — optional second headline line under the title
     hero_tagline     — one human sentence under the title
     hero_chips       — list of short benefit strings (rendered as feature items)
     hero_primary     — {text, href} main CTA (lime)
@@ -69,6 +70,7 @@
           <span class="event-hero__to">{{ .Params.hero_to | default "Cozystack" }}</span>
         </h1>
         {{ end }}
+        {{ with .Params.hero_subtitle }}<p class="ws-hero__subtitle">{{ . }}</p>{{ end }}
         {{ with .Params.hero_tagline }}<p class="event-hero__tagline ws-hero__tagline">{{ . }}</p>{{ end }}
         {{ with .Params.hero_chips }}
         <ul class="ws-hero__features">

@@ -42,7 +42,7 @@ videos:
 - **NVIDIA GTC Berlin** — 20.–22. Oktober 2026, STATION-Berlin. Treffen Sie das Team in der Ausstellung; [Termin buchen](/tour-2026/#register).
 - **Cozystack Tour 2026 — Europa** — kostenlose Praxis-Workshops in Paris, Berlin, Warschau, Kopenhagen, Amsterdam, Mailand, Madrid und London, 19. Oktober bis 6. November 2026. [Für Ihre Stadt anmelden](/workshops/cozystack-tour-2026-europe/).
 - **KubeCon + CloudNativeCon North America** — 9.–12. November 2026, Salt Lake City. [Termin vereinbaren](/tour-2026/#register).
-- **Cozystack Tour 2026 — USA** — kostenlose Praxis-Workshops in sechs US-Städten, November bis Dezember 2026. [Städte ansehen und anmelden](/workshops/cozystack-tour-2026-usa/).
+- **Your AI. Your GPUs. Your Cloud. — USA** — kostenlose Praxis-Workshops in sechs US-Städten, November bis Dezember 2026: weg von VMware und AWS, KI auf eigenen GPUs. [Städte ansehen und anmelden](/workshops/cozystack-tour-2026-usa/).
 - **NVIDIA GTC Washington, DC** — 30. November bis 3. Dezember 2026. [Termin vereinbaren](/tour-2026/#register).
 
 Den vollständigen Zeitplan mit Terminen, Vorträgen und Podcast-Aufnahmen finden Sie auf der [Seite zur Cozystack Tour 2026](/tour-2026/) (Englisch).

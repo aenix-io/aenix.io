@@ -12,7 +12,7 @@ images: ["img/og/og-workshop-en.png?v=2"]
 hide_child_cards: true
 hero_eyebrow: "Ran in Almaty · Bishkek · Astana · Tashkent, August 2026"
 hero_title: "Migrating off VMware to open source: a hands-on workshop"
-hero_tagline: "No theory for theory's sake: attendees migrated a real virtual machine off VMware with their own hands, in a live environment, and left with a step-by-step migration plan. The August 2026 tour is over; the same workshop now runs in Europe and the United States."
+hero_tagline: "No theory for theory's sake: attendees migrated a real virtual machine off VMware with their own hands, in a live environment, and left with a step-by-step migration plan. The August 2026 tour is over; the same workshop now runs in Europe, and a new program for SaaS teams runs in the United States."
 hero_chips:
   - "Free of charge"
   - "Small groups"
@@ -87,7 +87,7 @@ cities:
     note: "Local partner in Astana — GoHost.kz."
 final_cta:
   heading: "Migrating off VMware to open source: a hands-on workshop"
-  text: "The August 2026 tour has finished. The same hands-on workshop runs across Europe in October–November 2026 and in the United States in November–December 2026."
+  text: "The August 2026 tour has finished. The same hands-on workshop runs across Europe in October–November 2026, and a new program — Your AI. Your GPUs. Your Cloud. — runs in the United States in November–December 2026."
   button: "See the Europe tour"
   href: "/workshops/cozystack-tour-2026-europe/"
 direct_answer: |
@@ -111,7 +111,7 @@ quick_facts:
 
 faq:
   - q: "How much does it cost?"
-    a: "Attendance was free. The August 2026 tour has finished, so there is nothing to register for on this page. The same workshop runs in English across [Europe in October–November 2026](/workshops/cozystack-tour-2026-europe/) and the [United States in November–December 2026](/workshops/cozystack-tour-2026-usa/). Seats are deliberately limited: everyone gets real time at the terminal and an assistant's attention when needed."
+    a: "Attendance was free. The August 2026 tour has finished, so there is nothing to register for on this page. The same workshop runs in English across [Europe in October–November 2026](/workshops/cozystack-tour-2026-europe/); in the [United States in November–December 2026](/workshops/cozystack-tour-2026-usa/) a new program adds moving off AWS and running AI on your own GPUs. Seats are deliberately limited: everyone gets real time at the terminal and an assistant's attention when needed."
   - q: "I run VMware but don't know Kubernetes. Will I keep up?"
     a: "Yes. The workshop is built for exactly your profile: everything is explained through VMware concepts you already know, and assistants are there whenever something doesn't work. Your experience is the foundation we build on."
   - q: "What language is the workshop in?"
@@ -288,7 +288,7 @@ faq:
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
 <h2 class="ws-h2 ws-h2--light" id="ws-next-h">The August 2026 tour has finished</h2>
-<p class="ws-register__lead">It ran in Almaty, Bishkek, Astana and Tashkent. The same hands-on workshop, held in English, now travels across Europe in October–November 2026 and the United States in November–December 2026 — registration is open on those pages.</p>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/workshops/cozystack-tour-2026-europe/">Cozystack Tour 2026 Europe</a> <a class="cta-secondary" href="/workshops/cozystack-tour-2026-usa/">Cozystack Tour 2026 USA</a></div>
+<p class="ws-register__lead">It ran in Almaty, Bishkek, Astana and Tashkent. The same hands-on workshop, held in English, now travels across Europe in October–November 2026, and a new program for SaaS teams — off VMware and AWS, AI on your own GPUs — runs in the United States in November–December 2026. Registration is open on those pages.</p>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/workshops/cozystack-tour-2026-europe/">Cozystack Tour 2026 Europe</a> <a class="cta-secondary" href="/workshops/cozystack-tour-2026-usa/">Your AI. Your GPUs. Your Cloud. (USA)</a></div>
 </div>
 </section>
