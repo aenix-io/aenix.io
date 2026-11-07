@@ -156,7 +156,7 @@ direct_answer: |
 
 quick_facts:
   - label: "Format"
-    value: "In person, about six hours with lunch, five hours of it hands-on in your own environment; one live demo"
+    value: "In person, four hours with lunch, most of it hands-on in your own environment; one live demo"
   - label: "Group size"
     value: "Six seats per city, so the host works with each of you"
   - label: "Cities"
