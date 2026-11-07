@@ -1,72 +1,84 @@
 ---
-title: "Cozystack Tour 2026 USA: VMware migration workshop"
-description: "A free hands-on workshop across the U.S.: migrate a real VM off VMware to an open platform, and see the same cloud run AI and GPUs. Six cities, Nov–Dec 2026."
+title: "Your AI. Your GPUs. Your Cloud. — a hands-on workshop in six US cities"
+seo_title: "Your AI. Your GPUs. Your Cloud. Hands-on workshop, USA"
+description: "A small-group, hands-on day for SaaS and product companies: move a legacy VM off VMware, move storage, database and an AI feature off AWS onto your own GPU."
 language: "en"
 # The German version was withdrawn; its URL redirects here.
 aliases: ["/de/workshops/cozystack-tour-2026-usa/"]
 layout: "event-landing"
 region_slug: "us"
-primary_keyword: "vmware migration workshop usa"
-secondary_keywords: ["vmware alternative usa", "vmware exit training", "open source virtualization workshop", "cozystack training", "gpu ai platform workshop", "sovereign cloud usa"]
+primary_keyword: "cloud repatriation workshop"
+secondary_keywords: ["aws exit", "vmware exit training", "private cloud workshop", "private ai platform", "gpu sharing kubernetes", "hybrid cloud bursting", "cozystack training"]
 images: ["img/og/og-workshop-usa-en.png"]
 hide_child_cards: true
-hero_eyebrow: "United States · November–December 2026 · six cities"
-hero_title: "Build your own cloud: replace VMware — then run AI and GPUs on it"
-hero_tagline: "One day, mostly at the keyboard. You migrate a real virtual machine off VMware with your own hands, in a live environment — and you see how the very same platform serves AI and GPUs. You leave with a working migration plan — and see how the cloud you just built also becomes your AI/GPU platform, on hardware you own."
+hero_eyebrow: "United States · November–December 2026 · six seats per city"
+hero_title: "Your AI. Your GPUs. Your Cloud."
+hero_subtitle: "Build your own private cloud. Run AI on your GPUs. Move beyond VMware and AWS."
+hero_tagline: "One day at the keyboard, in a group of six. You take a real SaaS stack — a legacy VM on VMware, a database, file storage and an AI feature on AWS — and move all of it onto a cloud you own. You leave with every piece running, a GPU shared safely between teams, and the numbers for your CFO."
 hero_chips:
+  - "Six seats per city"
   - "Free with registration"
-  - "Seats are limited"
-  - "In person or online"
+  - "Built for SaaS and product teams"
 hero_primary: { text: "Register for your city", href: "#register" }
 hero_secondary: { text: "See the program", href: "#program" }
 speaker_photo: "images/workshops/timur-tukaev.png"
 inshort_title: "About the workshop"
 quick_facts_style: "rows"
 event:
-  name: "Cozystack Tour 2026 (USA) — build your own cloud, a hands-on workshop"
+  name: "Your AI. Your GPUs. Your Cloud. — a hands-on workshop (USA)"
   language: "en"
   price: 0
 agenda:
   - time: "00:00"
-    title: "How we got here"
-    tag: "talk"
+    title: "Once upon a time on Monday, 9:02: three emails"
+    tag: "story"
     kind: "talk"
-    body: "What happened to VMware's prices and support — and what it means for your infrastructure. The only slide block of the day."
+    body: "A VMware renewal quote 3.4× last year's. An AWS bill growing faster than revenue. A bank customer who wants proof its documents never reach a third-party AI. You are the new VP of Infrastructure at a SaaS company — by the end of the day you answer all three."
   - time: "00:15"
-    title: "Meeting the platform"
+    title: "Your cloud in twenty minutes"
     tag: "hands-on"
     kind: "hands"
-    body: "You open your personal working environment and find everything familiar in it: storage, networking, live migration, monitoring."
-  - time: "00:40"
-    title: "Migrating a virtual machine"
+    body: "Open your own tenant, see quotas and the service catalog, and order a managed Postgres, an object storage bucket and a Kubernetes cluster — everything AWS sells you piece by piece."
+  - time: "00:35"
+    title: "Off VMware: the legacy billing server"
     tag: "hands-on"
     kind: "hands"
-    body: "You export a machine straight from a running VMware server, convert it, and start it on the new platform. It answers requests — your first migrated VM."
-  - time: "01:30"
-    title: "Building the infrastructure around it"
+    body: "The CentOS box nobody dares to touch. Export it from VMware, convert it, and start it on the new platform — it answers requests again. While it converts, see how to move a whole fleet straight from vCenter."
+  - time: "01:45"
+    title: "Off AWS: files and the database"
     tag: "hands-on"
     kind: "hands"
-    body: "A database in a couple of minutes, a service published to the network, monitoring and backups. At the end, the whole setup comes back up from a single file."
+    body: "Mirror S3 into your own bucket, restore the RDS dump into managed Postgres, and point the billing server at it. Then look at what the egress line on your AWS bill has been costing you."
   - time: "02:20"
-    title: "The same cloud, now for AI and GPUs"
+    title: "Lunch"
+    tag: "45 min"
+    kind: "social"
+    body: "Food and conversation with the group and the host."
+  - time: "03:05"
+    title: "AI on your own GPU"
+    tag: "hands-on"
+    kind: "hands"
+    body: "Run a model on your own slice of a shared GPU, then switch the app's AI feature from a third-party API to it — one line of configuration. Cut the app off from the internet and watch it keep working: the proof your biggest customer asked for."
+  - time: "04:05"
+    title: "One GPU, many teams"
+    tag: "hands-on"
+    kind: "hands"
+    body: "Ask for more GPU memory than your slice allows and see the limit hold while your neighbours keep running. When software slicing is enough — and when you need MIG or vGPU."
+  - time: "04:20"
+    title: "A dedicated instance for your biggest customer"
+    tag: "hands-on"
+    kind: "hands"
+    body: "Your bank customer wants its own isolated copy. Create a nested tenant with its own quota and network and deploy the same stack into it — in minutes, ready to sell as a premium tier."
+  - time: "04:45"
+    title: "Month-end peak: borrow the public cloud"
     tag: "live demo"
     kind: "talk"
-    body: "A short live demo, not a hands-on lab: the same platform turns GPUs into tenant clusters and serves a model behind an inference endpoint. This is where a VMware replacement becomes an AI/GPU platform — on infrastructure you own."
-  - time: "02:45"
-    title: "An honest conversation about limitations"
-    tag: "discussion"
+    body: "Load jumps eightfold. The platform orders servers in Azure, joins them over an encrypted mesh, runs the peak there and gives them back. Own the baseline, rent the spike."
+  - time: "05:15"
+    title: "The slide for your CFO"
+    tag: "hands-on"
     kind: "discussion"
-    body: "What will not move one-to-one, and who should not migrate. Tell us about your hardest machine — and get a straight answer."
-  - time: "03:05"
-    title: "A migration plan for your infrastructure"
-    tag: "talk"
-    kind: "talk"
-    body: "Where to start at home: the first non-critical workload, the stages of the move, and the support you get after the workshop."
-  - time: "03:30"
-    title: "Questions and conversation"
-    tag: "30 min"
-    kind: "social"
-    body: "Open conversation over food and drinks. The speaker stays in the room — bring your own cases."
+    body: "Before and after on one page: VMware renewal, the AWS bill line by line, AI tokens — against your own cloud. Use our numbers or your company's, and leave with a pilot plan."
 cities:
   - city: "San Francisco Bay Area"
     country: "United States"
@@ -135,62 +147,60 @@ cities:
     form: "https://webforms.pipedrive.com/f/64HTdDC6aWdgBXfuCLKcSCSMJfpWNlotYXcZN6OBugFfxBrxk9D5esgw7M4RxcqTar"
     href: "#register"
 final_cta:
-  heading: "Replace VMware — and run AI/GPU on the same cloud"
-  text: "Six U.S. cities, November to December 2026. Pick yours and register — in person or online. Attendance is free; seats are limited."
+  heading: "Own the baseline. Rent the spike. Keep your data."
+  text: "Six seats per city. Pick yours and register."
   button: "Register for your city"
   href: "#register"
 direct_answer: |
-  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. In late 2026 it runs across six U.S. cities — the San Francisco Bay Area, Seattle, Austin, Washington, DC, Boston, and New York. In one day, you migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform hosted by the CNCF — with your own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. Then a short live demo shows the same platform running AI and GPUs, so a VMware replacement doubles as an AI/GPU platform on infrastructure you own. The workshop is led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. You can attend in person or online, and afterwards every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam. Attendance is free with registration; seats are limited.**
+  **Your AI. Your GPUs. Your Cloud. is a hands-on workshop for SaaS and product companies that pay too much for VMware and AWS and want AI features without sending customer data to third parties. In one day and in a group of six, you move a realistic SaaS stack onto Cozystack — an open cloud platform hosted by the CNCF: a legacy virtual machine off VMware, file storage and a Postgres database off AWS, and an AI feature off a third-party API onto a model running on your own share of a GPU. You also create an isolated dedicated instance for a large customer, see the platform borrow servers from Azure for a month-end peak and give them back, and build a before-and-after cost comparison for your CFO. The workshop is led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. Afterwards every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home labs, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam.**
 
 quick_facts:
   - label: "Format"
-    value: "An in-person or online workshop, about four hours: roughly three hours of hands-on practice, plus a short AI/GPU live demo and open conversation"
+    value: "In person, about six hours with lunch, five hours of it hands-on in your own environment; one live demo"
+  - label: "Group size"
+    value: "Six seats per city, so the host works with each of you"
   - label: "Cities"
     value: "San Francisco Bay Area, Seattle, Austin, Washington, DC, Boston, New York — November–December 2026"
   - label: "Price"
-    value: "Free with registration; seats are limited"
+    value: "Free with registration"
   - label: "Language"
     value: "English"
   - label: "Who it's for"
-    value: "VMware administrators, sysadmins, infrastructure leads, technology executives, DevOps and platform engineers"
+    value: "CTOs, VPs of Engineering and Infrastructure, platform and DevOps leads at SaaS and product companies of 50–500 people"
   - label: "After the workshop"
-    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs with a practice badge, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam"
+    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam"
   - label: "Host"
     value: "Timur Tukaev — Cozystack maintainer, Ænix co-founder"
 
 faq:
-  - q: "How much does it cost?"
-    a: "Nothing — attendance is free with registration. Seats are deliberately limited so everyone gets real time at the terminal and an assistant's attention when needed."
-  - q: "Can I attend online instead of in person?"
-    a: "Yes. Every city has an online option — just choose 'Online' in the registration form. You get the same personal working environment and can do the hands-on labs from your own desk."
-  - q: "I run VMware but don't know Kubernetes. Will I keep up?"
-    a: "Yes. The workshop is built for exactly your profile: everything is explained through VMware concepts you already know, and assistants are there whenever something doesn't work. Your experience is the foundation we build on."
-  - q: "Is the AI/GPU part hands-on too?"
-    a: "No — that part is a short live demo. You'll see the same platform turn GPUs into tenant clusters and serve a model behind an inference endpoint, but the hands-on time is spent on the VMware migration. The point is to show that the cloud you build can also be your AI/GPU platform."
-  - q: "What language is the workshop in?"
-    a: "English. Commands and materials are in English too."
-  - q: "What should I bring?"
-    a: "A laptop with a browser — that's all. Your working environment is prepared in advance; there is nothing to install."
+  - q: "We are mostly on AWS, not VMware. Is this for us?"
+    a: "Yes. VMware is one block of the day; the larger part is moving storage, the database, the application and its AI feature off AWS — and keeping the public cloud for the peaks where it makes sense."
+  - q: "Do we have to leave the public cloud completely?"
+    a: "No. The day ends with a hybrid setup on purpose: you own the steady baseline and borrow cloud servers only for peaks, automatically."
+  - q: "Is the AI part hands-on?"
+    a: "Yes. Every participant runs a model on their own slice of a real GPU and switches an application's AI feature to it. Only the cloud-bursting part is a live demo."
+  - q: "Why only six seats?"
+    a: "So the host can work with each person on their own case, and so the day ends with a plan that fits your company rather than a generic one."
+  - q: "Do I need to know Kubernetes?"
+    a: "It helps, but it is not required. Every step comes with exact commands, and the host is in the room."
+  - q: "Which GPUs and sharing modes do you cover?"
+    a: "On the day: software GPU slicing (HAMi) on an NVIDIA card. We also explain when to choose MIG hardware partitions or NVIDIA vGPU, which the platform supports and which require specific GPUs or an NVIDIA license."
   - q: "Is this a sales presentation?"
-    a: "No. It is training: you spend most of the time working with your hands, and the program includes an honest conversation about what the platform cannot do and who should not migrate. No contracts, no pressure."
-  - q: "What exactly will I do with my own hands?"
-    a: "Move a virtual machine off a running VMware server, deploy a database, publish a service to the network, see how monitoring and backups work — and, at the end, bring the whole setup back up from a single file."
+    a: "No. It is training: almost all of it is hands-on, and we say plainly what the platform does not do and who should not move."
+  - q: "Can I bring a colleague?"
+    a: "Yes — ideally an engineer and a decision-maker together: one leaves with the skills, the other with the numbers."
+  - q: "What should I bring?"
+    a: "A laptop with a browser and SSH. Your environment is prepared in advance."
   - q: "What happens after the workshop?"
-    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. You can then take the free Ænix Certification for Cozystack — Fundamentals exam (60 questions, 90 minutes, in English); the certificate comes from passing the exam. Completing the labs earns a separate practice badge. The certification study materials are in English, with a Russian version at /ru/certification/."
-  - q: "We run Oracle, SAP, or specially licensed Windows. Will it migrate?"
-    a: "Maybe not — and we will say so directly. Vendor licensing restrictions are one of the topics of the honest-limitations conversation. Bring your hardest case and get a straight answer."
-  - q: "Can I bring my manager or a colleague?"
-    a: "Please do. The workshop works best in pairs — an engineer plus a manager: one leaves with hands-on experience, the other with a plan."
-  - q: "Can you send an official invitation letter for my employer?"
-    a: "Yes. On request after registration, we will send an invitation letter addressed to your company, so justifying a day out of the office is easy."
+    a: "Your test environment stays with you for another 30 days, you receive take-home labs, and you join a chat where Cozystack maintainers answer questions. You can then take the free Ænix Certification for Cozystack — Fundamentals exam."
 ---
 
-<section class="ws-section ws-story" aria-labelledby="ws-vmware-h">
+<section class="ws-section ws-story" aria-labelledby="ws-why-h">
 <div class="ws-wrap ws-story__row">
 <div class="ws-story__text">
-<h2 class="ws-h2" id="ws-vmware-h">What is happening to VMware</h2>
-<p>After Broadcom bought VMware, the familiar model ended: perpetual licences are no longer sold, only subscriptions remain, and renewal bills have grown severalfold — not by percentages, but by multiples. Support for vSphere&nbsp;7 ended in the fall of 2025, so "leaving everything as is" stopped being a free option too.</p>
-<p>Meanwhile, your infrastructure works, your team knows it, and nobody wants to break it. The real question sounds different: what can replace VMware without losing your data, your people, or your control — and without ending up dependent on the next vendor.</p>
+<h2 class="ws-h2" id="ws-why-h">Three bills that keep growing</h2>
+<p>Broadcom moved VMware to subscriptions and renewals grew by multiples. The AWS bill grows faster than revenue, and the board is asking about gross margin. And the AI feature you shipped in a month now shows up in every enterprise security questionnaire: where do our documents go?</p>
+<p>None of these is solved by switching one vendor for another. They are solved by owning the steady part of your infrastructure — and renting only what you really need, when you need it.</p>
 </div>
 <div class="ws-story__visual ws-story__visual--legacy" aria-hidden="true">
 <div class="ws-lockin">
@@ -200,19 +210,19 @@ faq:
 </div>
 <div class="ws-wrap ws-story__row ws-story__row--reverse">
 <div class="ws-story__text">
-<h2 class="ws-h2" id="ws-cozy-h">Where to migrate: meet Cozystack</h2>
-<p>Cozystack is an open virtualization platform built as a VMware replacement: virtual machines, networking, storage, monitoring, and backups in one system. The platform is free, its code is open, and the project is hosted by the CNCF — the same foundation that stewards Kubernetes.</p>
-<p>You don't have to take this on faith: the entire workshop runs inside Cozystack. You will work with the platform hands-on and decide for yourself whether it fits.</p>
+<h2 class="ws-h2" id="ws-cozy-h">One platform for the whole stack: Cozystack</h2>
+<p>Cozystack is an open cloud platform: virtual machines, Kubernetes clusters, managed databases, object storage, GPUs and monitoring in one system, with tenants and quotas like a public cloud. The code is open, and the project is hosted by the CNCF — the foundation that stewards Kubernetes.</p>
+<p>The whole workshop runs inside Cozystack, so you judge it by using it.</p>
 </div>
 <div class="ws-story__visual ws-story__visual--platform">
 <div class="ws-platform">
 <div class="ws-platform__head">{{< cozy-mark >}}</div>
 <ul class="ws-platform__layers">
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>Virtual machines</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v2.5M12 10l-6 6.5M12 10l6 6.5"/></svg></span>Networking</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12c0 1.66 3.13 3 7 3s7-1.34 7-3"/></svg></span>Storage</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2.5-6 4.5 12 2.5-6h4.5"/></svg></span>Monitoring</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/></svg></span>Backups</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="vm" >}}</span>Virtual machines</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="stack" >}}</span>Kubernetes clusters</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="server" >}}</span>Managed Postgres and object storage</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="layers" >}}</span>Shared GPUs</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="cloud" >}}</span>Burst to the public cloud</li>
 </ul>
 </div>
 </div>
@@ -223,18 +233,18 @@ faq:
 <section class="ws-section ws-story" aria-labelledby="ws-ai-h">
 <div class="ws-wrap ws-story__row">
 <div class="ws-story__text">
-<h2 class="ws-h2" id="ws-ai-h">The same cloud is also your AI/GPU platform</h2>
-<p>Here is the part most VMware replacements leave out. Once your machines run on an open platform, the same platform can carve up the GPUs you own into isolated tenant clusters, and serve a model behind a plain inference endpoint — the building blocks of an AI/GPU cloud, without a second stack to learn or a second vendor to sign with.</p>
-<p>We won't build this with our hands at the workshop — it's a short live demo. The point is simple: the cloud you leave with isn't only a way off VMware — it's the foundation for the AI and GPU work your organization is likely planning. You own the hardware; you own the AI platform on top of it.</p>
+<h2 class="ws-h2" id="ws-ai-h">AI that stays inside</h2>
+<p>Most AI features call a third-party API, so customer data leaves your infrastructure with every request and the bill grows with every customer. At the workshop you move that feature onto a model running on your own share of a GPU. The application code does not change — only the address of the API.</p>
+<p>One GPU serves the whole group: each participant gets a slice with a hard memory limit, and nobody can take a neighbour's share. You will try to break that limit yourself.</p>
 </div>
 <div class="ws-story__visual ws-story__visual--platform">
 <div class="ws-platform">
 <div class="ws-platform__head">{{< cozy-mark >}}</div>
 <ul class="ws-platform__layers">
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9zM4 10h-1M4 14h-1M22 10h-1M22 14h-1M10 4v-1M14 4v-1M10 22v-1M14 22v-1"/></svg></span>GPUs, pooled and shared</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5"/><rect x="3" y="13" width="7" height="7" rx="1.5"/><rect x="14" y="13" width="7" height="7" rx="1.5"/></svg></span>Isolated tenant clusters</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="2.5"/></svg></span>Inference endpoint</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v6c0 4-3.5 7-8 8-4.5-1-8-4-8-8V7l8-4Z"/></svg></span>On hardware you own</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="layers" >}}</span>One GPU, sliced between teams</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="stack" >}}</span>Your model, your endpoint</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="shield" >}}</span>No data leaves the platform</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="billing" >}}</span>No per-token bill</li>
 </ul>
 </div>
 </div>
@@ -244,7 +254,7 @@ faq:
 <section class="ws-section ws-agenda" id="program" aria-labelledby="ws-agenda-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="ws-agenda-h">What you will do</h2>
-<p class="ws-lead">No three-hour slide decks. Every participant gets a personal working environment on a real cluster, and that is where you spend almost all of the time.</p>
+<p class="ws-lead">One storyline from start to finish: a SaaS company, its stack, and the day you move it onto your own cloud. Every participant works in a personal environment on a real cluster.</p>
 {{< workshop-agenda >}}
 </div>
 </section>
@@ -256,28 +266,28 @@ faq:
 <div class="ws-outcomes__grid">
 <article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">01</span>
-<span class="ws-outcome__icon">{{< ws-icon name="vm" >}}</span>
-<p class="ws-outcome__text"><strong>A virtual machine you migrated yourself</strong> — the first practical step of your migration.</p>
+<span class="ws-outcome__icon">{{< ws-icon name="cloud" >}}</span>
+<p class="ws-outcome__text"><strong>A whole SaaS stack you moved yourself</strong> — VM, database, storage, application and its AI feature, running on one platform.</p>
 </article>
 <article class="ws-outcome">
 <span class="ws-outcome__num">02</span>
-<span class="ws-outcome__icon">{{< ws-icon name="plan" >}}</span>
-<p class="ws-outcome__text"><strong>A step-by-step plan</strong>: where to start, what to move first, and how to split the move into stages.</p>
+<span class="ws-outcome__icon">{{< ws-icon name="layers" >}}</span>
+<p class="ws-outcome__text"><strong>A private AI setup that works</strong>: a model on a shared GPU, with limits that hold.</p>
 </article>
 <article class="ws-outcome">
 <span class="ws-outcome__num">03</span>
-<span class="ws-outcome__icon">{{< ws-icon name="clarity" >}}</span>
-<p class="ws-outcome__text"><strong>Clarity about VMware</strong>: what will migrate, what won't, and when staying is the wiser choice.</p>
+<span class="ws-outcome__icon">{{< ws-icon name="billing" >}}</span>
+<p class="ws-outcome__text"><strong>A before-and-after cost page</strong> for your CFO, on your own numbers if you bring them.</p>
 </article>
 <article class="ws-outcome">
 <span class="ws-outcome__num">04</span>
-<span class="ws-outcome__icon">{{< ws-icon name="skill" >}}</span>
-<p class="ws-outcome__text"><strong>Working skills with an open platform</strong> — plus a first look at pooling GPUs and serving inference on the same cloud.</p>
+<span class="ws-outcome__icon">{{< ws-icon name="shield" >}}</span>
+<p class="ws-outcome__text"><strong>Answers for security questionnaires</strong>: isolated tenants, dedicated customer instances, AI with no outbound traffic.</p>
 </article>
 <article class="ws-outcome">
 <span class="ws-outcome__num">05</span>
-<span class="ws-outcome__icon">{{< ws-icon name="kit" >}}</span>
-<p class="ws-outcome__text"><strong>Materials and cheat sheets</strong> to work with at home — plus a month of support after the workshop.</p>
+<span class="ws-outcome__icon">{{< ws-icon name="plan" >}}</span>
+<p class="ws-outcome__text"><strong>A pilot plan</strong>: what to move first, what to keep in the public cloud, and a month of support afterwards.</p>
 </article>
 </div>
 <div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Register for your city</a></div>
@@ -289,24 +299,24 @@ faq:
 <h2 class="ws-h2" id="ws-personas-h">Who should come</h2>
 <div class="ws-personas__grid">
 <article class="ws-persona">
-<span class="ws-persona__icon">{{< ws-icon name="admin" >}}</span>
-<h3 class="ws-persona__title">VMware administrator / sysadmin</h3>
-<ul><li>Everything is explained through concepts you already know — no Kubernetes required.</li><li>You migrate a machine yourself and take the working cheat sheet home.</li><li>A test environment and a maintainer chat for another month afterwards.</li></ul>
+<span class="ws-persona__icon">{{< ws-icon name="cto" >}}</span>
+<h3 class="ws-persona__title">CTO / VP of Engineering</h3>
+<ul><li>Infrastructure cost as a gross-margin lever, in numbers.</li><li>An AI roadmap that passes enterprise security reviews.</li><li>Open code and no single-vendor dependency.</li></ul>
 </article>
 <article class="ws-persona">
 <span class="ws-persona__icon">{{< ws-icon name="lead" >}}</span>
-<h3 class="ws-persona__title">Infrastructure lead</h3>
-<ul><li>The full migration picture, including the limitations — we state them first.</li><li>A pilot plan tied to your renewal date.</li><li>Come together with one of your engineers: one sees the "how", the other decides the "when".</li></ul>
-</article>
-<article class="ws-persona">
-<span class="ws-persona__icon">{{< ws-icon name="cto" >}}</span>
-<h3 class="ws-persona__title">Technology executive</h3>
-<ul><li>The economics of the move, without marketing promises.</li><li>Straight answers about risk: open code, independent support, no single-vendor dependency.</li><li>One platform that both replaces VMware and hosts your AI/GPU roadmap.</li></ul>
+<h3 class="ws-persona__title">VP / Head of Infrastructure</h3>
+<ul><li>The full move — VMware, AWS and AI — in one day, limits stated first.</li><li>A hybrid model: own the baseline, rent the peaks.</li><li>A pilot plan tied to your renewal dates.</li></ul>
 </article>
 <article class="ws-persona">
 <span class="ws-persona__icon">{{< ws-icon name="devops" >}}</span>
-<h3 class="ws-persona__title">DevOps / platform engineer</h3>
-<ul><li>Virtual machines and containers in one system, managed as code.</li><li>Databases, storage, and monitoring — built in, no manual assembly.</li><li>A path to GPU tenancy and inference on the same cluster.</li></ul>
+<h3 class="ws-persona__title">Platform / DevOps lead</h3>
+<ul><li>VMs, Kubernetes, databases and GPUs managed as code in one system.</li><li>GPU sharing with HAMi, and when MIG or vGPU is worth it.</li><li>Tenants and dedicated customer instances without a new AWS account each time.</li></ul>
+</article>
+<article class="ws-persona">
+<span class="ws-persona__icon">{{< ws-icon name="growth" >}}</span>
+<h3 class="ws-persona__title">Founder of a growing SaaS</h3>
+<ul><li>What it really takes to run your own cloud at your size.</li><li>How to offer dedicated, compliant instances to large customers.</li><li>Bring your engineer: one sees the "how", the other decides the "when".</li></ul>
 </article>
 </div>
 </div>
@@ -355,7 +365,7 @@ faq:
 <section class="ws-section ws-cities-sec" id="cities" aria-labelledby="ws-cities-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="ws-cities-h">Cities and dates</h2>
-<p class="ws-lead">The program is the same in every city. Pick the one that suits you — then register in person or online below.</p>
+<p class="ws-lead">The program is the same in every city. Pick the one that suits you and register below.</p>
 {{< workshop-cities >}}
 </div>
 </section>
@@ -364,7 +374,7 @@ faq:
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
 <h2 class="ws-h2 ws-h2--light" id="ws-register-h">Register for your city</h2>
-<p class="ws-register__lead">Choose your city, then register for the workshop — in person or online. Attendance is free; seats are limited.</p>
+<p class="ws-register__lead">Six seats per city. Choose yours and register.</p>
 {{< workshop-city-forms >}}
 </div>
 </section>
