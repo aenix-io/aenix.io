@@ -900,6 +900,7 @@ a.tour-event__title:hover { color: var(--ws-blue); text-decoration: underline; }
   grid-template-columns: 4.75rem 1.75rem 1fr;
   align-items: stretch;
 }
+.ws-timeline--untimed .ws-timeline__item { grid-template-columns: 1.75rem 1fr; }
 .ws-timeline__time {
   padding-top: 1.35rem;
   font-family: var(--font-mono, monospace);
