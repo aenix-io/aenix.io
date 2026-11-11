@@ -1,0 +1,152 @@
+{{/*
+  Shared chrome for the full-screen live demo pages (/demo/, /idp/):
+
+  - a tab hanging from the bottom edge of the site header that collapses the
+    header, so the embedded app gets the whole viewport, and brings it back;
+  - a close button for the hint bar under the demo.
+
+  Include it inside the page's #content, before the iframe. The tab sits in
+  its own row, exactly as tall as the tab, instead of hanging over the app:
+  the demo's top bar has controls under the centre at most widths (measured
+  from 360 to 1280px), and a tab on top of them would block clicks. The row
+  takes the colour of the app's top edge, so the tab still reads as hanging
+  from the header, in the app's light and dark themes alike.
+
+  The hint bar needs class `demo-hint`, an id, and a `.demo-hint__close`
+  button.
+
+  The header always starts expanded. A closed hint stays closed for the rest
+  of the browser session (sessionStorage), then comes back: it carries the
+  walkthrough CTA, so it should not disappear for good.
+*/}}
+<style>
+  /* Sticky would pin the header to the top edge even when it is pulled up by
+     a negative margin; the page does not scroll here, so it is not needed. */
+  .site-header { position: relative; transition: margin-top var(--duration) var(--ease); }
+  /* The mobile menu button is fixed and lives outside <header>; it goes with the header. */
+  .demo-header-collapsed .mobile-menu-toggle { visibility: hidden; }
+  .demo-header-toggle-row { position: relative; flex: 0 0 auto; height: 20px; background: var(--demo-strip-bg, #fff); }
+  .demo-header-toggle {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    display: flex; align-items: center; justify-content: center;
+    width: 56px; height: 20px; margin: 0; padding: 0 0 2px;
+    border: 0; border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    background: var(--bg-main); color: var(--text-secondary);
+    cursor: pointer; transition: color var(--duration) var(--ease);
+  }
+  /* Concave shoulders, so the tab reads as part of the header: \__^__/ */
+  .demo-header-toggle::before,
+  .demo-header-toggle::after { content: ""; position: absolute; top: 0; width: var(--radius-sm); height: var(--radius-sm); }
+  .demo-header-toggle::before { right: 100%; background: radial-gradient(circle at 0 100%, transparent calc(var(--radius-sm) - .5px), var(--bg-main) var(--radius-sm)); }
+  .demo-header-toggle::after { left: 100%; background: radial-gradient(circle at 100% 100%, transparent calc(var(--radius-sm) - .5px), var(--bg-main) var(--radius-sm)); }
+  .demo-header-toggle:hover { color: var(--text-primary); }
+  .demo-header-toggle:focus-visible { outline: 2px solid var(--brand-primary); outline-offset: 2px; color: var(--text-primary); }
+  .demo-header-toggle svg { width: 14px; height: 14px; transition: transform var(--duration) var(--ease); }
+  .demo-header-toggle[aria-expanded="false"] svg { transform: rotate(180deg); }
+
+  .demo-hint { position: relative; padding-right: 2.75rem !important; }
+  .demo-hint[hidden] { display: none; }
+  .demo-hint__close {
+    position: absolute; top: 50%; right: .5rem; transform: translateY(-50%);
+    display: flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; margin: 0; padding: 0;
+    border: 0; border-radius: var(--radius-sm); background: transparent; color: inherit;
+    cursor: pointer; transition: background-color var(--duration) var(--ease), color var(--duration) var(--ease);
+  }
+  .demo-hint__close:hover { background: rgba(15, 23, 42, .06); color: #0f172a; }
+  .demo-hint__close:focus-visible { outline: 2px solid var(--brand-primary); outline-offset: 1px; }
+  .demo-hint__close svg { width: 14px; height: 14px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .site-header, .demo-header-toggle, .demo-header-toggle svg { transition: none; }
+  }
+</style>
+<div class="demo-header-toggle-row">
+  <button type="button" class="demo-header-toggle" aria-expanded="true" aria-label="Hide site header">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M3.5 10l4.5-4.5 4.5 4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+<script>
+  (function () {
+    var header = document.querySelector(".site-header");
+    var toggle = document.querySelector(".demo-header-toggle");
+    if (header && toggle) {
+      var collapsed = false;
+      var apply = function () {
+        header.style.marginTop = collapsed ? -header.offsetHeight + "px" : "";
+      };
+      toggle.addEventListener("click", function () {
+        collapsed = !collapsed;
+        apply();
+        // A hidden header must not keep focusable links in the tab order.
+        if (collapsed) header.setAttribute("inert", ""); else header.removeAttribute("inert");
+        document.documentElement.classList.toggle("demo-header-collapsed", collapsed);
+        toggle.setAttribute("aria-expanded", String(!collapsed));
+        toggle.setAttribute("aria-label", collapsed ? "Show site header" : "Hide site header");
+      });
+      // The header changes height across breakpoints; keep it fully out of view.
+      window.addEventListener("resize", function () { if (collapsed) apply(); });
+    }
+
+    // Paint the tab row in the colour of the app's top edge. The app lives on
+    // the same origin, so its document can be read; it switches themes by a
+    // class on <html> or by the system colour scheme.
+    var initStrip = function () {
+      var row = document.querySelector(".demo-header-toggle-row");
+      var frame = document.querySelector("#content iframe");
+      if (!row || !frame) return;
+      var paint = function () {
+        try {
+          var doc = frame.contentDocument;
+          var el = doc && doc.elementFromPoint(doc.documentElement.clientWidth / 2, 1);
+          for (; el; el = el.parentElement) {
+            var bg = getComputedStyle(el).backgroundColor;
+            if (bg && bg !== "transparent" && !/rgba\(.*,\s*0\)$/.test(bg)) {
+              row.style.setProperty("--demo-strip-bg", bg);
+              return;
+            }
+          }
+        } catch (e) {}
+      };
+      var watch = function () {
+        paint();
+        try {
+          var doc = frame.contentDocument;
+          var mo = new MutationObserver(paint);
+          [doc.documentElement, doc.body].forEach(function (n) {
+            if (n) mo.observe(n, { attributes: true, attributeFilter: ["class", "data-theme", "style"] });
+          });
+        } catch (e) {}
+      };
+      // The app renders its top bar a moment after load.
+      var onLoad = function () { setTimeout(watch, 300); setTimeout(paint, 1500); };
+      frame.addEventListener("load", onLoad);
+      try {
+        var d = frame.contentDocument;
+        if (d && d.readyState === "complete" && d.location.href !== "about:blank") onLoad();
+      } catch (e) {}
+      if (window.matchMedia) {
+        var mq = window.matchMedia("(prefers-color-scheme: dark)");
+        if (mq.addEventListener) mq.addEventListener("change", function () { setTimeout(paint, 50); });
+      }
+    };
+
+    var initHint = function () {
+      document.querySelectorAll(".demo-hint[id]").forEach(function (hint) {
+        var key = "demo-hint-closed:" + hint.id;
+        try { if (sessionStorage.getItem(key)) hint.hidden = true; } catch (e) {}
+        var close = hint.querySelector(".demo-hint__close");
+        if (!close) return;
+        close.addEventListener("click", function () {
+          hint.hidden = true;
+          try { sessionStorage.setItem(key, "1"); } catch (e) {}
+          // Focus would otherwise fall back to <body>.
+          var frame = document.querySelector("#content iframe");
+          if (frame) frame.focus();
+        });
+      });
+    };
+    var init = function () { initStrip(); initHint(); };
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+  })();
+</script>
