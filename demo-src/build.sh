@@ -53,16 +53,19 @@ def must_sub(pattern, repl, text, where, flags=0):
 
 PRODUCT = "Ænix Public Cloud Platform"
 
-# Ænix wordmark (blue, for the white header) followed by a "Public Cloud"
-# label. Inline SVG with no font-family, so the <text> inherits the page font.
+# Ænix wordmark (blue, for the white header) followed by a "Platform" label:
+# the header reads "Ænix Platform", while the page title and the sign-in
+# mock-ups keep the product name. Inline SVG with no font-family, so the
+# <text> inherits the page font.
+HEADER_LABEL = "Platform"
 logo = (site / "static/images/logo-full-blue.svg").read_text()
 inner = re.search(r"<svg[^>]*>(.*)</svg>", logo, re.S).group(1).strip()
 mark = (
-    '<svg width="600" height="84" viewBox="22 108 600 84" fill="none" '
-    f'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{PRODUCT}">'
+    '<svg width="504" height="84" viewBox="22 108 504 84" fill="none" '
+    f'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ænix {HEADER_LABEL}">'
     f"{inner}"
     '<text x="294" y="186" font-size="52" font-weight="600" fill="#334155">'
-    "Public Cloud</text></svg>"
+    f"{HEADER_LABEL}</text></svg>"
 )
 
 env = pub / "env.js"
