@@ -357,6 +357,8 @@ Das Zertifikat des Webhooks stellt der Operator selbst aus und erneuert es auch 
 
 Viele Cluster sehen das Internet nie: Behörden, Banken, Industrieanlagen, souveräne Clouds. Für solche Air-Gap-Umgebungen baut kubepkg ein Bundle, eine einzige Datei mit dem signierten Repository-Index, den Charts der ausgewählten Pakete samt all ihren Abhängigkeiten und jedem Image, das diese Pakete ausführen.
 
+Neu ist die Aufgabe nicht, und es gibt dafür bereits Werkzeuge. [Hauler](https://hauler.dev) bringt Images, Charts und Dateien über die Grenze und stellt sie dahinter bereit, überlässt Ihnen aber, was und wie installiert wird. [Zarf](https://zarf.dev) ist vom Ansatz her näher dran, bringt aber ein eigenes Paketformat und eine eigene Art der Bereitstellung mit. Ein kubepkg-Bundle ist ein Ausschnitt aus einem signierten Repository: Hinter der Grenze wird es gegen den Index geprüft, und danach werden Pakete genauso installiert wie überall sonst, mit Abhängigkeiten, Revisionen und Rollback.
+
 Was folgt, ist ein echter Lauf auf einem Testcluster. Der kubepkg-Operator darin ist durch eine Cilium-Network-Policy von der Außenwelt abgeschnitten und sieht nur den Cluster selbst; eine Mirror-Registry und ein Webserver für den Index laufen im Cluster. Das Bundle wird auf einem Rechner mit Internetzugang aus dem öffentlichen Repository gebaut:
 
 ```
