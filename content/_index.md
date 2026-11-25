@@ -281,8 +281,7 @@ What that buys you in practice:
 
 <div class="cta-row cta-final__actions">
   <a class="cta-primary" href="/contact/">Book a call →</a>
-  <a class="cta-secondary" href="/products/">Explore platform →</a>
-  <a class="cta-secondary" href="/pricing/">See pricing</a>
+  <a class="cta-final__link" href="/pricing/">See pricing →</a>
 </div>
 
 </div>

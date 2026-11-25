@@ -4,6 +4,8 @@ seo_title: "Kontakt zu Ænix — Discovery-Gespräch vereinbaren"
 description: "Vereinbaren Sie ein 30-minütiges Discovery-Gespräch mit Ænix oder schreiben Sie uns. AENIX s.r.o., České Budějovice, Tschechien; AENIX INC, Delaware, USA."
 hero_subtitle: "Discovery-Gespräch vereinbaren, eine Frage stellen oder eine Partnerschaft besprechen"
 language: "de"
+# The thank-you child page is only for after the form is sent.
+hide_child_cards: true
 hreflang_en: /contact/
 faq:
   - q: "Was passiert, nachdem ich das Formular abgeschickt habe?"

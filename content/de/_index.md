@@ -291,8 +291,7 @@ Was Ihnen das in der Praxis bringt:
 
 <div class="cta-row cta-final__actions">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren →</a>
-  <a class="cta-secondary" href="/de/produkte/">Plattformen ansehen →</a>
-  <a class="cta-secondary" href="/de/preise/">Preise ansehen</a>
+  <a class="cta-final__link" href="/de/preise/">Preise ansehen →</a>
 </div>
 
 </div>
