@@ -24,6 +24,8 @@
 {{- $wAnnual := cond $de "jährlich abgerechnet" "billed annually" -}}
 {{- $wMonthly := cond $de "monatlich abgerechnet" "billed monthly" -}}
 {{- $quote := cond $de "Angebot anfordern" "Request quote" -}}
+{{- /* One button per priced tier; ?tier= lets sales see which one was picked. */ -}}
+{{- $choose := cond $de (dict "basic" "Mit Basic starten" "standard" "Standard wählen" "plus" "Plus wählen") (dict "basic" "Start with Basic" "standard" "Choose Standard" "plus" "Choose Plus") -}}
 
 {{- /* price strings: "$1,250" in EN, "1.250 USD" in DE */ -}}
 {{- $fmt := dict -}}
@@ -42,7 +44,8 @@
 {{- define "cp-cell" -}}
   {{- if eq . "✔" }}<span class="cp-ok" aria-label="yes">✔</span>
   {{- else if eq . "✖" }}<span class="cp-no" aria-label="no">✖</span>
-  {{- else }}{{ . }}{{ end -}}
+  {{- /* Non-breaking hyphens: "mission-critical" never splits at the line end. */ -}}
+  {{- else }}{{ replace (string .) "-" "\u2011" }}{{ end -}}
 {{- end -}}
 
 {{- /* resolve every row once: label + one value per plan, translated */ -}}
@@ -62,7 +65,7 @@
       {{- end -}}
       {{- $vals = $vals | append $v -}}
     {{- end -}}
-    {{- $rows = $rows | append (dict "k" (index $t $it.k | default $it.k) "vals" $vals "long" $sec.long) -}}
+    {{- $rows = $rows | append (dict "id" $it.k "k" (index $t $it.k | default $it.k) "vals" $vals "long" $sec.long) -}}
   {{- end -}}
 {{- end -}}
 
@@ -72,12 +75,45 @@
       <button type="button" class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $de "Jährlich" "Annual" }}</button>
       <button type="button" class="cp-tbtn" data-mode="monthly" aria-pressed="false">{{ cond $de "Monatlich" "Monthly" }}</button>
     </div>
-    <div class="cp-plan-switch" id="cpPlanSwitch" role="tablist" hidden>
-      {{- range $i, $p := $plans }}
-      <button type="button" role="tab" class="cp-pbtn{{ if eq $i 1 }} cp-active{{ end }}" data-plan="{{ $p.id }}" aria-selected="{{ if eq $i 1 }}true{{ else }}false{{ end }}">{{ $p.name }}</button>
-      {{- end }}
-    </div>
   </div>
+
+  {{- /* Tier cards: who it is for, the price, one button, the four SLA
+         facts that differ most, and what the tier adds. The full matrix
+         follows in the table. Enterprise carries the filled button. */}}
+  {{- $facts := slice "Incidents covered¹" "Service Desk Hours²" "Emergency Response Time³" "Standard Response Time" -}}
+  <div class="cp-tiers">
+    {{- range $i, $p := $plans }}
+    {{- $who := $p.who }}{{ $value := $p.value -}}
+    {{- if $de }}{{ with index $d.de.plans $p.id }}{{ $who = .who | default $who }}{{ $value = .value | default $value }}{{ end }}{{ end }}
+    <article class="cp-tier{{ if not $p.price_annual }} cp-tier--custom{{ end }}" aria-label="{{ $p.name }}">
+      <h3 class="cp-tier__name">{{ $p.name }}</h3>
+      <p class="cp-tier__who">{{ replace $who "-" "\u2011" }}</p>
+      <div class="cp-tier__price">
+        {{- with index $fmt $p.id }}
+        <div class="cp-tier__amount"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-per">{{ $perMonth }}</span></div>
+        <div class="cp-tier__meta">{{ $perNodes }}<br><span data-annual="{{ .y }} {{ $wAnnual }}" data-monthly="{{ $wMonthly }}">{{ .y }} {{ $wAnnual }}</span></div>
+        {{- else }}
+        <div class="cp-tier__amount cp-tier__amount--custom">{{ index $t "Custom" | default "Custom" }}</div>
+        {{- end }}
+      </div>
+      <div class="cp-tier__action">
+        {{- with index $choose $p.id }}
+        <a href="{{ $contact }}?tier={{ $p.id }}" class="cp-tier-btn" data-cta="pricing-tier">{{ . }}</a>
+        {{- else }}
+        <a href="{{ $contact }}?tier={{ $p.id }}" class="cp-tier-btn cp-tier-btn--primary" data-cta="pricing-tier">{{ $quote }}</a>
+        {{- end }}
+      </div>
+      <dl class="cp-tier__facts">
+        {{- range $r := $rows }}{{ if in $facts $r.id }}
+        <div><dt>{{ $r.k }}</dt><dd>{{ replace (string (index $r.vals $i)) "-" "\u2011" }}</dd></div>
+        {{- end }}{{ end }}
+      </dl>
+      <p class="cp-tier__value">{{ replace $value "-" "\u2011" }}</p>
+    </article>
+    {{- end }}
+  </div>
+
+  <h2 class="cp-compare-heading">{{ cond $de "Alle Stufen im Vergleich" "Compare all tiers" }}</h2>
 
   <div class="cp-table-wrap">
     <table id="cpPricingTable">
@@ -88,27 +124,18 @@
       <thead>
         <tr>
           <th scope="col"></th>
-          {{- range $plans }}
-          <th scope="col">
-            <div class="cp-plan">{{ .name }}</div>
-            {{- with index $fmt .id }}
-            <div class="cp-price"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-per">{{ $perMonth }}</span></div>
-            <div class="cp-nodes">{{ $perNodes }}</div>
-            <div class="cp-billed" data-annual="{{ .y }} {{ $wAnnual }}" data-monthly="{{ $wMonthly }}">{{ .y }} {{ $wAnnual }}</div>
-            {{- else }}
-            <a href="{{ $contact }}" class="cp-request-btn">{{ $quote }}</a>
-            {{- end }}
-          </th>
+          {{- range $p := $plans }}
+          <th scope="col"><div class="cp-plan">{{ $p.name }}</div></th>
           {{- end }}
         </tr>
       </thead>
       <tbody>
-        {{- range $r := $rows }}
+        {{- range $r := where $rows "long" "!=" true }}
         {{- if $r.section }}
         <tr class="cp-section-row"><th scope="rowgroup" colspan="{{ add (len $plans) 1 }}">{{ $r.section }}</th></tr>
         {{- else }}
         <tr{{ if $r.long }} class="cp-long"{{ end }}>
-          <th scope="row">{{ $r.k }}</th>
+          <th scope="row">{{ replace (string $r.k) "-" "\u2011" }}</th>
           {{- range $r.vals }}
           <td>{{- template "cp-cell" . -}}</td>
           {{- end }}
@@ -119,25 +146,23 @@
     </table>
   </div>
 
+  <div class="cp-plan-switch" id="cpPlanSwitch" role="tablist" hidden>
+    {{- range $i, $p := $plans }}
+    <button type="button" role="tab" class="cp-pbtn{{ if eq $i 1 }} cp-active{{ end }}" data-plan="{{ $p.id }}" aria-selected="{{ if eq $i 1 }}true{{ else }}false{{ end }}">{{ $p.name }}</button>
+    {{- end }}
+  </div>
   <div class="cp-cards" id="cpPricingCards">
     {{- range $i, $p := $plans }}
     <section class="cp-card{{ if eq $i 1 }} cp-card--active{{ end }}" data-plan="{{ $p.id }}" aria-label="{{ $p.name }}">
       <div class="cp-chead">
         <div class="cp-plan">{{ $p.name }}</div>
-        {{- with index $fmt $p.id }}
-        <div class="cp-price"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-per">{{ $perMonth }}</span></div>
-        <div class="cp-nodes">{{ $perNodes }}</div>
-        <div class="cp-billed" data-annual="{{ .y }} {{ $wAnnual }}" data-monthly="{{ $wMonthly }}">{{ .y }} {{ $wAnnual }}</div>
-        {{- else }}
-        <a href="{{ $contact }}" class="cp-request-btn">{{ $quote }}</a>
-        {{- end }}
       </div>
-      {{- range $r := $rows }}
+      {{- range $r := where $rows "long" "!=" true }}
       {{- if $r.section }}
       <div class="cp-section">{{ $r.section }}</div>
       {{- else }}
       <div class="cp-row{{ if $r.long }} cp-long{{ end }}">
-        <div class="cp-k">{{ $r.k }}</div>
+        <div class="cp-k">{{ replace (string $r.k) "-" "\u2011" }}</div>
         <div class="cp-v">{{ template "cp-cell" (index $r.vals $i) }}</div>
       </div>
       {{- end }}
