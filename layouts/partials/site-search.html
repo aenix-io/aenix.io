@@ -1,0 +1,115 @@
+{{/*
+  Site search dialog, opened by any [data-search-open] button, "/" or
+  Cmd/Ctrl+K. Results come from Pagefind's static index, which the build
+  writes to public/pagefind/ after Hugo (see netlify.toml and
+  .github/workflows/hugo.yaml). Pagefind picks the index for the page's
+  <html lang>, so German pages search German content.
+
+  What gets indexed is decided in layouts/_default/baseof.html
+  (data-pagefind-body on <main>, skipped for noindex pages).
+  Behaviour: assets/js/site-search.js. Styles: aenix-seo-extensions.css,
+  "SITE SEARCH" block.
+*/}}
+{{- $isDe := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
+{{- $t := dict
+    "title" "Search aenix.io"
+    "placeholder" "Search products, solutions, articles"
+    "close" "Close search"
+    "quick" "Quick links"
+    "results" "Results"
+    "loading" "Searching…"
+    "one" "1 result"
+    "many" "{n} results"
+    "none" "No results for “{q}”."
+    "hint" "Try a product name, a regulation such as DORA, or the platform you want to replace."
+    "ask" "Ask an engineer instead"
+    "askUrl" "/contact/"
+    "error" "Search could not load. Check your connection and try again."
+    "move" "to move" "open" "to open" "esc" "to close"
+-}}
+{{- $quick := slice
+    (dict "name" "Pricing" "url" "/pricing/")
+    (dict "name" "Cozystack" "url" "/products/cozystack/")
+    (dict "name" "VMware Alternative" "url" "/alternatives/vmware-alternative/")
+    (dict "name" "DORA Compliance" "url" "/solutions/dora-compliance/")
+    (dict "name" "Platform Readiness Assessment" "url" "/services/platform-readiness-assessment/")
+    (dict "name" "Case Studies" "url" "/case-studies/")
+-}}
+{{- if $isDe -}}
+{{- $t = dict
+    "title" "aenix.io durchsuchen"
+    "placeholder" "Produkte, Lösungen, Artikel durchsuchen"
+    "close" "Suche schließen"
+    "quick" "Schnellzugriff"
+    "results" "Ergebnisse"
+    "loading" "Suche läuft…"
+    "one" "1 Ergebnis"
+    "many" "{n} Ergebnisse"
+    "none" "Keine Ergebnisse für „{q}“."
+    "hint" "Versuchen Sie einen Produktnamen, eine Regulierung wie DORA oder die Plattform, die Sie ablösen möchten."
+    "ask" "Oder direkt mit einem Engineer sprechen"
+    "askUrl" "/de/kontakt/"
+    "error" "Die Suche konnte nicht geladen werden. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut."
+    "move" "navigieren" "open" "öffnen" "esc" "schließen"
+-}}
+{{- $quick = slice
+    (dict "name" "Preise" "url" "/de/preise/")
+    (dict "name" "Cozystack" "url" "/de/produkte/cozystack/")
+    (dict "name" "VMware-Alternative" "url" "/de/alternativen/vmware-alternative/")
+    (dict "name" "DORA-Compliance" "url" "/de/loesungen/dora-compliance/")
+    (dict "name" "Platform Readiness Assessment" "url" "/de/dienstleistungen/platform-readiness-assessment/")
+    (dict "name" "Case Studies" "url" "/de/case-studies/")
+-}}
+{{- end -}}
+{{- /* Header-menu pages, matched by name above the full-text results:
+       Pagefind ranks long landings below shorter articles, but "dora" should
+       lead to DORA Compliance. Same data as the header, so no second list. */ -}}
+{{- $menu := site.Menus.main -}}
+{{- if $isDe }}{{ $menu = site.Menus.main_de | default site.Menus.main }}{{ end -}}
+{{- $pages := slice -}}
+{{- range $menu -}}
+  {{- $top := .Name -}}
+  {{- if and (not .HasChildren) (not .Params.cta) (hasPrefix .URL "/") -}}
+    {{- $pages = $pages | append (dict "n" .Name "u" .URL "t" $top) -}}
+  {{- end -}}
+  {{- range .Children -}}
+    {{- if .Params.heading -}}
+      {{- range .Children }}{{ if hasPrefix .URL "/" }}{{ $pages = $pages | append (dict "n" .Name "u" .URL "t" $top) }}{{ end }}{{ end -}}
+    {{- else if hasPrefix .URL "/" -}}
+      {{- $pages = $pages | append (dict "n" .Name "u" .URL "t" $top) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<dialog class="site-search" id="site-search" aria-labelledby="site-search-title" data-pagefind="{{ "pagefind/pagefind.js" | relURL }}" data-i18n="{{ jsonify $t }}" data-pages="{{ jsonify $pages }}">
+  <div class="site-search__panel">
+    <h2 id="site-search-title" class="visually-hidden">{{ $t.title }}</h2>
+    <div class="site-search__bar" role="search">
+      <svg class="site-search__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      <label for="site-search-input" class="visually-hidden">{{ $t.title }}</label>
+      <input id="site-search-input" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
+             placeholder="{{ $t.placeholder }}" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="site-search-results">
+      <button type="button" class="site-search__close" data-search-close aria-label="{{ $t.close }}">
+        <kbd class="site-search__close-key" aria-hidden="true">Esc</kbd>
+        <svg class="site-search__close-x" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="site-search__body">
+      <div class="site-search__start" data-search-start>
+        <p class="site-search__label">{{ $t.quick }}</p>
+        <ul class="site-search__quick">
+          {{- range $quick }}
+          <li><a href="{{ .url }}">{{ .name }}<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+          {{- end }}
+        </ul>
+      </div>
+      <ul id="site-search-results" class="site-search__results" role="listbox" aria-label="{{ $t.results }}" hidden></ul>
+      <div class="site-search__message" data-search-message hidden></div>
+    </div>
+    <p class="visually-hidden" role="status" aria-live="polite" data-search-status></p>
+    <div class="site-search__foot" aria-hidden="true">
+      <span><kbd>↑</kbd><kbd>↓</kbd> {{ $t.move }}</span>
+      <span><kbd>↵</kbd> {{ $t.open }}</span>
+      <span><kbd>Esc</kbd> {{ $t.esc }}</span>
+    </div>
+  </div>
+</dialog>

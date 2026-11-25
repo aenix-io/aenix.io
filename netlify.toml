@@ -8,7 +8,9 @@
 
 [build]
   publish = "public"
-  command = "hugo --gc --minify"
+  # Pagefind builds the site-search index into public/pagefind/ after Hugo.
+  # Keep the version in step with .github/workflows/hugo.yaml.
+  command = "hugo --gc --minify && npx --yes pagefind@1.5.2 --site public"
 
 [build.environment]
   # Keep in step with HUGO_VERSION in .github/workflows/hugo.yaml, the version
@@ -21,10 +23,10 @@
   HUGO_ENV = "production"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL && npx --yes pagefind@1.5.2 --site public"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL && npx --yes pagefind@1.5.2 --site public"
 
 # --- Live demos ---
 # The two demo SPAs are served from /demo-app/ and /idp-app/ and embedded in

@@ -76,7 +76,25 @@
 
   {{ partial "header.html" . }}
 
-  <main id="content">
+  {{/* Site search (Pagefind) indexes <main> only, so header, footer and
+       cookie banner stay out of results. Noindex pages are left out of the
+       index entirely, and so are tag pages (lists of posts). The "type"
+       label is shown above each result. Ranking is Pagefind's own; the
+       search dialog puts matching header-menu pages above it. */}}
+  {{- $searchable := and (not (partial "seo/noindex.html" .).noindex) (not (in (slice "taxonomy" "term") .Kind)) -}}
+  {{- $types := dict
+      "product" (slice "Product" "Produkt")
+      "solution-landing" (slice "Solution" "Lösung")
+      "services-landing" (slice "Service" "Dienstleistung")
+      "industry-landing" (slice "Industry" "Branche")
+      "alternative" (slice "Alternative" "Alternative")
+      "compare" (slice "Comparison" "Vergleich")
+      "migration-hub" (slice "Migration" "Migration")
+      "lead-magnet" (slice "Resource" "Ressource")
+      "blog-article" (slice "Article" "Artikel")
+      "event-landing" (slice "Event" "Event") -}}
+  {{- $type := index $types (.Params.page_type | default "") | default (slice "Page" "Seite") -}}
+  <main id="content"{{ if $searchable }} data-pagefind-body data-pagefind-meta="type:{{ index $type (cond (eq $lang "de") 1 0) }}"{{ end }}>
     {{ block "main" . }}{{ end }}
   </main>
 
@@ -103,15 +121,8 @@
     <script src="{{ $js.RelPermalink }}"></script>
   {{ end }}
 
-  {{/* orb.js — particle field for the home hero. Only loads if a
-       #flow-canvas element is present on the page (the script itself
-       bails out otherwise). Deferred so it doesn't block interactive. */}}
-  {{ if .IsHome }}
-  {{ $orb := resources.Get "js/orb.js" | fingerprint }}
-  {{ if $orb }}
-    <script src="{{ $orb.RelPermalink }}" defer></script>
-  {{ end }}
-  {{ end }}
+  {{ $search := resources.Get "js/site-search.js" | minify | fingerprint }}
+  <script src="{{ $search.RelPermalink }}" defer></script>
 
   {{ block "scripts" . }}{{ end }}
 </body>
