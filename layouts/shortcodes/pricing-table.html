@@ -11,8 +11,9 @@
   JS off every card is shown in a stack. /js/pricing-table.js only swaps the
   visible price and the visible card.
 
-  Under the cards, the comparison starts with the rows marked `key: true`
-  in the data; a button expands it to every row.
+  The plans block (heading, billing switch, tier cards, customer logos) sits
+  on a full-width band. Under it, the comparison starts with the rows marked
+  `key: true` in the data; a button expands it to every row.
 
   Usage: {{< pricing-table >}}
 */ -}}
@@ -45,11 +46,13 @@
   {{- end -}}
 {{- end -}}
 
+{{- /* One cell. Plain wording: ✔ reads "Included", ✖ a dash. Called with
+       (dict "v" value "de" bool). */ -}}
 {{- define "cp-cell" -}}
-  {{- if eq . "✔" }}<span class="cp-ok" aria-label="yes">✔</span>
-  {{- else if eq . "✖" }}<span class="cp-no" aria-label="no">✖</span>
+  {{- if eq .v "✔" }}<span class="cp-ok">{{ cond .de "Inklusive" "Included" }}</span>
+  {{- else if eq .v "✖" }}<span class="cp-no" aria-label="{{ cond .de "nicht enthalten" "not included" }}">—</span>
   {{- /* Non-breaking hyphens: "mission-critical" never splits at the line end. */ -}}
-  {{- else }}{{ replace (string .) "-" "\u2011" }}{{ end -}}
+  {{- else }}{{ replace (string .v) "-" "\u2011" }}{{ end -}}
 {{- end -}}
 
 {{- /* resolve every row once: label + one value per plan, translated */ -}}
@@ -76,39 +79,44 @@
 {{- $shown := where $rows "long" "!=" true -}}
 {{- $all := 0 }}{{ range $shown }}{{ if not .section }}{{ $all = add $all 1 }}{{ end }}{{ end -}}
 <div class="cozy-pricing" id="support">
+  <div class="cp-plans">
   <div class="cp-head" id="plans">
     <div class="cp-head__text">
       <h2 class="pricing-h2">{{ cond $de "Support-Stufen" "Support plans" }}</h2>
       <p class="pricing-section__intro">{{ cond $de "Jede Stufe enthält das Ænix-Billing-System und die WHMCS-Integration." "Every tier includes the Ænix billing system and WHMCS integration." }}</p>
     </div>
     <div class="cp-controls">
-      <div class="cp-toggle" id="cpBillingToggle" role="group" aria-label="{{ cond $de "Abrechnungszeitraum" "Billing period" }}">
+      <span class="cp-controls__label" id="cpBillingLabel">{{ cond $de "Abrechnungszeitraum" "Billing period" }}</span>
+      <div class="cp-toggle" id="cpBillingToggle" role="group" aria-labelledby="cpBillingLabel">
         <button type="button" class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $de "Jährlich" "Annual" }}</button>
         <button type="button" class="cp-tbtn" data-mode="monthly" aria-pressed="false">{{ cond $de "Monatlich" "Monthly" }}</button>
       </div>
-      <a class="pricing-link cp-compare-link" href="#compare">{{ cond $de "Stufen vergleichen" "Compare tiers" }} <span aria-hidden="true">↓</span></a>
+      <a class="pricing-link cp-compare-link" href="#compare">{{ cond $de "SLA vergleichen" "Compare SLA" }} <span aria-hidden="true">↓</span></a>
     </div>
   </div>
 
-  {{- /* Tier cards: who it is for, the price, one button, the four SLA
-         facts that differ most, and what the tier adds. The full matrix
-         follows in the table. Enterprise carries the filled button. */}}
-  {{- $facts := slice "Incidents covered¹" "Service Desk Hours²" "Emergency Response Time³" "Standard Response Time" -}}
+  {{- /* Tier cards: coverage label, name, who it is for, the price, three
+         points, one button. The full matrix follows in the table. Enterprise
+         carries the filled button. */}}
   <div class="cp-tiers">
     {{- range $i, $p := $plans }}
-    {{- $who := $p.who }}{{ $value := $p.value -}}
-    {{- if $de }}{{ with index $d.de.plans $p.id }}{{ $who = .who | default $who }}{{ $value = .value | default $value }}{{ end }}{{ end }}
-    <article class="cp-tier{{ if not $p.price_annual }} cp-tier--custom{{ end }}" aria-label="{{ $p.name }}">
-      <h3 class="cp-tier__name">{{ $p.name }}</h3>
-      <p class="cp-tier__who">{{ replace $who "-" "\u2011" }}</p>
+    {{- $c := $p }}{{ if $de }}{{ with index $d.de.plans $p.id }}{{ $c = merge $p . }}{{ end }}{{ end }}
+    <article class="cp-tier{{ if not $p.price_annual }} cp-tier--custom{{ end }}" aria-labelledby="cp-tier-{{ $p.id }}">
+      <p class="cp-tier__label">{{ $c.label }}</p>
+      <h3 class="cp-tier__name" id="cp-tier-{{ $p.id }}">{{ $p.name }}</h3>
+      <p class="cp-tier__who">{{ replace $c.short "-" "\u2011" }}</p>
       <div class="cp-tier__price">
         {{- with index $fmt $p.id }}
         <div class="cp-tier__amount"><span class="cp-amount" data-annual="{{ .a }}" data-monthly="{{ .m }}">{{ .a }}</span> <span class="cp-per">{{ $perMonth }}</span></div>
         <div class="cp-tier__meta">{{ $perNodes }}<br><span data-annual="{{ .y }} {{ $wAnnual }}" data-monthly="{{ $wMonthly }}">{{ .y }} {{ $wAnnual }}</span></div>
         {{- else }}
         <div class="cp-tier__amount cp-tier__amount--custom">{{ index $t "Custom" | default "Custom" }}</div>
+        <div class="cp-tier__meta">{{ cond $de "Node-Anzahl nach Vereinbarung" "Node count by agreement" }}<br>{{ cond $de "Angebot nach Umfang" "Quoted to scope" }}</div>
         {{- end }}
       </div>
+      <ul class="cp-tier__points">
+        {{- range $c.points }}<li>{{ replace . "-" "\u2011" }}</li>{{ end }}
+      </ul>
       <div class="cp-tier__action">
         {{- with index $choose $p.id }}
         <a href="{{ $contact }}?tier={{ $p.id }}" class="cp-tier-btn" data-cta="pricing-tier">{{ . }}</a>
@@ -116,14 +124,22 @@
         <a href="{{ $contact }}?tier={{ $p.id }}" class="cp-tier-btn cp-tier-btn--primary" data-cta="pricing-tier">{{ $quote }}</a>
         {{- end }}
       </div>
-      <dl class="cp-tier__facts">
-        {{- range $r := $rows }}{{ if in $facts $r.id }}
-        <div><dt>{{ $r.k }}</dt><dd>{{ replace (string (index $r.vals $i)) "-" "\u2011" }}</dd></div>
-        {{- end }}{{ end }}
-      </dl>
-      <p class="cp-tier__value">{{ replace $value "-" "\u2011" }}</p>
     </article>
     {{- end }}
+  </div>
+
+  {{- /* Customer logos: see the Rule 1 note on `proof` in data/pricing.yaml. */}}
+  {{- with $d.proof }}
+  {{- $pt := cond $de (index $d.de "proof") . }}
+  <div class="cp-proof">
+    <p class="cp-proof__text"><strong>{{ $pt.title }}</strong> {{ $pt.text }}</p>
+    <ul class="cp-proof__logos">
+      {{- range .logos }}
+      <li><a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"><img src="{{ .logo }}" alt="{{ .name }}" width="330" height="160" loading="lazy"></a></li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}
   </div>
 
   <div class="cp-compare" id="compare">
@@ -140,7 +156,7 @@
       </colgroup>
       <thead>
         <tr>
-          <th scope="col"></th>
+          <th scope="col">{{ cond $de "Support im Überblick" "Support at a glance" }}</th>
           {{- range $p := $plans }}
           <th scope="col"><div class="cp-plan">{{ $p.name }}</div></th>
           {{- end }}
@@ -154,7 +170,7 @@
         <tr{{ if not $r.key }} class="cp-extra"{{ end }}>
           <th scope="row">{{ replace (string $r.k) "-" "\u2011" }}</th>
           {{- range $r.vals }}
-          <td>{{- template "cp-cell" . -}}</td>
+          <td>{{- template "cp-cell" (dict "v" . "de" $de) -}}</td>
           {{- end }}
         </tr>
         {{- end }}
@@ -180,7 +196,7 @@
       {{- else }}
       <div class="cp-row{{ if not $r.key }} cp-extra{{ end }}">
         <div class="cp-k">{{ replace (string $r.k) "-" "\u2011" }}</div>
-        <div class="cp-v">{{ template "cp-cell" (index $r.vals $i) }}</div>
+        <div class="cp-v">{{ template "cp-cell" (dict "v" (index $r.vals $i) "de" $de) }}</div>
       </div>
       {{- end }}
       {{- end }}

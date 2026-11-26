@@ -4,10 +4,11 @@
        1. hero: what is priced, two actions, and what one price covers;
        2. support plans and the comparison ({{< pricing-table >}} in the body,
           data from data/pricing.yaml);
-       3. Private Cloud and AI Platform, quoted per project, plus the
-          assessment for buyers who do not know which one fits;
-       4. questions before you buy (front matter `faq`, also FAQPage JSON-LD);
-       5. one closing action.
+       3. Private Cloud and AI Platform, quoted per project, and the
+          assessment for buyers who do not know which one fits, as three cards;
+       4. questions before you buy, open in two columns (front matter `faq`,
+          also FAQPage JSON-LD);
+       5. one closing action: the ask on the left, the button on the right.
      All copy lives in the page front matter, so it can change without
      touching this file. */}}
 {{ define "head" }}
@@ -37,8 +38,8 @@
         </div>
       </div>
       {{- with .Params.basis }}
-      <aside class="pricing-basis" aria-label="{{ .label }} {{ .value }}">
-        <p class="pricing-basis__label">{{ .label }}</p>
+      <aside class="pricing-basis" aria-label="{{ with .label }}{{ . }} {{ end }}{{ .value }}">
+        {{- with .label }}<p class="pricing-basis__label">{{ . }}</p>{{ end }}
         <p class="pricing-basis__value">{{ .value }}</p>
         <p class="pricing-basis__text">{{ .text }}</p>
         {{- with .facts }}
@@ -75,13 +76,16 @@
         </div>
       </article>
       {{- end }}
+      {{- with .start }}
+      <article class="pricing-deploy__card pricing-deploy__card--start">
+        <h3 class="pricing-deploy__name">{{ .name }}</h3>
+        <p class="pricing-deploy__text">{{ .text }}</p>
+        <div class="pricing-deploy__actions">
+          <a class="cta-secondary" href="{{ .url }}" data-cta="pricing-assessment">{{ .link }}</a>
+        </div>
+      </article>
+      {{- end }}
     </div>
-    {{- with .start }}
-    <div class="pricing-deploy__start">
-      <p><strong>{{ .lead }}</strong> {{ .text }}</p>
-      <a class="cta-secondary" href="{{ .url }}" data-cta="pricing-assessment">{{ .link }} <span aria-hidden="true">→</span></a>
-    </div>
-    {{- end }}
   </div>
 </section>
 {{- end }}
@@ -96,12 +100,12 @@
 
 {{- with .Params.closing_cta }}
 <section class="cta-banner landing-cta pricing-close" data-pagefind-ignore>
-  <div class="container">
-    <h2 class="cta-heading">{{ .heading }}</h2>
-    {{- with .description }}<p class="cta-description">{{ . }}</p>{{ end }}
-    <div class="cta-row cta-row--center">
-      <a class="cta-primary" href="{{ .primary_url }}" data-cta="pricing-close">{{ .primary_text }}</a>
+  <div class="container pricing-close__inner">
+    <div class="pricing-close__text">
+      <h2 class="cta-heading">{{ .heading }}</h2>
+      {{- with .description }}<p class="cta-description">{{ . }}</p>{{ end }}
     </div>
+    <a class="cta-primary" href="{{ .primary_url }}" data-cta="pricing-close">{{ .primary_text }}</a>
   </div>
 </section>
 {{- end }}
