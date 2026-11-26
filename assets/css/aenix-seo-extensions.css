@@ -459,6 +459,24 @@
 .site-header .nav-link { padding: 6px 10px; }
 .nav-link:focus-visible { color: var(--text-primary); }
 
+/* Top-level labels: ink and semibold, so the menu reads at a glance
+   (2026-11 review). With the label already white, hover is a soft fill
+   behind it and a brighter chevron; the CTA buttons keep their own styles. */
+.main-nav > .nav-list > .nav-item > .nav-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--text-primary);
+  transition: background-color 0.15s var(--ease), color 0.15s var(--ease);
+}
+.main-nav > .nav-list > .nav-item > .nav-link:hover,
+.main-nav > .nav-list > .nav-item > .nav-link:focus-visible,
+.main-nav > .nav-list > .nav-item.has-dropdown:is(:hover, :focus-within) > .nav-link {
+  background: rgba(241, 245, 249, 0.08);
+}
+.main-nav > .nav-list > .nav-item > .nav-link .dropdown-arrow { opacity: 0.55; transition: transform 0.2s var(--ease), opacity 0.15s var(--ease); }
+.main-nav > .nav-list > .nav-item.has-dropdown:is(:hover, :focus-within) > .nav-link .dropdown-arrow { opacity: 1; }
+
 /* Current section: ink label with a 2px signal underline under the text. */
 .nav-link[aria-current] { color: var(--text-primary); }
 .nav-link[aria-current]::after {
