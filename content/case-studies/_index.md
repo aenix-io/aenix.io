@@ -8,6 +8,11 @@ language: "en"
 hreflang_de: /de/case-studies/
 aliases:
   - /kubefarm/
+  # Case URLs from the WordPress site, still in search results and backlinks.
+  # None of these engagements is published any more; send readers to the list.
+  - /kubernetes-in-kubernetes-and-pxe-bootable-server-farm/
+  - /design-a-full-feature-csi-driver-for-shared-san-in-kubernetes/
+  - /prototype-a-virtualization-subsystem-for-deckhouse-kubernetes-platform/
 ---
 
 **Nine published case studies below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, the hosting providers named below run Ænix Public Cloud Platform in production, and reference calls for other engagements can be arranged under NDA.**
