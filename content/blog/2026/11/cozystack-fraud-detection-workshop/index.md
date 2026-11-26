@@ -29,7 +29,7 @@ faq:
   - q: "What do I need to run this workshop myself?"
     a: "A Cozystack 1.7 or newer installation where you have platform admin rights, the replicated StorageClass and the ubuntu-24.04 VM image (both ship with a standard install), plus kubectl, virtctl, git and curl on your computer. Setup takes about half an hour, the workshop itself about two hours."
   - q: "What is stand-in processing?"
-    a: "It is how card processing keeps working when the fraud check is slow. If the scoring service does not answer within 400 ms, the switch decides on its own using its built-in rule. Payments keep flowing, but during that time fraudulent ones can slip through unchecked."
+    a: "It's how card processing keeps working when the fraud check is slow. If the scoring service does not answer within 400 ms, the switch decides on its own using its built-in rule. Payments keep flowing, but during that time fraudulent ones can slip through unchecked."
   - q: "Does card data leave the cluster when the language model explains a decline?"
     a: "No. The explainer is Qwen2.5 0.5B Instruct running on llama.cpp on an ordinary CPU inside the tenant's own Kubernetes cluster, next to the other services. It does not call any external API."
   - q: "Why does the scorer stop scaling at eight replicas?"
@@ -73,29 +73,29 @@ quiz:
       explanation: "Keeper lets several ClickHouse replicas agree with each other. With a single replica it only wastes resources, as the Cozystack ClickHouse docs explain."
 ---
 
-This is not a case study. It is a workshop packed into a blog post, one you can run on your own Cozystack installation to see how the platform works and where it could fit in your own projects. In about two hours, without leaving the terminal, we will build a system that catches card fraud in real time, and then we will give it a really bad day: ten times the usual traffic, a crashed primary database server and a live migration of a virtual machine while payments are flowing through it.
+This isn't a case study. It's a workshop packed into a blog post, and you can run it on your own Cozystack installation to see how the platform behaves and where it might fit into your projects. In about two hours, without leaving the terminal, we'll build a system that catches card fraud in real time, and then we'll give it a truly bad day: ten times the usual traffic, a crashed primary database server and a live migration of a virtual machine with payments flowing through it.
 
 Everything runs on [Cozystack](https://cozystack.io), an open-source platform for building clouds and a CNCF Incubating project. Cozystack turns your servers into a ready-made cloud with managed Kubernetes, databases, message brokers, GPU as a Service and more.
 
-A quick note before we start: the fraud detection here is a teaching example, not a product. It exists to give the story a plot. The real goal is to get to know the platform up close and see how it fits your own work.
+One note before we start: the fraud detection here is a teaching example, not a product. Its job is to give the story a plot. What we're really after is a close look at the platform and a feel for how it would fit your own work.
 
 ## What we will build
 
-When you pay by card in a store, the terminal asks the bank that issued the card whether the payment can go through. The program that answers is called a switch. In many banks it is a legacy application that has run on the same virtual machine for years, and nobody wants to touch it (if it works, don't fix it). Our switch is no different. It approves every payment under $5,000, which makes life very easy for fraudsters.
+When you pay by card in a store, the terminal asks the bank that issued the card whether the payment can go through. The program that answers is called a switch. In many banks it's a legacy application that has sat on the same virtual machine for years, and nobody wants to touch it: if it ain't broke, don't fix it. Ours is no exception. It approves every payment under $5,000, which makes life very easy for fraudsters.
 
-Of course, we are not going to rewrite the switch. Instead, we will build a payment check around it. Here is roughly what that looks like:
+We're not going to rewrite the switch, of course. We'll build a payment check around it instead, roughly like this:
 
 {{< figure src="fraud-scheme.png" alt="Architecture: card terminals send payments to a legacy switch VM, the switch publishes them to Kafka, a scorer in Kubernetes checks card history in Redis and replies through Kafka within 400 ms; a journal flows through Kafka to the cases service, PostgreSQL and the dashboard, and a small language model explains declines" caption="The switch stays as it is; everything else is built around it" >}}
 
-The switch sends every payment to Kafka. The scoring service (`scorer` in the code) checks it against the card's recent payment history, which lives in Redis, and posts its decision back to Kafka. The switch writes every decision to a journal, no matter who made it, and the `cases` service moves each journal entry into PostgreSQL, from where it shows up on the fraud team's dashboard. On top of that, a language model explains in plain words why a payment was declined. Front-line support needs this, because customers will call the bank asking why their card did not work, and someone has to give them an answer.
+The switch sends every payment to Kafka. The scoring service (`scorer` in the code) checks it against the card's recent payment history, which lives in Redis, and posts its decision back to Kafka. The switch writes every decision to a journal, no matter who made it, and the `cases` service moves each journal entry into PostgreSQL, from where it shows up on the fraud team's dashboard. On top of all that, a language model explains in plain words why a payment was declined. Front-line support needs this: customers will call the bank to ask why their card didn't work, and someone has to tell them.
 
-This design has three important properties.
+The design rests on three properties.
 
-First, the switch never waits longer than it can afford. If the scorer has not answered within 400 milliseconds, the switch decides on its own, using the logic hard-coded into it. Banks call this stand-in processing, and it is what separates a slow fraud check from a processing outage. When the check is too slow, fraudulent payments slip through during peak hours. When processing stops, nothing goes through at all, including honest customers buying groceries.
+First, the switch never waits longer than it can afford. If the scorer has not answered within 400 milliseconds, the switch decides on its own, using the logic hard-coded into it. Banks call this stand-in processing, and it's the difference between a slow fraud check and a processing outage. A slow check lets fraudulent payments slip through at peak hours. An outage lets nothing through at all, honest customers buying groceries included.
 
-Second, the journal is written regardless of who made the decision, so you can always compare what the switch told the terminals with what ended up in the database. The two must match.
+Second, the journal gets written no matter who made the decision, so you can always compare what the switch told the terminals with what ended up in the database. The two have to match.
 
-Third, card data stays inside our cluster. Even the language model that writes explanations for support staff runs inside the cluster next to the other services and never calls out to the internet.
+Third, card data stays inside our cluster. Even the language model that writes explanations for support staff runs right next to the other services and never calls out to the internet.
 
 ## Materials and documentation
 
@@ -105,15 +105,15 @@ The full guide, with every command and file, is in the public [aenix-org/cozysta
 - [`en/laptop/labs/`](https://github.com/aenix-org/cozystack-workshop/tree/master/en/laptop/labs) has sixteen short labs, from ordering your own Kubernetes cluster from the catalog to OpenBao, ClickHouse, MongoDB and live migration of virtual machines;
 - [`fraud/app/`](https://github.com/aenix-org/cozystack-workshop/tree/master/fraud/app) holds the source code of every part of the fraud system, including the [scoring rules](https://github.com/aenix-org/cozystack-workshop/blob/master/fraud/app/internal/scoring/rules.go), which are the most fun to experiment with.
 
-Along the way we will lean on the [Cozystack documentation](https://cozystack.io/docs/v1.7/).
+Along the way we'll lean on the [Cozystack documentation](https://cozystack.io/docs/v1.7/).
 
-All commands in this post run from the `fraud/` folder of the cloned repository. In the terminal recordings you will see `~/workshop` instead: that is what the folder was called on the environment where I recorded everything.
+All commands in this post run from the `fraud/` folder of the cloned repository. In the terminal recordings you'll see `~/workshop` instead; that's what the folder was called on the environment I recorded on.
 
 ## Setting up the environment
 
-This post grew out of a workshop we have already run in several cities, and there our team prepared everything in advance. Each participant got a ready tenant with the legacy switch VM already running, a Kubernetes cluster, a GitLab account and a login on a bastion VM with all the tools installed (virtctl, kubectl and so on). Here you will do that preparation yourself, on your own Cozystack cluster and your own laptop. It takes about half an hour.
+This post grew out of a workshop we've already run in several cities, where our team prepared everything in advance. Each participant got a ready tenant with the legacy switch VM already running, a Kubernetes cluster, a GitLab account and a login on a bastion VM with all the tools installed (virtctl, kubectl and so on). Here you'll do that prep yourself, on your own Cozystack cluster and your own laptop. It takes about half an hour.
 
-You will need Cozystack 1.7 or newer and platform admin rights, because we are going to create a tenant. If you do not have Cozystack yet, start with the [getting started guide](https://cozystack.io/docs/v1.7/getting-started/). The cluster needs the `replicated` StorageClass and the `ubuntu-24.04` image in the VM image catalog; a standard Cozystack install has both. On your computer you need `kubectl`, `virtctl`, `git` and `curl`. I gave the tenant a generous quota of 160 vCPU and 96 GiB of memory. The whole system, even at peak, uses about 10 GiB of RAM and around 20 vCPU.
+You'll need Cozystack 1.7 or newer and platform admin rights, because we're going to create a tenant. If you don't have Cozystack yet, start with the [getting started guide](https://cozystack.io/docs/v1.7/getting-started/). The cluster needs the `replicated` StorageClass and the `ubuntu-24.04` image in the VM image catalog; a standard Cozystack install has both. On your computer you need `kubectl`, `virtctl`, `git` and `curl`. I gave the tenant a generous quota of 160 vCPU and 96 GiB of memory. Even at peak, the whole system uses about 10 GiB of RAM and around 20 vCPU.
 
 ### The tenant and a working copy of the manifests
 
@@ -129,7 +129,7 @@ for f in instructor/*.yaml; do
 done
 ```
 
-The tenant is created inside the root tenant, `tenant-root`. It will not need its own monitoring in this guide, so we turn that off to save memory. You can do this in the Cozystack dashboard or with a single command as the admin:
+The tenant is created inside the root tenant, `tenant-root`. It won't need its own monitoring in this guide, so we switch that off to save memory. You can do it in the Cozystack dashboard or, as the admin, with a single command:
 
 ```bash
 kubectl apply -f - <<EOF
@@ -176,7 +176,7 @@ You can also download the same file from the cluster's page in the Cozystack con
 
 ### Traffic and the model
 
-Two more files go into the nested cluster. `terminals.yaml` creates the `fraud` namespace and, inside it, the `endpoints` ConfigMap with the addresses of Kafka, Redis, PostgreSQL and the switch in your tenant (these addresses are why we substituted the tenant name earlier), the `traffic` ConfigMap set to twenty payments per second, and the `terminals` pod that plays the role of the stores. `prepull.yaml` runs a one-off job that pulls the llama.cpp image onto the node in advance, so you do not have to wait for it in part two.
+Two more files go into the nested cluster. `terminals.yaml` creates the `fraud` namespace and, inside it, the `endpoints` ConfigMap with the addresses of Kafka, Redis, PostgreSQL and the switch in your tenant (these addresses are why we substituted the tenant name earlier), the `traffic` ConfigMap set to twenty payments per second, and the `terminals` pod that plays the role of the stores. `prepull.yaml` runs a one-off job that pulls the llama.cpp image onto the node in advance, so you don't have to wait for it in part two.
 
 ```bash
 kubectl --context fraud apply -f ~/fraud-env/terminals.yaml -f ~/fraud-env/prepull.yaml
@@ -186,7 +186,7 @@ Our imaginary terminals start sending payments right away: the switch is already
 
 ### A Git repository and Flux
 
-In part one the platform will take the descriptions of our services from Git, so it is best to create the repository now. Any Git host the cluster can reach over HTTPS will do: GitLab, GitHub or Gitea. The repository needs a `platform/` folder, and we put both files we just applied by hand into it right away. That way, on its very first run Flux finds a description of what is already running in Git and does not delete anything to bring the cluster in line with the repository.
+In part one the platform will pull our service definitions from Git, so it's best to create the repository now. Any Git host the cluster can reach over HTTPS will do: GitLab, GitHub or Gitea. The repository needs a `platform/` folder, and the two files we just applied by hand go into it right away. That way Flux, on its very first run, finds everything that's already running described in Git and doesn't delete anything to bring the cluster in line with the repository.
 
 ```bash
 git clone https://<your-git>/<you>/fraud-infra.git ~/fraud-infra
@@ -196,7 +196,7 @@ cp ~/fraud-env/switch-vm.yaml ~/fraud-infra/platform/switch-vm.yaml
 cd ~/fraud-infra && git add platform && git commit -m "Initial infrastructure" && git push
 ```
 
-So that the platform can read the repository, create a read-only token on your Git host. In GitLab, a deploy token or a project access token with the `read_repository` scope will do. Then create three Flux objects in the tenant's namespace: a secret with the token, a `GitRepository` source and a `Kustomization` that applies the `platform/` folder. Flux itself is already running in the platform. The `serviceAccountName` field points to the service account Cozystack creates for every tenant. Thanks to that, Flux applies the files with the tenant's permissions rather than the platform admin's, and cannot do anything the tenant itself is not allowed to do.
+To let the platform read the repository, create a read-only token on your Git host. In GitLab, a deploy token or a project access token with the `read_repository` scope will do. Then create three Flux objects in the tenant's namespace: a secret with the token, a `GitRepository` source and a `Kustomization` that applies the `platform/` folder. Flux itself is already running in the platform. The `serviceAccountName` field points to the service account Cozystack creates for every tenant. As a result, Flux applies the files with the tenant's permissions rather than the platform admin's and can't do anything the tenant itself isn't allowed to.
 
 ```bash
 kubectl --context tenant create secret generic git-flux --from-literal=username=<login> --from-literal=password=<token>
@@ -261,9 +261,9 @@ prepull-explainer-2s24n     0/1     Completed   0          23m
 terminals-7cf5b9b59-6hfzv   1/1     Running     0          23m
 ```
 
-The switch and the cluster are in place, part of the quota is already in use, and the `terminals` pod is running in the `fraud` namespace. It plays the role of stores across the country and sends the switch twenty payments per second. The `prepull-explainer` pod in `Completed` state is left over from setup: it is the job that pulled the llama.cpp image onto the node in advance.
+The switch and the cluster are in place, part of the quota is already in use, and the `terminals` pod is running in the `fraud` namespace. It stands in for stores across the country and sends the switch twenty payments per second. The `prepull-explainer` pod in `Completed` state is left over from setup: it is the job that pulled the llama.cpp image onto the node in advance.
 
-Now let's look inside the switch VM. Open the console with `virtctl --context tenant console vm-instance-switch`, or with the button on the VM's page (the VNC tab) in the Cozystack dashboard. The login and password, `ubuntu`/`ubuntu`, are set by cloud-init in `switch-vm.yaml`; if the screen stays blank, press Enter. Let's look at the switch's log:
+Now let's look inside the switch VM. Open the console with `virtctl --context tenant console vm-instance-switch`, or with the button on the VM's page (the VNC tab) in the Cozystack dashboard. The login and password, `ubuntu`/`ubuntu`, are set by cloud-init in `switch-vm.yaml`; if the screen stays blank, press Enter. Here's the switch's log:
 
 ```
 $ journalctl -u auth-switch --no-pager -n 3
@@ -271,11 +271,11 @@ Nov 23 03:28:34 switch auth-switch[650]: 5s: 100 authorizations, 0 declined, sta
 Nov 23 03:28:39 switch auth-switch[650]: 5s: 100 authorizations, 0 declined, stand-in 0.0%, p99 0 ms
 ```
 
-In five seconds the switch handled a hundred authorizations, declined none of them and spent zero milliseconds on each. It does not consult anyone and approves anything up to $5,000.
+In five seconds the switch handled a hundred authorizations, declined none of them and spent zero milliseconds on each. It doesn't ask anyone and waves through anything up to $5,000.
 
 {{< figure src="ch0-lookaround.gif" alt="Terminal recording: two kubectl contexts, the switch VM and the fraud cluster are ready, the tenant quota, terminals already sending payments" caption="Looking around: both contexts, the switch and the cluster are in place, and payments are already flowing" >}}
 
-Now let's make sure fraudulent payments get through such a switch. The `fraud/manifests/` folder has an attack manifest that runs three schemes at once. The first is card testing: fraudsters check stolen cards with tiny payments. In the second, a card that was just used in Lagos pays for something in Chicago two minutes later, though no human can cover that distance so fast; this is called impossible travel. In the third, fraudsters try sixty card numbers from one bank in a row, walking through its BIN range.
+Now let's check that fraudulent payments really do get past a switch like this. The `fraud/manifests/` folder has an attack manifest that runs three schemes at once. The first is card testing, where fraudsters check stolen cards with tiny payments. The second is impossible travel: a card just used in Lagos pays for something in Chicago two minutes later, and no human covers that distance that fast. In the third, fraudsters walk through a bank's BIN range, trying sixty of its card numbers in a row.
 
 ```
 $ kubectl --context fraud apply -f manifests/04-attack.yaml
@@ -288,19 +288,19 @@ attack: impossible travel on card …5504 from Chicago
 5s: sent 21, approved 21, declined 0, errors 0, timeouts 0, p99 10.1 ms
 ```
 
-The switch approved all thirty fraudulent payments, because none of them was over $5,000. That is our starting point: the system technically works, but it protects nobody.
+The switch approved all thirty fraudulent payments, because none of them was over $5,000. That's our starting point: the system runs, but it protects nobody.
 
-In the recording of the attack, watch the `approved` column: every payment is approved.
+In the recording, keep an eye on the `approved` column: every single payment goes through.
 
 {{< figure src="ch0b-attack.gif" alt="Terminal recording: an attack on the switch without any fraud check, every payment approved" caption="An attack on a switch with no fraud check: every payment goes through" >}}
 
 ## Part 1. Infrastructure in a Git repository
 
-Everything we order from the platform is described in files in Git. We connected the repository to Flux during setup, so about a minute after changes land in `main`, Flux applies them as the tenant's service account and the service we ordered starts being created.
+Everything we order from the platform is described in files in Git. We connected the repository to Flux during setup, so about a minute after changes land in `main`, Flux applies them as the tenant's service account and the service we ordered starts coming up.
 
-From here on we work in the clone of the repository, `~/fraud-infra`, and order three managed services from the Cozystack catalog. Redis will remember each card's recent activity: how often, where and for how much it was used. Kafka will carry the switch's requests, the scorer's decisions and the payment journal. PostgreSQL, with two instances, a primary and a replica, will store every transaction and a record of every check.
+From here on we work in our clone of the repository, `~/fraud-infra`, and order three managed services from the Cozystack catalog. Redis will remember each card's recent activity: how often, where and for how much it was used. Kafka will carry the switch's requests, the scorer's decisions and the payment journal. PostgreSQL, with two instances, a primary and a replica, will store every transaction and a record of every check.
 
-We will create Redis in the Cozystack dashboard first. Then we move the same declaration into Git, and from that moment the repository becomes the source of truth. The form in the dashboard asks for the name `features`, one replica, a `1Gi` disk on `replicated` storage and authentication turned off. In Git it looks like this:
+We'll create Redis in the Cozystack dashboard first, then move the same declaration into Git; from that moment on, the repository is the source of truth. The form in the dashboard asks for the name `features`, one replica, a `1Gi` disk on `replicated` storage and authentication turned off. In Git it looks like this:
 
 ```yaml
 # platform/redis.yaml
@@ -315,7 +315,7 @@ spec:
   authEnabled: false
 ```
 
-Kafka and PostgreSQL we write straight in YAML, following the documentation ([Kafka](https://cozystack.io/docs/v1.7/applications/kafka/), [PostgreSQL](https://cozystack.io/docs/v1.7/applications/postgres/)). In Cozystack 1.7, Kafka runs in KRaft mode without ZooKeeper, so the declaration only has the broker and the topics:
+Kafka and PostgreSQL we'll write straight in YAML, following the documentation ([Kafka](https://cozystack.io/docs/v1.7/applications/kafka/), [PostgreSQL](https://cozystack.io/docs/v1.7/applications/postgres/)). In Cozystack 1.7, Kafka runs in KRaft mode without ZooKeeper, so the declaration only has the broker and the topics:
 
 ```yaml
 # platform/kafka.yaml
@@ -335,9 +335,9 @@ spec:
     - {name: auth.journal, partitions: 8, replicas: 1, config: {}}
 ```
 
-Note that the `auth.requests` topic has eight partitions. Why that matters will become clear in part four.
+Notice that the `auth.requests` topic has eight partitions. We'll see why that matters in part four.
 
-In the PostgreSQL declaration we ask for two instances, a `fraud` user and a `fraud` database that the user owns. There is no need to set a password: Cozystack generates one and puts it into the `postgres-cases-credentials` secret, from which we will hand it to the services in part two.
+In the PostgreSQL declaration we ask for two instances, a `fraud` user and a `fraud` database that the user owns. No need to set a password: Cozystack generates one and puts it into the `postgres-cases-credentials` secret, from which we will hand it to the services in part two.
 
 ```yaml
 # platform/postgres.yaml
@@ -374,7 +374,7 @@ cases   Unknown   42s   ebc4944b1a9e
 
 {{< figure src="ch1a-order.gif" alt="Terminal recording: manifests committed and pushed to Git, and a minute later Kafka, Redis and PostgreSQL start coming up" caption="Ordering services through Git: push, and a minute later the resources start coming up" >}}
 
-Redis came up almost at once, PostgreSQL is still assembling its cluster, and Kafka can take noticeably longer than the rest. While they start, let's see what the platform did with our declarations. Each one became a Helm release, and each release in turn created resources for the operator that runs that service. PostgreSQL is run by the CloudNativePG operator, which decides on its own which pod is the primary and which is the replica:
+Redis came up almost at once, PostgreSQL is still assembling its cluster, and Kafka can take noticeably longer than the rest. While they come up, let's see what the platform did with our declarations. Each one became a Helm release, and each release in turn created resources for the operator that runs that service. PostgreSQL is run by the CloudNativePG operator, which decides on its own which pod is the primary and which is the replica:
 
 ```
 $ kubectl --context tenant get hr
@@ -390,7 +390,7 @@ postgres-cases-1-initdb-kx66m   0/1     Completed   0          2m24s
 postgres-cases-2-join-lkqts     1/1     Running     0          98s
 ```
 
-Now for the most telling GitOps experiment: what happens if someone changes by hand something that is described in Git? Let's delete Redis and leave its declaration in the repository:
+Now for the most telling GitOps experiment: what happens if someone changes by hand something that Git describes? Let's delete Redis but leave its declaration in the repository:
 
 ```
 $ kubectl --context tenant delete redis features
@@ -403,15 +403,15 @@ features   Unknown   0s     <unknown>     <-- ...and immediately created again
 features   True      56s    a0db0b4ba6d4
 ```
 
-About a minute later Redis was back. Once a minute Flux compares what is in Git with what is on the platform and recreates anything missing, so manual changes that contradict the repository do not last long.
+About a minute later Redis was back. Once a minute Flux compares what is in Git with what is on the platform and recreates anything missing, so manual changes that contradict the repository don't last long.
 
 {{< figure src="ch1b-watch.gif" alt="Terminal recording: Redis deleted by hand is recreated by Flux about a minute later" caption="Redis deleted by hand comes back in about a minute" >}}
 
 ## Part 2. The switch starts asking before it approves
 
-The data services are ready, and now we deploy three applications into our own cluster: the scorer itself, the `cases` service that writes the journal into the database, and the fraud dashboard. All three are deliberately simple. They are a stripped-down model of a real fraud system.
+With the data services ready, we deploy three applications into our own cluster: the scorer itself, the `cases` service that writes the journal into the database, and the fraud dashboard. All three are deliberately simple, a stripped-down model of a real fraud system.
 
-First, let's hand the database password to the services. Cozystack generated it when it created PostgreSQL and keeps it on the platform, and the `cases` service and the dashboard need it. This command copies the `fraud` user's password from the platform secret into a `cases-db` secret in the nested cluster:
+First, let's hand the services the database password. Cozystack generated it when it created PostgreSQL and keeps it on the platform, while the `cases` service and the dashboard need it in our cluster. This command copies the `fraud` user's password from the platform secret into a `cases-db` secret in the nested cluster:
 
 ```bash
 kubectl --context fraud -n fraud create secret generic cases-db \
@@ -444,7 +444,7 @@ HTTP listening on :8080
 5s: 111 authorizations, 0 declined, stand-in 0.0%, p99 272 ms
 ```
 
-`SCORING mode` means the switch now sends every payment to Kafka and waits for the scorer's decision, and if there is no answer within 400 milliseconds, it decides on its own using its old rule. Latency is noticeable for the first few seconds, while connections to Kafka are still being set up. Within half a minute things settle down, and you can see that in the dashboard's metrics. I read them from my environment's address; for you it will be `http://localhost:8080/metrics` through the port forward, or your own domain.
+`SCORING mode` means the switch now sends every payment to Kafka and waits for the scorer's decision, and if there is no answer within 400 milliseconds, it decides on its own using its old rule. For the first few seconds latency is noticeable, while the Kafka connections are still being set up. Within half a minute things settle down, as the dashboard's metrics show. I read them from my environment's address; for you it will be `http://localhost:8080/metrics` through the port forward, or your own domain.
 
 ```
 $ curl -s https://fraud.austin03.workshop.aenix.io/metrics | grep "^fraud_" | head -12
@@ -466,7 +466,7 @@ The recording shows the whole switch-over: the applications deploy, the switch m
 
 Now every payment goes through Kafka to the scorer and back, and the terminal gets an answer in about twelve milliseconds. The journal barely lags behind the flow of payments: the six entries that have not reached the database yet disappear from the `fraud_journal_missing` counter within a minute.
 
-What is left is to teach the system to explain its declines. A support agent needs a reason they can read out to a customer who calls asking why their card payment failed. That reason is written by a small language model, Qwen2.5 0.5B Instruct, run by llama.cpp. The model runs on an ordinary CPU inside our cluster and does not call any external service; on startup the pod downloads its weights once, about 400 MB. The llama.cpp image is already on the node thanks to the setup job, so the only wait is for the weights:
+All that's left is to teach the system to explain its declines. A support agent needs a reason they can read out to a customer who calls asking why their card payment failed. A small language model writes it: Qwen2.5 0.5B Instruct, run by llama.cpp. The model runs on an ordinary CPU inside our cluster and does not call any external service; on startup the pod downloads its weights once, about 400 MB. The llama.cpp image is already on the node thanks to the setup job, so the only wait is for the weights:
 
 ```
 $ kubectl --context fraud apply -f manifests/03-explainer.yaml
@@ -489,7 +489,7 @@ attack: impossible travel on card …4653 from Charlotte
 5s: sent 12, approved 0, declined 6, errors 0, timeouts 0, p99 125.0 ms
 ```
 
-The first few test payments go through, because a single tiny payment looks like any other and the pattern only shows after several attempts. But by the middle of the attack the scorer is declining every fraudulent payment: it spots card testing at about the sixth payment and the BIN range walk at about the eighth card. The `fraud_alerts_total` counter has grown to 23, and for 19 of them the model has already written an explanation a human can understand.
+The first few test payments go through, because a single tiny payment looks like any other and the pattern only shows after several attempts. But by the middle of the attack the scorer is declining every fraudulent payment: it spots card testing at about the sixth payment and the BIN range walk at about the eighth card. The `fraud_alerts_total` counter has grown to 23, and for 19 of them the model has already written a plain-language explanation.
 
 The rules the scorer uses live in a short Go file, [`rules.go`](https://github.com/aenix-org/cozystack-workshop/blob/master/fraud/app/internal/scoring/rules.go). If you want to change the thresholds, start there, not in the YAML.
 
@@ -499,7 +499,7 @@ The same attack that sailed through in part zero is now declined after the first
 
 ## Part 3. The analysts want ClickHouse and an S3 bucket
 
-The fraud check works, and then, as always, the analysts show up. They want to run any query they like against the payment journal without putting load on the system payments go through. In a public cloud we would open the console, find a managed ClickHouse and order it in a couple of clicks. Here we do the same thing with one file in the same repository:
+The fraud check works, and then, as always, the analysts show up. They want to run any query they like against the payment journal without putting load on the system payments go through. In a public cloud we'd open the console, find a managed ClickHouse and order it in a couple of clicks. Here we do the same thing with one file in the same repository:
 
 ```yaml
 # platform/clickhouse.yaml
@@ -529,7 +529,7 @@ $ kubectl --context tenant exec -it chi-clickhouse-analytics-clickhouse-0-0-0 -c
 
 The operator names ClickHouse pods `chi-<name>-clickhouse-<shard>-<replica>`. If your pod is named differently, find it with `kubectl --context tenant get pods | grep chi-`.
 
-ClickHouse reads Kafka by itself, with no extra code. The SQL file `manifests/05-analytics.sql` creates three objects. The first, a table on the Kafka engine, reads the `auth.journal` topic. The second, the `payments` table on the MergeTree engine, stores the payments. The third, a materialized view, moves every new row from the first table into the second:
+ClickHouse can read Kafka on its own, no extra code required. The SQL file `manifests/05-analytics.sql` creates three objects. The first, a table on the Kafka engine, reads the `auth.journal` topic. The second, the `payments` table on the MergeTree engine, stores the payments. The third, a materialized view, moves every new row from the first table into the second:
 
 ```sql
 CREATE TABLE journal_stream (raw String) ENGINE = Kafka
@@ -564,7 +564,7 @@ $ clickhouse-client ... -q "SELECT merchant, count(*) AS declines FROM payments
 
 The file has three more example queries: merchants with the most declines, declines per minute, and the share of payments the switch approved without a check, also per minute. They all work on the same data the scorer uses for its decisions. ClickHouse, the dashboard and `cases` each read the journal in their own Kafka consumer group, so they do not get in each other's way.
 
-The last step in this part is an S3 bucket for reports. It is also ordered with a declaration in Git: `platform/bucket.yaml` describes a `reports` bucket with one user, `analytics`.
+The last step in this part is an S3 bucket for reports. It's ordered the same way, with a declaration in Git: `platform/bucket.yaml` describes a `reports` bucket with one user, `analytics`.
 
 ```yaml
 # platform/bucket.yaml
@@ -577,7 +577,7 @@ spec:
     analytics: {}
 ```
 
-A bucket user here is not a person but a separate pair of S3 access keys that opens only this bucket. Cozystack creates the keys and puts them into the `bucket-reports-analytics-credentials` secret. The easiest place to read them is the Cozystack dashboard, on the `reports` bucket's page under Secrets. For the query you need `accessKey`, `secretKey` and `bucketName`, plus your platform's object storage address; on my environment that is `s3.workshop.aenix.io`. The query below has placeholders instead of the keys:
+A bucket user here isn't a person but a separate pair of S3 access keys that opens only this bucket. Cozystack creates the keys and puts them into the `bucket-reports-analytics-credentials` secret. The easiest place to read them is the Cozystack dashboard, on the `reports` bucket's page under Secrets. For the query you need `accessKey`, `secretKey` and `bucketName`, plus your platform's object storage address; on my environment that is `s3.workshop.aenix.io`. The query below has placeholders instead of the keys:
 
 ```sql
 INSERT INTO FUNCTION s3('https://s3.workshop.aenix.io/<bucket>/daily-report.csv',
@@ -600,11 +600,11 @@ You can also open the report in a browser, in the object storage UI, which uses 
 
 ## Part 4. A very bad day: Black Friday, a database server failure and a VM migration
 
-In the last part we test the system the way real life would, on the worst possible day for a bank. There are three trials, and they come almost back to back.
+In the last part we put the system through the worst day a bank can have. There are three trials, and they come almost back to back.
 
 ### 4.1. Black Friday and autoscaling
 
-First, we describe the autoscaling. It is an ordinary `HorizontalPodAutoscaler` that targets an average of 250 millicores of CPU per pod and scales the scorer between one and eight replicas:
+First, the autoscaling. It's an ordinary `HorizontalPodAutoscaler` that targets an average of 250 millicores of CPU per pod and scales the scorer between one and eight replicas:
 
 ```yaml
 apiVersion: autoscaling/v2
@@ -642,7 +642,7 @@ scorer   Deployment/scorer   cpu: 468m/250m   1   8   4   2m30s
 
 A single scorer replica cannot handle ten times the traffic. Its CPU use goes far past the 250 millicore target, answers stop fitting into 400 milliseconds, and the switch starts deciding on its own. At that moment the dashboard shows 148 authorizations per second, 95% of them handled by the switch in stand-in mode. Decision latency hits the same 400 milliseconds, and the scorer's queue grows to fifteen hundred messages. In a real bank, these are the minutes when fraudulent payments go through unchecked.
 
-Then the autoscaler kicks in. A minute and a half later two scorer replicas are running, two and a half minutes later four, and the queue is gone before you have worked out what is going on. If you pin the replica count at 12 (set both `minReplicas` and `maxReplicas` to 12), you will find that only eight replicas actually work, and the other four report `scored 0`. The reason is that the `auth.requests` topic has eight partitions, and within one Kafka consumer group each partition is read by only one consumer at a time. The scaling limit was set when the topic was created, and adding pods will not get around it. It is like a supermarket with eight checkouts: calling in a ninth cashier will not make the line move faster, because there is no free till for them.
+Then the autoscaler kicks in. A minute and a half later two scorer replicas are running, two and a half minutes later four, and the queue is gone before you've worked out what's going on. If you pin the replica count at 12 (set both `minReplicas` and `maxReplicas` to 12), you will find that only eight replicas actually work, and the other four report `scored 0`. The reason is that the `auth.requests` topic has eight partitions, and within one Kafka consumer group each partition is read by only one consumer at a time. The scaling limit was set when the topic was created, and adding pods won't get around it. It is like a supermarket with eight checkouts: calling in a ninth cashier won't make the line move any faster, because there is no free till for them.
 
 When we bring the rate back to normal, `rate: 20`, the autoscaler scales the scorer back down to one replica on its own within about five minutes.
 
@@ -666,7 +666,7 @@ postgres-cases-1   0/1   Init:0/1     0   1s
 postgres-cases-1   1/1   Running      0   27s   replica       <-- back as a replica
 ```
 
-The switch-over took a few seconds. The operator promoted the replica to primary, and the deleted pod came back as a replica of the new primary. Now let's see how this affected payments. For a few seconds the dashboard showed the database as unavailable and the queue of entries waiting for the database grew a little, but that was all. The switch never talks to the database directly, and its journal waited calmly in Kafka the whole time. In the `cases` log it looks like this:
+The switch-over took a few seconds. The operator promoted the replica to primary, and the deleted pod came back as a replica of the new primary. So what did this do to payments? For a few seconds the dashboard showed the database as unavailable and the queue of entries waiting for the database grew a little, but that was all. The switch never talks to the database directly, and its journal waited calmly in Kafka the whole time. In the `cases` log it looks like this:
 
 ```
 database unavailable, holding 140 messages, retrying

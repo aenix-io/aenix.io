@@ -12,7 +12,7 @@ language: "de"
 hreflang_en: "/blog/2026/11/cozystack-fraud-detection-workshop/"
 primary_keyword: "Cozystack Workshop"
 keywords: ["Cozystack Workshop", "Betrugserkennung in Echtzeit", "Kartenbetrug erkennen Kubernetes", "Stand-in-Processing", "Kafka auf Kubernetes", "PostgreSQL Failover", "KubeVirt Live-Migration", "Flux GitOps", "ClickHouse Kafka-Engine", "lokales LLM llama.cpp", "HorizontalPodAutoscaler Kafka-Partitionen"]
-direct_answer: "**Dieser zweistündige Hands-on-Workshop baut auf Cozystack eine Echtzeit-Betrugserkennung für Kartenzahlungen rund um einen Legacy-Zahlungsswitch.** Der Switch läuft unverändert in einer virtuellen KubeVirt-Maschine und schickt jede Zahlung an Kafka; ein Scoring-Service in einem Managed-Kubernetes-Cluster prüft sie gegen die jüngste Kartenhistorie in Redis und antwortet innerhalb von 400 ms, sonst entscheidet der Switch selbst (Stand-in-Processing). Ein Journal läuft über Kafka nach PostgreSQL und in ein Dashboard, und ein kleines Sprachmodell im selben Cluster erklärt jede Ablehnung. Alle Managed Services werden per Git und Flux aus dem Cozystack-Katalog bestellt, Analysten bekommen ClickHouse und einen S3-Bucket, und im letzten Teil übersteht das System zehnfachen Traffic, den Ausfall des PostgreSQL-Primary und eine Live-Migration der Switch-VM."
+direct_answer: "**In diesem zweistündigen Hands-on-Workshop entsteht auf Cozystack eine Echtzeit-Betrugserkennung für Kartenzahlungen rund um einen Legacy-Zahlungsswitch.** Der Switch läuft unverändert in einer virtuellen KubeVirt-Maschine und schickt jede Zahlung an Kafka; ein Scoring-Service in einem Managed-Kubernetes-Cluster prüft sie gegen die jüngste Kartenhistorie in Redis und antwortet innerhalb von 400 ms, sonst entscheidet der Switch selbst (Stand-in-Processing). Ein Journal läuft über Kafka nach PostgreSQL und in ein Dashboard, und ein kleines Sprachmodell im selben Cluster erklärt jede Ablehnung. Alle Managed Services werden per Git und Flux aus dem Cozystack-Katalog bestellt, Analysten bekommen ClickHouse und einen S3-Bucket, und im letzten Teil übersteht das System zehnfachen Traffic, den Ausfall des PostgreSQL-Primary und eine Live-Migration der Switch-VM."
 quick_facts:
   - label: "Format"
     value: "Hands-on-Workshop in Textform, etwa zwei Stunden plus eine halbe Stunde Vorbereitung, komplett im Terminal"
@@ -30,11 +30,11 @@ faq:
   - q: "Was brauche ich, um den Workshop selbst durchzuführen?"
     a: "Eine Cozystack-Installation ab Version 1.7, auf der Sie Plattform-Admin-Rechte haben, die StorageClass replicated und das VM-Image ubuntu-24.04 (beides gehört zur Standardinstallation) sowie kubectl, virtctl, git und curl auf Ihrem Rechner. Die Vorbereitung dauert etwa eine halbe Stunde, der Workshop selbst rund zwei Stunden."
   - q: "Was ist Stand-in-Processing?"
-    a: "So arbeitet die Kartenverarbeitung weiter, wenn die Betrugsprüfung zu langsam ist. Antwortet der Scoring-Service nicht innerhalb von 400 ms, entscheidet der Switch selbst nach seiner fest eingebauten Regel. Zahlungen laufen weiter, doch in dieser Zeit können betrügerische Zahlungen ungeprüft durchgehen."
+    a: "So bleibt die Kartenverarbeitung in Betrieb, wenn die Betrugsprüfung zu langsam antwortet. Antwortet der Scoring-Service nicht innerhalb von 400 ms, entscheidet der Switch selbst nach seiner fest eingebauten Regel. Zahlungen laufen weiter, doch in dieser Zeit können betrügerische Zahlungen ungeprüft durchgehen."
   - q: "Verlassen Kartendaten den Cluster, wenn das Sprachmodell eine Ablehnung erklärt?"
     a: "Nein. Der Explainer ist Qwen2.5 0.5B Instruct auf llama.cpp, läuft auf einer gewöhnlichen CPU im eigenen Kubernetes-Cluster des Tenants neben den anderen Services und ruft keine externe API auf."
   - q: "Warum skaliert der Scorer nicht über acht Replikas hinaus?"
-    a: "Das Topic auth.requests hat acht Partitionen, und innerhalb einer Kafka-Consumer-Group liest jede Partition zu jedem Zeitpunkt genau ein Consumer. Replikas ab der neunten bekommen keine Partition und bleiben untätig. Die Grenze wurde beim Anlegen des Topics festgelegt."
+    a: "Das Topic auth.requests hat acht Partitionen, und innerhalb einer Kafka-Consumer-Group liest jede Partition zu jedem Zeitpunkt genau ein Consumer. Jede Replika ab der neunten geht leer aus und bleibt untätig. Die Grenze wurde beim Anlegen des Topics festgelegt."
   - q: "Was passiert mit den Zahlungen, wenn der PostgreSQL-Primary ausfällt?"
     a: "CloudNativePG befördert die Hot-Replica innerhalb von Sekunden. Der Switch spricht nie direkt mit der Datenbank; sein Journal wartet in Kafka, und der Service cases schreibt den Rückstand, sobald die Datenbank wieder erreichbar ist. Die Abgleichzeile im Dashboard steht innerhalb einer Minute wieder auf missing: 0."
   - q: "Unterbricht eine Live-Migration der Switch-VM den Zahlungsverkehr?"
@@ -74,15 +74,15 @@ quiz:
       explanation: "Keeper sorgt dafür, dass sich mehrere ClickHouse-Replikas einigen. Bei einer einzigen Replika verschwendet er nur Ressourcen, wie die ClickHouse-Dokumentation von Cozystack erklärt."
 ---
 
-Dies ist keine Fallstudie, sondern ein Workshop in Form eines Blogposts. Sie können ihn auf Ihrer eigenen Cozystack-Installation nachvollziehen, um zu sehen, wie die Plattform funktioniert und wo sie in Ihre eigenen Projekte passen könnte. In rund zwei Stunden, ohne das Terminal zu verlassen, bauen wir ein System, das Kartenbetrug in Echtzeit erkennt, und dann bereiten wir ihm einen richtig schlechten Tag: zehnfacher Traffic, ein ausgefallener primärer Datenbankserver und eine Live-Migration einer virtuellen Maschine, während Zahlungen durch sie laufen.
+Dies ist keine Fallstudie, sondern ein Workshop in Form eines Blogposts. Sie können ihn auf Ihrer eigenen Cozystack-Installation nachvollziehen, um zu sehen, wie die Plattform funktioniert und wo sie in Ihre eigenen Projekte passen könnte. In rund zwei Stunden, ohne das Terminal zu verlassen, bauen wir ein System, das Kartenbetrug in Echtzeit erkennt, und bescheren ihm anschließend einen richtig schlechten Tag: zehnfacher Traffic, ein ausgefallener primärer Datenbankserver und die Live-Migration einer virtuellen Maschine, durch die gerade Zahlungen laufen.
 
 Alles läuft auf [Cozystack](https://cozystack.io), einer Open-Source-Plattform zum Aufbau von Clouds und einem CNCF-Incubating-Projekt. Cozystack macht aus Ihren Servern eine fertige Cloud mit Managed Kubernetes, Datenbanken, Message Brokern, GPU as a Service und mehr.
 
-Eine Vorbemerkung: Die Betrugserkennung hier ist ein Lehrbeispiel, kein Produkt. Sie gibt der Geschichte einen roten Faden. Eigentlich geht es darum, die Plattform aus der Nähe kennenzulernen und zu prüfen, wie sie zu Ihren eigenen Aufgaben passt.
+Eine Vorbemerkung: Die Betrugserkennung hier ist ein Lehrbeispiel, kein Produkt. Sie liefert der Geschichte den roten Faden; eigentlich geht es darum, die Plattform aus der Nähe kennenzulernen und zu prüfen, wie sie zu Ihren eigenen Aufgaben passt.
 
 ## Was wir bauen
 
-Wenn Sie im Geschäft mit Karte zahlen, fragt das Terminal bei der Bank, die die Karte ausgegeben hat, ob die Zahlung durchgehen darf. Das Programm, das antwortet, heißt Switch. In vielen Banken ist das eine Legacy-Anwendung, die seit Jahren auf derselben virtuellen Maschine läuft und die niemand anfassen möchte (läuft doch). Unser Switch ist genauso. Er genehmigt jede Zahlung unter 5.000 Dollar, was Betrügern das Leben sehr leicht macht.
+Wenn Sie im Geschäft mit Karte zahlen, fragt das Terminal bei der Bank, die die Karte ausgegeben hat, ob die Zahlung durchgehen darf. Das Programm, das antwortet, heißt Switch. In vielen Banken ist das eine Legacy-Anwendung, die seit Jahren auf derselben virtuellen Maschine läuft und die niemand anfassen möchte (never touch a running system). Unserer ist da keine Ausnahme. Er genehmigt jede Zahlung unter 5.000 Dollar und macht Betrügern damit das Leben leicht.
 
 Den Switch schreiben wir natürlich nicht neu. Stattdessen bauen wir eine Zahlungsprüfung um ihn herum. So sieht das ungefähr aus:
 
@@ -90,13 +90,13 @@ Den Switch schreiben wir natürlich nicht neu. Stattdessen bauen wir eine Zahlun
 
 Der Switch schickt jede Zahlung an Kafka. Der Scoring-Service (im Code `scorer`) prüft sie gegen die jüngste Zahlungshistorie der Karte, die in Redis liegt, und schreibt seine Entscheidung zurück nach Kafka. Jede Entscheidung, egal wer sie getroffen hat, trägt der Switch in ein Journal ein, und der Service `cases` überträgt jeden Eintrag nach PostgreSQL, von wo er im Dashboard des Betrugsteams erscheint. Außerdem erklärt ein Sprachmodell in verständlichen Worten, warum eine Zahlung abgelehnt wurde. Der First-Level-Support braucht das, denn Kunden rufen bei der Bank an und wollen wissen, warum ihre Karte nicht funktioniert hat, und jemand muss ihnen antworten können.
 
-Dieser Aufbau hat drei wichtige Eigenschaften.
+Auf drei Eigenschaften dieses Aufbaus kommt es an.
 
 Erstens wartet der Switch nie länger, als er es sich leisten kann. Hat der Scorer nach 400 Millisekunden nicht geantwortet, entscheidet der Switch selbst nach der fest eingebauten Logik. Banken nennen das Stand-in-Processing, und genau das unterscheidet eine langsame Betrugsprüfung von einem Ausfall der Verarbeitung. Ist die Prüfung zu langsam, rutschen in Spitzenzeiten betrügerische Zahlungen durch. Steht die Verarbeitung, geht gar nichts mehr durch, auch nicht der Wocheneinkauf ehrlicher Kunden.
 
 Zweitens wird das Journal unabhängig davon geschrieben, wer entschieden hat. So lässt sich jederzeit vergleichen, was der Switch den Terminals geantwortet hat und was in der Datenbank gelandet ist. Beides muss übereinstimmen.
 
-Drittens bleiben die Kartendaten in unserem Cluster. Selbst das Sprachmodell, das die Erklärungen für den Support schreibt, läuft im Cluster neben den anderen Services und greift nie ins Internet.
+Drittens bleiben die Kartendaten in unserem Cluster. Selbst das Sprachmodell, das die Erklärungen für den Support schreibt, läuft im Cluster neben den anderen Services und geht nie ins Internet.
 
 ## Materialien und Dokumentation
 
@@ -112,13 +112,13 @@ Alle Befehle in diesem Beitrag laufen im Ordner `fraud/` des geklonten Repositor
 
 ## Die Umgebung vorbereiten
 
-Dieser Beitrag ist aus einem Workshop entstanden, den wir bereits in mehreren Städten durchgeführt haben, und dort hat unser Team alles vorbereitet. Jeder Teilnehmer bekam einen fertigen Tenant mit laufender Legacy-Switch-VM, einen Kubernetes-Cluster, einen GitLab-Account und einen Zugang zu einer Bastion-VM mit allen nötigen Werkzeugen (virtctl, kubectl und so weiter). Hier übernehmen Sie diese Vorbereitung selbst, auf Ihrem eigenen Cozystack-Cluster und Ihrem eigenen Laptop. Das dauert etwa eine halbe Stunde.
+Dieser Beitrag ist aus einem Workshop entstanden, den wir bereits in mehreren Städten durchgeführt haben, und dort hatte unser Team alles vorbereitet. Jeder Teilnehmer bekam einen fertigen Tenant mit laufender Legacy-Switch-VM, einen Kubernetes-Cluster, einen GitLab-Account und einen Zugang zu einer Bastion-VM mit allen nötigen Werkzeugen (virtctl, kubectl und so weiter). Hier übernehmen Sie diese Vorbereitung selbst, auf Ihrem eigenen Cozystack-Cluster und Ihrem eigenen Laptop. Das dauert etwa eine halbe Stunde.
 
 Sie brauchen Cozystack 1.7 oder neuer und Plattform-Admin-Rechte, denn wir legen einen Tenant an. Wenn Sie noch kein Cozystack haben, beginnen Sie mit der [Installationsanleitung](https://cozystack.io/docs/v1.7/getting-started/). Im Cluster müssen die StorageClass `replicated` und das Image `ubuntu-24.04` im VM-Image-Katalog vorhanden sein; eine Standardinstallation von Cozystack bringt beides mit. Auf Ihrem Rechner brauchen Sie `kubectl`, `virtctl`, `git` und `curl`. Ich habe dem Tenant eine großzügige Quota von 160 vCPU und 96 GiB Arbeitsspeicher gegeben. Das gesamte System braucht selbst unter Spitzenlast etwa 10 GiB RAM und rund 20 vCPU.
 
 ### Der Tenant und eine Arbeitskopie der Manifeste
 
-Alle YAML-Manifeste für die Vorbereitung liegen in [`fraud/instructor/`](https://github.com/aenix-org/cozystack-workshop/tree/master/fraud/instructor). Statt eines Tenant-Namens enthalten sie den Platzhalter `dallasXX`. Wählen Sie also zuerst einen Namen und legen Sie eine Kopie der Manifeste mit ersetztem Platzhalter an. In den Beispielen heißt der Tenant `fraud1`, sein Namespace nach Cozystack-Konvention `tenant-fraud1`:
+Alle YAML-Manifeste für die Vorbereitung liegen in [`fraud/instructor/`](https://github.com/aenix-org/cozystack-workshop/tree/master/fraud/instructor). Statt eines Tenant-Namens enthalten sie den Platzhalter `dallasXX`. Wählen Sie also zuerst einen Namen und erzeugen Sie eine Kopie der Manifeste, in der der Platzhalter ersetzt ist. In den Beispielen heißt der Tenant `fraud1`, sein Namespace nach Cozystack-Konvention `tenant-fraud1`:
 
 ```bash
 git clone https://github.com/aenix-org/cozystack-workshop.git
@@ -177,17 +177,17 @@ Dieselbe Datei können Sie auch in der Cozystack-Konsole auf der Seite des Clust
 
 ### Traffic und Modell
 
-In den verschachtelten Cluster kommen noch zwei Dateien. `terminals.yaml` legt den Namespace `fraud` an und darin die ConfigMap `endpoints` mit den Adressen von Kafka, Redis, PostgreSQL und dem Switch in Ihrem Tenant (wegen dieser Adressen haben wir vorhin den Tenant-Namen eingesetzt), die ConfigMap `traffic` mit zwanzig Zahlungen pro Sekunde und den Pod `terminals`, der die Geschäfte spielt. `prepull.yaml` startet einen einmaligen Job, der das llama.cpp-Image vorab auf den Knoten lädt, damit Sie in Teil zwei nicht darauf warten müssen.
+In den verschachtelten Cluster kommen noch zwei Dateien. `terminals.yaml` legt den Namespace `fraud` an und darin die ConfigMap `endpoints` mit den Adressen von Kafka, Redis, PostgreSQL und dem Switch in Ihrem Tenant; wegen dieser Adressen haben wir vorhin den Tenant-Namen eingesetzt. Dazu kommen die ConfigMap `traffic` mit zwanzig Zahlungen pro Sekunde und der Pod `terminals`, der die Kassen der Geschäfte simuliert. `prepull.yaml` startet einen einmaligen Job, der das llama.cpp-Image vorab auf den Knoten lädt, damit Sie in Teil zwei nicht darauf warten müssen.
 
 ```bash
 kubectl --context fraud apply -f ~/fraud-env/terminals.yaml -f ~/fraud-env/prepull.yaml
 ```
 
-Unsere imaginären Terminals senden sofort Zahlungen: Der Switch läuft bereits und genehmigt vorerst alles.
+Unsere simulierten Terminals schicken sofort die ersten Zahlungen los, denn der Switch läuft ja schon und genehmigt vorerst alles.
 
 ### Ein Git-Repository und Flux
 
-In Teil eins holt sich die Plattform die Beschreibungen unserer Services aus Git, deshalb legen wir das Repository am besten jetzt an. Jeder Git-Host, den der Cluster über HTTPS erreicht, ist geeignet: GitLab, GitHub oder Gitea. Das Repository braucht einen Ordner `platform/`, und dort legen wir gleich die beiden Dateien ab, die wir eben von Hand angewendet haben. So findet Flux schon beim ersten Lauf in Git eine Beschreibung dessen, was bereits läuft, und löscht nichts, um den Cluster an das Repository anzugleichen.
+In Teil eins holt sich die Plattform die Beschreibungen unserer Services aus Git, deshalb legen wir das Repository am besten jetzt an. Geeignet ist jeder Git-Host, den der Cluster über HTTPS erreicht: GitLab, GitHub oder Gitea. Das Repository braucht einen Ordner `platform/`, und dort legen wir gleich die beiden Dateien ab, die wir eben von Hand angewendet haben. So findet Flux schon beim ersten Lauf in Git eine Beschreibung dessen, was bereits läuft, und löscht nichts, um den Cluster an das Repository anzugleichen.
 
 ```bash
 git clone https://<your-git>/<you>/fraud-infra.git ~/fraud-infra
@@ -242,7 +242,7 @@ CURRENT   NAME     CLUSTER    AUTHINFO      NAMESPACE
 *         tenant   platform   austin03      tenant-austin03
 ```
 
-Über den Kontext `tenant` sprechen wir mit der Cozystack-Plattform und bestellen virtuelle Maschinen, Datenbanken und den Cluster selbst. Über den Kontext `fraud` arbeiten wir mit dem verschachtelten Kubernetes-Cluster, in dem die Betrugsservices laufen werden. Schauen wir, was schon da ist:
+Über den Kontext `tenant` sprechen wir mit der Cozystack-Plattform und bestellen virtuelle Maschinen, Datenbanken und den Cluster selbst. Über den Kontext `fraud` arbeiten wir mit dem verschachtelten Kubernetes-Cluster, in dem die Betrugsservices laufen werden. Sehen wir nach, was schon läuft:
 
 ```
 $ kubectl --context tenant get vminstances,kubernetes
@@ -262,7 +262,7 @@ prepull-explainer-2s24n     0/1     Completed   0          23m
 terminals-7cf5b9b59-6hfzv   1/1     Running     0          23m
 ```
 
-Switch und Cluster sind da, ein Teil der Quota ist schon belegt, und im Namespace `fraud` läuft der Pod `terminals`. Er spielt Geschäfte im ganzen Land und schickt dem Switch zwanzig Zahlungen pro Sekunde. Der Pod `prepull-explainer` im Status `Completed` stammt aus der Vorbereitung: Das ist der Job, der das llama.cpp-Image vorab auf den Knoten geladen hat.
+Switch und Cluster sind da, ein Teil der Quota ist schon belegt, und im Namespace `fraud` läuft der Pod `terminals`. Er simuliert Geschäfte im ganzen Land und schickt dem Switch zwanzig Zahlungen pro Sekunde. Der Pod `prepull-explainer` im Status `Completed` stammt aus der Vorbereitung: Das ist der Job, der das llama.cpp-Image vorab auf den Knoten geladen hat.
 
 Werfen wir jetzt einen Blick in die Switch-VM. Die Konsole öffnen Sie mit `virtctl --context tenant console vm-instance-switch` oder über die Schaltfläche auf der Seite der VM (Tab VNC) im Cozystack-Dashboard. Benutzername und Passwort, `ubuntu`/`ubuntu`, setzt cloud-init aus `switch-vm.yaml`; bleibt der Bildschirm leer, drücken Sie Enter. Sehen wir uns das Log des Switches an:
 
@@ -276,7 +276,7 @@ In fünf Sekunden hat der Switch hundert Autorisierungen bearbeitet, keine abgel
 
 {{< figure src="ch0-lookaround.gif" alt="Terminalaufnahme: zwei kubectl-Kontexte, Switch-VM und Cluster fraud sind bereit, die Quota des Tenants, Terminals senden bereits Zahlungen" caption="Umschauen: beide Kontexte, Switch und Cluster sind da, und Zahlungen laufen bereits" >}}
 
-Prüfen wir jetzt, dass betrügerische Zahlungen durch einen solchen Switch durchgehen. Im Ordner `fraud/manifests/` liegt ein Angriffsmanifest, das drei Maschen auf einmal fährt. Die erste ist Card Testing: Betrüger prüfen gestohlene Karten mit winzigen Zahlungen. Bei der zweiten bezahlt eine Karte, die eben noch in Lagos benutzt wurde, zwei Minuten später in Chicago, obwohl kein Mensch diese Strecke so schnell zurücklegen kann; das nennt man Impossible Travel. Bei der dritten probieren Betrüger nacheinander sechzig Kartennummern einer Bank durch und gehen dabei ihren BIN-Bereich ab.
+Prüfen wir nun, ob betrügerische Zahlungen einen solchen Switch tatsächlich passieren. Im Ordner `fraud/manifests/` liegt ein Angriffsmanifest, das drei Maschen auf einmal fährt. Die erste ist Card Testing: Betrüger prüfen gestohlene Karten mit winzigen Zahlungen. Bei der zweiten bezahlt eine Karte, die eben noch in Lagos benutzt wurde, zwei Minuten später in Chicago, obwohl kein Mensch diese Strecke so schnell zurücklegen kann; das nennt man Impossible Travel. Bei der dritten probieren Betrüger nacheinander sechzig Kartennummern einer Bank durch und gehen dabei ihren BIN-Bereich ab.
 
 ```
 $ kubectl --context fraud apply -f manifests/04-attack.yaml
@@ -289,7 +289,7 @@ attack: impossible travel on card …5504 from Chicago
 5s: sent 21, approved 21, declined 0, errors 0, timeouts 0, p99 10.1 ms
 ```
 
-Der Switch hat alle dreißig betrügerischen Zahlungen genehmigt, weil keine über 5.000 Dollar lag. Das ist unser Ausgangspunkt: Das System funktioniert formal, schützt aber niemanden.
+Der Switch hat alle dreißig betrügerischen Zahlungen genehmigt, weil keine über 5.000 Dollar lag. Das ist unser Ausgangspunkt: Formal funktioniert das System, geschützt ist aber niemand.
 
 Achten Sie in der Aufnahme des Angriffs auf die Spalte `approved`: Jede Zahlung wird genehmigt.
 
@@ -297,7 +297,7 @@ Achten Sie in der Aufnahme des Angriffs auf die Spalte `approved`: Jede Zahlung 
 
 ## Teil 1. Infrastruktur in einem Git-Repository
 
-Alles, was wir bei der Plattform bestellen, beschreiben wir in Dateien in Git. Repository und Flux haben wir bei der Vorbereitung verbunden, also wendet Flux etwa eine Minute nachdem Änderungen in `main` gelandet sind, diese als Service Account des Tenants an, und der bestellte Service wird angelegt.
+Alles, was wir bei der Plattform bestellen, beschreiben wir in Dateien in Git. Repository und Flux haben wir bei der Vorbereitung verbunden, und sobald eine Änderung in `main` landet, wendet Flux sie etwa eine Minute später als Service Account des Tenants an. Der bestellte Service entsteht dann von selbst.
 
 Ab jetzt arbeiten wir im Klon des Repositorys, `~/fraud-infra`, und bestellen drei Managed Services aus dem Cozystack-Katalog. Redis merkt sich die jüngste Aktivität jeder Karte: wie oft, wo und über welche Beträge mit ihr bezahlt wurde. Kafka transportiert die Anfragen des Switches, die Entscheidungen des Scorers und das Zahlungsjournal. PostgreSQL mit zwei Instanzen, einem Primary und einer Replika, speichert jede Transaktion und einen Eintrag zu jeder Prüfung.
 
@@ -410,9 +410,9 @@ Nach etwa einer Minute war Redis wieder da. Flux vergleicht einmal pro Minute de
 
 ## Teil 2. Der Switch fragt nach, bevor er genehmigt
 
-Die Datendienste sind bereit, und jetzt rollen wir drei Anwendungen in unserem eigenen Cluster aus: den Scorer selbst, den Service `cases`, der das Journal in die Datenbank schreibt, und das Betrugs-Dashboard. Alle drei sind bewusst einfach gehalten. Sie sind ein abgespecktes Modell eines echten Betrugssystems.
+Die Datendienste stehen. Jetzt rollen wir drei Anwendungen in unserem eigenen Cluster aus: den Scorer selbst, den Service `cases`, der das Journal in die Datenbank schreibt, und das Betrugs-Dashboard. Alle drei sind bewusst einfach gehalten und ergeben zusammen ein abgespecktes Modell eines echten Betrugssystems.
 
-Zuerst geben wir den Services das Datenbankpasswort. Cozystack hat es beim Anlegen von PostgreSQL erzeugt und hält es auf der Plattform, und der Service `cases` sowie das Dashboard brauchen es. Dieser Befehl kopiert das Passwort des Benutzers `fraud` aus dem Plattform-Secret in ein Secret `cases-db` im verschachtelten Cluster:
+Zuerst geben wir den Services das Datenbankpasswort. Cozystack hat es beim Anlegen von PostgreSQL erzeugt und auf der Plattform abgelegt, gebraucht wird es aber vom Service `cases` und vom Dashboard. Dieser Befehl kopiert das Passwort des Benutzers `fraud` aus dem Plattform-Secret in ein Secret `cases-db` im verschachtelten Cluster:
 
 ```bash
 kubectl --context fraud -n fraud create secret generic cases-db \
@@ -445,7 +445,7 @@ HTTP listening on :8080
 5s: 111 authorizations, 0 declined, stand-in 0.0%, p99 272 ms
 ```
 
-`SCORING mode` bedeutet, dass der Switch jetzt jede Zahlung an Kafka schickt und auf die Entscheidung des Scorers wartet; kommt nach 400 Millisekunden keine Antwort, entscheidet er selbst nach seiner alten Regel. In den ersten Sekunden ist die Latenz spürbar, weil die Verbindungen zu Kafka erst aufgebaut werden. Nach einer halben Minute pendelt sich alles ein, und das zeigen die Metriken des Dashboards. Ich lese sie unter der Adresse meiner Umgebung; bei Ihnen ist es `http://localhost:8080/metrics` über die Portweiterleitung oder Ihre eigene Domain.
+`SCORING mode` bedeutet, dass der Switch jetzt jede Zahlung an Kafka schickt und auf die Entscheidung des Scorers wartet; kommt nach 400 Millisekunden keine Antwort, entscheidet er selbst nach seiner alten Regel. In den ersten Sekunden ist die Latenz spürbar, weil die Verbindungen zu Kafka erst aufgebaut werden. Nach einer halben Minute hat sich alles eingependelt, wie die Metriken des Dashboards zeigen. Ich lese sie unter der Adresse meiner Umgebung; bei Ihnen ist es `http://localhost:8080/metrics` über die Portweiterleitung oder Ihre eigene Domain.
 
 ```
 $ curl -s https://fraud.austin03.workshop.aenix.io/metrics | grep "^fraud_" | head -12
@@ -467,7 +467,7 @@ Die Aufnahme zeigt die ganze Umstellung: Die Anwendungen werden ausgerollt, der 
 
 Jetzt läuft jede Zahlung über Kafka zum Scorer und zurück, und das Terminal bekommt nach etwa zwölf Millisekunden eine Antwort. Das Journal hält fast mit dem Zahlungsstrom Schritt: Die sechs Einträge, die noch nicht in der Datenbank sind, verschwinden innerhalb einer Minute aus dem Zähler `fraud_journal_missing`.
 
-Bleibt noch, dem System beizubringen, seine Ablehnungen zu erklären. Ein Support-Mitarbeiter braucht einen Grund, den er einem Kunden vorlesen kann, der anruft und wissen will, warum seine Kartenzahlung fehlgeschlagen ist. Diesen Grund schreibt ein kleines Sprachmodell, Qwen2.5 0.5B Instruct, das llama.cpp ausführt. Das Modell läuft auf einer gewöhnlichen CPU in unserem Cluster und ruft keine externen Services auf; beim Start lädt der Pod einmalig seine Gewichte herunter, etwa 400 MB. Das llama.cpp-Image liegt dank des Vorbereitungsjobs schon auf dem Knoten, also warten wir nur auf die Gewichte:
+Bleibt noch, dem System beizubringen, seine Ablehnungen zu erklären. Ein Support-Mitarbeiter braucht einen Grund, den er einem Kunden vorlesen kann, der anruft und wissen will, warum seine Kartenzahlung fehlgeschlagen ist. Diesen Grund schreibt ein kleines Sprachmodell, Qwen2.5 0.5B Instruct, ausgeführt von llama.cpp. Das Modell läuft auf einer gewöhnlichen CPU in unserem Cluster und ruft keine externen Services auf; beim Start lädt der Pod einmalig seine Gewichte herunter, etwa 400 MB. Das llama.cpp-Image liegt dank des Vorbereitungsjobs schon auf dem Knoten, also warten wir nur auf die Gewichte:
 
 ```
 $ kubectl --context fraud apply -f manifests/03-explainer.yaml
@@ -521,7 +521,7 @@ spec:
       password: Fraud2026
 ```
 
-ClickHouse Keeper sorgt dafür, dass sich mehrere ClickHouse-Replikas untereinander abstimmen, wir haben aber nur eine Replika und schalten ihn deshalb ab. So steht es in der ClickHouse-Dokumentation von Cozystack, und genau solche Details unterscheiden jemanden, der die Dokumentation gelesen hat, von jemandem, der das erstbeste Manifest kopiert hat. Pushen Sie die Datei, warten Sie ein paar Minuten und verbinden Sie sich mit ClickHouse über seinen eigenen Client, `clickhouse-client`, der im Pod bereits installiert ist:
+ClickHouse Keeper sorgt dafür, dass sich mehrere ClickHouse-Replikas untereinander abstimmen; wir haben aber nur eine Replika und schalten ihn deshalb ab. So steht es in der ClickHouse-Dokumentation von Cozystack, und genau solche Details unterscheiden jemanden, der die Dokumentation gelesen hat, von jemandem, der das erstbeste Manifest kopiert hat. Pushen Sie die Datei, warten Sie ein paar Minuten und verbinden Sie sich mit ClickHouse über seinen eigenen Client, `clickhouse-client`, der im Pod bereits installiert ist:
 
 ```
 $ kubectl --context tenant exec -it chi-clickhouse-analytics-clickhouse-0-0-0 -c clickhouse -- \
@@ -601,7 +601,7 @@ Den Bericht können Sie auch im Browser öffnen, in der Oberfläche des Object S
 
 ## Teil 4. Ein richtig schlechter Tag: Black Friday, Ausfall des Datenbankservers und eine VM-Migration
 
-Im letzten Teil testen wir das System so, wie das echte Leben es am schlimmstmöglichen Tag für eine Bank tun würde. Es gibt drei Prüfungen, und sie folgen fast ohne Pause aufeinander.
+Im letzten Teil setzen wir das System dem aus, was einer Bank an ihrem schlimmsten Tag widerfahren kann: drei Prüfungen, fast ohne Pause hintereinander.
 
 ### 4.1. Black Friday und Autoscaling
 
@@ -641,9 +641,9 @@ scorer   Deployment/scorer   cpu: 491m/250m   1   8   2   2m
 scorer   Deployment/scorer   cpu: 468m/250m   1   8   4   2m30s
 ```
 
-Eine einzelne Scorer-Replika kommt mit zehnfachem Traffic nicht zurecht. Ihre CPU-Last liegt weit über dem Ziel von 250 Millicores, die Antworten passen nicht mehr in 400 Millisekunden, und der Switch beginnt, selbst zu entscheiden. In diesem Moment zeigt das Dashboard 148 Autorisierungen pro Sekunde, 95 % davon hat der Switch im Stand-in-Modus erledigt. Die Entscheidungslatenz stößt an dieselben 400 Millisekunden, und die Warteschlange des Scorers wächst auf fünfzehnhundert Nachrichten. In einer echten Bank sind das die Minuten, in denen betrügerische Zahlungen ungeprüft durchgehen.
+Eine einzelne Scorer-Replika kommt mit zehnfachem Traffic nicht zurecht. Ihre CPU-Last liegt weit über dem Ziel von 250 Millicores, die Antworten passen nicht mehr in 400 Millisekunden, und der Switch fängt an, selbst zu entscheiden. In diesem Moment zeigt das Dashboard 148 Autorisierungen pro Sekunde, 95 % davon hat der Switch im Stand-in-Modus erledigt. Die Entscheidungslatenz stößt an dieselben 400 Millisekunden, und die Warteschlange des Scorers wächst auf fünfzehnhundert Nachrichten. In einer echten Bank sind das die Minuten, in denen betrügerische Zahlungen ungeprüft durchgehen.
 
-Dann greift der Autoscaler ein. Nach anderthalb Minuten laufen zwei Scorer-Replikas, nach zweieinhalb Minuten vier, und die Warteschlange ist verschwunden, bevor man verstanden hat, was eigentlich los ist. Legen Sie die Zahl der Replikas auf 12 fest (dafür setzt man `minReplicas` und `maxReplicas` beide auf 12), stellen Sie fest, dass nur acht Replikas tatsächlich arbeiten und die übrigen vier `scored 0` melden. Der Grund: Das Topic `auth.requests` hat acht Partitionen, und innerhalb einer Kafka-Consumer-Group liest jede Partition zu jedem Zeitpunkt nur ein Consumer. Die Skalierungsgrenze wurde beim Anlegen des Topics festgelegt, und mit zusätzlichen Pods kommt man nicht an ihr vorbei. Wie im Supermarkt mit acht Kassen: Eine neunte Kassiererin macht die Schlange nicht kürzer, denn für sie gibt es keine freie Kasse.
+Dann greift der Autoscaler ein. Nach anderthalb Minuten laufen zwei Scorer-Replikas, nach zweieinhalb Minuten vier, und die Warteschlange ist verschwunden, bevor man verstanden hat, was eigentlich los ist. Erzwingen Sie 12 Replikas (dazu setzen Sie `minReplicas` und `maxReplicas` beide auf 12), sehen Sie, dass nur acht Replikas tatsächlich arbeiten und die übrigen vier `scored 0` melden. Der Grund: Das Topic `auth.requests` hat acht Partitionen, und innerhalb einer Kafka-Consumer-Group liest jede Partition zu jedem Zeitpunkt nur ein Consumer. Die Skalierungsgrenze wurde beim Anlegen des Topics festgelegt, und mit zusätzlichen Pods kommt man nicht an ihr vorbei. Wie im Supermarkt mit acht Kassen: Eine neunte Kassiererin macht die Schlange nicht kürzer, denn für sie gibt es keine freie Kasse.
 
 Setzen wir die Rate wieder auf normal, `rate: 20`, skaliert der Autoscaler den Scorer nach etwa fünf Minuten von selbst auf eine Replika zurück.
 
@@ -651,7 +651,7 @@ Setzen wir die Rate wieder auf normal, `rate: 20`, skaliert der Autoscaler den S
 
 ### 4.2. Der primäre Datenbankserver fällt aus
 
-Die zweite Prüfung ist ein Ausfall, auf den man sich vorher vorbereitet: Der Server, auf dem der PostgreSQL-Primary läuft, fällt aus. CloudNativePG hält für uns eine Hot-Replika bereit. Wir suchen den Primary und löschen seinen Pod, als wäre der Server plötzlich ohne Strom. Das Flag `--grace-period=5` verkürzt die Zeit für ein sauberes Herunterfahren auf fünf Sekunden:
+Die zweite Prüfung ist ein Ausfall, für den man vorgesorgt haben sollte: Der Server, auf dem der PostgreSQL-Primary läuft, fällt aus. CloudNativePG hält für uns eine Hot-Replika bereit. Wir suchen den Primary und löschen seinen Pod, als wäre der Server plötzlich ohne Strom. Das Flag `--grace-period=5` verkürzt die Zeit für ein sauberes Herunterfahren auf fünf Sekunden:
 
 ```
 $ kubectl --context tenant get pods -l cnpg.io/cluster=postgres-cases -L role
@@ -673,13 +673,13 @@ Die Umschaltung hat ein paar Sekunden gedauert. Der Operator hat die Replika zum
 database unavailable, holding 140 messages, retrying
 ```
 
-Sobald die Datenbank wieder erreichbar war, hat `cases` alle aufgelaufenen Nachrichten hineingeschrieben. Die Abgleichzeile im Dashboard vergleicht die Zahl der Einträge, die der Switch geschrieben hat, mit der Zahl der Zeilen in der Datenbank, und innerhalb einer Minute stand sie wieder auf `missing: 0`. Kein einziger Eintrag ging verloren, denn unsere maßgebliche Quelle ist das Journal in Kafka, und die Datenbank holt es lediglich ein.
+Sobald die Datenbank wieder erreichbar war, hat `cases` alle aufgelaufenen Nachrichten hineingeschrieben. Die Abgleichzeile im Dashboard vergleicht die Zahl der Einträge, die der Switch geschrieben hat, mit der Zahl der Zeilen in der Datenbank, und innerhalb einer Minute stand sie wieder auf `missing: 0`. Kein einziger Eintrag ging verloren, denn unsere maßgebliche Quelle ist das Journal in Kafka, die Datenbank zieht lediglich nach.
 
 {{< figure src="ch6b-failover-migrate.gif" alt="Terminalaufnahme: Der PostgreSQL-Primary fällt aus, die Replika wird in Sekunden befördert, aufgelaufene Einträge landen in der Datenbank" caption="Ausfall des PostgreSQL-Primary: Die Replika übernimmt in Sekunden, aufgelaufene Einträge werden nachgeschrieben" >}}
 
 ### 4.3. Der Switch zieht ohne Unterbrechung auf einen anderen Server um
 
-Die letzte Prüfung machen Banken meist nachts, im Wartungsfenster. Der Server, auf dem der Switch läuft, muss gewartet werden, also bitten wir die Plattform, die laufende virtuelle Maschine auf einen anderen Knoten zu verschieben:
+Die letzte Prüfung erledigen Banken meist nachts im Wartungsfenster. Der Server, auf dem der Switch läuft, muss gewartet werden, also bitten wir die Plattform, die laufende virtuelle Maschine auf einen anderen Knoten zu verschieben:
 
 ```
 $ kubectl --context tenant get vmi vm-instance-switch -o wide
