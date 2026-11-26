@@ -53,7 +53,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Clouds mit optionaler Volume-Verschlüsselung, einer Passphrase, die Sie verwalten, und Air-Gap-Betrieb; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große souveräne Cloud-Produkte in einer Größenordnung nahe an Hyperscalern.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/souveraene-cloud-aufbauen-eu-zentralasien/">Playbook lesen →</a>
 </div>
 
@@ -121,7 +121,7 @@ Konkrete Anforderungen an souveräne Clouds (BSI C5, SecNumCloud, EUCS) besprech
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Playbook für souveräne Clouds](/de/blog/2026/05/souveraene-cloud-aufbauen-eu-zentralasien/)**

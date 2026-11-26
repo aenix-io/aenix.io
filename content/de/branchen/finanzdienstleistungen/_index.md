@@ -57,7 +57,7 @@ faq:
 > **Passende Plattformen:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Grundlage; **[AI Platform](/de/produkte/ai-platform/)** für KI in der Schadenbearbeitung, Betrugserkennung und souveräne KI-Workloads. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/dora-compliance/">DORA-Compliance →</a>
 </div>
 
@@ -146,7 +146,7 @@ Beschaffung: Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle in E
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

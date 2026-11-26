@@ -66,7 +66,7 @@ Bursting liefern wir als Projekt auf Cozystack und Cluster API, zugeschnitten au
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — mandantenfähiges GPU-Scheduling und anteiliges Sharing (HAMi) für Inferenz und Fine-Tuning; Angebot per RFP. Für die elastische Self-Service-Cloud darunter kombinieren Sie sie mit der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)**. Rechnen Sie die Zahlen mit den **[ROI- und TCO-Rechnern](/de/roi-rechner/)** durch oder sehen Sie sich das [Webinar zum Aufbau einer eigenen GPU-Cloud](/webinars/build-your-gpu-cloud/) an (Englisch). Für Verantwortliche von ML-Plattformen: der [Leitfaden für Leiter AI/ML](/de/fuer/leiter-ai-ml/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/case-studies/multicloud-academic-gpu/">Zur Fallstudie →</a>
 </div>
 

@@ -55,7 +55,7 @@ faq:
 > **Passende Plattformen:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für eine an NIS2 ausgerichtete Multi-Site-Architektur mit Air-Gap-Option für OT; **[AI Platform](/de/produkte/ai-platform/)** für KI-Workloads zur Netzoptimierung.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/smart-grid-plattform-architektur-it-ot/">Netzarchitektur →</a>
 </div>
 
@@ -157,7 +157,7 @@ Wir nehmen RFI und RFP entgegen über:
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

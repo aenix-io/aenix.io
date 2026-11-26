@@ -9,20 +9,21 @@
 #
 # `pages` holds exact page paths (RelPermalink). `url` is the default target;
 # `urls` overrides it for single pages, e.g. a competitor's own TCO calculator.
-# Labels follow the button vocabulary: one label per action, EN and DE.
+# Labels follow the button vocabulary: one label per action, EN and DE, and no
+# more than two words, so the page around the button carries the detail.
 
 labels:
   demo:
-    en: "Try the live demo"
-    de: "Live-Demo öffnen"
+    en: "Live demo"
+    de: "Live-Demo"
   checklist:
-    en: "Download the checklist"
-    de: "Checkliste herunterladen"
+    en: "Get checklist"
+    de: "Zur Checkliste"
   vmware:
-    en: "Estimate VMware savings"
-    de: "VMware-Einsparungen berechnen"
+    en: "Calculate savings"
+    de: "Einsparung berechnen"
   tco:
-    en: "Model your TCO"
+    en: "Calculate TCO"
     de: "TCO berechnen"
 
 topics:

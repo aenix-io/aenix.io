@@ -62,8 +62,8 @@ Das Team, das Ihre Migration umsetzt, hat [Cozystack](/de/produkte/cozystack/) e
 > **Passt zu:** einer der **[Ænix-Plattformen](/de/produkte/)** — das Ziel richtet sich nach dem Käuferprofil. Wer Cloud an externe Kunden verkauft (Hoster, MSPs, Telcos, nationale Betreiber), landet auf der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)**; regulierte Organisationen, die Cloud für die eigenen Entwickler betreiben, auf der **[Private Cloud Platform](/de/produkte/private-cloud-platform/)**, deren Developer-Self-Service-Schicht die interne PaaS ersetzt; GPU- und Inferenz-Bestände auf der **[AI Platform](/de/produkte/ai-platform/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/de/roi-rechner/">TCO modellieren →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
+  <a class="cta-secondary" href="/de/cloud-rechner/">TCO berechnen →</a>
 </div>
 
 

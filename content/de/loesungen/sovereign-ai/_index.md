@@ -56,7 +56,7 @@ faq:
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — mandantenfähiges GPU-Scheduling, Inferenz, Fine-Tuning und RAG auf einer Plattform, mit Vektordatenbank und Object Storage; ergänzen Sie die [Private Cloud Platform](/de/produkte/private-cloud-platform/) für eine umfassendere souveräne Cloud, oder lesen Sie den kostenlosen [Sovereign-AI-Entscheidungsleitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/private-llm-deployment-leitfaden/">Leitfaden lesen →</a>
 </div>
 
@@ -267,7 +267,7 @@ Die Ænix AI Platform wird per RFP angeboten. RFIs und RFPs nehmen wir über die
 Wir prüfen die Passung, grenzen den Umfang auf Ihre Datenklasse und Ihre Aufsicht ein und legen fest, ob die 14- oder die 28-tägige Variante passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

@@ -54,7 +54,7 @@ faq:
 Ænix hat [Cozystack](/de/produkte/cozystack/) entwickelt, ein Open-Source-CNCF-Projekt, das bei Service-Providern, Banken und KI-Betreibern produktiv läuft. In unseren DevOps-Consulting-Projekten verstärken unsere Engineers Ihr Team — für Assessment, Transformation oder dauerhaften Betrieb.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/devops-best-practices-2026/">Best Practices →</a>
 </div>
 
@@ -227,7 +227,7 @@ Das Assessment hat einen Festpreis, der vor dem Start feststeht. Die Transformat
 ## Starten Sie mit einem 30-minütigen Discovery-Gespräch
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

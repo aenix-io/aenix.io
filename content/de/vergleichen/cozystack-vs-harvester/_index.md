@@ -136,7 +136,7 @@ Cozystack zahlt sich aus, sobald eine dieser Anforderungen dazukommt:
 Als Open Source sind beide Plattformen kostenlos nutzbar; bezahlt werden Support und die Menschen, die sie betreiben. Der [TCO-Rechner Harvester vs Cozystack](/tco-calculator/vs-harvester/) (auf Englisch) enthält ein Fünfjahres-Kostenmodell mit belegten Annahmen und zeigt offen, ab welcher Größe Harvester günstiger ist. Ænix-Subscriptions beginnen bei 1.250 USD pro 10 Nodes und Monat bei jährlicher Abrechnung; siehe [Preise](/de/preise/). Für den Umzug von Workloads aus VMware oder anderen Plattformen siehe die [Migrations-Hubs](/de/migration/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/tco-calculator/vs-harvester/">TCO Harvester vs Cozystack →</a>
 </div>
 

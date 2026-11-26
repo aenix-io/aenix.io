@@ -47,7 +47,7 @@ faq:
 > **Passt zu:** allen drei **[Ænix-Plattformen](/de/produkte/)** — die Strategie benennt, welche zu Ihrem Profil und zum Umfang des Vorhabens passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Methodik des Assessments →</a>
 </div>
 
@@ -90,7 +90,7 @@ Das Projekt läuft als **[Platform Readiness Assessment](/de/dienstleistungen/pl
 Für konkrete Anlässe siehe **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)**, **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

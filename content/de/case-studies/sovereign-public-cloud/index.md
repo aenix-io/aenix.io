@@ -32,7 +32,7 @@ related_pages:
 </div>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
 </div>
 
@@ -99,8 +99,8 @@ Die Zusammenarbeit wuchs zu laufendem Support und Co-Development: die Ingenieure
 Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo</a>
 </div>
 
 ---

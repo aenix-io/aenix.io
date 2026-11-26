@@ -50,7 +50,7 @@ faq:
 > **Passende Plattform:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Sperren und Stilllegen von Mandanten, schnelle Bereitstellung neuer Funktionen, produktisierter Installer, Migrationswerkzeuge für VMware, OpenStack und Virtuozzo ([Virtuozzo-Migration](/de/migration/virtuozzo/)). Sie verkaufen heute Cloud über VMware Cloud Director? Siehe [die VMware-Cloud-Director-Alternative für Service Provider](/de/alternativen/vmware-cloud-director-alternative/). Support-Stufen ab 1.250 USD pro 10 Nodes und Monat; Support für die White-Label-Konfiguration ab Standard (3.000 USD). Hosting-Anbieter, die sie produktiv betreiben: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Im **[Partnerprogramm](/de/partner/)** erhalten Sie bis zu 40 % Marge auf Ænix-Plattform-Abonnements und Support.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/">Modernisierung der Hosting-Plattform →</a>
 </div>
 
@@ -59,7 +59,7 @@ faq:
 **Rechnen Sie zuerst das Geschäftsmodell durch.** Der [Rechner für die Unit Economics von Hosting-Anbietern](/de/hosting-anbieter-rechner/) schätzt Umsatz und Amortisation, und das [Webinar „Launch your public cloud“](/webinars/launch-public-cloud/) zeigt einen Provider-Launch Schritt für Schritt. Verantwortliche für Cloud-Produkte beginnen am besten mit dem [Leitfaden für Cloud-Leitungen](/de/fuer/leiter-cloud/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
+  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo</a>
 </div>
 
 
@@ -117,7 +117,7 @@ Produktive Referenzen: regionale Hosting-Anbieter, die die Ænix Public Cloud Pl
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** — Projektleistung

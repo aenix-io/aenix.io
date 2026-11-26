@@ -53,7 +53,7 @@ Die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert 
 Diese Seiten beantworten das Rahmenwerk für Rahmenwerk — für die drei Ænix-Plattformen und für Cozystack darunter. Jede trennt sauber, was bei einer frischen Installation greift, was mitgeliefert, aber deaktiviert ist, und was kein Infrastrukturprodukt für Sie erledigen kann.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Mit einem Engineer sprechen</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 

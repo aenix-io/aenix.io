@@ -52,7 +52,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Studierendendaten und die mandantenfähige Isolation von Forschungsgruppen; **[AI Platform](/de/produkte/ai-platform/)** für KI/ML-Forschungslabore mit GPU-Pools.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/cloud-native-forschung-lehre-infrastruktur-hochschulen/">Cloud-native Forschungsinfrastruktur →</a>
 </div>
 
@@ -188,7 +188,7 @@ Konkrete Konditionen klären wir im Discovery-Gespräch.
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Weiterlesen:

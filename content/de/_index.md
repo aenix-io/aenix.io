@@ -7,7 +7,7 @@ layout: "locale-home"
 hero_h1: "Ihre eigene Cloud — für Hosting-Anbieter, Unternehmen, die VMware ablösen, und GPU-Clouds."
 hero_subtitle: "Hosting- und Cloud-Anbieter starten eine Public Cloud mit Billing und WHMCS. Unternehmen ersetzen VMware durch eine Private Cloud, die sie selbst kontrollieren. GPU- und KI-Clouds machen aus ihren eigenen GPUs einen mandantenfähigen Service. Alle drei laufen auf Cozystack, dem CNCF-Projekt, das Ænix entwickelt hat und mitpflegt."
 hero_tag: "Schlüsselfertige Cloud-Plattformen · Open-Source-Kern · CNCF"
-hero_cta_primary: "Gespräch vereinbaren"
+hero_cta_primary: "Termin buchen"
 hero_cta_primary_url: "/de/kontakt/"
 hero_cta_secondary: "Plattformen ansehen →"
 hero_cta_secondary_url: "/de/produkte/"
@@ -290,7 +290,7 @@ Was Ihnen das in der Praxis bringt:
 </div>
 
 <div class="cta-row cta-final__actions">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/">Plattformen ansehen →</a>
   <a class="cta-secondary" href="/de/preise/">Preise ansehen</a>
 </div>

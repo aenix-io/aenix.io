@@ -48,7 +48,7 @@ faq:
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — KI-Infrastruktur mit mandantenfähigem GPU-Scheduling auf NVIDIA-GPUs für Rechenzentren, Blueprints für Inferenz, Fine-Tuning und RAG, Souveränitätskontrollen für regulierte KI-Workloads. Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/ai-platform-gpu-wirtschaftlichkeit-inferenz/">Playbook lesen →</a>
 </div>
 
@@ -105,7 +105,7 @@ Für Workloads mit Schwerpunkt Souveränität siehe **[Sovereign AI](/de/loesung
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Playbook für KI-Plattform-Startups](/de/blog/2026/05/ai-platform-gpu-wirtschaftlichkeit-inferenz/)**

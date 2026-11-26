@@ -24,7 +24,7 @@ hide_closing_cta: true
 > **Passt zu:** der **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** (Developer Self-Service inklusive) als fertige Internal Developer Platform oder einem **[Aufbau einer Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/)**, zugeschnitten auf Ihre Organisation. Open-Source-Kern: **[Cozystack](/de/produkte/cozystack/)**, Apache 2.0.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/developer-self-service/">Developer Self-Service →</a>
 </div>
 
@@ -101,7 +101,7 @@ Apache-2.0-Kern, keine Lizenzkosten pro Entwickler. Sie zahlen für Support und/
 Kostenlos und ohne Vorbereitung. Wir sehen uns an, wie Ihre Teams heute Ressourcen bereitstellen, und sagen Ihnen, ob der Developer Self-Service der Private Cloud Platform oder ein gemeinsames Aufbauprojekt Sie schneller zum Self-Service bringt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/internal-developer-platform/">Eine IDP aufbauen →</a>
 </div>
 

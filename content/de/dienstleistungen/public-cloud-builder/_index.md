@@ -51,7 +51,7 @@ faq:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — mit WHMCS-Integration und produktisiertem Installer, ab 1.250 USD pro 10 Nodes und Monat für regionale Anbieter; dieselbe Plattform als Multi-Region-Programm für große Betreiber wird per RFP angeboten.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/cloud-produkt-starten-playbook-hosting-anbieter/">Playbook lesen →</a>
 </div>
 
@@ -135,7 +135,7 @@ Die Logos oben stehen für Hosting-Anbieter, die die Ænix Public Cloud Platform
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Playbook für Cloud-Produkte für Kunden](/de/blog/2026/05/cloud-produkt-starten-playbook-hosting-anbieter/)**

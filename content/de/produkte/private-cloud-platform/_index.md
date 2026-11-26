@@ -52,7 +52,7 @@ aliases:
 **Private und hybride souveräne Cloud für regulierte Organisationen, die Cloud für sich selbst betreiben. Multi-Site-Designs, an DORA und NIS2 ausgerichtete Architektur und Koexistenz mit VMware, OpenNebula und OpenShift während der Migration — auf Hardware, die Sie kontrollieren. Developer Self-Service und Schulungen für Ihre Engineers gehören zur Plattform und sind kein zweiter Kauf.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/">Plattformen vergleichen →</a>
 </div>
 

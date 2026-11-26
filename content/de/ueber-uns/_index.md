@@ -232,7 +232,7 @@ Bis zu **40 % Marge** auf Ænix-Plattform-Abonnements und Support für Reseller,
 Vereinbaren Sie ein 30-minütiges Discovery-Gespräch, um zu klären, welche Plattform passt und wie ein Projekt aussehen würde.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/kontakt/#offices">Kontaktdaten →</a>
 </div>
 

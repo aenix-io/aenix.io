@@ -58,7 +58,7 @@ aliases:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — die vollständige Plattform für Organisationen, die Cloud verkaufen (Portal im eigenen Branding, Dienstkatalog, Support); diese Integration ist einer ihrer Bestandteile. Neu beim Motor darunter? Starten Sie mit **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/branchen/hosting-anbieter/">Für Hosting-Anbieter →</a>
 </div>
 

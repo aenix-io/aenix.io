@@ -59,7 +59,7 @@ A telecom operator and integrator built a corporate AI platform — GPU scheduli
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/tco-calculator/">Model your TCO →</a>
+  <a class="cta-secondary" href="/tco-calculator/">Calculate TCO →</a>
 </div>
 
 ---

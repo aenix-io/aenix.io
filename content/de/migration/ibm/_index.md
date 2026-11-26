@@ -77,7 +77,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Banken (Air-Gap-Installation, Chargeback, Migration als angebotene Leistung) oder zur **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**, wenn Sie gezielt IBM Cloud Pak / OpenShift ablösen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/preise/">Preise ansehen →</a>
 </div>
 
@@ -292,7 +292,7 @@ Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben. Für 
 <a id="discovery"></a>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment anfragen →</a>
 </div>
 

@@ -51,8 +51,8 @@ Beim Hosting-Anbieter hingen öffentliche Adressen an einem Rack, und die Hälft
 Ein Telekommunikationsbetreiber und Systemintegrator baute eine unternehmensweite KI-Plattform — GPU-Scheduling, RAG auf Qdrant, NVIDIA-Dynamo-Inferenz, geografisch verteilte GPUs — und lieferte dieselbe Distribution anschließend in die eigene Umgebung eines staatlichen Endkunden aus.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Ihren Fall besprechen</a>
-  <a class="cta-secondary" href="/tco-calculator/">TCO modellieren →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
+  <a class="cta-secondary" href="/tco-calculator/">TCO berechnen →</a>
 </div>
 
 ---
@@ -156,7 +156,7 @@ Cozystack ist Open Source, und viele Organisationen betreiben es ohne kommerziel
 Vereinbaren Sie ein Discovery-Gespräch. Wir gleichen Ihre Situation mit passenden Fallmustern ab und besprechen die nächsten Schritte.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

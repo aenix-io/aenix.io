@@ -19,7 +19,7 @@ related_pages:
 **Wählen Sie die Seite für Ihre Position. Jede startet beim Problem Ihrer Rolle — VMware-Ausstieg, Developer-Self-Service, Cloud-Ökonomie, eine Cloud zum Wiederverkauf, eine Partner-Linie oder regulatorische Souveränität — und führt zum passenden Ænix-Angebot. Jede Rolle kann uns auf zwei Wegen einbinden: eine schlüsselfertige Plattform, die Sie betreiben, oder unser Team, das sie mit Ihnen baut.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/">Plattformen ansehen →</a>
 </div>
 

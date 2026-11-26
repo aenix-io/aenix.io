@@ -44,7 +44,7 @@ faq:
 > **Passt zu:** allen drei **[Ænix-Plattformen](/de/produkte/)** — das Assessment benennt, welche zu Ihrem Umfang passt, oder sagt, dass keine passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="#what-we-look-at">Details ansehen →</a>
 </div>
 
@@ -272,7 +272,7 @@ Namentliche Referenzen und die geschützten Fassungen von Projekten unter NDA te
 Kostenlos und ohne Vorbereitung. Wir klären die Passung, vereinbaren einen fokussierten Umfang und sagen Ihnen, ob die Variante über 14 oder über 28 Tage zu Ihrer Situation passt. Passt keine, sagen wir das.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

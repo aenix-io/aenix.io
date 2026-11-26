@@ -51,7 +51,7 @@ faq:
 **Ein VMware-Kostenrechner macht aus der Verlängerung bei Broadcom eine Zahl, mit der Sie arbeiten können. Geben Sie die lizenzierten CPU-Kerne Ihres Bestands, Ihre heutigen Kosten pro Kern, die Zahl Ihrer physischen Server, eine Support-Stufe und die Zahl der VMs ein, und Sie sehen die jährlichen Kosten, die Netto-Ersparnis beim Wechsel auf eine offene Plattform unter der Apache-2.0-Lizenz, den Nettoeffekt über drei Jahre nach der Migration und wie schnell sich die Migration amortisiert. Entwickelt von Ænix, das Cozystack entwickelt hat und mitpflegt.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/migration/vmware/">VMware-Migration →</a>
 </div>
 
@@ -93,7 +93,7 @@ Die Eingaben sind bewusst einfach gehalten, damit das Ergebnis belastbar bleibt.
 ## Aus der Zahl einen Plan machen
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/alternativen/vmware-alternative/">VMware-Alternative →</a>
 </div>
 

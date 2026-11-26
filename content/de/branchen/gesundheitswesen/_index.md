@@ -67,7 +67,7 @@ Die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert 
 > **Passende Plattformen:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Grundlage; **[AI Platform](/de/produkte/ai-platform/)** für KI in der medizinischen Bildgebung, klinisches NLP und Entscheidungsunterstützung auf Patientendaten. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränität →</a>
 </div>
 
@@ -143,7 +143,7 @@ Ergebnis ist ein schriftlicher Bericht, ausgerichtet auf den Dialog mit der Aufs
 Wir veröffentlichen keine Namen von Kunden aus dem Gesundheitswesen. Als architektonisches Nachweismuster dient unsere anonymisierte **[Fallstudie zur souveränen Public Cloud](/de/case-studies/sovereign-public-cloud/)**: eine mandantenfähige Plattform über drei Rechenzentren mit vollständiger Datenresidenz — dasselbe strukturelle Muster, das ein Klinikverbund einsetzen würde. [Alle Fallstudien →](/de/case-studies/)
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

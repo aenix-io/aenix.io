@@ -106,7 +106,7 @@ Kostenlos und ohne Vorbereitung. Wir ordnen Ihren Kundenstamm den Plattformen zu
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/partner/#apply">Partner werden</a>
-  <a class="cta-secondary" href="/de/kontakt/">Gespräch vereinbaren →</a>
+  <a class="cta-secondary" href="/de/kontakt/">Termin buchen →</a>
 </div>
 
 ---

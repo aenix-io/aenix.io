@@ -54,7 +54,7 @@ faq:
 > **Passt zu:** **[Developer Self-Service](/de/produkte/private-cloud-platform/)** — die IDP-Schicht (GitLab-Automatisierung, Argo-CD-Workflows, APIs, Golden Paths, Produktivitäts-Dashboards) auf der Cloud-Basis von Cozystack. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/">IDP-Beispiele →</a>
 </div>
 
@@ -229,7 +229,7 @@ Das Assessment hat einen Festpreis, der vor dem Start feststeht, und liefert ein
 ## Starten Sie mit einem 30-minütigen Discovery-Gespräch
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

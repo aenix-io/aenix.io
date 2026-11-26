@@ -23,7 +23,7 @@ related_pages:
 > **Passt zu:** **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)** und **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)**, der **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** (Portal unter Ihrer Marke plus Billing) und dem **[Partnerprogramm](/de/partner/)** (bis zu 40 % Marge). Kern: das Open-Source-Projekt **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/partner/">Partnerprogramm →</a>
 </div>
 
@@ -103,7 +103,7 @@ WHMCS-integriertes Billing (ein proprietäres Ænix-Modul) ist Teil der Public C
 Kostenlos und ohne Vorbereitung. Wir sehen uns Ihren Kundenstamm an und sagen Ihnen, ob der Weiterverkauf der Public Cloud Platform oder der Aufbau einer eigenen Cloud mit uns schneller zur Marge führt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/white-label-cloud/">White-Label-Cloud →</a>
 </div>
 

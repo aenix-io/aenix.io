@@ -54,7 +54,7 @@ faq:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn Sie Cloud an Kunden verkaufen; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn Sie sie für Ihre eigene Organisation betreiben. Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/). Für CTOs: siehe den [CTO-Leitfaden](/de/fuer/cto/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/">Leitfaden lesen →</a>
 </div>
 
@@ -253,7 +253,7 @@ Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge 
 Wir prüfen die Passung, finden heraus, wo Ihre Ausgaben tatsächlich versickern, und benennen die passende Variante — 14 oder 28 Tage.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

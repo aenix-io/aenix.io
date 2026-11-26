@@ -56,7 +56,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — darauf ausgelegt, die NIS2-Arbeit zu unterstützen (Risikomanagementmaßnahmen nach Art. 21, Meldung von Vorfällen nach Art. 23 und ein veröffentlichter Prozess zur Offenlegung von Schwachstellen — siehe Art. 12). Tenant-Isolation mit Segmentierung über NetworkPolicy und Cilium, optionale Volume-Verschlüsselung, Audit-Logging mit konfigurierbarer Aufbewahrung. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/ressourcen/nis2-compliance-checkliste/">NIS2-Checkliste anfordern →</a>
 </div>
 
@@ -232,7 +232,7 @@ Die dokumentierten Projekte finden Sie auf der Seite mit den [Fallstudien](/de/c
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[NIS2-Compliance-Checkliste](/de/ressourcen/nis2-compliance-checkliste/)** — Checkliste auf Kontrollebene

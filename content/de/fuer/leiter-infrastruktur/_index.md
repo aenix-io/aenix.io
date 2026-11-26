@@ -24,7 +24,7 @@ related_pages:
 > **Passt zu:** der **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für eine schlüsselfertige Private Cloud oder **[Build Private Cloud](/de/dienstleistungen/build-private-cloud/)**, wenn wir sie nach Ihren Vorgaben entwerfen und aufbauen sollen. Beides läuft auf **[Cozystack](/de/produkte/cozystack/)** — Open Source, Apache 2.0.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/alternativen/vmware-alternative/">VMware-Alternative →</a>
 </div>
 
@@ -105,7 +105,7 @@ Die Lizenzkosten pro Core entfallen (Apache 2.0). Sie zahlen für Support und/od
 Kostenlos und ohne Vorbereitung. Wir prüfen, ob es passt, sehen uns Ihren aktuellen Bestand an und sagen Ihnen, ob die schlüsselfertige Plattform oder das gemeinsame Aufbauprojekt zu Ihrer Situation passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/migration/vmware/">VMware-Migration →</a>
 </div>
 

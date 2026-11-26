@@ -51,7 +51,7 @@ faq:
 **Cozystack läuft bei Ihnen schon? Der Enterprise-Support von Ænix stellt die Engineers, die Cozystack pflegen, für Ihre Cluster in Bereitschaft — zu Preisen aus der veröffentlichten Liste: ab 1.250 USD pro 10 physische Nodes und Monat.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?type=cozystack-support">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/?type=cozystack-support">Termin buchen</a>
   <a class="cta-secondary" href="/de/preise/#support">Preise ansehen →</a>
 </div>
 
@@ -90,7 +90,7 @@ Jede Support-Stufe enthält die proprietären kommerziellen Ænix-Module (Billin
 Nennen Sie uns die Zahl Ihrer Cluster und physischen Nodes, Ihre Cozystack-Versionen und die Reaktionszeit, die Sie brauchen. Stufe und Supportbedingungen bestätigen wir Ihnen in einem kurzen Gespräch.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?type=cozystack-support">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/?type=cozystack-support">Termin buchen</a>
   <a class="cta-secondary" href="/de/preise/#support">Preise ansehen →</a>
 </div>
 

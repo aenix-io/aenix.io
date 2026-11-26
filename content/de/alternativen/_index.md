@@ -10,7 +10,7 @@ hreflang_en: /alternatives/
 **Cozystack und die Ænix-Plattformen im Vergleich mit den häufigsten Alternativen. Ehrliche Einschätzungen: wann welche Plattform passt, wann nicht und wie die Migration aussieht. Keine Marketing-Battle-Cards.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/">Plattformen ansehen →</a>
 </div>
 

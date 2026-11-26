@@ -102,7 +102,7 @@ A discovery call turns these estimates into an honest, workload-level TCO — in
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/products/">Explore the platforms →</a>
+  <a class="cta-secondary" href="/products/">See platforms →</a>
 </div>
 
 ---

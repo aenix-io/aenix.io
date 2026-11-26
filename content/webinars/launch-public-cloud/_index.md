@@ -73,7 +73,7 @@ faq:
 final_cta:
   heading: "Bring your stack to a conversation"
   text: "The webinar took place on 19 August 2026. Watch the recording, then talk to the team about the catalog that fits your own platform."
-  button: "Talk to the team"
+  button: "Book a call"
   href: "/contact/"
 ---
 

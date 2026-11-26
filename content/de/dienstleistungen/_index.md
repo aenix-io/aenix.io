@@ -10,7 +10,7 @@ hreflang_en: /services/
 **Bewerten, aufbauen, betreiben. Die meisten Projekte beginnen gleich: mit einem kostenlosen 30-minütigen Discovery-Gespräch und danach einem Platform Readiness Assessment zum Festpreis über 14 oder 28 Tage. Das Assessment benennt die passende Plattform — oder sagt offen, dass keine unserer Plattformen passt.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment anfragen →</a>
 </div>
 

@@ -136,7 +136,7 @@ Modellieren Sie Ihre eigenen Werte mit dem **[VMware-TCO-Vergleich](/tco-calcula
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[VMware-Alternative — unsere Empfehlung](/de/alternativen/vmware-alternative/)**

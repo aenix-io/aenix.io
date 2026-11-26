@@ -55,7 +55,7 @@ Cozystack ist die Open-Source-Alternative für Organisationen, die die Open-Sour
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — für Hosting-Anbieter und regionale Clouds, die von OpenStack aus modernisieren, und für große Betreiber, die OpenStack auf eine Multi-Region-Control-Plane konsolidieren.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Termin buchen</a>
   <a class="cta-secondary" href="/de/vergleichen/cozystack-vs-openstack/">Cozystack vs. OpenStack →</a>
 </div>
 
@@ -120,7 +120,7 @@ Typische Migration: 4 bis 12 Monate für eine mittelgroße Umgebung.
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Cozystack vs. OpenStack im direkten Vergleich](/de/vergleichen/cozystack-vs-openstack/)**

@@ -46,7 +46,7 @@ faq:
 > **Passt zu:** jeder der drei **[Ænix-Plattformen](/de/produkte/)**, wenn die SLOs an die Plattform gekoppelt sein sollen, die Sie tatsächlich betreiben. Eigenständiges SRE Consulting ist auch ohne Plattform möglich.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/platform-engineering-vs-devops-vs-sre/">SRE, DevOps, Platform Engineering →</a>
 </div>
 
@@ -90,7 +90,7 @@ Für einen breiteren DevOps-Umfang siehe **[DevOps-Consulting](/de/dienstleistun
 Für die vollständige Variante siehe das **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 oder 28 Tage).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

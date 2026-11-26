@@ -52,7 +52,7 @@ faq:
 Diese Seite veröffentlicht den vollständigen Lauf, nicht nur den schmeichelhaften Teil. Ein roher kube-bench-Bericht listet auch zwei Dutzend Fehlschläge, und die eigentliche Arbeit besteht darin, sie auseinanderzuhalten: Die meisten sind der Benchmark, der nach Dateien sucht, die ein unveränderlicher Knoten nicht führt, oder ein Flag prüft, das neuere Kubernetes-Releases ersetzt haben. Vier verdienen Ihre Aufmerksamkeit, und jede wird unten mit ihrer Begründung behandelt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Mit einem Engineer sprechen</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/compliance/">Alle Compliance-Nachweise →</a>
 </div>
 

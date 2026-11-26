@@ -53,7 +53,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — ihre Developer-Self-Service-Schicht ist die Produktform dieser Leistung. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/platform-engineering-vs-devops-vs-sre/">Platform Engineering, DevOps, SRE →</a>
 </div>
 
@@ -239,7 +239,7 @@ Das Assessment hat einen Festpreis, der vor Beginn feststeht. Der Aufbau erfolgt
 Kostenlos und ohne Vorbereitung. Wir klären die Passung, bestimmen den Stand Ihres Platform Engineerings und sagen Ihnen, ob Assessment, Aufbau oder Managed-Betrieb zu Ihrer Situation passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

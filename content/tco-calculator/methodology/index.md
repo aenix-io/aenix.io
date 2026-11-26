@@ -24,7 +24,7 @@ related_pages:
   <h2>Cozystack TCO Calculator — methodology and sources</h2>
   <p class="stamp">Last updated: <time datetime="2026-10-08">2026-10-08</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
   <div class="cta-row">
-    <a class="cta-primary" href="/contact/?source=tco-calculator">Book a 30-minute TCO review</a>
+    <a class="cta-primary" href="/contact/?source=tco-calculator">Book a call</a>
     <a class="cta-secondary" href="/pricing/">See pricing →</a>
   </div>
   <p class="lead">Every number the calculator produces can be reproduced by hand from this page: the model rules, all defaults with sources, and a published sanity table that includes the scenarios where Cozystack loses.</p>

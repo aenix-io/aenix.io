@@ -141,7 +141,7 @@ Für Private Cloud Director veröffentlicht Platform9 keine Preisliste; der Prei
 Cozystack passt, wenn das Geschäft darin besteht, Cloud zu verkaufen, nicht VMs zu betreiben: ein Hosting-Anbieter oder ehemaliger Partner des VMware Cloud Service Provider Program, der Managed-Datenbanken, S3, Kubernetes und GPU neben VMs braucht, verschachtelte Tenants für Reseller, Abrechnung pro Tenant und eine Management Plane, die das eigene Rechenzentrum nie verlässt — unter einer Open-Source-Lizenz. Für Anbieter, die von VMware Cloud Director kommen, siehe die **[VMware-Cloud-Director-Alternative](/de/alternativen/vmware-cloud-director-alternative/)**; für den breiteren Markt die **[VMware-Alternative](/de/alternativen/vmware-alternative/)**. Die Engine selbst beschreibt die Seite **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/preise/">Preise ansehen →</a>
 </div>
 

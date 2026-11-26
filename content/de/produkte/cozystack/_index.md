@@ -207,7 +207,7 @@ Enterprise-Support für selbst betriebenes Cozystack ist dasselbe Abonnement wie
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[cozystack.io](https://cozystack.io)** — Installation, Dokumentation, Community

@@ -11,7 +11,7 @@ hreflang_de: /de/loesungen/
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get an assessment →</a>
+  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get assessment →</a>
 </div>
 
 ---

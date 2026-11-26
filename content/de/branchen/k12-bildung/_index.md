@@ -47,7 +47,7 @@ faq:
 > **Passende Plattform:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für die Verarbeitung von Schülerdaten unter Souveränitätsvorgaben im Maßstab großer Schulträger oder Bildungsministerien.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/k12-schultraeger-cloud-infrastruktur/">Cloud-Architektur für Schulträger →</a>
 </div>
 
@@ -94,7 +94,7 @@ Für die meisten Schulträger sind Managed Services von Hyperscalern und gängig
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Artikel zur Cloud-Infrastruktur für Schulträger](/de/blog/2026/05/k12-schultraeger-cloud-infrastruktur/)**

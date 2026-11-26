@@ -46,7 +46,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — regulierter Betrieb über mehrere Rechenzentren plus die Developer-Self-Service-Schicht, die eine Enterprise-IDP braucht.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-engineering/">Platform Engineering →</a>
 </div>
 
@@ -97,7 +97,7 @@ Für einen kleineren Umfang (ein Team oder 1–3 Teams) siehe die **[Platform En
 Reguläres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Schwerpunkt auf Arbeitspaketen für den Enterprise-Maßstab. Der Aufbau dauert je nach Umfang typischerweise 3–12 Monate; Programme über mehrere Regionen länger.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

@@ -60,7 +60,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — ein gemeinsames Self-Service-Portal und eine API über bestehende VMware- oder OpenNebula-Umgebungen, während die Workloads umziehen (siehe die [Fallstudie zum Portal einer Finanzgruppe](/de/case-studies/unified-cloud-portal-financial-group/)). Für große Betreiber oder Telcos: kombinieren Sie sie mit der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/">Hybrid-Architekturmuster →</a>
 </div>
 
@@ -237,7 +237,7 @@ Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben.
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Hybrid-Cloud-Architekturmuster](/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/)**

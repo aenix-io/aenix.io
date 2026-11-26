@@ -10,7 +10,7 @@ hreflang_en: /resources/
 **Kostenlose Downloads: Checklisten, Entscheidungsleitfäden, TCO-Worksheets und Reifegradmodelle. Dieselben Frameworks, die Ænix in bezahlten Projekten einsetzt, stehen Ihrem Team kostenlos zur Selbsteinschätzung zur Verfügung.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 

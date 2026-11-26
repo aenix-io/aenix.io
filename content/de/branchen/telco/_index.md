@@ -54,7 +54,7 @@ faq:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Telekommunikationsanbieter, die souveräne Cloud-Produkte für Endkunden in mehreren Regionen starten; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für an NIS2 ausgerichtete interne Cloud- und Edge-Plattformen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/sovereign-ai/">Souveräne KI →</a>
 </div>
 
@@ -143,7 +143,7 @@ Kunden aus der Telekommunikation werden nicht namentlich genannt. Der am nächst
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Souveräne KI](/de/loesungen/sovereign-ai/)** — KI-Anwendungsfälle der Telekommunikation

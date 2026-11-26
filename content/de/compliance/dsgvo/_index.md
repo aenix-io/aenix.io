@@ -51,7 +51,7 @@ faq:
 Das ist eine starke Ausgangslage, und diese Seite geht sie Maßnahme für Maßnahme durch. Sie markiert außerdem die Stellen, an denen eine Kontrolle zwar verfügbar, aber deaktiviert ist, und die zwei bis drei Fragen, die ein Datenschutzbeauftragter stellen wird und die keine Infrastruktur beantworten kann. Besser hier als im Termin.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Mit einem Engineer sprechen</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/compliance/">Alle Compliance-Nachweise →</a>
 </div>
 
@@ -159,7 +159,7 @@ Die Plattform ist ein Werkzeug. Die Pflichten liegen bei demjenigen, der über Z
 Finanzunternehmen lesen dies parallel zu [DORA](/de/compliance/dora/); wer Kartendaten verarbeitet, parallel zu [PCI DSS](/de/compliance/pci-dss/), wo dieselbe Audit-Policy-Entscheidung unter umgekehrtem Druck auftaucht. Wesentliche und wichtige Einrichtungen unter NIS2 finden das aufsichtsgerichtete Programm auf der [NIS2-Lösungsseite](/de/loesungen/nis2-compliance/). Die Überschneidung ist real und gewollt: eine Architektur, mehrere Regime, die sie unterschiedlich lesen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Mit einem Engineer sprechen</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränität →</a>
 </div>
 

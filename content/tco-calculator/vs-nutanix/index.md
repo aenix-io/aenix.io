@@ -30,7 +30,7 @@ related_pages:
   <!-- calculator widget: eager iframe, fixed size (no CLS); the app URL stays noindex,indexifembedded -->
   <iframe src="/tco-calculator-app/?vs=nutanix" title="Cozystack TCO Calculator — vs Nutanix NCI Pro" loading="eager" width="100%" height="900"></iframe>
   <div class="cta-row">
-    <a class="cta-primary" href="/contact/?source=tco-calculator">Book a 30-minute TCO review</a>
+    <a class="cta-primary" href="/contact/?source=tco-calculator">Book a call</a>
     <a class="cta-secondary" href="/pricing/">See pricing →</a>
   </div>
   <h2>Nutanix NCI Pro vs Cozystack at default assumptions</h2>

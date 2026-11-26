@@ -42,7 +42,7 @@ faq:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — Cozystack Dashboard mit White-Label-Fähigkeit, mehrstufiges Reseller-Modell, Billing über die WHMCS-Integration. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat; Support für die White-Label-Konfiguration ab Standard (3.000 USD). Im **[Partnerprogramm](/de/partner/)** erzielen Sie bis zu 40 % Marge auf Ænix-Plattform-Abonnements und Support.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/msp-cloud-plattform-modernisierung/">MSP-Cloud-Modernisierung →</a>
 </div>
 
@@ -81,7 +81,7 @@ Die Tenant-CRD von Cozystack lässt sich verschachteln, die Hierarchie ist also 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[White-Label-Cloud-Services](/de/dienstleistungen/white-label-cloud/)** — Leistungsumfang

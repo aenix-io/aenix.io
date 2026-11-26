@@ -23,7 +23,7 @@ related_pages:
 > **Passt zu:** Projekten zu **[DORA](/de/loesungen/dora-compliance/)**, **[NIS2](/de/loesungen/nis2-compliance/)** und **[Datensouveränität](/de/loesungen/data-sovereignty/)**, der **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, auf Basis des Open-Source-Projekts **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/dora-compliance/">DORA-Compliance →</a>
 </div>
 
@@ -105,7 +105,7 @@ Ja — wir nehmen RFIs und RFPs über die üblichen Kanäle der EU-Mitgliedstaat
 Kostenlos und ohne Vorbereitung. Wir grenzen den Rahmen auf die Aufsichtsbehörden und Vorschriften ein, die für Sie gelten, und sagen Ihnen, ob das Assessment, die schlüsselfertige Plattform oder ein Aufbau passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränität →</a>
 </div>
 

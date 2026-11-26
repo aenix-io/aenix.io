@@ -17,7 +17,7 @@ hero_chips:
   - "Took place on 10 September 2026"
   - "50 minutes, with a live Q&A"
   - "Recording not published yet"
-hero_primary: { text: "Talk to the team", href: "/contact/" }
+hero_primary: { text: "Book a call", href: "/contact/" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil-gpu-hero.png"
 hero_bg: "beam"
@@ -74,7 +74,7 @@ faq:
 final_cta:
   heading: "Bring your GPUs to a conversation"
   text: "The webinar took place on 10 September 2026, and the recording is not published yet. Talk to the team about a GPU platform for your own setup."
-  button: "Talk to the team"
+  button: "Book a call"
   href: "/contact/"
 ---
 

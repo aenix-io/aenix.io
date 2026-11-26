@@ -24,7 +24,7 @@
 {{- if and (not .Params.direct_answer) (not $calc) (in (substr .RawContent 0 600) "cta-primary") }}{{ $show = false }}{{ end -}}
 {{- if and $show (not .Params.hide_hero_cta) -}}
   {{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
-  {{- $pt := cond $de "Discovery-Call buchen" "Book a call" -}}
+  {{- $pt := cond $de "Termin buchen" "Book a call" -}}
   {{- $pu := cond $de "/de/kontakt/" "/contact/" -}}
   {{- $lang := cond $de "de" "en" -}}
   {{- $labels := site.Data.hero_cta.labels -}}
@@ -36,9 +36,6 @@
       {{- $su = .url -}}
       {{- with .urls }}{{ with index . $.RelPermalink }}{{ $su = . }}{{ end }}{{ end -}}
     {{- end -}}
-  {{- end -}}
-  {{- if $calc -}}
-    {{- $pt = cond $de "Ergebnis mit einem Ingenieur besprechen" "Review your numbers with an engineer" -}}
   {{- end -}}
   {{- with .Params.hero_cta -}}
     {{- with .primary_text }}{{ $pt = . }}{{ end -}}
