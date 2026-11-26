@@ -432,10 +432,12 @@ menus:
       weight: 90
       params: { foot: true }
 
-    # ── Case studies: top level, buyers look for them by name ──
-    - name: Case Studies
+    # ── Customers: case studies plus the hosting providers in production.
+    #    Top level, buyers look for proof by name. `also` = extra search words.
+    - name: Customers
       url: /case-studies/
       weight: 40
+      params: { also: "Case studies references" }
 
     # ── Pricing ──
     - name: Pricing
@@ -889,9 +891,10 @@ menus:
       weight: 90
       params: { foot: true }
 
-    - name: Case Studies
+    - name: Kunden
       url: /de/case-studies/
       weight: 40
+      params: { also: "Case Studies Fallstudien Referenzen" }
 
     - name: Preise
       url: /de/preise/

@@ -23,7 +23,8 @@
     .split(/[^\p{L}\p{N}]+/u).filter(Boolean);
   let pages = [];
   try { pages = JSON.parse(dlg.dataset.pages || '[]'); } catch (e) { /* none */ }
-  pages.forEach((p, i) => { p.w = words(p.n); p.i = i; });
+  // `a` holds extra words from the menu entry's `also` param (Customers → "case studies").
+  pages.forEach((p, i) => { p.nw = words(p.n); p.w = p.nw.concat(words(p.a)); p.i = i; });
   const menuMatches = (q) => {
     const qs = words(q);
     if (!qs.length || q.trim().length < 2) return [];
@@ -33,7 +34,7 @@
       if (seen.has(p.u) || !qs.every((t) => p.w.some((w) => w.startsWith(t)))) return;
       seen.add(p.u);
       // Exact name first, then names that start with the query, then menu order.
-      const rank = p.w.join(' ') === qs.join(' ') ? 0 : p.w[0].startsWith(qs[0]) ? 1 : 2;
+      const rank = p.nw.join(' ') === qs.join(' ') ? 0 : p.nw[0].startsWith(qs[0]) ? 1 : 2;
       hits.push({ p, rank });
     });
     return hits.sort((a, b) => a.rank - b.rank || a.p.i - b.p.i).slice(0, 4).map((h) => h.p);

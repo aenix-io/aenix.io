@@ -33,7 +33,7 @@
     (dict "name" "VMware Alternative" "url" "/alternatives/vmware-alternative/")
     (dict "name" "DORA Compliance" "url" "/solutions/dora-compliance/")
     (dict "name" "Platform Readiness Assessment" "url" "/services/platform-readiness-assessment/")
-    (dict "name" "Case Studies" "url" "/case-studies/")
+    (dict "name" "Customers" "url" "/case-studies/")
 -}}
 {{- if $isDe -}}
 {{- $t = dict
@@ -58,7 +58,7 @@
     (dict "name" "VMware-Alternative" "url" "/de/alternativen/vmware-alternative/")
     (dict "name" "DORA-Compliance" "url" "/de/loesungen/dora-compliance/")
     (dict "name" "Platform Readiness Assessment" "url" "/de/dienstleistungen/platform-readiness-assessment/")
-    (dict "name" "Case Studies" "url" "/de/case-studies/")
+    (dict "name" "Kunden" "url" "/de/case-studies/")
 -}}
 {{- end -}}
 {{- /* Header-menu pages, matched by name above the full-text results:
@@ -70,7 +70,9 @@
 {{- range $menu -}}
   {{- $top := .Name -}}
   {{- if and (not .HasChildren) (not .Params.cta) (hasPrefix .URL "/") -}}
-    {{- $pages = $pages | append (dict "n" .Name "u" .URL "t" $top) -}}
+    {{- $d := dict "n" .Name "u" .URL "t" $top -}}
+    {{- with .Params.also }}{{ $d = merge $d (dict "a" .) }}{{ end -}}
+    {{- $pages = $pages | append $d -}}
   {{- end -}}
   {{- range .Children -}}
     {{- if .Params.heading -}}
