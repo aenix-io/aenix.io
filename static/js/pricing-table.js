@@ -7,9 +7,11 @@
   Do not reintroduce pricing data here — data/pricing.yaml is the source of
   truth, and a second copy would drift.
 
-  This script does two things:
+  This script does three things:
   - swaps every element carrying data-annual / data-monthly (the price and the
     "billed …" line) between the two texts already in the markup;
+  - collapses the comparison to the rows marked `key: true` and shows the
+    button that expands it (without JS every row stays visible);
   - on phones, turns the stack of tier cards into a tier switcher that shows
     one card at a time (without JS every card stays visible).
 */
@@ -33,6 +35,19 @@
       const btn = e.target.closest('.cp-tbtn');
       if (btn) setMode(btn.dataset.mode);
     });
+  }
+
+  // Comparison: start with the key rows, expand to every row on request.
+  const more = root.querySelector('#cpMore');
+  if (more) {
+    const setFull = (full) => {
+      root.classList.toggle('cp-collapsed', !full);
+      more.setAttribute('aria-expanded', String(full));
+      more.textContent = full ? more.dataset.less : more.dataset.more;
+    };
+    more.hidden = false;
+    setFull(false);
+    more.addEventListener('click', () => setFull(more.getAttribute('aria-expanded') !== 'true'));
   }
 
   const planSwitch = root.querySelector('#cpPlanSwitch');

@@ -13,14 +13,22 @@
   color: var(--text-primary);
 }
 
-/* ---------- controls ---------- */
+/* ---------- plans head: heading left, billing switch right ---------- */
+.cozy-pricing .cp-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 40px;
+  margin: 0 0 28px;
+}
 .cozy-pricing .cp-controls {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin: 0 auto 28px;
+  align-items: flex-end;
+  gap: 10px;
 }
+
 .cozy-pricing .cp-toggle,
 .cozy-pricing .cp-plan-switch {
   display: flex;
@@ -152,7 +160,6 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
-  margin-bottom: 64px;
 }
 .cozy-pricing .cp-tier {
   display: flex;
@@ -237,18 +244,48 @@
   color: var(--text-secondary);
   text-wrap: pretty;
 }
-.cozy-pricing .cp-compare-heading {
-  margin: 0 0 20px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: center;
+/* ---------- comparison: key rows first, every row on request ---------- */
+.cozy-pricing .cp-compare { margin-top: 96px; scroll-margin-top: 96px; }
+.cozy-pricing.cp-collapsed .cp-extra { display: none; }
+.cozy-pricing .cp-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 9px 18px;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
   color: var(--text-primary);
+  background: transparent;
+  border: 1px solid var(--border-default);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s var(--ease), color 0.15s var(--ease);
 }
+.cozy-pricing .cp-more[hidden] { display: none; }
+.cozy-pricing .cp-more::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.2s var(--ease);
+}
+.cozy-pricing .cp-more[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
+.cozy-pricing .cp-more:hover { border-color: var(--brand-primary); color: var(--brand-primary); }
+.cozy-pricing .cp-more:active { translate: 0 1px; }
 @media (max-width: 1099px) {
   .cozy-pricing .cp-tiers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
-  .cozy-pricing .cp-tiers { grid-template-columns: 1fr; margin-bottom: 48px; }
+  .cozy-pricing .cp-tiers { grid-template-columns: 1fr; }
+  .cozy-pricing .cp-compare { margin-top: 72px; }
+}
+@media (max-width: 720px) {
+  .cozy-pricing .cp-controls { align-items: stretch; width: 100%; }
+  .cozy-pricing .cp-compare-link { align-self: flex-start; }
 }
 
 .cozy-pricing .cp-notes {
@@ -346,3 +383,147 @@
 }
 .pricing-rfp-note strong { color: var(--text-primary); font-weight: 600; }
 .pricing-rfp-note a { color: var(--brand-primary); white-space: nowrap; }
+
+/* ==========================================================================
+   Page sections around the table (layouts/_default/pricing.html)
+   ========================================================================== */
+.pricing-h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+.pricing-section__head { margin: 0 0 28px; }
+.pricing-section__intro {
+  max-width: 40rem;
+  margin: 10px 0 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  text-wrap: pretty;
+}
+.pricing-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.pricing-link:hover { text-decoration: underline; }
+
+/* Hero: what is priced on the left, what one price covers on the right. */
+.pricing-hero.page-hero--compact { padding-bottom: 56px; }
+.pricing-hero__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+.pricing-hero .container { text-align: left; }
+.pricing-hero .page-hero-subtitle { max-width: 38rem; margin: 0; text-wrap: pretty; }
+.pricing-hero .cta-row { margin: 1.75rem 0 0; }
+.pricing-basis {
+  padding: 28px 28px 24px;
+  border: 1px solid rgba(1, 165, 255, 0.22);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, rgba(1, 165, 255, 0.10), rgba(9, 113, 235, 0.03) 60%), var(--bg-secondary);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+.pricing-basis__label { margin: 0; font-size: 0.875rem; color: var(--text-secondary); }
+.pricing-basis__value {
+  margin: 6px 0 10px;
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+.pricing-basis__text { margin: 0; font-size: 0.9375rem; line-height: 1.55; color: var(--text-secondary); text-wrap: pretty; }
+.pricing-basis__facts {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 16px 0 0;
+  list-style: none;
+  border-top: 1px solid var(--border-default);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+.pricing-basis__facts li { margin: 0; }
+@media (max-width: 960px) {
+  .pricing-hero__grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.pricing-main { padding-top: 64px; }
+
+/* Private Cloud and AI Platform: quoted per project. A band of its own. */
+.pricing-deploy {
+  margin-top: 104px;
+  padding: 88px 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.pricing-deploy__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.pricing-deploy__card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+}
+.pricing-deploy__name { margin: 0; font-size: 1.25rem; font-weight: 700; line-height: 1.25; color: var(--text-primary); }
+.pricing-deploy__text { flex: 1; margin: 8px 0 0; font-size: 0.9375rem; line-height: 1.55; color: var(--text-secondary); text-wrap: pretty; }
+.pricing-deploy__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  margin-top: 24px;
+}
+.pricing-deploy__actions .cta-primary { padding: 0.6875rem 1.25rem; }
+.pricing-deploy__start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  margin-top: 16px;
+  padding: 22px 28px;
+  border: 1px solid rgba(1, 165, 255, 0.2);
+  border-radius: var(--radius-lg);
+  background: rgba(1, 165, 255, 0.06);
+}
+.pricing-deploy__start p { max-width: 46rem; margin: 0; font-size: 0.9375rem; line-height: 1.55; color: var(--text-secondary); text-wrap: pretty; }
+.pricing-deploy__start strong { color: var(--text-primary); font-weight: 600; }
+.pricing-deploy__start .cta-secondary { flex: none; padding: 0.6875rem 1.25rem; }
+@media (max-width: 760px) {
+  .pricing-deploy { margin-top: 80px; padding: 64px 0; }
+  .pricing-deploy__grid { grid-template-columns: 1fr; }
+  .pricing-deploy__start { flex-direction: column; align-items: flex-start; padding: 22px; }
+}
+
+/* Questions before you buy: the site FAQ rows, at the width of a reading column. */
+.pricing-faq { padding: 88px 0 0; }
+.pricing-faq .seo-faq { max-width: 52rem; margin: 0; }
+.pricing-faq .seo-faq > h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.pricing-close { margin-top: 96px; }

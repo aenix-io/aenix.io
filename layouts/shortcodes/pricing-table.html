@@ -11,6 +11,9 @@
   JS off every card is shown in a stack. /js/pricing-table.js only swaps the
   visible price and the visible card.
 
+  Under the cards, the comparison starts with the rows marked `key: true`
+  in the data; a button expands it to every row.
+
   Usage: {{< pricing-table >}}
 */ -}}
 {{- $d := site.Data.pricing -}}
@@ -24,8 +27,9 @@
 {{- $wAnnual := cond $de "jährlich abgerechnet" "billed annually" -}}
 {{- $wMonthly := cond $de "monatlich abgerechnet" "billed monthly" -}}
 {{- $quote := cond $de "Angebot anfordern" "Request quote" -}}
-{{- /* One button per priced tier; ?tier= lets sales see which one was picked. */ -}}
-{{- $choose := cond $de (dict "basic" "Mit Basic starten" "standard" "Standard wählen" "plus" "Plus wählen") (dict "basic" "Start with Basic" "standard" "Choose Standard" "plus" "Choose Plus") -}}
+{{- /* One button per priced tier; ?tier= lets sales see which one was picked.
+       "Talk about": there is no checkout, every tier starts with a call. */ -}}
+{{- $choose := cond $de (dict "basic" "Über Basic sprechen" "standard" "Über Standard sprechen" "plus" "Über Plus sprechen") (dict "basic" "Talk about Basic" "standard" "Talk about Standard" "plus" "Talk about Plus") -}}
 
 {{- /* price strings: "$1,250" in EN, "1.250 USD" in DE */ -}}
 {{- $fmt := dict -}}
@@ -65,15 +69,24 @@
       {{- end -}}
       {{- $vals = $vals | append $v -}}
     {{- end -}}
-    {{- $rows = $rows | append (dict "id" $it.k "k" (index $t $it.k | default $it.k) "vals" $vals "long" $sec.long) -}}
+    {{- $rows = $rows | append (dict "id" $it.k "k" (index $t $it.k | default $it.k) "vals" $vals "long" $sec.long "key" $it.key) -}}
   {{- end -}}
 {{- end -}}
 
+{{- $shown := where $rows "long" "!=" true -}}
+{{- $all := 0 }}{{ range $shown }}{{ if not .section }}{{ $all = add $all 1 }}{{ end }}{{ end -}}
 <div class="cozy-pricing" id="support">
-  <div class="cp-controls">
-    <div class="cp-toggle" id="cpBillingToggle" role="group">
-      <button type="button" class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $de "Jährlich" "Annual" }}</button>
-      <button type="button" class="cp-tbtn" data-mode="monthly" aria-pressed="false">{{ cond $de "Monatlich" "Monthly" }}</button>
+  <div class="cp-head" id="plans">
+    <div class="cp-head__text">
+      <h2 class="pricing-h2">{{ cond $de "Support-Stufen" "Support plans" }}</h2>
+      <p class="pricing-section__intro">{{ cond $de "Jede Stufe enthält das Ænix-Billing-System und die WHMCS-Integration." "Every tier includes the Ænix billing system and WHMCS integration." }}</p>
+    </div>
+    <div class="cp-controls">
+      <div class="cp-toggle" id="cpBillingToggle" role="group" aria-label="{{ cond $de "Abrechnungszeitraum" "Billing period" }}">
+        <button type="button" class="cp-tbtn cp-active" data-mode="annual" aria-pressed="true">{{ cond $de "Jährlich" "Annual" }}</button>
+        <button type="button" class="cp-tbtn" data-mode="monthly" aria-pressed="false">{{ cond $de "Monatlich" "Monthly" }}</button>
+      </div>
+      <a class="pricing-link cp-compare-link" href="#compare">{{ cond $de "Stufen vergleichen" "Compare tiers" }} <span aria-hidden="true">↓</span></a>
     </div>
   </div>
 
@@ -113,7 +126,11 @@
     {{- end }}
   </div>
 
-  <h2 class="cp-compare-heading">{{ cond $de "Alle Stufen im Vergleich" "Compare all tiers" }}</h2>
+  <div class="cp-compare" id="compare">
+  <div class="pricing-section__head">
+    <h2 class="pricing-h2">{{ cond $de "Support im Vergleich" "Compare support" }}</h2>
+    <p class="pricing-section__intro">{{ cond $de "Reaktionszeiten, Abdeckung und Migrationsunterstützung nebeneinander." "Response times, coverage and migration support side by side." }}</p>
+  </div>
 
   <div class="cp-table-wrap">
     <table id="cpPricingTable">
@@ -130,11 +147,11 @@
         </tr>
       </thead>
       <tbody>
-        {{- range $r := where $rows "long" "!=" true }}
+        {{- range $r := $shown }}
         {{- if $r.section }}
-        <tr class="cp-section-row"><th scope="rowgroup" colspan="{{ add (len $plans) 1 }}">{{ $r.section }}</th></tr>
+        <tr class="cp-section-row cp-extra"><th scope="rowgroup" colspan="{{ add (len $plans) 1 }}">{{ $r.section }}</th></tr>
         {{- else }}
-        <tr{{ if $r.long }} class="cp-long"{{ end }}>
+        <tr{{ if not $r.key }} class="cp-extra"{{ end }}>
           <th scope="row">{{ replace (string $r.k) "-" "\u2011" }}</th>
           {{- range $r.vals }}
           <td>{{- template "cp-cell" . -}}</td>
@@ -157,11 +174,11 @@
       <div class="cp-chead">
         <div class="cp-plan">{{ $p.name }}</div>
       </div>
-      {{- range $r := where $rows "long" "!=" true }}
+      {{- range $r := $shown }}
       {{- if $r.section }}
-      <div class="cp-section">{{ $r.section }}</div>
+      <div class="cp-section cp-extra">{{ $r.section }}</div>
       {{- else }}
-      <div class="cp-row{{ if $r.long }} cp-long{{ end }}">
+      <div class="cp-row{{ if not $r.key }} cp-extra{{ end }}">
         <div class="cp-k">{{ replace (string $r.k) "-" "\u2011" }}</div>
         <div class="cp-v">{{ template "cp-cell" (index $r.vals $i) }}</div>
       </div>
@@ -171,9 +188,16 @@
     {{- end }}
   </div>
 
+  {{- /* Shown by /js/pricing-table.js, which also collapses the table to
+         the key rows first. Without JS every row stays visible. */}}
+  <button type="button" class="cp-more" id="cpMore" aria-expanded="true" aria-controls="cpPricingTable cpPricingCards"
+          data-more="{{ cond $de (printf "Alle %d Zeilen anzeigen" $all) (printf "Show all %d rows" $all) }}"
+          data-less="{{ cond $de "Nur die wichtigsten Zeilen" "Show key rows only" }}" hidden>{{ cond $de "Nur die wichtigsten Zeilen" "Show key rows only" }}</button>
+
   {{- with $notes }}
   <div class="cp-notes">
     {{- range . }}<p>{{ . }}</p>{{ end }}
   </div>
   {{- end }}
+  </div>
 </div>

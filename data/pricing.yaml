@@ -60,12 +60,16 @@ sections:
       - k: "Package Includes"
         v: { basic: "10 Physical Nodes", standard: "10 Physical Nodes", plus: "10 Physical Nodes", enterprise: "Custom" }
       - k: "Incidents covered¹"
+        key: true
         v: { basic: "5", standard: "Unlimited", plus: "Unlimited", enterprise: "Unlimited" }
       - k: "Service Desk Hours²"
+        key: true
         v: { basic: "Business Hours", standard: "Business Hours", plus: "24×7 Support", enterprise: "24×7 Support" }
       - k: "Emergency Response Time³"
+        key: true
         v: { basic: "In 8 Hours", standard: "In 4 Hours", plus: "In 4 Hours", enterprise: "In 1 Hour" }
       - k: "Standard Response Time"
+        key: true
         v: { basic: "In 2 Business Days", standard: "In 2 Business Days", plus: "In 8 Hours", enterprise: "In 4 Hours" }
 
   - title: Ænix commercial modules (proprietary)
@@ -80,6 +84,7 @@ sections:
       - k: "White-labeling configuration"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
       - k: "Air-gapped installation"
+        key: true
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
       - k: "Backup configuration"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
@@ -110,12 +115,14 @@ sections:
   - title: Consulting/Managed Assistance
     items:
       - k: "Migration"
+        key: true
         v: { basic: "Documentation only", standard: "Documentation only", plus: "Guided by Ænix", enterprise: "Managed by Ænix" }
       - k: "Architecture Advisory"
         v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
       - k: "Best-Practice Audit"
         v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
       - k: "Platform Installation"
+        key: true
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
       - k: "Compliance audit support"
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
@@ -140,7 +147,12 @@ sections:
       - k: "Personalized Roadmap"
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
       - k: "Priority Engagement Time⁴"
+        key: true
         v: { basic: "2 Hours", standard: "4 Hours", plus: "15 Hours", enterprise: "40 Hours" }
+
+# Rows marked `key: true` form the short comparison shown by default on
+# /pricing/; the button under the table expands it to every row. Without JS
+# every row is shown.
 
 # Footnotes printed under the table (the ¹–⁴ marks in the row labels).
 notes:
