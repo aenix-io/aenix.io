@@ -33,8 +33,8 @@
         <p class="page-hero-subtitle">{{ . }}</p>
         {{- end }}
         <div class="cta-row">
-          <a class="cta-primary" href="#plans" data-cta="pricing-hero-plans">{{ .Params.hero_primary | default (cond $de "Support-Stufen ansehen" "See support plans") }}</a>
-          <a class="cta-secondary" href="{{ $contact }}?tier=quote" data-cta="pricing-hero-quote">{{ .Params.hero_secondary | default (cond $de "Angebot anfordern" "Request a quote") }}</a>
+          <a class="cta-primary" href="#plans" data-cta="pricing-hero-plans">{{ .Params.hero_primary | default (cond $de "Support-Stufen ansehen" "See plans") }}</a>
+          <a class="cta-secondary" href="{{ $contact }}?tier=quote" data-cta="pricing-hero-quote">{{ .Params.hero_secondary | default (cond $de "Angebot anfordern" "Request quote") }}</a>
         </div>
       </div>
       {{- with .Params.basis }}

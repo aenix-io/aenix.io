@@ -35,7 +35,7 @@ deploy:
   start:
     name: "Platform Readiness Assessment"
     text: "Noch unklar, welche Plattform passt? Starten Sie mit einem Assessment zum Festpreis, 14 oder 28 Tage, und erhalten Sie einen schriftlichen Plan."
-    link: "Zum Assessment"
+    link: "Assessment anfragen"
     url: "/de/dienstleistungen/platform-readiness-assessment/"
 faq_title: "Fragen vor dem Kauf"
 faq_style: "grid"
@@ -51,7 +51,7 @@ faq:
 closing_cta:
   heading: "Klären wir den Umfang Ihres Deployments"
   description: "Nennen Sie uns Node-Anzahl, Workloads und Support-Bedarf. Ein Engineer antwortet mit der passenden Stufe oder einem Angebot."
-  primary_text: "Mit einem Engineer sprechen"
+  primary_text: "Termin buchen"
   primary_url: "/de/kontakt/"
 ---
 

@@ -11,8 +11,8 @@ layout: "pricing"
 # Page copy. Drafts from the 2026-11 pricing redesign, pending Timur's review.
 hero_title: "Cloud pricing & support"
 hero_subtitle: "Published prices for the Ænix Public Cloud Platform and enterprise support for Cozystack. Private Cloud and AI Platform are quoted per project."
-hero_primary: "See support plans"
-hero_secondary: "Request a quote"
+hero_primary: "See plans"
+hero_secondary: "Request quote"
 basis:
   value: "10 physical nodes"
   text: "Every published support tier is priced per 10 physical nodes per month. Enterprise is quoted to scope."
@@ -21,7 +21,7 @@ basis:
 deploy:
   heading: "Plan your deployment"
   intro: "Get a quote for Private Cloud or AI Platform, or start with an assessment to choose the right path."
-  quote: "Request a quote"
+  quote: "Request quote"
   details: "Platform details"
   cards:
     - name: "Private Cloud Platform"
@@ -35,7 +35,7 @@ deploy:
   start:
     name: "Platform Readiness Assessment"
     text: "Not sure which platform fits? Start with a fixed-price assessment of 14 or 28 days and get a written plan."
-    link: "Explore the assessment"
+    link: "Get assessment"
     url: "/services/platform-readiness-assessment/"
 faq_title: "Questions before you buy"
 faq_style: "grid"
@@ -51,7 +51,7 @@ faq:
 closing_cta:
   heading: "Let’s scope your deployment"
   description: "Tell us your node count, workloads and support needs. An engineer replies with the tier or the quote that fits."
-  primary_text: "Talk to an engineer"
+  primary_text: "Book a call"
   primary_url: "/contact/"
 ---
 

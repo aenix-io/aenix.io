@@ -29,8 +29,9 @@
 {{- $wMonthly := cond $de "monatlich abgerechnet" "billed monthly" -}}
 {{- $quote := cond $de "Angebot anfordern" "Request quote" -}}
 {{- /* One button per priced tier; ?tier= lets sales see which one was picked.
-       "Talk about": there is no checkout, every tier starts with a call. */ -}}
-{{- $choose := cond $de (dict "basic" "Über Basic sprechen" "standard" "Über Standard sprechen" "plus" "Über Plus sprechen") (dict "basic" "Talk about Basic" "standard" "Talk about Standard" "plus" "Talk about Plus") -}}
+       There is no checkout, every tier starts with a call, so the label is the
+       site-wide call label; aria-label names the tier for link lists. */ -}}
+{{- $call := cond $de "Termin buchen" "Book a call" -}}
 
 {{- /* price strings: "$1,250" in EN, "1.250 USD" in DE */ -}}
 {{- $fmt := dict -}}
@@ -118,8 +119,8 @@
         {{- range $c.points }}<li>{{ replace . "-" "\u2011" }}</li>{{ end }}
       </ul>
       <div class="cp-tier__action">
-        {{- with index $choose $p.id }}
-        <a href="{{ $contact }}?tier={{ $p.id }}" class="cp-tier-btn" data-cta="pricing-tier">{{ . }}</a>
+        {{- if ne $p.id "enterprise" }}
+        <a href="{{ $contact }}?tier={{ $p.id }}" class="cp-tier-btn" data-cta="pricing-tier" aria-label="{{ $call }}: {{ $p.name }}">{{ $call }}</a>
         {{- else }}
         <a href="{{ $contact }}?tier={{ $p.id }}" class="cp-tier-btn cp-tier-btn--primary" data-cta="pricing-tier">{{ $quote }}</a>
         {{- end }}
@@ -207,8 +208,8 @@
   {{- /* Shown by /js/pricing-table.js, which also collapses the table to
          the key rows first. Without JS every row stays visible. */}}
   <button type="button" class="cp-more" id="cpMore" aria-expanded="true" aria-controls="cpPricingTable cpPricingCards"
-          data-more="{{ cond $de (printf "Alle %d Zeilen anzeigen" $all) (printf "Show all %d rows" $all) }}"
-          data-less="{{ cond $de "Nur die wichtigsten Zeilen" "Show key rows only" }}" hidden>{{ cond $de "Nur die wichtigsten Zeilen" "Show key rows only" }}</button>
+          data-more="{{ cond $de (printf "Alle %d anzeigen" $all) (printf "Show all %d" $all) }}"
+          data-less="{{ cond $de "Weniger anzeigen" "Show fewer" }}" hidden>{{ cond $de "Weniger anzeigen" "Show fewer" }}</button>
 
   {{- with $notes }}
   <div class="cp-notes">
