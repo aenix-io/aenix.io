@@ -11,7 +11,7 @@ hreflang_en: /solutions/
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Readiness Assessment anfragen →</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment anfragen →</a>
 </div>
 
 ---

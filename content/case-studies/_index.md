@@ -53,7 +53,7 @@ A hosting provider's public addresses were pinned to a rack and half the traffic
 A telecom operator and integrator built a corporate AI platform — GPU scheduling, RAG on Qdrant, NVIDIA Dynamo inference, geo-distributed GPU — then shipped the same distribution into a state-owned end customer's own environment.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discuss your case</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/tco-calculator/">Model your TCO →</a>
 </div>
 

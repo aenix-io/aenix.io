@@ -155,7 +155,7 @@ A platform can make each of those cheaper to satisfy. It cannot hold them. Where
 
 <div class="cta-row">
   <a class="cta-primary" href="/solutions/dora-compliance/">DORA readiness engagement</a>
-  <a class="cta-secondary" href="/contact/">Talk to an engineer</a>
+  <a class="cta-secondary" href="/contact/">Book a call</a>
 </div>
 
 ---

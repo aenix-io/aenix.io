@@ -51,7 +51,7 @@ faq:
 That is a strong starting position, and this page walks through it measure by measure. It also marks the places where a control is available but off until you enable it, and the two or three questions a data protection officer will raise that no infrastructure can answer for you. Better to meet those here than in a meeting.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Talk to an engineer</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/compliance/">All compliance evidence →</a>
 </div>
 
@@ -159,7 +159,7 @@ The platform is a tool. The obligations sit with whoever determines the purposes
 Financial entities will be reading this alongside [DORA](/compliance/dora/); anyone handling card data alongside [PCI DSS](/compliance/pci-dss/), where the same audit-policy decision appears with the opposite pressure. Essential and important entities under NIS2 will find the regulator-facing programme on the [NIS2 solution page](/solutions/nis2-compliance/). The overlap is real and deliberate: one architecture, several regimes reading it differently.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Talk to an engineer</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/solutions/data-sovereignty/">Data sovereignty →</a>
 </div>
 

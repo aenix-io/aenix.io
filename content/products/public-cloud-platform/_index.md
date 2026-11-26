@@ -54,7 +54,7 @@ aliases:
 The live demo runs in your browser on demo data: the customer portal (marketplace, console, account, support) and, behind the Admin switch, the operator back-office with clients, verification, invoices and resource pricing. No signup, no cluster.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
+  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Try the live demo</a>
   <a class="cta-secondary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/">Compare platforms →</a>
 </div>
@@ -189,5 +189,5 @@ Prefer to start with numbers? Model your margins in the [hosting-provider unit e
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
+  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Try the live demo →</a>
 </div>

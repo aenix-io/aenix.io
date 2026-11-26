@@ -52,7 +52,7 @@ hreflang_de: /de/alternativen/nutanix-alternative/
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC private/hybrid sovereign cloud, customer-controlled hardware (no Nutanix appliance lock-in), built to support DORA / NIS2 work.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture call</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/nutanix-vs-cozystack-vs-vmware/">Nutanix vs Cozystack vs VMware →</a>
 </div>
 

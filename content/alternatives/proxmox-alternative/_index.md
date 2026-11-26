@@ -50,7 +50,7 @@ Cozystack is the open-source platform built for that next stage. Kubernetes-nati
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — a complete public-cloud product for hosting providers and regional clouds outgrowing Proxmox: customer portal, billing and service catalog. WHMCS billing integration (a proprietary Ænix module), multi-tenant by design, productized installer. Support tiers from $1,250 per 10 nodes per month.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture call</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a call</a>
   <a class="cta-secondary" href="/compare/cozystack-vs-proxmox/">Cozystack vs Proxmox →</a>
 </div>
 

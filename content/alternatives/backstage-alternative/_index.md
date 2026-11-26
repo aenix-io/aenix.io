@@ -50,7 +50,7 @@ Cozystack provides the underlying platform that Backstage (or any developer port
 > **Pairs with:** **[Ænix Private Cloud Platform (developer self-service included)](/products/private-cloud-platform/)** — full internal developer platform with cloud foundation underneath. GitLab automation, Argo CD workflows, golden-path templates. Backstage UI can be integrated as the front-end if you prefer; the foundation underneath is what makes the IDP work.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture call</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/internal-developer-portal-vs-platform/">Portal vs platform →</a>
 </div>
 

@@ -10,7 +10,7 @@ hreflang_de: /de/dienstleistungen/
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get readiness assessment →</a>
+  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get an assessment →</a>
 </div>
 
 ---

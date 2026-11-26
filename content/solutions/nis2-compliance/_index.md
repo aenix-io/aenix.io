@@ -57,7 +57,7 @@ hreflang_de: /de/loesungen/nis2-compliance/
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/resources/nis2-compliance-checklist/">Get the NIS2 checklist →</a>
+  <a class="cta-secondary" href="/resources/nis2-compliance-checklist/">Download the checklist →</a>
 </div>
 
 <div class="trust-badges">

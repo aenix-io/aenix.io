@@ -31,7 +31,7 @@ related_pages:
   <iframe src="/tco-calculator-app/?vs=harvester" title="Cozystack TCO Calculator — vs Harvester (SUSE)" loading="eager" width="100%" height="900"></iframe>
   <div class="cta-row">
     <a class="cta-primary" href="/contact/?source=tco-calculator">Book a 30-minute TCO review</a>
-    <a class="cta-secondary" href="/pricing/">See Ænix pricing →</a>
+    <a class="cta-secondary" href="/pricing/">See pricing →</a>
   </div>
   <h2>Harvester (SUSE) vs Cozystack at default assumptions</h2>
   <table>

@@ -52,7 +52,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=cozystack-support">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/de/preise/#support">Support-Stufen ansehen →</a>
+  <a class="cta-secondary" href="/de/preise/#support">Preise ansehen →</a>
 </div>
 
 ---
@@ -91,7 +91,7 @@ Nennen Sie uns die Zahl Ihrer Cluster und physischen Nodes, Ihre Cozystack-Versi
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=cozystack-support">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/de/preise/#support">Stufen vergleichen →</a>
+  <a class="cta-secondary" href="/de/preise/#support">Preise ansehen →</a>
 </div>
 
 ---

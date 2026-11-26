@@ -53,7 +53,7 @@ hreflang_de: /de/branchen/hosting-anbieter/
 **Model the business first.** The [hosting-provider unit economics calculator](/isp-calculator/) estimates revenue and payback, and the [Launch your public cloud webinar](/webinars/launch-public-cloud/) walks through a provider launch. Cloud product leads can start with the [head of cloud guide](/for/head-of-cloud/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
+  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Try the live demo</a>
 </div>
 
 

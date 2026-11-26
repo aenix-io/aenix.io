@@ -29,5 +29,5 @@ Sie sind bereits auf AWS, Azure oder GCP und fragen sich, was derselbe Workload 
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?source=cloud-calculator">Zahlen in 30 Minuten durchgehen</a>
-  <a class="cta-secondary" href="/de/preise/">Ænix-Preise ansehen →</a>
+  <a class="cta-secondary" href="/de/preise/">Preise ansehen →</a>
 </div>

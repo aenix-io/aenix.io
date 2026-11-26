@@ -52,7 +52,7 @@ aliases:
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=cozystack-support">Book a call</a>
-  <a class="cta-secondary" href="/pricing/#support">See the support tiers →</a>
+  <a class="cta-secondary" href="/pricing/#support">See pricing →</a>
 </div>
 
 ---
@@ -91,7 +91,7 @@ Tell us how many clusters and physical nodes you run, which Cozystack versions, 
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=cozystack-support">Book a call</a>
-  <a class="cta-secondary" href="/pricing/#support">Compare tiers →</a>
+  <a class="cta-secondary" href="/pricing/#support">See pricing →</a>
 </div>
 
 ---

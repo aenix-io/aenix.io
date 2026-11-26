@@ -117,7 +117,7 @@ A 30-minute discovery call is enough to tell whether this architecture fits your
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+  <a class="cta-secondary" href="/demo/">Try the live demo</a>
 </div>
 
 ---

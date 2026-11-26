@@ -53,7 +53,7 @@ AENIX s.r.o. holds ISO/IEC 27001:2022 certification for its own ISMS ([certifica
 These pages answer that one framework at a time, for the three Ænix platforms and for Cozystack underneath them. Each separates what is enforced on a fresh installation, what ships but is off until you enable it, and what no infrastructure product can do for you.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Talk to an engineer</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/services/platform-readiness-assessment/">Platform readiness assessment →</a>
 </div>
 

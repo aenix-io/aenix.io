@@ -354,7 +354,7 @@ final_cta:
 <p class="ws-outcome__text"><strong>A readiness checklist</strong> to score your own datacenters against before you build.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Talk to the team</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Book a call</a></div>
 </div>
 </section>
 
@@ -383,7 +383,7 @@ LinkedIn</a>
 <div class="ws-wrap ws-register__inner">
 <h2 class="ws-h2 ws-h2--light" id="wb-recording-h">The webinar has taken place</h2>
 <p class="ws-register__lead">It ran online on Wednesday 30 September 2026. The recording is not published yet.</p>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Talk to the team</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Book a call</a></div>
 <p class="ws-register__lead">The team can go through geo-resilience for your own setup. For hands-on sessions coming up, see the <a href="/workshops/">workshops</a>.</p>
 </div>
 </section>

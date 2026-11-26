@@ -57,7 +57,7 @@ hreflang_de: /de/loesungen/dora-compliance/
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/resources/dora-compliance-checklist/">Get the checklist →</a>
+  <a class="cta-secondary" href="/resources/dora-compliance-checklist/">Download the checklist →</a>
 </div>
 
 <div class="trust-badges">
