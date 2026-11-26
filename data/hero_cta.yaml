@@ -1,0 +1,144 @@
+# Second button in the first screen of landing pages, by page topic.
+# Read by layouts/partials/hero-cta.html.
+#
+# Every landing page used to offer the live demo as its second action, including
+# DORA and repatriation pages, where a reader wants the checklist or the numbers
+# first. A page listed here gets the action of its topic instead; every other
+# page keeps the demo. A page's own `hero_cta.secondary_text/secondary_url`
+# front matter still wins over this file.
+#
+# `pages` holds exact page paths (RelPermalink). `url` is the default target;
+# `urls` overrides it for single pages, e.g. a competitor's own TCO calculator.
+# Labels follow the button vocabulary: one label per action, EN and DE.
+
+labels:
+  demo:
+    en: "Try the live demo"
+    de: "Live-Demo öffnen"
+  checklist:
+    en: "Download the checklist"
+    de: "Checkliste herunterladen"
+  vmware:
+    en: "Estimate VMware savings"
+    de: "VMware-Einsparungen berechnen"
+  tco:
+    en: "Model your TCO"
+    de: "TCO berechnen"
+
+topics:
+  # DORA: the regulation pages and the two industries it governs.
+  - action: checklist
+    url: /resources/dora-compliance-checklist/
+    pages:
+      - /compliance/dora/
+      - /solutions/dora-compliance/
+      - /industries/financial-services/
+      - /industries/insurance/
+  - action: checklist
+    url: /de/ressourcen/dora-compliance-checkliste/
+    pages:
+      - /de/compliance/dora/
+      - /de/loesungen/dora-compliance/
+      - /de/branchen/finanzdienstleistungen/
+      - /de/branchen/versicherung/
+
+  - action: checklist
+    url: /resources/nis2-compliance-checklist/
+    pages:
+      - /compliance/nis2/
+      - /solutions/nis2-compliance/
+  - action: checklist
+    url: /de/ressourcen/nis2-compliance-checkliste/
+    pages:
+      - /de/compliance/nis2/
+      - /de/loesungen/nis2-compliance/
+
+  # Leaving VMware: the post-Broadcom cost calculator.
+  - action: vmware
+    url: /resources/vmware-cost-calculator/
+    pages:
+      - /alternatives/vmware-alternative/
+      - /alternatives/vmware-alternatives/
+      - /alternatives/vmware-cloud-director-alternative/
+      - /compare/cozystack-vs-vmware/
+      - /migration/vmware/
+  - action: vmware
+    url: /de/ressourcen/vmware-kostenrechner/
+    pages:
+      - /de/alternativen/vmware-alternative/
+      - /de/alternativen/vmware-alternativen/
+      - /de/alternativen/vmware-cloud-director-alternative/
+      - /de/vergleichen/cozystack-vs-vmware/
+      - /de/migration/vmware/
+
+  # Other platforms: the TCO calculator, preset to that platform where one exists.
+  - action: tco
+    url: /tco-calculator/
+    pages:
+      - /alternatives/proxmox-alternative/
+      - /alternatives/nutanix-alternative/
+      - /alternatives/openshift-alternative/
+      - /alternatives/openstack-alternative/
+      - /compare/cozystack-vs-proxmox/
+      - /compare/cozystack-vs-openshift/
+      - /compare/cozystack-vs-openstack/
+      - /compare/cozystack-vs-harvester/
+      - /compare/cozystack-vs-opennebula/
+      - /compare/cozystack-vs-virtuozzo/
+      - /compare/cozystack-vs-platform9/
+      - /migration/proxmox/
+      - /migration/nutanix/
+      - /migration/openstack/
+      - /migration/virtuozzo/
+      - /migration/cloudstack/
+      - /migration/ibm/
+    urls:
+      /alternatives/proxmox-alternative/: /tco-calculator/vs-proxmox/
+      /compare/cozystack-vs-proxmox/: /tco-calculator/vs-proxmox/
+      /migration/proxmox/: /tco-calculator/vs-proxmox/
+      /alternatives/nutanix-alternative/: /tco-calculator/vs-nutanix/
+      /migration/nutanix/: /tco-calculator/vs-nutanix/
+      /alternatives/openshift-alternative/: /tco-calculator/vs-openshift/
+      /compare/cozystack-vs-openshift/: /tco-calculator/vs-openshift/
+      /alternatives/openstack-alternative/: /tco-calculator/vs-openstack/
+      /compare/cozystack-vs-openstack/: /tco-calculator/vs-openstack/
+      /migration/openstack/: /tco-calculator/vs-openstack/
+      /compare/cozystack-vs-harvester/: /tco-calculator/vs-harvester/
+      /compare/cozystack-vs-opennebula/: /tco-calculator/vs-opennebula/
+      /compare/cozystack-vs-virtuozzo/: /tco-calculator/vs-virtuozzo/
+      /migration/virtuozzo/: /tco-calculator/vs-virtuozzo/
+      /migration/cloudstack/: /tco-calculator/vs-cloudstack/
+  - action: tco
+    url: /de/roi-rechner/
+    pages:
+      - /de/alternativen/proxmox-alternative/
+      - /de/alternativen/nutanix-alternative/
+      - /de/alternativen/openshift-alternative/
+      - /de/alternativen/openstack-alternative/
+      - /de/vergleichen/cozystack-vs-proxmox/
+      - /de/vergleichen/cozystack-vs-openshift/
+      - /de/vergleichen/cozystack-vs-openstack/
+      - /de/vergleichen/cozystack-vs-harvester/
+      - /de/vergleichen/cozystack-vs-opennebula/
+      - /de/vergleichen/cozystack-vs-virtuozzo/
+      - /de/vergleichen/cozystack-vs-platform9/
+      - /de/migration/proxmox/
+      - /de/migration/nutanix/
+      - /de/migration/openstack/
+      - /de/migration/virtuozzo/
+      - /de/migration/cloudstack/
+      - /de/migration/ibm/
+
+  # Leaving the public cloud: cloud bill against own hardware.
+  - action: tco
+    url: /cloud-calculator/
+    pages:
+      - /solutions/cloud-repatriation/
+      - /solutions/cloud-cost-optimization/
+      - /migration/cloud/
+  - action: tco
+    url: /de/cloud-rechner/
+    pages:
+      - /de/loesungen/cloud-repatriation/
+      - /de/loesungen/cloud-kostenoptimierung/
+      - /de/migration/cloud/

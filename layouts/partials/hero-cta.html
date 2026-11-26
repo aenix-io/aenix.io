@@ -5,7 +5,9 @@
   first "Book a call" sat 1,800–5,000 px down.
 
   Primary: book a discovery call (/contact/, which holds the discovery form
-  and calendar). Secondary: the live demo. German on /de/ pages.
+  and calendar). Secondary: the action that fits the page topic, from
+  data/hero_cta.yaml (DORA and NIS2 checklists, the VMware savings and TCO
+  calculators); the live demo everywhere else. German on /de/ pages.
   Opt out with `hide_hero_cta: true`. A page without GEO blocks whose body
   opens with a CTA row (first 600 characters) is skipped automatically.
   Override per page with `hero_cta: {primary_text, primary_url,
@@ -24,8 +26,17 @@
   {{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
   {{- $pt := cond $de "Discovery-Call buchen" "Book a call" -}}
   {{- $pu := cond $de "/de/kontakt/" "/contact/" -}}
-  {{- $st := cond $de "Live-Demo öffnen" "Open the live demo" -}}
+  {{- $lang := cond $de "de" "en" -}}
+  {{- $labels := site.Data.hero_cta.labels -}}
+  {{- $st := index $labels.demo $lang -}}
   {{- $su := "/demo/" -}}
+  {{- range site.Data.hero_cta.topics -}}
+    {{- if in .pages $.RelPermalink -}}
+      {{- $st = index $labels .action $lang -}}
+      {{- $su = .url -}}
+      {{- with .urls }}{{ with index . $.RelPermalink }}{{ $su = . }}{{ end }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
   {{- if $calc -}}
     {{- $pt = cond $de "Ergebnis mit einem Ingenieur besprechen" "Review your numbers with an engineer" -}}
   {{- end -}}
