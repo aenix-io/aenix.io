@@ -19,23 +19,35 @@
 # Only the "Ænix commercial modules" rows are proprietary Ænix software.
 
 
+# Tier cards (above the comparison): `label` is the line above the tier name,
+# `short` the one-line "who it is for", `points` the three things that set the
+# tier apart. `who` and `value` are the long versions, shown in the full table.
 plans:
   - id: basic
     name: Basic
     price_annual: 1250
     price_monthly: 1500
+    label: "Business hours"
+    short: "Small providers and internal teams"
+    points: ["8-hour emergency response", "5 covered incidents¹", "CVE fixes and upgrade guidance"]
     who: "Small providers, startups, and internal teams running limited workloads"
     value: "Business-hours incident support, the Ænix commercial modules, CVE fixes and knowledge-base upgrade guidance. Low risk at low cost"
   - id: standard
     name: Standard
     price_annual: 3000
     price_monthly: 3600
+    label: "Production support"
+    short: "Growing providers with production SLAs"
+    points: ["4-hour emergency response", "Unlimited incidents", "Installation and supervised upgrades"]
     who: "Middle-size providers and data centers, growing teams with production SLAs who need faster responses and hands-on guidance"
     value: "Unlimited incidents, 4-hour emergency response, platform installation, supervised upgrades and fast-track security fixes"
   - id: plus
     name: Plus
     price_annual: 5500
     price_monthly: 6600
+    label: "24×7 support"
+    short: "Regulated and privacy-conscious organizations"
+    points: ["4-hour emergency response", "Guided migration", "Air-gapped installation support"]
     who: "Regulated and privacy-conscious organizations, SPs/DCs with mission-critical clusters"
     value: "24×7 support, 8-hour standard response, air-gapped install support, guided migration, compliance audit support and external monitoring"
   - id: enterprise
@@ -43,9 +55,14 @@ plans:
     price_annual: null
     price_monthly: null
     contact_url: "/contact/"
+    label: "Custom agreement"
+    short: "Large platforms and partners"
+    points: ["1-hour emergency response", "Managed migration", "Co-engineering and tailored terms"]
     who: "Large-scale platforms and partners needing roadmap influence and custom integrations"
     value: "Co-engineering on features, architectural reviews, and tailored SLAs across multi-DC and air-gapped setups"
 
+# Plain wording: a value says what the buyer gets ("8 hours", "Included"),
+# not how a contract phrases it. ✔ renders as "Included", ✖ as a dash.
 sections:
   - title: Information
     long: true
@@ -55,24 +72,28 @@ sections:
       - k: "Value"
         from: value
 
-  - title: SLA-guaranteed Support
+  - title: SLA-guaranteed support
     items:
-      - k: "Package Includes"
-        v: { basic: "10 Physical Nodes", standard: "10 Physical Nodes", plus: "10 Physical Nodes", enterprise: "Custom" }
-      - k: "Incidents covered¹"
-        v: { basic: "5", standard: "Unlimited", plus: "Unlimited", enterprise: "Unlimited" }
-      - k: "Service Desk Hours²"
-        v: { basic: "Business Hours", standard: "Business Hours", plus: "24×7 Support", enterprise: "24×7 Support" }
-      - k: "Emergency Response Time³"
-        v: { basic: "In 8 Hours", standard: "In 4 Hours", plus: "In 4 Hours", enterprise: "In 1 Hour" }
-      - k: "Standard Response Time"
-        v: { basic: "In 2 Business Days", standard: "In 2 Business Days", plus: "In 8 Hours", enterprise: "In 4 Hours" }
+      - k: "Package includes"
+        v: { basic: "10 physical nodes", standard: "10 physical nodes", plus: "10 physical nodes", enterprise: "Custom" }
+      - k: "Coverage"
+        key: true
+        v: { basic: "Business hours", standard: "Business hours", plus: "24×7", enterprise: "24×7" }
+      - k: "Emergency response"
+        key: true
+        v: { basic: "8 hours", standard: "4 hours", plus: "4 hours", enterprise: "1 hour" }
+      - k: "Standard response"
+        key: true
+        v: { basic: "2 business days", standard: "2 business days", plus: "8 hours", enterprise: "4 hours" }
+      - k: "Covered incidents"
+        key: true
+        v: { basic: "5¹", standard: "Unlimited", plus: "Unlimited", enterprise: "Unlimited" }
 
   - title: Ænix commercial modules (proprietary)
     items:
-      - k: "Billing System"
+      - k: "Billing system"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "WHMCS Integration"
+      - k: "WHMCS integration"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
 
   - title: Support scope for open-source Cozystack features
@@ -80,6 +101,7 @@ sections:
       - k: "White-labeling configuration"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
       - k: "Air-gapped installation"
+        key: true
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
       - k: "Backup configuration"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
@@ -88,38 +110,40 @@ sections:
 
   - title: PoC
     items:
-      - k: "PoC Support Level"
-        v: { basic: "Knowledge base and answering questions", standard: "Basic PoC", plus: "Full PoC Package", enterprise: "Full PoC Package" }
+      - k: "PoC support"
+        v: { basic: "Knowledge base and Q&A", standard: "Basic PoC", plus: "Full PoC package", enterprise: "Full PoC package" }
 
-  - title: Learning and trainings
+  - title: Learning and training
     items:
-      - k: "K8s Deep Dive Course"
-        v: { basic: "Quoted on request", standard: "Quoted on request", plus: "1 full course/year free; additional at 30% off", enterprise: "1 full course/year free; additional at 30% off" }
+      - k: "Kubernetes deep-dive course"
+        v: { basic: "Quoted on request", standard: "Quoted on request", plus: "1 full course a year free, more at 30% off", enterprise: "1 full course a year free, more at 30% off" }
       - k: "Training"
-        v: { basic: "1 hour/month", standard: "2 hours/month", plus: "3 hours/month", enterprise: "5 hours/month" }
+        v: { basic: "1 hour a month", standard: "2 hours a month", plus: "3 hours a month", enterprise: "5 hours a month" }
 
-  - title: Security Features
+  - title: Security
     items:
-      - k: "Fast-track security bug fixing"
+      - k: "Fast-track security fixes"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "CVE Vulnerabilities"
+      - k: "CVE fixes"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "User Authentication Support"
+      - k: "User authentication support"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
 
-  - title: Consulting/Managed Assistance
+  - title: Consulting and managed assistance
     items:
-      - k: "Migration"
-        v: { basic: "Documentation only", standard: "Documentation only", plus: "Guided by Ænix", enterprise: "Managed by Ænix" }
-      - k: "Architecture Advisory"
-        v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
-      - k: "Best-Practice Audit"
-        v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
-      - k: "Platform Installation"
+      - k: "Platform installation"
+        key: true
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "Migration support"
+        key: true
+        v: { basic: "Documentation", standard: "Documentation", plus: "Guided", enterprise: "Managed" }
+      - k: "Architecture advisory"
+        v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
+      - k: "Best-practice audit"
+        v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
       - k: "Compliance audit support"
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
-      - k: "Supervised Upgrade Assistance"
+      - k: "Supervised upgrades"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
       - k: "Out-of-scope work rate"
         v: { basic: "$150 / hour", standard: "$150 / hour", plus: "$150 / hour", enterprise: "$150 / hour" }
@@ -129,116 +153,148 @@ sections:
       - k: "MSA and SLA terms"
         v: { basic: "Standard, no amendments", standard: "Standard, no amendments", plus: "Standard, amendable", enterprise: "Customer templates permitted" }
 
-  - title: Ænix Team Engagement
+  - title: Ænix team engagement
     items:
       - k: "Dedicated support channel"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
       - k: "Remote access to your clusters, with your approval"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "External Monitoring"
+      - k: "External monitoring"
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
-      - k: "Personalized Roadmap"
+      - k: "Personalized roadmap"
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
-      - k: "Priority Engagement Time⁴"
-        v: { basic: "2 Hours", standard: "4 Hours", plus: "15 Hours", enterprise: "40 Hours" }
+      - k: "Priority engineering per month"
+        key: true
+        v: { basic: "2 hours", standard: "4 hours", plus: "15 hours", enterprise: "40 hours" }
 
-# Footnotes printed under the table (the ¹–⁴ marks in the row labels).
+# Rows marked `key: true` form the short comparison shown by default on
+# /pricing/; the button under the table expands it to every row. Without JS
+# every row is shown.
+
+# Footnotes printed under the table (the ¹ mark sits on the Basic incident count).
 notes:
-  - "¹ Basic covers five incidents; the period is set in the support contract. Incidents raised within the 30-day installation-support period do not count."
-  - "² Business hours: Monday to Friday, 9:00–18:00 CET, excluding holidays."
-  - "³ Emergency: a production system down or unresponsive with no workaround."
-  - "⁴ Engineering time per month for your requests: features, integrations or reviews."
-  - "Feature rows describe what Ænix supports; the features themselves are open-source Cozystack. Prices in USD; contracts with AENIX s.r.o. are in EUR."
+  - "¹ Basic covers five incidents for the period set in the support contract. Incidents raised within the 30-day installation-support period do not count."
+  - "Business hours: Monday to Friday, 9:00–18:00 CET, excluding holidays. Emergency response applies when a production system is down or unresponsive with no workaround."
+  - "Priority engineering is time per month for your requests: features, integrations or reviews."
+  - "Feature rows describe what Ænix supports; the features themselves are open-source Cozystack."
+
+# Customer logos under the tier cards. Rule 1: these four are among the seven
+# hosting customers cleared on 2026-07-09 as Public Cloud Platform customers
+# (see layouts/shortcodes/clients.html), so the line beside the logos must keep
+# saying Public Cloud Platform. This placement still needs Timur's sign-off.
+# The assets are light on transparent: no white plate behind them.
+proof:
+  title: "Running in production"
+  text: "Hosting providers on Ænix Public Cloud Platform"
+  logos:
+    - { name: "GoHost.kz", url: "https://gohost.kz/", logo: "/images/clients/gohost.svg" }
+    - { name: "HDReady", url: "https://hdready.com/", logo: "/images/clients/hdready.svg" }
+    - { name: "Beby Cloud", url: "https://beby.cloud/en/", logo: "/images/clients/beby.svg" }
+    - { name: "HiKube", url: "https://hikube.cloud/", logo: "/images/clients/hikube.svg" }
 
 # German rendering (/de/preise/). `t` maps every English section title, row
 # label and cell value to German; anything missing falls back to English.
 de:
   plans:
     basic:
+      label: "Geschäftszeiten"
+      short: "Kleine Anbieter und interne Teams"
+      points: ["8 Stunden Reaktionszeit im Notfall", "5 abgedeckte Vorfälle¹", "CVE-Fixes und Upgrade-Anleitungen"]
       who: "Kleine Anbieter, Startups und interne Teams mit begrenzten Workloads"
       value: "Support für Vorfälle zu Geschäftszeiten, die kommerziellen Ænix-Module, CVE-Fixes und Upgrade-Anleitungen in der Wissensdatenbank. Geringes Risiko zu geringen Kosten"
     standard:
+      label: "Produktions-Support"
+      short: "Wachsende Anbieter mit Produktions-SLAs"
+      points: ["4 Stunden Reaktionszeit im Notfall", "Unbegrenzte Vorfälle", "Installation und begleitete Upgrades"]
       who: "Mittelgroße Anbieter und Rechenzentren, wachsende Teams mit Produktions-SLAs, die schnellere Reaktion und praktische Begleitung brauchen"
       value: "Unbegrenzte Vorfälle, 4 Stunden Reaktionszeit im Notfall, Plattforminstallation, begleitete Upgrades und beschleunigte Sicherheitsfixes"
     plus:
+      label: "Support rund um die Uhr"
+      short: "Regulierte und datenschutzbewusste Organisationen"
+      points: ["4 Stunden Reaktionszeit im Notfall", "Begleitete Migration", "Support für Air-Gap-Installationen"]
       who: "Regulierte und datenschutzbewusste Organisationen, Service-Provider und Rechenzentren mit geschäftskritischen Clustern"
       value: "Support rund um die Uhr, 8 Stunden Standard-Reaktionszeit, Support für Air-Gap-Installationen, begleitete Migration, Unterstützung bei Compliance-Audits und externes Monitoring"
     enterprise:
+      label: "Individueller Vertrag"
+      short: "Große Plattformen und Partner"
+      points: ["1 Stunde Reaktionszeit im Notfall", "Migration durch Ænix", "Gemeinsame Entwicklung und eigene Konditionen"]
       who: "Große Plattformen und Partner, die Einfluss auf die Roadmap und individuelle Integrationen brauchen"
       value: "Gemeinsame Entwicklung von Funktionen, Architektur-Reviews und maßgeschneiderte SLAs für Multi-DC- und Air-Gap-Umgebungen"
   notes:
-    - "¹ Basic deckt fünf Vorfälle ab; den Zeitraum regelt der Supportvertrag. Vorfälle innerhalb der 30-tägigen Installationsunterstützung werden nicht angerechnet."
-    - "² Geschäftszeiten: Montag bis Freitag, 9:00–18:00 Uhr MEZ, ohne Feiertage."
-    - "³ Notfall: ein Produktivsystem ist ausgefallen oder reagiert nicht, ohne Workaround."
-    - "⁴ Entwicklungszeit pro Monat für Ihre Anfragen: Funktionen, Integrationen oder Reviews."
-    - "Die Funktionszeilen beschreiben, was Ænix unterstützt; die Funktionen selbst sind Open-Source-Cozystack. Preise in USD; Verträge mit der AENIX s.r.o. in EUR."
+    - "¹ Basic deckt fünf Vorfälle für den im Supportvertrag festgelegten Zeitraum ab. Vorfälle innerhalb der 30-tägigen Installationsunterstützung werden nicht angerechnet."
+    - "Geschäftszeiten: Montag bis Freitag, 9:00–18:00 Uhr MEZ, ohne Feiertage. Die Reaktionszeit im Notfall gilt, wenn ein Produktivsystem ausgefallen ist oder nicht reagiert und es keinen Workaround gibt."
+    - "Priorisierte Entwicklungszeit ist Zeit pro Monat für Ihre Anfragen: Funktionen, Integrationen oder Reviews."
+    - "Die Funktionszeilen beschreiben, was Ænix unterstützt; die Funktionen selbst sind Open-Source-Cozystack."
+  proof:
+    title: "In Produktion"
+    text: "Hosting-Anbieter auf der Ænix Public Cloud Platform"
   t:
     "Information": "Überblick"
     "Who is it for": "Für wen"
     "Value": "Leistung"
-    "SLA-guaranteed Support": "Support mit SLA-Garantie"
-    "Package Includes": "Paket umfasst"
-    "Incidents covered¹": "Abgedeckte Vorfälle¹"
-    "Service Desk Hours²": "Servicezeiten²"
-    "Emergency Response Time³": "Reaktionszeit im Notfall³"
-    "Standard Response Time": "Standard-Reaktionszeit"
+    "SLA-guaranteed support": "Support mit SLA-Garantie"
+    "Package includes": "Paket umfasst"
+    "Coverage": "Abdeckung"
+    "Emergency response": "Reaktionszeit im Notfall"
+    "Standard response": "Standard-Reaktionszeit"
+    "Covered incidents": "Abgedeckte Vorfälle"
     "Ænix commercial modules (proprietary)": "Kommerzielle Ænix-Module (proprietär)"
-    "Billing System": "Billing-System"
-    "WHMCS Integration": "WHMCS-Integration"
+    "Billing system": "Billing-System"
+    "WHMCS integration": "WHMCS-Integration"
     "Support scope for open-source Cozystack features": "Support-Umfang für Open-Source-Funktionen von Cozystack"
     "White-labeling configuration": "Konfiguration des White-Labelings"
     "Air-gapped installation": "Air-Gap-Installation"
     "Backup configuration": "Backup-Konfiguration"
     "GPU sharing (HAMi) configuration": "Konfiguration des GPU-Sharings (HAMi)"
-    "PoC Support Level": "PoC-Unterstützung"
-    "Learning and trainings": "Lernen und Schulungen"
-    "K8s Deep Dive Course": "Kubernetes-Deep-Dive-Kurs"
-    "Security Features": "Sicherheit"
-    "Fast-track security bug fixing": "Beschleunigte Behebung von Sicherheitslücken"
-    "CVE Vulnerabilities": "CVE-Schwachstellen"
-    "User Authentication Support": "Support für die Benutzerauthentifizierung"
-    "Consulting/Managed Assistance": "Beratung und begleitete Unterstützung"
-    "Architecture Advisory": "Architekturberatung"
-    "Best-Practice Audit": "Best-Practice-Audit"
-    "Platform Installation": "Plattforminstallation"
+    "PoC support": "PoC-Unterstützung"
+    "Learning and training": "Lernen und Schulungen"
+    "Kubernetes deep-dive course": "Kubernetes-Deep-Dive-Kurs"
+    "Training": "Schulung"
+    "Security": "Sicherheit"
+    "Fast-track security fixes": "Beschleunigte Sicherheitsfixes"
+    "CVE fixes": "CVE-Fixes"
+    "User authentication support": "Support für die Benutzerauthentifizierung"
+    "Consulting and managed assistance": "Beratung und begleitete Unterstützung"
+    "Platform installation": "Plattforminstallation"
+    "Migration support": "Migrationsunterstützung"
+    "Architecture advisory": "Architekturberatung"
+    "Best-practice audit": "Best-Practice-Audit"
     "Compliance audit support": "Unterstützung bei Compliance-Audits"
-    "Supervised Upgrade Assistance": "Begleitete Upgrades"
+    "Supervised upgrades": "Begleitete Upgrades"
     "Out-of-scope work rate": "Stundensatz außerhalb des Umfangs"
     "Procurement": "Beschaffung"
     "MSA and SLA terms": "MSA- und SLA-Bedingungen"
-    "Ænix Team Engagement": "Zusammenarbeit mit dem Ænix-Team"
+    "Ænix team engagement": "Zusammenarbeit mit dem Ænix-Team"
     "Dedicated support channel": "Eigener Support-Kanal"
     "Remote access to your clusters, with your approval": "Remote-Zugriff auf Ihre Cluster, mit Ihrer Freigabe"
-    "External Monitoring": "Externes Monitoring"
-    "Personalized Roadmap": "Individuelle Roadmap"
-    "Priority Engagement Time⁴": "Priorisierte Entwicklungszeit⁴"
-    "10 Physical Nodes": "10 physische Nodes"
+    "External monitoring": "Externes Monitoring"
+    "Personalized roadmap": "Individuelle Roadmap"
+    "Priority engineering per month": "Priorisierte Entwicklungszeit pro Monat"
+    "10 physical nodes": "10 physische Nodes"
     "Custom": "Individuell"
+    "Business hours": "Geschäftszeiten"
     "Unlimited": "Unbegrenzt"
-    "Business Hours": "Geschäftszeiten"
-    "24×7 Support": "Rund um die Uhr (24×7)"
-    "In 8 Hours": "Innerhalb von 8 Stunden"
-    "In 4 Hours": "Innerhalb von 4 Stunden"
-    "In 1 Hour": "Innerhalb von 1 Stunde"
-    "In 2 Business Days": "Innerhalb von 2 Werktagen"
-    "Knowledge base and answering questions": "Wissensdatenbank und Beantwortung von Fragen"
+    "8 hours": "8 Stunden"
+    "4 hours": "4 Stunden"
+    "1 hour": "1 Stunde"
+    "2 business days": "2 Werktage"
+    "Knowledge base and Q&A": "Wissensdatenbank und Fragen"
     "Basic PoC": "Einfacher PoC"
-    "Full PoC Package": "Vollständiges PoC-Paket"
+    "Full PoC package": "Vollständiges PoC-Paket"
     "Quoted on request": "Angebot auf Anfrage"
-    "1 full course/year free; additional at 30% off": "1 vollständiger Kurs pro Jahr kostenlos; weitere mit 30 % Rabatt"
-    "1 hour/month": "1 Stunde pro Monat"
-    "2 hours/month": "2 Stunden pro Monat"
-    "3 hours/month": "3 Stunden pro Monat"
-    "5 hours/month": "5 Stunden pro Monat"
-    "Documentation only": "Nur Dokumentation"
-    "Guided by Ænix": "Von Ænix begleitet"
-    "Managed by Ænix": "Von Ænix durchgeführt"
+    "1 full course a year free, more at 30% off": "1 vollständiger Kurs pro Jahr kostenlos, weitere mit 30 % Rabatt"
+    "1 hour a month": "1 Stunde pro Monat"
+    "2 hours a month": "2 Stunden pro Monat"
+    "3 hours a month": "3 Stunden pro Monat"
+    "5 hours a month": "5 Stunden pro Monat"
+    "Documentation": "Dokumentation"
+    "Guided": "Von Ænix begleitet"
+    "Managed": "Von Ænix durchgeführt"
     "Billed hourly": "Nach Stunden abgerechnet"
     "$150 / hour": "150 USD pro Stunde"
     "Standard, no amendments": "Standard, ohne Änderungen"
     "Standard, amendable": "Standard, änderbar"
     "Customer templates permitted": "Vorlagen des Kunden möglich"
-    "2 Hours": "2 Stunden"
-    "4 Hours": "4 Stunden"
-    "15 Hours": "15 Stunden"
-    "40 Hours": "40 Stunden"
+    "2 hours": "2 Stunden"
+    "15 hours": "15 Stunden"
+    "40 hours": "40 Stunden"

@@ -2644,6 +2644,38 @@ a.card--hub {
 .faq-rows .faq-item summary { padding: 1.25rem 0.25rem; }
 .faq-rows .faq-answer { padding: 0 0.25rem 1.375rem 1.625rem; }
 
+/* --- FAQ, every answer open in two columns (faq_style: "grid") ---
+   For four to six short answers: the reader scans them without clicking.
+   A hairline between rows; the two items of a row share one height. */
+.faq-grid__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 3rem;
+  margin-top: 1.5rem;
+}
+.faq-grid__item {
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.faq-grid__item:nth-child(-n + 2) { border-top: none; padding-top: 0.5rem; }
+.page-content .faq-grid__item h3,
+.faq-grid__item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.011em;
+  color: var(--aenix-text);
+  text-wrap: balance;
+}
+.faq-grid .faq-answer { max-width: 62ch; padding: 0; text-wrap: pretty; }
+.faq-grid .faq-answer a { font-weight: 600; color: var(--aenix-primary); text-decoration: none; }
+.faq-grid .faq-answer a:hover { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 760px) {
+  .faq-grid__list { grid-template-columns: 1fr; }
+  .faq-grid__item:nth-child(2) { border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.5rem; }
+}
+
 /* --- Comparison, V_3 split cards --- */
 .compare-cards {
   display: grid;

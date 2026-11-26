@@ -1,47 +1,114 @@
-{{/* Pricing page (EN /pricing/, DE /de/preise/): a short hero and the tier
-     table, nothing else. The table comes from the {{< pricing-table >}}
-     shortcode in the page body, data from data/pricing.yaml. */}}
+{{/* Pricing page (EN /pricing/, DE /de/preise/).
+
+     Order, top to bottom:
+       1. hero: what is priced, two actions, and what one price covers;
+       2. support plans and the comparison ({{< pricing-table >}} in the body,
+          data from data/pricing.yaml);
+       3. Private Cloud and AI Platform, quoted per project, and the
+          assessment for buyers who do not know which one fits, as three cards;
+       4. questions before you buy, open in two columns (front matter `faq`,
+          also FAQPage JSON-LD);
+       5. one closing action: the ask on the left, the button on the right.
+     All copy lives in the page front matter, so it can change without
+     touching this file. */}}
 {{ define "head" }}
 <link rel="stylesheet" href="/css/pricing-table.css">
 {{ end }}
 
 {{ define "main" }}
-<section class="page-hero page-hero--compact">
+{{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") }}
+{{- $contact := cond $de "/de/kontakt/" "/contact/" }}
+
+<section class="page-hero page-hero--compact pricing-hero">
   <div class="page-hero-bg">
     <div class="page-hero-grid"></div>
     <div class="page-hero-glow"></div>
   </div>
   <div class="container">
     {{ partial "lang-switch.html" . }}
-    <h1 class="page-hero-title">{{ .Params.hero_title | default .Title }}</h1>
-    {{- /* Say what is priced on the first screen. The approved description
-           carries it; drop its "Ænix price list:" lead-in. */}}
-    {{- with .Params.hero_subtitle | default (.Description | replaceRE `^[^:]{0,40}:\s*` "" | strings.FirstUpper) }}
-    <p class="page-hero-subtitle">{{ . }}</p>
-    {{- end }}
+    <div class="pricing-hero__grid">
+      <div class="pricing-hero__main">
+        <h1 class="page-hero-title">{{ .Params.hero_title | default .Title }}</h1>
+        {{- with .Params.hero_subtitle | default (.Description | replaceRE `^[^:]{0,40}:\s*` "" | strings.FirstUpper) }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{- end }}
+        <div class="cta-row">
+          <a class="cta-primary" href="#plans" data-cta="pricing-hero-plans">{{ .Params.hero_primary | default (cond $de "Support-Stufen ansehen" "See plans") }}</a>
+          <a class="cta-secondary" href="{{ $contact }}?tier=quote" data-cta="pricing-hero-quote">{{ .Params.hero_secondary | default (cond $de "Angebot anfordern" "Request quote") }}</a>
+        </div>
+      </div>
+      {{- with .Params.basis }}
+      <aside class="pricing-basis" aria-label="{{ with .label }}{{ . }} {{ end }}{{ .value }}">
+        {{- with .label }}<p class="pricing-basis__label">{{ . }}</p>{{ end }}
+        <p class="pricing-basis__value">{{ .value }}</p>
+        <p class="pricing-basis__text">{{ .text }}</p>
+        {{- with .facts }}
+        <ul class="pricing-basis__facts">
+          {{- range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{- end }}
+      </aside>
+      {{- end }}
+    </div>
   </div>
 </section>
 
-<div class="container">
-  <div class="page-content" style="max-width:100%">
-    {{ .Content }}
+<div class="container pricing-main">
+  {{ .Content }}
+</div>
 
-    {{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") }}
-    {{- /* The table prices Public Cloud Platform and Cozystack support; the
-           other two platforms are quoted after an assessment. */}}
-    <p class="pricing-rfp-note">
-      <strong>Private Cloud Platform · AI Platform:</strong>
-      {{ if $de }}Umfang und Preis je Projekt nach einem 14- oder 28-tägigen Platform Readiness Assessment.
-      <a href="/de/dienstleistungen/platform-readiness-assessment/">Zum Assessment →</a>
-      {{- else }}scoped and priced per project after a 14- or 28-day Platform Readiness Assessment.
-      <a href="/services/platform-readiness-assessment/">About the assessment →</a>
+{{- with .Params.deploy }}
+<section class="pricing-section pricing-deploy" id="platforms" aria-labelledby="pricing-deploy-title">
+  <div class="container">
+    <div class="pricing-section__head">
+      <h2 class="pricing-h2" id="pricing-deploy-title">{{ .heading }}</h2>
+      {{- with .intro }}<p class="pricing-section__intro">{{ . }}</p>{{ end }}
+    </div>
+    <div class="pricing-deploy__grid">
+      {{- $d := . }}
+      {{- range .cards }}
+      <article class="pricing-deploy__card">
+        <h3 class="pricing-deploy__name">{{ .name }}</h3>
+        <p class="pricing-deploy__text">{{ .text }}</p>
+        <div class="pricing-deploy__actions">
+          <a class="cta-primary" href="{{ $contact }}?tier={{ .id }}" data-cta="pricing-platform">{{ $d.quote }}</a>
+          <a class="pricing-link" href="{{ .url }}">{{ $d.details }} <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
       {{- end }}
-    </p>
-    <div class="cta-row cta-row--center" style="margin:2rem 0">
-      <a href="{{ cond $de "/de/kontakt/" "/contact/" }}" class="cta-primary" data-cta="pricing">{{ cond $de "Discovery-Call buchen" "Book a call" }}</a>
+      {{- with .start }}
+      <article class="pricing-deploy__card pricing-deploy__card--start">
+        <h3 class="pricing-deploy__name">{{ .name }}</h3>
+        <p class="pricing-deploy__text">{{ .text }}</p>
+        <div class="pricing-deploy__actions">
+          <a class="cta-secondary" href="{{ .url }}" data-cta="pricing-assessment">{{ .link }}</a>
+        </div>
+      </article>
+      {{- end }}
     </div>
   </div>
-</div>
+</section>
+{{- end }}
+
+{{- with .Params.faq }}
+<section class="pricing-section pricing-faq" id="faq">
+  <div class="container">
+    {{ partial "seo/geo-faq.html" $ }}
+  </div>
+</section>
+{{- end }}
+
+{{- with .Params.closing_cta }}
+<section class="cta-banner landing-cta pricing-close" data-pagefind-ignore>
+  <div class="container pricing-close__inner">
+    <div class="pricing-close__text">
+      <h2 class="cta-heading">{{ .heading }}</h2>
+      {{- with .description }}<p class="cta-description">{{ . }}</p>{{ end }}
+    </div>
+    <a class="cta-primary" href="{{ .primary_url }}" data-cta="pricing-close">{{ .primary_text }}</a>
+  </div>
+</section>
+{{- end }}
 
 <script defer src="/js/pricing-table.js"></script>
 {{ end }}

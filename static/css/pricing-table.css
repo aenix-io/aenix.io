@@ -13,14 +13,33 @@
   color: var(--text-primary);
 }
 
-/* ---------- controls ---------- */
+/* ---------- plans: a full-width band right under the hero ----------
+   The box-shadow paints the band out to the viewport edges, and clip-path
+   keeps it to the band's own height, so the page never gets wider. */
+.cozy-pricing .cp-plans {
+  padding: 80px 0 72px;
+  background: var(--bg-secondary);
+  box-shadow: 0 0 0 100vmax var(--bg-secondary);
+  clip-path: inset(0 -100vmax);
+}
+
+/* ---------- plans head: heading left, billing switch right ---------- */
+.cozy-pricing .cp-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 40px;
+  margin: 0 0 28px;
+}
 .cozy-pricing .cp-controls {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin: 0 auto 28px;
+  align-items: flex-end;
+  gap: 8px;
 }
+.cozy-pricing .cp-controls__label { font-size: 0.8125rem; line-height: 1.3; color: var(--text-muted); }
+
 .cozy-pricing .cp-toggle,
 .cozy-pricing .cp-plan-switch {
   display: flex;
@@ -78,7 +97,7 @@
 .cozy-pricing th,
 .cozy-pricing td {
   padding: clamp(9px, 0.9vw, 14px) clamp(8px, 1.1vw, 18px);
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   border: none;
   background: transparent;
@@ -102,9 +121,12 @@
 }
 .cozy-pricing thead th:first-child {
   border-top-left-radius: var(--radius-lg);
-  text-align: left;
   vertical-align: bottom;
+  padding-left: clamp(12px, 1.6vw, 26px);
+  font-weight: 600;
+  color: var(--text-secondary);
 }
+.cozy-pricing thead .cp-plan { font-size: 1em; }
 .cozy-pricing thead th:last-child { border-top-right-radius: var(--radius-lg); }
 .cozy-pricing tbody th[scope="row"] {
   text-align: left;
@@ -145,33 +167,43 @@
   color: var(--text-secondary);
   white-space: nowrap;
 }
-.cozy-pricing .cp-ok { color: #6EE7B7; font-weight: 700; font-size: 1.05em; } /* status ok (DESIGN.md); the lime belongs to campaigns */
-.cozy-pricing .cp-no { color: rgba(255,255,255,0.22); font-size: 1.05em; }
+/* Plain wording: "Included" reads like any other value, the dash steps back. */
+.cozy-pricing .cp-ok { color: inherit; }
+.cozy-pricing .cp-no { color: var(--text-muted); }
 /* ---------- tier cards ---------- */
 .cozy-pricing .cp-tiers {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
-  margin-bottom: 64px;
 }
 .cozy-pricing .cp-tier {
   display: flex;
   flex-direction: column;
-  padding: 24px 24px 22px;
+  padding: 24px 24px 24px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-default);
   border-radius: var(--radius-lg);
 }
-/* One row of four: name, description, price, button, facts and value line
-   up across the cards even when the descriptions differ in length. */
+/* One row of four: label, name, who, price, points and button line up
+   across the cards even when the texts differ in length. */
 @media (min-width: 1100px) {
   @supports (grid-template-rows: subgrid) {
     .cozy-pricing .cp-tier { display: grid; grid-row: span 6; grid-template-rows: subgrid; row-gap: 0; }
   }
 }
-.cozy-pricing .cp-tier__name { margin: 0; font-size: 1.25rem; font-weight: 700; line-height: 1.2; color: var(--text-primary); }
-.cozy-pricing .cp-tier__who { margin: 8px 0 0; font-size: 0.875rem; line-height: 1.5; color: var(--text-secondary); text-wrap: pretty; }
-.cozy-pricing .cp-tier__price { margin-top: 22px; }
+/* The one small capital line on the page: what kind of cover the tier is. */
+.cozy-pricing .cp-tier__label {
+  margin: 0 0 8px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-primary);
+}
+.cozy-pricing .cp-tier__name { margin: 0; font-size: 1.375rem; font-weight: 700; line-height: 1.2; color: var(--text-primary); }
+.cozy-pricing .cp-tier__who { margin: 6px 0 0; font-size: 0.875rem; line-height: 1.45; color: var(--text-secondary); text-wrap: pretty; }
+.cozy-pricing .cp-tier__price { margin-top: 20px; }
 .cozy-pricing .cp-tier__amount {
   font-size: 2.25rem;
   font-weight: 700;
@@ -181,16 +213,28 @@
   color: var(--text-primary);
 }
 .cozy-pricing .cp-tier__amount .cp-per { font-size: 0.9375rem; letter-spacing: 0; }
-.cozy-pricing .cp-tier__amount--custom { color: var(--text-secondary); font-weight: 600; }
-.cozy-pricing .cp-tier__meta { margin-top: 6px; font-size: 0.8125rem; line-height: 1.4; color: var(--text-muted); }
-.cozy-pricing .cp-tier__action { margin-top: 22px; }
+.cozy-pricing .cp-tier__amount--custom { font-weight: 700; }
+.cozy-pricing .cp-tier__meta { margin-top: 6px; font-size: 0.8125rem; line-height: 1.45; color: var(--text-muted); }
+.cozy-pricing .cp-tier__points {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 18px 0 0;
+  list-style: none;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+.cozy-pricing .cp-tier__points li { margin: 0; padding: 0; }
+.cozy-pricing .cp-tier__action { margin-top: auto; padding-top: 24px; }
 .cozy-pricing .cp-tier-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   min-height: 44px;
-  padding: 10px 16px;
+  padding: 10px 18px;
   background: rgba(255, 255, 255, 0.04);
   color: var(--text-primary) !important;
   font-size: 0.9375rem;
@@ -218,37 +262,84 @@
   color: #fff !important;
 }
 .cozy-pricing .cp-tier-btn:active { translate: 0 1px; }
-.cozy-pricing .cp-tier__facts {
-  display: grid;
-  align-content: start;
-  gap: 12px;
-  margin: 22px 0 0;
-  padding-top: 18px;
+
+/* ---------- customer logos under the cards ----------
+   No box around the strip (site rule since 2026-07): the band is the emphasis.
+   The logo files are light on transparent, so no white plate either. */
+.cozy-pricing .cp-proof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 40px;
+  margin-top: 40px;
+  padding-top: 28px;
   border-top: 1px solid var(--border-subtle);
 }
-.cozy-pricing .cp-tier__facts dt { font-size: 0.75rem; line-height: 1.4; color: var(--text-muted); }
-.cozy-pricing .cp-tier__facts dd { margin: 2px 0 0; font-size: 0.9375rem; font-weight: 600; color: var(--text-primary); }
-.cozy-pricing .cp-tier__value {
-  margin: 18px 0 0;
-  padding-top: 16px;
-  border-top: 1px solid var(--border-subtle);
-  font-size: 0.8125rem;
-  line-height: 1.55;
-  color: var(--text-secondary);
-  text-wrap: pretty;
+.cozy-pricing .cp-proof__text { max-width: 20rem; margin: 0; font-size: 0.875rem; line-height: 1.5; color: var(--text-secondary); text-wrap: pretty; }
+.cozy-pricing .cp-proof__text strong { display: block; font-size: 0.9375rem; font-weight: 600; color: var(--text-primary); }
+.cozy-pricing .cp-proof__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.cozy-pricing .cp-compare-heading {
-  margin: 0 0 20px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: center;
+.cozy-pricing .cp-proof__logos li { margin: 0; padding: 0; }
+.cozy-pricing .cp-proof__logos a { display: flex; opacity: 0.78; transition: opacity 0.15s var(--ease); }
+.cozy-pricing .cp-proof__logos a:hover,
+.cozy-pricing .cp-proof__logos a:focus-visible { opacity: 1; }
+.cozy-pricing .cp-proof__logos img { width: auto; height: 48px; }
+@media (max-width: 640px) {
+  .cozy-pricing .cp-plans { padding: 64px 0 56px; }
+  .cozy-pricing .cp-tier-btn { display: flex; width: 100%; }
+  .cozy-pricing .cp-proof__logos { gap: 4px 20px; }
+  .cozy-pricing .cp-proof__logos img { height: 40px; }
+}
+/* ---------- comparison: key rows first, every row on request ---------- */
+.cozy-pricing .cp-compare { margin-top: 96px; scroll-margin-top: 96px; }
+.cozy-pricing.cp-collapsed .cp-extra { display: none; }
+.cozy-pricing .cp-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 9px 18px;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
   color: var(--text-primary);
+  background: transparent;
+  border: 1px solid var(--border-default);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s var(--ease), color 0.15s var(--ease);
 }
+.cozy-pricing .cp-more[hidden] { display: none; }
+.cozy-pricing .cp-more::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.2s var(--ease);
+}
+.cozy-pricing .cp-more[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
+.cozy-pricing .cp-more:hover { border-color: var(--brand-primary); color: var(--brand-primary); }
+.cozy-pricing .cp-more:active { translate: 0 1px; }
 @media (max-width: 1099px) {
   .cozy-pricing .cp-tiers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
-  .cozy-pricing .cp-tiers { grid-template-columns: 1fr; margin-bottom: 48px; }
+  .cozy-pricing .cp-tiers { grid-template-columns: 1fr; }
+  .cozy-pricing .cp-compare { margin-top: 72px; }
+}
+@media (max-width: 720px) {
+  .cozy-pricing .cp-controls { align-items: stretch; width: 100%; }
+  .cozy-pricing .cp-compare-link { align-self: flex-start; }
 }
 
 .cozy-pricing .cp-notes {
@@ -346,3 +437,167 @@
 }
 .pricing-rfp-note strong { color: var(--text-primary); font-weight: 600; }
 .pricing-rfp-note a { color: var(--brand-primary); white-space: nowrap; }
+
+/* ==========================================================================
+   Page sections around the table (layouts/_default/pricing.html)
+   ========================================================================== */
+.pricing-h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+.pricing-section__head { margin: 0 0 28px; }
+.pricing-section__intro {
+  max-width: 40rem;
+  margin: 10px 0 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  text-wrap: pretty;
+}
+.pricing-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.pricing-link:hover { text-decoration: underline; }
+
+/* Hero: what is priced on the left, what one price covers on the right. */
+.pricing-hero.page-hero--compact { padding-bottom: 56px; }
+.pricing-hero__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+.pricing-hero .container { text-align: left; }
+.pricing-hero .page-hero-subtitle { max-width: 38rem; margin: 0; text-wrap: pretty; }
+.pricing-hero .cta-row { margin: 1.75rem 0 0; }
+.pricing-basis {
+  padding: 28px 28px 24px;
+  border: 1px solid rgba(1, 165, 255, 0.22);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, rgba(1, 165, 255, 0.10), rgba(9, 113, 235, 0.03) 60%), var(--bg-secondary);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+.pricing-basis__label { margin: 0; font-size: 0.875rem; color: var(--text-secondary); }
+.pricing-basis__label + .pricing-basis__value { margin-top: 6px; }
+.pricing-basis__value {
+  margin: 0 0 10px;
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+.pricing-basis__text { margin: 0; font-size: 0.9375rem; line-height: 1.55; color: var(--text-secondary); text-wrap: pretty; }
+.pricing-basis__facts {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 16px 0 0;
+  list-style: none;
+  border-top: 1px solid var(--border-default);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+.pricing-basis__facts li { margin: 0; }
+@media (max-width: 960px) {
+  .pricing-hero__grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.pricing-main { padding-top: 0; }
+
+/* Private Cloud and AI Platform, quoted per project, and the assessment
+   for buyers who do not know which one fits. A band of its own. */
+.pricing-deploy {
+  margin-top: 96px;
+  padding: 88px 0;
+  background: var(--bg-secondary);
+}
+.pricing-deploy__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.pricing-deploy__card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+}
+.pricing-deploy__card--start {
+  border-color: rgba(1, 165, 255, 0.28);
+  background: linear-gradient(160deg, rgba(1, 165, 255, 0.12), rgba(9, 113, 235, 0.04) 60%), var(--bg-secondary);
+}
+.pricing-deploy__name { margin: 0; font-size: 1.25rem; font-weight: 700; line-height: 1.25; color: var(--text-primary); text-wrap: balance; }
+.pricing-deploy__text { flex: 1; margin: 8px 0 0; font-size: 0.9375rem; line-height: 1.55; color: var(--text-secondary); text-wrap: pretty; }
+.pricing-deploy__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  margin-top: 24px;
+}
+.pricing-deploy__actions .cta-primary,
+.pricing-deploy__actions .cta-secondary { padding: 0.6875rem 1.25rem; }
+/* Three in a row: the buttons start on one line, whatever the text length. */
+@media (min-width: 901px) {
+  @supports (grid-template-rows: subgrid) {
+    .pricing-deploy__card { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 0; }
+    .pricing-deploy__actions { align-self: start; }
+  }
+}
+@media (max-width: 900px) {
+  .pricing-deploy__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .pricing-deploy { margin-top: 80px; padding: 64px 0; }
+}
+
+/* Questions before you buy: every answer open, two columns (faq_style: grid). */
+.pricing-faq { padding: 88px 0 0; }
+.pricing-faq .seo-faq { max-width: none; margin: 0; }
+.pricing-faq .seo-faq > h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+/* Closing: the ask on the left, the one button on the right. */
+.pricing-close {
+  margin-top: 96px;
+  padding: 72px 0;
+  text-align: left;
+  background: linear-gradient(180deg, rgba(1, 165, 255, 0.07), rgba(1, 165, 255, 0.02)), var(--bg-secondary);
+}
+.pricing-close::before { left: 30%; }
+.pricing-close__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px 48px;
+}
+.pricing-close .cta-heading { max-width: none; margin: 0 0 0.5rem; }
+.pricing-close .cta-description { max-width: 36rem; margin: 0; }
+.pricing-close .cta-primary { flex: none; }
+@media (max-width: 760px) {
+  .pricing-close { margin-top: 80px; padding: 56px 0; }
+  .pricing-close__inner { flex-direction: column; align-items: flex-start; }
+}
