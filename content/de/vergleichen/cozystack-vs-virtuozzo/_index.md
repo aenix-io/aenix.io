@@ -144,7 +144,7 @@ Besteht Ihr Angebot aus VMs, S3 und Backup, fragen Ihre Kunden weder nach Manage
 Mehr für Hosting-Anbieter finden Sie auf der **[Branchenseite](/de/branchen/hosting-anbieter/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/migration/virtuozzo/">Virtuozzo-Migrations-Hub →</a>
 </div>
 

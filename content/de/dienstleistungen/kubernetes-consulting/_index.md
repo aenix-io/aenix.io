@@ -54,7 +54,7 @@ faq:
 > **Passt zu:** jeder der drei **[Ænix-Plattformen](/de/produkte/)**, sobald sich der Umfang auf eine produktisierte Cloud-Plattform erweitert. Eigenständiges Consulting ist auch ohne Plattform möglich.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/produktion-kubernetes-cluster-architektur/">Leitfaden für Produktions-Cluster →</a>
 </div>
 
@@ -212,7 +212,7 @@ Das Architektur-Review hat einen Festpreis; die Umsetzung erfolgt nach Aufwand o
 ## Beginnen Sie mit einem 30-minütigen Discovery-Gespräch
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Leitfaden zum Aufbau von Produktions-Clustern](/de/blog/2026/05/produktion-kubernetes-cluster-architektur/)**

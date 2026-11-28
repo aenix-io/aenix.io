@@ -80,7 +80,7 @@ Für Red-Hat-Umgebungen passt OpenShift Virtualization. Für Open-Source-First- 
 Wann sich der Wechsel weg von OpenShift lohnt, lesen Sie unter **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**; für Red-Hat-/IBM-Bestände siehe **[Migration von IBM-Plattformen](/de/migration/ibm/)**, und mehr Details bietet der **[Artikel OpenShift vs Cozystack](/de/blog/2026/05/openshift-vs-cozystack-vergleich-kubevirt/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

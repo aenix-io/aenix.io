@@ -1,9 +1,14 @@
 {{- $image := .Get "image" -}}
 {{- $alt := .Get "alt" | default "" -}}
 {{- $imgRight := .Get "imgRight" -}}
+{{- /* Intrinsic size from the file in static/, so the browser reserves the
+       space before a lazy image arrives and the text beside it does not jump. */ -}}
+{{- $size := "" -}}
+{{- $file := path.Join "static" $image -}}
+{{- if fileExists $file }}{{ with imageConfig $file }}{{ $size = printf ` width="%d" height="%d"` .Width .Height }}{{ end }}{{ end -}}
 <div class="two-cols{{ if $imgRight }} two-cols--reverse{{ end }}">
   <div class="two-cols-image">
-    <img src="{{ $image }}" alt="{{ $alt }}" loading="lazy">
+    <img src="{{ $image }}" alt="{{ $alt }}"{{ $size | safeHTMLAttr }} loading="lazy">
   </div>
   <div class="two-cols-text">
     {{ .Inner | markdownify }}

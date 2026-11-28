@@ -17,7 +17,7 @@ hero_chips:
   - "Took place on 30 September 2026"
   - "60 minutes, with a live Q&A"
   - "Recording not published yet"
-hero_primary: { text: "Talk to the team", href: "/contact/" }
+hero_primary: { text: "Book a call", href: "/contact/" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil-hero.png"
 inshort_title: "About the webinar"
@@ -67,7 +67,7 @@ faq:
 final_cta:
   heading: "Bring your datacenters to a conversation"
   text: "The webinar took place on 30 September 2026, and the recording is not published yet. Talk to the team about geo-resilience for your own setup."
-  button: "Talk to the team"
+  button: "Book a call"
   href: "/contact/"
 ---
 
@@ -354,7 +354,7 @@ final_cta:
 <p class="ws-outcome__text"><strong>A readiness checklist</strong> to score your own datacenters against before you build.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Talk to the team</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Book a call</a></div>
 </div>
 </section>
 
@@ -383,7 +383,7 @@ LinkedIn</a>
 <div class="ws-wrap ws-register__inner">
 <h2 class="ws-h2 ws-h2--light" id="wb-recording-h">The webinar has taken place</h2>
 <p class="ws-register__lead">It ran online on Wednesday 30 September 2026. The recording is not published yet.</p>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Talk to the team</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Book a call</a></div>
 <p class="ws-register__lead">The team can go through geo-resilience for your own setup. For hands-on sessions coming up, see the <a href="/workshops/">workshops</a>.</p>
 </div>
 </section>

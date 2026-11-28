@@ -51,7 +51,7 @@ faq:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen: Hosting-Panel, Billing, Kundenportal und Zahlungen. Billing mit WHMCS-Integration, Mandantenfähigkeit über das Tenant-CRD, produktisierter Installer. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/alternativen/proxmox-alternative/">Proxmox-Alternative →</a>
 </div>
 
@@ -88,7 +88,7 @@ Typischer Ablauf: ein Assessment über 14 oder 28 Tage, die Plattform innerhalb 
 Sie wählen noch das Ziel? Siehe **[Proxmox-Alternative](/de/alternativen/proxmox-alternative/)** und **[Cozystack vs. Proxmox](/de/vergleichen/cozystack-vs-proxmox/)** oder den ausführlichen Beitrag **[Proxmox vs. VMware vs. Cozystack](/de/blog/2026/05/proxmox-vs-vmware-vs-cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

@@ -171,7 +171,7 @@ If Cozystack already runs in production, Ænix enterprise support puts the maint
 
 <div class="cta-row">
   <a class="cta-primary" href="/products/cozystack-enterprise-support/">Enterprise support for Cozystack →</a>
-  <a class="cta-secondary" href="/pricing/#support">Support tiers and prices →</a>
+  <a class="cta-secondary" href="/pricing/#support">See pricing →</a>
 </div>
 
 ### Path 3: Ænix-delivered platform
@@ -196,7 +196,7 @@ Cozystack is **free** (Apache 2.0). Anyone can run it.
 Enterprise support for self-run Cozystack and Ænix Public Cloud Platform are one subscription with four tiers, each including the Ænix commercial modules (a self-run team can leave them unused): Basic $1,250, Standard $3,000 and Plus $5,500 per 10 physical nodes per month on annual billing, and a custom Enterprise tier. Ænix Private Cloud Platform and Ænix AI Platform are quoted per RFP.
 
 <div class="cta-row">
-  <a class="cta-secondary" href="/pricing/">Pricing details →</a>
+  <a class="cta-secondary" href="/pricing/">See pricing →</a>
   <a class="cta-secondary" href="/products/">Compare platforms →</a>
 </div>
 

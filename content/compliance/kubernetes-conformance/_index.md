@@ -55,7 +55,7 @@ faq:
 Two independent sets of results are recorded below, from the two shapes the platform is used in — a cluster you run yourself, and a hosted platform built on it.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Talk to an engineer</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/compliance/">All compliance evidence →</a>
 </div>
 

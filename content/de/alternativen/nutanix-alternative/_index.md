@@ -52,7 +52,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — souveräne Private-/Hybrid-Cloud über mehrere Rechenzentren auf Hardware unter Ihrer Kontrolle (kein Nutanix-Appliance-Lock-in), darauf ausgelegt, Ihre Arbeit an DORA und NIS2 zu unterstützen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform/">Nutanix vs. Cozystack vs. VMware →</a>
 </div>
 
@@ -111,7 +111,7 @@ Wenn Nutanix gut läuft und die Verlängerung bezahlbar ist, ist Bleiben die ric
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Nutanix-Migrations-Hub](/de/migration/nutanix/)**

@@ -79,7 +79,7 @@ Für einen Single-Tenant-Bestand aus überwiegend VMs mit kleinem Team ist Proxm
 Wann sich der Schritt über Proxmox hinaus lohnt, lesen Sie unter **[Proxmox-Alternative](/de/alternativen/proxmox-alternative/)**; den Migrationsweg beschreibt der **[Proxmox-Migrations-Hub](/de/migration/proxmox/)**, und den vollständigen Vergleich bietet der **[Artikel Proxmox vs VMware vs Cozystack](/de/blog/2026/05/proxmox-vs-vmware-vs-cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

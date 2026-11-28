@@ -60,8 +60,8 @@ Unter allen dreien liegen eine Control Plane, eine API, ein Betriebsteam und ein
 Nichts in dieser Linie ist eine Sackgasse. In Provider-Größe mit der Preisliste einzusteigen und zu einem nationalen Multi-Region-Aufbau zu wachsen, ist ein Umschalten, kein Replatforming.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
+  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live-Demo →</a>
 </div>
 
 ---
@@ -121,6 +121,6 @@ All das läuft auf **[Cozystack](/de/produkte/cozystack/)** — der Open-Source-
 Das ist nicht nur eine Frage der Haltung, sondern ein kommerzielles Argument: Wir können die Engine nicht zurückziehen. Endet die Geschäftsbeziehung, betreiben Sie die Open-Source-Plattform auf derselben Hardware weiter; die proprietären Ænix-Module und der Support enden.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/preise/">Preise →</a>
 </div>

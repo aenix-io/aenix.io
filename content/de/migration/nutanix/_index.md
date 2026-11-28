@@ -61,7 +61,7 @@ faq:
 > **Passt zu:** der Ænix-Plattform, die zu Ihrem Bestand passt — **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Organisationen, die Cloud für sich selbst betreiben, **[Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn Sie Cloud an Kunden verkaufen. Legen Sie das Ziel anhand des Vergleichs **[Nutanix-Alternative](/de/alternativen/nutanix-alternative/)** fest und modellieren Sie dann die Zahlen mit dem **[ROI- und TCO-Rechner](/de/roi-rechner/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/alternativen/nutanix-alternative/">Warum Cozystack statt Nutanix →</a>
 </div>
 

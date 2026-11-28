@@ -54,7 +54,7 @@ hreflang_de: /de/alternativen/openshift-alternative/
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — regulated enterprises, including the developer self-service layer that replaces the OpenShift developer experience.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture call</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a call</a>
   <a class="cta-secondary" href="/compare/cozystack-vs-openshift/">Cozystack vs OpenShift →</a>
 </div>
 

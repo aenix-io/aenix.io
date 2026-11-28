@@ -82,7 +82,7 @@ Haben Sie ein eingespieltes Team, einen erprobten Upgrade-Pfad und nutzen Sie di
 Wann dieses Argument greift, lesen Sie unter **[OpenStack-Alternative](/de/alternativen/openstack-alternative/)**; die Zuordnung Dienst für Dienst finden Sie unter **[OpenStack-Migration](/de/migration/openstack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

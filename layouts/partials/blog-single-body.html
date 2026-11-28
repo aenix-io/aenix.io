@@ -75,7 +75,7 @@
       {{- if not (in (slice "announcement" "news") $type) -}}
       {{- $tut := eq $type "tutorial" -}}
       {{- $heading := cond $tut (cond $de "Möchten Sie das mit uns umsetzen?" "Want this built with you?") (cond $de "Mit Ænix sprechen?" "Talk to Ænix?") -}}
-      {{- $btn := cond $tut (cond $de "Assessment anfragen" "Get readiness assessment") (cond $de "Discovery-Call buchen" "Book a call") -}}
+      {{- $btn := cond $tut (cond $de "Assessment anfragen" "Get assessment") (cond $de "Termin buchen" "Book a call") -}}
       {{- $url := cond $tut (cond $de "/de/dienstleistungen/platform-readiness-assessment/" "/services/platform-readiness-assessment/") (cond $de "/de/kontakt/" "/contact/") -}}
       <aside class="blog-post-cta">
         <h2 class="blog-post-cta__heading">{{ $heading }}</h2>
@@ -91,7 +91,7 @@
         <p class="blog-post-cta__text">{{ cond $de "Ænix bietet Enterprise-Support für selbst betriebene Cozystack-Cluster: Upgrades, Störungsbehebung und Architekturfragen mit festen Reaktionszeiten." "Ænix offers enterprise support for self-run Cozystack clusters: upgrades, incident help and architecture questions with defined response times." }}</p>
         <div class="cta-row">
           <a class="cta-primary" href="{{ cond $de "/de/produkte/cozystack-enterprise-support/" "/products/cozystack-enterprise-support/" }}">{{ cond $de "Support-Optionen ansehen" "See support options" }}</a>
-          <a class="cta-secondary" href="{{ cond $de "/de/kontakt/" "/contact/" }}">{{ cond $de "Kontakt aufnehmen" "Talk to us" }}</a>
+          <a class="cta-secondary" href="{{ cond $de "/de/kontakt/" "/contact/" }}">{{ cond $de "Termin buchen" "Book a call" }}</a>
         </div>
       </aside>
       {{- end -}}

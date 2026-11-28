@@ -10,7 +10,7 @@ hreflang_en: /industries/
 **Branchenbezogene Nachweise und Vorgehensmuster. Finden Sie Ihren Sektor — mit den regulatorischen Auslösern, den Architekturmustern und der passenden Ænix-Plattform. Projekte mit Banken bleiben anonym, aber [neun veröffentlichte Fallstudien](/de/case-studies/) beschreiben Projekte ausführlich, mit Architektur und Zahlen.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/case-studies/">Fallstudien ansehen →</a>
 </div>
 

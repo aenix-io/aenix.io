@@ -57,7 +57,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die souveräne Cloud intern nutzen, oder **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Betreiber, die sie als Produkt anbieten — Ihre Hardware, Ihre Jurisdiktion, optional aktivierbare Volume-Verschlüsselung, auf Wunsch Air-Gap-Installation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/datenresidenz-anforderungen-2026/">Leitfaden lesen →</a>
 </div>
 
@@ -254,7 +254,7 @@ Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge 
 Wir prüfen die Passung, grenzen den Umfang auf die Regulatoren oder Vergabeklauseln ein, die Sie binden, und benennen die passende Variante — 14 oder 28 Tage.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

@@ -59,7 +59,7 @@ faq:
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — GPU-Scheduling und anteiliges Sharing für Inferenz und Fine-Tuning, Angebot per RFP. Für die elastische GPU-Kapazität darunter kombinieren Sie sie mit **[GPU-Cloud-Bursting](/de/loesungen/gpu-cloud-bursting/)**. Die übergeordnete Strategie beschreibt **[Sovereign AI](/de/loesungen/sovereign-ai/)**. Für Verantwortliche von ML-Plattformen: der [Leitfaden für Leiter AI/ML](/de/fuer/leiter-ai-ml/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/case-studies/ai-universal-installer/">Zur Fallstudie →</a>
 </div>
 

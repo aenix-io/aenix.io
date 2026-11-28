@@ -56,7 +56,7 @@ faq:
 Unten stehen zwei unabhängige Ergebnismengen — aus den beiden Formen, in denen die Plattform betrieben wird: ein Cluster, den Sie selbst betreiben, und eine darauf gebaute gehostete Plattform.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Mit einem Engineer sprechen</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/compliance/">Alle Compliance-Nachweise →</a>
 </div>
 

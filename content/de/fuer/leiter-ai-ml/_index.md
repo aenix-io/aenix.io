@@ -24,7 +24,7 @@ hide_closing_cta: true
 > **Passt zu:** **[Souveräne KI](/de/loesungen/sovereign-ai/)** und der **[Ænix AI Platform](/de/produkte/ai-platform/)** für GPU-Inferenz per Klick, oder einem **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)**, der die Plattform auf Ihren Stack zuschneidet. Offener Kern: **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/sovereign-ai/">Souveräne KI →</a>
 </div>
 
@@ -102,7 +102,7 @@ Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) — der Betrieb auf Hardware 
 Kostenlos und ohne Vorbereitung. Wir sehen uns Ihren GPU-Bestand und Ihre Vorgaben zu Modellen und Daten an und sagen Ihnen, ob die AI Platform oder ein gemeinsamer Aufbau passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/ai-platform/">AI Platform →</a>
 </div>
 

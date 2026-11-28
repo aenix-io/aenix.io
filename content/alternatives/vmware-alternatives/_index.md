@@ -50,7 +50,7 @@ If you're early in the evaluation and want a single recommendation focused on mu
 
 <div class="cta-row">
   <a class="cta-primary" href="/alternatives/vmware-alternative/">See recommendation →</a>
-  <a class="cta-secondary" href="/contact/?type=architecture-review">Talk to us</a>
+  <a class="cta-secondary" href="/contact/?type=architecture-review">Book a call</a>
 </div>
 
 ---

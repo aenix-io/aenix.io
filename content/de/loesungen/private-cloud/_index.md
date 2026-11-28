@@ -197,7 +197,7 @@ Cozystack selbst ist **Open Source unter Apache 2.0** und kostenlos im Betrieb: 
 ## Jetzt starten
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder:

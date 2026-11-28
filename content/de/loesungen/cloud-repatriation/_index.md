@@ -56,7 +56,7 @@ faq:
 > **Passt zu** der **[Ænix-Plattform](/de/produkte/)**, die zum Ziel passt: **[Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn Sie die Kapazität für Ihre eigenen Geschäftsbereiche betreiben, **[Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn Sie sie weiterverkaufen, **[AI Platform](/de/produkte/ai-platform/)**, wenn die zurückgeholten Workloads GPU-gebunden sind. Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/). CTOs, die die Entscheidung abwägen: siehe den [CTO-Leitfaden](/de/fuer/cto/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/reverse-cloud-migration-leitfaden/">Leitfaden lesen →</a>
 </div>
 
@@ -269,7 +269,7 @@ Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge 
 Wir prüfen die Passung, bestimmen die Workloads, deren Umzug sich lohnt, und benennen die passende Variante — 14 oder 28 Tage.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

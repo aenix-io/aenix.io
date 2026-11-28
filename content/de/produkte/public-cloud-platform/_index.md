@@ -49,8 +49,8 @@ aliases:
 Die Live-Demo läuft mit Demodaten in Ihrem Browser: das Kundenportal (Marketplace, Konsole, Konto, Support) und hinter dem Admin-Schalter das Back-Office des Betreibers mit Kunden, Verifizierung, Rechnungen und Ressourcenpreisen. Ohne Registrierung, ohne Cluster.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
-  <a class="cta-secondary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo</a>
+  <a class="cta-secondary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/">Plattformen vergleichen →</a>
 </div>
 
@@ -183,6 +183,6 @@ Nennen Sie uns Ihre Größe, Ihren aktuellen Stack und was Sie heute verkaufen �
 Lieber ein kürzerer erster Schritt? [Vereinbaren Sie ein Discovery-Gespräch](/de/kontakt/) oder modellieren Sie Ihre Margen im [Rechner für die Unit Economics von Hosting-Anbietern](/de/hosting-anbieter-rechner/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
+  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live-Demo →</a>
 </div>

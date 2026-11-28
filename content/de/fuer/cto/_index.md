@@ -24,7 +24,7 @@ hide_closing_cta: true
 > **Passt zu:** Projekten zu **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** und **[Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, der **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, alles auf Basis des Open-Source-Projekts **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/ressourcen/cloud-repatriation-tco-worksheet/">Worksheet holen →</a>
 </div>
 
@@ -103,7 +103,7 @@ Apache 2.0 und Ihre eigene Infrastruktur. Support und Projekte sind ein Abonneme
 Kostenlos und ohne Vorbereitung. Wir prüfen die Wirtschaftlichkeit auf Herz und Nieren und sagen Ihnen, ob die schlüsselfertige Plattform oder ein gemeinsamer Aufbau passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/cloud-repatriation/">Cloud-Repatriation →</a>
 </div>
 

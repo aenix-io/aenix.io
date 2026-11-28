@@ -54,7 +54,7 @@ Cozystack liefert die Plattform, auf der Backstage (oder jedes andere Developer-
 > **Passt zu:** **[Ænix Private Cloud Platform (inklusive Developer Self-Service)](/de/produkte/private-cloud-platform/)** — eine vollständige interne Entwicklerplattform mit dem Cloud-Fundament darunter. GitLab-Automatisierung, Argo-CD-Workflows, Golden-Path-Templates. Die Backstage-UI lässt sich als Frontend integrieren, wenn Sie das bevorzugen; funktionsfähig wird die IDP durch das Fundament darunter.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/internal-developer-portal-vs-plattform/">Portal vs. Plattform →</a>
 </div>
 
@@ -124,7 +124,7 @@ Beide lassen dieselbe Frage offen: Was stellt tatsächlich die Datenbank, den Cl
 Eine fokussierte Prüfung beantwortet: Brauchen Sie überhaupt ein Portal? Wenn ja, welches passt zu Ihrem Betriebsmodell? Ænix führt diese Prüfung im Rahmen des **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** durch.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Internal Developer Portal vs. Plattform](/de/blog/2026/05/internal-developer-portal-vs-plattform/)** — die Begriffe sauber getrennt

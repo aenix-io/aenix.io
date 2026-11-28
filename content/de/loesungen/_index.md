@@ -10,8 +10,8 @@ hreflang_en: /solutions/
 **Ænix baut und betreibt Cloud-Plattformen auf Hardware, die Sie kontrollieren — für Organisationen, die echte Cloud-Infrastruktur brauchen, aber keinen Hyperscaler darunter. Die meisten kommen aus einem von wenigen Gründen hierher: eine Aufsichtsbehörde (DORA, NIS2), eine Souveränitätsanforderung, ein KI-Workload, der das Haus nicht verlassen darf, eine Cloud-Rechnung, die nicht mehr aufgeht, eine anstehende VMware-Verlängerung, eine Pflicht zur Betriebskontinuität oder Entwickler, die wochenlang auf eine Umgebung warten. Wählen Sie den passenden Grund — die jeweilige Seite beschreibt die Architektur, die passende Ænix-Plattform und den Ablauf eines Projekts.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Readiness Assessment anfragen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment anfragen →</a>
 </div>
 
 ---

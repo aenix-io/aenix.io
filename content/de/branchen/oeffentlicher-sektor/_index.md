@@ -53,7 +53,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für eine souveräne Cloud mit optional aktivierbarer Verschlüsselung und Air-Gap-Option; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für den Start großer Cloud-Angebote der öffentlichen Hand in hyperscalernahem Maßstab.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Lösungen für Datensouveränität →</a>
 </div>
 
@@ -134,7 +134,7 @@ Unsere Antwort enthält: Unternehmensprofil, bisherige Referenzen aus dem öffen
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Weiterlesen:

@@ -58,7 +58,7 @@ service:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — CloudStack-Umgebungen werden fast immer an externe Kunden verkauft, also sind Mandantenmodell, Servicekatalog und Abrechnung die Teile, die den Wechsel überleben müssen. Siehe auch **[WHMCS-Integration](/de/produkte/whmcs-integration/)**, wenn über WHMCS abgerechnet wird.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 
@@ -127,7 +127,7 @@ Der Grund entsteht, wenn das Produkt breiter werden muss. Wer 2026 ausschließli
 - **Betrieb** — Ihr Team mit **[Cozystack Enterprise Support](/de/produkte/cozystack-enterprise-support/)** im Rücken, oder Betrieb durch Ænix.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

@@ -53,7 +53,7 @@ faq:
 > **Passende Plattform:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Architektur über mehrere Rechenzentren und die Edge für industrielles IT/OT, darauf ausgelegt, die Anforderungen von NIS2 an Hersteller kritischer Produkte zu unterstützen, mit Air-Gap-Unterstützung für OT-Netze.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränität →</a>
 </div>
 
@@ -121,7 +121,7 @@ Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben. Kein 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Schutz industriellen geistigen Eigentums

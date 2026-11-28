@@ -55,7 +55,7 @@ Cozystack ist die Open-Source-Plattform für genau diese nächste Stufe: Kuberne
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen: Hosting-Panel, Billing, Kundenportal und Zahlungen. WHMCS-Billing-Integration (ein proprietäres Ænix-Modul), von Grund auf mandantenfähig, produktisierter Installer. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Termin buchen</a>
   <a class="cta-secondary" href="/de/vergleichen/cozystack-vs-proxmox/">Cozystack vs. Proxmox →</a>
 </div>
 
@@ -135,7 +135,7 @@ Typische Migration: ein Platform Readiness Assessment über 14 oder 28 Tage; die
 Wenn Sie prüfen, wo Proxmox für Ihren Anwendungsfall nicht mehr die richtige Wahl ist, beginnen Sie mit einem kostenlosen Architektur-Gespräch.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Cozystack vs. Proxmox im direkten Vergleich](/de/vergleichen/cozystack-vs-proxmox/)**

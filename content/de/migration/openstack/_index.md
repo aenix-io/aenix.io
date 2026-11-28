@@ -65,7 +65,7 @@ service:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn die OpenStack-Cloud an externe Kunden verkauft wird (Hoster, MSPs, Telcos, nationale Betreiber); **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn sie interne Verbraucher unter DORA-, NIS2- oder sektorspezifischen Auflagen bedient.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/alternativen/openstack-alternative/">OpenStack-Alternative →</a>
 </div>
 
@@ -162,7 +162,7 @@ Zur Plattformentscheidung dahinter siehe **[OpenStack-Alternative](/de/alternati
 - **Betrieb** — entweder betreibt Ihr Team die Plattform mit **[Cozystack Enterprise Support](/de/produkte/cozystack-enterprise-support/)** im Rücken, oder Ænix betreibt sie.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

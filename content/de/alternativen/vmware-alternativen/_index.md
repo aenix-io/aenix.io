@@ -55,7 +55,7 @@ Stehen Sie am Anfang der Evaluierung und wollen eine einzige Empfehlung für man
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/alternativen/vmware-alternative/">Zur Empfehlung →</a>
-  <a class="cta-secondary" href="/de/kontakt/?type=architecture-review">Mit uns sprechen</a>
+  <a class="cta-secondary" href="/de/kontakt/?type=architecture-review">Termin buchen</a>
 </div>
 
 ---
@@ -212,7 +212,7 @@ Für Service-Provider, regulierte Unternehmen und Betreiber souveräner Clouds: 
 Passt Ihre Situation nicht zum Profil von Cozystack, decken die acht Optionen oben die realistische Landschaft 2026 ab. Die richtige Wahl hängt vor allem von Größenordnung, Betriebsmodell und bestehenden Beziehungen ab.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

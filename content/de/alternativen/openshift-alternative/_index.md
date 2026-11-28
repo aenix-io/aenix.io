@@ -54,7 +54,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — für regulierte Unternehmen, einschließlich der Developer-Self-Service-Schicht, die die Developer Experience von OpenShift ersetzt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Termin buchen</a>
   <a class="cta-secondary" href="/de/vergleichen/cozystack-vs-openshift/">Cozystack vs. OpenShift →</a>
 </div>
 
@@ -109,7 +109,7 @@ Beide Plattformen basieren auf KubeVirt, das zugrunde liegende VM-Modell ist als
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Cozystack vs. OpenShift im direkten Vergleich](/de/vergleichen/cozystack-vs-openshift/)**

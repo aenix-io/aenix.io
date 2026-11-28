@@ -61,8 +61,8 @@ faq:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, der Plattform für Organisationen, die Cloud verkaufen, und **[Ænix AI Platform](/de/produkte/ai-platform/)** für Model Serving und KI-Dienste darüber. Probieren Sie das Kundenportal in der **[Live-Demo](/demo/)** aus.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
+  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live-Demo →</a>
 </div>
 
 ---
@@ -217,7 +217,7 @@ Das größte hier dokumentierte GPU-Projekt ist ein einzelner 8×H100-Node. Für
 Bringen Sie Anzahl und Modelle Ihrer GPUs mit, Ihren aktuellen Stack und das, was Sie heute verkaufen. Ein Ænix-Engineer sagt Ihnen, welche GPU-Modi zu Ihrem Produkt passen und was ein Start erfordern würde.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/webinars/build-your-gpu-cloud/">Webinar: Eigene GPU-Cloud aufbauen (Englisch) →</a>
 </div>
 

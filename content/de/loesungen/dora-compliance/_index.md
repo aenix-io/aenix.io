@@ -56,7 +56,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — darauf ausgelegt, die DORA-Arbeit zu unterstützen: optional aktivierbare Volume-Verschlüsselung mit gemeinsam mit Ihnen festgelegtem Schlüsselmanagement, Audit-Logs mit konfigurierbarer Aufbewahrung, die sich in Ihren eigenen unveränderlichen Speicher ausleiten lassen, Mandantentrennung entlang der IKT-Risikoklassifizierung, ein Open-Source-Stack, der Exit-Pläne testbar macht, und Lieferantentransparenz bis zur zweiten Stufe. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/ressourcen/dora-compliance-checkliste/">Checkliste anfordern →</a>
 </div>
 
@@ -262,7 +262,7 @@ Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge 
 Wir prüfen die Passung, grenzen den Umfang auf die Artikel ein, die Sie tatsächlich binden, und empfehlen die passende Variante — 14 oder 28 Tage.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 Oder lesen Sie weiter:

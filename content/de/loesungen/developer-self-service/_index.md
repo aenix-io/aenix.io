@@ -50,7 +50,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** und ihrer Developer-Self-Service-Schicht — GitLab-Automatisierung, Argo-CD-Workflows, Self-Service-APIs, Golden-Path-Templates, Dashboards zur Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/). Für Platform-Verantwortliche: siehe den [Leitfaden für Leiter Platform Engineering](/de/fuer/leiter-platform-engineering/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/developer-experience-plattform-self-service-pfade/">Leitfaden lesen →</a>
 </div>
 
@@ -144,7 +144,7 @@ Self-Service ist Teil der übergreifenden Platform-Engineering-Arbeit — zur Ei
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Artikel zu Self-Service-Pfaden](/de/blog/2026/05/developer-experience-plattform-self-service-pfade/)**

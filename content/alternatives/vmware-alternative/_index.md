@@ -60,7 +60,7 @@ Cozystack is a CNCF Sandbox project. Ænix created it, co-maintains it with main
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for anyone selling cloud — hosting providers exiting VMware Cloud Director, MSPs, telcos, national operators; **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises exiting VMware Cloud Foundation. Service providers exiting VMware Cloud Director: see [the VCD alternative](/alternatives/vmware-cloud-director-alternative/). Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture call</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a call</a>
   <a class="cta-secondary" href="/migration/vmware/">Migration path →</a>
 </div>
 

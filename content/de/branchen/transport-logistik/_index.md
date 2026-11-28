@@ -48,7 +48,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Architektur über mehrere Rechenzentren und Edge, darauf ausgelegt, NIS2 zu unterstützen, mit Souveränitätsoption für grenzüberschreitende Logistikdaten. Die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert ([Zertifikat](/de/compliance/iso-27001/)).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/transport-logistik-cloud-architektur-nis2/">Transport-Architektur →</a>
 </div>
 
@@ -98,7 +98,7 @@ Betreiber im Luft-, Schienen-, Wasser- und Straßengüterverkehr, multimodale Lo
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Artikel zur Transport-Architektur](/de/blog/2026/05/transport-logistik-cloud-architektur-nis2/)**

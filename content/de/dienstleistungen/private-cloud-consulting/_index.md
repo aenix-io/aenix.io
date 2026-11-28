@@ -58,7 +58,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die eine private oder hybride souveräne Cloud aufbauen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die eine eigene Plattform auf Public-Cloud-Niveau betreiben.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/private-cloud-architektur-2026/">Leitfaden lesen →</a>
 </div>
 
@@ -210,7 +210,7 @@ Die Logos oben stehen für produktive Installationen der Ænix Public Cloud Plat
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Private-Cloud-Architektur 2026](/de/blog/2026/05/private-cloud-architektur-2026/)** — vollständiger Leitfaden

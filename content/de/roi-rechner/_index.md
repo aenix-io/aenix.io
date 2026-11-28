@@ -28,7 +28,7 @@ faq:
 **Interaktive Rechner für die Wirtschaftlichkeit einer eigenen Cloud-Plattform. Vergleichen Sie die Gesamtkosten über fünf Jahre mit zehn On-Premises-Plattformen, stellen Sie eine Hyperscaler-Rechnung dem Betrieb auf eigener Hardware gegenüber, dimensionieren Sie die Unit Economics eines Hosting-Geschäfts oder wägen Sie den Kauf von GPUs gegen deren Miete ab. Jede Eingabe lässt sich anpassen, die drei vollständigen Modelle versehen jeden Preis mit Quelle und Datum, und jedes Ergebnis wird live neu berechnet — entwickelt von Ænix, dem Unternehmen, das Cozystack entwickelt hat und mitpflegt.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/preise/">Preise ansehen →</a>
 </div>
 
@@ -105,7 +105,7 @@ Siehe die **[AI Platform](/de/produkte/ai-platform/)** und **[Souveräne KI](/de
 Ein Erstgespräch macht aus diesen Schätzungen eine ehrliche TCO auf Workload-Ebene — einschließlich dessen, was besser bleibt, wo es ist.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/">Plattformen ansehen →</a>
 </div>
 

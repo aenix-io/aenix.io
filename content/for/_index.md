@@ -20,7 +20,7 @@ related_pages:
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/products/">Explore platform →</a>
+  <a class="cta-secondary" href="/products/">See platforms →</a>
 </div>
 
 ---

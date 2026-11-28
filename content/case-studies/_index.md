@@ -8,6 +8,11 @@ language: "en"
 hreflang_de: /de/case-studies/
 aliases:
   - /kubefarm/
+  # Case URLs from the WordPress site, still in search results and backlinks.
+  # None of these engagements is published any more; send readers to the list.
+  - /kubernetes-in-kubernetes-and-pxe-bootable-server-farm/
+  - /design-a-full-feature-csi-driver-for-shared-san-in-kubernetes/
+  - /prototype-a-virtualization-subsystem-for-deckhouse-kubernetes-platform/
 ---
 
 **Nine published case studies below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, the hosting providers named below run Ænix Public Cloud Platform in production, and reference calls for other engagements can be arranged under NDA.**
@@ -53,8 +58,8 @@ A hosting provider's public addresses were pinned to a rack and half the traffic
 A telecom operator and integrator built a corporate AI platform — GPU scheduling, RAG on Qdrant, NVIDIA Dynamo inference, geo-distributed GPU — then shipped the same distribution into a state-owned end customer's own environment.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discuss your case</a>
-  <a class="cta-secondary" href="/tco-calculator/">Model your TCO →</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/tco-calculator/">Calculate TCO →</a>
 </div>
 
 ---

@@ -174,7 +174,7 @@ Wenn Cozystack bereits produktiv läuft, stellt Ihnen der Enterprise-Support von
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/produkte/cozystack-enterprise-support/">Enterprise-Support für Cozystack →</a>
-  <a class="cta-secondary" href="/de/preise/#support">Support-Stufen und Preise →</a>
+  <a class="cta-secondary" href="/de/preise/#support">Preise ansehen →</a>
 </div>
 
 ### Weg 3: Plattform von Ænix aufbauen lassen
@@ -199,7 +199,7 @@ Cozystack ist **kostenlos** (Apache 2.0). Jeder kann es betreiben.
 Enterprise-Support für selbst betriebenes Cozystack ist dasselbe Abonnement wie die Ænix Public Cloud Platform, mit vier Stufen: Basic 1.250 USD, Standard 3.000 USD und Plus 5.500 USD pro 10 physische Nodes und Monat bei jährlicher Abrechnung sowie eine individuelle Enterprise-Stufe. Jede Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration); wer Cozystack selbst betreibt, lässt sie einfach ungenutzt. Die Ænix Private Cloud Platform und die Ænix AI Platform werden per RFP angeboten.
 
 <div class="cta-row">
-  <a class="cta-secondary" href="/de/preise/">Preisdetails →</a>
+  <a class="cta-secondary" href="/de/preise/">Preise ansehen →</a>
   <a class="cta-secondary" href="/de/produkte/">Plattformen vergleichen →</a>
 </div>
 
@@ -207,7 +207,7 @@ Enterprise-Support für selbst betriebenes Cozystack ist dasselbe Abonnement wie
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[cozystack.io](https://cozystack.io)** — Installation, Dokumentation, Community

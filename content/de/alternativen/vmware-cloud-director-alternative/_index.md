@@ -55,7 +55,7 @@ faq:
 > **Kein Service-Provider?** Wenn Sie VMware für Ihre eigene Organisation betreiben, statt es weiterzuverkaufen, lesen Sie stattdessen **[die VMware-Alternative für die eigene Umgebung](/de/alternativen/vmware-alternative/)**. Sie planen den Umzug selbst? Siehe **[den VMware-Migrationspfad](/de/migration/vmware/)** und die kostenlose **[VMware-Migrations-Checkliste](/de/ressourcen/vmware-migrations-checkliste/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Kundenportal ansehen →</a>
 </div>
 
@@ -187,7 +187,7 @@ Wenn Ihre VMware-Konditionen für Sie noch funktionieren und Ihre Kunden nicht m
 Sagen Sie uns, wie viele Mandanten und VMs Sie auf VMware Cloud Director betreiben, was Sie verkaufen und wann Ihre VMware-Verträge zur Verlängerung anstehen. Ein Engineer von Ænix ordnet Ihr Setup der Plattform zu und sagt Ihnen, was sich leicht übertragen lässt und was ein Redesign braucht.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/public-cloud-platform/">Ænix Public Cloud Platform →</a>
 </div>
 

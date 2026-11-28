@@ -59,7 +59,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Basis, auf der DR aufsetzt; **[DORA-Compliance](/de/loesungen/dora-compliance/)** für die Pflichten zur operationalen Resilienz, die DR erfüllen hilft. Beginnen Sie mit einem **[Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)**. Für Infrastrukturverantwortliche: siehe den [Leitfaden für Leiter Infrastruktur](/de/fuer/leiter-infrastruktur/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/case-studies/sovereign-public-cloud/">Fallstudie ansehen →</a>
 </div>
 

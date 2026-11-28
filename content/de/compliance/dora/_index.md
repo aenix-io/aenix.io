@@ -155,7 +155,7 @@ Eine Plattform kann jedes davon billiger erfüllbar machen. Halten kann sie es n
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/loesungen/dora-compliance/">DORA-Readiness-Engagement</a>
-  <a class="cta-secondary" href="/de/kontakt/">Mit einem Engineer sprechen</a>
+  <a class="cta-secondary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

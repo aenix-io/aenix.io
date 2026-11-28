@@ -13,7 +13,7 @@ hreflang_en: /migration/
 **Migrationsleitfäden für den Wechsel auf die Ænix-Plattformen aus einem bestehenden Virtualisierungs- oder Cloud-Stack. Jeder Hub beantwortet dieselben drei Fragen: Was zieht mechanisch um, was muss neu entworfen werden, und wann ist Bleiben die richtige Entscheidung. Kohortenbasiert, im Parallel-Run validiert, mit [Konveyor Forklift](https://github.com/kubev2v/forklift) als VM-Transfer-Engine in der Plattform.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 

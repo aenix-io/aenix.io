@@ -58,7 +58,7 @@ faq:
 </div>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Erstgespräch vereinbaren →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---
@@ -116,7 +116,7 @@ Projekte mit KMU sind selten — und wenn es sie gibt, sind Ausnahmefälle mit r
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[Wann Cozystack für KMU und Mittelstand passt — ehrliche Antwort](/de/blog/2026/05/wann-cozystack-fuer-mittelstand-passt/)**

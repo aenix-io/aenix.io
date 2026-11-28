@@ -776,6 +776,7 @@ img { max-width: 100%; height: auto; display: block; }
 .two-cols-image img {
   display: block;
   width: 100%;
+  height: auto;
   border-radius: var(--radius-lg);
   border: 0;
   margin: 0;

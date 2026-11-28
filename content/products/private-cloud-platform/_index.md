@@ -80,7 +80,7 @@ The [DORA evidence page](/compliance/dora/) maps each article to what Cozystack 
 
 <div class="cta-row">
   <a class="cta-secondary" href="/solutions/dora-compliance/">DORA compliance services →</a>
-  <a class="cta-secondary" href="/resources/dora-compliance-checklist/">Free DORA checklist →</a>
+  <a class="cta-secondary" href="/resources/dora-compliance-checklist/">Get checklist →</a>
 </div>
 
 ### NIS2 architecture controls
@@ -91,7 +91,7 @@ The [DORA evidence page](/compliance/dora/) maps each article to what Cozystack 
 
 <div class="cta-row">
   <a class="cta-secondary" href="/solutions/nis2-compliance/">NIS2 compliance services →</a>
-  <a class="cta-secondary" href="/resources/nis2-compliance-checklist/">Free NIS2 checklist →</a>
+  <a class="cta-secondary" href="/resources/nis2-compliance-checklist/">Get checklist →</a>
 </div>
 
 ### Sovereign deployment

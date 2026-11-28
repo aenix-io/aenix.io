@@ -49,7 +49,7 @@ faq:
 > **Passt zu:** jeder der drei **[Ænix-Plattformen](/de/produkte/)**, sobald sich der Umfang auf eine produktisierte Cloud-Plattform ausweitet. Engineering-Verstärkung ist auch ohne Plattform buchbar.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/">Alle Dienstleistungen →</a>
 </div>
 
@@ -91,7 +91,7 @@ Für einen breiteren Umfang siehe **[Platform Engineering Services](/de/dienstle
 Das Architektur-Review ist die kompakte Variante. Für die vollständige Variante siehe das **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 oder 28 Tage).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

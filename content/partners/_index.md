@@ -12,7 +12,7 @@ hreflang_de: /de/partner/
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
-  <a class="cta-secondary" href="/products/">Explore the platforms →</a>
+  <a class="cta-secondary" href="/products/">See platforms →</a>
 </div>
 
 ---

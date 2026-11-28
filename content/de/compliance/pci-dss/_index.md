@@ -51,7 +51,7 @@ faq:
 Andere werden mitgeliefert, sind aber nicht eingeschaltet, weil die meisten Cluster sie nicht brauchen: Single Sign-on, Volume-Verschlüsselung, eingeschränkter Egress, verschlüsselter Ost-West-Verkehr, längere Audit-Aufbewahrung. Jede davon ist eine Konfigurationsoption, kein Entwicklungsprojekt. Diese Seite sagt Anforderung für Anforderung, was was ist — und was die Prüfung Ihnen überlässt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Mit einem Engineer sprechen</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/compliance/">Alle Compliance-Nachweise →</a>
 </div>
 
@@ -262,7 +262,7 @@ Der Rest ist Ihrer: Scan-Pläne, Penetrationstests und die Review-Kadenz, die Ih
 Cozystack steht unter Apache 2.0, der Quellcode ist öffentlich — nichts oben muss geglaubt werden. Wenn Sie sich auf eine Prüfung vorbereiten und das Kontroll-Mapping gegen Ihren Geltungsbereich gespiegelt haben möchten: dafür gibt es [Enterprise-Support](/de/produkte/cozystack-enterprise-support/) und das [Platform-Readiness-Assessment](/de/dienstleistungen/platform-readiness-assessment/). Für Finanzunternehmen, die zusätzlich unter DORA fallen, bildet das [DORA-Readiness-Engagement](/de/loesungen/dora-compliance/) dieselbe Architektur gegen diese Regulierung ab, statt die Arbeit zu wiederholen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Mit einem Engineer sprechen</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/private-cloud-platform/">Ænix Private Cloud Platform →</a>
 </div>
 

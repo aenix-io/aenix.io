@@ -53,7 +53,7 @@ aliases:
 **Infrastruktur für Inferenz, Fine-Tuning und RAG auf eigenen GPUs: mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken, Object Storage und Air-Gap-Deployment, aufgebaut auf einer Plattform mit CNCF Kubernetes AI Conformance. Für KI-intensive Organisationen und regulierte KI-Deployments.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/produkte/">Plattformen vergleichen →</a>
 </div>
 
@@ -180,7 +180,7 @@ Die drei Ænix-Plattformen sind eine Engine mit unterschiedlich zugeschalteten O
 Vereinbaren Sie ein Discovery-Gespräch. Bringen Sie Ihr KI-Workload-Profil mit (dauerhafte Inferenz, Training, Fine-Tuning, RAG oder eine Mischung), dazu Ihren regulatorischen Rahmen und das angestrebte Deployment-Modell.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

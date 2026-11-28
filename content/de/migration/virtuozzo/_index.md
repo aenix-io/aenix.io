@@ -62,7 +62,7 @@ service:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn Sie Virtuozzo-Kapazität an Kunden weiterverkaufen — der Mehrheitsfall, denn das Produkt wird überwiegend über regionale Hosting-Anbieter vertrieben, die es unter eigener Marke anbieten; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn dort interne Workloads laufen. Rechnen Sie zuerst mit dem **[Fünf-Jahres-TCO-Vergleich Virtuozzo vs. Cozystack](/tco-calculator/vs-virtuozzo/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 
@@ -198,7 +198,7 @@ Die Zuordnung nach Kubernetes:
 Rechnen Sie die Kostenseite vorher durch: Der **[Fünf-Jahres-TCO-Vergleich Virtuozzo vs. Cozystack](/tco-calculator/vs-virtuozzo/)** vergleicht bei 50, 200 und 1.000 VMs, mit Virtuozzo-Lizenzierung zu 100 USD pro Core und Jahr laut Liste und rund 75 USD als typischem Verhandlungsergebnis.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 ---

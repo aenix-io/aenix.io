@@ -53,7 +53,7 @@ faq:
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als an DORA ausgerichtetes Fundament für eine regulierte Cloud; **[AI Platform](/de/produkte/ai-platform/)** für KI-Workloads in Schadenbearbeitung und Underwriting auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/de/loesungen/dora-compliance/">DORA-Compliance →</a>
 </div>
 
@@ -99,7 +99,7 @@ Versicherungskunden werden nicht namentlich genannt. Die am nächsten liegenden 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
 </div>
 
 - **[DORA-Compliance](/de/loesungen/dora-compliance/)**

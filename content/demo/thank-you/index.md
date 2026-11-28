@@ -11,5 +11,5 @@ hide_closing_cta: true
 
 <div class="cta-row">
   <a class="cta-primary" href="https://zcal.co/i/s5C4-cO1" target="_blank" rel="noopener">Pick a time now</a>
-  <a class="cta-secondary" href="/demo/">Try the live demo →</a>
+  <a class="cta-secondary" href="/demo/">Live demo →</a>
 </div>

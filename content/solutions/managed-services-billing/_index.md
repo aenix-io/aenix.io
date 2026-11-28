@@ -168,7 +168,7 @@ Model the numbers first in the [hosting-provider unit economics calculator](/isp
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
+  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live demo →</a>
 </div>
 
 ---

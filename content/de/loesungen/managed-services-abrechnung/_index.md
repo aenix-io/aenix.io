@@ -167,8 +167,8 @@ Wenn VPS-Weiterverkauf Ihr ganzes Geschäft ist und Ihnen die Marge genügt, ist
 Rechnen Sie zuerst im [Rechner für Hosting-Anbieter](/de/hosting-anbieter-rechner/) nach. Das aufgezeichnete Webinar [Add Kubernetes, databases and GPU to your price list](/webinars/launch-public-cloud/) (Englisch) zeigt Katalog, Abrechnung und Migrationsweg. Sie ziehen erst von einem anderen Stack um? Siehe die [Virtuozzo-Migration](/de/migration/virtuozzo/) und die [Vergleiche](/de/vergleichen/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
+  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Live-Demo →</a>
 </div>
 
 ---

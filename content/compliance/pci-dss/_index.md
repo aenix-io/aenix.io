@@ -51,7 +51,7 @@ faq:
 Others ship but are not switched on, because most clusters do not need them: single sign-on, volume encryption, restricted egress, encrypted east-west traffic, longer audit retention. Each is a configuration option rather than a development project, and this page says which is which, requirement by requirement — along with the parts an assessment leaves to you.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Talk to an engineer</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/compliance/">All compliance evidence →</a>
 </div>
 
@@ -262,7 +262,7 @@ The rest is yours: scanning schedules, penetration testing, and the review caden
 Cozystack is Apache 2.0 and its source is public, so nothing above has to be taken on trust. If you are preparing for an assessment and want the control mapping reviewed against your scope, that is what [enterprise support](/products/cozystack-enterprise-support/) and the [platform readiness assessment](/services/platform-readiness-assessment/) cover. For financial entities also in scope for DORA, the [DORA readiness engagement](/solutions/dora-compliance/) maps the same architecture against that regulation rather than repeating the work.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Talk to an engineer</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/private-cloud-platform/">Ænix Private Cloud Platform →</a>
 </div>
 

@@ -127,7 +127,7 @@ OpenNebula-VMs sind KVM-Gäste mit qcow2- oder Raw-Disks — das Format, das Kub
 Cozystack zahlt sich aus, wenn Ihre Cloud ein Katalog ist und kein VM-Pool: Managed-Datenbanken, Kubernetes, S3 und GPU, pro Tenant verkauft oder per Self-Service bezogen, mit verschachtelten Tenants für Reseller und Nutzungsdaten pro Tenant für das Billing. Es passt auch zu Teams, die ohnehin auf Kubernetes standardisieren und VMs lieber als weiteren Workload betreiben, statt eine zweite Control Plane zu pflegen. Für Anbieter ergänzt die [Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/) die kommerzielle Schicht; die Open-Source-Engine allein beschreibt die Seite **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/">Termin buchen</a>
   <a class="cta-secondary" href="/tco-calculator/vs-opennebula/">Fünfjahreskosten vergleichen →</a>
 </div>
 

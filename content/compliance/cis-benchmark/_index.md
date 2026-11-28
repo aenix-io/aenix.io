@@ -51,7 +51,7 @@ faq:
 This page publishes the full run rather than the flattering part of it. A raw kube-bench report also lists two dozen failures, and the useful work is telling them apart: most are the benchmark looking for files an immutable node does not keep, or testing a flag that newer Kubernetes releases replaced. Four are worth your attention, and each is covered below with the reasoning behind it.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Talk to an engineer</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/compliance/">All compliance evidence →</a>
 </div>
 

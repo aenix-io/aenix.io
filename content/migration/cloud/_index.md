@@ -64,7 +64,7 @@ The team that ships your migration created and co-maintains [Cozystack](/product
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/roi-calculator/">Model the TCO →</a>
+  <a class="cta-secondary" href="/cloud-calculator/">Calculate TCO →</a>
 </div>
 
 
