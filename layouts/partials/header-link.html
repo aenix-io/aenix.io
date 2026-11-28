@@ -1,0 +1,8 @@
+{{- /* One link in a header panel. Args: entry (menu entry), page, icon
+       (external-link svg), class (optional, default "dropdown-link"). */ -}}
+{{- $e := .entry -}}
+<a href="{{ $e.URL }}" class="{{ .class | default "dropdown-link" }}"{{ if eq $e.URL .page.RelPermalink }} aria-current="page"{{ end }}{{ if $e.Params.external }} target="_blank" rel="noopener"{{ end }}>
+  <span class="dropdown-link__name">{{ $e.Name }}{{ if $e.Params.external }}{{ .icon }}{{ end }}</span>
+  {{- with $e.Params.desc }}<span class="dropdown-link__desc">{{ . }}</span>{{ end }}
+</a>
+{{- /**/ -}}

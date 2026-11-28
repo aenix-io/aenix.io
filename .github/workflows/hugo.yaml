@@ -58,6 +58,11 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Build the search index
+        # Pagefind reads the built HTML and writes public/pagefind/, which the
+        # header search loads on demand (layouts/partials/site-search.html).
+        # Pinned: keep in step with the build commands in netlify.toml.
+        run: npx --yes pagefind@1.5.2 --site public
       - name: Patch robots.txt
         # if built in a contributor's repo and deployed to personal pages, disallow search indexing
         if: github.repository_owner != 'aenix-io'

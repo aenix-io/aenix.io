@@ -55,7 +55,7 @@
     {{- with .secondary_text }}{{ $st = . }}{{ end -}}
     {{- with .secondary_url }}{{ $su = . }}{{ end -}}
   {{- end -}}
-  <section class="cta-banner landing-cta">
+  <section class="cta-banner landing-cta" data-pagefind-ignore>
     <div class="container">
       <h2 class="cta-heading">{{ $heading }}</h2>
       {{- with $desc }}<p class="cta-description">{{ . }}</p>{{ end }}

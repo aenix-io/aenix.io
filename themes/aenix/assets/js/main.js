@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
       menuToggle.setAttribute('aria-expanded', open);
       mobileMenu.setAttribute('aria-hidden', !open);
       document.body.style.overflow = open ? 'hidden' : '';
+      // The menu covers the announcement bar, so the close button returns to
+      // the menu's own logo row; closing re-syncs it with the bar.
+      document.documentElement.classList.toggle('is-menu-open', open);
+      if (!open) window.dispatchEvent(new Event('resize'));
     };
     menuToggle.addEventListener('click', () => setMenu(!mobileMenu.classList.contains('open')));
     // Close on Escape
@@ -196,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const annId = ann.dataset.annId || 'announcement';
     const closeBtn = ann.querySelector('.announcement-bar__close');
     const toggleEl = document.querySelector('.mobile-menu-toggle');
-    const BASE_TOP = 18; // matches .mobile-menu-toggle top in CSS
+    const BASE_TOP = 14; // matches .mobile-menu-toggle top in CSS
 
     // Keep the fixed mobile hamburger clear of the bar while the bar is on screen.
     const syncToggleOffset = () => {

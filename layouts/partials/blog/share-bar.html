@@ -1,6 +1,6 @@
 {{- $url := .Permalink -}}
 {{- $title := .Title -}}
-<ul class="blog-share">
+<ul class="blog-share" data-pagefind-ignore>
   <li><a class="blog-share__link blog-share__link--linkedin"
          href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url | urlquery }}"
          target="_blank" rel="noopener nofollow" aria-label="Share on LinkedIn"

@@ -353,7 +353,7 @@ img { max-width: 100%; height: auto; display: block; }
 .mobile-menu-toggle {
   display: none;
   position: fixed;
-  top: 18px;
+  top: 14px; /* centred on the 72px header bar; main.js BASE_TOP */
   right: 20px;
   width: 44px;
   height: 44px;
@@ -1214,7 +1214,9 @@ img { max-width: 100%; height: auto; display: block; }
 .cta-heading {
   position: relative;
   color: var(--text-primary);
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  /* A closing band, not a second page title: stays below the H1 (up to 44 px). */
+  font-size: clamp(1.625rem, 2.6vw, 1.875rem);
+  text-wrap: balance;
   margin-bottom: 1.25rem;
   max-width: 600px;
   margin-left: auto;

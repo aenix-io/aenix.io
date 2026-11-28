@@ -14,6 +14,11 @@
   <div class="container">
     {{ partial "lang-switch.html" . }}
     <h1 class="page-hero-title">{{ .Params.hero_title | default .Title }}</h1>
+    {{- /* Say what is priced on the first screen. The approved description
+           carries it; drop its "Ænix price list:" lead-in. */}}
+    {{- with .Params.hero_subtitle | default (.Description | replaceRE `^[^:]{0,40}:\s*` "" | strings.FirstUpper) }}
+    <p class="page-hero-subtitle">{{ . }}</p>
+    {{- end }}
   </div>
 </section>
 
@@ -22,6 +27,16 @@
     {{ .Content }}
 
     {{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") }}
+    {{- /* The table prices Public Cloud Platform and Cozystack support; the
+           other two platforms are quoted after an assessment. */}}
+    <p class="pricing-rfp-note">
+      <strong>Private Cloud Platform · AI Platform:</strong>
+      {{ if $de }}Umfang und Preis je Projekt nach einem 14- oder 28-tägigen Platform Readiness Assessment.
+      <a href="/de/dienstleistungen/platform-readiness-assessment/">Zum Assessment →</a>
+      {{- else }}scoped and priced per project after a 14- or 28-day Platform Readiness Assessment.
+      <a href="/services/platform-readiness-assessment/">About the assessment →</a>
+      {{- end }}
+    </p>
     <div class="cta-row cta-row--center" style="margin:2rem 0">
       <a href="{{ cond $de "/de/kontakt/" "/contact/" }}" class="cta-primary" data-cta="pricing">{{ cond $de "Discovery-Call buchen" "Book a call" }}</a>
     </div>

@@ -21,7 +21,7 @@
     {{- end -}}
   {{- end -}}
   {{- if $cards -}}
-  <aside class="related-pages" aria-label="{{ $heading }}">
+  <aside class="related-pages" aria-label="{{ $heading }}" data-pagefind-ignore>
     <h2 class="related-pages__heading">{{ $heading }}</h2>
     <div class="related-pages__grid">
       {{- range $cards }}

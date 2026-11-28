@@ -117,7 +117,8 @@
   font-size: 0.875rem;
   color: var(--aenix-text-muted);
 }
-.page-hero--home .page-hero-trust {
+/* Centred only on a centred hero; the split hero is left-aligned. */
+.page-hero--home:not(.page-hero--split) .page-hero-trust {
   justify-content: center;
 }
 .page-hero--split { text-align: left; }
@@ -563,7 +564,18 @@
   padding: 4rem 3.5rem;
   gap: 2rem 3rem;
 }
-.page-home .cta-final h2 { font-size: clamp(2rem, 3.4vw, 2.75rem); }
+.page-home .cta-final h2 { font-size: clamp(1.625rem, 2.6vw, 1.875rem); } /* below the H1 (42 px) */
+/* One filled button and one text link: the hero already offers the platform. */
+.cta-final__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.5rem;
+  color: var(--aenix-primary, #01a5ff);
+  font-weight: 600;
+  text-decoration: none;
+}
+.cta-final__link:hover { text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 900px) {
   .page-home .band { padding: 3rem 0 3.5rem; }
 }

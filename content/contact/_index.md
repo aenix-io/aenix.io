@@ -4,6 +4,8 @@ seo_title: "Contact Ænix — book a discovery call"
 description: "Book a 30-minute discovery call with Ænix or write to us. AENIX s.r.o., České Budějovice, Czech Republic; AENIX INC, Delaware, USA."
 hero_subtitle: "Book a discovery call, ask a question, or explore a partnership"
 language: "en"
+# The thank-you child page is only for after the form is sent.
+hide_child_cards: true
 faq:
   - q: "What happens after I send the form?"
     a: "Your message goes to our sales team, who reply by email — usually within one business day. The form is for questions and requests; to book a call, pick a slot in the calendar instead."

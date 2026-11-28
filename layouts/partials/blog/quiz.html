@@ -22,7 +22,7 @@
 {{- $questions := $quiz.questions | default slice -}}
 
 {{- if $questions -}}
-<section class="blog-quiz" data-blog-quiz data-quiz-lang="{{ $lang }}">
+<section class="blog-quiz" data-blog-quiz data-quiz-lang="{{ $lang }}" data-pagefind-ignore>
   <div class="blog-quiz__header">
     <h2 class="blog-quiz__heading">{{ $heading }}</h2>
     <p class="blog-quiz__intro">{{ len $questions }} questions · ~2 min</p>
